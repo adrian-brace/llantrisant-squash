@@ -25,5 +25,12 @@
   },
   "devDependencies": {
     "gulp-nodemon": "^2.2.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrian-brace/llantrisant-squash.git"
   }
 }

@@ -17,12 +17,6 @@ var implementation = new (require('xmldom')).DOMImplementation;
 
 vsprintf = require('sprintf-js').vsprintf;
 
-/*
-self.app = express();
-self.ipaddress = "0.0.0.0";
-self.port = 8080;
-*/
-
 var ipAddress = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
