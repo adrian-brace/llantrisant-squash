@@ -23,8 +23,8 @@ self.ipaddress = "0.0.0.0";
 self.port = 8080;
 */
 
-var ipAddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
-var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var ipAddress = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 var FILE_EXTENSION_FOR_WEB_PAGES = ".html";
 var FILE_EXTENSION_FOR_XML = ".xml";
