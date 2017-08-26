@@ -1,0 +1,248 @@
+﻿{
+  "xml": {
+    "tournament": [
+      {
+        "year": "2017",
+        "entrants": "63",
+        "press_release": "Llantrisant Squash Open 2017 - Press Report.pdf",
+        "draw": [
+              {
+                "name": "A Draw Mens",
+                "pdf": "Tournament Draw Schedule 2017 A Grade.pdf"
+              },
+              {
+                "name": "B Draw Mens",
+                "pdf": "Tournament Draw Schedule 2017 B Grade.pdf"
+              },
+              {
+                "name": "C Draw Mens",
+                "pdf": "Tournament Draw Schedule 2017 C Grade.pdf"
+              },
+              {
+                "name": "D Draw Mixed",
+                "pdf": "Tournament Draw Schedule 2017 D Grade.pdf"
+              },
+              {
+                "name": "E Draw Mixed",
+                "pdf": "Tournament Draw Schedule 2017 E Grade.pdf"
+              }
+      ],
+        "event": [
+          {
+            "name": "A Draw Mens",
+            "winner": "Emyr Evans",
+            "winnerPrize": "£250 Cash & £100 Eye Vchr",
+            "runnerUp": "Elliot Morris-Devered",
+            "runnerUpPrize": "£100 Cash & £50 Eye Vchr"
+          },
+          {
+            "name": "A 3rd/4th Playoff",
+            "winner": "Liam Eason",
+            "winnerPrize": "£50 Cash",
+            "runnerUp": "Dan Christopher",
+            "runnerUpPrize": "£25 Cash"
+          },
+          {
+            "name": "A Plate Mens",
+            "winner": "Chris Lovett",
+            "winnerPrize": "£50 Eye Vchr",
+            "runnerUp": "Adrian Brace",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "B Draw Mens",
+            "winner": "Richard Murphy",
+            "winnerPrize": "£50 Cash & £50 Eye Vchr",
+            "runnerUp": "Phil Thomas",
+            "runnerUpPrize": "£25 Eye Vchr"
+          },
+          {
+            "name": "B Plate Mens",
+            "winner": "Darren Thomas",
+            "winnerPrize": "£25 Eye Vchr",
+            "runnerUp": "Chris Emanuel",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "C Draw Mens",
+            "winner": "Chris D Jones",
+            "winnerPrize": "£25 Cash & £50 Eye Vchr",
+            "runnerUp": "Rob Griffin",
+            "runnerUpPrize": "£25 Eye Vchr"
+          },
+          {
+            "name": "C Plate Mens",
+            "winner": "Andrius Stancaitis",
+            "winnerPrize": "£25 Eye Vchr",
+            "runnerUp": "Jon Rifflart",
+            "runnerUpPrize": "Handshake"
+          },
+		      {
+            "name": "D Draw Mixed",
+            "winner": "Gary Declaire",
+            "winnerPrize": "£25 Cash & £50 Eye Vchr",
+            "runnerUp": "Richard Declaire",
+            "runnerUpPrize": "£25 Eye Vchr"
+          },
+          {
+            "name": "D Plate Mixed",
+            "winner": "Lewys Audsley",
+            "winnerPrize": "£25 Eye Vchr",
+            "runnerUp": "James Jones",
+            "runnerUpPrize": "Handshake"
+          },
+		      {
+            "name": "E Draw Mixed",
+            "winner": "Tony Jones",
+            "winnerPrize": "£15 & £50 Eye Vchr",
+            "runnerUp": "Josh Davies",
+            "runnerUpPrize": "£25 Eye Vchr"
+          },
+          {
+            "name": "E Plate Mixed",
+            "winner": "Gareth Jones",
+            "winnerPrize": "£25 Eye Vchr",
+            "runnerUp": "Serkan Aksin",
+            "runnerUpPrize": "Handshake"
+          }
+        ]
+      },
+      {
+        "year": "2016",
+        "entrants": "58",
+        "press_release": "Llantrisant Squash Open 2016 - Press Report.pdf",
+		"draw": [
+          {
+            "name": "A Draw Mens",
+            "pdf": "2016 Draws - Schedules - A event.pdf"
+          },
+	  {
+            "name": "B Draw Mixed",
+            "pdf": "2016 Draws - Schedules - B event.pdf"
+          },
+	  {
+            "name": "C Draw Mixed",
+            "pdf": "2016 Draws - Schedules - C event.pdf"
+          },
+	  {
+            "name": "D Draw Mixed",
+            "pdf": "2016 Draws - Schedules - D event.pdf"
+          }
+	],
+        "event": [
+          {
+            "name": "A Draw Mens",
+            "winner": "Joel Makin",
+            "winnerPrize": "£250 Cash",
+            "runnerUp": "David Haley",
+            "runnerUpPrize": "£50 Cash"
+          },
+          {
+            "name": "A Plate Mens",
+            "winner": "Lewis Poole",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Matt Lloyd Lewis",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "B Draw Mixed",
+            "winner": "Dave Godfrey",
+            "winnerPrize": "£50 Cash",
+            "runnerUp": "Liam Corrigan",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "B Plate Mixed",
+            "winner": "Rich Tailby",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Abby Hicks",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "C Draw Mixed",
+            "winner": "Dave Robertson",
+            "winnerPrize": "£25 Cash",
+            "runnerUp": "Rob Griffin",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "C Plate Mixed",
+            "winner": "Matthew Thomas",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Chris Jones",
+            "runnerUpPrize": "Handshake"
+          },
+		      {
+            "name": "D Draw Mixed",
+            "winner": "Josh Audsley",
+            "winnerPrize": "£25 Cash",
+            "runnerUp": "Wynne Owen",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "D Plate Mixed",
+            "winner": "Richard Declaire",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Lewys Audsley",
+            "runnerUpPrize": "Handshake"
+          }
+        ]
+      },
+      {
+        "year": "2015",
+        "entrants": "39",
+        "event": [
+          {
+            "name": "A Draw Mens",
+            "winner": "Dan Christopher",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Kieron Hillman",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "A Plate Mens",
+            "winner": "Adrian Brace",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Chris Emanuel",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "B Draw Mens",
+            "winner": "Rob Griffin",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Ryland Cooper",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "B Plate Mens",
+            "winner": "?",
+            "winnerPrize": "Handshake",
+            "runnerUp": "?",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "C Draw Mens",
+            "winner": "Chris Jones",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Wynne Owen",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "C Plate Mens",
+            "winner": "Chay Davies",
+            "winnerPrize": "Handshake",
+            "runnerUp": "?",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "Ladies Round Robin",
+            "winner": "Lynne Davies",
+            "winnerPrize": "Handshake",
+            "runnerUp": "Angharad Llewellyn",
+            "runnerUpPrize": "Handshake"
+          }
+        ]
+      }
+    ]
+  }
+}

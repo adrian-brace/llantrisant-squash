@@ -1,0 +1,48 @@
+<div>
+   <div class="pageHeading">
+      <table class='titleTable'>
+         <td>
+            <div class="team"><span class="noDisplay">Provisional Club Rankings</span></div>
+         </td>
+         <td>Provisional Club Rankings</td>
+      </table>
+   </div>
+   <div class="pageContent">
+	   <br/>
+	   <table>
+		   <tr>
+			   <td>
+				<div ng-include src='challenge_rules'></div>		
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>
+				<strong><a class='loneAnchor' href='./#/club_ranking_list'>Click To View Recent Season's Teams</a></strong>
+			   </td>			   
+			</tr>
+		</table>
+		<br/>
+		<div class='dataTable'>
+			<table class='dataTable'>	
+				<thead>
+					<tr>
+						<th></th>
+						<th>
+							<span class="negativeLight">Summer {{year}}</span>
+						</th>
+					</tr>
+					<tr>
+						<th>No.</th>
+						<th>Name</th>
+					</tr>
+				</thead>
+				<tbody>	
+					<tr ng-repeat='name in data.names track by $index'>
+						<td align='center'>{{ $index + 1 }}</td>
+						<td>{{ name.name }}</td>
+					</tr>
+				</tbody>			
+			</table>
+		</div>
+	</div>
+</div>

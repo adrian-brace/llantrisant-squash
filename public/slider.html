@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<div class="slides group-{{group}}">
+    <div ng-repeat="slide in slides">
+        <div ng-show="isCurrent($index)" class="slide slide-animation">
+            <p>{{imageTitle}}</p>
+            <div ng-repeat="item in slide" class="image">
+                <img ng-src="{{item.image}}" />
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <div class="navigation">
+            <a ng-click="prev()" class="prev">< Prev</a><a ng-click="next()" class="next">Next ></a>
+        </div>
+        <ul class="pagination">
+            <li ng-repeat="slide in slides" ng-click="setCurrent($index)">
+                <span>{{$index+1}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

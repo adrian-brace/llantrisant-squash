@@ -1,0 +1,87 @@
+<xml xmlns="http://www.w3.org/2000/10/XMLSchema">
+	<Teams>
+		<Team>
+			<Name>A</Name>
+			<TeamID>10</TeamID>
+			<DivisionID>2</DivisionID>
+			<DivisionName>Premier 2</DivisionName>
+			<CompetitionID>73</CompetitionID>
+			<Players>
+				<Player Name="Matthew Williams"/>
+				<Player Name="Jason Jones" IsCaptain="true"/>
+				<Player Name="Kieran Hillman"/>
+				<Player Name="Phil Thomas"/>
+				<Player Name="Chris Emanuel"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>B</Name>
+			<TeamID>19</TeamID>
+			<DivisionID>3</DivisionID>
+			<DivisionName>One East</DivisionName>
+			<CompetitionID>73</CompetitionID>
+			<Players>
+				<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
+				<Player Name="Craig Williams"/>
+				<Player Name="Ryan Phillips"/>
+				<Player Name="Jeff Greenslade" RefereeNumber="100467"/>
+				<Player Name="Martyn Christopher"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>C</Name>
+			<TeamID>55</TeamID>
+			<DivisionID>6</DivisionID>
+			<DivisionName>Three East</DivisionName>
+			<CompetitionID>73</CompetitionID>
+			<Players>
+				<Player Name="Chris Jones" RefereeNumber="101510"/>
+				<Player Name="Dan Webb"/>
+				<Player Name="Rob Mitchell"/>
+				<Player Name="Lee Francis" RefereeNumber="101514"/>
+				<Player Name="Nigel Bevan" RefereeNumber="101509" IsCaptain="true"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>D</Name>
+			<TeamID>79</TeamID>
+			<DivisionID>2</DivisionID>
+			<DivisionName>Mid Glam Two</DivisionName>
+			<CompetitionID>74</CompetitionID>
+			<Players>
+				<Player Name="Dan Povey"/>
+				<Player Name="Dave Jones" RefereeNumber="101573" WelshRankingID="68967"/>
+				<Player Name="Matthew Thomas" WelshRankingID="86287"/>
+				<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
+				<Player Name="Mark Morgan" RefereeNumber="100292"/>
+				<Player Name="Lloyd Newland"/>
+				<Player Name="Ben Howcroft"/>
+				<Player Name="Wynne Owen"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>E</Name>
+			<TeamID>89</TeamID>
+			<DivisionID>2</DivisionID>
+			<DivisionName>Mid Glam Two</DivisionName>
+			<CompetitionID>74</CompetitionID>
+			<Players>
+				<Player Name="Chay Davies-Smith"/>
+				<Player Name="Steve Evans"/>
+				<Player Name="Mike Lewis"/>
+				<Player Name="Amanda Barter" IsCaptain="true"/>
+				<Player Name="James Pickett"/>
+				<Player Name="Jack Penberthy"/>
+				<Player Name="Rowland Shalton"/>
+				<Player Name="Josh Davies" RefereeNumber="101022"/>
+				<Player Name="Ethan Williams" RefereeNumber="101512"/>
+				<Player Name="Erica Howcroft"/>
+				<Player Name="Patrick Civil"/>
+				<Player Name="Adam Howcroft"/>
+				<Player Name="Emma Jameson"/>
+				<Player Name="Keith McCarthy"/>
+				<Player Name="Dean Bromham" RefereeNumber="100142"/>
+			</Players>
+		</Team>
+	</Teams>
+</xml>

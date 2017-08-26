@@ -1,0 +1,79 @@
+<xml xmlns="http://www.w3.org/2000/10/XMLSchema">
+	<Teams>
+		<Team>
+			<Name>A</Name>
+			<Code>T00014</Code>
+			<DivisionCode>L00002</DivisionCode>
+			<DivisionName>Premier 2</DivisionName>
+			<LeagueID>1</LeagueID>
+			<TeamURL>http://leagues.horizonsolutions.tv//south-wales-leagues-winter-2015?view=team&amp;league=L00002&amp;team=T00014</TeamURL>
+			<Players>
+				<Player Name="Dan Christopher"/>
+				<Player Name="Matthew Williams"/>
+				<Player Name="Iwan James"/>
+				<Player Name="Phil Thomas"/>
+				<Player Name="Craig Williams"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>B</Name>
+			<Code>T00024</Code>
+			<DivisionCode>L00003</DivisionCode>
+			<DivisionName>One East</DivisionName>
+			<LeagueID>1</LeagueID>
+			<TeamURL>http://leagues.horizonsolutions.tv//south-wales-leagues-winter-2015?view=team&amp;league=L00003&amp;team=T00024</TeamURL>		
+			<Players>
+				<Player Name="Jason Jones"/>
+				<Player Name="Adrian Brace"/>
+				<Player Name="Ryan Phillips"/>
+				<Player Name="Chris Emanuel"/>
+				<Player Name="Dean Bromham"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>C</Name>
+			<Code>T00056</Code>
+			<DivisionCode>L00007</DivisionCode>
+			<DivisionName>Three East</DivisionName>
+			<LeagueID>1</LeagueID>
+			<TeamURL>http://leagues.horizonsolutions.tv//south-wales-leagues-winter-2015?view=team&amp;league=L00007&amp;team=T00056</TeamURL>		
+			<Players>
+				<Player Name="Dave Jones"/>
+				<Player Name="Rob Mitchel"/>
+				<Player Name="Martyn Christopher"/>
+				<Player Name="Lee Francis"/>
+				<Player Name="Nigel Bevan"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>D</Name>
+			<Code>T00018</Code>
+			<DivisionCode>L00003</DivisionCode>
+			<DivisionName>Mid Glam 3</DivisionName>
+			<LeagueID>2</LeagueID>
+			<TeamURL>http://leagues.horizonsolutions.tv//mid-glamorgan-league-winter-2015?view=team&amp;league=L00003&amp;team=T00018</TeamURL>		
+			<Players>
+				<Player Name="Matthew Thomas"/>
+				<Player Name="Chris Jones"/>
+				<Player Name="Rich Timms"/>
+				<Player Name="Lloyd Newland"/>
+				<Player Name="Mike Lewis"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>E</Name>
+			<Code>T00013</Code>
+			<DivisionCode>L00003</DivisionCode>
+			<DivisionName>Mid Glam 3</DivisionName>
+			<LeagueID>2</LeagueID>
+			<TeamURL>http://leagues.horizonsolutions.tv//mid-glamorgan-league-winter-2015?view=team&amp;league=L00003&amp;team=T00013</TeamURL>		
+			<Players>
+				<Player Name="Dan Webb"/>
+				<Player Name="Wynne Owen"/>
+				<Player Name="Amanda Barter"/>
+				<Player Name="Roland Shalton"/>
+				<Player Name="James Pickett"/>
+			</Players>
+		</Team>
+	</Teams>
+</xml>

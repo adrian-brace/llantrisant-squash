@@ -1,0 +1,183 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td>
+				<div class="ladders"><span class="noDisplay">Ladders</span></div>
+			</td>
+			<td>Ladders</td>
+		</table>
+	</div>
+	<div class="pageContent">
+		<br/>
+		<strong>
+			<a class="loneAnchor" ng-show="!showRules" ng-click="showHideRules();">Show Ladder Rules & Points System</a>
+			<a class="loneAnchor" ng-show="showRules" ng-click="showHideRules();">Hide Ladder Rules & Points System</a>
+		</strong>
+		<br/>
+		<br/>
+		<form name="form">
+			<div ng-show="showRules">
+				<p class="textParagraph">
+					<b>JOINING</b>: It is FREE to join. You do not need to be a club member to play on our ladders. Ladder cycles are approximately 6 weeks long depending on the time of year.
+					To join, simply write your name and telephone number on the board near the ladders at the back of the courts down at the leisure centre, and you will be added to the bottom of the next cycle.
+				</p>
+				<p class="textParagraph">
+					<b>RULES</b>: In your ladder there are normally 5 players (including yourself). The goal is to play as many players as you can in your ladder within the dates Start and End Date.
+					<br/>
+					<br/>
+					Best of 5 games. Players must agree scoring system. Generally you should play Point A Rally to 11 or 15. If no agreement then PAR to 15.
+					<br/>
+					The league points system is as follows:
+					<ul class='textParagraphList'>
+						<li class='textParagraphList'>If you win 3-0, your ladder points are 5-0</li>
+						<li class='textParagraphList'>If you win 3-1, your ladder points are 4-1</li>
+						<li class='textParagraphList'>If you win 3-2, your ladder points are 3-2</li>
+						<li class='textParagraphList'>If you lose 3-0, your ladder points are 0-5</li>
+						<li class='textParagraphList'>If you lose 3-1, your ladder points are 1-4</li>
+						<li class='textParagraphList'>If you lose 3-2, your ladder points are 2-3</li>
+						<li class='textParagraphList'>If you run out of time then both players are awarded 2½ points each, 2 ½-2 ½</li>
+					</ul>
+				</p>
+				<p class="textParagraph">
+					You are awarded points for playing your ladder games as follows:
+					<br/>
+					<ul class='textParagraphList'>
+						<li class='textParagraphList'>If you play all your ladder games, you get 8 points</li>
+						<li class='textParagraphList'>If you play three of your ladder games, you get 5 points</li>
+						<li class='textParagraphList'>If you play two your ladder games, you get 3 points</li>
+						<li class='textParagraphList'>If you play one of your ladder games, you get 1 point</li>
+					</ul>
+				</p>
+				<p class="textParagraph">
+					Promotion/Relegation
+					<ul class='textParagraphList'>
+						<li class='textParagraphList'>If you win your ladder you will be promoted up 2 divisions.</li>
+						<li class='textParagraphList'>If you finish second in your ladder you will be promoted up 1 division.</li>
+						<li class='textParagraphList'>If you finish second to last in your ladder you will be relegated down 1 division.</li>
+						<li class='textParagraphList'>If you finish last in your ladder you will be relegated down 2 divisions.</li>
+					</ul>
+				</p>
+				<p class="textParagraph">
+					<b>NOTE:</b> Failure to play any fixtures over a successive period of ladder cycles can result in you being removed from the ladder entirely.
+				</p>			
+			</div>
+			<div class="dataTable">
+				<table class="dataTable">
+					<thead>
+						<tr>
+							<th>Start</th>
+							<th>End</th>
+							<th>Days Left</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="text-align: center;">
+							<td ng-show='!admin'>{{ data.StartDate | date:'EEEE d MMMM' }} -</td>
+							<td ng-show='admin'><input type="text" ng-model="data.StartDate"/></td>
+							<td ng-show='!admin'><b>{{ data.EndDate | date:'EEEE d MMMM' }}</b></td>
+							<td ng-show='admin'><input type="text" ng-model="data.EndDate"/></td>
+							<td>
+								<span ng-class="{'positive': (daysRemaining > 14),
+									'concern': (daysRemaining <= 14 && daysRemaining >= 7),
+									'negativeLight': (daysRemaining <= 7)}"><span ng-show="daysRemaining >= 0"><b>{{ daysRemaining }}</b></span></span>
+								<span ng-show="daysRemaining === -1" class='negative'><b>N/A - NEW LADDERS WILL BE POSTED SOON</b></span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/>
+			<div ng-show='admin'>
+				<button ng-click="save();">Save</button>
+				<span ng-class="'negative'" ng-show="unSavedData">WARNING: Ladder data has not been saved!!!</span>
+				<span ng-class="'positive'" ng-show='saveStatus'>{{ saveStatus }}</span>
+			</div>
+			<div ng-show='daysRemaining >= 0'>
+				<table>
+					<td align="center">
+						<div class="squash">
+							<span class="noDisplay">Squash</span>
+						</div>
+						<h2 align="center">Squash</h2>
+						<div class="dataTable">
+							<span ng-show='admin'>
+								<button ng-click="extendLadder(true);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeSquash"/>
+								<br/>
+								<button ng-click="trimLadder(true);">Remove Bottom group</button>
+							</span>
+							<table style="width: 150px; padding-top: 5px;" class="dataTable" ng-repeat="ladder in data.Squash.Ladders.Ladder">
+								<thead>
+									<tr>
+										<th></th>
+										<th>
+											{{ ladder.Number }}
+										</th>
+										<th></th>
+									</tr>										
+								</thead>
+								<tbody>
+									<tr ng-repeat="name in ladder.Players.Name track by $index">
+										<td></td>
+										<td ng-show='!admin'>{{ name }}</td>
+										<td ng-show='admin'><input ng-model="ladder.Players.Name[$index]"/></td>
+										<td ng-show='admin'>
+											MOVE:
+											<button ng-show="ladder.Number < (data.Squash.Ladders.Ladder.length - 1)" ng-click="move('squash', 10, name);">+10</button>
+											<button ng-show="ladder.Number < (data.Squash.Ladders.Ladder.length)" ng-click="move('squash', 5, name);">+5</button>
+											<button ng-click="move('squash', 1, name);">+1</button>
+											<button ng-click="move('squash', -1, name);">-1</button>
+											<button ng-show="ladder.Number > 1" ng-click="move('squash', -5, name);">-5</button>
+											<button ng-show="ladder.Number > 2" ng-click="move('squash', -10, name);">-10</button>
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+					<td align="center" style="vertical-align: top; padding-left: 20px;">
+						<div class="racketball">
+							<span class="noDisplay">Squash 57</span>
+						</div>
+						<h2 align="center">Squash 57</h2>
+						<div class="dataTable">
+							<span ng-show='admin'>
+								<button ng-click="extendLadder(false);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeRacketball"/>
+								<br/>
+								<button ng-click="trimLadder(false);">Remove Bottom group</button>
+							</span>
+							<table style="width: 150px; padding-top: 5px;" class="dataTable" ng-repeat="ladder in data.Racketball.Ladders.Ladder">
+								<thead>
+									<tr>
+										<th></th>
+										<th>
+											{{ ladder.Number }}
+										</th>
+										<th></th>
+									</tr>										
+								</thead>
+								<tbody>
+									<tr ng-repeat="name in ladder.Players.Name track by $index">
+										<td></td>
+										<td ng-show='!admin'>{{ name }}</td>
+										<td ng-show='admin'><input ng-model="ladder.Players.Name[$index]"/></td>
+										<td ng-show='admin'>
+											MOVE:
+											<button ng-show="ladder.Number < (data.Racketball.Ladders.Ladder.length - 1)" ng-click="move(10, name);">+10</button>
+											<button ng-show="ladder.Number < (data.Racketball.Ladders.Ladder.length)" ng-click="move('racketball', 5, name);">+5</button>
+											<button ng-click="move('racketball', 1, name);">+1</button>
+											<button ng-click="move('racketball', -1, name);">-1</button>
+											<button ng-show="ladder.Number > 1" ng-click="move('racketball', -5, name);">-5</button>
+											<button ng-show="ladder.Number > 2" ng-click="move('racketball', -10, name);">-10</button>
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+				</table>
+			</div>
+		</form>
+	</div>
+</div>

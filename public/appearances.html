@@ -1,0 +1,189 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="appearances"><span class="noDisplay">Appearances</span></div></td>
+			<td>Appearances</td>
+		</table>
+	</div>
+	<br/>
+	<div class="pageContent">
+		<form ng-submit="submit()">
+			<div class="dataTable">
+				<table class="dataTable">
+					<thead>				
+						<tr>
+							<th>
+								Year
+							</th>
+							<th>
+								Season
+							</th>
+							<th>
+							</th>										
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<select name="yearSelect" id="yearSelect"
+									ng-options="year for year in years"
+									ng-model="yearSelection"
+									style="width: 70px">
+								</select>
+							</td>
+							<td>
+								<select name="seasonSelect" id="seasonSelect"
+									ng-options="season for season in seasons"
+									ng-model="seasonSelection"
+									style="width: 70px">
+								</select>
+							</td>
+							<td colspan="2" class='center'>
+								<input type="submit" id="submit" value="Update" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<table>
+				<td>
+					<div class="dataTable">
+						<table class="dataTable">
+							<thead>			
+								<tr>
+									<th colspan="{{getOptionsFor('team').length}}">
+										Team Filter
+									</th>
+									<th>
+										Player Filter
+									</th>
+								</tr>
+								<tr>
+									<th ng-repeat="opt in getOptionsFor('team')">
+										{{opt.slice(-1)}}
+									</th>
+									<th>
+										Hide Near Tied
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td ng-repeat="opt in getOptionsFor('team')" style='text-align:center;'>
+										<input type="checkbox" ng-model="filter['team'][opt]" />
+									</td>
+									<td style='text-align:center;'>
+										<input type="checkbox" ng-model="filter['isEligible'][true]" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="{{getOptionsFor('team').length}}">
+										<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
+									</td>
+									<td>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</td>
+				<td style="vertical-align: top;">
+					<div class="dataTable">
+						<table class="dataTable">
+							<thead>
+								<tr>
+									<th>
+									</th>
+									<th colspan="{{uniqueTeams(players).length - 2}}">
+										<span>Pull-ups Summary</span>
+									</th>
+									<th>
+									</th>
+								</tr>
+								<tr>
+									<th ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
+										<span>&nbsp;{{ team }}&nbsp;</span>								
+									</th>
+									<th>
+										Total
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style='text-align:center;' ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
+										<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">&nbsp;{{ getTotalPullUps(team) }}&nbsp;</span>
+									</td>
+									<td style='text-align:center;'>
+										<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">{{ getTotalPullUps() }}</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</td>
+			</form>
+		</table>
+		<div class="dataTable">
+			<table class="dataTable">
+				<thead>
+					<tr>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('playerRank')">Ranking</a>
+							<span ng-show="orderColumn == 'playerRank' && direction" class="down"/>
+							<span ng-show="orderColumn == 'playerRank' && !direction" class="up"/>
+						</th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('name')">Name</a>
+							<span ng-show="orderColumn == 'name' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'name' && !direction" class="up"></span>
+						</th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('appearances.length')">Total Played</a>
+							<span ng-show="orderColumn == 'appearances.length' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'appearances.length' && !direction" class="up"></span>					
+						</th>
+						<th ng-repeat="team in uniqueTeams(players)">{{team}}</th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('totalUpAppearances')">Played Up</a>
+							<span ng-show="orderColumn == 'totalUpAppearances' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'totalUpAppearances' && !direction" class="up"></span>
+						</th>
+						<th>
+							Status <button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Reset Data</button>
+						</th>
+					</tr>
+				</thead>
+				<tbody>	
+					<!-- LOOP OVER THE appearances IN $scope.appearances -->
+					<tr ng-repeat="player in filtered=(players | filter:filterByTeam) | orderBy:[orderColumn]:direction">
+						<td align="center">
+							{{player.playerRank}}
+						</td>
+						<td align="left">
+							{{player.name}}
+						</td>
+						<td align="center">
+							<span ng-show="player.appearances.length > 0">{{player.appearances.length}}</span>
+						</td>
+						<td ng-repeat="team in uniqueTeams(players)"
+							ng-class="{'positive': (player.team === team && teamAppearances(player.appearances, team) > 0), 'negativeLight': (player.team !== team && teamAppearances(player.appearances, team) > 0)}">
+							<span ng-show="teamAppearances(player.appearances, team) > 0">{{teamAppearances(player.appearances, team)}}</span>
+						</td>
+						<td align="center">
+							<span ng-show="player.totalUpAppearances > 0"
+							ng-class="{'positive': (player.totalUpAppearances < 3),
+										'concern': (player.totalUpAppearances === 3),
+										'negativeLight': (player.totalUpAppearances >= 4)}">{{player.totalUpAppearances}}</span>
+						</td>
+						<td>
+							<span ng-show="player.totalUpAppearances === 3" class="concern">ONE BEFORE BEING TIED</span>
+							<span ng-show="player.totalUpAppearances === 4" class="negativeLight">TIED ON NEXT PLAY UP</span>
+							<span ng-show="player.totalUpAppearances >= 5" class="negativeLight"><strong>PLAYER IS TIED</strong></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

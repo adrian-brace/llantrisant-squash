@@ -1,0 +1,94 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="about_us"><span class="noDisplay">About Us</span></div></td>
+			<td>About Us</td>
+		</table>
+	</div>
+	<div class="pageContent">
+		<div class="textParagraph">
+			<ul>
+				<li><a class="loneAnchor" ng-click="scrollTo('introduction')">Introduction</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('how_are_we_run')">How are we run?</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('booking_a_court')">Booking a Court</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('leisure_centre_membership')">Leisure Centre Membership</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('ladders')">Ladders</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('league_squash')">League Squash</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('club_membership')">Club Membership</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('juniors')">Juniors</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('rankings')">Rankings</a></li>
+				<li><a class="loneAnchor" ng-click="scrollTo('league_match_fees')">League Match Fees</a></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="titleLevel2" id="introduction">Introduction</h3>
+			<p class="textParagraph">
+				We are a thriving, friendly and sociable club and we always welcome new members of all ages and abilities.
+				We now hold an annual Open squash tournament each June that is on the <a class="loneAnchor" href='http://www.walessquashandracketball.co.uk/'>Squash Wales</a> calendar, and we
+				try to hold a variety of fun events throughout the year (e.g. racketball tournament nights, curry nights, charity cycles, golf tournaments, squash tour weekend away, etc), as well as popping to the pub for the occasional pint.
+			</p>
+			<h3 class="titleLevel2" id="how_are_we_run">How are we run?</h3>
+			<p class="textParagraph">
+				The club is privately run and organised by a small committee, but squash is played on the courts at <a class="loneAnchor" href='http://www2.rctcbc.gov.uk/en/leisure/findacentre/llantrisantleisurecentre/llantrisantleisurecentre.aspx'>Llantrisant Leisure Centre</a> which is owned and run by <a class="loneAnchor" href='http://www.rctcbc.gov.uk/'>Rhondda Cynon Taf Council</a>.
+			</p>
+			<h3 class="titleLevel2" id="booking_a_court">Booking a Court</h3>
+			<p class="textParagraph">
+				All court bookings for private play are managed and paid for through the <a class="loneAnchor" href='http://www2.rctcbc.gov.uk/en/leisure/findacentre/llantrisantleisurecentre/llantrisantleisurecentre.aspx'>Llantrisant Leisure Centre</a> reception, but if you are a monthly paying leisure centre member
+				then you can use the RCT Leisure For Life <a class="loneAnchor" href='https://leisure.rctcbc.gov.uk/connect/mrmlogin.aspx'>on-line booking facility</a> for any activity, not just squash. Squash court slots are for 45 minutes.
+			</p>
+			<h3 class="titleLevel2" id="leisure_centre_membership">Leisure Centre Membership</h3>
+			<p class="textParagraph">
+				A Monthly <a class="loneAnchor" href='http://www2.rctcbc.gov.uk/en/leisure/joinandsave/joinandsave.aspx'>Leisure For Life membership</a> is available through the <a  class="loneAnchor" href='http://www2.rctcbc.gov.uk/en/leisure/findacentre/llantrisantleisurecentre/llantrisantleisurecentre.aspx'>Leisure Centre</a> and entitles you to book and use activities at any of the <a class="loneAnchor" href='http://www2.rctcbc.gov.uk/en/leisure/findacentre/findaleisurecentre.aspx'>RCT leisure centres</a>.
+				Your half of the Squash court fee is <b>FREE</b> if you pay monthly. 
+			</p>
+			<h3 class="titleLevel2" id="ladders">Ladders</h3>
+			<p class="textParagraph">
+				We have a large, active <a class="loneAnchor" href='./#/ladders'>ladder</a> for Squash and Racketball which is <b>FREE</b> to join and the dates/list are available to view on-line. You do not need to be a club member to play on our ladders. Ladder cycles are approximately 6 weeks long depending on the time of year.
+				To join, simply write your name and telephone number on the board near the ladders at the back of the courts down at the leisure centre, and you will be added to the bottom of the next cycle.
+			</p>
+			<h3 class="titleLevel2" id="league_squash">League Squash</h3>
+			<p class="textParagraph">
+				We have 5 teams spanning many divisions and levels in the <a class="loneAnchor" href='http://walessquash.countyleagues.co.uk/'>South Wales and Mid Glamorgan leagues</a> that are run by <a class="loneAnchor" href='http://www.walessquashandracketball.co.uk/'>Squash Wales</a>.
+			</p>
+			<ul class="noBulletList">
+				<li class="textParagraphList" ng-repeat='team in teams'>
+					<strong>{{ team.teamName }}</strong> - <a class="loneAnchor" href="{{ team.teamUrl }}">{{ team.divisionName }}</a>
+				</li>
+			</ul>
+			<p class="textParagraph">
+				The League Season runs approximately September to April, split into Winter and Spring seasons which have promotion/relegation changes between those seasons.
+				We have a club rule that if you wish to play for a Llantrisant league team, then you are not permitted to play for another club in the league.
+				Home matches for each team are on a fixed night, but away matches outside Premier A could be on any night.
+			</p>
+			<ul>
+				<li class="textParagraphList" id="club_membership">Club Membership</li>
+			</ul>
+			<p class="textParagraph">
+				An annual membership fee is charged to <b>adult league players only</b>. Membership is <b>FREE for juniors and students</b>.
+				The Membership fee is approximately £60 per annum, decided upon by the committee each year, and goes towards team registration costs with <a class="loneAnchor" href='http://www.walessquashandracketball.co.uk/'>Squash Wales</a> and balls.  
+			</p>
+			<ul>
+				<li class="textParagraphList" id="juniors">Juniors</li>
+			</ul>
+			<p class="textParagraph">
+				Junior coaching sessions are run by fully qualified coaches on weekend mornings. <a class="loneAnchor" href='./#/coaching'>See more details of junior coaching</a>. We also allow and would actively encourage the more confident juniors to participate in the competitive adult league season within our teams, to get good league squash experience and help develop their game.
+			</p>
+			<ul>
+				<li class="textParagraphList" id="rankings">Rankings</li>
+			</ul>
+			<p class="textParagraph">
+				The ranking committee is made up of captains and committee members and decides on the <a class="loneAnchor" href='./#/club_ranking_list'>rankings</a> for league teams. A club ranking list is created and published at the beginning of the summer, during which a challenge process is activated.
+				Then the final club rankings are decided upon in time for submission to <a class="loneAnchor" href='http://www.walessquashandracketball.co.uk/'>Squash Wales</a> before the Winter Season begins. <a class="loneAnchor" href='./#/club_ranking_list'>Rankings</a> can be revised during the season within individual teams but only if agreed with Squash Wales.
+				You will not be ranked unless you have paid your annual membership fee where applicable.
+			</p>
+			<ul>
+				<li class="textParagraphList" id="league_match_fees">League Match Fees</li>
+			</ul>
+			<p class="textParagraph">
+				The cost of hosting HOME League matches comprises of <b>court time hire</b> from the leisure centre (2 courts all evening from 19:15 onwards) and <b>catering costs</b> to feed both teams.
+				These costs are charged to team players who play each home and away fixture as a match fee on the night. The amount charged is at the captain's discretion and depends on catering arrangements and court fees for that given season.
+				The match fees charged to Juniors/Students will be at a reduced rate and the club will make up the difference. Players who play "up" for a team who have another match for their own team within the same week will also be charged a reduced rate for the match fee.
+			</p>
+		</div>
+	</div>
+</div>

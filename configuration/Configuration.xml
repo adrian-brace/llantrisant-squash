@@ -1,0 +1,72 @@
+<xml xmlns='http://www.w3.org/2000/10/XMLSchema'>
+	<Constants>
+		<Club>Llantrisant</Club>
+		<DivisionURL>?view=league&amp;league=%s</DivisionURL>
+		<LeagueHomePage>http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/</LeagueHomePage>
+		<CompetitionsDirectory>competitions</CompetitionsDirectory>
+		<FixturesDirectory>fixtures</FixturesDirectory>
+		<TeamPlayerListsDirectory>team_player_lists</TeamPlayerListsDirectory>
+		<TeamResultsDirectory>team_results</TeamResultsDirectory>
+		<PlayerResultsURL>showplayer?playerid=%s&amp;player=%s</PlayerResultsURL>
+		<PlayersDirectory>players</PlayersDirectory>
+		<PointDividerPerRank>40</PointDividerPerRank>
+		<PointsForALoss>0</PointsForALoss>
+		<PointsForAWin>10</PointsForAWin>
+		<PointsForAnAppearance>1</PointsForAnAppearance>
+		<PointsForPlayingUp>1</PointsForPlayingUp>
+		<TeamsDirectory>teams</TeamsDirectory>
+		<TeamListForCompetition>showteamlist</TeamListForCompetition>
+		<TeamsListURL>showclub?clubid=%s&amp;st=1</TeamsListURL>
+		<TeamURL>showteamfixtures?divisionid=%s&amp;teamid=%s&amp;competitionid=%s</TeamURL>
+		<MatchDetailsURL>showmatch?fixtureid=%s&amp;divid=%s&amp;competitionid=%s</MatchDetailsURL>
+		<DivisionStandingsURL>showdivision?divisionid=%s</DivisionStandingsURL>
+		<WelshRankingsURL>http://www.wales.squashlevels.com/players.php?all=&amp;wales=&amp;start=%s</WelshRankingsURL>
+		<SubmitLeagueResultsURL>http://walessquash.countyleagues.co.uk/</SubmitLeagueResultsURL>
+		<TournamentStage>OVER</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
+	</Constants>
+	<Leagues>
+		<League Name="South Wales"/>
+		<League Name="Mid Glamorgan"/>
+	</Leagues>
+	<Links>
+		<SquashWales>
+			<Link Name="Squash Wales (New Site)" URL="http://www.walessquashandracketball.co.uk/"/>
+			<Link Name="Squash Wales (Old Site)" URL="http://www.squashwales.co.uk/"/>			
+		</SquashWales>
+		<Rankings>
+			<Link BulletClass='llantrisant' Name="Llantrisant Rankings" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=2305&county=all&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
+			<Link BulletClass='regional' Name="Mid Glam Rankings" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=78&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search="/>
+			<Link BulletClass='regional' Name="South Glam Rankings" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=68&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
+			<Link BulletClass='regional' Name="South Wales Rankings" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=105&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
+			<Link BulletClass='welsh' Name="Welsh National Rankings" URL="http://www.wales.squashlevels.com/players.php?all=&wales"/>
+			<Link BulletClass='english' Name="English National Rankings" URL="http://www.squashplayer.co.uk/rankings/englishrankings.htm"/>
+			<Link BulletClass='psa' Name="World PSA Rankings" URL="http://www.worldsquash.org/ws/?page_id=1706"/>
+		</Rankings>
+		<Clubs>
+			<Club>
+				<Name>Cardiff Rackets</Name>
+				<HomePage>http://www.cardiffsrc.com/</HomePage>
+				<Twitter></Twitter>
+				<Facebook></Facebook>
+			</Club>
+			<Club>
+				<Name>Llantrisant</Name>
+				<HomePage>http://llantrisant-squashclub.rhcloud.com</HomePage>
+				<Twitter>https://twitter.com/llansquashclub</Twitter>
+				<Facebook>https://www.facebook.com/groups/389158627953763/</Facebook>
+			</Club>
+			<Club>
+				<Name>Newport</Name>
+				<HomePage>http://newportsquashclub.org.uk/</HomePage>
+				<Twitter></Twitter>
+				<Facebook></Facebook>
+			</Club>
+			<Club>
+				<Name>Rhiwbina</Name>
+				<HomePage>http://www.rhiwbinasquashclub.co.uk/</HomePage>
+				<Twitter></Twitter>
+				<Facebook></Facebook>
+			</Club>
+		</Clubs>
+	</Links>
+</xml>

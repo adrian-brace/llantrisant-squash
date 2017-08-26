@@ -1,0 +1,93 @@
+<xml xmlns="http://www.w3.org/2000/10/XMLSchema">
+	<Teams>
+		<Team>
+			<Name>A</Name>
+			<Code>T00014</Code>
+			<DivisionCode>L00013</DivisionCode>
+			<DivisionName>Premier 1</DivisionName>
+			<LeagueID>1</LeagueID>
+			<TeamURL>http://leagues.horizonsolutions.tv//south-wales-leagues-spring-2016?view=team&amp;league=L00013&amp;team=T00014</TeamURL>
+			<Players>
+				<Player Name="Dan Christopher" County="MID"/>
+				<Player Name="Matthew Williams" County="MID" WelshRankingName="Matthew Williams [the Vale]"/>
+				<Player Name="Iwan James" County="SOU"/>
+				<Player Name="Phil Thomas" County="SOU" WelshRankingName="Phil Thomas [llantrisant]"/>
+				<Player Name="Craig Williams" County="MID"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>B</Name>
+			<Code>T00015</Code>
+			<DivisionCode>L00015</DivisionCode>
+			<DivisionName>One East</DivisionName>
+			<LeagueID>1</LeagueID>
+			<TeamURL>http://leagues.horizonsolutions.tv//south-wales-leagues-spring-2016?view=team&amp;league=L00015&amp;team=T00015</TeamURL>		
+			<Players>
+				<Player Name="Jason Jones" County="MID" WelshRankingName="Jason Jones [llantrisant]"/>
+				<Player Name="Adrian Brace" County="SOU"/>
+				<Player Name="Ryan Phillips" County="MID"/>
+				<Player Name="Dean Bromham" County="MID"/>
+				<Player Name="Jeff Greenslade" County="GWE"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>C</Name>
+			<Code>T00129</Code>
+			<DivisionCode>L00023</DivisionCode>
+			<DivisionName>Mid Glamorgan 1</DivisionName>
+			<LeagueID>2</LeagueID>	
+			<TeamURL>http://leagues.horizonsolutions.tv//mid-glamorgan-leagues-spring-2016?view=team&amp;league=L00023&amp;team=T00129</TeamURL>	
+			<Players>
+				<Player Name="Chris Emanuel" County="MID"/>
+				<Player Name="Dave Jones" County="MID" WelshRankingName="Dave Jones [llantrisant]"/>
+				<Player Name="Rob Mitchel" County="MID" WelshRankingName="Robert Mitchel"/>
+				<Player Name="Martyn Christopher" County="MID" WelshRankingName="Martin Christopher"/>
+				<Player Name="Matthew Thomas" County="MID" WelshRankingName="Matthew Thomas [porthcawl]"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>D</Name>
+			<Code>T00135</Code>
+			<DivisionCode>L00024</DivisionCode>
+			<DivisionName>Mid Glamorgan 2</DivisionName>
+			<LeagueID>2</LeagueID>	
+			<TeamURL>http://leagues.horizonsolutions.tv//mid-glamorgan-leagues-spring-2016?view=team&amp;league=L00024&amp;team=T00135</TeamURL>		
+			<Players>
+				<Player Name="Lee Francis" County="MID"/>
+				<Player Name="Nigel Bevan" County="MID"/>
+				<Player Name="Chris Jones" County="MID"/>
+				<Player Name="Rich Timms" County="MID"/>
+				<Player Name="Lloyd Newland" County="MID"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>E</Name>
+			<Code>T00139</Code>
+			<DivisionCode>L00025</DivisionCode>
+			<DivisionName>Mid Glamorgan 3</DivisionName>
+			<LeagueID>2</LeagueID>	
+			<TeamURL>http://leagues.horizonsolutions.tv//mid-glamorgan-leagues-spring-2016?view=team&amp;league=L00025&amp;team=T00139</TeamURL>	
+			<Players>
+				<Player Name="Mike Lewis" County="MID"/>
+				<Player Name="Dan Webb" County="MID"/>
+				<Player Name="Wynne Owen" County="MID" WelshRankingName="Wyn Owen"/>
+				<Player Name="Steve Evans" County="MID" WelshRankingName="Steve Evans"/>
+				<Player Name="Amanda Barter" WelshRankingName="NONE"/>
+				<Player Name="Roland Shalton" County="MID"/>
+				<Player Name="James Pickett" County="MID"/>
+				<Player Name="Naomi Jones" WelshRankingName="NONE"/>
+				<Player Name="John Giles" County="SOU"/>
+				<Player Name="Steve May" County="MID"/>
+				<Player Name="Craig Hughes" County="MID"/>
+				<Player Name="Bob Williams" County="MID"/>
+				<Player Name="Mark Harris" County="MID"/>
+				<Player Name="Rhys Gooch" County="MID"/>
+				<Player Name="Ben Highcroft" County="MID"/>
+				<Player Name="Jack Penberthy" County="MID"/>
+				<Player Name="Ethan Williams" County="MID"/>
+				<Player Name="Josh Davies" County="MID"/>
+				<Player Name="Emma Jameson" WelshRankingName="NONE"/>
+			</Players>
+		</Team>
+	</Teams>
+</xml>

@@ -1,0 +1,85 @@
+<div>
+   <div class="pageHeading">
+      <table class='titleTable'>
+         <td>
+            <div class="www"><span class="noDisplay">Links</span></div>
+         </td>
+         <td>Links</td>
+      </table>
+   </div>
+   <div class="pageContent">
+	   <div class="dataTable">
+		   <table class="dataTable" style="width: 230px;" ng-show="configuration.LINKS.SQUASHWALES.LINK.length > 0">
+				<thead>
+					<tr>
+						<th>
+							<div class="squashWales"><span class='noDisplay'>Squash Wales</span></div>
+						</th>
+						<th class='titleLevel2'>Squash Wales</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<ul class='noBulletList'>
+								<li ng-repeat='link in configuration.LINKS.SQUASHWALES.LINK'>
+									<a class="tableCellAnchor" href="{{ link.url }}">{{ link.name }}</a>
+								</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<table class="dataTable" style="width: 230px;" ng-show="configuration.LINKS.CLUBS.CLUB.length > 0">
+				<thead>
+					<tr>
+						<th>
+							<div class="squashClub"><span class='noDisplay'>Squash Clubs</span></div>
+						</th>
+						<th class='titleLevel2'>Squash Clubs</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<ul class='noBulletList'>
+								<li ng-repeat='club in configuration.LINKS.CLUBS.CLUB'>
+									<a class="tableCellAnchor" ng-show="club.NAME !== clubName" href="{{ club.HOMEPAGE }}">{{ club.NAME }}</a>
+								</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<table class="dataTable" style="width: 230px;" ng-show="club.OTHERS.LINK.length > 0">
+				<thead>
+					<tr>
+						<th>
+							<div class="www"><span class='noDisplay'>Other Links</span></div>
+						</th>
+						<th class='titleLevel2'>Other Links</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<ul class='noBulletList'>
+								<li ng-repeat='link in club.OTHERS.LINK'>
+									<a class="tableCellAnchor" href="{{ link.url }}">{{ link.name }}</a>
+								</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

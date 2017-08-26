@@ -1,0 +1,90 @@
+<div class="pageHeading">
+	<table class='titleTable'>
+		<td><div class="fixtures"><span class="noDisplay">Fixtures</span></div></td>
+		<td>Fixtures - {{ season }} {{ year }}</td>
+	</table>
+</div>
+<div class="pageContent">
+	<br/>
+	<div class="dataTable" ng-show="fixtures[0] != null">
+		<table class="dataTable">
+			<thead>			
+				<tr>
+					<th colspan="{{getOptionsFor('team', true).length }}">
+						Team Filter
+					</th>
+					<th colspan="2">
+						Location Filter
+					</th>
+				</tr>
+				<tr>
+					<th ng-repeat="opt in getOptionsFor('team', true)">
+						{{opt.slice(-1)}}
+					</th>
+					<th ng-repeat="opt in getOptionsFor('isHome', true)">
+						<span ng-show="opt">Home</span>
+						<span ng-show="!opt">Away</span>				
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td ng-repeat="opt in getOptionsFor('team', true)" style='text-align:center;'>
+						<input type="checkbox" ng-model="filter['team'][opt]" />
+					</td>
+					<td style='text-align:center;' ng-repeat="opt in getOptionsFor('isHome', true)">
+						<input type="checkbox" ng-model="filter['isHome'][opt]" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="{{getOptionsFor('team', true).length}}">
+						<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
+					</td>
+					<td colspan="2">
+						<div class='clashClass'><small>Red = Fixture clash</small></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="warningMessage" ng-show="filtered=(fixtures | filter:filterByTeam).length == 0">
+		No fixtures found
+	</p>
+	<div class="dataTable">
+		<table class="dataTable" ng-show="filtered=(fixtures | filter:filterByTeam)[0] != null">
+			<thead>
+				<tr>
+					<th align="center">
+						<a class='sortAnchor' href="" ng-click="sort('date')">Date</a>
+						<span ng-show="orderColumn == 'date' && direction" class="down"></span>
+						<span ng-show="orderColumn == 'date' && !direction" class="up"></span>
+					</th>
+					<th>Home Team</th>
+					<th>&nbsp;</th>
+					<th>Away Team</th>
+					<th>Time</th>
+				</tr>
+			</thead>
+			<tbody>						
+				<!-- LOOP OVER THE fixtures IN $scope.fixtures -->
+				<tr ng-repeat="fixture in filtered=(fixtures | filter:filterByTeam) | orderBy:[orderColumn]:direction">
+					<td align="left" ng-class="{'clashClass': fixture.isClash}">
+						{{fixture.date | date:'EEEE d MMMM'}}
+					</td>
+					<td align="right">
+						<strong ng-show="fixture.homeTeam === fixture.team" ng-class="{'clashClass': fixture.isClash}"><a class='tableCellAnchor' href='{{fixture.teamURL}}'>{{fixture.homeTeam}}</a></strong>
+						<div ng-show="fixture.homeTeam !== fixture.team">{{fixture.homeTeam}}</div>
+					</td>
+					<td align="center">vs.</td>
+					<td>
+						<strong ng-show="fixture.awayTeam === fixture.team" ng-class="{'clashClass': fixture.isClash}"><a class='tableCellAnchor' href='{{fixture.teamURL}}'>{{fixture.awayTeam}}</a></strong>
+						<div ng-show="fixture.awayTeam !== fixture.team">{{fixture.awayTeam}}</div>
+					</td>
+					<td align="center">
+						{{fixture.time}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

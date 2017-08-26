@@ -1,0 +1,44 @@
+<html ng-app="homeApp" ng-controller="HomeController">
+	<head>
+		<!-- META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+		<meta name="description" content="We are a thriving, friendly and sociable squash/squash 57/racketball club based in South Wales and we welcome new members of all ages and abilities.">
+		<title>Llantrisant Squash and Squash 57 Club - Official Site</title>
+		<!-- STYLING -->
+		<link rel="stylesheet" href="./public/css/master.css" type="text/css" />
+		<link rel="stylesheet" href="./public/css/images.css" type="text/css" />
+		<link rel="stylesheet" href="./public/css/gallery.css" type="text/css" />
+
+		<!-- JAVASCRIPT/ANGULAR -->
+		<script src="./public/jquery/jquery.min.js"></script>
+		<script src="./public/angular/angular.min.js"></script>
+		<script src="./public/angular/angular-route.min.js"></script>
+		<!-- COMMON/SHARED -->
+		<script src="./public/scripts/shared_functions.js"></script>
+		<!-- HOME -->
+		<script src="./public/scripts/home.js"></script>
+		<!-- SERVICES -->
+		<script src="./public/scripts/services/xmlToJson.js"></script>
+		<script src="./public/scripts/services/clubConfiguration.js"></script>
+		<script src="./public/scripts/services/configuration.js"></script>
+		<script src="./public/scripts/services/club.js"></script>
+		<!-- FEATURE PAGES -->
+		<script src="./public/scripts/appearances.js"></script>
+		<script src="./public/scripts/fixtures.js"></script>
+		<script src="./public/scripts/ladders.js"></script>
+		<script src="./public/scripts/rankings.js"></script>
+		<script src="./public/scripts/club_ranking_list.js"></script>
+		<script src="./public/scripts/club_ranking_list_provisional.js"></script>
+		<script src="./public/scripts/team_standings.js"></script>
+		<script src="./public/scripts/tournament.js"></script>
+		<script src="./public/scripts/welsh_rankings.js"></script>
+		<script src="./public/scripts/tournament_gallery.js"></script>
+    
+	</head>
+	<body>
+		<div ng-include src='header' class='tournamentHeader'></div>
+		<!-- Angular Templating - This is where content will be injected -->
+		<div ng-view />
+	</body>
+</html>

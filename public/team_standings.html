@@ -1,0 +1,92 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="team_standings"><span class="noDisplay">Team Standings</span></div></td>
+			<td>Team Standings - {{ season }} {{ year }}</td>
+		</table>
+	</div>
+	<div class="pageContent">
+		<div class="dataTable">
+			<table class="dataTable">
+				<thead>			
+					<tr>
+						<th>
+						</th>
+						<th colspan="{{getOptionsFor('team').length - 2}}">
+							Team Filter
+						</th>
+						<th>
+						</th>
+					</tr>
+					<tr>
+						<th ng-repeat="opt in getOptionsFor('team')">
+							{{opt.slice(-1)}}
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td ng-repeat="opt in getOptionsFor('team')" style='text-align:center;'>
+							<input type="checkbox" ng-model="filter['team'][opt]" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td colspan="{{getOptionsFor('team').length - 2}}">
+							<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br/>
+		<!-- LOOP OVER THE teams IN $scope.teams -->		
+		<div class="dataTable" ng-repeat="team in filtered=(teams | filter:filterByTeam)">
+			<table class="dataTable">
+				<thead>				
+					<tr>
+						<th colspan="2" style="width: 175px;">
+							{{ team.team }}
+						</th>
+						<th colspan="8">
+							{{ team.position.ordinalSuffixOf() }} of {{team.standings.length}} in... <a  class="sortAnchor" target="_blank" href="{{ team.teamStandingsURL }}">&nbsp;&nbsp;&nbsp;{{ team.divisionName }}</a>
+						</th>
+					</tr>
+					<tr>
+						<th></th>
+						<th>Team</th>
+						<th>P</th>
+						<th>W</th>
+						<th>L</th>
+						<th>D</th>
+						<th>F</th>
+						<th>A</th>
+						<th>Pen</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="standing in team.standings"
+					ng-class="{'goodPosition': (team.team === standing.team && team.position <= 3),
+								'badPosition': (team.team === standing.team && (team.standings.length - team.position) <= 2),
+								'okPosition': (team.team === standing.team && team.position > 3 && (team.standings.length - team.position) > 2)}">
+						<td>{{standing.position}}</td>
+						<td>{{standing.team}}</td>
+						<td>{{standing.played}}</td>
+						<td>{{standing.won}}</td>
+						<td>{{standing.lost}}</td>
+						<td>{{standing.drawn}}</td>
+						<td>{{standing.for}}</td>
+						<td>{{standing.against}}</td>
+						<td>{{standing.penaltyPoints}}</td>
+						<td>{{standing.totalPoints}}</td>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+		</div>
+	</div>
+</div>

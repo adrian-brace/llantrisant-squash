@@ -1,0 +1,60 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="tournament_history"><span class="noDisplay">Tournament History</span></div></td>
+			<td>Tournament History</td>
+		</table>
+	</div>
+	<div class="pageContent">
+		<div ng-include src='tournament_header'></div>
+		<br/>
+		<br/>
+		<br/>
+		<div ng-repeat="tournament in tournamentHistory">
+			<table>
+				<tr>
+					<td>				
+						<div class='datatable'>					
+							<table class='datatable'>
+								<thead>
+									<tr>
+										<th style="text-align: left;" colspan="{{tournament.draw.length - 1}}">{{ tournament.year }} - Entrants: <strong class="warningMessage">{{ tournament.entrants }}</strong> <b ng-show='tournament.press_release'>- <a class="sortAnchor" target="_blank" href='./public/tournament_draw/{{ tournament.press_release }}'>Press Release</a></b></th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td ng-repeat="draw in tournament.draw"><a class="tableCellAnchor" target="_blank" href='./public/tournament_draw/{{ draw.pdf }}'>{{ draw.name }}</a></td>										
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class='datatable'>
+							<table>
+								<thead>
+									<tr>
+										<th>Event</th>
+										<th>Winner</th>
+										<th>Winner Prize</th>
+										<th>Runner-Up</th>
+										<th>Runner-Up Prize</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="event in tournament.event" ng-class="{'lastRow': $last, 'notLastRow': !$last}">
+										<td>{{ event.name }}</td>
+										<td><b>{{ event.winner }}</b></td>
+										<td>{{ event.winnerPrize }}</td>
+										<td><b>{{ event.runnerUp }}</b></td>
+										<td>{{ event.runnerUpPrize }}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<br/>
+		</div>
+	</div>
+</div>

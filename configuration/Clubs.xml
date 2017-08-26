@@ -1,0 +1,71 @@
+<xml xmlns='http://www.w3.org/2000/10/XMLSchema'>
+	<Clubs>
+		<Club>
+			<Name>Llantrisant</Name>
+			<BookACourt>https://leisure.rctcbc.gov.uk/connect/mrmlogin.aspx</BookACourt>
+			<Facebooks pageFeed="">
+				<Link name="Like our Page" url="https://www.facebook.com/LlantrisantSquash/" />
+				<Link name="Join our Group" url="https://www.facebook.com/groups/389158627953763/" />
+			</Facebooks>
+			<Twitters>
+				<Link name="@llansquashclub" url="https://twitter.com/llansquashclub" />
+				<Link name="@sqwales" url="https://twitter.com/sqwales" />
+			</Twitters>
+			<Others>
+				<Link name="Pitch Hero" url="http://www.pitchero.com/clubs/llantrisantsquashclub/" />
+				<Link name="Llantrisant Leisure Centre" url="http://www2.rctcbc.gov.uk/en/leisure/findacentre/llantrisantleisurecentre/llantrisantleisurecentre.aspx" />
+				<Link name="RCT Council" url="http://www.rctcbc.gov.uk/" />
+			</Others>
+			<Contacts>
+				<Email>apbmole@gmail.com</Email>
+				<Telephone name="" number=""/>
+				<Twitter>https://twitter.com/llansquashclub</Twitter>
+				<Facebook>https://www.facebook.com/groups/389158627953763/</Facebook>
+			</Contacts>
+			<Sponsors>
+				<Sponsor name="Jordan Civils" url="http://www.jordancivilsltd.co.uk/" icon="sponsor_jordan_civils"/>
+				<Sponsor name="Merch Asylum" url="http://www.merchasylum.co.uk/" icon="sponsor_merch_asylum"/>
+				<Sponsor name="Eye Rackets" url="http://www.eyerackets.co.uk/" icon="sponsor_eye_rackets"/>
+				<Sponsor name="St Clares School" url="https://www.stclares-school.co.uk/" icon="sponsor_st_clares"/>
+				<Sponsor name="Squash Wales" url="http://www.walessquashandracketball.co.uk/" icon="sponsor_squash_wales"/>
+			</Sponsors>
+			<Address>
+				<AddressLine1>Llantrisant Leisure Centre</AddressLine1>
+				<AddressLine2>Southgate Park</AddressLine2>
+				<AddressLine3>Llantrisant</AddressLine3>
+				<AddressLine4>Rhondda Cynon Taf</AddressLine4>
+				<AddressLine5>CF72 8DJ</AddressLine5>
+				<ContactTelNumber>01443 224616</ContactTelNumber>
+			</Address>
+		</Club>
+		<Club>
+			<Name>Newport</Name>
+			<BookACourt></BookACourt>
+			<Facebooks>
+				<!--<Link>
+					<Name></Name>
+					<URL></URL>
+				</Link>-->
+			</Facebooks>
+			<Twitters>
+				<!--<Link>
+					<Name></Name>
+					<URL></URL>
+				</Link>-->
+			</Twitters>
+			<Others>
+				<!--<Link>
+					<Name></Name>
+					<URL></URL>
+				</Link>-->
+			</Others>
+			<Contacts>
+				<Email></Email>
+				<Telephone name="" number=""/>
+				<Twitter></Twitter>
+				<Facebook></Facebook>
+			</Contacts>
+			<Sponsors/>
+		</Club>
+	</Clubs>
+</xml>

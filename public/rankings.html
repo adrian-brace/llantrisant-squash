@@ -1,0 +1,344 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="upAndDown"><span class="noDisplay">Ranking</span></div></td>
+			<td>League Performance Rankings</td>
+		</table>
+	</div>
+	<br/>
+	<div class="pageContent">
+		<form ng-submit="submit()">
+			<div class="dataTable">
+				<table class="dataTable">
+					<thead>				
+						<tr>
+							<th>
+								Year
+							</th>
+							<th>
+								Season
+							</th>
+							<th>
+							</th>										
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<select name="yearSelect" id="yearSelect"
+									ng-options="year for year in years"
+									ng-model="yearSelection"
+									style="width: 70px">
+								</select>
+							</td>
+							<td>
+								<select name="seasonSelect" id="seasonSelect"
+									ng-options="season for season in seasons"
+									ng-model="seasonSelection"
+									style="width: 70px">
+								</select>
+							</td>
+							<td colspan="2" class='center'>
+								<input type="submit" id="submit" value="Update" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</form>
+		<table>
+			<td>
+				<div class="dataTable">
+					<table class="dataTable">
+						<thead>			
+							<tr>
+								<th>
+								</th>
+								<th colspan="{{getOptionsFor('team').length - 2}}">
+									Team Filter
+								</th>
+								<th>
+								</th>
+							</tr>
+							<tr>
+								<th ng-repeat="opt in getOptionsFor('team')">
+									{{opt.slice(-1)}}
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td ng-repeat="opt in getOptionsFor('team')" style='text-align:center;'>
+									<input type="checkbox" ng-model="filter['team'][opt]" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+								</td>
+								<td colspan="{{getOptionsFor('team').length - 1}}">
+									<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</td>
+			<td style="vertical-align: top;">
+				<div class="dataTable">
+					<table class="dataTable">
+						<thead>
+							<tr>
+								<th>
+									Show?
+								</th>
+								<th>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									Matches
+								</td>
+								<td>
+									<input type="checkbox" ng-model="showMatches" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Games
+								</td>
+								<td>
+									<input type="checkbox" ng-model="showGames" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Points
+								</td>
+								<td>
+									<input type="checkbox" ng-model="showPoints" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</td>
+		</table>
+
+		<div class="dataTable">
+			<table class="dataTable">
+				<thead>
+					<tr class='emptyCells' align="center">
+						<th></th>
+						<th ng-show="showMatches" colspan="5" align="center">Matches</th>
+						<th colspan="2" align="center">Ranking Pts</th>
+						<th colspan="3" align="center">Ranking Position</th>
+						<th></th>
+						<th></th>
+						<th ng-show="showGames" colspan="3" align="center">Games</th>
+						<th ng-show="showGames"></th>
+						<th ng-show="showPoints" colspan="6" align="center">Pts</th>
+						<th colspan="2">
+							<button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Reset Data</button>
+						</th>					
+					</tr>
+					<tr class='emptyCells' align="center">
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('name')">Name</a>
+							<span ng-show="orderColumn === 'name' && direction" class="down"></span>
+							<span ng-show="orderColumn === 'name' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showMatches">
+							<a class='sortAnchor' href="" ng-click="sort('matchesPlayed')">Played</a>
+							<span ng-show="orderColumn === 'matchesPlayed' && direction" class="down"></span>
+							<span ng-show="orderColumn === 'matchesPlayed' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showMatches">
+							<a class='sortAnchor' href="" ng-click="sort('totalUpAppearances')">Up</a>
+							<span ng-show="orderColumn === 'totalUpAppearances' && direction" class="down"></span>
+							<span ng-show="orderColumn === 'totalUpAppearances' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showMatches">
+							<a class='sortAnchor' href="" ng-click="sort('matchesWon')">Won</a>
+							<span ng-show="orderColumn == 'matchesWon' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'matchesWon' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showMatches">
+							<a class='sortAnchor' href="" ng-click="sort('matchesLost')">Lost</a>
+							<span ng-show="orderColumn == 'matchesLost' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'matchesLost' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showMatches">
+							<a class='sortAnchor' href="" ng-click="sort('matchesDifference')">Diff</a>
+							<span ng-show="orderColumn == 'matchesDifference' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'matchesDifference' && !direction" class="up"></span>
+						</th>					
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('winPercentage')">Win %</a>
+							<span ng-show="orderColumn == 'winPercentage' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'winPercentage' && !direction" class="up"></span>
+						</th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('startingRankingPoints')">Starting</a>
+							<span ng-show="orderColumn == 'startingRankingPoints' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'startingRankingPoints' && !direction" class="up"></span>
+						</th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('currentRankingPoints')">Current</a>
+							<span ng-show="orderColumn == 'currentRankingPoints' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'currentRankingPoints' && !direction" class="up"></span>
+						</th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('startingRankingPosition')">Starting</a>
+							<span ng-show="orderColumn == 'startingRankingPosition' && !direction" class="down"></span>
+							<span ng-show="orderColumn == 'startingRankingPosition' && direction" class="up"></span>
+						</th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('currentRankingPosition')">Current</a>
+							<span ng-show="orderColumn == 'currentRankingPosition' && !direction" class="down"></span>
+							<span ng-show="orderColumn == 'currentRankingPosition' && direction" class="up"></span>
+						</th>
+						<th>Movement</th>
+						<th ng-show="showGames"></th>
+						<th ng-show="showGames">
+							<a class='sortAnchor' href="" ng-click="sort('gamesWon')">Won</a>
+							<span ng-show="orderColumn == 'gamesWon' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'gamesWon' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showGames">
+							<a class='sortAnchor' href="" ng-click="sort('gamesLost')">Lost</a>
+							<span ng-show="orderColumn == 'gamesLost' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'gamesLost' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showGames">
+							<a class='sortAnchor' href="" ng-click="sort('gamesDifference')">Diff</a>
+							<span ng-show="orderColumn == 'gamesDifference' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'gamesDifference' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showPoints"></th>
+						<th ng-show="showPoints">
+							<a class='sortAnchor' href="" ng-click="sort('pointsFor')">For</a>
+							<span ng-show="orderColumn == 'pointsFor' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'pointsFor' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showPoints">
+							<a class='sortAnchor' href="" ng-click="sort('pointsAgainst')">Against</a>
+							<span ng-show="orderColumn == 'pointsAgainst' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'pointsAgainst' && !direction" class="up"></span>
+						</td>
+						<th ng-show="showPoints">
+							<a class='sortAnchor' href="" ng-click="sort('pointsDifference')">Diff</a>
+							<span ng-show="orderColumn == 'pointsDifference' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'pointsDifference' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showPoints">
+							<a class='sortAnchor' href="" ng-click="sort('averagePointsPerGame')">Avg/Game</a>
+							<span ng-show="orderColumn == 'averagePointsPerGame' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'averagePointsPerGame' && !direction" class="up"></span>
+						</th>
+						<th ng-show="showPoints">
+							<a class='sortAnchor' href="" ng-click="sort('averagePointsPerMatch')">Avg/Match</a>
+							<span ng-show="orderColumn == 'averagePointsPerMatch' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'averagePointsPerMatch' && !direction" class="up"></span>
+						</th>
+						<th></th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('team')">Team</a>
+							<span ng-show="orderColumn === 'team' && direction" class="down"></span>
+							<span ng-show="orderColumn === 'team' && !direction" class="up"></span>
+						</th>
+						<th>
+							<a class='sortAnchor' href="" ng-click="sort('division')">Division</a>
+							<span ng-show="orderColumn === 'division' && direction" class="down"></span>
+							<span ng-show="orderColumn === 'division' && !direction" class="up"></span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- LOOP OVER THE players IN $scope.allRankings -->
+					<tr align="center" ng-repeat="player in filtered=(allRankings | filter:filterByTeam) | orderBy:[orderColumn]:direction">
+						<td align="left">
+							{{ player.name }}
+						</td>
+						<td ng-show="showMatches" style="font-weight: bold">{{ player.matchesPlayed }}</td>
+						<td ng-show="showMatches" style="font-weight: bold">{{ player.totalUpAppearances }}</td>
+						<td ng-show="showMatches" ng-class="{'positive': (player.matchesWon > 0)}">{{ player.matchesWon }}</td>
+						<td ng-show="showMatches" ng-class="{'negative': (player.matchesLost > 0)}">{{ player.matchesLost }}</td>
+						<td ng-show="showMatches" ng-class="{'positive': (player.matchesDifference > 0), 'negative': (player.matchesDifference < 0)}">{{ player.matchesDifference }}</td>
+						<td ng-class="{'positive': (player.winPercentage >= 50), 'negative': (player.winPercentage <= 25), 'concern': (player.winPercentage < 50 && player.winPercentage > 25)}">{{ player.winPercentage }}</td>
+						<td>{{ player.startingRankingPoints }}</td>
+						<td ng-class="{'positive': (player.currentRankingPoints > player.startingRankingPoints), 'negative': (player.currentRankingPoints < player.startingRankingPoints)}">{{ player.currentRankingPoints }}</td>
+						<td>{{ player.startingRankingPosition }}</td>
+						<td ng-class="{'positive': (player.currentRankingPosition < player.startingRankingPosition), 'negative': (player.currentRankingPosition > player.startingRankingPosition)}">{{ player.currentRankingPosition }}</td>
+						<td>
+							<div ng-repeat="icons in player.rankingMovementPositions track by $index" >
+							<div ng-switch on="player.rankingMovement" >
+								<img ng-switch-when="up" class="movement" src="./public/images/up_order_arrow_green.png"/>
+								<img ng-switch-when="down" class="movement" src="./public/images/down_order_arrow_red.png"/>
+								<span ng-switch-default></span>
+							</div>
+							</div>								  
+						</td>
+						<td ng-show="showGames"></td>
+						<td ng-show="showGames" ng-class="{'positive': (player.gamesWon > 0)}">{{ player.gamesWon }}</td>
+						<td ng-show="showGames" ng-class="{'negative': (player.gamesLost > 0)}">{{ player.gamesLost }}</td>
+						<td ng-show="showGames" ng-class="{'positive': (player.gamesDifference > 0), 'negative': (player.gamesDifference < 0)}">{{ player.gamesDifference }}</td>
+						<td ng-show="showPoints"></td>
+						<td ng-show="showPoints" ng-class="{'positive': (player.pointsFor > 0)}">{{ player.pointsFor }}</td>
+						<td ng-show="showPoints" ng-class="{'negative': (player.pointsAgainst > 0)}">{{ player.pointsAgainst }}</td>
+						<td ng-show="showPoints" ng-class="{'positive': (player.pointsDifference > 0), 'negative': (player.pointsDifference < 0)}">{{ player.pointsDifference }}</td>
+						<td ng-show="showPoints">{{ player.averagePointsPerGame }}</td>
+						<td ng-show="showPoints">{{ player.averagePointsPerMatch }}</td>
+						<td></td>
+						<td>
+							<a class="tableCellAnchor" href='{{player.teamURL}}'>{{ player.team }}</a>
+						</td>
+						<td>
+							<span>
+								<a class="tableCellAnchor" href='{{player.divisionURL}}'>{{ player.division }}</a>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br/>
+		<div class="dataTable">
+			<table class="dataTable">
+				<thead>
+					<tr>
+						<th colspan="2">
+							Points Awarded
+						</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class='emptyCells' align="left">
+						<td>Divider Start Points:</td>
+						<td><b>{{ configuration.CONSTANTS.POINTDIVIDERPERRANK }}</b></td>
+						<td></td>
+					</tr>
+					<tr class='emptyCells' align="left">
+						<td>Points Per Appearance:</td>
+						<td><b>{{ configuration.CONSTANTS.POINTSFORANAPPEARANCE }}</b></td>
+						<td></td>
+					</tr>
+					<tr class='emptyCells' align="left">
+						<td>Playing Up Bonus Pts:</td>
+						<td><b>{{ configuration.CONSTANTS.POINTSFORPLAYINGUP }}</b></td>
+						<td></td>
+					</tr>
+					<tr class='emptyCells' align="left">
+						<td>Points Per Win:</td>
+						<td><b>{{ configuration.CONSTANTS.POINTSFORAWIN }}</b></td>
+						<td></td>
+						<!-- <th>Ranking Points for a Loss:</th>
+						<th><b>{{ configuration.CONSTANTS.POINTSFORALOSS }}</b></th>-->
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

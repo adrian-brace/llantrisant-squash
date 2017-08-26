@@ -1,0 +1,403 @@
+/* Regular */
+@font-face {
+    font-family: 'Arimo Regular';
+    src: url('../css/fonts/arimo/Arimo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arimo Bold';
+    src: url('.. 	 /css/fonts/arimo/Arimo-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Main Header */
+body {
+	font-family: 'Arimo Regular';
+    background: linear-gradient(to bottom, #0A0F14,#213141, #0A0F14); /* For browsers that do not support gradients */
+	color:#D9DBDE;
+    /*background: -webkit-linear-gradient(#4F6059, #262626); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#4F6059, #262626); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#4F6059, #262626); /* For Firefox 3.6 to 15 */
+	/*background: linear-gradient(#2E3A2E, #6B876A); /* Standard syntax */
+}
+
+.mainHeader {
+	background: black;
+}
+
+.mainHeaderContent {
+	margin-top: 10px;
+	margin-left: 5px;
+	overflow: auto;
+}
+
+.inline {
+	float: left;
+	padding-left: 3px;
+	padding-bottom: 3px;
+}
+/* End of Main Header */
+
+/* Pages */
+.pageHeading {
+	padding: 5px;
+}
+
+.tournamentHeader table, h2, h3{
+	color: #85a3e0;
+	padding-left: 10px;
+}
+
+.newLine {
+	clear: both;
+	padding-top: 5px;
+}
+
+/* End of Pages */
+
+/* Footer */
+.footer {
+	height: 100%;
+}
+/* End of Footer */
+
+/* Tables */
+
+.filterTable td {
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+.titleTable td {
+	padding-left: 5px; 
+	font-size: 2em;
+	font-weight: bold;
+	color: #85a3e0;
+	white-space:normal;
+	text-align: center;
+}
+
+.titleLevel2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #b3ccff;
+	padding-left:3px;
+}
+
+.titleWithWrap {
+	word-wrap: break-word;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: 'Arimo Bold';
+	color: #b3ccff;
+}
+
+/* Data Table */
+table {
+	border-spacing: 0px;
+}
+
+.dataTable table {
+	border-radius: 0.6em;
+		box-shadow: 3px 3px 3px #0A0F14;
+}
+
+.dataTable th {
+	padding: 5px;
+}
+
+.dataTable td {
+	padding: 3px;
+}
+
+.dataTable th, td {
+	white-space: nowrap;
+}
+
+.dataTable thead th {
+	background: #4F6059; /* Old browsers */
+	/*background: -moz-linear-gradient(top, #7E998E 0%, #4F6059 100%); /* FF3.6-15 */
+	/*background: -webkit-linear-gradient(top, #7E998E 0%,#4F6059 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #243547,#4B5968, #243547); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: #C7C7C7;
+	align-content: center;
+}
+
+/* Alternate rows colors */
+.dataTable tbody tr:nth-child(even)
+{
+	background: #D7DADD;
+}
+
+.dataTable tbody tr:nth-child(odd)
+{
+	background: #AFB5BC;
+}
+
+.dataTable tbody td {
+	/*border-right:1px solid #1e3d7b;*/
+	border-bottom:1px solid #1e3d7b;
+	/*background-color: #595959;*/
+	color: #303234;
+}
+
+.dataTable tbody tr {
+	background-color: #595959;
+	font-size: 90%;
+}
+
+.rightBordered{
+	border-right: 1px solid #1e3d7b;
+}
+
+/* the first 'th' within the first 'tr' of the 'thead': */
+.dataTable thead tr:first-child th:first-child {
+    border-radius: 0.6em 0 0 0;
+}
+
+/* the last 'th' within the first 'tr' of the 'thead': */
+.dataTable thead tr:first-child th:last-child {
+    border-radius: 0 0.6em 0 0;
+}
+
+/* the first 'td' within the last 'tr' of the 'tbody': */
+.dataTable tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 0.6em;
+}
+/* the last 'td' within the last 'tr' of the 'tbody': */
+.dataTable tbody tr:last-child td:last-child {
+    border-radius: 0 0 0.6em 0;
+}
+
+/*END OF DATA TABLES */
+
+.socialMediaDiv {
+	float: left;
+	margin-left: 5px;
+}
+
+/* Anchors */
+.menuAnchor {
+	color:#b3ccff; 
+	text-decoration:none; 
+	cursor:pointer;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.loneAnchor {
+	color:#b3ccff; 
+	text-decoration:none; 
+	cursor:pointer;
+	font-weight: bold;
+}
+
+.loneAnchor:hover, .menuAnchor:hover {
+	 color:#ffb3b3; 
+	 text-decoration:none; 
+	 cursor:pointer;  
+	 font-weight: bold;
+}
+
+.tableCellAnchor {
+	color:#006680; 
+	text-decoration:none; 
+	cursor:pointer;
+	font-weight: bold;
+}
+
+.tableCellAnchor:hover {
+	 color:#cc0000; 
+	 text-decoration:none; 
+	 cursor:pointer;  
+	 font-weight: bold;
+}
+
+.sortAnchor {
+	color:#b3ccff; 
+	text-decoration:none; 
+	cursor:pointer;
+	font-weight: bold;
+}
+
+.sortAnchor:hover {
+	 color:#ff6666; 
+	 text-decoration:none; 
+	 cursor:pointer;  
+	 font-weight: bold;
+}
+
+/* Used for images */
+span {
+	vertical-align: middle;
+	display:inline-block;
+}
+
+/* End of anchors */
+.sponsorTable {
+	float: left;
+	padding: 2px 2px 2px 10px;
+	white-space: nowrap;
+}
+
+.menuTable {
+	float: left;
+	padding: 2px 2px 2px 10px;
+	width: 246px;
+	white-space: nowrap;
+}
+
+.contactUsTable {
+	float: left;
+	padding: 2px;
+	width: 246px;
+	white-space: nowrap;
+}
+
+.textParagraph {
+	padding: 10px;
+	width: 90%;
+    word-wrap: break-word;
+	text-align: justify;
+    white-space: normal;
+	color: #85a3e0;
+}
+
+.textParagraphList {
+	color: #85a3e0;
+}
+
+.noBulletList {
+	list-style: none;
+    padding-left: 15px;
+}
+
+.movement {
+	float: left;
+}
+
+.icon {
+	width: 40px;
+}
+
+.noStyle table, td, tr{
+	border: none;
+}
+
+.fixture {
+	text-align: center;
+}
+
+.warningMessage {
+	color: #E63D28;
+	font-size: 1.5em;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.badPosition td{
+	background-color: #E63D28 !important;
+	color: white !important;
+}
+
+.goodPosition td{
+	background-color: #009933 !important;
+    color: white !important;
+}
+
+.okPosition td{
+	background-color: #3333ff !important;
+	color: white !important;
+}
+
+.positive {
+	color: #68aa55 !important;
+	font-weight: bold !important;
+}
+
+.concern {
+	color: #ff944d !important;
+	font-weight: bold !important;
+}
+
+.negative {
+	color: #990000 !important;
+	font-weight: bold !important;
+}
+
+.negativeLight {
+	color: #ff6666 !important;
+	font-weight: bold !important;
+}
+
+.winClass {
+	color:#3e6633 !important;
+}
+
+.loseClass {
+	color:#990000 !important;
+}
+
+.clashClass {
+	color:#990000 !important;
+	font-weight: bold !important;
+}
+
+ul.noBullet {
+	list-style-type: none;
+	padding-left:8px;
+}
+
+.logo {
+	width: 80px;
+	height: 81px;
+}
+
+.noDisplay {
+	display: none;
+}
+
+/* Form Controls*/
+select {
+	font-size:1.1em;
+	border-radius: 3px;
+	border-width: 0px;
+	background: linear-gradient(to bottom, #85a3e0, #e6f2ff, #85a3e0);
+	color: #4B5968;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 10px #0A0F14;
+	-moz-box-shadow: 0 0 10px #0A0F14;
+	box-shadow: 2px 2px 15px #0A0F14;
+}
+
+select:hover {
+	background: linear-gradient(to bottom, #e6f2ff, #85a3e0, #e6f2ff);
+	color: #4B5968;
+}
+
+select:focus {
+	background: linear-gradient(to bottom, #85a3e0, #e6f2ff, #85a3e0);
+	color: #4B5968;
+}
+
+button, input[type=submit] {
+	font-size:1.1em;
+	border-radius: 5px;
+	border-width: 0px;
+	background: linear-gradient(to bottom, #4B5968, #85a3e0, #4B5968);
+	color: #e6f2ff;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 10px #0A0F14;
+	-moz-box-shadow: 0 0 10px #0A0F14;
+	box-shadow: 2px 2px 15px #0A0F14;
+}
+
+button:hover, input[type=submit]:hover {
+	background: linear-gradient(to bottom, #85a3e0, #e6f2ff, #85a3e0);
+	color: #4B5968;
+}

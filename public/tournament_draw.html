@@ -1,0 +1,55 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="tournament_draw"><span class="noDisplay">Tournament Draw</span></div></td>
+			<td>Tournament Draw</td>
+		</table>
+	</div>
+	<div class="pageContent">
+		<div ng-include src='tournament_header'></div>
+		<div ng-show="{{tournamentStage === 'UPCOMING'}}">
+			<p class="textParagraph">We hope to confirm the draw and schedule shortly after: <strong class='negativeLight'>26th May 2017</strong></p>
+		</div>
+		<div class='datatable' ng-show="{{tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">		
+			<table class='datatable'>				
+				<thead>
+					<tr>
+						<th></th>
+						<th>Event</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2017 A Grade.pdf"><strong>A</strong></a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2017 B Grade.pdf"><strong>B</strong></a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2017 C Grade.pdf"><strong>C</strong></a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2017 D Grade.pdf"><strong>D</strong></a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2017 E Grade.pdf"><strong>E</strong></a></td>
+						<td></td>
+					</tr>
+				</tbody>	
+			</table>
+		</div>
+		<div ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
+		<div ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>		
+		<div ng-include src='tournament_footer'></div>
+	</div>
+</div>

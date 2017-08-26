@@ -1,0 +1,14 @@
+<div class='newLine'>
+	<h3 class='tournamentHeader'>Sponsored & Supported by...</h3>
+	<table class='sponsorTable' ng-repeat='sponsor in club.SPONSORS.SPONSOR'>
+		<td class='icon'>
+			<div>
+				<a href="{{ sponsor.url }}">
+					<div class="{{ sponsor.icon }}_mini">
+						<span class='noDisplay'>{{ sponsor.name }}</span>
+					</div>
+				</a>
+			</div>				
+		</td>
+	</table>
+</div>

@@ -1,0 +1,25 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="tournament_prize_money"><span class="noDisplay">Tournament Prize Money</span></div></td>
+			<td>Tournament Prize Money</td>
+		</table>
+	</div>
+	<div class="pageContent">
+		<div ng-include src='tournament_header'></div>
+		<div ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
+		<div ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>	
+		<div class="newLine" ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}}">
+			<p class="textParagraph">
+				<strong class="warningMessage">Over £1000</strong> worth of prize money and vouchers up for grabs!!!
+				<br/>
+				<table>
+					<td>
+						<img src="./public/images/tournament_prize_money_2017.jpg" width="448" height="552">
+					</td>
+				</table>				
+			</p>
+		</div>
+		<div ng-include src='tournament_footer'></div>
+	</div>
+</div>

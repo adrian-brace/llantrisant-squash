@@ -1,0 +1,113 @@
+<div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="ranking"><span class="noDisplay">Rankings</span></div></td>
+			<td>Welsh Rankings in Club</td>
+		</table>
+	</div>
+	<div class="pageContent">
+		<div ng-show="configuration.LINKS.RANKINGS.LINK.length > 0">
+			<ul class='noBullet'>
+				<li ng-class="link.bulletclass" ng-repeat='link in configuration.LINKS.RANKINGS.LINK'>
+					<a class="loneAnchor" target='_blank' href="{{ link.url }}">{{ link.name }}</a>
+				</li>
+			</ul>
+		</div>
+		<div class="dataTable">
+			<table class="dataTable">
+				<thead>			
+					<tr>
+						<th>
+						</th>
+						<th colspan="{{getOptionsFor('team').length - 2}}">
+							Team Filter
+						</th>
+						<th>
+						</th>
+					</tr>
+					<tr>
+						<th ng-repeat="opt in getOptionsFor('team')">
+							{{opt.slice(-1)}}
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td ng-repeat="opt in getOptionsFor('team')" style='text-align:center;'>
+							<input type="checkbox" ng-model="filter['team'][opt]" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td colspan="{{getOptionsFor('team').length - 2}}">
+							<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>				
+		<div class="dataTable">
+			<table class="dataTable">
+				<thead>
+					<tr align="center">
+						<th align="center">
+							<a class='sortAnchor' href="" ng-click="sort('playerRank')">Club Ranking</a>
+							<span ng-show="orderColumn == 'playerRank' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'playerRank' && !direction" class="up"></span>
+						</th>
+						<th align="center">
+							<a class='sortAnchor' href="" ng-click="sort('name')">Name</a>
+							<span ng-show="orderColumn == 'name' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'name' && !direction" class="up"></span>
+						</th>
+						<th align="center">
+							<a class='sortAnchor' href="" ng-click="sort('welshRank')">Welsh Ranking</a>
+							<span ng-show="orderColumn == 'welshRank' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'welshRank' && !direction" class="up"></span>
+						</th>
+						<th align="center">
+							<a class='sortAnchor' href="" ng-click="sort('level')">Level</a>
+							<span ng-show="orderColumn == 'level' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'level' && !direction" class="up"></span>
+						</th>
+						<th align="center">
+							<a class='sortAnchor' href="" ng-click="sort('events')">Events</a>
+							<span ng-show="orderColumn == 'events' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'events' && !direction" class="up"></span>
+						</th>
+						<th align="center">
+							Last Event
+						</th>
+					</tr>
+				</thead>
+				<tbody>									
+					<!-- LOOP OVER THE appearances IN $scope.appearances -->
+					<tr ng-repeat="player in filtered=(players | filter:filterByTeam) | orderBy:[orderColumn]:direction">
+						<td align="center">
+							{{player.playerRank}}
+						</td>
+						<td align="left">
+							<a class='tableCellAnchor' ng-show="player.welshRank != NaN" target="_blank" href="{{player.playerHistoryUrl}}">{{player.name}}</a>
+							<div ng-show="player.welshRank == NaN"> {{player.name}}</div>
+						</td>
+						<td align="center">
+							{{player.welshRank}}
+						</td>
+						<td align="center">
+							{{player.level}}
+						</td>
+						<td align="center">
+							{{player.events}}
+						</td>
+						<td>
+							{{player.lastEvent}}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,58 @@
+<div>
+   <div class="pageHeading">
+      <table class='titleTable'>
+         <td>
+            <div class="team"><span class="noDisplay">Club Rankings</span></div>
+         </td>
+         <td>Club Ranking List</td>
+      </table>
+   </div>
+   <br/>
+   <div class="pageContent">
+	   <table ng-show="showProvisionalRankings">
+		   <tr>
+			   <td>
+				<div ng-include src='challenge_rules'></div>		
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>
+				<strong><a class='loneAnchor' href='./#/club_ranking_list_provisional'>Go To Provisional Summer Rankings</a></strong>
+			   </td>			   
+			</tr>
+		</table>
+		<div class='dataTable'>
+			<table>	
+				<thead>
+					<tr>
+						<th></th>
+						<th colspan="4" style="text-align: center">
+							<span class="negativeLight">{{season}}</span>
+						</th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>Team</th>
+						<th>No.</th>
+						<th>Player</th>
+						<th>Club Ranking</th>
+						<th>Disivision</th>
+						<th>Ref. #</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat-start='team in teams' ng-hide='true'></tr>
+					<tr ng-repeat='player in team.players track by $index'>
+						<td class="rightBordered" ng-show='$index == 0' rowspan='{{team.players.length}}' align='center'><a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.teamName }}</a></td>
+						<td align='center'>{{ player.teamRanking }}</td>
+						<td>{{ player.name }} <span ng-show='player.isCaptain'><b>(C)</b></span></td>
+						<td align='center'>{{ player.clubRanking }}</td>
+						<td><a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.divisionName }}</a></td>
+						<td><span ng-show='player.refereeNumber'>{{player.refereeNumber}}</span></td>
+					</tr>
+					<tr ng-repeat-end ng-hide='true'></tr>
+				</tbody>			
+			</table>
+		</div>
+	</div>
+</div>

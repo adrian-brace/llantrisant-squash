@@ -1,0 +1,29 @@
+{
+  "name": "node-web-scrape",
+  "version": "0.0.1",
+  "description": "Scrape Squash League Results",
+  "main": "server.js",
+  "author": "Adrian Brace",
+  "dependencies": {
+    "cheerio": "latest",
+    "express": "latest",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-nodemon": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "ng-image-gallery": "^2.1.2",
+    "q": "latest",
+    "request": "latest",
+    "sprintf-js": "latest",
+    "sync-request": "^2.2.0",
+    "xml2js": "latest",
+    "xmldom": "latest"
+  },
+  "devDependencies": {
+    "gulp-nodemon": "^2.2.1"
+  }
+}

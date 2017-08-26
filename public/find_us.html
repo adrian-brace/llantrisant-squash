@@ -1,0 +1,34 @@
+<div>
+   <div class="pageHeading">
+      <table class='titleTable'>
+         <td>
+            <div class="maps"><span class="noDisplay">Find Us</span></div>
+         </td>
+         <td>Find Us</td>
+      </table>
+   </div>
+	<div class="pageContent" ng-show="clubName === 'Llantrisant'">
+		<div class="dataTable">
+			<table class="dataTable">
+				<thead>
+					<th></th>
+					<th>Address</th>
+					<th></th>
+				</thead>
+				<tbody>
+					<td></td>
+					<td>
+						<ul class='noBulletList'>
+							<li ng-repeat='addressLine in club.ADDRESS'>
+								{{ addressLine }}
+							</li>
+						</ul>
+					</td>
+					<td></td>
+				</tbody>
+			</table>
+		</div>
+		<br/>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.5985868449898!2d-3.3770726845925827!3d51.53892197964034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e11383ffd9535%3A0xc9e5bf837ee678f2!2sLlantrisant+Leisure+Centre!5e0!3m2!1sen!2suk!4v1473885045078" width="260" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+</div>

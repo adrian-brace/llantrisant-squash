@@ -1,0 +1,4 @@
+{
+  "verbose": true,
+  "ignore": ["*.png","*.jpg", "*.html", "*.json", "commands/*", "configuration/*", "data_generated/*", "data_scraped/*", "node_modules/*"]
+}

@@ -1,0 +1,160 @@
+<div class="pageHeading">
+	<table class='titleTable'>
+		<td>
+			<img class='logo' src="{{ logoPath }}" />
+		</td>
+		<td>
+			Llantrisant Squash Club
+		</td>
+	</table>
+</div>
+<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}}" ng-include src='tournament_title'></div>
+<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}}" ng-include src='tournament_header'></div>
+<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}}" ng-include src='tournament_footer'></div>
+<div class="newLine">
+	<br/>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./fixtures"><div class="fixtures"><span class='noDisplay'>Fixtures</span></div></a></div>
+		</td>
+		<td style="text-align: left">
+			<div><a class="menuAnchor" href="./fixtures">Fixtures</a></div>
+		</td>
+	</table>	
+	<table class='menuTable'>	
+		<td class='icon'>
+			<div><a href="./results"><div class="results"><span class='noDisplay'>Results</span></div></a></div>
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./results">Results</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>	
+		<td class='icon'>
+			<div><a href="#/club_ranking_list"><div class="team"><span class='noDisplay'>Team</span></div></a></div>
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="#/club_ranking_list">Teams</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>	
+		<td class='icon'>
+			<div><a href="./team_standings"><div class="team_standings"><span class='noDisplay'>Team Standings</span></div></a></div>
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./team_standings">Team Standings</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>	
+		<td class='icon'>
+			<div><a href="./appearances"><div class="appearances"><span class='noDisplay'>Appearances</span></div></a></div>
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./appearances">League Appearances</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>			
+		<td class='icon'>
+			<div><a href="./rankings"><div class="upAndDown"><span class='noDisplay'>League Performances</span></div></a></div>
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./rankings">League Performances</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./welsh_rankings"><div class="ranking"><span class='noDisplay'>Welsh Rankings</span></div></a></div>
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./welsh_rankings">Welsh Rankings</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/ladders"><div class="ladders"><span class='noDisplay'>Ladders</span></div></a></div>
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/ladders">Ladders</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/social_media"><div class="social_media"><span class='noDisplay'>Social Media</span></div></a></div>				
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/social_media">Social Media</a></div>					
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/tournament_details"><div class="tournament"><span class='noDisplay'>Tournament</span></div></a></div>
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/tournament_details">Llantrisant Open</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="{{ configuration.CONSTANTS.SUBMITLEAGUERESULTSURL}}"><div class="scoreCard"><span class='noDisplay'>Submit League Results</span></div></a></div>				
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="{{ configuration.CONSTANTS.SUBMITLEAGUERESULTSURL}}">Submit League Results</a></div>					
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div ng-show='club.BOOKACOURT.length > 0'><a href="{{ club.BOOKACOURT }}"><div class="court"><span class='noDisplay'>Book Court</span></div></a></div>
+		</td>
+		<td>
+			<div ng-show='club.BOOKACOURT.length > 0'><a class="menuAnchor" href="{{ club.BOOKACOURT }}">Book Court</a></div>
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/coaching"><div class="coaching"><span class='noDisplay'>Coaching</span></div></a></div>				
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/coaching">Junior Coaching</a></div>					
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/links"><div class="www"><span class='noDisplay'>Links</span></div></a></div>				
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/links">Links</a></div>					
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/about_us"><div class="about_us"><span class='noDisplay'>About Us</span></div></a></div>				
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/about_us">About Us</a></div>					
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/contact_us"><div class="contact"><span class='noDisplay'>Contact Us</span></div></a></div>				
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/contact_us">Contact Us</a></div>					
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/find_us"><div class="maps"><span class='noDisplay'>Find Us</span></div></a></div>				
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/find_us">Find Us</a></div>					
+		</td>
+	</table>
+	<table class='menuTable'>
+		<td class='icon'>
+			<div><a href="./#/sponsors"><div class="sponsors"><span class='noDisplay'>Club Sponsors</span></div></a></div>				
+		</td>
+		<td>
+			<div><a class="menuAnchor" href="./#/sponsors">Sponsors & Supporters</a></div>					
+		</td>
+	</table>
+</div>
