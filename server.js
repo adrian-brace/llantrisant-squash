@@ -439,14 +439,9 @@ app.get(/^(.+)$/, function(req, res){
 	res.sendfile(__dirname + req.params[0]); 
 });
 
-app.listen(port, ipAddress, function(){
-	console.log('IP Address: ' + ipAddress + ', Listening on port: ' + port);
-});
-
-console.log('Listening on port 8080');
-
-exports = module.exports = app;
-
+app.listen(port, ipAddress);
+console.log('Server running on http://%s:%s', ipAddress, port);
+module.exports = app;
 
 function processAllFixturesAndResults(req, sourcePage, res){
 	
