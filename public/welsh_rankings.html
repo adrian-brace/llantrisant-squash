@@ -5,6 +5,9 @@
 			<td>Welsh Rankings in Club</td>
 		</table>
 	</div>
+	<div class="textParagraph">
+		NOTE: Rankings are based on those shown on Squash Levels where players with a "Confidence" of less than 20% ARE included, with "Min Events": 1 and "Last 12 Months".
+	</div>
 	<div class="pageContent">
 		<div ng-show="configuration.LINKS.RANKINGS.LINK.length > 0">
 			<ul class='noBullet'>
@@ -79,7 +82,7 @@
 							<span ng-show="orderColumn == 'events' && !direction" class="up"></span>
 						</th>
 						<th align="center">
-							Last Event
+							Last Event <button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Reset Data</button>
 						</th>
 					</tr>
 				</thead>

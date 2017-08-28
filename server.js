@@ -265,7 +265,7 @@ app.get('/welsh_rankings', function(req, res) {
 
 	var masterConfigurationFilepath = getMasterConfigurationFile();
 	masterConfigurationXML = getXMLFromFile(masterConfigurationFilepath);
-	welshRankingsURL = readValueFromXMLConfiguration(masterConfigurationXML, 'WelshRankingsURL');
+	var welshRankingsURL = readValueFromXMLConfiguration(masterConfigurationXML, 'WelshRankingsURL');
 	
 	var expiryPeriod = getExpiryPeriod(SCRAPE_FUNCTION_WELSH_RANKINGS);
 	
@@ -1133,7 +1133,9 @@ function checkExistsAndIsRecentlyModifiedForRankings(filepath, url, directory, f
 		// Only re-retrieve the HTML if it has not been updated recently
 		if(hasExpired(lastModifiedDate, expiryInMs)) {
 			// console.log("File: " + filepath + " is out of date. Last updated: " + lastModifiedDate);
-			setTimeout(getHTMLForRankings(url, directory, filename, writeFile), timeout);
+			setTimeout(function(url, directory, filename, writeFile){
+				getHTMLForRankings(url, directory, filename, writeFile);	
+			}, timeout);
 			// getHTMLForRankings(url, directory, filename, writeFile);
 		} else {
 			// console.log("File: " + filepath + " was recently updated. Last updated: " + lastModifiedDate);
