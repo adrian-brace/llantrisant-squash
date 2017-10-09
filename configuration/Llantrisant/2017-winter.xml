@@ -10,8 +10,8 @@
 				<Player Name="Jason Jones" IsCaptain="true"/>
 				<Player Name="Phil Thomas"/>
 				<Player Name="Adrian Brace" RefereeNumber="101513"/>
-				<Player Name="Chris Emanuel"/>
 				<Player Name="Matthew Williams"/>
+				<Player Name="Chris Emanuel"/>
 			</Players>
 		</Team>
 		<Team>
