@@ -3,237 +3,193 @@
         "playerRank": 1,
         "team": "A",
         "name": "Jason Jones",
-        "welshRank": 64,
+        "welshRank": 71,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68793&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 5,
-        "level": 3896
+        "lastEvent": "South Wales Winter 2017",
+        "events": 6,
+        "level": 3828
     },
     {
         "playerRank": 2,
         "team": "A",
         "name": "Phil Thomas",
-        "welshRank": 130,
+        "welshRank": 125,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=50671&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
+        "lastEvent": "South Wales Winter 2017",
         "events": 3,
-        "level": 2977
+        "level": 2978
     },
     {
         "playerRank": 3,
         "team": "A",
         "name": "Adrian Brace",
-        "welshRank": 71,
+        "welshRank": 97,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68993&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 3,
-        "level": 3712
+        "lastEvent": "South Wales Winter 2017",
+        "events": 5,
+        "level": 3361
     },
     {
         "playerRank": 4,
         "team": "A",
-        "name": "Chris Emanuel",
-        "welshRank": 281,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68992&show=last12m",
+        "name": "Matthew Williams",
+        "welshRank": 56,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=35835&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 3,
-        "level": 2097
+        "lastEvent": "South Wales Winter 2017",
+        "events": 2,
+        "level": 4149
     },
     {
         "playerRank": 5,
         "team": "A",
-        "name": "Matthew Williams",
-        "welshRank": 39,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=35835&show=last12m",
+        "name": "Chris Emanuel",
+        "welshRank": 231,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68992&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Winter League 2016",
-        "events": 2,
-        "level": 4913
+        "lastEvent": "South Wales Winter 2017",
+        "events": 4,
+        "level": 2256
     },
     {
         "playerRank": 6,
         "team": "B",
         "name": "Ryan Phillips",
-        "welshRank": 222,
+        "welshRank": 186,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68991&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Spring League 2017",
-        "events": 2,
-        "level": 2324
+        "lastEvent": "South Wales Winter 2017",
+        "events": 3,
+        "level": 2469
     },
     {
         "playerRank": 7,
         "team": "B",
         "name": "Dan Webb",
-        "welshRank": 197,
+        "welshRank": 235,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71636&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Spring League 2017",
-        "events": 3,
-        "level": 2426
+        "lastEvent": "South Wales Winter 2017",
+        "events": 4,
+        "level": 2246
     },
     {
         "playerRank": 8,
         "team": "B",
         "name": "Craig Williams",
-        "welshRank": 280,
+        "welshRank": 285,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68858&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 3,
-        "level": 2101
+        "lastEvent": "South Wales Winter 2017",
+        "events": 4,
+        "level": 2104
     },
     {
         "playerRank": 9,
         "team": "B",
         "name": "Martyn Christopher",
-        "welshRank": 410,
+        "welshRank": 474,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69213&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Spring League 2017",
-        "events": 2,
-        "level": 1707
+        "lastEvent": "South Wales Winter 2017",
+        "events": 3,
+        "level": 1564
     },
     {
         "playerRank": 10,
         "team": "B",
         "name": "Rob Mitchell",
-        "welshRank": 535,
+        "welshRank": 399,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68859&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 3,
-        "level": 1444
+        "lastEvent": "South Wales Winter 2017",
+        "events": 4,
+        "level": 1745
     },
     {
         "playerRank": 11,
         "team": "B",
         "name": "Jeff Greenslade",
-        "welshRank": 302,
+        "welshRank": 367,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69030&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 3,
-        "level": 2031
+        "lastEvent": "South Wales Winter 2017",
+        "events": 5,
+        "level": 1821
     },
     {
         "playerRank": 12,
         "team": "C",
         "name": "Matthew Thomas",
-        "welshRank": 414,
+        "welshRank": 337,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=86287&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Spring League 2017",
-        "events": 4,
-        "level": 1699
+        "lastEvent": "South Wales Winter 2017",
+        "events": 6,
+        "level": 1928
     },
     {
         "playerRank": 13,
         "team": "C",
         "name": "Rich Timms",
-        "welshRank": 528,
+        "welshRank": 534,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69970&show=last12m",
         "county": "WAL",
-        "lastEvent": "Hirwaun Open 2017",
-        "events": 6,
-        "level": 1464
+        "lastEvent": "South Wales Winter 2017",
+        "events": 8,
+        "level": 1465
     },
     {
         "playerRank": 14,
         "team": "C",
         "name": "Ben Howcroft",
-        "welshRank": 345,
+        "welshRank": 421,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=73039&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 7,
-        "level": 1875
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 9,
+        "level": 1692
     },
     {
         "playerRank": 15,
         "team": "C",
         "name": "Lee Francis",
-        "welshRank": 440,
+        "welshRank": 414,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69958&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 3,
-        "level": 1640
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 4,
+        "level": 1713
     },
     {
         "playerRank": 16,
         "team": "C",
         "name": "Mark Morgan",
-        "welshRank": 627,
+        "welshRank": 720,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69624&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Spring League 2017",
+        "lastEvent": "Mid Glamorgan Winter 2017",
         "events": 4,
-        "level": 1264
+        "level": 1166
     },
     {
         "playerRank": 17,
         "team": "C",
         "name": "Lloyd Newland",
-        "welshRank": 745,
+        "welshRank": 824,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71595&show=last12m",
         "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring League 2017",
-        "events": 4,
-        "level": 1098
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 5,
+        "level": 1006
     },
     {
         "playerRank": 18,
         "team": "D",
-        "name": "Wynne Owen",
-        "welshRank": 815,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69956&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 5,
-        "level": 1012
-    },
-    {
-        "playerRank": 19,
-        "team": "D",
-        "name": "Mike Lewis",
-        "welshRank": 708,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69625&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring League 2017",
-        "events": 1,
-        "level": 1144
-    },
-    {
-        "playerRank": 20,
-        "team": "D",
-        "name": "Jack Penberthy",
-        "welshRank": 954,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71938&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 3,
-        "level": 807
-    },
-    {
-        "playerRank": 21,
-        "team": "D",
-        "name": "Amanda Barter",
-        "welshRank": 1095,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69603&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring League 2017",
-        "events": 4,
-        "level": 624
-    },
-    {
-        "playerRank": 22,
-        "team": "D",
-        "name": "Josh Davies",
+        "name": "Tom Penberthy",
         "welshRank": null,
         "playerHistoryUrl": "",
         "county": "",
@@ -242,80 +198,135 @@
         "level": "UNKNOWN"
     },
     {
+        "playerRank": 19,
+        "team": "D",
+        "name": "Wynne Owen",
+        "welshRank": 872,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69956&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 6,
+        "level": 938
+    },
+    {
+        "playerRank": 20,
+        "team": "D",
+        "name": "Mike Lewis",
+        "welshRank": 669,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69625&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 2,
+        "level": 1243
+    },
+    {
+        "playerRank": 21,
+        "team": "D",
+        "name": "Jack Penberthy",
+        "welshRank": 905,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71938&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 4,
+        "level": 885
+    },
+    {
+        "playerRank": 22,
+        "team": "D",
+        "name": "Amanda Barter",
+        "welshRank": 1014,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69603&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 4,
+        "level": 758
+    },
+    {
         "playerRank": 23,
         "team": "D",
         "name": "Keith McCarthy",
-        "welshRank": 1052,
+        "welshRank": 1055,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69973&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 2,
-        "level": 702
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 3,
+        "level": 701
     },
     {
         "playerRank": 24,
         "team": "D",
         "name": "James Pickett",
-        "welshRank": 1103,
+        "welshRank": 1092,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71937&show=last12m",
         "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring League 2017",
-        "events": 2,
-        "level": 614
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 3,
+        "level": 653
     },
     {
         "playerRank": 25,
         "team": "D",
-        "name": "Rowland Shalton",
-        "welshRank": 1190,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70224&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring League 2017",
-        "events": 3,
-        "level": 486
+        "name": "Josh Sion Davies",
+        "welshRank": null,
+        "playerHistoryUrl": "",
+        "county": "",
+        "lastEvent": "",
+        "events": "",
+        "level": "UNKNOWN"
     },
     {
         "playerRank": 26,
         "team": "D",
-        "name": "Chay Davies-Smith",
-        "welshRank": 799,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75253&show=last12m",
+        "name": "Rowland Shalton",
+        "welshRank": 1145,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70224&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 4,
-        "level": 1025
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 3,
+        "level": 562
     },
     {
         "playerRank": 27,
         "team": "D",
-        "name": "Erica Howcroft",
-        "welshRank": 1129,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=2840&show=last12m",
+        "name": "Chay Davies-Smith",
+        "welshRank": 836,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75253&show=last12m",
         "county": "WAL",
-        "lastEvent": "Llantrisant Open 2017",
-        "events": 2,
-        "level": 563
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 5,
+        "level": 993
     },
     {
         "playerRank": 28,
         "team": "D",
-        "name": "Adam Howcroft",
-        "welshRank": 1298,
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=86429&show=last12m",
+        "name": "Erica Howcroft",
+        "welshRank": 1199,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=2840&show=last12m",
         "county": "WAL",
         "lastEvent": "Llantrisant Open 2017",
-        "events": 3,
-        "level": 247
+        "events": 2,
+        "level": 488
     },
     {
         "playerRank": 29,
         "team": "D",
-        "name": "Ethan Williams",
+        "name": "Adam Howcroft",
         "welshRank": 1303,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=86429&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Llantrisant Open 2017",
+        "events": 3,
+        "level": 260
+    },
+    {
+        "playerRank": 30,
+        "team": "D",
+        "name": "Ethan Williams",
+        "welshRank": 1313,
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71998&show=last12m",
         "county": "WAL",
         "lastEvent": "Mid Glamorgan Winter League 2016",
         "events": 1,
-        "level": 233
+        "level": 229
     }
 ]

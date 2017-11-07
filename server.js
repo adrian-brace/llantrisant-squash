@@ -304,7 +304,7 @@ app.get('/welsh_rankings', function(req, res) {
 	for (pageOf50 = 0; pageOf50 < 1350; pageOf50 += 50)
 	{
 		pageIndex++;
-		var welshRankingPageOf50URL = vsprintf(welshRankingsURL, [pageOf50]);
+		var welshRankingPageOf50URL = vsprintf(welshRankingsURL, pageOf50.toString());
 		var filename = pageOf50 + FILE_EXTENSION_FOR_WEB_PAGES;	
 		var filepath = welshRankingsDirectory + filename;
 
@@ -1133,7 +1133,7 @@ function checkExistsAndIsRecentlyModifiedForRankings(filepath, url, directory, f
 		// Only re-retrieve the HTML if it has not been updated recently
 		if(hasExpired(lastModifiedDate, expiryInMs)) {
 			// console.log("File: " + filepath + " is out of date. Last updated: " + lastModifiedDate);
-			setTimeout(function(url, directory, filename, writeFile){
+			setTimeout(function() {
 				getHTMLForRankings(url, directory, filename, writeFile);	
 			}, timeout);
 			// getHTMLForRankings(url, directory, filename, writeFile);
