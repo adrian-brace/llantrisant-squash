@@ -37,6 +37,7 @@
 			<CompetitionID>147</CompetitionID>
 			<Players>
 				<Player Name="Matthew Thomas" WelshRankingID="86287"/>
+				<Player Name="Chris Jones" RefereeNumber="101510"/>
 				<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
 				<Player Name="Ben Howcroft"/>
 				<Player Name="Lee Francis" RefereeNumber="101514"/>
@@ -55,7 +56,10 @@
 				<Player Name="Wynne Owen"/>
 				<Player Name="Mike Lewis"/>
 				<Player Name="Jack Penberthy"/>
+				<Player Name="Phil Maybury"/>
 				<Player Name="Amanda Barter" IsCaptain="true"/>
+				<Player Name="Nigel Bevan" RefereeNumber="101509"/>
+				<Player Name="Steve Evans"/>
 				<Player Name="Keith McCarthy"/>
 				<Player Name="James Pickett"/>
 				<Player Name="Josh Sion Davies" RefereeNumber="101022"/>
@@ -64,15 +68,13 @@
 				<Player Name="Erica Howcroft"/>
 				<Player Name="Adam Howcroft"/>
 				<Player Name="Ethan Williams" RefereeNumber="101512"/>
+				<Player Name="Ashley Maybury"/>
 			</Players>
 		</Team>
 		<!-- SPARES -->
 		<!--
-		<Player Name="Chris Jones" RefereeNumber="101510"/>
-		<Player Name="Nigel Bevan" RefereeNumber="101509" IsCaptain="true"/>
 		<Player Name="Dan Povey"/>
 		<Player Name="Dave Jones" RefereeNumber="101573" WelshRankingID="68967"/>
-		<Player Name="Steve Evans"/>
 		<Player Name="Emma Jameson"/>
 		<Player Name="Dean Bromham" RefereeNumber="100142"/>
 		<Player Name="Patrick Civil"/>
