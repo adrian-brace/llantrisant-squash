@@ -1,0 +1,83 @@
+<xml xmlns="http://www.w3.org/2000/10/XMLSchema">
+	<Teams>
+		<Team>
+			<Name>A</Name>
+			<TeamID>10</TeamID>
+			<DivisionID>2</DivisionID>
+			<DivisionName>Premier 2</DivisionName>
+			<CompetitionID>191</CompetitionID>
+			<Players>
+				<Player Name="Jason Jones" IsCaptain="true"/>
+				<Player Name="Phil Thomas"/>
+				<Player Name="Adrian Brace" RefereeNumber="101513"/>
+				<Player Name="Matthew Williams"/>
+				<Player Name="Chris Emanuel"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>B</Name>
+			<TeamID>19</TeamID>
+			<DivisionID>5</DivisionID>
+			<DivisionName>Two East</DivisionName>
+			<CompetitionID>191</CompetitionID>
+			<Players>
+				<Player Name="Ryan Phillips"/>
+				<Player Name="Dan Webb" IsCaptain="true"/>
+				<Player Name="Craig Williams"/>
+				<Player Name="Martyn Christopher"/>
+				<Player Name="Rob Mitchell"/>
+				<Player Name="Jeff Greenslade" RefereeNumber="100467"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>C</Name>
+			<TeamID>55</TeamID>
+			<DivisionID>1</DivisionID>
+			<DivisionName>Mid Glam One</DivisionName>
+			<CompetitionID>193</CompetitionID>
+			<Players>
+				<Player Name="Matthew Thomas" WelshRankingID="86287"/>
+				<Player Name="Chris Jones" RefereeNumber="101510"/>
+				<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
+				<Player Name="Ben Howcroft"/>
+				<Player Name="Lee Francis" RefereeNumber="101514"/>
+				<Player Name="Mark Morgan" RefereeNumber="100292"/>
+				<Player Name="Lloyd Newland"/>
+			</Players>
+		</Team>
+		<Team>
+			<Name>D</Name>
+			<TeamID>79</TeamID>
+			<DivisionID>2</DivisionID>
+			<DivisionName>Mid Glam Two</DivisionName>
+			<CompetitionID>193</CompetitionID>
+			<Players>
+				<Player Name="Tom Penberthy"/>
+				<Player Name="Wynne Owen"/>
+				<Player Name="Mike Lewis"/>
+				<Player Name="Jack Penberthy"/>
+				<Player Name="Phil Maybury"/>
+				<Player Name="Amanda Barter" IsCaptain="true"/>
+				<Player Name="Nigel Bevan" RefereeNumber="101509"/>
+				<Player Name="Steve Evans"/>
+				<Player Name="Keith McCarthy"/>
+				<Player Name="James Pickett"/>
+				<Player Name="Josh Sion Davies" RefereeNumber="101022"/>
+				<Player Name="Rowland Shalton"/>
+				<Player Name="Chay Davies-Smith"/>
+				<Player Name="Erica Howcroft"/>
+				<Player Name="Adam Howcroft"/>
+				<Player Name="Ethan Williams" RefereeNumber="101512"/>
+				<Player Name="Ashley Maybury"/>
+			</Players>
+		</Team>
+		<!-- SPARES -->
+		<!--
+		<Player Name="Dan Povey"/>
+		<Player Name="Dave Jones" RefereeNumber="101573" WelshRankingID="68967"/>
+		<Player Name="Emma Jameson"/>
+		<Player Name="Dean Bromham" RefereeNumber="100142"/>
+		<Player Name="Patrick Civil"/>
+		-->
+	</Teams>
+</xml>
