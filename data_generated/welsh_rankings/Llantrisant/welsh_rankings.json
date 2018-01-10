@@ -233,13 +233,13 @@
     {
         "playerRank": 22,
         "team": "D",
-        "name": "Josh Sion Davies",
-        "welshRank": null,
-        "playerHistoryUrl": "",
-        "county": "",
-        "lastEvent": "",
-        "events": "",
-        "level": "UNKNOWN"
+        "name": "Joshua Sion Davies",
+        "welshRank": 850,
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=88499&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2017",
+        "events": 5,
+        "level": 953
     },
     {
         "playerRank": 23,
@@ -255,7 +255,7 @@
     {
         "playerRank": 24,
         "team": "D",
-        "name": "Phil Maybury",
+        "name": "Phillip Maybury",
         "welshRank": null,
         "playerHistoryUrl": "",
         "county": "",
