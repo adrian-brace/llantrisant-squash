@@ -5,7 +5,7 @@
         "time": "19:15",
         "homeTeam": "Llantrisant A",
         "awayTeam": "Bridgend A",
-        "result": "",
+        "result": "1-4",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=10&competitionid=191",
         "isClash": false,
         "isWin": false,
@@ -17,7 +17,7 @@
         "time": "19:00",
         "homeTeam": "Penyrheol A",
         "awayTeam": "Llantrisant A",
-        "result": "",
+        "result": "1-4",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=10&competitionid=191",
         "isClash": true,
         "isWin": false,
@@ -29,10 +29,10 @@
         "time": "19:15",
         "homeTeam": "Llantrisant A",
         "awayTeam": "Cardiff Metropolitan A",
-        "result": "",
+        "result": "3-2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=10&competitionid=191",
         "isClash": false,
-        "isWin": false,
+        "isWin": true,
         "isHome": true
     },
     {
@@ -173,7 +173,7 @@
         "time": "19:00",
         "homeTeam": "David Lloyd Cardiff B",
         "awayTeam": "Llantrisant B",
-        "result": "",
+        "result": "1-4",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=5&teamid=19&competitionid=191",
         "isClash": true,
         "isWin": false,
@@ -185,7 +185,7 @@
         "time": "19:15",
         "homeTeam": "Llantrisant B",
         "awayTeam": "Merthyr A",
-        "result": "",
+        "result": "1-4",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=5&teamid=19&competitionid=191",
         "isClash": false,
         "isWin": false,
@@ -197,10 +197,10 @@
         "time": "19:15",
         "homeTeam": "Cardiff D",
         "awayTeam": "Llantrisant B",
-        "result": "",
+        "result": "5-0",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=5&teamid=19&competitionid=191",
         "isClash": false,
-        "isWin": false,
+        "isWin": true,
         "isHome": false
     },
     {
@@ -341,10 +341,10 @@
         "time": "19:15",
         "homeTeam": "Llantrisant C",
         "awayTeam": "Llantwit",
-        "result": "",
+        "result": "3-2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=193",
         "isClash": false,
-        "isWin": false,
+        "isWin": true,
         "isHome": true
     },
     {
@@ -353,10 +353,10 @@
         "time": "19:15",
         "homeTeam": "Llantrisant C",
         "awayTeam": "Bridgend D",
-        "result": "",
+        "result": "4-1",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=193",
         "isClash": true,
-        "isWin": false,
+        "isWin": true,
         "isHome": true
     },
     {
@@ -545,10 +545,10 @@
         "time": "19:15",
         "homeTeam": "Llantrisant D",
         "awayTeam": "Merthyr Vets",
-        "result": "",
+        "result": "3-2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=193",
         "isClash": false,
-        "isWin": false,
+        "isWin": true,
         "isHome": true
     },
     {
@@ -557,10 +557,10 @@
         "time": "19:00",
         "homeTeam": "Rhondda",
         "awayTeam": "Llantrisant D",
-        "result": "",
+        "result": "3-2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=193",
         "isClash": false,
-        "isWin": false,
+        "isWin": true,
         "isHome": false
     },
     {
