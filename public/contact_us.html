@@ -29,12 +29,22 @@
             </table>
         </div>
         <div class='inline'>
-            <table class='contactUsTable' ng-show="club.CONTACTS.FACEBOOK.length > 0">
+            <table class='contactUsTable' ng-show="club.CONTACTS.EMAIL.length > 0">
                 <td class='icon'>
                     <div><a class="menuAnchor" href="mailto:{{club.CONTACTS.EMAIL}}"><div class="contact"><span class='noDisplay'>Email</span></div></a></div>				
                 </td>
                 <td>
-                    <div><a class="menuAnchor" href="mailto:{{club.CONTACTS.EMAIL}}">Email</a></div>					
+                    <div><a class="menuAnchor" href="mailto:{{club.CONTACTS.EMAIL}}">Email (Squash)</a></div>					
+                </td>
+            </table>
+        </div>
+        <div class='inline'>
+            <table class='contactUsTable' ng-show="club.CONTACTS.TELEPHONE.length > 0">
+                <td class='icon'>
+                    <div><a class="menuAnchor"><div class="phone"><span class='noDisplay'>Racketball</span></div></a></div>				
+                </td>
+                <td>
+                    <div><b>{{ club.CONTACTS.TELEPHONE }} (Racketball)</b></div>					
                 </td>
             </table>
         </div>
