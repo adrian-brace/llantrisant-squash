@@ -11,13 +11,17 @@
 		<div ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>	
 		<div class="newLine" ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}}">
 			<p class="textParagraph">
+				<strong class="warningMessage">Tournament Prize Money is TBC!<br/>Watch this space...</strong>
+				<br/>
+				<!--
 				<strong class="warningMessage">Over £1000</strong> worth of prize money and vouchers up for grabs!!!
 				<br/>
 				<table>
 					<td>
 						<img src="./public/images/tournament_prize_money_2017.jpg" width="448" height="552">
 					</td>
-				</table>				
+				</table>
+				-->			
 			</p>
 		</div>
 		<div ng-include src='tournament_footer'></div>

@@ -144,6 +144,8 @@ homeApp.controller('HomeController', ['$scope', '$http','$location','$anchorScro
 		getConfiguration.then(function(configuration){
 			$scope.configuration = configuration;
 			$scope.tournamentStage = configuration.CONSTANTS.TOURNAMENTSTAGE;
+			$scope.tournamentDate = configuration.CONSTANTS.TOURNAMENTDATE;
+			$scope.tournamentEntryClosingDate = configuration.CONSTANTS.TOURNAMENTENTRYCLOSINGDATE;
 
 			var getClubSeasonConfiguration = clubConfiguration.getClubSeasonConfiguration(clubName);
 			getClubSeasonConfiguration.then(function(clubSeasonConfiguration){

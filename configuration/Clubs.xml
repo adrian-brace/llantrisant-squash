@@ -25,8 +25,8 @@
 			<Sponsors>
 				<Sponsor name="Jordan Civils" url="http://www.jordancivilsltd.co.uk/" icon="sponsor_jordan_civils"/>
 				<Sponsor name="Merch Asylum" url="http://www.merchasylum.co.uk/" icon="sponsor_merch_asylum"/>
-				<Sponsor name="Eye Rackets" url="http://www.eyerackets.co.uk/" icon="sponsor_eye_rackets"/>
-				<Sponsor name="St Clares School" url="https://www.stclares-school.co.uk/" icon="sponsor_st_clares"/>
+				<!--<Sponsor name="Eye Rackets" url="http://www.eyerackets.co.uk/" icon="sponsor_eye_rackets"/>-->
+				<!--<Sponsor name="St Clares School" url="https://www.stclares-school.co.uk/" icon="sponsor_st_clares"/>-->
 				<Sponsor name="Squash Wales" url="http://www.walessquashandracketball.co.uk/" icon="sponsor_squash_wales"/>
 			</Sponsors>
 			<Address>
