@@ -172,6 +172,18 @@ span.down {
 	height: 40px;
 }
 
+.sponsor_greenaway_autos {
+	background: url("../../public/images/sponsor_greenaway_autos_small.jpg");
+	width: 448px;
+	height: 100px;
+}
+
+.sponsor_greenaway_autos_mini {
+	background: url("../../public/images/sponsor_greenaway_autos_mini.jpg");
+	width: 179px;
+	height: 40px;
+}
+
 .sponsor_jordan_civils {
 	background: url("../../public/images/sponsor_logo_jordan_civils_small.jpg");
 	width: 336px;
