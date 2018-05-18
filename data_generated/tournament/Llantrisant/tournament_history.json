@@ -2,6 +2,94 @@
   "xml": {
     "tournament": [
       {
+        "year": "2018",
+        "entrants": "TBC",
+        "press_release": "",
+        "draw": [
+              {
+                "name": "",
+                "pdf": "Tournament Draw Schedule 2018 A Grade.pdf"
+              },
+              {
+                "name": "",
+                "pdf": "Tournament Draw Schedule 2018 B Grade.pdf"
+              },
+              {
+                "name": "",
+                "pdf": "Tournament Draw Schedule 2018 C Grade.pdf"
+              },
+              {
+                "name": "",
+                "pdf": "Tournament Draw Schedule 2018 D Grade.pdf"
+              }
+      ],
+        "event": [
+          {
+            "name": "A Draw",
+            "winner": "?",
+            "winnerPrize": "£250 Cash",
+            "runnerUp": "?",
+            "runnerUpPrize": "£150"
+          },
+          {
+            "name": "A Seminfinalsts",
+            "winner": "?",
+            "winnerPrize": "£25 Cash",
+            "runnerUp": "?",
+            "runnerUpPrize": "£25 Cash"
+          },
+          {
+            "name": "A Plate",
+            "winner": "?",
+            "winnerPrize": "Handshake",
+            "runnerUp": "?",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "B Draw",
+            "winner": "?",
+            "winnerPrize": "£100",
+            "runnerUp": "?",
+            "runnerUpPrize": "£50"
+          },
+          {
+            "name": "B Plate",
+            "winner": "?",
+            "winnerPrize": "Handshake",
+            "runnerUp": "?",
+            "runnerUpPrize": "Handshake"
+          },
+          {
+            "name": "C Draw",
+            "winner": "?",
+            "winnerPrize": "£50",
+            "runnerUp": "?",
+            "runnerUpPrize": "£25"
+          },
+          {
+            "name": "C Plate",
+            "winner": "?",
+            "winnerPrize": "Handshake",
+            "runnerUp": "?",
+            "runnerUpPrize": "Handshake"
+          },
+		      {
+            "name": "D Draw",
+            "winner": "?",
+            "winnerPrize": "£25 Cash",
+            "runnerUp": "?",
+            "runnerUpPrize": "£15 Cash"
+          },
+          {
+            "name": "D Plate",
+            "winner": "?",
+            "winnerPrize": "Handshake",
+            "runnerUp": "?",
+            "runnerUpPrize": "Handshake"
+          }
+        ]
+      },
+      {
         "year": "2017",
         "entrants": "63",
         "press_release": "Llantrisant Squash Open 2017 - Press Report.pdf",

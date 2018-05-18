@@ -11,16 +11,23 @@
 		<div ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>
 		<div class="newLine">
 			<p class="textParagraph">
-				When is the tournament?&nbsp;&nbsp;&nbsp;<br/>- Pencilled in for <strong>{{tournamentDate}}</strong>
+				When is the tournament?&nbsp;&nbsp;&nbsp;<br/>- <strong>{{tournamentDate}} {{tournamentYear}}</strong>
 				<br/><br/>
 				Where is the tournament?&nbsp;&nbsp;&nbsp;<br/>- <strong>Llantrisant Leisure Centre, 2nd floor on our 3 glass-backed courts.</strong>
 				<br/><br/>
 				How do I enter?&nbsp;&nbsp;&nbsp;<br/><strong>
-				<span ng-show="{{tournamentStage === 'UPCOMING'}}">- Text Jason on 07815 947792 before entry closing date of 25th May 2018.</span>
+				<span ng-show="{{tournamentStage === 'UPCOMING'}}">- Text Jason on 07815 947792 before entry closing date of {{tournamentEntryClosingDate}} {{tournamentYear}}.</span>
 				<span ng-show="{{tournamentStage === 'OVER'}}">- Enrty is not yet open. Watch this space.</span>
 				</strong>
 				<br/><br/>
-				What times are matches?&nbsp;&nbsp;&nbsp;<br/>- <strong>Approx. Friday 17:00-21:00, Sat 09:00-19:00, Sun 09:45-17:00</strong>
+				What times are matches?&nbsp;&nbsp;&nbsp;<br/>Approx.
+				<ul>
+					<li class="textParagraphList">Friday 17:00-21:00</li>
+					<li class="textParagraphList">Sat 09:00-19:00 - (NOTE: <strong>The 'A' Grade will begin on Saturday!</strong>)</li>
+					<li class="textParagraphList">Sun 09:45-17:00</li>
+				</ul>
+			</p>
+			<p class="textParagraph">
 				<br/><br/>
 				What do I get for my entry fee?&nbsp;&nbsp;&nbsp;<br/>- <strong>You are guaranteed 2 matches and a dri-fit tournament T-Shirt. 1st round losers are entered into a plate. We will also be holding a great raffle with excellent prizes and vouchers to be won.</strong>
 				<br/><br/>

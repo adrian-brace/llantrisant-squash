@@ -8,7 +8,7 @@
 	<div class="pageContent">
 		<div ng-include src='tournament_header'></div>
 		<div class='newLine' ng-show="{{tournamentStage === 'UPCOMING'}}">
-			<p class="textParagraph">We hope to confirm the draw and schedule shortly after: <strong class='negativeLight'>{{tournamentEntryClosingDate}}</strong></p>
+			<p class="textParagraph">We hope to confirm the draw and schedule shortly after: <strong class='negativeLight'>{{tournamentEntryClosingDate}} {{tournamentYear}}</strong></p>
 		</div>
 		<div class='datatable' ng-show="{{tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">		
 			<table class='datatable'>				
