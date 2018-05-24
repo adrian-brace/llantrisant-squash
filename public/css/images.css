@@ -184,6 +184,18 @@ span.down {
 	height: 40px;
 }
 
+.sponsor_gallagher {
+	background: url("../../public/images/sponsor_gallagher_small.png");
+	width: 256px;
+	height: 100px;
+}
+
+.sponsor_gallagher_mini {
+	background: url("../../public/images/sponsor_gallagher_mini.png");
+	width: 102px;
+	height: 40px;
+}
+
 .sponsor_jordan_civils {
 	background: url("../../public/images/sponsor_logo_jordan_civils_small.jpg");
 	width: 336px;
