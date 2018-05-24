@@ -11,7 +11,8 @@ homeApp.controller('LaddersController', ['$scope', '$http', '$location', 'club',
 		$http.get('./data_generated/ladders/'+ clubName + '/ladders.json')
 			.success(function(data) {
 				$scope.data = data;
-				$scope.daysRemaining = daysUntil($scope.data.EndDate);
+				$scope.daysRemainingSquash = daysUntil($scope.data.Squash.EndDate);
+				$scope.daysRemainingRacketball = daysUntil($scope.data.Racketball.EndDate);
 				console.log(data);
 			})
 			.error(function(data) {

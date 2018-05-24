@@ -18,10 +18,15 @@
 		<form name="form">
 			<div ng-show="showRules">
 				<p class="textParagraph">
-					<b>JOINING</b>: It is FREE to join. You do not need to be a club member to play on our ladders. Ladder cycles are approximately 6 weeks long depending on the time of year.
+					<b>JOINING</b>: It is FREE to join the squash and racketball ladders. You do not need to be a club member to play on our ladders. Ladder cycles are approximately 6 weeks long depending on the time of year.
 					To join, simply write your name and telephone number on the board near the ladders at the back of the courts down at the leisure centre, and you will be added to the bottom of the next cycle.
 					<b>PLEASE NOTE</b>: We do not publish the telephone numbers of ladder players on the website.
 				</p>
+				<h3>RACKETBALL</h3>
+				<p class="textParagraph">
+					<span ng-class="'negative'">NOTE:</span> The RACKETBALL ladder is currently being run as a single division with an Open Challenge for everyone, until further notice.
+				</p>
+				<h3>SQUASH</h3>
 				<p class="textParagraph">
 					<b>RULES</b>: In your ladder there are normally 5 players (including yourself). The goal is to play as many players as you can in your ladder within the dates Start and End Date.
 					<br/>
@@ -66,6 +71,7 @@
 				<table class="dataTable">
 					<thead>
 						<tr>
+							<th>Sport</th>
 							<th>Start</th>
 							<th>End</th>
 							<th>Days Left</th>
@@ -73,15 +79,29 @@
 					</thead>
 					<tbody>
 						<tr style="text-align: center;">
-							<td ng-show='!admin'>{{ data.StartDate | date:'EEEE d MMMM' }} -</td>
-							<td ng-show='admin'><input type="text" ng-model="data.StartDate"/></td>
-							<td ng-show='!admin'><b>{{ data.EndDate | date:'EEEE d MMMM' }}</b></td>
-							<td ng-show='admin'><input type="text" ng-model="data.EndDate"/></td>
+							<td><span class="negative">Squash</span></td>
+							<td ng-show='!admin'>{{ data.Squash.StartDate | date:'EEEE d MMMM' }} -</td>
+							<td ng-show='admin'><input type="text" ng-model="data.Squash.StartDate"/></td>
+							<td ng-show='!admin'><b>{{ data.Squash.EndDate | date:'EEEE d MMMM' }}</b></td>
+							<td ng-show='admin'><input type="text" ng-model="data.Squash.EndDate"/></td>
 							<td>
-								<span ng-class="{'positive': (daysRemaining > 14),
-									'concern': (daysRemaining <= 14 && daysRemaining >= 7),
-									'negativeLight': (daysRemaining <= 7)}"><span ng-show="daysRemaining >= 0"><b>{{ daysRemaining }}</b></span></span>
-								<span ng-show="daysRemaining === -1" class='negative'><b>N/A - NEW LADDERS WILL BE POSTED SOON</b></span>
+								<span ng-class="{'positive': (daysRemainingSquash > 14),
+									'concern': (daysRemainingSquash <= 14 && daysRemainingSquash >= 7),
+									'negativeLight': (daysRemainingSquash <= 7)}"><span ng-show="daysRemainingSquash >= 0"><b>{{ daysRemainingSquash }}</b></span></span>
+								<span ng-show="daysRemainingSquash === -1" class='negative'><b>N/A - NEW LADDER DUE SOON</b></span>
+							</td>
+						</tr>
+						<tr style="text-align: center;">
+							<td><span class="negative">Racketball</span></td>
+							<td ng-show='!admin'>{{ data.Racketball.StartDate | date:'EEEE d MMMM' }} -</td>
+							<td ng-show='admin'><input type="text" ng-model="data.Racketball.StartDate"/></td>
+							<td ng-show='!admin'><b>{{ data.Racketball.EndDate | date:'EEEE d MMMM' }}</b></td>
+							<td ng-show='admin'><input type="text" ng-model="data.Racketball.EndDate"/></td>
+							<td>
+								<span ng-class="{'positive': (daysRemainingRacketball > 14),
+									'concern': (daysRemainingRacketball <= 14 && daysRemainingRacketball >= 7),
+									'negativeLight': (daysRemainingRacketball <= 7)}"><span ng-show="daysRemainingRacketball >= 0"><b>{{ daysRemainingRacketball }}</b></span></span>
+								<span ng-show="daysRemainingRacketball === -1" class='negative'><b>N/A - NEW LADDERS WILL BE POSTED SOON</b></span>
 							</td>
 						</tr>
 					</tbody>
@@ -93,9 +113,9 @@
 				<span ng-class="'negative'" ng-show="unSavedData">WARNING: Ladder data has not been saved!!!</span>
 				<span ng-class="'positive'" ng-show='saveStatus'>{{ saveStatus }}</span>
 			</div>
-			<div ng-show='daysRemaining >= 0'>
+			<div>
 				<table>
-					<td align="center">
+					<td align="center" ng-show='daysRemainingSquash >= 0'>
 						<div class="squash">
 							<span class="noDisplay">Squash</span>
 						</div>
@@ -136,7 +156,7 @@
 							</table>
 						</div>
 					</td>
-					<td align="center" style="vertical-align: top; padding-left: 20px;">
+					<td ng-show='daysRemainingRacketball >= 0' align="center" style="vertical-align: top; padding-left: 20px;">
 						<div class="racketball">
 							<span class="noDisplay">Racketball</span>
 						</div>
