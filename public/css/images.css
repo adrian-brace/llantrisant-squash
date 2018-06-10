@@ -160,6 +160,18 @@ span.down {
 	height: 41px;
 }
 
+.sponsor_cms {
+	background: url("../../public/images/sponsor_cms_small.jpg");
+	width: 256px;
+	height: 100px;
+}
+
+.sponsor_cms_mini {
+	background: url("../../public/images/sponsor_cms_mini.jpg");
+	width: 102px;
+	height: 40px;
+}
+
 .sponsor_eye_rackets {
 	background: url("../../public/images/sponsor_logo_eye_rackets_small.jpg");
 	width: 208px;
