@@ -8,9 +8,9 @@
 		</td>
 	</table>
 </div>
-<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}}" ng-include src='tournament_title'></div>
-<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}}" ng-include src='tournament_header'></div>
-<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}}" ng-include src='tournament_footer'></div>
+<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}} || tournamentStage === 'DRAWN'}}" ng-include src='tournament_title'></div>
+<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}} || tournamentStage === 'DRAWN'}}" ng-include src='tournament_header'></div>
+<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY'}} || tournamentStage === 'DRAWN'}}" ng-include src='tournament_footer'></div>
 <div class="newLine">
 	<br/>
 	<table class='menuTable'>
