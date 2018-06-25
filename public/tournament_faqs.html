@@ -7,8 +7,8 @@
 	</div>
 	<div class="pageContent">
 		<div ng-include src='tournament_header'></div>
-		<div ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
-		<div ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>
+		<div class="newLine" ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
+		<div class="newLine" ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>
 		<div class="newLine">
 			<p class="textParagraph">
 				When is the tournament?&nbsp;&nbsp;&nbsp;<br/>- <strong>{{tournamentDate}} {{tournamentYear}}</strong>
@@ -17,14 +17,14 @@
 				<br/><br/>
 				How do I enter?&nbsp;&nbsp;&nbsp;<br/><strong>
 				<span ng-show="{{tournamentStage === 'UPCOMING'}}">- Text Jason on 07815 947792 before entry closing date of {{tournamentEntryClosingDate}} {{tournamentYear}}.</span>
-				<span ng-show="{{tournamentStage === 'OVER'}}">- Enrty is not yet open. Watch this space.</span>
+				<span ng-show="{{tournamentStage === 'OVER' || tournamentStage === 'RESULTS'}}">- Entry for {{tournamentYear}} is not yet open. Watch this space.</span>
 				</strong>
 				<br/><br/>
 				What times are matches?&nbsp;&nbsp;&nbsp;<br/>Approx.
 				<ul>
 					<li class="textParagraphList">Friday 17:00-21:00</li>
-					<li class="textParagraphList">Sat 09:00-19:00 - (NOTE: <strong>The 'A' Grade will begin on Saturday!</strong>)</li>
-					<li class="textParagraphList">Sun 09:45-17:00</li>
+					<li class="textParagraphList">Sat 09:00-18:00 - (NOTE: <strong>The 'A' Grade will begin on Saturday!</strong>)</li>
+					<li class="textParagraphList">Sun 09:00-17:00</li>
 				</ul>
 			</p>
 			<p class="textParagraph">
@@ -35,7 +35,8 @@
 				<br/><br/>
 				Where do I register?&nbsp;&nbsp;&nbsp;
 				<br/>- <strong>FRI: The Bar area on the 2nd floor on the same level as the courts.</strong>
-				<br/>- <strong>SAT: Court 4.</strong>
+				<br/>- <strong>SAT AM: Court 4.</strong>
+				<br/>- <strong>SAT PM: The Bar area again.</strong>
 				<br/><br/>
 				When do I pay?&nbsp;&nbsp;&nbsp;<br/>- <strong>During registration on arrival before your first match.</strong>
 				<br/><br/>
@@ -61,7 +62,7 @@
 				<strong>
 					<ul>
 						<li class="textParagraphList">We will be running a licensed bar with refreshements, snacks and alcohol.</li>
-						<li class="textParagraphList">A sports massage service will be available from Saturday morning onwards.</li>
+						<li class="textParagraphList">A sports massage service will be available by <a class="loneAnchor" href="https://twitter.com/BSmith_Therapy">Beca Smith</a> of <a class="loneAnchor" href="https://m.facebook.com/Beca-Smith-Sports-Massage-1311312975602915/">Defiance Sports Therapy</a> from Saturday morning onwards.</li>
 						<li class="textParagraphList">We will be holding a raffle with lots of prizes up for grabs.</li>
 						<li class="textParagraphList">We will be running a squash skills game to win a voucher.</li>
 						<li class="textParagraphList">We will be selling grips.</li>

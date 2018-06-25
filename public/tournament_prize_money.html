@@ -7,10 +7,9 @@
 	</div>
 	<div class="pageContent">
 		<div ng-include src='tournament_header'></div>
-		<div ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
-		<div ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>	
-		<div class="newLine">
-		<!--<div class="newLine" ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">-->
+		<div class="newLine" ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
+		<div class="newLine" ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>	
+		<div class="newLine" ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">-->
 			<p class="textParagraph">
 				<!--
 					<strong class="warningMessage">Tournament Prize Money is TBC!<br/>Watch this space...</strong>

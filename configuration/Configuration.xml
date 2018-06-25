@@ -22,7 +22,7 @@
 		<DivisionStandingsURL>showdivision?divisionid=%s</DivisionStandingsURL>
 		<WelshRankingsURL>http://www.wales.squashlevels.com/players.php?&amp;all=&amp;confidence=1&amp;limit_confidence=0&amp;wales=&amp;start=%s</WelshRankingsURL>
 		<SubmitLeagueResultsURL>http://walessquash.countyleagues.co.uk/</SubmitLeagueResultsURL>
-		<TournamentStage>DRAWN</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
+		<TournamentStage>RESULTS</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
 		<TournamentDate>22-24th June</TournamentDate>
 		<TournamentYear>2018</TournamentYear>
 		<TournamentEntryClosingDate>15th June</TournamentEntryClosingDate>

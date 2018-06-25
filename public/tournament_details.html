@@ -24,8 +24,8 @@
 					Entry is now closed. <a class="menuAnchor" href="./#/tournament_draw">Click here for Draw</a>.
 				</p>
 			</div>
-		<div ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
-		<div ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>
+		<div ng-show="{{tournamentStage === 'RESULTS'}}" class="newLine" ng-include src='tournament_results_available'></div>
+		<div ng-show="{{tournamentStage === 'OVER'}}" class="newLine" ng-include src='tournament_over'></div>
 		<div ng-include src='tournament_footer'></div>
 	</div>
 </div>

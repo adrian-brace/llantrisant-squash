@@ -10,9 +10,11 @@
 		<div class='newLine' ng-show="{{tournamentStage === 'UPCOMING'}}">
 			<p class="textParagraph">We hope to confirm the draw and schedule shortly after: <strong class='negativeLight'>{{tournamentEntryClosingDate}} {{tournamentYear}}</strong></p>
 		</div>
-		<div class='newLine'>
-		<!--<div class='newLine' ng-show="{{tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">-->
-			<p class="negativeLight">The draw and partial results are available!<br/><br/>Last Updated: 7am Sunday 24th June<br/></p>
+		<div class='newLine' ng-show="{{tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">
+			<p class="negativeLight">The results are available!<br/>
+				<br/>Last Updated: 1pm Monday 25th June<br/>
+				<br/>Full results are available in the Tournaments section of <a class="loneAnchor" href='http://walessquash.countyleagues.co.uk/'>Wales Squash County Leagues Website</a>.
+			</p>
 			<table class='datatable'>				
 				<thead>
 					<tr>
@@ -50,8 +52,8 @@
 				</tbody>	
 			</table>
 		</div>
-		<div ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
-		<div ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>		
+		<div class="newLine" ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
+		<div class="newLine" ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>		
 		<div ng-include src='tournament_footer'></div>
 	</div>
 </div>

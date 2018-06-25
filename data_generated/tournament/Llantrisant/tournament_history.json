@@ -3,89 +3,107 @@
     "tournament": [
       {
         "year": "2018",
-        "entrants": "TBC",
+        "entrants": "70",
         "press_release": "",
         "draw": [
               {
-                "name": "",
+                "name": "A Draw Mens",
                 "pdf": "Tournament Draw Schedule 2018 A Grade.pdf"
               },
               {
-                "name": "",
+                "name": "B Draw Mixed",
                 "pdf": "Tournament Draw Schedule 2018 B Grade.pdf"
               },
               {
-                "name": "",
+                "name": "C Draw Mens",
                 "pdf": "Tournament Draw Schedule 2018 C Grade.pdf"
               },
               {
-                "name": "",
+                "name": "D Draw Mens",
                 "pdf": "Tournament Draw Schedule 2018 D Grade.pdf"
+              },
+              {
+                "name": "E Draw Mixed",
+                "pdf": "Tournament Draw Schedule 2018 E Grade.pdf"
               }
       ],
         "event": [
           {
             "name": "A Draw",
-            "winner": "?",
+            "winner": "Luke Bishop",
             "winnerPrize": "£250 Cash",
-            "runnerUp": "?",
+            "runnerUp": "Greg Tippings",
             "runnerUpPrize": "£150"
           },
           {
             "name": "A Seminfinalsts",
-            "winner": "?",
+            "winner": "Lewis Poole",
             "winnerPrize": "£25 Cash",
-            "runnerUp": "?",
+            "runnerUp": "Liam Eason",
             "runnerUpPrize": "£25 Cash"
           },
           {
             "name": "A Plate",
-            "winner": "?",
-            "winnerPrize": "Handshake",
-            "runnerUp": "?",
-            "runnerUpPrize": "Handshake"
+            "winner": "Frazer Richardson",
+            "winnerPrize": "Trophy",
+            "runnerUp": "Joe Eason",
+            "runnerUpPrize": "Trophy"
           },
           {
             "name": "B Draw",
-            "winner": "?",
+            "winner": "Mark Toseland",
             "winnerPrize": "£100",
-            "runnerUp": "?",
+            "runnerUp": "David Robertson",
             "runnerUpPrize": "£50"
           },
           {
             "name": "B Plate",
-            "winner": "?",
-            "winnerPrize": "Handshake",
-            "runnerUp": "?",
-            "runnerUpPrize": "Handshake"
+            "winner": "Owen Heyes",
+            "winnerPrize": "Trophy",
+            "runnerUp": "Chris Emanuel",
+            "runnerUpPrize": "Trophy"
           },
           {
             "name": "C Draw",
-            "winner": "?",
+            "winner": "Steve White",
             "winnerPrize": "£50",
-            "runnerUp": "?",
+            "runnerUp": "Rob Griffin",
             "runnerUpPrize": "£25"
           },
           {
             "name": "C Plate",
-            "winner": "?",
-            "winnerPrize": "Handshake",
-            "runnerUp": "?",
-            "runnerUpPrize": "Handshake"
+            "winner": "Ryan Tyler",
+            "winnerPrize": "Trophy",
+            "runnerUp": "Justin Nemeth",
+            "runnerUpPrize": "Trophy"
           },
 		      {
             "name": "D Draw",
-            "winner": "?",
+            "winner": "Marco Perna",
             "winnerPrize": "£25 Cash",
-            "runnerUp": "?",
+            "runnerUp": "Oliver Cann",
             "runnerUpPrize": "£15 Cash"
           },
           {
             "name": "D Plate",
-            "winner": "?",
-            "winnerPrize": "Handshake",
-            "runnerUp": "?",
-            "runnerUpPrize": "Handshake"
+            "winner": "Dylan Jones",
+            "winnerPrize": "Trophy",
+            "runnerUp": "Chris Baker",
+            "runnerUpPrize": "Trophy"
+          },
+		      {
+            "name": "E Draw",
+            "winner": "Nic Treharne",
+            "winnerPrize": "£25 Cash",
+            "runnerUp": "Olivia Stephens",
+            "runnerUpPrize": "£15 Cash"
+          },
+          {
+            "name": "E Plate",
+            "winner": "Gareth Jones",
+            "winnerPrize": "Trophy",
+            "runnerUp": "Shivam Singal",
+            "runnerUpPrize": "Trophy"
           }
         ]
       },
