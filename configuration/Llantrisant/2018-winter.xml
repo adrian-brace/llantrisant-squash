@@ -9,7 +9,7 @@
 			<Players>
 				<Player Name="Phil Thomas"/>
 				<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
-				<Player Name="Dan Webb" IsCaptain="true"/>
+				<Player Name="Dan Webb"/>
 				<Player Name="Jeff Greenslade" RefereeNumber="100467"/>
 				<Player Name="Rob Mitchell"/>
 				<Player Name="Matthew Williams"/>
@@ -57,7 +57,7 @@
 			<CompetitionID></CompetitionID>
 			<Players>
 				<Player Name="Phillip Maybury"/>
-				<Player Name="Chay Davies-Smith"/>
+				<Player Name="Chay Davies-Smith" IsCaptain="true"/>
 				<Player Name="Steve Evans"/>
 				<Player Name="Mark Turner"/>
 				<Player Name="Ashley Maybury"/>

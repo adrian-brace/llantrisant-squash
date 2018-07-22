@@ -35,4 +35,23 @@ homeApp.service('clubConfiguration', function($q, $http, xmlToJson) {
 
 		return deferred.promise;
 	};
+
+	this.getProvisionalClubSeasonConfiguration = function getProvisionalClubSeasonConfiguration(clubName){
+		
+		var deferred = $q.defer();
+		var seasonAndYear = getYearAndSeasonForProvisionalRankings().toLowerCase();
+		var filePath = DIRECTORY_CONFIGURATION + clubName + '/' + seasonAndYear + '.xml';
+		
+		// Read the master configuration file
+		$http.get(filePath)
+			.success(function(xmlData) {
+				deferred.resolve(xmlToJson.convert(xmlData));
+			})
+			.error(function(data) {
+				console.log('Error reading club season configuration file: ' + filePath);
+				deferred.resolve('');
+			});
+
+		return deferred.promise;
+	};
 });

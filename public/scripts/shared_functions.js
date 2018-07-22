@@ -131,8 +131,16 @@ function getYearAndSeason(){
 	return getYear() + '-' + getSeason();
 }
 
+function getYearAndSeasonForProvisionalRankings(){
+	return getYear() + '-' + SEASON_WINTER.capitalize();
+}
+
 function getSeasonAndYearForRankings(){
 	return getSeasonForRankings() + ' ' + getYear();
+}
+
+function getSeasonAndYearForProvisionalRankings(){
+	return SEASON_WINTER.capitalize() + ' ' + getYear();
 }
 
 function showProvisionalRankings() {
