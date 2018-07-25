@@ -58,7 +58,6 @@
 			<Players>
 				<Player Name="Phillip Maybury"/>
 				<Player Name="Chay Davies-Smith" IsCaptain="true"/>
-				<Player Name="Steve Evans"/>
 				<Player Name="Mark Turner"/>
 				<Player Name="Ashley Maybury"/>
 			</Players>
@@ -90,6 +89,7 @@
 		</Team>
 		<!-- SPARES -->
 		<!--
+			<Player Name="Steve Evans"/>
 			<Player Name="Dean Bromham" RefereeNumber="100142"/>
 		-->
 	</Teams>
