@@ -2,10 +2,10 @@
 	<Teams>
 		<Team>
 			<Name>A</Name>
-			<TeamID></TeamID>
-			<DivisionID></DivisionID>
+			<TeamID>10</TeamID>
+			<DivisionID>3</DivisionID>
 			<DivisionName>One East</DivisionName>
-			<CompetitionID></CompetitionID>
+			<CompetitionID>269</CompetitionID>
 			<Players>
 				<Player Name="Phil Thomas"/>
 				<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
@@ -17,15 +17,15 @@
 		</Team>
 		<Team>
 			<Name>B</Name>
-			<TeamID></TeamID>
-			<DivisionID></DivisionID>
+			<TeamID>19</TeamID>
+			<DivisionID>6</DivisionID>
 			<DivisionName>Three East</DivisionName>
-			<CompetitionID></CompetitionID>
+			<CompetitionID>269</CompetitionID>
 			<Players>
 				<Player Name="Ryan Phillips"/>
 				<Player Name="Ben Howcroft"/>
 				<Player Name="Tom Penberthy"/>
-				<Player Name="Martyn Christopher" IsCaptain="true" />
+				<Player Name="Martyn Christopher" IsCaptain="true"/>
 				<Player Name="Jack Penberthy"/>
 				<Player Name="Chris Jones" RefereeNumber="101510"/>
 				<Player Name="Dan Povey"/>
@@ -33,10 +33,10 @@
 		</Team>
 		<Team>
 			<Name>C</Name>
-			<TeamID></TeamID>
-			<DivisionID></DivisionID>
+			<TeamID>55</TeamID>
+			<DivisionID>1</DivisionID>
 			<DivisionName>Mid Glam One</DivisionName>
-			<CompetitionID></CompetitionID>
+			<CompetitionID>271</CompetitionID>
 			<Players>
 				<Player Name="Chris Emanuel"/>
 				<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
@@ -51,10 +51,10 @@
 		</Team>
 		<Team>
 			<Name>D</Name>
-			<TeamID></TeamID>
-			<DivisionID></DivisionID>
+			<TeamID>79</TeamID>
+			<DivisionID>1</DivisionID>
 			<DivisionName>Mid Glam One</DivisionName>
-			<CompetitionID></CompetitionID>
+			<CompetitionID>271</CompetitionID>
 			<Players>
 				<Player Name="Phillip Maybury"/>
 				<Player Name="Chay Davies-Smith" IsCaptain="true"/>
@@ -64,10 +64,10 @@
 		</Team>
 		<Team>
 			<Name>E</Name>
-			<TeamID></TeamID>
-			<DivisionID></DivisionID>
+			<TeamID>89</TeamID>
+			<DivisionID>2</DivisionID>
 			<DivisionName>Mid Glam Two</DivisionName>
-			<CompetitionID></CompetitionID>
+			<CompetitionID>271</CompetitionID>
 			<Players>
 				<Player Name="Wynne Owen"/>
 				<Player Name="Amanda Barter" IsCaptain="true"/>
