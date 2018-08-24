@@ -26,7 +26,7 @@
 				<thead>
 					<tr>
 						<th></th>
-						<th colspan="4" style="text-align: center">
+						<th colspan="3" style="text-align: center">
 							<span class="negativeLight">{{season}}</span>
 						</th>
 						<th></th>
@@ -36,18 +36,22 @@
 						<th>No.</th>
 						<th>Player</th>
 						<th>Club Ranking</th>
-						<th>Disivision</th>
 						<th>Ref. #</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr ng-repeat-start='team in teams' ng-hide='true'></tr>
 					<tr ng-repeat='player in team.players track by $index'>
-						<td class="rightBordered" ng-show='$index == 0' rowspan='{{team.players.length}}' align='center'><a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.teamName }}</a></td>
+						<td class="rightBordered" ng-show='$index == 0' rowspan='{{team.players.length}}' align='center'>
+							<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.teamName }}</a>
+							<br />
+							<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.divisionName }}</a>
+							<br />
+							{{team.homeNight}} (H)
+						</td>
 						<td align='center'>{{ player.teamRanking }}</td>
 						<td>{{ player.name }} <span ng-show='player.isCaptain'><b>(C)</b></span></td>
 						<td align='center'>{{ player.clubRanking }}</td>
-						<td><a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.divisionName }}</a></td>
 						<td><span ng-show='player.refereeNumber'>{{player.refereeNumber}}</span></td>
 					</tr>
 					<tr ng-repeat-end ng-hide='true'></tr>

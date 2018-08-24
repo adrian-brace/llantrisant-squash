@@ -51,6 +51,7 @@ homeApp.controller('RankingsForTeamController', ['$scope', '$http', 'club', 'con
 							teamUrl: teamUrl,
 							divisionName: team.DIVISIONNAME,
 							teamName: team.NAME,
+							homeNight: team.HOMENIGHT,
 							teamNumber: teamIndex,
 							players: players
 						});

@@ -6,6 +6,7 @@
 			<DivisionID>3</DivisionID>
 			<DivisionName>One East</DivisionName>
 			<CompetitionID>269</CompetitionID>
+			<HomeNight>Thurs</HomeNight>
 			<Players>
 				<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
 				<Player Name="Dan Webb"/>
@@ -22,6 +23,7 @@
 			<DivisionID>6</DivisionID>
 			<DivisionName>Three East</DivisionName>
 			<CompetitionID>269</CompetitionID>
+			<HomeNight>Tues</HomeNight>
 			<Players>
 				<Player Name="Ben Howcroft"/>
 				<Player Name="Tom Penberthy"/>
@@ -37,6 +39,7 @@
 			<DivisionID>1</DivisionID>
 			<DivisionName>Mid Glam One</DivisionName>
 			<CompetitionID>271</CompetitionID>
+			<HomeNight>Thurs</HomeNight>
 			<Players>				
 				<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
 				<Player Name="Lee Francis" RefereeNumber="101514"/>
@@ -54,6 +57,7 @@
 			<DivisionID>1</DivisionID>
 			<DivisionName>Mid Glam One</DivisionName>
 			<CompetitionID>271</CompetitionID>
+			<HomeNight>Tues</HomeNight>
 			<Players>
 				<Player Name="Joshua Sion Davies" RefereeNumber="101022"/>
 				<Player Name="Phillip Maybury"/>
@@ -69,6 +73,7 @@
 			<DivisionID>2</DivisionID>
 			<DivisionName>Mid Glam Two</DivisionName>
 			<CompetitionID>271</CompetitionID>
+			<HomeNight>Wed</HomeNight>
 			<Players>
 				<Player Name="Wynne Owen"/>
 				<Player Name="Adrian Fisk"/>
