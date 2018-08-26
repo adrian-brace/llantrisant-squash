@@ -28,8 +28,8 @@
 				<Player Name="Ben Howcroft"/>
 				<Player Name="Tom Penberthy"/>
 				<Player Name="Jack Penberthy"/>
-				<Player Name="Martyn Christopher" IsCaptain="true"/>
 				<Player Name="Rob Mitchell"/>
+				<Player Name="Martyn Christopher" IsCaptain="true"/>
 				<Player Name="Chris Emanuel"/>
 			</Players>
 		</Team>
