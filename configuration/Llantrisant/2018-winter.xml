@@ -61,11 +61,10 @@
 			<HomeNight>Tues</HomeNight>
 			<Players>
 				<Player Name="Joshua Sion Davies" RefereeNumber="101022"/>
-				<Player Name="Phillip Maybury"/>
 				<Player Name="Chay Davies-Smith" IsCaptain="true"/>
 				<Player Name="Mark Turner"/>
-				<Player Name="Ashley Maybury"/>
 				<Player Name="Shivam Singhal"/>
+				<Player Name="Callum Webb"/>
 			</Players>
 		</Team>
 		<Team>
@@ -77,9 +76,10 @@
 			<HomeNight>Wed</HomeNight>
 			<Players>
 				<Player Name="Wynne Owen"/>
+				<Player Name="Phillip Maybury"/>
 				<Player Name="Adrian Fisk"/>
 				<Player Name="Amanda Barter" IsCaptain="true"/>
-				<Player Name="Callum Webb"/>
+				<Player Name="Ashley Maybury"/>
 				<Player Name="Keith McCarthy"/>
 				<Player Name="James Pickett"/>
 				<Player Name="Jonathan Young"/>
