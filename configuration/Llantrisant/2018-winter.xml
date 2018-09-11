@@ -61,7 +61,7 @@
 			<HomeNight>Tues</HomeNight>
 			<Players>
 				<Player Name="Joshua Sion Davies" RefereeNumber="101022"/>
-				<Player Name="Chay Davies-Smith" IsCaptain="true"/>
+				<Player Name="Chay Davies-Smith" IsCaptain="true" RefereeNumber="100385"/>
 				<Player Name="Mark Turner"/>
 				<Player Name="Shivam Singhal"/>
 				<Player Name="Callum Webb"/>
