@@ -651,13 +651,14 @@ function processAllFixturesAndResults(req, sourcePage, res){
 					var matchDate = new Date('20' + matchDateAndTime[3], parseInt(matchDateAndTime[2]) - 1, matchDateAndTime[1]);
 					var today = new Date();
 					today = new Date(today.getTime() + (today.getTimezoneOffset() * 3600));
-					var isNonFixture = ($(this).children().eq(4).children().length === 0) && (matchDate.withoutTime() < today.withoutTime());
+					var isNonFixture = ($(this).children().eq(5).children().length === 0) && (matchDate.withoutTime() < today.withoutTime());
 						
 					if (!isNonFixture)
 					{
 						var matchDateFormatted = formatDate(matchDate);
 						var matchTime = matchDateAndTime[4];
 						var opponent = $(this).children().eq(3).text();
+						var pointsResult = $(this).children().eq(5).text().replace("Won ", "").replace("Lost ", "").trim();
 						var result = $(this).children().eq(6).text().trim();
 						var homeTeam, awayTeam;
 
@@ -676,6 +677,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 							homeTeam: homeTeam,
 							awayTeam: awayTeam,
 							result: result,
+							pointsResult: pointsResult,
 							teamURL: teamFixturesURL,
 							isClash: false,
 							isWin: false,

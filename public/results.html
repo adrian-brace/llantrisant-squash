@@ -92,6 +92,7 @@
 					<td align="center" ng-class="{'winClass': fixture.isWin, 'loseClass': !fixture.isWin && fixture.result.length > 0}">
 						<strong ng-show="fixture.result === ''">Unsubmitted</strong>
 						<strong>{{fixture.result}}</strong>
+						&nbsp;&nbsp;<strong>Pts: {{fixture.pointsResult}}</strong>
 					</td>
 				</tr>
 			</tbody>
