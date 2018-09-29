@@ -301,7 +301,7 @@ app.get('/welsh_rankings', function(req, res) {
 	var pageIndex = 0;
 
 	// Download all the welsh rankings 50 at a time	per page as per the non logged in limit
-	for (pageOf50 = 0; pageOf50 < 1600; pageOf50 += 50)
+	for (pageOf50 = 0; pageOf50 < 2600; pageOf50 += 50)
 	{
 		pageIndex++;
 		var welshRankingPageOf50URL = vsprintf(welshRankingsURL, pageOf50.toString());
@@ -312,7 +312,7 @@ app.get('/welsh_rankings', function(req, res) {
 	}
 
 	// Loop all 25 or so pages and build full 1300 rankings into JSON
-	for (pageOf50 = 0; pageOf50 < 1600; pageOf50 += 50)
+	for (pageOf50 = 0; pageOf50 < 2600; pageOf50 += 50)
 	{
 		var filename = pageOf50 + FILE_EXTENSION_FOR_WEB_PAGES;	
 		var filepath = welshRankingsDirectory + filename;
@@ -864,7 +864,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				// Create list of team match participants with games and points scored/conceded
 				var $ = cheerio.load(teamMatchResultHTMLs[teamMatchResultIndex].html);
 
-				var rows = $('table').eq(11).find($('tr')).each(function(index){
+				var rows = $('table').eq(12).find($('tr')).each(function(index){
 					if(index >= 1 && index <= 5) {
 
 						var playerColumnIndex = 3;

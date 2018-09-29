@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+  <!-- All code related to the player level algorithm, boxes and multi-county functionality, copyright Richard Bickers, 2017 -->
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="keywords" content="Squash,Racketball,League,Leagues,Boxes,Avon,Bristol,Ranking,Level,SquashLevels,National"><meta name="author" content="SquashLevels Ltd."><meta name="wot-verification" content="29428994d10d64231891"/><meta name="google-site-verification" content="NKi4YGQGsZA9USG7kOAbsMe6CydQjvhFu82_x2fpYBU"/><link rel="stylesheet" href="css/crush_generic_spa.css?1527887048" media="all" />
+<link rel="stylesheet" href="css/crush_generic_menu_spa.css?1512954852" media="all" />
+
+    <title>SquashLevels (WAL)</title><meta name="description" content="29 Sep 2018 - Squash results and player levels for all players of all ability from professional to county to club. If you play squash, you could/should be on here!"><link rel="shortcut icon" href="spa/spa_favicon.ico"><link rel="stylesheet" href="spa/spa.css" type="text/css"><script src="inc/selecthide.js"></script>
+<!--[if IE]>
+	<style type="text/css" media="screen">
+		body
+		{
+			behavior: url("inc/csshover.htc");
+		}			
+		td#head ul.nav li ul
+		{
+			width: 300px;
+			margin: 0px;
+			margin-top: 20px;
+			margin-left: -100%;
+		}
+		td#head ul.nav li:hover ul li:hover ul
+		{
+			left: 220px;
+		}
+		td#content,
+		td#leftnav
+		{
+		margin-top: 0px;
+		}
+	</style>
+<![endif]-->
+  <!-- Google Analytics -->
+      
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-86957964-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- jQuery and plug-ins. Need to keep up-to-date from time to time. Check JS console for compatibility errors. -->
+
+  <!-- Main JQuery library. Allow for old versions of IE -->
+  <!--[if lt IE 9]>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+  <!--[if gte IE 9]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--<![endif]-->
+
+  <!-- JQuery UI for widgets like the datepicker -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script src="https://www.google.com/jsapi"></script> -->
+  <script src="js/jsapi"></script>
+  <!-- <script src="http://morr.github.io/javascripts/jquery.appear.js"></script> -->
+  <script src="js/jquery.appear.js"></script>
+  <!-- <script src="https://raw.githubusercontent.com/private-face/jquery.fullscreen/master/src/abstract-fullscreen.js"></script> -->
+  <!-- <script src="js/jquery.fullscreen-master/release/jquery.fullscreen.min.js"></script> -->
+  <!-- <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script> -->
+  <script src="js/md5.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <!-- <script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script> -->
+  <script src="js/tinymce/tinymce.min.js"></script>
+
+  <!-- Chromejs for the menu dropdowns -->
+  <script type="text/javascript">
+  var menuDropdownOffset = 3;  </script>
+	<script src="chromejs/chrome.js"></script>
+  
+  <script type="text/javascript">
+  
+  // This is JS for *every page*. At some point it needs to be moved to a dedicated script page but, for now it's here.
+  
+  // tinyMCE and responsivefilemanager - quite complex to set up as the plug-in files and PHP files all have to be in the
+  // right places. Need:
+  // root/filemanager/<full responsivefilemanager download>
+  // root/js/tinymce/plugins/responsivefilemanager/plugin.min.js
+  // root/thumbs (writeable)
+  // root/uploads/<site specific upload folder> (writeable)
+  // The plug-in has to be in both root/filemanager and the tinymce/plugins location. A bit mad.
+  // It's not good with the additional /beta in the root for the developement system so that has to be added if need be
+  
+  // Allow for the use of the beta root (development system uses /beta/... for all files
+  var extraRoot = '';
+
+  // Initialise tinyMCE
+  tinymce.init({
+    selector:'#news_contents, .tinymce',
+    plugins: [
+         "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
+         "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+         "save table contextmenu directionality emoticons template paste textcolor responsivefilemanager"],
+    toolbar1: "insertfile undo redo | styleselect fontselect fontsizeselect | bold italic forecolor backcolor | emoticons ",
+    toolbar2: "link image responsivefilemanager | print preview fullpage | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent ",
+    relative_urls: false,
+    remove_script_host: false,
+
+    external_filemanager_path:"filemanager/",
+    filemanager_title:"File Manager (from Responsive)",
+    external_plugins: { "filemanager" : extraRoot + "/filemanager/plugin.min.js"}
+  });
+
+  // User name for global JS access
+  var userName = "none";
+  
+  // Admin level
+  var admin = false;                 // Admin level
+  var results_admin = false; // Results admin level
+  var county_admin = false;   // County admin level
+  
+  // Reset the inactivity timer
+  var idleTime = 0;
+  var commsKey = '111392103720';
+  
+  // These record the mouse position. Need to make sure the mouse has moved in real terms to reset the timer
+  var mouseX = -1;
+  var mouseY = -1;
+  
+  // If trim isn't supported (pre-IE9) then add the function here
+  if (!String.prototype.trim) {
+    (function() {
+      var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+      String.prototype.trim = function() {
+        return this.replace(rtrim, '');
+      };
+    })();
+  }
+
+  </script> 
+
+  <script src="js/functions.js"></script>
+  
+	</head>
+	
+  <body id="whole_page" style='min-height:100%;'>
+
+		<p id='debug_line' style='position:fixed;margin:2px;top:0px;opacity:0.3;'></p><div id='bottom_right_buttons' style='position:fixed;margin:5px;bottom:0px;right:0px;z-index:100;'><button type='button' id='bottom_right_button' style='float:right;display:none;'>Click</button></div>
+    <!-- If we want the header, start with the banner at the top -->
+				  <table cellspacing="0" cellpadding="0" border="0" id="banner">
+		    <tr>
+          <td id="head">
+					  <!-- Table for the everything in the titles section of the banner at the top -->
+  <table id="titles" align="center" border="0">
+  <tr>
+    <td style='position:relative;left:10px;'>
+      <img src='images/squashlevels_nw.png' height='150' border='0'>    </td>
+    <td>
+      <table id="spa" border="0">
+        <tr>
+          <td style='font-size: 48px;'><i>SquashLevels Wales</i></td>        </tr>
+        <tr>
+          <td align="right" style='font-size: 30px; padding-right:85px;'>&nbsp;<nobr><i>Know your level</i>&nbsp;&nbsp;&nbsp;
+          <a title="Follow us on twitter." 
+             href="http://twitter.com/SquashLevels" 
+             target="_blank" rel="nofollow"
+            ><img src='images/Twitter_logo_blue.png' height="20" border="0" style='padding-bottom:5px;'
+            ></a>
+          <a title="Click to find Facebook page, see latest news and join the discussion. Like us to receive latest news via Facebook." 
+             href="http://www.facebook.com/squashlevels" 
+             target="_blank" rel="nofollow"
+            ><img src='images/facebook_icon.png' height="20" border="0" style='padding-bottom:5px;'
+            ></a> <iframe width="50" src="//www.facebook.com/plugins/like.php?href=https://www.facebook.com/squashlevels&
+                                         colorscheme=light&layout=button_count&action=like&show_faces=false&send=false"
+                         scrolling="no" frameborder="0" style="height:25px;" allowTransparency="true"></iframe></nobr>
+          </td>
+        </tr>
+    <!--<tr><td>&nbsp;</td></tr>-->
+        <tr>
+          <td style='font-size:15px;position:relative;'>
+          80,272 players. 1,276,259 matches. Be part of the next big thing in squash.          </td>
+        </tr>
+      </table>
+    <td style='position:relative;top:-5px;left:-35;'>
+      <img style='padding-left:20px;' src='images/wales_logo.png' height='150' border='0'>    </td>
+  </tr>
+  </table><div id='nav' onMouseOver='hideSelect()' onMouseOut='unhideSelect()'><table align='center' width='100%'><tr><td align='center' valign='bottom'><div class='menu' align='center'><div class='chromestyle' id='chromemenu'><nobr><ul><li>&nbsp;</li><li><a style='cursor:pointer;' rel="dropmenu0">Home</a></li><li><font color=#1A4383>|</li><li><a style='cursor:pointer;' rel="dropmenu10">Community</a></li><li><font color=#1A4383>|</li><li><a style='cursor:pointer;' rel="dropmenu8">Boxes</a></li><li><font color=#1A4383>|</li><li><a title="Find a player" style='cursor:pointer;' href="players.php?all&show=all&find">Find</a></li><li><font color=#1A4383>|</li><li><a style='cursor:pointer;' rel="dropmenu9">Me</a></li><li><font color=#1A4383>|</li><li><a style='cursor:pointer;' rel="dropmenu2">Rankings</a></li><li><font color=#1A4383>|</li><li><a style='cursor:pointer;' rel="dropmenu7">About</a><a href="doc.php?doc=news.htm"><img class='news_icon' title='There is unread news - click paper to read' src='images/news_icon.png' height='15' border='0'></a></li><li><font color=#1A4383>|</li><li><a style='cursor:pointer;' href="menu_login.php">Log in/Join</a></li></ul>
+</nobr>
+</div>
+
+<!-- Home page dropdown -->
+
+<div id="dropmenu0" class="dropmenudiv" style="width: 200px;">
+    <a href="index.php">Home page</a><a href="doc.php?doc=gdpr.htm">GDPR compliance</a><a title='Go to the same page on the ES Squashlevels website' href='https://es.squashlevels.com/players.php?&all=&confidence=1&limit_confidence=0&wales=&start=2100'>ES website</a><a title='Try out the Android app!' href="doc.php?doc=app.htm">Android App</a><a title='Visit our Facebook page' href="http://www.facebook.com/squashlevels">Facebook page</a><a title='Slide show/demo mode for the site' href="demo.php">Demo mode</a><a title='A page of links showing you many of the features of SquashLevels' href="doc.php?doc=tour.htm">Take the tour</a><a title='Compare the average levels of all the leagues' href="statistics.php?chart=level">League levels</a><a title="Log in to see how many players are participating from each club in your county" href="menu_login.php">Participation (log in)</a><a title="All about membership for players and leagues. What you get and why it's worth it!" href="doc.php?doc=membership.htm">Membership</a></div>
+
+<!-- Admin dropdown -->
+
+<div id="dropmenu1" class="dropmenudiv">
+		<a title="Help page for admins" href="doc.php?doc=admin_help.htm">Admin help</a></div>
+
+<!-- Rankings/Levels dropdown -->
+
+<div id="dropmenu2" class="dropmenudiv" style="width: 250px;">
+		<a title='Combined Welsh men, women and junior rankings' href="players.php?all&wales&show=last12m&multi">Combined rankings</a><a title='Played in the Welsh counties in the last 12 months' href="players.php?all&wales">Welsh rankings</a><a title='Welsh men playing in the last 12 months' href="players.php?all&wales&playertype=1">Welsh men</a><a title='Welsh women playing in the last 12 months' href="players.php?all&wales&playertype=2">Welsh women</a><a title='Welsh boys U19 (as of today) playing in the last 12 months' href="players.php?all&wales&boysU19">Welsh boys U19</a><a title='Welsh boys U17 (as of today) playing in the last 12 months' href="players.php?all&wales&boysU17">Welsh boys U17</a><a title='Welsh boys U15 (as of today) playing in the last 12 months' href="players.php?all&wales&boysU15">Welsh boys U15</a><a title='Welsh boys U13 (as of today) playing in the last 12 months' href="players.php?all&wales&boysU13">Welsh boys U13</a><a title='Welsh boys U11 (as of today) playing in the last 12 months' href="players.php?all&wales&boysU11">Welsh boys U11</a><a title='Welsh girls U19 (as of today) playing in the last 12 months' href="players.php?all&wales&girlsU19">Welsh girls U19</a><a title='Welsh girls U17 (as of today) playing in the last 12 months' href="players.php?all&wales&girlsU17">Welsh girls U17</a><a title='Welsh girls U15 (as of today) playing in the last 12 months' href="players.php?all&wales&girlsU15">Welsh girls U15</a><a title='Welsh girls U13 (as of today) playing in the last 12 months' href="players.php?all&wales&girlsU13">Welsh girls U13</a><a title='Welsh girls U11 (as of today) playing in the last 12 months' href="players.php?all&wales&girlsU11">Welsh girls U11</a><a title='Top England players who have played at least 3 events in the last 6 months' href="players.php?all&eng">England</a><a title='Top players in the system (a level based world ranking)' href="players.php?all&top">World</a><a title="Most improved over the last 12 months" href="most_improved.php">Most improved - 12m</a><a title="Find out what result is expected from players with different levels" href="expected_result.php?level1=1000&level2=1000">Expected result</a></div>
+
+<!-- Fixtures dropdown -->
+
+<div id="dropmenu3" class="dropmenudiv" style="width: 300px;">
+		</div>
+
+<!-- Results dropdown -->
+
+<div id="dropmenu4" class="dropmenudiv" style="width: 300px;">
+		</div>
+
+<!-- Tables dropdown -->
+
+<div id="dropmenu5" class="dropmenudiv" style="width: 300px;">
+		<a href="tables.php">All previous tables</a></div>			
+
+<!-- Clubs dropdown -->
+
+<div id="dropmenu6" class="dropmenudiv" style="width: 150px;">
+		  			<a title='Clubs that have been active over the last 12 months' href="clubs.php?months=12">Active clubs</a>
+			<a title='Every club on the system' href="clubs.php">All clubs</a>
+</div>
+
+<!-- About dropdown -->
+
+<div id="dropmenu7" class="dropmenudiv" style="width: 200px;">
+		  <a title="Latest news, updates, changes for the site. Like us on Facebook for updates." href="doc.php?doc=news.htm">SquashLevels news</a><a title="Latest news from England Squash." id='ES_link' href="http://englandsquashandracketball.com/about-england-squash-and-racketball/update">England Squash news</a><a title="If you have a question that isn't answered here, please let us know" href="doc.php?doc=faq.htm">FAQ</a><a title="Click here to find out what this site is all about" href="doc.php?doc=about_squash_levels.htm">About this site</a><a title="All about membership for players and leagues. What you get and why it's worth it!" href="doc.php?doc=membership.htm">Membership</a><a title="It takes a great deal of functionality to run a site like this. Click here to find out how it works." href="doc.php?doc=how.htm">How it works</a><a title="Meet the team" href="doc.php?doc=about_us.htm">About us</a><a title="Let us know if you have any comments, suggestions or good ideas" href="mailto:info@squashlevels.com?subject=Feedback">Feedback</a><a title='Please check the FAQ before contacting us' href="mailto:info@squashlevels.com?subject=Contact">Contact us</a><a title="Page hits by day" href="usage.php">Site page hits</a><a title="Full list of updates to the site" href="about.php?con=about.updates">Site changes</a></div>
+
+<!-- Boxes dropdown -->
+
+<div id="dropmenu8" class="dropmenudiv" style="width: 300px;">
+    <a href="boxes.php">All boxes</a><a href="boxes.php?help=1">Help</a></div>
+
+<!-- Me dropdown -->
+
+<div id="dropmenu9" class="dropmenudiv" style="width: 300px;">
+    <a title="Please log in to find yourself in the default view" href="menu_login.php">Find me (log in)</a><a title="Please log in to view your results, level chart and history" href="menu_login.php">My history (log in)</a><a title="Please log in to find yourself in your club listing" href="menu_login.php">My club (log in)</a><a title="Please log in to find yourself in your county listing" href="menu_login.php">My county (log in)</a><a title="Please log in to find yourself in your country listing" href="menu_login.php">My country (log in)</a><a title="Please log in to view your favourite players" href="menu_login.php">My favourites (log in)</a><a title="Please log in to create a named list" href="menu_login.php">Create named list (log in)</a><a title="Please log in to enter your own results for a club match" href="menu_login.php">Add result (log in)</a></div>
+
+<!-- Community dropdown -->
+
+<div id="dropmenu10" class="dropmenudiv" style="width: 150px;">
+		<a title="Click here for a detailed list of the features supported by available systems" href="docs/Squash System Feature Supersets v8.pdf">System feature sets</a><a title="Click here for an overview of the community of inter-connected systems" href="doc.php?doc=community.htm">Connected systems</a><a title="Click here to visit the BADsquash website" href="http://www.badsquash.co.uk">BADsquash</a><a title="Click here to visit the HumberSquash website" href="http://www.humbersquash.org">HumberSquash</a><a title="Click here to visit the League Master website" href="http://www.leaguemaster.co.uk">League Master</a><a title="Click here to visit the LMS website" href="http://www.lmssussexmens.leagueorganiser.co.uk">LMS</a><a title="Click here to visit the MyCourts website" href="https://mycourts.co.uk">MyCourts</a><a title="Click here to visit the Playwaze website" href="http://www.playwaze.com">Playwaze</a><a title="Click here to visit the SportyHQ website" href="http://www.sportyhq.com">SportyHQ</a><a title="Click here to visit the ClubNet website" href="http://www.squashnet.co.uk/competitions/county-competitions">ClubNet</a><a title="Click here to visit the SquashResults website" href="http://www.squashresults.com">SquashResults</a><a title="Click here to visit the TaviSquash website" href="http://www.tavisquash.org">TaviSquash</a><a title="Click here to visit the SquashInfo website" href="http://www.squashinfo.com">SquashInfo</a><a title="Click here to visit the England Masters website" href="http://www.englandsquashmasters.co.uk/">England Masters</a><a title="Click here to find out how to join the community of connected systems" href="doc.php?doc=connecting.htm">Join up</a><a title="Click here to see how many players are covered by the connected systems" href="statistics.php?chart=participation_by_source">Particpation</a></div>
+
+<!-- Juniors dropdown (for Glos at the moment)-->
+
+<div id="dropmenu11" class="dropmenudiv" style="width: 350px;">
+		</div>
+
+</div>
+
+<!-- JavaScript/jQuery for this page -->
+
+<script type="text/javascript">
+ 	// Drop down menus from Chrome
+  cssdropdown.startchrome("chromemenu");
+
+  // Plug-in to flash an object by the number of flashes and each flash takes the requested time.
+  $.fn.slow_flash = function(flashes, flash_time)
+  {
+    for (x=1;x<=flashes;x++)
+      this.animate({opacity: 0}, flash_time/2).animate({opacity: 1}, flash_time/2);
+    return this;
+  }
+
+  // Flash the news icon
+  $('.news_icon').slow_flash(3, 2000);
+    
+</script>
+
+</td></tr></table>
+</div>
+		      </td>
+        </tr>
+      </table>
+		<noscript><div style='background:red;color:yellow;font-family:verdana;font-size:small;'><nobr><b>Please enable scripts in your browser to enable all the features on the website...</b></nobr></div></noscript><div class='yellow_banner'><nobr>SquashLevels membership covered by WSRB. If you're Welsh and on this system you can <b>join for free!</b>. Click <a href='register.php'><b>here</b></a> to join.</nobr></div>		
+    <!-- Now the main page -->
+    <div id='page'>
+		<table cellspacing="0" cellpadding="0" border="0" id="page">		
+			<tr>
+				<td valign="top" id="content" colspan="2">				<form><table class='light margin' style='margin-bottom: 20px;'><tr><td style='font-size: 100%;vertical-align:top;'><nobr><input style='font-size: 100%; title='Click to show the players that fit these selections' type="submit" value="Show"><input type="hidden" name="check" value="1"">&nbsp;<input title="Less volatile - use for seedings" type="checkbox" name="damp" value="4" >Use damped levels (for seedings)<span>&nbsp;<a title='Help on how to select what you want to see' style='margin-top: 1px;' href="doc.php?doc=about_squash_levels.htm#Show"><img src='images/help_icon_grey.png' height='20' border='0'></a>&nbsp;</span><br>&nbsp;<select id="club_select" style='width:250px;' name="club"><option value="all">All Clubs</option><option value="-1">None</option><option value="1999">Abercynon, Multiple counties</option><option value="2033">Abercynon, South Glamorgan</option><option value="1913">Abercynon, Gwent</option><option value="2140">Aberdare, South Glamorgan</option><option value="1900">Aberdare, Multiple counties</option><option value="2130">Aberdare Jun, Mid Glamorgan</option><option value="1979">Abergavenny, South Glamorgan</option><option value="1966">Abergavenny, Multiple counties</option><option value="2087">Abergavenny, Mid Glamorgan</option><option value="2117">Abertillery, Multiple counties</option><option value="1906">Bangor, Multiple counties</option><option value="2038">Bangor Uni, Mid Glamorgan</option><option value="2012">Bangor Uni, North East Wales</option><option value="2011">Bangor Uni, Multiple counties</option><option value="1944">Barry Leisure, Multiple counties</option><option value="2034">Barry Leisure, Mid Glamorgan</option><option value="1936">Beaufort Park, Multiple counties</option><option value="2026">Bedwellty, Mid Glamorgan</option><option value="2039">Bedwellty, South Glamorgan</option><option value="1985">Bedwellty, Multiple counties</option><option value="1919">Bethesda, Multiple counties</option><option value="2035">Blaenau Gwent, Mid Glamorgan</option><option value="1986">Blaenau Gwent, Multiple counties</option><option value="1955">BlaenavonPontypool, Multiple counties</option><option value="2090">Bridgend, South Glamorgan</option><option value="2067">Bridgend, Multiple counties</option><option value="1282">Bridgend, West Glamorgan</option><option value="1947">Bridgend LT, Mid Glamorgan</option><option value="2081">Bridgend LT, South Glamorgan</option><option value="3564">Buckley Elfed, North East Wales</option><option value="2007">Caernarfon, Multiple counties</option><option value="1970">Caerphilly, Multiple counties</option><option value="1969">Caerphilly, Gwent</option><option value="1909">Caerphilly, South Glamorgan</option><option value="1949">Caldicot, Multiple counties</option><option value="1948">Caldicot, South Glamorgan</option><option value="1276">Cardiff, Multiple counties</option><option value="2113">Cardiff, North East Wales</option><option value="1973">Cardiff, Gwent</option><option value="2138">Cardiff, Eryri</option><option value="2002">Cardiff, Pembrokeshire</option><option value="1950">Cardiff, Mid Glamorgan</option><option value="2068">Cardiff Likely Lads, Gwent</option><option value="2022">Cardiff Metropolitan, Multiple counties</option><option value="2037">Cardiff Metropolitan, Eryri</option><option value="2077">Cardiff Metropolitan, Gwent</option><option value="2104">Cardiff Metropolitan, North East Wales</option><option value="2080">Cardiff Uni, Eryri</option><option value="1962">Cardiff Uni, Pembrokeshire</option><option value="2125">Cardiff Uni, Mid Glamorgan</option><option value="2335">Cardiff Uni, South Wales</option><option value="2023">Cardiff Uni, South Glamorgan</option><option value="2027">Cardiff Uni, North East Wales</option><option value="2046">Cardiff Uni, Gwent</option><option value="2006">Cardigan, Multiple counties</option><option value="1921">Carmarthen, Multiple counties</option><option value="1910">Carmarthen, West Glamorgan</option><option value="2132">Carmarthern, West Glamorgan</option><option value="2131">Carmarthern, Pembrokeshire</option><option value="2287">Carmathen, Pembrokeshire</option><option value="3311">Carmathen, West Glamorgan</option><option value="2349">Cheshire County Offices, Multiple counties</option><option value="1932">Chester County Offices, North East Wales</option><option value="1960">Chester County Offices, Eryri</option><option value="1935">Chester Rugby, Multiple counties</option><option value="2139">Cowbridge, Mid Glamorgan</option><option value="1945">Cowbridge, Multiple counties</option><option value="2032">Cwm Gwendraeth, Multiple counties</option><option value="3889">Cwm Gwendraeth, South Wales</option><option value="2003">Cwmbran, Multiple counties</option><option value="2024">Cwmbran, West Glamorgan</option><option value="1963">David Lloyd, Mid Glamorgan</option><option value="1958">David Lloyd, Multiple counties</option><option value="2056">David Lloyd, West Glamorgan</option><option value="3305">David Lloyd Cardiff, South Glamorgan</option><option value="3307">David Lloyd Cardiff, South Wales</option><option value="3313">David Lloyd Swansea, West Glamorgan</option><option value="3295">David Lloyd Swansea, South Wales</option><option value="3583">David Lloyd Swansea, South Glamorgan</option><option value="2051">David Lloyds, Mid Glamorgan</option><option value="1930">Deeside, Multiple counties</option><option value="2141">Denbighshire Leis Star, North Wales</option><option value="2129">Denbighshire Leis Star, Multiple counties</option><option value="2076">EWSSwansea, Pembrokeshire</option><option value="2075">EWSSwansea, South Glamorgan</option><option value="2073">EWSSwansea, West Glamorgan</option><option value="2072">EWSSwansea, Gwent</option><option value="1908">Fairwater, Gwent</option><option value="1995">Fairwater, Mid Glamorgan</option><option value="2100">Fairwater, West Glamorgan</option><option value="1994">Fairwater, Multiple counties</option><option value="1977">Fishguard, Multiple counties</option><option value="2136">Fishguard, West Glamorgan</option><option value="2065">GE Aviation Wales, Mid Glamorgan</option><option value="1279">Glamorgan, Multiple counties</option><option value="1991">Gwendraeth, West Glamorgan</option><option value="2036">Gwendraeth, Pembrokeshire</option><option value="2005">Haverfordwest, Multiple counties</option><option value="2021">Haverfordwest, Mid Glamorgan</option><option value="3567">Hirwaun, South Wales</option><option value="2128">Hirwaun, South Glamorgan</option><option value="2096">Hirwaun, Multiple counties</option><option value="2070">Holyhead, Multiple counties</option><option value="1941">Holywell, Multiple counties</option><option value="2066">Hope SC, Multiple counties</option><option value="2133">Kaymac, West Glamorgan</option><option value="1942">Kent Supplies, Multiple counties</option><option value="1933">LA Fitness, Multiple counties</option><option value="2044">Lantwit Fardre, Mid Glamorgan</option><option value="2045">Lantwit Fardre, South Glamorgan</option><option value="1903">Le Sport, Eryri</option><option value="1926">Le Sport, North East Wales</option><option value="2977">Llandaff, Multiple counties</option><option value="2019">Llandeilo, Multiple counties</option><option value="1907">Llanelli, Multiple counties</option><option value="2084">Llanelli, South Glamorgan</option><option value="3369">Llanfyllin, South Glamorgan</option><option value="3378">Llanfyllin, Mid Glamorgan</option><option value="3366">Llanfyllin, South Wales</option><option value="3368">Llanfyllin, West Glamorgan</option><option value="2016">Llangefni Llewod, Eryri</option><option value="1286">Llanishen, Multiple counties</option><option value="1954">Llanishen, Gwent</option><option value="2127">Llanrwst, North East Wales</option><option value="2115">Llanrwst, Multiple counties</option><option value="1297">Llantrisant, Multiple counties</option><option value="1971">Llantrisant, South Glamorgan</option><option value="2071">Llantrisant, Gwent</option><option value="1982">Llantwit Fardre, Multiple counties</option><option value="2122">Llantwit, South Glamorgan</option><option value="2000">Llantwit Fardre, South Glamorgan</option><option value="2126">Llantwit Fardre, North East Wales</option><option value="2043">Llewod Llangefni, Eryri</option><option value="1951">Maesteg, Multiple counties</option><option value="3309">Maesteg, South Wales</option><option value="1976">Meads, Multiple counties</option><option value="2124">Meads LC, Gwent</option><option value="2119">Meads LC, South Glamorgan</option><option value="2120">Meads LC, Mid Glamorgan</option><option value="1983">Merthyr, Multiple counties</option><option value="2135">Merthyr, South Glamorgan</option><option value="1934">Midtown, Multiple counties</option><option value="1914">Milford Haven, Multiple counties</option><option value="2089">MLC, Multiple counties</option><option value="1939">Mold, Multiple counties</option><option value="2092">Mollington, Multiple counties</option><option value="349">Mollington Banastre, North East Wales</option><option value="3520">Monmouth, Eryri</option><option value="2091">Monmouth, South Glamorgan</option><option value="3522">Monmouth, Mid Glamorgan</option><option value="1968">Monmouth, Multiple counties</option><option value="3518">Monmouth, North East Wales</option><option value="2018">NALGO, Multiple counties</option><option value="2061">NALGO, North East Wales</option><option value="1989">Narbeth, South Glamorgan</option><option value="1987">Narbeth, Multiple counties</option><option value="2060">Narbeth, West Glamorgan</option><option value="1953">Neath, Multiple counties</option><option value="2102">Neath, Gwent</option><option value="3568">Neath, South Wales</option><option value="2101">Neston Somersby, North East Wales</option><option value="2062">New Buckley, North East Wales</option><option value="1940">New Elfed, North East Wales</option><option value="1917">Newbridge, Gwent</option><option value="2097">Newbridge, Mid Glamorgan</option><option value="1899">Newport, Multiple counties</option><option value="2030">Newport, Pembrokeshire</option><option value="1901">Newport, Mid Glamorgan</option><option value="1972">Newport, South Glamorgan</option><option value="3637">Newtown, South Wales</option><option value="2161">Newtown, North East Wales</option><option value="3371">Newtown, Pembrokeshire</option><option value="3372">Newtown, South Glamorgan</option><option value="3627">Newtown, West Glamorgan</option><option value="2020">Neyland, Multiple counties</option><option value="2121">Nuclear Apes, Multiple counties</option><option value="2063">Old Buckley, Multiple counties</option><option value="1938">Old Elfed, North East Wales</option><option value="2001">Old Penarthians, Gwent</option><option value="2103">Old Penarthians, Mid Glamorgan</option><option value="1975">Old Penarthians, South Glamorgan</option><option value="2094">Old Pens, Multiple counties</option><option value="2118">Pembroke, Multiple counties</option><option value="2134">Penybont, Multiple counties</option><option value="1915">Penygroes, Eryri</option><option value="2116">Penyrheol, Mid Glamorgan</option><option value="2028">Penyrheol, Multiple counties</option><option value="2114">Phoenix, North East Wales</option><option value="1952">Pontardawe, West Glamorgan</option><option value="1296">Porthcawl, West Glamorgan</option><option value="1916">Porthcawl, Multiple counties</option><option value="2069">Porthmadog, North Wales</option><option value="2008">Porthmadog, Multiple counties</option><option value="2009">Porthmadog, North East Wales</option><option value="2014">Pwllheli, Multiple counties</option><option value="1897">Rhiwbina, Multiple counties</option><option value="2049">Rhondda, South Glamorgan</option><option value="1920">Rhondda, Multiple counties</option><option value="3517">Risca, North East Wales</option><option value="3523">Risca, South Glamorgan</option><option value="3519">Risca, Eryri</option><option value="3521">Risca, Mid Glamorgan</option><option value="1946">Risca, Multiple counties</option><option value="1925">Saints, North East Wales</option><option value="2042">Saints Stars, North Wales</option><option value="2041">Saints Stars, North East Wales</option><option value="1927">SaintsStars, North East Wales</option><option value="1929">SaintsStars, North Wales</option><option value="1956">South Wales Police, Gwent</option><option value="1957">South Wales Police, South Glamorgan</option><option value="1415">St Asaph, North Wales</option><option value="1931">St Asaph, Multiple counties</option><option value="2123">St Clears, Multiple counties</option><option value="1943">St Mellons, Mid Glamorgan</option><option value="1918">St Mellons, Multiple counties</option><option value="1998">St Mellons, Gwent</option><option value="1967">Sunnyside, Mid Glamorgan</option><option value="1281">Swansea, Multiple counties</option><option value="2054">Swansea, North East Wales</option><option value="1980">Swansea, Gwent</option><option value="1981">Swansea, South Glamorgan</option><option value="2040">Swansea, Pembrokeshire</option><option value="2086">Swansea Uni, West Glamorgan</option><option value="2082">Swansea Uni, Gwent</option><option value="2137">Swansea Uni, South Glamorgan</option><option value="2351">Swansea Uni, South Wales</option><option value="2047">SWP, Mid Glamorgan</option><option value="2048">SWP, South Glamorgan</option><option value="1988">Teifi, Multiple counties</option><option value="1990">Teifi, West Glamorgan</option><option value="2029">Tycoch, Multiple counties</option><option value="2059">UHW, Pembrokeshire</option><option value="1974">UHW, Multiple counties</option><option value="2055">UHW, Mid Glamorgan</option><option value="2053">Uni of Glam, Eryri</option><option value="2052">Uni of Glam, Mid Glamorgan</option><option value="2285">Uni of S Wales, Multiple counties</option><option value="2105">Uni of Wales, West Glamorgan</option><option value="2064">Uni of Wales, Mid Glamorgan</option><option value="2079">Uni of Wales, Gwent</option><option value="2112">Uni Wales, West Glamorgan</option><option value="2108">Uni Wales, Mid Glamorgan</option><option value="1511">Vale, Multiple counties</option><option value="1965">Vale, Pembrokeshire</option><option value="1964">Vale, South Glamorgan</option><option value="1924">Vale, West Glamorgan</option><option value="1984">WIS, South Glamorgan</option><option value="2085">WIS, Gwent</option><option value="2057">WIS, West Glamorgan</option><option value="1928">Wrexham Brymbo, Multiple counties</option><option value="3467">Wrexham Brymbo, Eryri</option><option value="271">Wrexham Brymbo, North East Wales</option><option value="2106">Wrexham Brymbo, South Glamorgan</option><option value="3625">Wrexham Brymbo, West Glamorgan</option><option value="3629">Wrexham Brymbo, Mid Glamorgan</option><option value="3373">Wrexham Brymbo, South Wales</option><option value="2088">Ynys Mon, Multiple counties</option><option value="2098">Ynys Mon, Mid Glamorgan</option></select>&nbsp;<select id="county_select" title='Players affiliated to a county - not just those who have played in that county' name="county"><option value="all">All counties</option><option value="-1">None</option><option value="102">Eryri</option><option value="69">Gwent</option><option value="78">Mid Glamorgan</option><option value="103">North East Wales</option><option value="104">North Wales</option><option value="75">Pembrokeshire</option><option value="89">Se Wales</option><option value="68">South Glamorgan</option><option value="105">South Wales</option><option value="70">West Glamorgan</option></select>&nbsp;<select id="country_select" name="country"><option value="all">All countries</option><option value="199">ALD</option><option value="147">AND</option><option value="193">ARE</option><option value="52">ARG</option><option value="132">ARM</option><option value="2">AUS</option><option value="45">AUT</option><option value="156">BAN</option><option value="81">BAR</option><option value="3">BEL</option><option value="56">BER</option><option value="161">BLR</option><option value="91">BOL</option><option value="24">BOT</option><option value="57">BRA</option><option value="94">BRN</option><option value="145">BUL</option><option value="10">CAN</option><option value="41">CAY</option><option value="195">CGO</option><option value="90">CHI</option><option value="82">CHN</option><option value="16">COL</option><option value="62">CRC</option><option value="73">CRO</option><option value="61">CYP</option><option value="20">CZE</option><option value="43">DEN</option><option value="175">DOM</option><option value="89">ECU</option><option value="6">EGY</option><option value="1">ENG</option><option value="69">ESA</option><option value="28">ESP</option><option value="74">EST</option><option value="158">FIJ</option><option value="21">FIN</option><option value="4">FRA</option><option value="194">GBR</option><option value="31">GER</option><option value="142">GGY</option><option value="187">GHA</option><option value="53">GIB</option><option value="185">GLD</option><option value="149">GRE</option><option value="87">GRN</option><option value="55">GUA</option><option value="60">GUY</option><option value="34">HKG</option><option value="17">HUN</option><option value="153">ICE</option><option value="191">IMN</option><option value="78">INA</option><option value="37">IND</option><option value="84">IOM</option><option value="150">IRE</option><option value="46">IRI</option><option value="27">IRL</option><option value="47">IRQ</option><option value="181">ISL</option><option value="72">ISR</option><option value="40">ITA</option><option value="50">IVB</option><option value="48">JAM</option><option value="70">JEY</option><option value="23">JOR</option><option value="33">JPN</option><option value="80">KEN</option><option value="32">KOR</option><option value="92">KSA</option><option value="13">KUW</option><option value="93">LAT</option><option value="140">LES</option><option value="14">LIB</option><option value="86">LIE</option><option value="163">LTU</option><option value="85">LUX</option><option value="64">MAC</option><option value="189">MAL</option><option value="7">MAS</option><option value="19">MEX</option><option value="173">MGL</option><option value="183">MKD</option><option value="35">MLT</option><option value="177">MON</option><option value="192">MOZ</option><option value="88">MRI</option><option value="155">MYA</option><option value="83">NAM</option><option value="134">NCL</option><option value="8">NED</option><option value="135">NEP</option><option value="159">NFK</option><option value="68">NGR</option><option value="141">NIR</option><option value="42">NOR</option><option value="18">NZL</option><option value="165">OMA</option><option value="22">PAK</option><option value="154">PAN</option><option value="54">PAR</option><option value="51">PER</option><option value="136">PHI</option><option value="148">PLE</option><option value="139">PNG</option><option value="30">POL</option><option value="71">POR</option><option value="12">QAT</option><option value="179">REU</option><option value="133">ROM</option><option value="11">RSA</option><option value="76">RUS</option><option value="160">SAM</option><option value="5">SCO</option><option value="144">SEY</option><option value="201">SGP</option><option value="79">SIN</option><option value="143">SLE</option><option value="29">SLO</option><option value="151">SPA</option><option value="152">SPAIN</option><option value="146">SRB</option><option value="77">SRI</option><option value="9">SUI</option><option value="138">SVG</option><option value="65">SVK</option><option value="39">SWE</option><option value="162">SWZ</option><option value="169">TBC</option><option value="137">THA</option><option value="38">TPE</option><option value="59">TRI</option><option value="171">TUN</option><option value="49">TUR</option><option value="15">UAE</option><option value="58">UGA</option><option value="26">UKR</option><option value="95">URU</option><option value="36">USA</option><option value="172">UZB</option><option value="63">VEN</option><option value="25" selected >WAL</option><option value="197">ZAF</option><option value="44">ZAM</option><option value="67">ZIM</option></select>&nbsp;<select name="show"><option value="last6m">Last 6 months</option><option value="last12m"selected>Last 12 months</option><option value="last24m">Last 2 years</option><option value="season">This season</option><option value="year">This year</option><option value="all">All matches</option></select>&nbsp;<select name="events"><option value="1" selected >Min events: 1<sup> *</sup></option><option value="2">Min events: 2<sup> *</sup></option><option value="3">Min events: 3<sup> *</sup></option><option value="4">Min events: 4<sup> *</sup></option><option value="5">Min events: 5<sup> *</sup></option><option value="6">Min events: 6<sup> *</sup></option><option value="7">Min events: 7<sup> *</sup></option><option value="8">Min events: 8<sup> *</sup></option><option value="9">Min events: 9<sup> *</sup></option><option value="10">Min events: 10<sup> *</sup></option></select></nobr>&nbsp;<br><nobr>&nbsp;<select style='width:250px;' name="matchtype"><option value="all">All leagues/events</option><option value="Bourse Welsh Masters">Bourse Welsh Masters</option><option value="Bourse Welsh Masters Closed">Bourse Welsh Masters Closed</option><option value="Bourse Welsh Masters Open">Bourse Welsh Masters Open</option><option value="Cardiff Junior Open">Cardiff Junior Open</option><option value="Coors Newport Open">Coors Newport Open</option><option value="Eryri">Eryri</option><option value="Eryri Coors Newport Open">Eryri Coors Newport Open</option><option value="Eryri League">Eryri League</option><option value="Gwent">Gwent</option><option value="Gwent League">Gwent League</option><option value="Gwent Two Cup">Gwent Two Cup</option><option value="Gwent Welsh Junior Open">Gwent Welsh Junior Open</option><option value="Henry R Davis North Wales Open">Henry R Davis North Wales Open</option><option value="Hirwaun Open">Hirwaun Open</option><option value="Ipswich Silver Junior Open">Ipswich Silver Junior Open</option><option value="Karakal Newport Junior Open">Karakal Newport Junior Open</option><option value="Llandeilo Boxes">Llandeilo Boxes</option><option value="Llantrisant Open">Llantrisant Open</option><option value="Mid Glamorgan">Mid Glamorgan</option><option value="Mid Glamorgan League">Mid Glamorgan League</option><option value="Mid Glamorgan Welsh Junior Open">Mid Glamorgan Welsh Junior Open</option><option value="Newport Junior Open">Newport Junior Open</option><option value="North East Wales">North East Wales</option><option value="North East Wales Coors Newport Open">North East Wales Coors Newport Open</option><option value="North East Wales League">North East Wales League</option><option value="North East Wales League Open">North East Wales League Open</option><option value="North East Wales Open">North East Wales Open</option><option value="North East Wales Welsh Junior Open">North East Wales Welsh Junior Open</option><option value="North Mid Wales Junior League">North Mid Wales Junior League</option><option value="North Wales Junior Open">North Wales Junior Open</option><option value="North Wales Masters Open">North Wales Masters Open</option><option value="Pembrokeshire League">Pembrokeshire League</option><option value="Pembrokeshire Pembroke">Pembrokeshire Pembroke</option><option value="Pembrokeshire Welsh Junior Open">Pembrokeshire Welsh Junior Open</option><option value="Powys Junior Open">Powys Junior Open</option><option value="Powys [december] Junior Open">Powys [december] Junior Open</option><option value="Ross Scaccia Memorial Tournament">Ross Scaccia Memorial Tournament</option><option value="Senior Welsh Nationals">Senior Welsh Nationals</option><option value="Snowdonia Open">Snowdonia Open</option><option value="South Glamorgan">South Glamorgan</option><option value="South Glamorgan Championship">South Glamorgan Championship</option><option value="South Glamorgan Championships">South Glamorgan Championships</option><option value="South Glamorgan Coors Newport Open">South Glamorgan Coors Newport Open</option><option value="South Glamorgan League">South Glamorgan League</option><option value="South Glamorgan Welsh Junior Open">South Glamorgan Welsh Junior Open</option><option value="South Wales">South Wales</option><option value="South Wales League">South Wales League</option><option value="South Wales Leagues">South Wales Leagues</option><option value="South Wales Premier">South Wales Premier</option><option value="South Wales Premier League">South Wales Premier League</option><option value="South Wales Welsh Junior Open">South Wales Welsh Junior Open</option><option value="Squad Match">Squad Match</option><option value="Squad Selection Weekend">Squad Selection Weekend</option><option value="Welsh Closed">Welsh Closed</option><option value="Welsh Closed Championships">Welsh Closed Championships</option><option value="Welsh Inter Counties">Welsh Inter Counties</option><option value="Welsh Junior Closed">Welsh Junior Closed</option><option value="Welsh National Closed">Welsh National Closed</option><option value="West Glamorgan">West Glamorgan</option><option value="West Glamorgan Closed">West Glamorgan Closed</option><option value="West Glamorgan Cup">West Glamorgan Cup</option><option value="West Glamorgan League">West Glamorgan League</option><option value="West Glamorgan Pre Christmas Ko Cup">West Glamorgan Pre Christmas Ko Cup</option><option value="West Glamorgan Trophy">West Glamorgan Trophy</option><option value="West Glamorgan Welsh Junior Open">West Glamorgan Welsh Junior Open</option><option value="Wrexham Brymbo Internal League">Wrexham Brymbo Internal League</option><option value="Wycliffe Junior Open">Wycliffe Junior Open</option></select>&nbsp;<select id="playercat_select" name="playercat"><option value="all">All ages</option><option value="juniors" >All juniors</option><option value="masters" >All masters</option><option value="93"></option><option value="135">Boys U11</option><option value="141">Boys U13</option><option value="131">Boys U15</option><option value="133">Boys U17</option><option value="139">Boys U19</option><option value="137">Girls U11</option><option value="123">Girls U13</option><option value="121">Girls U15</option><option value="2">Junior</option><option value="147">Juniors</option><option value="125">Ladies O40</option><option value="127">Ladies O50</option><option value="95">Master</option><option value="143">Men O35</option><option value="145">Men O60</option><option value="10">O35</option><option value="129">O35/40</option><option value="15">O40</option><option value="9">O45</option><option value="11">O50</option><option value="12">O55</option><option value="13">O60</option><option value="14">O65</option><option value="16">O70</option><option value="17">O75</option><option value="20">O80</option><option value="3">Pro</option><option value="1">Senior</option><option value="19">U11</option><option value="7">U13</option><option value="6">U15</option><option value="5">U17</option><option value="4">U19</option><option value="8">U21</option><option value="18">U23</option></select>&nbsp;<select id="playertype_select" name="playertype"><option value="all">Male & female</option><option value="1">Male</option><option value="2">Female</option></select>&nbsp;<div style='display:inline;position: relative;'><input id='player_search_input'
+                           class="search" 
+                           title="Enter a player name or part name(s) to search for. Look out for suggestions below." 
+                           type="text" name="search" value="Search name" size=20
+                           autocomplete="off" autofocus 
+                           onmouseover="if(this.value=='Search name')this.value=''"    
+                           onmouseout="if(this.value=='')this.value='Search name'"><div id='suggestions' class='dropmenudiv' style='position:absolute;top: 2em;left:0px;visibility:hidden;'></div></div><input type="hidden" name="wales" value="1""></nobr></td></tr></table></form></nobr><table class="ranking"><tr  style='background:#EEE;'><th>Pos&nbsp;</th><th>Player&nbsp;</th><th>Country&nbsp;</th><th>County&nbsp;</th><th>Last event&nbsp;</th><th>Events&nbsp;</th><th><nobr>Last match&nbsp;</nobr></th><th>Level&nbsp;</th><th>Confidence&nbsp;</th><th>Chart&nbsp;</th></tr></table><p>* Minimum number of events played only applies to players with level above 20,000.</p>				</td>
+			</tr>
+			<tr>
+				<td colspan="2" id="footer">
+					<p>&nbsp;</p><p id='footer' style='position:absolute;bottom:0px;'><nobr>SquashLevels website, code and player level algorithms &copy; 2006-2018, <a href="mailto:info@squashlevels.com?subject=Enquiry">SquashLevels Ltd</a>. Page time: 0.13s.</nobr></p>				</td>
+			</tr>
+		</table>
+		</div>
+  		</body>
+</html>
+<script>
+// These variables pass info from the PHP to the JS
+var scope = '';  // Scope for the auto-complete search (club/county/all)
+var auto_complete_link = true;  // We do want to follow the auto-complete link when selecting players
+</script>
+
+<script>
+// Hide and then slide down the introduction text for the home page
+$("#home_text").hide();
+
+$(document).ready(function(){
+  $("#home_text").delay(500).slideDown("slow");
+});
+
+</script>
