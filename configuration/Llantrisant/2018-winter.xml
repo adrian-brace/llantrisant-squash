@@ -11,8 +11,8 @@
 				<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
 				<Player Name="Dan Webb"/>
 				<Player Name="Ryan Phillips"/>
-				<Player Name="Jeff Greenslade" RefereeNumber="100467"/>
 				<Player Name="Dan Povey"/>
+				<Player Name="Jeff Greenslade" RefereeNumber="100467"/>
 			</Players>
 		</Team>
 		<Team>
@@ -24,10 +24,10 @@
 			<HomeNight>Tues</HomeNight>
 			<Players>
 				<Player Name="Matthew Williams"/>
-				<Player Name="Iwan James"/>
-				<Player Name="Ben Howcroft"/>
-				<Player Name="Tom Penberthy"/>
 				<Player Name="Dan Christopher"/>				
+				<Player Name="Iwan James"/>
+				<Player Name="Tom Penberthy"/>
+				<Player Name="Ben Howcroft"/>
 			</Players>
 		</Team>
 		<Team>
@@ -55,8 +55,8 @@
 			<Players>
 				<Player Name="Lee Francis" RefereeNumber="101514"/>
 				<Player Name="Mark Morgan" RefereeNumber="100292"/>
-				<Player Name="Nigel Bevan" RefereeNumber="101509"/>
 				<Player Name="Lloyd Newland"/>
+				<Player Name="Nigel Bevan" RefereeNumber="101509"/>
 				<Player Name="Chris Jones" RefereeNumber="101510"/>
 			</Players>
 		</Team>
