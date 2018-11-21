@@ -864,7 +864,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				// Create list of team match participants with games and points scored/conceded
 				var $ = cheerio.load(teamMatchResultHTMLs[teamMatchResultIndex].html);
 
-				var rows = $('table').eq(12).find($('tr')).each(function(index){
+				var rows = $('table').eq(11).find($('tr')).each(function(index){
 					if(index >= 1 && index <= 5) {
 
 						var playerColumnIndex = 3;
