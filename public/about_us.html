@@ -15,18 +15,27 @@
 				<li><a class="loneAnchor" ng-click="scrollTo('leisure_centre_membership')">Leisure Centre Membership</a></li>
 				<li><a class="loneAnchor" ng-click="scrollTo('ladders')">Ladders</a></li>
 				<li><a class="loneAnchor" ng-click="scrollTo('league_squash')">League Squash</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('club_membership')">Club Membership</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('juniors')">Juniors</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('rankings')">Rankings</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('league_match_fees')">League Match Fees</a></li>
+				<ul>
+					<li><a class="loneAnchor" ng-click="scrollTo('club_membership')">Club Membership</a></li>
+					<li><a class="loneAnchor" ng-click="scrollTo('juniors')">Juniors</a></li>
+					<li><a class="loneAnchor" ng-click="scrollTo('rankings')">Rankings</a></li>
+					<li><a class="loneAnchor" ng-click="scrollTo('league_match_fees')">League Match Fees</a></li>
+				</ul>
+				<li><a class="loneAnchor" ng-click="scrollTo('events')">Events</a></li>
+				<ul>
+					<li><a class="loneAnchor" ng-click="scrollTo('annual_tour')">Annual Tour</a></li>
+					<li><a class="loneAnchor" ng-click="scrollTo('llantrisant_open')">Llantrisant Open</a></li>
+					<li><a class="loneAnchor" ng-click="scrollTo('christmas_tournament')">Christmas Tournament</a></li>
+					<li><a class="loneAnchor" ng-click="scrollTo('racketball_tournaments')">Racketball Tournaments</a></li>
+				</ul>
 			</ul>
 		</div>
 		<div>
 			<h3 class="titleLevel2" id="introduction">Introduction</h3>
 			<p class="textParagraph">
 				We are a thriving, friendly and sociable club and we always welcome new members of all ages and abilities. We have a handful of Squash teams in the South Wales/Mid Glam leagues, and a growing contingent of regular Racketball players too.
-				We now hold an annual Open Squash tournament each Summer that is on the <a class="loneAnchor" href='http://www.walessquashandracketball.co.uk/'>Squash Wales</a> calendar, and we
-				try to hold a variety of fun events throughout the year (e.g. racketball tournament nights, curry nights, charity cycles, golf tournaments, squash tour weekend away, etc), as well as popping to the pub for the occasional pint.
+				We now hold an annual <a class="loneAnchor" ng-click="scrollTo('llantrisant_open')">Open Squash tournament</a> each Summer that is on the <a class="loneAnchor" href='http://www.walessquashandracketball.co.uk/'>Squash Wales</a> calendar, and we
+				try to hold a variety of fun <a class="loneAnchor" ng-click="scrollTo('events')">events</a> throughout the year (e.g. <a class="loneAnchor" ng-click="scrollTo('christmas_tournament')">Christmas squash tournament</a>, <a class="loneAnchor" ng-click="scrollTo('racketball_tournaments')">racketball tournament</a> nights, curry nights, charity cycles, golf tournaments, <a class="loneAnchor" ng-click="scrollTo('annual_tour')">squash tour</a> weekend away, etc), as well as popping to the pub for the occasional pint.
 			</p>
 			<h3 class="titleLevel2" id="getting_involved">Getting Involved</h3>
 			<p class="textParagraph">
@@ -49,7 +58,7 @@
 			<h3 class="titleLevel2" id="leisure_centre_membership">Leisure Centre Membership</h3>
 			<p class="textParagraph">
 				A Monthly <a class="loneAnchor" href='http://www2.rctcbc.gov.uk/en/leisure/joinandsave/joinandsave.aspx'>Leisure For Life membership</a> is available through the <a  class="loneAnchor" href='http://www2.rctcbc.gov.uk/en/leisure/findacentre/llantrisantleisurecentre/llantrisantleisurecentre.aspx'>Leisure Centre</a> and entitles you to book and use activities at any of the <a class="loneAnchor" href='http://www2.rctcbc.gov.uk/en/leisure/findacentre/findaleisurecentre.aspx'>RCT leisure centres</a>.
-				Your half of the Squash court fee is <b>FREE</b> if you pay monthly. 
+				Your half of the Squash court fee is <b>FREE</b> if you pay monthly. The club members are entitled to a corporate discount if an officially registered member, so please enquire if you are interested in this (as of 2018 it was approx. £28.50 pcm by Direct Debit for full use of the centre and classes).
 			</p>
 			<h3 class="titleLevel2" id="ladders">Ladders</h3>
 			<p class="textParagraph">
@@ -98,6 +107,33 @@
 				The cost of hosting HOME League matches comprises of <b>court time hire</b> from the leisure centre (2 courts all evening from 19:15 onwards) and <b>catering costs</b> to feed both teams.
 				These costs are charged to team players who play each home and away fixture as a match fee on the night. The amount charged is at the captain's discretion and depends on catering arrangements and court fees for that given season.
 				The match fees charged to Juniors/Students will be at a reduced rate and the club will make up the difference. Players who play "up" for a team who have another match for their own team within the same week will also be charged a reduced rate for the match fee.
+			</p>
+			<h3 class="titleLevel2" id="events">Events</h3>
+			<p class="textParagraph">
+				<ul>
+					<li class="textParagraphList" id="annual_tour">Annual Tour</li>
+				</ul>
+				<p class="textParagraph">
+					The 1st May bank holiday of every year is reserved for the annual "Tour". This may or may not involve a shorthaul flight abroad and is generally 2 or 3 nights but always over the bank holiday weekend. It's very much a social tour. We don't always take rackets to play squash/racketball. If there is a local squash club at our chosen destination then every effort is made to arrange a ranked match up if they are willing and available to put out a list of players.
+				</p>
+				<ul>
+					<li class="textParagraphList" id="llantrisant_open">Llantrisant Open</li>
+				</ul>
+				<p class="textParagraph">
+					We host a major ranked <a class="loneAnchor" href='./#/tournament_details'>Open Sqaush tournament</a> each year in the summer, generally in early to mid June.
+				</p>
+				<ul>
+					<li class="textParagraphList" id="christmas_tournament">Christmas Tournament</li>
+				</ul>
+				<p class="textParagraph">
+					We hold a 1 day annual Christmas Handicap Tournament, usually on the Friday after Christmas, depending when Christmas Day falls. This is a compeitive and sociable event where we generally have a curry, drinks, killer darts and killer pool afterwards in a local pub. There is an entry fee, prize money, and the two finalists of the tournament can win free membership for the following season.
+				</p>
+				<ul>
+					<li class="textParagraphList" id="racketball_tournaments">Racketball Tournaments</li>
+				</ul>
+				<p class="textParagraph">
+					The racketball contingent hold occasional Racketball tournaments in the year (generally summer and winter) which are a one evening event of a 2 league racketball round robin followed by a final between league winners, and then a curry (& beers).
+				</p>	
 			</p>
 		</div>
 	</div>
