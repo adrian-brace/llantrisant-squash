@@ -90,7 +90,7 @@ function getYear(){
 	
 	var today = new Date();
 
-	if(today.getMonth() === 11 && today.getDate() > 20) {
+	if(today.getMonth() === 11 && today.getDate() > 31) {
 		return today.getFullYear() + 1;
 	} else{
 		return today.getFullYear();
@@ -104,7 +104,7 @@ function getSeason(){
 	var day = today.getDate();
 
 	if (month < 7 ||
-		(month === 11 && day > 20) ||
+		(month === 11 && day > 31) ||
 		(month === 7 && day < 11)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -119,7 +119,7 @@ function getSeasonForRankings(){
 	var day = today.getDate();
 
 	if (month < 7 ||
-		(month === 11 && day > 20) ||
+		(month === 11 && day > 31) ||
 		(month === 7 && day < 11)) {
 		return SEASON_SPRING.capitalize();
 	} else{
