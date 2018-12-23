@@ -1,5 +1,6 @@
 /* Constants */
 var OLDEST_YEAR = 2016;
+var SPRING_START_DAY = 22;
 var SPRING_START_MONTH = '-01-15';
 var WINTER_START_MONTH = '-08-15';
 var SEASON_SPRING = 'spring';
@@ -16,6 +17,7 @@ var TOURNAMENT_RESULTS_AVAILABLE_HTML_FILE = './public/tournament_results_availa
 TOURNAMENT_OVER_HTML_FILE
 var TOURNAMENT_FOOTER_HTML_FILE = './public/tournament_footer.html';
 var CHALLENGE_RULES_HTML_FILE = './public/challenge_rules.html';
+var RANKING_UPDATE_DUE_HTML_FILE = './public/ranking_update_due.html';
 
 Number.prototype.ordinalSuffixOf = function(){
     var j = this % 10,
@@ -90,7 +92,7 @@ function getYear(){
 	
 	var today = new Date();
 
-	if(today.getMonth() === 11 && today.getDate() > 31) {
+	if(today.getMonth() === 11 && today.getDate() > SPRING_START_DAY) {
 		return today.getFullYear() + 1;
 	} else{
 		return today.getFullYear();
@@ -104,7 +106,7 @@ function getSeason(){
 	var day = today.getDate();
 
 	if (month < 7 ||
-		(month === 11 && day > 31) ||
+		(month === 11 && day > SPRING_START_DAY) ||
 		(month === 7 && day < 11)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -119,7 +121,7 @@ function getSeasonForRankings(){
 	var day = today.getDate();
 
 	if (month < 7 ||
-		(month === 11 && day > 31) ||
+		(month === 11 && day > SPRING_START_DAY) ||
 		(month === 7 && day < 11)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -148,6 +150,13 @@ function showProvisionalRankings() {
 	var month = today.getMonth();
 	var day = today.getDate();
 	return month > 3 && (month < 7 || (month === 7 && day < 25));
+}
+
+function showRankingUpdateDue() {
+	var today = new Date();
+	var month = today.getMonth();
+	var day = today.getDate();
+	return (month == 11 && day > SPRING_START_DAY) || (month === 1 && day < 7);
 }
 
 function getMasterConfiguration(http, xmlToJson, getClubNameOnly){

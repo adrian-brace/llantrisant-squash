@@ -9,6 +9,13 @@
    </div>
    <br/>
    <div class="pageContent">
+		<table ng-show="showRankingUpdateDue">
+			<tr>
+				<td>
+					<div ng-include src='ranking_update_due'></div>		
+				</td>
+			</tr>
+		</table>
 		<table ng-show="showProvisionalRankings">
 			<tr>
 				<td>

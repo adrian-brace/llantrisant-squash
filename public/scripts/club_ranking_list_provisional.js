@@ -4,8 +4,10 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 	var getConfiguration = configuration.getConfiguration();
 	var teams = [];
 
+	$scope.ranking_update_due = RANKING_UPDATE_DUE_HTML_FILE;
 	$scope.challenge_rules = CHALLENGE_RULES_HTML_FILE;
-
+	$scope.showRankingUpdateDue = showRankingUpdateDue();
+	
 	// Call the getClub service (Reads from HostName or Defaults to one in Master Config File)
 	getClub.then(function(clubName){
 		$scope.clubName = clubName;
@@ -14,7 +16,7 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 		getConfiguration.then(function(configuration){
 			$scope.configuration = configuration;
 			$scope.season = getSeasonAndYearForProvisionalRankings();
-			$scope.showProvisionalRankings = showProvisionalRankings();
+			$scope.showProvisionalRankings = showProvisionalRankings();			
 
 			// Get the club's current season's team configuration
 			var getClubSeasonConfiguration = clubConfiguration.getProvisionalClubSeasonConfiguration(clubName);

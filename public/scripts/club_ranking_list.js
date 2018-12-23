@@ -4,7 +4,9 @@ homeApp.controller('RankingsForTeamController', ['$scope', '$http', 'club', 'con
 	var getConfiguration = configuration.getConfiguration();
 	var teams = [];
 
+	$scope.ranking_update_due = RANKING_UPDATE_DUE_HTML_FILE;
 	$scope.challenge_rules = CHALLENGE_RULES_HTML_FILE;
+	$scope.showRankingUpdateDue = showRankingUpdateDue();
 
 	// Call the getClub service (Reads from HostName or Defaults to one in Master Config File)
 	getClub.then(function(clubName){

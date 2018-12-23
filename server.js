@@ -13,7 +13,6 @@ var cheerio = require('cheerio');
 var app = express();
 var DOMParser = require('xmldom').DOMParser;
 var serializer = new (require('xmldom')).XMLSerializer;
-var implementation = new (require('xmldom')).DOMImplementation;
 
 vsprintf = require('sprintf-js').vsprintf;
 
@@ -25,6 +24,7 @@ var FILE_EXTENSION_FOR_XML = ".xml";
 var FILE_EXTENSION_FOR_JSON = ".json";
 
 var OLDEST_YEAR = 2016;
+var SPRING_START_DAY = 22;
 var SEASON_SPRING = 'spring';
 var SEASON_WINTER = 'winter';
 
@@ -1058,7 +1058,7 @@ function getYear(year){
 	} else {
 		var today = new Date();
 
-		if(today.getMonth() === 11 && today.getDate() > 31) {
+		if(today.getMonth() === 11 && today.getDate() > SPRING_START_DAY) {
 			return today.getFullYear() + 1;
 		} else{
 			return today.getFullYear();
@@ -1076,7 +1076,7 @@ function getSeason(season){
 		var day = today.getDate();
 
 		if (month < 7 ||
-			(month === 11 && day > 31) ||
+			(month === 11 && day > SPRING_START_DAY) ||
 			(month === 7 && day < 11)) {
 			return SEASON_SPRING;
 		} else{

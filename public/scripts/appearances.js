@@ -20,6 +20,8 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
 	}
 	
 	$scope.years = [];
+	$scope.ranking_update_due = RANKING_UPDATE_DUE_HTML_FILE;
+	$scope.showRankingUpdateDue = showRankingUpdateDue();
 	
 	for(supportedYear = getYear(); supportedYear >= OLDEST_YEAR; supportedYear--) {
 		$scope.years.push(supportedYear);
