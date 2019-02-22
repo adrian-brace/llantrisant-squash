@@ -12,6 +12,10 @@ homeApp.config(function($routeProvider) {
 			templateUrl : 'public/about_us.html',
 			controller  : 'HomeController'
 		})
+		.when('/android', {
+			templateUrl : 'public/android.html',
+			controller  : 'HomeController'
+		})
 		.when('/appearances', {
 			templateUrl : 'public/appearances.html',
 			controller  : 'AppearancesController'

@@ -63,7 +63,6 @@
 					<th>Home Team</th>
 					<th>&nbsp;</th>
 					<th>Away Team</th>
-					<th>Win?</th>
 					<th>Result</th>
 				</tr>
 			</thead>
@@ -85,14 +84,12 @@
 						<strong ng-show="fixture.awayTeam === fixture.team"><a class='tableCellAnchor' href='{{fixture.teamURL}}'>{{fixture.awayTeam}}</a></strong>
 						<span ng-show="fixture.awayTeam !== fixture.team">{{fixture.awayTeam}}</span>
 					</td>
-					<td align="center" ng-class="{'winClass': fixture.isWin, 'loseClass': !fixture.isWin && fixture.result.length > 0}">
+					<td ng-class="{'winClass': fixture.isWin, 'loseClass': !fixture.isWin && fixture.result.length > 0}">
 						<strong ng-show="fixture.result !== '' && fixture.isWin">Won</strong>
 						<strong ng-show="fixture.result !== '' && !fixture.isWin">Lost</strong>
-					</td>
-					<td align="center" ng-class="{'winClass': fixture.isWin, 'loseClass': !fixture.isWin && fixture.result.length > 0}">
 						<strong ng-show="fixture.result === ''">Unsubmitted</strong>
 						<strong>{{fixture.result}}</strong>
-						&nbsp;&nbsp;<strong>Pts: {{fixture.pointsResult}}</strong>
+						(<strong>{{fixture.pointsResult}}</strong>)
 					</td>
 				</tr>
 			</tbody>

@@ -348,6 +348,11 @@ span {
 	font-weight: bold !important;
 }
 
+.highlightClass {
+	color:#9fdf6a !important;
+	font-weight: bold !important;
+}
+
 ul.noBullet {
 	list-style-type: none;
 	padding-left:8px;
