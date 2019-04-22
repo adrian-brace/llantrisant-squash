@@ -9,12 +9,12 @@
 		<div ng-include src='tournament_header'></div>
 		<div ng-show="{{tournamentStage === 'UPCOMING'}}" class="newLine">
 			<p class="textParagraph">
-				Enter now by texting Jason on:  <strong class="warningMessage">07815 947792</strong>
+				Entry open from <strong>{{tournamentEntryOpeningDate}}</strong>. Text Jason on:  <strong class="warningMessage">07815 947792</strong> before <strong>{{tournamentEntryClosingDate}}</strong>.
 				<br/>
 				<br/>
 				<table>
 					<td>
-						<img src="./public/images/tournament_{{tournamentYear}}.jpg" width="500" height="758">
+						<img src="./public/images/tournament_{{tournamentYear}}.jpg" width="640" height="523">
 					</td>
 				</table>
 			</p>
