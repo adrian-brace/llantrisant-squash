@@ -2,6 +2,101 @@
   "xml": {
     "tournament": [
       {
+        "year": "2019",
+        "entrants": "TBC",
+        "press_release": "",
+        "draw": [
+              {
+                "name": "",
+                "pdf": ""
+              },
+              {
+                "name": "",
+                "pdf": ""
+              },
+              {
+                "name": "",
+                "pdf": ""
+              },
+              {
+                "name": "",
+                "pdf": ""
+              }
+      ],
+        "event": [
+          {
+            "name": "A Draw",
+            "winner": "TBC",
+            "winnerPrize": "£400 Cash",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "£300 Cash"
+          },
+          {
+            "name": "A Semi-finalists",
+            "winner": "TBC",
+            "winnerPrize": "£100 Cash",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "£100 Cash"
+          },
+          {
+            "name": "A Quarter-finalists",
+            "winner": "TBC",
+            "winnerPrize": "£50 Cash",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "£50 Cash"
+          },
+          {
+            "name": "A Plate",
+            "winner": "TBC",
+            "winnerPrize": "Trophy",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "Trophy"
+          },
+          {
+            "name": "B Draw",
+            "winner": "TBC",
+            "winnerPrize": "£100 Cash",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "£50 Cash"
+          },
+          {
+            "name": "B Plate",
+            "winner": "TBC",
+            "winnerPrize": "Trophy",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "Trophy"
+          },
+          {
+            "name": "C Draw",
+            "winner": "TBC",
+            "winnerPrize": "£50 Cash",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "£25 Cash"
+          },
+          {
+            "name": "C Plate",
+            "winner": "TBC",
+            "winnerPrize": "Trophy",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "Trophy"
+          },
+		      {
+            "name": "D Draw",
+            "winner": "TBC",
+            "winnerPrize": "£25 Cash",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "£15 Cash"
+          },
+          {
+            "name": "D Plate",
+            "winner": "TBC",
+            "winnerPrize": "Trophy",
+            "runnerUp": "TBC",
+            "runnerUpPrize": "Trophy"
+          }
+        ]
+      },
+      {
         "year": "2018",
         "entrants": "70",
         "press_release": "Llantrisant Squash Open 2018 - Press Report.pdf",
@@ -33,7 +128,7 @@
             "winner": "Luke Bishop",
             "winnerPrize": "£250 Cash",
             "runnerUp": "Greg Tippings",
-            "runnerUpPrize": "£150"
+            "runnerUpPrize": "£150 Cash"
           },
           {
             "name": "A Semi-finalists",
@@ -52,9 +147,9 @@
           {
             "name": "B Draw",
             "winner": "Mark Toseland",
-            "winnerPrize": "£100",
+            "winnerPrize": "£100 Cash",
             "runnerUp": "David Robertson",
-            "runnerUpPrize": "£50"
+            "runnerUpPrize": "£50 Cash"
           },
           {
             "name": "B Plate",
