@@ -83,6 +83,12 @@ span.down {
 	height: 33px;
 }
 
+.instagram {
+	background: url("../../public/images/instagram.png");
+	width: 40px;
+	height: 40px;
+}
+
 .ladders {
 	background: url("../../public/images/ladder.png");
 	width: 40px;

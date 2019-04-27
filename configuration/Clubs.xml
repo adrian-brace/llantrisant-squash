@@ -11,6 +11,9 @@
 				<Link name="@llansquashclub" url="https://twitter.com/llansquashclub" />
 				<Link name="@sqwales" url="https://twitter.com/sqwales" />
 			</Twitters>
+			<Instagrams>
+				<Link name="@llantrisantsquash" url="https://instagram.com/llantrisantsquash" />
+			</Instagrams>
 			<Others>
 				<Link name="Pitch Hero" url="http://www.pitchero.com/clubs/llantrisantsquashclub/" />
 				<Link name="Llantrisant Leisure Centre" url="http://www2.rctcbc.gov.uk/en/leisure/findacentre/llantrisantleisurecentre/llantrisantleisurecentre.aspx" />
@@ -21,6 +24,7 @@
 				<Telephone name="Tim">07859894472</Telephone>
 				<Twitter>https://twitter.com/llansquashclub</Twitter>
 				<Facebook>https://www.facebook.com/groups/389158627953763/</Facebook>
+				<Instagram>https://instagram.com/llantrisantsquash</Instagram>
 			</Contacts>
 			<Sponsors>
 				<Sponsor name="Jordan Civils" url="http://www.jordancivilsltd.co.uk/" icon="sponsor_jordan_civils"/>

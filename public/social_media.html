@@ -22,6 +22,17 @@
       </table>
    </div>
    <div class="pageContent">
+		<div class="socialMediaDiv" ng-show="club.INSTAGRAMS.LINK.length > 0">
+			<table>
+				<td><div class="instagram"><span class='noDisplay'>Instagram</span></div></td>
+				<td class='titleLevel2'>Instagram</td>
+			</table>
+			<ul class='noBulletList'>
+				<li ng-repeat='link in club.instagram.LINK'>
+					<a class="loneAnchor" href="{{ link.url }}">{{ link.name }}</a>
+				</li>
+			</ul>
+		</div>
 		<div class="socialMediaDiv" ng-show="club.TWITTERS.LINK.length > 0">
 			<table>
 				<td><div class="twitter"><span class='noDisplay'>Twitter</span></div></td>
