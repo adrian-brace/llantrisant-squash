@@ -41,11 +41,20 @@
 		<script src="./public/scripts/tournament.js"></script>
 		<script src="./public/scripts/welsh_rankings.js"></script>
 		<script src="./public/scripts/tournament_gallery.js"></script>
-    
 	</head>
 	<body>
 		<div ng-include src='header'></div>
 		<!-- Angular Templating - This is where content will be injected -->
-		<div ng-view />
+		<div>
+			<div ng-view></div>
+		</div>
+		<div>
+			<div class="mainFooter">
+				<a class="menuAnchor" ng-show="club.CONTACTS.FACEBOOK.length > 0" href="{{club.CONTACTS.FACEBOOK}}"><img src="../../public/images/facebook.png" /></a>
+				<a class="menuAnchor" ng-show="club.CONTACTS.TWITTER.length > 0" href="{{club.CONTACTS.TWITTER}}"><img src="../../public/images/twitter.png" /></a>
+				<a class="menuAnchor" ng-show="club.CONTACTS.INSTAGRAM.length > 0" href="{{club.CONTACTS.INSTAGRAM}}"><img src="../../public/images/instagram.png" /></a>
+				<a class="menuAnchor" ng-show="club.CONTACTS.EMAIL.length > 0" href="mailto:{{club.CONTACTS.EMAIL}}"><img src="../../public/images/email.png" /></a>
+			</div>
+		</div>
 	</body>
 </html>

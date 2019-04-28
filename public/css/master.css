@@ -28,6 +28,14 @@ body {
 	background: black;
 }
 
+.mainFooter {
+	margin: 0 auto;
+	width: 200px;
+	clear: both;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 .mainHeaderContent {
 	margin-top: 10px;
 	margin-left: 5px;
