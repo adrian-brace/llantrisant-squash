@@ -9,7 +9,7 @@
   "main": "server.js",
   "author": "Adrian Brace",
   "dependencies": {
-    "cheerio": "latest",
+    "cheerio": "^1.0.0-rc.3",
     "express": "latest",
     "gulp": "^3.9.1",
     "gulp-coffee": "latest",
@@ -17,7 +17,7 @@
     "gulp-connect": "latest",
     "gulp-nodemon": "latest",
     "gulp-sass": "latest",
-    "gulp-uglify": "latest",
+    "gulp-uglify": "^3.0.2",
     "gulp-util": "latest",
     "ng-image-gallery": "^2.1.2",
     "q": "latest",
