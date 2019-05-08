@@ -245,14 +245,14 @@ span.down {
 }
 
 .sponsor_squash_wales {
-	background: url("../../public/images/sponsor_logo_squash_wales_small.jpg");
-	width: 248px;
+	background: url("../../public/images/sponsor_logo_squash_wales_blue_small.jpg");
+	width: 147px;
 	height: 100px;
 }
 
 .sponsor_squash_wales_mini {
-	background: url("../../public/images/sponsor_logo_squash_wales_mini.jpg");
-	width: 99px;
+	background: url("../../public/images/sponsor_logo_squash_wales_blue_mini.jpg");
+	width: 59px;
 	height: 40px;
 }
 
