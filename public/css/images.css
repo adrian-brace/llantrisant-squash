@@ -244,6 +244,18 @@ span.down {
 	height: 40px; 	
 }
 
+.sponsor_oil_for_wales {
+	background: url("../../public/images/sponsor_logo_oil_for_wales_small.jpg");
+	width: 261px;
+	height: 100px;
+}
+
+.sponsor_oil_for_wales_mini {
+	background: url("../../public/images/sponsor_logo_oil_for_wales_mini.jpg");
+	width: 104px;
+	height: 40px; 	
+}
+
 .sponsor_squash_wales {
 	background: url("../../public/images/sponsor_logo_squash_wales_blue_small.jpg");
 	width: 147px;
