@@ -1369,6 +1369,11 @@ function getLeagueNameForURL(name, currentSeason, currentYear) {
 	// console.log('currentYear: ' + currentYear);
 	// console.log('leagueName: ' + leagueName);
 
+		// TODO: In future seasons I bet they add the Year for Racketball!
+		if (name.toString().indexOf("Racketball") >= 0){
+			return leagueName;
+		}
+
     return leagueName + ' ' + currentSeason.toLowerCase() + ' ' + currentYear;
 }
 
