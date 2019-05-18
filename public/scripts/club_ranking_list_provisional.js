@@ -26,9 +26,9 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 				var playerClubRank = 0;
 
 				// Build the players
-				for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.TEAMS.TEAM.length; teamIndex++){
+				for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.SQUASH.TEAMS.TEAM.length; teamIndex++){
 
-					var team = $scope.clubSeasonConfiguration.TEAMS.TEAM[teamIndex];
+					var team = $scope.clubSeasonConfiguration.SQUASH.TEAMS.TEAM[teamIndex];
 					var teamUrl = buildTeamUrl($scope.configuration.CONSTANTS.LEAGUEHOMEPAGE, $scope.configuration.CONSTANTS.TEAMURL, team.DIVISIONID, team.TEAMID, team.COMPETITIONID);
 					var players = [];
 					var playerTeamRank = 0;

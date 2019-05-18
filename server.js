@@ -296,7 +296,8 @@ app.get('/welsh_rankings', function(req, res) {
 		}	
 	}
 	
-	teams = currentSeasonConfigurationXML.getElementsByTagName('Team');
+	var squash = currentSeasonConfigurationXML.getElementsByTagName('Squash');
+	teams = squash[0].getElementsByTagName('Team');
 	
 	var pageIndex = 0;
 

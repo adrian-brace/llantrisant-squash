@@ -169,7 +169,7 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
 	}
 
 	$scope.teamsThatCanPullUp = function (item) { 
-		return item !== 'E'; 
+		return item !== 'E' && item !== '2';
 	};
 
 }]);

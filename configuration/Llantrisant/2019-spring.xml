@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<!--<Squash>-->
+	<Squash>
 		<Teams>
 			<Team>
 				<Name>A</Name>
@@ -104,10 +104,10 @@
 				<Player Name="Steve Evans"/>
 				<Player Name="Dean Bromham" RefereeNumber="100142"/>
 			-->
-		<!--</Teams>
+		</Teams>
 	</Squash>
 	<Racketball>
-		<Teams>-->
+		<Teams>
 			<Team>
 				<Name>1</Name>
 				<TeamID>207</TeamID>
@@ -116,7 +116,7 @@
 				<CompetitionID>393</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
-					<Player Name="Test Rball1" IsCaptain="true"/>				
+					<Player Name="Chris Emanuel" IsCaptain="true"/>				
 					<Player Name="Test Rball2"/>
 				</Players>
 			</Team>
@@ -133,5 +133,5 @@
 				</Players>
 			</Team>
 		</Teams>
-	<!--</Rackeball>-->
+	</Rackeball>
 </xml>

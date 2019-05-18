@@ -157,10 +157,23 @@ homeApp.controller('HomeController', ['$scope', '$http','$location','$anchorScro
 			getClubSeasonConfiguration.then(function(clubSeasonConfiguration){
 				$scope.clubSeasonConfiguration = clubSeasonConfiguration;
 
-				// Build the teams
-				for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.TEAMS.TEAM.length; teamIndex++){
+				// Build the teams for Squash
+				for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.SQUASH.TEAMS.TEAM.length; teamIndex++){
 
-					var team = $scope.clubSeasonConfiguration.TEAMS.TEAM[teamIndex];
+					var team = $scope.clubSeasonConfiguration.SQUASH.TEAMS.TEAM[teamIndex];
+					var teamUrl = buildTeamUrl($scope.configuration.CONSTANTS.LEAGUEHOMEPAGE, $scope.configuration.CONSTANTS.TEAMURL, team.DIVISIONID, team.TEAMID, team.COMPETITIONID);
+
+					teams.push({
+							teamName: team.NAME,
+							divisionName: team.DIVISIONNAME,
+							teamUrl: teamUrl
+						});
+				}
+
+				// Build the teams for Racketball
+				for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM.length; teamIndex++){
+
+					var team = $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM[teamIndex];
 					var teamUrl = buildTeamUrl($scope.configuration.CONSTANTS.LEAGUEHOMEPAGE, $scope.configuration.CONSTANTS.TEAMURL, team.DIVISIONID, team.TEAMID, team.COMPETITIONID);
 
 					teams.push({
