@@ -620,7 +620,8 @@ function processAllFixturesAndResults(req, sourcePage, res){
 					divisionName: divisionName,
 					teamFixturesURL: teamFixturesURL,
 					competitionID: competitionID,
-					teamStandingsURL: teamStandingsURL
+					teamStandingsURL: teamStandingsURL,
+					isRacketball: teams[teamIndex].parentNode.parentNode.localName !== "Squash"
 				});
 		}
 	}
@@ -682,7 +683,8 @@ function processAllFixturesAndResults(req, sourcePage, res){
 							teamURL: teamFixturesURL,
 							isClash: false,
 							isWin: false,
-							isHome: homeTeam == teamName			
+							isHome: homeTeam == teamName,
+							isRacketball: teamHTMLs[teamHTMLIndex].isRacketball
 						};
 
 						//Push it onto the master array
@@ -767,7 +769,8 @@ function processAllFixturesAndResults(req, sourcePage, res){
 							divisionId: divisionId,
 							competitionID: competitionID,
 							resultURL: matchResultDetailsURL,
-							isHome: isHome
+							isHome: isHome,
+							isRacketball: teamHTMLs[teamHTMLIndex].isRacketball
 						};
 
 						//Push it onto the master array
@@ -815,6 +818,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				var teamID = teams[teamIndex].getElementsByTagName("TeamID")[0].textContent;
 				var competitionID = teams[teamIndex].getElementsByTagName("CompetitionID")[0].textContent;
 				var teamFixturesURL =  leagueHomePage + vsprintf(teamURL, [divisionID, teamID, competitionID]);
+				var isRacketball = teams[teamIndex].parentNode.parentNode.localName !== "Squash";
 
 				for (playerIndex = 0; playerIndex < teamPlayers.length; playerIndex++) {
 					
@@ -827,6 +831,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 						playerRank: playerNumber,
 						appearances: [],
 						totalUpAppearances: 0,
+						isRacketball: isRacketball,
 						isEligible: true,
 						//code: "UNKNOWN",
 						division: divisionName,
@@ -1371,7 +1376,7 @@ function getLeagueNameForURL(name, currentSeason, currentYear) {
 	// console.log('leagueName: ' + leagueName);
 
 		// TODO: In future seasons I bet they add the Year for Racketball!
-		if (name.toString().indexOf("Racketball") >= 0){
+		if (name.toString().indexOf("Racketball") >= 0) {
 			return leagueName;
 		}
 

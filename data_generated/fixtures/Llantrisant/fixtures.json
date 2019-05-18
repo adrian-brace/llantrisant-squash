@@ -10,7 +10,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -23,7 +24,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -36,7 +38,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -49,7 +52,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -62,7 +66,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -75,7 +80,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -88,7 +94,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -101,7 +108,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -114,7 +122,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -127,7 +136,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -140,7 +150,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -153,7 +164,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": true,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -166,7 +178,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -179,7 +192,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -192,7 +206,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant A",
@@ -205,7 +220,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -218,7 +234,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -231,7 +248,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -244,7 +262,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": true,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -257,7 +276,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -270,7 +290,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -283,7 +304,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -296,7 +318,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": true,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -309,7 +332,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -322,7 +346,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -335,7 +360,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -348,7 +374,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -361,7 +388,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -374,7 +402,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant B",
@@ -387,7 +416,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=325",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -400,7 +430,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -413,7 +444,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -426,7 +458,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": false,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -439,7 +472,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -452,7 +486,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -465,7 +500,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -478,7 +514,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -491,7 +528,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": false,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -504,7 +542,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -517,7 +556,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -530,7 +570,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -543,7 +584,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -556,7 +598,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant C",
@@ -569,7 +612,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -582,7 +626,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -595,7 +640,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -608,7 +654,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -621,7 +668,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -634,7 +682,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": true,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -647,7 +696,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -660,7 +710,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -673,7 +724,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -686,7 +738,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -699,7 +752,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -712,7 +766,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": true,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant D",
@@ -725,7 +780,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -738,7 +794,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -751,7 +808,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -764,7 +822,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -777,7 +836,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -790,7 +850,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -803,7 +864,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -816,7 +878,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -829,7 +892,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": false,
         "isWin": true,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -842,7 +906,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": true,
         "isWin": true,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -855,7 +920,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -868,7 +934,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant E",
@@ -881,7 +948,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=327",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": false
     },
     {
         "team": "Llantrisant 1",
@@ -894,7 +962,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -907,7 +976,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -920,7 +990,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -933,7 +1004,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -946,7 +1018,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -959,7 +1032,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -972,7 +1046,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -985,7 +1060,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": true,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -998,7 +1074,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -1011,7 +1088,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -1024,7 +1102,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 1",
@@ -1037,7 +1116,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=207&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1050,7 +1130,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1063,7 +1144,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1076,7 +1158,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1089,7 +1172,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1102,7 +1186,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": true,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1115,7 +1200,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": true,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1128,7 +1214,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1141,7 +1228,8 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": false
+        "isHome": false,
+        "isRacketball": true
     },
     {
         "team": "Llantrisant 2",
@@ -1154,6 +1242,7 @@
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=208&competitionid=393",
         "isClash": false,
         "isWin": false,
-        "isHome": true
+        "isHome": true,
+        "isRacketball": true
     }
 ]
