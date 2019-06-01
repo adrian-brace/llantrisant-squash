@@ -994,7 +994,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				// Change the below to scrape new site instead...
 				var rows = $('table').filter(function() {
 					return ($(this).attr('align') === 'center');
-				}).each(function(){
+				}).first().each(function(){
 
 					var teamStanding = {
 						team: teamName,
@@ -1485,9 +1485,10 @@ function getExpiryPeriod(scrapeFunction){
 	var month = new Date().getMonth();
 	
 	/* Out of season (4 months May-July), scraping is pointless, so don't do it */
-	if(month > 4 && month < 7 && scrapeFunction !== SCRAPE_FUNCTION_WELSH_RANKINGS) {
+	/* Now that racketball runs through the summer, continue to scrape */
+	/*if(month > 4 && month < 7 && scrapeFunction !== SCRAPE_FUNCTION_WELSH_RANKINGS) {
 		expiryPeriod = TWELVE_WEEKS;
-	} else {
+	} else {*/
 		/* In season, we need to proactively scrape */
 		switch(scrapeFunction){
 			case SCRAPE_FUNCTION_WELSH_RANKINGS:
@@ -1503,7 +1504,7 @@ function getExpiryPeriod(scrapeFunction){
 				expiryPeriod = TWENTY_EIGHT_DAYS;
 				break;
 		}
-	}
+	/*}*/
 	
 	return expiryPeriod;
 }

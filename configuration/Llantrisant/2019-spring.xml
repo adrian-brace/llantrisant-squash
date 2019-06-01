@@ -116,8 +116,21 @@
 				<CompetitionID>393</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
-					<Player Name="Chris Emanuel" IsCaptain="true"/>				
-					<Player Name="Test Rball2"/>
+					<Player Name="Mike Workman"/>
+					<Player Name="Chris Emanuel" IsCaptain="true"/>
+					<Player Name="Matthew Williams"/>
+					<Player Name="Vaughan Collins"/>
+					<Player Name="Steven Thomas"/>
+					<Player Name="Chris Jones"/>
+					<Player Name="Tim Curtis"/>
+					<Player Name="Tony Paige"/>
+					<Player Name="Tony Jones"/>
+					<Player Name="Nick Wilkes"/>
+					<Player Name="Martyn Christopher"/>
+					<Player Name="Wynne Owen"/>
+					<Player Name="Brian Starks"/>
+					<Player Name="Amanda Barter"/>
+					<Player Name="Bob Williams"/>
 				</Players>
 			</Team>
 			<Team>
@@ -128,8 +141,13 @@
 				<CompetitionID>393</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>
-					<Player Name="Test Rball3" IsCaptain="true"/>				
-					<Player Name="Test Rball4"/>
+					<Player Name="Ray Skene" IsCaptain="true"/>				
+					<Player Name="Dave Mason"/>
+					<Player Name="Simon Griffin"/>
+					<Player Name="Jonathan Young"/>
+					<Player Name="Chris Yates"/>
+					<Player Name="Neil Watkins"/>
+					<Player Name="Anthony Carroll"/>
 				</Players>
 			</Team>
 		</Teams>
