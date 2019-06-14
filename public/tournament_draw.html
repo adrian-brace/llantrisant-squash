@@ -11,9 +11,9 @@
 			<p class="textParagraph">We hope to confirm the draw and schedule shortly after: <strong class='negativeLight'>{{tournamentEntryClosingDate}} {{tournamentYear}}</strong></p>
 		</div>
 		<div class='newLine' ng-show="{{tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">
-			<p class="negativeLight">The results are available!<br/>
-				<br/>Last Updated: 1pm Monday 25th June<br/>
-				<br/>Full results are available in the Tournaments section of <a class="loneAnchor" href='http://walessquash.countyleagues.co.uk/'>Wales Squash County Leagues Website</a>.
+			<p class="textParagraph">The draw is available!<br/>
+				<br/>Last Updated: <span class="negativeLight">Friday 14th June at 20:00</span><br/>
+				<br/>Full results will published throughout the event in the Tournaments section of <a class="loneAnchor" href='http://walessquash.countyleagues.co.uk/'>Wales Squash County Leagues Website</a>.
 			</p>
 			<table class='datatable'>				
 				<thead>
@@ -26,29 +26,31 @@
 				<tbody>
 					<tr>
 						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2018 A Grade.pdf"><strong>A</strong></a></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/{{tournamentYear}} A Grade.pdf"><strong>PSA Satellite</strong></a></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2018 B Grade.pdf"><strong>B</strong></a></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/{{tournamentYear}} B Grade.pdf"><strong>B Event</strong></a></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2018 C Grade.pdf"><strong>C</strong></a></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/{{tournamentYear}} C Grade.pdf"><strong>C Event</strong></a></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule 2018 D Grade.pdf"><strong>D</strong></a></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/{{tournamentYear}} D Grade.pdf"><strong>D Event</strong></a></td>
 						<td></td>
 					</tr>
+					<!--
 					<tr>
 						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/Tournament Draw Schedule {{tournamentYear}} E Grade.pdf"><strong>E</strong></a></td>
+						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/{{tournamentYear}} E Grade.pdf"><strong>E</strong></a></td>
 						<td></td>
 					</tr>
+					-->
 				</tbody>	
 			</table>
 		</div>
