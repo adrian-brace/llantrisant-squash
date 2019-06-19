@@ -1,4 +1,4 @@
-<table class='sponsorTable'>
+<table class='sponsorTable' ng-show="{{tournamentStage === 'UPCOMING'}}">
 		<td class='icon'>
 			<div><a href="./#/tournament_details"><div class="tournament_entry"><span class='noDisplay'>Entry</span></div></a></div>
 		</td>
@@ -8,19 +8,19 @@
 </table>
 <table class='sponsorTable'>
 		<td class='icon'>
-			<div><a href="./#/tournament_prize_money"><div class="tournament_prize_money"><span class='noDisplay'>Prize Money</span></div></a></div>
-		</td>
-		<td style="text-align: left">
-			<div><a class="menuAnchor" href="./#/tournament_prize_money">Prizes</a></div>
-		</td>
-</table>
-<table class='sponsorTable'>
-		<td class='icon'>
 			<div><a href="./#/tournament_draw"><div class="tournament_draw"><span class='noDisplay'>Draw & Times</span></div></a></div>
 		</td>
 		<td style="text-align: left">
 			<div><a class="menuAnchor" href="./#/tournament_draw">Draw</a></div>
 		</td>
+</table>
+<table class='sponsorTable'>
+	<td class='icon'>
+		<div><a href="./#/tournament_prize_money"><div class="tournament_prize_money"><span class='noDisplay'>Prize Money</span></div></a></div>
+	</td>
+	<td style="text-align: left">
+		<div><a class="menuAnchor" href="./#/tournament_prize_money">Prizes</a></div>
+	</td>
 </table>
 <table class='sponsorTable'>
 		<td class='icon'>
