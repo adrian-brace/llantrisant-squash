@@ -3,95 +3,95 @@
     "tournament": [
       {
         "year": "2019",
-        "entrants": "TBC",
+        "entrants": "57",
         "press_release": "",
         "draw": [
           {
-            "name": "",
-            "pdf": ""
+            "name": "PSA Satellite",
+            "pdf": "Tournament Draw Schedule 2019 A Grade.pdf"
           },
           {
-            "name": "",
-            "pdf": ""
+            "name": "B Event Mens",
+            "pdf": "Tournament Draw Schedule 2019 B Grade.pdf"
           },
           {
-            "name": "",
-            "pdf": ""
+            "name": "C Event Mens",
+            "pdf": "Tournament Draw Schedule 2019 C Grade.pdf"
           },
           {
-            "name": "",
-            "pdf": ""
+            "name": "D Event Mixed",
+            "pdf": "Tournament Draw Schedule 2019 D Grade.pdf"
           }
       ],
         "event": [
           {
             "name": "A Draw",
-            "winner": "TBC",
+            "winner": "Patrick Rooney",
             "winnerPrize": "£400 Cash",
-            "runnerUp": "TBC",
+            "runnerUp": "Tom Ford",
             "runnerUpPrize": "£300 Cash"
           },
           {
             "name": "A Semi-finalists",
-            "winner": "TBC",
+            "winner": "Nathan Lake",
             "winnerPrize": "£100 Cash",
-            "runnerUp": "TBC",
+            "runnerUp": "Peter Creed",
             "runnerUpPrize": "£100 Cash"
           },
           {
             "name": "A Quarter-finalists",
-            "winner": "TBC",
+            "winner": "James Peach, Micahel Craig",
             "winnerPrize": "£50 Cash",
-            "runnerUp": "TBC",
+            "runnerUp": "Lewis Doughty, Jack Turney",
             "runnerUpPrize": "£50 Cash"
           },
           {
             "name": "A Plate",
-            "winner": "TBC",
+            "winner": "Liam Eason",
             "winnerPrize": "Trophy",
-            "runnerUp": "TBC",
+            "runnerUp": "Lewis Poole",
             "runnerUpPrize": "Trophy"
           },
           {
             "name": "B Draw",
-            "winner": "TBC",
+            "winner": "Sam Weeds",
             "winnerPrize": "£100 Cash",
-            "runnerUp": "TBC",
+            "runnerUp": "Matthew Thomas",
             "runnerUpPrize": "£50 Cash"
           },
           {
             "name": "B Plate",
-            "winner": "TBC",
+            "winner": "Dan Webb",
             "winnerPrize": "Trophy",
-            "runnerUp": "TBC",
+            "runnerUp": "Gary Fry",
             "runnerUpPrize": "Trophy"
           },
           {
             "name": "C Draw",
-            "winner": "TBC",
+            "winner": "Justin Nemeth",
             "winnerPrize": "£50 Cash",
-            "runnerUp": "TBC",
+            "runnerUp": "Neil Hughes",
             "runnerUpPrize": "£25 Cash"
           },
           {
             "name": "C Plate",
-            "winner": "TBC",
+            "winner": "Tom Penberthy",
             "winnerPrize": "Trophy",
-            "runnerUp": "TBC",
+            "runnerUp": "Craig Bluck",
             "runnerUpPrize": "Trophy"
           },
 		      {
             "name": "D Draw",
-            "winner": "TBC",
+            "winner": "Ollie Cann",
             "winnerPrize": "£25 Cash",
-            "runnerUp": "TBC",
+            "runnerUp": "Gareth Heyes",
             "runnerUpPrize": "£15 Cash"
           },
           {
             "name": "D Plate",
-            "winner": "TBC",
+            "winner": "Ashley Maybury",
             "winnerPrize": "Trophy",
-            "runnerUp": "TBC",
+            "runnerUp": "Sam Norris",
             "runnerUpPrize": "Trophy"
           }
         ]
