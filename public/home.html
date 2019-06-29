@@ -8,10 +8,26 @@
 		</td>
 	</table>
 </div>
-<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}" ng-include src='tournament_title'></div>
-<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}" ng-include src='tournament_header'></div>
-<div ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}" ng-include src='tournament_footer'></div>
-<div class="newLine">
+<div class="tournamentHeader">
+	<table ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}" class='centredTable'>
+		<tr>
+			<td>
+				<div ng-include src='tournament_header' class="pageContent"></div>
+			</td>		
+		</tr>
+		<tr>
+			<td>
+				<div ng-include src='tournament_title' class="pageContent"></div>
+			</td>		
+		</tr>
+		<tr>
+			<td>
+				<div ng-include src='tournament_footer' class="pageContent"></div>
+			</td>		
+		</tr>
+	</table>
+</div>
+<div class="menu">
 	<br/>
 	<table class='menuTable'>
 		<td class='icon'>

@@ -1,23 +1,29 @@
 <div>
+	<div class="pageContent">
+		<div ng-include src='tournament_header'></div>
+	</div>
 	<div class="pageHeading">
 		<table class='titleTable'>
 			<td><div class="tournament"><span class="noDisplay">Tournament Details</span></div></td>
-			<td>Tournament Entry Details</td>
+			<td>Entry Details</td>
 		</table>
 	</div>
 	<div class="pageContent">
-		<div ng-include src='tournament_header'></div>
 		<div ng-show="{{tournamentStage === 'UPCOMING'}}" class="newLine">
-			<p class="textParagraph">
-				Entry open from <strong>{{tournamentEntryOpeningDate}}</strong>. Text Jason on:  <strong class="warningMessage">07815 947792</strong> before <strong>{{tournamentEntryClosingDate}}</strong>.
-				<br/>
-				<br/>
-				<table>
-					<td>
-						<img src="./public/images/tournament_{{tournamentYear}}.jpg" width="640" height="946">
-					</td>
+				<table class='tournamentHeader'>
+					<tr>
+						<td>
+							<p class="textParagraph">
+								Entry open from <strong>{{tournamentEntryOpeningDate}}</strong>. Text Jason on:  <strong class="warningMessage">07815 947792</strong> before <strong>{{tournamentEntryClosingDate}}</strong>.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="./public/images/tournament_{{tournamentYear}}.jpg" width="640" height="946">
+						</td>
+					</tr>
 				</table>
-			</p>
 		</div>
 		<div ng-show="{{tournamentStage === 'DRAWN'}}" class="newLine">
 				<p class="textParagraph">

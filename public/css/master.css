@@ -24,28 +24,37 @@ body {
 	/*background: linear-gradient(#2E3A2E, #6B876A); /* Standard syntax */
 }
 
+.pageContent {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .mainHeader {
-	background: black;
+    text-align:center;
+}
+
+.mainHeaderContent {
+    margin: 0 auto;
+	clear: both;
+	width: 310px;
+	display: inline-block;
 }
 
 .mainFooter {
 	margin: 0 auto;
-	width: 200px;
+	width: 310px;
 	clear: both;
 	padding-top: 30px;
 	padding-bottom: 30px;
-}
-
-.mainHeaderContent {
-	margin-top: 10px;
-	margin-left: 5px;
-	overflow: auto;
+	text-align:center;
 }
 
 .inline {
-	float: left;
 	padding-left: 3px;
 	padding-bottom: 3px;
+	margin: auto;
+	display: inline-block;
 }
 /* End of Main Header */
 
@@ -54,7 +63,20 @@ body {
 	padding: 5px;
 }
 
-.tournamentHeader table, h2, h3{
+.tournamentHeaderContent {
+	display: inline-block;
+}
+
+.tournamentHeader {
+	margin: auto;
+	display: inline;
+}
+
+.tournamentTable {
+	margin: auto;
+}
+
+.tournamentHeader table, h2, h3 {
 	color: #85a3e0;
 	padding-left: 10px;
 }
@@ -77,6 +99,10 @@ body {
 .filterTable td {
 	white-space: nowrap;
 	vertical-align: top;
+}
+
+.titleTable{
+	margin: 0 auto;
 }
 
 .titleTable td {
@@ -110,9 +136,19 @@ table {
 	border-spacing: 0px;
 }
 
+.centredTable {
+	margin: auto;
+}
+
+.ladderTable {
+	margin: auto;
+	text-align: center;
+}
+
 .dataTable table {
 	border-radius: 0.6em;
-		box-shadow: 3px 3px 3px #0A0F14;
+	box-shadow: 3px 3px 3px #0A0F14;
+	margin: auto;
 }
 
 .dataTable th {
@@ -185,8 +221,13 @@ table {
 /*END OF DATA TABLES */
 
 .socialMediaDiv {
-	float: left;
 	margin-left: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.socialMediaDiv table {
+	margin: auto;
 }
 
 /* Anchors */
@@ -248,14 +289,18 @@ span {
 
 /* End of anchors */
 .sponsorTable {
-	float: left;
 	padding: 2px 2px 2px 10px;
-	white-space: nowrap;
+	margin: auto;
+}
+
+.menu {
+	width: 500px;
+    margin: 0 auto;
 }
 
 .menuTable {
 	float: left;
-	padding: 2px 2px 2px 10px;
+	padding: 5px 5px 5px 10px;
 	width: 246px;
 	white-space: nowrap;
 }
@@ -278,6 +323,7 @@ span {
 
 .textParagraphList {
 	color: #85a3e0;
+	text-align: left;
 }
 
 .noBulletList {

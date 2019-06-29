@@ -1,21 +1,22 @@
 <div>
-	<div class="pageHeading">
-		<table class='titleTable'>
-			<td><div class="tournament_history"><span class="noDisplay">Tournament History</span></div></td>
-			<td>Tournament History</td>
-		</table>
-	</div>
 	<div class="pageContent">
 		<div ng-include src='tournament_header'></div>
-		<br/>
-		<br/>
-		<br/>
+	</div>
+	<div class="pageHeading">
+		<table class='titleTable'>
+			<td><div class="tournament_history"><span class="noDisplay">Tournament Results</span></div></td>
+			<td>Results</td>
+		</table>
+	</div>
+	<br/>
+	<br/>
+	<div class="pageContent">
 		<div ng-repeat="tournament in tournamentHistory">
-			<table>
+			<table class='tournamentTable'>
 				<tr>
 					<td>				
-						<div class='datatable'>					
-							<table class='datatable'>
+						<div class='dataTable'>					
+							<table class='dataTable'>
 								<thead>
 									<tr>
 										<th style="text-align: left;" colspan="{{tournament.draw.length - 1}}">{{ tournament.year }} - Entrants: <strong class="warningMessage">{{ tournament.entrants }}</strong> <b ng-show='tournament.press_release'>- <a class="sortAnchor" target="_blank" href='./public/tournament_draw/{{ tournament.press_release }}'>Press Release</a></b></th>
@@ -29,7 +30,7 @@
 								</tbody>
 							</table>
 						</div>
-						<div class='datatable'>
+						<div class="dataTable">
 							<table>
 								<thead>
 									<tr>

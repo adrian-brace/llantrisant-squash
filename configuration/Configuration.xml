@@ -22,11 +22,12 @@
 		<DivisionStandingsURL>showdivision?divisionid=%s</DivisionStandingsURL>
 		<WelshRankingsURL>http://www.wales.squashlevels.com/players.php?&amp;all=&amp;confidence=1&amp;limit_confidence=0&amp;wales=&amp;start=%s</WelshRankingsURL>
 		<SubmitLeagueResultsURL>http://walessquash.countyleagues.co.uk/</SubmitLeagueResultsURL>
-		<TournamentStage>RESULTS</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
+		<TournamentStage>OVER</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
 		<TournamentDate>21st-23rd June</TournamentDate>
 		<TournamentYear>2019</TournamentYear>
 		<TournamentEntryOpeningDate>27th April</TournamentEntryOpeningDate>
 		<TournamentEntryClosingDate>7th June</TournamentEntryClosingDate>
+		<TournamentPrizePot>0</TournamentPrizePot>
 	</Constants>
 	<Leagues>
 		<League Name="South Wales"/>
@@ -39,13 +40,13 @@
 			<Link Name="Squash Wales (Old Site)" URL="http://www.squashwales.co.uk/"/>			
 		</SquashWales>
 		<Rankings>
-			<Link BulletClass='llantrisant' Name="Llantrisant Rankings" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=2305&county=all&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
-			<Link BulletClass='regional' Name="Mid Glam Rankings" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=78&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search="/>
-			<Link BulletClass='regional' Name="South Glam Rankings" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=68&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
-			<Link BulletClass='regional' Name="South Wales Rankings" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=105&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
-			<Link BulletClass='welsh' Name="Welsh National Rankings" URL="http://www.wales.squashlevels.com/players.php?all=&wales"/>
-			<Link BulletClass='english' Name="English National Rankings" URL="http://www.squashplayer.co.uk/rankings/englishrankings.htm"/>
-			<Link BulletClass='psa' Name="World PSA Rankings" URL="http://www.worldsquash.org/ws/?page_id=1706"/>
+			<Link BulletClass='llantrisant' Name="Llantrisant" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=2305&county=all&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
+			<Link BulletClass='regional' Name="Mid Glam" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=78&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search="/>
+			<Link BulletClass='regional' Name="South Glam" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=68&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
+			<Link BulletClass='regional' Name="South Wales" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=105&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
+			<Link BulletClass='welsh' Name="Welsh" URL="http://www.wales.squashlevels.com/players.php?all=&wales"/>
+			<Link BulletClass='english' Name="English" URL="http://www.squashplayer.co.uk/rankings/englishrankings.htm"/>
+			<Link BulletClass='psa' Name="World PSA" URL="http://www.worldsquash.org/ws/?page_id=1706"/>
 		</Rankings>
 		<Clubs>
 			<Club>

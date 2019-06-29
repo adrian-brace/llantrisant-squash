@@ -1,26 +1,45 @@
 <div>
+	<div class="pageContent">
+		<div ng-include src='tournament_header'></div>
+	</div>
 	<div class="pageHeading">
 		<table class='titleTable'>
 			<td><div class="tournament_prize_money"><span class="noDisplay">Tournament Prize Money</span></div></td>
-			<td>Tournament Prize Money</td>
+			<td>Prize Money</td>
 		</table>
 	</div>
 	<div class="pageContent">
-		<div ng-include src='tournament_header'></div>
 		<div class="newLine" ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
 		<div class="newLine" ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>	
 		<div class="newLine" ng-show="{{tournamentStage === 'UPCOMING' || tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">
+			<table class='centredTable'>
+				<tr>
+					<td>
+						<p ng-show="{{tournamentPrizePot === '0'}}" class="textParagraph">
+							<strong class="warningMessage">Tournament Prize Money is TBC!<br/>Watch this space...</strong>
+						</p>
+						<p ng-show="{{tournamentPrizePot !== '0'}}" class="textParagraph">
+							Over <strong class="warningMessage">£{{tournamentPrizePot}}</strong> worth of prize money up for grabs!!!
+						</p>
+					</td>
+				</tr>
+				<tr ng-show="{{tournamentPrizePot !== '0'}}">
+					<td>
+						<img src="./public/images/tournament_prize_money_{{tournamentYear}}.jpg" width="456" height="223" alt="Prize breakdown coming Soon!">
+					</td>
+				</tr>
+			</table>
 			<p class="textParagraph">
 				<!--
-					<strong class="warningMessage">Tournament Prize Money is TBC!<br/>Watch this space...</strong>
+					
 				<br/>
 				-->
-				Over <strong class="warningMessage">£1350</strong> worth of prize money up for grabs!!!
+				
 				<br/>
 				<br/>
 				<table>
 					<td>
-						<img src="./public/images/tournament_prize_money_{{tournamentYear}}.jpg" width="456" height="223" alt="Prize breakdown coming Soon!">
+						
 					</td>
 				</table>			
 			</p>

@@ -128,6 +128,8 @@ homeApp.controller('HomeController', ['$scope', '$http','$location','$anchorScro
 		$location.hash(old);
    }
 
+   $scope.currentPath = $location.path();
+
 	$scope.header = HEADER_HTML_FILE;
 	$scope.tournament_title = TOURNAMENT_TITLE_HTML_FILE;
 	$scope.tournament_header = TOURNAMENT_HEADER_HTML_FILE;
@@ -152,6 +154,7 @@ homeApp.controller('HomeController', ['$scope', '$http','$location','$anchorScro
 			$scope.tournamentDate = configuration.CONSTANTS.TOURNAMENTDATE;
 			$scope.tournamentEntryClosingDate = configuration.CONSTANTS.TOURNAMENTENTRYCLOSINGDATE;
 			$scope.tournamentEntryOpeningDate = configuration.CONSTANTS.TOURNAMENTENTRYOPENINGDATE;
+			$scope.tournamentPrizePot = configuration.CONSTANTS.TOURNAMENTPRIZEPOT;
 
 			var getClubSeasonConfiguration = clubConfiguration.getClubSeasonConfiguration(clubName);
 			getClubSeasonConfiguration.then(function(clubSeasonConfiguration){

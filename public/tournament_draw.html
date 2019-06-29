@@ -1,57 +1,84 @@
 <div>
+	<div class="pageContent">
+		<div ng-include src='tournament_header'></div>
+	</div>
 	<div class="pageHeading">
 		<table class='titleTable'>
 			<td><div class="tournament_draw"><span class="noDisplay">Tournament Draw</span></div></td>
-			<td>Tournament Draw</td>
+			<td>Draw</td>
 		</table>
 	</div>
 	<div class="pageContent">
-		<div ng-include src='tournament_header'></div>
 		<div class='newLine' ng-show="{{tournamentStage === 'UPCOMING'}}">
-			<p class="textParagraph">We hope to confirm the draw and schedule shortly after: <strong class='negativeLight'>{{tournamentEntryClosingDate}} {{tournamentYear}}</strong></p>
+			<table class='centredTable'>
+				<tr>
+					<td>
+						<p class="textParagraph">We hope to confirm the draw and schedule shortly after: <strong class='negativeLight'>{{tournamentEntryClosingDate}} {{tournamentYear}}</strong></p>
+					</td>
+				</tr>
+			</table>			
 		</div>
 		<div class='newLine' ng-show="{{tournamentStage === 'UNDERWAY' || tournamentStage === 'DRAWN'}}">
-			<p class="textParagraph">The draw is available!<br/>
-				<br/>Last Updated: <span class="negativeLight">Saturday 22nd June at 17:00</span><br/>
-				<br/>Full results will published throughout the event in the Tournaments section of <a class="loneAnchor" href='http://walessquash.countyleagues.co.uk/'>Wales Squash County Leagues Website</a>.
-			</p>
-			<table class='datatable'>				
-				<thead>
+			<table class='centredTable' style="width: 350px;">
+				<tr>
+					<td>
+						<p class="textParagraph">The draw is available!<br/>
+							<br/>Last Updated: <span class="negativeLight">Saturday 22nd June at 17:00</span>
+						</p>
+					</td>
+				</tr>
+			</table>
+			<table class='centredTable'>
+				<tr>
+					<td>				
+						<table class='datatable'>				
+							<thead>
+								<tr>
+									<th></th>
+									<th>Event</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./A.pdf"><strong>PSA Satellite</strong></a></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./B.pdf"><strong>B Event</strong></a></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./C.pdf"><strong>C Event</strong></a></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./D.pdf"><strong>D Event</strong></a></td>
+									<td></td>
+								</tr>
+								<!--
+								<tr>
+									<td></td>
+									<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/{{tournamentYear}} E Grade.pdf"><strong>E</strong></a></td>
+									<td></td>
+								</tr>
+								-->
+							</tbody>	
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class='centredTable' style="width: 350px;">
 					<tr>
-						<th></th>
-						<th>Event</th>
-						<th></th>
+						<td>
+							<p class="textParagraph">Full results will published throughout the event in the tournaments section of: <a class="loneAnchor" href='http://walessquash.countyleagues.co.uk/'>Wales Squash County Leagues Website</a>.
+							</p>
+						</td>
 					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./A.pdf"><strong>PSA Satellite</strong></a></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./B.pdf"><strong>B Event</strong></a></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./C.pdf"><strong>C Event</strong></a></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./D.pdf"><strong>D Event</strong></a></td>
-						<td></td>
-					</tr>
-					<!--
-					<tr>
-						<td></td>
-						<td style="text-align: center"><a class='tableCellAnchor' target="_blank" href="./public/tournament_draw/{{tournamentYear}} E Grade.pdf"><strong>E</strong></a></td>
-						<td></td>
-					</tr>
-					-->
-				</tbody>	
 			</table>
 		</div>
 		<div class="newLine" ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>

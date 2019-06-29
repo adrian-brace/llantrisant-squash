@@ -7,9 +7,15 @@
 	</div>
 	<br/>
 	<div class="pageContent">
-		<p class="textParagraph">
-			<strong class="warningMessage">PLEASE NOTE:</strong> The Appearances calculator is not yet able to distinguish between Squash matches and Racketball matches.
-		</p>
+		<table class="centredTable">
+			<tr>
+				<td>
+					<p class="textParagraph">
+						<strong class="warningMessage">PLEASE NOTE:</strong> The Appearances calculator is not yet able to distinguish between Squash matches and Racketball matches.
+					</p>				
+				</td>
+			</tr>
+		</table>
 		<table ng-show="showRankingUpdateDue">
 			<tr>
 				<td>
@@ -55,7 +61,7 @@
 					</tbody>
 				</table>
 			</div>
-			<table>
+			<table class="centredTable">
 				<td>
 					<div class="dataTable">
 						<table class="dataTable">
@@ -104,7 +110,7 @@
 								<tr>
 									<th>
 									</th>
-									<th colspan="{{uniqueTeams(players).length - 2}}">
+									<th colspan="{{uniqueTeams(players).length - 3}}">
 										<span>Pull-ups Summary</span>
 									</th>
 									<th>

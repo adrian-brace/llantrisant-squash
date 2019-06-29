@@ -1,6 +1,6 @@
 homeApp.controller('TournamentGalleryController', ['$scope', function($scope) {
 
-  $scope.title = "Tournament Gallery";
+  $scope.title = "Gallery";
 
   $scope.images = [{
     "image": "./public/images/Llantrisant/TournamentGallery/Llantrisant Open 2017 024.JPG"

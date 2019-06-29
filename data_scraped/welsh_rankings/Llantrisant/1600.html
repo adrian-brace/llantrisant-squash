@@ -5,8 +5,8 @@
 	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta name="keywords" content="Squash,Racketball,League,Leagues,Boxes,Avon,Bristol,Ranking,Level,SquashLevels,National"><meta name="author" content="SquashLevels Ltd."><meta name="wot-verification" content="29428994d10d64231891"/><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="google-site-verification" content="NKi4YGQGsZA9USG7kOAbsMe6CydQjvhFu82_x2fpYBU"/><link rel="stylesheet" href="css/crush_generic_spa.css?1555977368" media="all" />
 <link rel="stylesheet" href="css/crush_generic_menu_spa.css?1547863166" media="all" />
-<title>SquashLevels (WAL)</title><meta name="description" content="18 May 2019 - Squash results and player levels for all players of all ability from professional to county to club. If you play squash, you could/should be on here!"><link rel="shortcut icon" href="spa/spa_favicon.ico"><link rel="stylesheet" href="spa/crush_specific_spa.css?1547863362" media="all" />
-<link rel="stylesheet" href="css/crush_generic_small_spa.css?1550368611" media="all" />
+<title>SquashLevels (WAL) - Rankings</title><meta name="description" content="29 Jun 2019 - Squash results and player levels for all players of all ability from professional to county to club. If you play squash, you could/should be on here!"><link rel="shortcut icon" href="spa/spa_favicon.ico"><link rel="stylesheet" href="spa/crush_specific_spa.css?1547863362" media="all" />
+<link rel="stylesheet" href="css/crush_generic_small_spa.css?1560810899" media="all" />
 <script src="inc/selecthide.js"></script>
 <!--[if IE]>
 	<style type="text/css" media="screen">
@@ -107,8 +107,9 @@
     external_plugins: { "filemanager" : extraRoot + "/filemanager/plugin.min.js"}
   });
 
-  // User name for global JS access
+  // User name and player ID for global JS access
   var userName = "none";
+  var playerID = -1;
   
   // Admin level
   var admin = false;                 // Admin level
@@ -118,7 +119,7 @@
 
   // Reset the inactivity timer
   var idleTime = 0;
-  var commsKey = '964394639822';
+  var commsKey = '132395099569';
   
   // Deafult values for the player search bar
   var scope = '';                // (&club=xxxx/$county=xxxx/'')
@@ -181,7 +182,7 @@
         </tr>
         <tr>
           <td class='slogan_part' style='font-size: 90%;vertical-align: bottom;'>
-          87,710 players. 1,423,371 matches. <span class='onlyifsmall'><br></span>Be part of the next big thing in squash.          </td>
+          89,803 players. 1,443,944 matches. <span class='onlyifsmall'><br></span>Be part of the next big thing in squash.          </td>
         </tr>
       </table>
     </div>
@@ -307,64 +308,64 @@
 <option value="2007">Caernarfon Nantlle, Linked club</option>
 <option value="1970">Caerphilly, Linked club</option>
 <option value="1949">Caldicot, Linked club</option>
-<option value="1950">Cardiff, Mid Glamorgan</option>
-<option value="2002">Cardiff, Pembrokeshire</option>
-<option value="1973">Cardiff, Gwent</option>
-<option value="2113">Cardiff, North East Wales</option>
 <option value="1276">Cardiff Likely Lads, Linked club</option>
+<option value="1950">Cardiff, Mid Glamorgan</option>
 <option value="2138">Cardiff, Eryri</option>
+<option value="2002">Cardiff, Pembrokeshire</option>
+<option value="2113">Cardiff, North East Wales</option>
+<option value="1973">Cardiff, Gwent</option>
 <option value="2068">Cardiff Likely Lads, Gwent</option>
-<option value="2077">Cardiff Metropolitan, Gwent</option>
-<option value="2022">Cardiff Metropolitan, Linked club</option>
 <option value="2037">Cardiff Metropolitan, Eryri</option>
 <option value="2104">Cardiff Metropolitan, North East Wales</option>
+<option value="2077">Cardiff Metropolitan, Gwent</option>
+<option value="2022">Cardiff Metropolitan, Linked club</option>
+<option value="2335">Cardiff Uni, South Wales</option>
 <option value="2125">Cardiff Uni, Mid Glamorgan</option>
 <option value="2023">Cardiff Uni, South Glamorgan</option>
+<option value="2027">Cardiff Uni, North East Wales</option>
 <option value="1962">Cardiff Uni, Pembrokeshire</option>
 <option value="2046">Cardiff Uni, Gwent</option>
 <option value="2080">Cardiff Uni, Eryri</option>
-<option value="2027">Cardiff Uni, North East Wales</option>
-<option value="2335">Cardiff Uni, South Wales</option>
 <option value="2006">Cardigan, Linked club</option>
-<option value="1921">Carmarthen, Linked club</option>
 <option value="1910">Carmarthen, West Glamorgan</option>
+<option value="1921">Carmarthen, Linked club</option>
 <option value="2131">Carmarthern, Pembrokeshire</option>
 <option value="2132">Carmarthern, West Glamorgan</option>
-<option value="5217">Carmathen, North East Wales</option>
 <option value="2287">Carmathen, Pembrokeshire</option>
+<option value="5217">Carmathen, North East Wales</option>
 <option value="3311">Carmathen, West Glamorgan</option>
 <option value="2349">Cheshire County Offices, Linked club</option>
 <option value="1932">Chester County Offices, North East Wales</option>
 <option value="1960">Chester County Offices, Eryri</option>
 <option value="1935">Chester Rugby, Linked club</option>
-<option value="1945">Cowbridge, Linked club</option>
 <option value="2139">Cowbridge, Mid Glamorgan</option>
-<option value="3889">Cwm Gwendraeth, South Wales</option>
+<option value="1945">Cowbridge, Linked club</option>
 <option value="5213">Cwm Gwendraeth, Pembrokeshire</option>
 <option value="2032">Cwm Gwendraeth, Linked club</option>
 <option value="5215">Cwm Gwendraeth, North East Wales</option>
+<option value="3889">Cwm Gwendraeth, South Wales</option>
 <option value="2024">Cwmbran, West Glamorgan</option>
 <option value="2003">Cwmbran, Linked club</option>
 <option value="4559">Cwmbran, South Wales</option>
 <option value="1958">David Lloyds, Linked club</option>
-<option value="1963">David Lloyd, Mid Glamorgan</option>
 <option value="2056">David Lloyd, West Glamorgan</option>
+<option value="1963">David Lloyd, Mid Glamorgan</option>
 <option value="3307">David Lloyd Cardiff, South Wales</option>
 <option value="3305">David Lloyd Cardiff, South Glamorgan</option>
+<option value="3295">David Lloyd Swansea, South Wales</option>
 <option value="5155">David Lloyd Swansea, Pembrokeshire</option>
-<option value="5149">David Lloyd Swansea, North East Wales</option>
+<option value="3313">David Lloyd Swansea, West Glamorgan</option>
 <option value="5324">David Lloyd Swansea, Eryri</option>
 <option value="3583">David Lloyd Swansea, South Glamorgan</option>
-<option value="3295">David Lloyd Swansea, South Wales</option>
-<option value="3313">David Lloyd Swansea, West Glamorgan</option>
+<option value="5149">David Lloyd Swansea, North East Wales</option>
 <option value="2051">David Lloyds, Mid Glamorgan</option>
 <option value="290">Deeside, Linked club</option>
 <option value="2129">Denbighshire Leisure Stars, Linked club</option>
 <option value="2141">Denbighshire Leis Star, North Wales</option>
 <option value="4173">Denbighshire Leisure Stars, Mid Glamorgan</option>
-<option value="2075">EWSSwansea, South Glamorgan</option>
 <option value="2073">EWSSwansea, West Glamorgan</option>
 <option value="2072">EWSSwansea, Gwent</option>
+<option value="2075">EWSSwansea, South Glamorgan</option>
 <option value="2076">EWSSwansea, Pembrokeshire</option>
 <option value="2100">Fairwater, West Glamorgan</option>
 <option value="1908">Fairwater, Gwent</option>
@@ -378,8 +379,8 @@
 <option value="1991">Gwendraeth, West Glamorgan</option>
 <option value="2005">Haverfordwest, Linked club</option>
 <option value="2021">Haverfordwest, Mid Glamorgan</option>
-<option value="3567">Hirwaun, South Wales</option>
 <option value="2128">Hirwaun, South Glamorgan</option>
+<option value="3567">Hirwaun, South Wales</option>
 <option value="2096">Hirwaun, Linked club</option>
 <option value="2070">Holyhead, Linked club</option>
 <option value="1941">Holywell Leisure SC, Linked club</option>
@@ -387,27 +388,27 @@
 <option value="2133">Kaymac, West Glamorgan</option>
 <option value="1942">Kent Supplies, Linked club</option>
 <option value="1933">LA Fitness, Linked club</option>
-<option value="2044">Lantwit Fardre, Mid Glamorgan</option>
 <option value="2045">Lantwit Fardre, South Glamorgan</option>
-<option value="352">Le Sport, North Wales</option>
+<option value="2044">Lantwit Fardre, Mid Glamorgan</option>
 <option value="1926">Le Sport, North East Wales</option>
 <option value="1903">Le Sport, Eryri</option>
+<option value="352">Le Sport, North Wales</option>
 <option value="2977">Llandaff, Linked club</option>
+<option value="5201">Llandeilo, Mid Glamorgan</option>
 <option value="5205">Llandeilo, North East Wales</option>
 <option value="2019">Llandeilo, Linked club</option>
-<option value="5201">Llandeilo, Mid Glamorgan</option>
-<option value="5167">Llanelli, Pembrokeshire</option>
+<option value="5243">Llanelli, Eryri</option>
 <option value="1907">Llanelli, Linked club</option>
 <option value="2084">Llanelli, South Glamorgan</option>
-<option value="5243">Llanelli, Eryri</option>
 <option value="5151">Llanelli, North East Wales</option>
+<option value="5167">Llanelli, Pembrokeshire</option>
+<option value="3369">Llanfyllin, South Glamorgan</option>
+<option value="3368">Llanfyllin, West Glamorgan</option>
 <option value="3366">Llanfyllin, South Wales</option>
 <option value="3378">Llanfyllin, Mid Glamorgan</option>
-<option value="3368">Llanfyllin, West Glamorgan</option>
-<option value="3369">Llanfyllin, South Glamorgan</option>
 <option value="2016">Llangefni Llewod, Eryri</option>
-<option value="1286">Llanishen, Linked club</option>
 <option value="1954">Llanishen, Gwent</option>
+<option value="1286">Llanishen, Linked club</option>
 <option value="2115">Llanrwst, Linked club</option>
 <option value="2127">Llanrwst, North East Wales</option>
 <option value="2071">Llantrisant, Gwent</option>
@@ -422,52 +423,52 @@
 <option value="1951">Maesteg, Linked club</option>
 <option value="1976">Meads Lc, Linked club</option>
 <option value="2119">Meads LC, South Glamorgan</option>
-<option value="2120">Meads LC, Mid Glamorgan</option>
 <option value="2124">Meads LC, Gwent</option>
-<option value="4329">Merthyr, North East Wales</option>
-<option value="1983">Merthyr, Linked club</option>
+<option value="2120">Meads LC, Mid Glamorgan</option>
 <option value="2135">Merthyr, South Glamorgan</option>
+<option value="1983">Merthyr, Linked club</option>
+<option value="4329">Merthyr, North East Wales</option>
 <option value="1934">Midtown, Linked club</option>
 <option value="1914">Milford Haven, Linked club</option>
 <option value="2089">MLC [Juniors], Linked club</option>
 <option value="1939">Mold, Linked club</option>
 <option value="2092">Mollington, Linked club</option>
 <option value="349">Mollington Banastre, North East Wales</option>
+<option value="1968">Monmouth, Linked club</option>
 <option value="2091">Monmouth, South Glamorgan</option>
 <option value="3520">Monmouth, Eryri</option>
-<option value="1968">Monmouth, Linked club</option>
 <option value="3518">Monmouth, North East Wales</option>
 <option value="3522">Monmouth, Mid Glamorgan</option>
-<option value="2018">Nalgo, Linked club</option>
 <option value="2061">NALGO, North East Wales</option>
-<option value="1987">Narbeth Fourcroft, Linked club</option>
-<option value="1989">Narbeth, South Glamorgan</option>
+<option value="2018">Nalgo, Linked club</option>
 <option value="2060">Narbeth, West Glamorgan</option>
+<option value="1989">Narbeth, South Glamorgan</option>
+<option value="1987">Narbeth Fourcroft, Linked club</option>
+<option value="5153">Neath, Pembrokeshire</option>
 <option value="5147">Neath, North East Wales</option>
 <option value="1953">Neath, Linked club</option>
-<option value="5153">Neath, Pembrokeshire</option>
 <option value="2101">Neston Somersby, North East Wales</option>
 <option value="2062">New Buckley, North East Wales</option>
 <option value="1940">New Elfed, North East Wales</option>
 <option value="1917">Newbridge, Gwent</option>
 <option value="2097">Newbridge, Mid Glamorgan</option>
-<option value="1899">Newport, Linked club</option>
 <option value="1972">Newport, South Glamorgan</option>
 <option value="2030">Newport, Pembrokeshire</option>
+<option value="1899">Newport, Linked club</option>
 <option value="1901">Newport, Mid Glamorgan</option>
+<option value="3637">Newtown, South Wales</option>
+<option value="2161">Newtown, North East Wales</option>
 <option value="3627">Newtown, West Glamorgan</option>
 <option value="3372">Newtown, South Glamorgan</option>
 <option value="3371">Newtown, Pembrokeshire</option>
-<option value="3637">Newtown, South Wales</option>
-<option value="2161">Newtown, North East Wales</option>
 <option value="2020">Neyland, Linked club</option>
 <option value="2121">Nuclear Apes, Linked club</option>
 <option value="2063">Old Buckley, Linked club</option>
 <option value="1938">Old Elfed, North East Wales</option>
 <option value="1975">Old Penarthians, South Glamorgan</option>
-<option value="4605">Old Penarthians, South Wales</option>
-<option value="2001">Old Penarthians, Gwent</option>
 <option value="2103">Old Penarthians, Mid Glamorgan</option>
+<option value="2001">Old Penarthians, Gwent</option>
+<option value="4605">Old Penarthians, South Wales</option>
 <option value="2094">Old Pens, Linked club</option>
 <option value="2118">Pembroke Bush, Linked club</option>
 <option value="2134">Penybont, Linked club</option>
@@ -479,70 +480,70 @@
 <option value="1952">Pontardawe, West Glamorgan</option>
 <option value="1916">Porthcawl, Linked club</option>
 <option value="1296">Porthcawl, West Glamorgan</option>
-<option value="2008">Porthmadog Apps, Linked club</option>
-<option value="2069">Porthmadog, North Wales</option>
 <option value="2009">Porthmadog, North East Wales</option>
+<option value="2069">Porthmadog, North Wales</option>
+<option value="2008">Porthmadog Apps, Linked club</option>
 <option value="2014">Pwllheli, Linked club</option>
 <option value="1897">Rhiwbina, Linked club</option>
-<option value="1920">Rhondda, Linked club</option>
 <option value="2049">Rhondda, South Glamorgan</option>
-<option value="1946">Risca, Linked club</option>
+<option value="1920">Rhondda, Linked club</option>
 <option value="3517">Risca, North East Wales</option>
 <option value="3519">Risca, Eryri</option>
 <option value="3521">Risca, Mid Glamorgan</option>
+<option value="1946">Risca, Linked club</option>
 <option value="3523">Risca, South Glamorgan</option>
 <option value="338">Saints, North East Wales</option>
 <option value="2042">Saints Stars, North Wales</option>
 <option value="2041">Saints Stars, North East Wales</option>
-<option value="1927">SaintsStars, North East Wales</option>
 <option value="1929">SaintsStars, North Wales</option>
+<option value="1927">SaintsStars, North East Wales</option>
 <option value="1957">South Wales Police, South Glamorgan</option>
 <option value="1956">South Wales Police, Gwent</option>
-<option value="1931">St Asaph, Linked club</option>
 <option value="1415">St Asaph, North Wales</option>
+<option value="1931">St Asaph, Linked club</option>
 <option value="2123">St Clears, Linked club</option>
-<option value="1998">St Mellons, Gwent</option>
+<option value="1918">ST Mellons, Linked club</option>
 <option value="1943">St Mellons, Mid Glamorgan</option>
-<option value="1918">St Mellons, Linked club</option>
+<option value="1998">St Mellons, Gwent</option>
 <option value="1967">Sunnyside, Mid Glamorgan</option>
-<option value="2054">Swansea, North East Wales</option>
-<option value="1980">Swansea, Gwent</option>
 <option value="1981">Swansea, South Glamorgan</option>
+<option value="1281">Swansea, Linked club</option>
+<option value="2054">Swansea, North East Wales</option>
 <option value="2040">Swansea, Pembrokeshire</option>
 <option value="5241">Swansea, Eryri</option>
-<option value="1281">Swansea, Linked club</option>
+<option value="1980">Swansea, Gwent</option>
 <option value="2137">Swansea Uni, South Glamorgan</option>
+<option value="2082">Swansea Uni, Gwent</option>
 <option value="2086">Swansea Uni, West Glamorgan</option>
 <option value="2351">Swansea Uni, South Wales</option>
-<option value="2082">Swansea Uni, Gwent</option>
-<option value="2047">SWP, Mid Glamorgan</option>
 <option value="2048">SWP, South Glamorgan</option>
+<option value="2047">SWP, Mid Glamorgan</option>
 <option value="1988">Teifi, Linked club</option>
 <option value="1990">Teifi, West Glamorgan</option>
 <option value="2029">Tycoch, Linked club</option>
-<option value="4509">Uhw, South Wales</option>
 <option value="2055">UHW, Mid Glamorgan</option>
+<option value="4509">Uhw, South Wales</option>
 <option value="2059">UHW, Pembrokeshire</option>
 <option value="1974">UHW, Linked club</option>
-<option value="2053">Uni of Glam, Eryri</option>
 <option value="2052">Uni of Glam, Mid Glamorgan</option>
+<option value="2053">Uni of Glam, Eryri</option>
 <option value="2285">Uni of S Wales, Linked club</option>
 <option value="2079">Uni of Wales, Gwent</option>
 <option value="2064">Uni of Wales, Mid Glamorgan</option>
 <option value="2105">Uni of Wales, West Glamorgan</option>
 <option value="2112">Uni Wales, West Glamorgan</option>
 <option value="2108">Uni Wales, Mid Glamorgan</option>
-<option value="1965">Vale, Pembrokeshire</option>
-<option value="1964">Vale, South Glamorgan</option>
 <option value="1511">Vale, Linked club</option>
+<option value="1965">Vale, Pembrokeshire</option>
 <option value="1924">Vale, West Glamorgan</option>
+<option value="1964">Vale, South Glamorgan</option>
 <option value="2085">WIS, Gwent</option>
 <option value="2057">WIS, West Glamorgan</option>
 <option value="1984">WIS, South Glamorgan</option>
 <option value="3629">Wrexham Brymbo, Linked club</option>
-<option value="2098">Ynys Mon, Mid Glamorgan</option>
 <option value="2088">Ynys Mon, Linked club</option>
-</select><select id="county_select" title='Players affiliated to a county - not just those who have played in that county' name="county"><option value="all">All counties</option><option value="-1">None</option><option value="102">Eryri</option><option value="69">Gwent</option><option value="78">Mid Glamorgan</option><option value="103">North East Wales</option><option value="104">North Wales</option><option value="75">Pembrokeshire</option><option value="89">Se Wales</option><option value="68">South Glamorgan</option><option value="105">South Wales</option><option value="70">West Glamorgan</option></select><select id="country_select" name="country"><option value="all">All countries</option><option value="205">AFG - Afghanistan</option><option value="147">AND - Andorra</option><option value="193">ARE - United Arab Emirates</option><option value="52">ARG - Argentina</option><option value="132">ARM - Armenia</option><option value="2">AUS - Australia</option><option value="45">AUT - Austria</option><option value="156">BAN - </option><option value="81">BAR - </option><option value="3">BEL - Belgium</option><option value="56">BER - </option><option value="161">BLR - Belarus</option><option value="91">BOL - Bolivia</option><option value="24">BOT - </option><option value="57">BRA - Brazil</option><option value="94">BRN - Brunei</option><option value="145">BUL - </option><option value="10">CAN - Canada</option><option value="41">CAY - </option><option value="195">CGO - </option><option value="485">CHE - Switzerland</option><option value="90">CHI - </option><option value="82">CHN - China</option><option value="16">COL - Colombia</option><option value="62">CRC - </option><option value="73">CRO - </option><option value="61">CYP - Cyprus</option><option value="20">CZE - Czech Republic</option><option value="43">DEN - Denmark</option><option value="175">DOM - Dominican Republic</option><option value="89">ECU - Ecuador</option><option value="6">EGY - Egypt</option><option value="1">ENG - England</option><option value="69">ESA - </option><option value="28">ESP - Spain</option><option value="74">EST - Estonia</option><option value="158">FIJ - </option><option value="21">FIN - Finland</option><option value="4">FRA - France</option><option value="31">GER - Germany</option><option value="142">GGY - Guernsey</option><option value="187">GHA - Ghana</option><option value="53">GIB - Gibraltar</option><option value="185">GLD - </option><option value="323">GRC - Greece</option><option value="149">GRE - Greece</option><option value="55">GUA - </option><option value="60">GUY - Guyana</option><option value="34">HKG - Hong Kong</option><option value="17">HUN - Hungary</option><option value="153">ICE - </option><option value="78">INA - </option><option value="37">IND - India</option><option value="84">IOM - Isle of Man</option><option value="150">IRE - </option><option value="46">IRI - </option><option value="27">IRL - Ireland</option><option value="47">IRQ - Iraq</option><option value="181">ISL - Iceland</option><option value="72">ISR - Israel</option><option value="40">ITA - Italy</option><option value="50">IVB - </option><option value="48">JAM - Jamaica</option><option value="70">JEY - Jersey</option><option value="23">JOR - Jordan</option><option value="33">JPN - Japan</option><option value="80">KEN - Kenya</option><option value="32">KOR - South Korea</option><option value="92">KSA - </option><option value="13">KUW - </option><option value="93">LAT - </option><option value="14">LIB - </option><option value="86">LIE - Liechtenstein</option><option value="163">LTU - Lithuania</option><option value="85">LUX - Luxembourg</option><option value="64">MAC - Macao</option><option value="189">MAL - </option><option value="7">MAS - Malaysia</option><option value="19">MEX - Mexico</option><option value="35">MLT - Malta</option><option value="177">MON - </option><option value="192">MOZ - Mozambique</option><option value="155">MYA - </option><option value="83">NAM - Namibia</option><option value="8">NED - Nederlands</option><option value="135">NEP - </option><option value="68">NGR - </option><option value="141">NIR - </option><option value="42">NOR - Norway</option><option value="18">NZL - New Zealand</option><option value="165">OMA - </option><option value="22">PAK - Pakistan</option><option value="154">PAN - Panama</option><option value="54">PAR - </option><option value="51">PER - Peru</option><option value="136">PHI - </option><option value="139">PNG - Papua New Guinea</option><option value="30">POL - Poland</option><option value="71">POR - </option><option value="439">PRT - Portugal</option><option value="12">QAT - Qatar</option><option value="179">REU - R�union</option><option value="133">ROM - </option><option value="11">RSA - </option><option value="76">RUS - Russia</option><option value="160">SAM - </option><option value="5">SCO - Scotland</option><option value="144">SEY - </option><option value="201">SGP - Singapore</option><option value="79">SIN - </option><option value="143">SLE - Sierra Leone</option><option value="29">SLO - </option><option value="146">SRB - Serbia</option><option value="77">SRI - </option><option value="9">SUI - Switzerland</option><option value="138">SVG - </option><option value="65">SVK - Slovakia</option><option value="39">SWE - Sweden</option><option value="137">THA - Thailand</option><option value="38">TPE - </option><option value="59">TRI - </option><option value="171">TUN - Tunisia</option><option value="49">TUR - Turkey</option><option value="15">UAE - </option><option value="58">UGA - Uganda</option><option value="26">UKR - Ukraine</option><option value="95">URU - </option><option value="36">USA - United States</option><option value="63">VEN - Venezuela</option><option value="25" selected >WAL - Wales</option><option value="197">ZAF - South Africa</option><option value="44">ZAM - </option><option value="67">ZIM - </option><option value="203">ZWE - Zimbabwe</option></select><select name="show"><option value="last6m">Last 6 months</option><option value="last12m"selected>Last 12 months</option><option value="last24m">Last 2 years</option><option value="season">This season</option><option value="year">This year</option><option value="all">All matches</option></select><select name="events"><option value="1" selected >Min events: 1<sup> *</sup></option><option value="2">Min events: 2<sup> *</sup></option><option value="3">Min events: 3<sup> *</sup></option><option value="4">Min events: 4<sup> *</sup></option><option value="5">Min events: 5<sup> *</sup></option><option value="6">Min events: 6<sup> *</sup></option><option value="7">Min events: 7<sup> *</sup></option><option value="8">Min events: 8<sup> *</sup></option><option value="9">Min events: 9<sup> *</sup></option><option value="10">Min events: 10<sup> *</sup></option></select><select name="matchtype"><option value="all">All leagues/events</option><option value="Abergavenny Boxes">Abergavenny Boxes</option><option value="Bourse Welsh Masters">Bourse Welsh Masters</option><option value="Bourse Welsh Masters Closed">Bourse Welsh Masters Closed</option><option value="Bourse Welsh Masters Open">Bourse Welsh Masters Open</option><option value="Cardiff Junior Open">Cardiff Junior Open</option><option value="Cardiff Medics">Cardiff Medics</option><option value="Coors Newport Open">Coors Newport Open</option><option value="Eryri">Eryri</option><option value="Eryri Coors Newport Open">Eryri Coors Newport Open</option><option value="Eryri League">Eryri League</option><option value="Gwent">Gwent</option><option value="Gwent League">Gwent League</option><option value="Gwent Two Cup">Gwent Two Cup</option><option value="Gwent Welsh Junior Open">Gwent Welsh Junior Open</option><option value="Henry R Davis North Wales Open">Henry R Davis North Wales Open</option><option value="Hirwaun Open">Hirwaun Open</option><option value="Ipswich Silver Junior Open">Ipswich Silver Junior Open</option><option value="Karakal Newport Junior Open">Karakal Newport Junior Open</option><option value="Karakal Welsh Junior Closed">Karakal Welsh Junior Closed</option><option value="Karakal Welsh National Closed Championships">Karakal Welsh National Closed Championships</option><option value="Llandeilo Boxes">Llandeilo Boxes</option><option value="Llantrisant Open">Llantrisant Open</option><option value="Mid Glamorgan">Mid Glamorgan</option><option value="Mid Glamorgan League">Mid Glamorgan League</option><option value="Mid Glamorgan Welsh Junior Open">Mid Glamorgan Welsh Junior Open</option><option value="Narberth Ladders">Narberth Ladders</option><option value="National Squad Matches">National Squad Matches</option><option value="Newport Junior Open">Newport Junior Open</option><option value="Newport Open">Newport Open</option><option value="North East Wales">North East Wales</option><option value="North East Wales Coors Newport Open">North East Wales Coors Newport Open</option><option value="North East Wales League">North East Wales League</option><option value="North East Wales League Open">North East Wales League Open</option><option value="North East Wales Open">North East Wales Open</option><option value="North East Wales Welsh Junior Open">North East Wales Welsh Junior Open</option><option value="North Mid Wales Junior League">North Mid Wales Junior League</option><option value="North Wales Junior Open">North Wales Junior Open</option><option value="North Wales Masters Open">North Wales Masters Open</option><option value="Pembrokeshire">Pembrokeshire</option><option value="Pembrokeshire League">Pembrokeshire League</option><option value="Pembrokeshire Pembroke">Pembrokeshire Pembroke</option><option value="Pembrokeshire Welsh Junior Open">Pembrokeshire Welsh Junior Open</option><option value="Pontcanna Lifestyle Cardiff Open">Pontcanna Lifestyle Cardiff Open</option><option value="Powys Junior Open">Powys Junior Open</option><option value="Powys [december] Junior Open">Powys [december] Junior Open</option><option value="Ross Scaccia Memorial Tournament">Ross Scaccia Memorial Tournament</option><option value="Ross Scaccia Open">Ross Scaccia Open</option><option value="Senior Welsh Nationals">Senior Welsh Nationals</option><option value="Shropshire Internal League">Shropshire Internal League</option><option value="Snowdonia Open">Snowdonia Open</option><option value="South Glamorgan">South Glamorgan</option><option value="South Glamorgan Championship">South Glamorgan Championship</option><option value="South Glamorgan Championships">South Glamorgan Championships</option><option value="South Glamorgan Coors Newport Open">South Glamorgan Coors Newport Open</option><option value="South Glamorgan League">South Glamorgan League</option><option value="South Glamorgan Welsh Junior Open">South Glamorgan Welsh Junior Open</option><option value="South Wales">South Wales</option><option value="South Wales Glamorgan">South Wales Glamorgan</option><option value="South Wales Junior Open">South Wales Junior Open</option><option value="South Wales League">South Wales League</option><option value="South Wales Leagues">South Wales Leagues</option><option value="South Wales Premier">South Wales Premier</option><option value="South Wales Premier League">South Wales Premier League</option><option value="South Wales Welsh Junior Open">South Wales Welsh Junior Open</option><option value="Squad Match">Squad Match</option><option value="Squad Selection Weekend">Squad Selection Weekend</option><option value="Swansea Junior Open">Swansea Junior Open</option><option value="Welsh Closed">Welsh Closed</option><option value="Welsh Closed Championships">Welsh Closed Championships</option><option value="Welsh Inter Counties">Welsh Inter Counties</option><option value="Welsh Junior Closed">Welsh Junior Closed</option><option value="Welsh Junior Open">Welsh Junior Open</option><option value="Welsh Masters Closed">Welsh Masters Closed</option><option value="Welsh National Closed">Welsh National Closed</option><option value="West Glamorgan Closed">West Glamorgan Closed</option><option value="West Glamorgan League">West Glamorgan League</option><option value="West Glamorgan Trophy">West Glamorgan Trophy</option><option value="West Glamorgan Welsh Junior Open">West Glamorgan Welsh Junior Open</option><option value="Wrexham Brymbo Internal League">Wrexham Brymbo Internal League</option><option value="Wycliffe Junior Open">Wycliffe Junior Open</option></select><select id="playercat_select" name="playercat"><option value="all">All ages</option><option value="juniors" >All juniors</option><option value="masters" >All masters</option><option value="93"></option><option value="2">Junior</option><option value="95">Master</option><option value="10">O35</option><option value="15">O40</option><option value="9">O45</option><option value="11">O50</option><option value="12">O55</option><option value="13">O60</option><option value="14">O65</option><option value="16">O70</option><option value="17">O75</option><option value="20">O80</option><option value="3">Pro</option><option value="1">Senior</option><option value="19">U11</option><option value="7">U13</option><option value="6">U15</option><option value="5">U17</option><option value="4">U19</option><option value="8">U21</option><option value="18">U23</option><option value="153">U9</option></select><select id="playertype_select" name="playertype"><option value="all">Male & female</option><option value="1">Male</option><option value="2">Female</option></select><div id='player_search_div' style='display: inline;'><input id='player_search_input'
+<option value="2098">Ynys Mon, Mid Glamorgan</option>
+</select><select id="county_select" title='Players affiliated to a county - not just those who have played in that county' name="county"><option value="all">All counties</option><option value="-1">None</option><option value="102">Eryri</option><option value="69">Gwent</option><option value="78">Mid Glamorgan</option><option value="103">North East Wales</option><option value="104">North Wales</option><option value="75">Pembrokeshire</option><option value="89">Se Wales</option><option value="68">South Glamorgan</option><option value="105">South Wales</option><option value="70">West Glamorgan</option></select><select id="country_select" name="country"><option value="all">All countries</option><option value="205">AFG - Afghanistan</option><option value="147">AND - Andorra</option><option value="193">ARE - United Arab Emirates</option><option value="52">ARG - Argentina</option><option value="132">ARM - Armenia</option><option value="2">AUS - Australia</option><option value="45">AUT - Austria</option><option value="156">BAN - </option><option value="81">BAR - </option><option value="3">BEL - Belgium</option><option value="56">BER - </option><option value="161">BLR - Belarus</option><option value="91">BOL - Bolivia</option><option value="24">BOT - </option><option value="57">BRA - Brazil</option><option value="94">BRN - Brunei</option><option value="145">BUL - </option><option value="10">CAN - Canada</option><option value="41">CAY - </option><option value="195">CGO - </option><option value="485">CHE - Switzerland</option><option value="90">CHI - </option><option value="82">CHN - China</option><option value="16">COL - Colombia</option><option value="62">CRC - </option><option value="73">CRO - </option><option value="61">CYP - Cyprus</option><option value="20">CZE - Czech Republic</option><option value="43">DEN - Denmark</option><option value="175">DOM - Dominican Republic</option><option value="89">ECU - Ecuador</option><option value="6">EGY - Egypt</option><option value="1">ENG - England</option><option value="69">ESA - </option><option value="28">ESP - Spain</option><option value="74">EST - Estonia</option><option value="158">FIJ - </option><option value="21">FIN - Finland</option><option value="4">FRA - France</option><option value="31">GER - Germany</option><option value="142">GGY - Guernsey</option><option value="187">GHA - Ghana</option><option value="53">GIB - Gibraltar</option><option value="185">GLD - </option><option value="323">GRC - Greece</option><option value="149">GRE - Greece</option><option value="55">GUA - </option><option value="60">GUY - Guyana</option><option value="34">HKG - Hong Kong</option><option value="17">HUN - Hungary</option><option value="153">ICE - </option><option value="78">INA - </option><option value="37">IND - India</option><option value="84">IOM - Isle of Man</option><option value="150">IRE - </option><option value="46">IRI - </option><option value="27">IRL - Ireland</option><option value="47">IRQ - Iraq</option><option value="181">ISL - Iceland</option><option value="72">ISR - Israel</option><option value="40">ITA - Italy</option><option value="50">IVB - </option><option value="48">JAM - Jamaica</option><option value="70">JEY - Jersey</option><option value="23">JOR - Jordan</option><option value="33">JPN - Japan</option><option value="80">KEN - Kenya</option><option value="32">KOR - South Korea</option><option value="92">KSA - </option><option value="13">KUW - </option><option value="93">LAT - </option><option value="14">LIB - </option><option value="86">LIE - Liechtenstein</option><option value="163">LTU - Lithuania</option><option value="85">LUX - Luxembourg</option><option value="64">MAC - Macao</option><option value="189">MAL - </option><option value="7">MAS - Malaysia</option><option value="19">MEX - Mexico</option><option value="35">MLT - Malta</option><option value="177">MON - </option><option value="192">MOZ - Mozambique</option><option value="155">MYA - </option><option value="83">NAM - Namibia</option><option value="8">NED - Nederlands</option><option value="135">NEP - </option><option value="68">NGR - </option><option value="141">NIR - </option><option value="42">NOR - Norway</option><option value="18">NZL - New Zealand</option><option value="165">OMA - </option><option value="22">PAK - Pakistan</option><option value="154">PAN - Panama</option><option value="54">PAR - </option><option value="51">PER - Peru</option><option value="136">PHI - </option><option value="139">PNG - Papua New Guinea</option><option value="30">POL - Poland</option><option value="71">POR - </option><option value="439">PRT - Portugal</option><option value="12">QAT - Qatar</option><option value="179">REU - R�union</option><option value="133">ROM - </option><option value="11">RSA - </option><option value="76">RUS - Russia</option><option value="160">SAM - </option><option value="5">SCO - Scotland</option><option value="144">SEY - </option><option value="201">SGP - Singapore</option><option value="79">SIN - </option><option value="143">SLE - Sierra Leone</option><option value="29">SLO - </option><option value="146">SRB - Serbia</option><option value="77">SRI - </option><option value="9">SUI - Switzerland</option><option value="138">SVG - </option><option value="65">SVK - Slovakia</option><option value="39">SWE - Sweden</option><option value="137">THA - Thailand</option><option value="38">TPE - </option><option value="59">TRI - </option><option value="171">TUN - Tunisia</option><option value="49">TUR - Turkey</option><option value="15">UAE - </option><option value="58">UGA - Uganda</option><option value="26">UKR - Ukraine</option><option value="95">URU - </option><option value="36">USA - United States</option><option value="63">VEN - Venezuela</option><option value="25" selected >WAL - Wales</option><option value="197">ZAF - South Africa</option><option value="44">ZAM - </option><option value="67">ZIM - </option><option value="203">ZWE - Zimbabwe</option></select><select name="show"><option value="last6m">Last 6 months</option><option value="last12m"selected>Last 12 months</option><option value="last24m">Last 2 years</option><option value="season">This season</option><option value="year">This year</option><option value="all">All matches</option></select><select name="events"><option value="1" selected >Min events: 1<sup> *</sup></option><option value="2">Min events: 2<sup> *</sup></option><option value="3">Min events: 3<sup> *</sup></option><option value="4">Min events: 4<sup> *</sup></option><option value="5">Min events: 5<sup> *</sup></option><option value="6">Min events: 6<sup> *</sup></option><option value="7">Min events: 7<sup> *</sup></option><option value="8">Min events: 8<sup> *</sup></option><option value="9">Min events: 9<sup> *</sup></option><option value="10">Min events: 10<sup> *</sup></option></select><select name="matchtype"><option value="all">All leagues/events</option><option value="Abergavenny Boxes">Abergavenny Boxes</option><option value="Abergavenny Handicap">Abergavenny Handicap</option><option value="Bourse Welsh Masters">Bourse Welsh Masters</option><option value="Bourse Welsh Masters Closed">Bourse Welsh Masters Closed</option><option value="Bourse Welsh Masters Open">Bourse Welsh Masters Open</option><option value="Cardiff Junior Open">Cardiff Junior Open</option><option value="Cardiff Medics">Cardiff Medics</option><option value="Coors Newport Open">Coors Newport Open</option><option value="Eryri">Eryri</option><option value="Eryri Coors Newport Open">Eryri Coors Newport Open</option><option value="Eryri League">Eryri League</option><option value="Gwent">Gwent</option><option value="Gwent League">Gwent League</option><option value="Gwent Two Cup">Gwent Two Cup</option><option value="Gwent Welsh Junior Open">Gwent Welsh Junior Open</option><option value="Henry R Davis North Wales Open">Henry R Davis North Wales Open</option><option value="Hirwaun Open">Hirwaun Open</option><option value="Ipswich Silver Junior Open">Ipswich Silver Junior Open</option><option value="Karakal Newport Junior Open">Karakal Newport Junior Open</option><option value="Karakal Welsh Junior Closed">Karakal Welsh Junior Closed</option><option value="Karakal Welsh National Closed Championships">Karakal Welsh National Closed Championships</option><option value="Llandeilo Boxes">Llandeilo Boxes</option><option value="Llantrisant Open">Llantrisant Open</option><option value="Mid Glamorgan">Mid Glamorgan</option><option value="Mid Glamorgan League">Mid Glamorgan League</option><option value="Mid Glamorgan Welsh Junior Open">Mid Glamorgan Welsh Junior Open</option><option value="Narberth Ladders">Narberth Ladders</option><option value="National Squad Matches">National Squad Matches</option><option value="Newport Junior Open">Newport Junior Open</option><option value="Newport Open">Newport Open</option><option value="North East Wales">North East Wales</option><option value="North East Wales Coors Newport Open">North East Wales Coors Newport Open</option><option value="North East Wales League">North East Wales League</option><option value="North East Wales League Open">North East Wales League Open</option><option value="North East Wales Open">North East Wales Open</option><option value="North East Wales Welsh Junior Open">North East Wales Welsh Junior Open</option><option value="North Mid Wales Junior League">North Mid Wales Junior League</option><option value="North Wales Junior Open">North Wales Junior Open</option><option value="North Wales Masters Open">North Wales Masters Open</option><option value="Pembrokeshire">Pembrokeshire</option><option value="Pembrokeshire League">Pembrokeshire League</option><option value="Pembrokeshire Pembroke">Pembrokeshire Pembroke</option><option value="Pembrokeshire Welsh Junior Open">Pembrokeshire Welsh Junior Open</option><option value="Pontcanna Lifestyle Cardiff Open">Pontcanna Lifestyle Cardiff Open</option><option value="Powys Junior Open">Powys Junior Open</option><option value="Powys [december] Junior Open">Powys [december] Junior Open</option><option value="Queensland Open Tournament">Queensland Open Tournament</option><option value="Ross Scaccia Memorial Tournament">Ross Scaccia Memorial Tournament</option><option value="Ross Scaccia Open">Ross Scaccia Open</option><option value="Senior Welsh Nationals">Senior Welsh Nationals</option><option value="Shropshire Internal League">Shropshire Internal League</option><option value="Snowdonia Open">Snowdonia Open</option><option value="South Glamorgan">South Glamorgan</option><option value="South Glamorgan Championship">South Glamorgan Championship</option><option value="South Glamorgan Championships">South Glamorgan Championships</option><option value="South Glamorgan Coors Newport Open">South Glamorgan Coors Newport Open</option><option value="South Glamorgan League">South Glamorgan League</option><option value="South Glamorgan Welsh Junior Open">South Glamorgan Welsh Junior Open</option><option value="South Wales">South Wales</option><option value="South Wales Glamorgan">South Wales Glamorgan</option><option value="South Wales Junior Open">South Wales Junior Open</option><option value="South Wales League">South Wales League</option><option value="South Wales Leagues">South Wales Leagues</option><option value="South Wales Premier">South Wales Premier</option><option value="South Wales Premier League">South Wales Premier League</option><option value="South Wales Welsh Junior Open">South Wales Welsh Junior Open</option><option value="Squad Match">Squad Match</option><option value="Squad Selection Weekend">Squad Selection Weekend</option><option value="Swansea Junior Open">Swansea Junior Open</option><option value="Welsh Closed">Welsh Closed</option><option value="Welsh Closed Championships">Welsh Closed Championships</option><option value="Welsh Inter Counties">Welsh Inter Counties</option><option value="Welsh Junior Closed">Welsh Junior Closed</option><option value="Welsh Junior Open">Welsh Junior Open</option><option value="Welsh Masters Closed">Welsh Masters Closed</option><option value="Welsh National Closed">Welsh National Closed</option><option value="West Glamorgan Closed">West Glamorgan Closed</option><option value="West Glamorgan League">West Glamorgan League</option><option value="West Glamorgan Trophy">West Glamorgan Trophy</option><option value="West Glamorgan Welsh Junior Open">West Glamorgan Welsh Junior Open</option><option value="Wrexham Brymbo Internal League">Wrexham Brymbo Internal League</option></select><select id="playercat_select" name="playercat"><option value="all">All ages</option><option value="juniors" >All juniors</option><option value="masters" >All masters</option><option value="93"></option><option value="2">Junior</option><option value="95">Master</option><option value="10">O35</option><option value="15">O40</option><option value="9">O45</option><option value="11">O50</option><option value="12">O55</option><option value="13">O60</option><option value="14">O65</option><option value="16">O70</option><option value="17">O75</option><option value="20">O80</option><option value="3">Pro</option><option value="1">Senior</option><option value="19">U11</option><option value="7">U13</option><option value="6">U15</option><option value="5">U17</option><option value="4">U19</option><option value="8">U21</option><option value="18">U23</option><option value="153">U9</option></select><select id="playertype_select" name="playertype"><option value="all">Male & female</option><option value="1">Male</option><option value="2">Female</option></select><div id='player_search_div' style='display: inline;'><input id='player_search_input'
                            class="search" 
                            title="Enter a player name or part name(s) to search for. Look out for suggestions below." 
                            type="text" name="search" value="Search name" size=20
@@ -553,7 +554,7 @@
 			    </tr>
 		    </table>  <!-- #page -->
 		  </div>  <!-- #page -->
-      <p style='margin-bottom:0px;'>&nbsp;<br>&nbsp;</p><div id='footer'><p>SquashLevels website, code and player level algorithms &copy; 2006-2019, <a href="mailto:info@squashlevels.com?subject=Enquiry">SquashLevels Ltd</a>. Page time: 0.16s.<br><span id='debug_footer_line'></span></p></div>		</div>  <!-- #whole_page -->
+      <p style='margin-bottom:0px;'>&nbsp;<br>&nbsp;</p><div id='footer'><p>SquashLevels website, code and player level algorithms &copy; 2006-2019, <a href="mailto:info@squashlevels.com?subject=Enquiry">SquashLevels Ltd</a>. Page time: 0.18s.<br><span id='debug_footer_line'></span></p></div>		</div>  <!-- #whole_page -->
 	</body>
 </html>
 <script>

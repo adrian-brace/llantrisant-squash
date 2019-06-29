@@ -118,12 +118,12 @@
 				<span ng-class="'positive'" ng-show='saveStatus'>{{ saveStatus }}</span>
 			</div>
 			<div>
-				<table>
-					<td align="center" ng-show='daysRemainingSquash >= 0'>
+				<table class="ladderTable">
+					<td ng-show='daysRemainingSquash >= 0' align="center">
 						<div class="squash">
 							<span class="noDisplay">Squash</span>
 						</div>
-						<h2 align="center">Squash</h2>
+						<h2>Squash</h2>
 						<div class="dataTable">
 							<span ng-show='admin'>
 								<button ng-click="extendLadder(true);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeSquash"/>
@@ -164,7 +164,7 @@
 						<div class="racketball">
 							<span class="noDisplay">Racketball</span>
 						</div>
-						<h2 align="center">Racketball</h2>
+						<h2>Racketball</h2>
 						<div class="dataTable">
 							<span ng-show='admin'>
 								<button ng-click="extendLadder(false);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeRacketball"/>

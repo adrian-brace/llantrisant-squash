@@ -6,30 +6,37 @@
 		</table>
 	</div>
 	<div class="pageContent">
-		<div class="textParagraph">
-			<ul>
-				<li><a class="loneAnchor" ng-click="scrollTo('introduction')">Introduction</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('getting_involved')">Getting Involved</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('how_are_we_run')">How are we run?</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('booking_a_court')">Booking a Court</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('leisure_centre_membership')">Leisure Centre Membership</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('ladders')">Ladders</a></li>
-				<li><a class="loneAnchor" ng-click="scrollTo('league_squash')">League Squash</a></li>
-				<ul>
-					<li><a class="loneAnchor" ng-click="scrollTo('club_membership')">Club Membership</a></li>
-					<li><a class="loneAnchor" ng-click="scrollTo('juniors')">Juniors</a></li>
-					<li><a class="loneAnchor" ng-click="scrollTo('rankings')">Rankings</a></li>
-					<li><a class="loneAnchor" ng-click="scrollTo('league_match_fees')">League Match Fees</a></li>
-				</ul>
-				<li><a class="loneAnchor" ng-click="scrollTo('events')">Events</a></li>
-				<ul>
-					<li><a class="loneAnchor" ng-click="scrollTo('annual_tour')">Annual Tour</a></li>
-					<li><a class="loneAnchor" ng-click="scrollTo('llantrisant_open')">Llantrisant Open</a></li>
-					<li><a class="loneAnchor" ng-click="scrollTo('christmas_tournament')">Christmas Tournament</a></li>
-					<li><a class="loneAnchor" ng-click="scrollTo('racketball_tournaments')">Racketball Tournaments</a></li>
-				</ul>
-			</ul>
-		</div>
+		<h3 class="titleLevel2" id="introduction">Menu</h3>
+		<table class="centredTable">
+			<tr>
+				<td>
+					<div class="textParagraph">
+						<ul>
+							<li><a class="loneAnchor" ng-click="scrollTo('introduction')">Introduction</a></li>
+							<li><a class="loneAnchor" ng-click="scrollTo('getting_involved')">Getting Involved</a></li>
+							<li><a class="loneAnchor" ng-click="scrollTo('how_are_we_run')">How are we run?</a></li>
+							<li><a class="loneAnchor" ng-click="scrollTo('booking_a_court')">Booking a Court</a></li>
+							<li><a class="loneAnchor" ng-click="scrollTo('leisure_centre_membership')">Leisure Centre Membership</a></li>
+							<li><a class="loneAnchor" ng-click="scrollTo('ladders')">Ladders</a></li>
+							<li><a class="loneAnchor" ng-click="scrollTo('league_squash')">League Squash</a></li>
+							<ul>
+								<li><a class="loneAnchor" ng-click="scrollTo('club_membership')">Club Membership</a></li>
+								<li><a class="loneAnchor" ng-click="scrollTo('juniors')">Juniors</a></li>
+								<li><a class="loneAnchor" ng-click="scrollTo('rankings')">Rankings</a></li>
+								<li><a class="loneAnchor" ng-click="scrollTo('league_match_fees')">League Match Fees</a></li>
+							</ul>
+							<li><a class="loneAnchor" ng-click="scrollTo('events')">Events</a></li>
+							<ul>
+								<li><a class="loneAnchor" ng-click="scrollTo('annual_tour')">Annual Tour</a></li>
+								<li><a class="loneAnchor" ng-click="scrollTo('llantrisant_open')">Llantrisant Open</a></li>
+								<li><a class="loneAnchor" ng-click="scrollTo('christmas_tournament')">Christmas Tournament</a></li>
+								<li><a class="loneAnchor" ng-click="scrollTo('racketball_tournaments')">Racketball Tournaments</a></li>
+							</ul>
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</table>
 		<div>
 			<h3 class="titleLevel2" id="introduction">Introduction</h3>
 			<p class="textParagraph">
@@ -69,11 +76,17 @@
 			<p class="textParagraph">
 				We have {{teams.length}} teams spanning many divisions and levels in the <a class="loneAnchor" href='http://walessquash.countyleagues.co.uk/'>South Wales and Mid Glamorgan leagues</a> that are run by <a class="loneAnchor" href='http://www.walessquashandracketball.co.uk/'>Squash Wales</a>.
 			</p>
-			<ul class="noBulletList">
-				<li class="textParagraphList" ng-repeat='team in teams'>
-					<strong>{{ team.teamName }}</strong> - <a class="loneAnchor" href="{{ team.teamUrl }}">{{ team.divisionName }}</a>
-				</li>
-			</ul>
+			<table class="centredTable">
+				<tr>
+					<td>
+						<ul class="noBulletList">
+							<li class="textParagraphList" ng-repeat='team in teams'>
+								<strong>{{ team.teamName }}</strong> - <a class="loneAnchor" href="{{ team.teamUrl }}">{{ team.divisionName }}</a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
 			<p class="textParagraph">
 				The League Season runs approximately September to April, split into Winter and Spring seasons which have promotion/relegation changes between those seasons.
 				We have a club rule that if you wish to play for a Llantrisant league team, then you are not permitted to play for another club in the league.
