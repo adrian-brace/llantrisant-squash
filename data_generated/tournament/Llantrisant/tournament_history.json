@@ -232,9 +232,9 @@
           {
             "name": "A Draw Mens",
             "winner": "Emyr Evans",
-            "winnerPrize": "£250 Cash & £100 Eye Vchr",
+            "winnerPrize": "£250 Cash & £100 Vchr",
             "runnerUp": "Elliot Morris-Devered",
-            "runnerUpPrize": "£100 Cash & £50 Eye Vchr"
+            "runnerUpPrize": "£100 Cash & £50 Vchr"
           },
           {
             "name": "A 3rd/4th Playoff",
@@ -246,63 +246,63 @@
           {
             "name": "A Plate Mens",
             "winner": "Chris Lovett",
-            "winnerPrize": "£50 Eye Vchr",
+            "winnerPrize": "£50 Vchr",
             "runnerUp": "Adrian Brace",
             "runnerUpPrize": "Handshake"
           },
           {
             "name": "B Draw Mens",
             "winner": "Richard Murphy",
-            "winnerPrize": "£50 Cash & £50 Eye Vchr",
+            "winnerPrize": "£50 Cash & £50 Vchr",
             "runnerUp": "Phil Thomas",
-            "runnerUpPrize": "£25 Eye Vchr"
+            "runnerUpPrize": "£25 Vchr"
           },
           {
             "name": "B Plate Mens",
             "winner": "Darren Thomas",
-            "winnerPrize": "£25 Eye Vchr",
+            "winnerPrize": "£25 Vchr",
             "runnerUp": "Chris Emanuel",
             "runnerUpPrize": "Handshake"
           },
           {
             "name": "C Draw Mens",
             "winner": "Chris D Jones",
-            "winnerPrize": "£25 Cash & £50 Eye Vchr",
+            "winnerPrize": "£25 Cash & £50 Vchr",
             "runnerUp": "Rob Griffin",
-            "runnerUpPrize": "£25 Eye Vchr"
+            "runnerUpPrize": "£25 Vchr"
           },
           {
             "name": "C Plate Mens",
             "winner": "Andrius Stancaitis",
-            "winnerPrize": "£25 Eye Vchr",
+            "winnerPrize": "£25 Vchr",
             "runnerUp": "Jon Rifflart",
             "runnerUpPrize": "Handshake"
           },
 		      {
             "name": "D Draw Mixed",
             "winner": "Gary Declaire",
-            "winnerPrize": "£25 Cash & £50 Eye Vchr",
+            "winnerPrize": "£25 Cash & £50 Vchr",
             "runnerUp": "Richard Declaire",
-            "runnerUpPrize": "£25 Eye Vchr"
+            "runnerUpPrize": "£25 Vchr"
           },
           {
             "name": "D Plate Mixed",
             "winner": "Lewys Audsley",
-            "winnerPrize": "£25 Eye Vchr",
+            "winnerPrize": "£25 Vchr",
             "runnerUp": "James Jones",
             "runnerUpPrize": "Handshake"
           },
 		      {
             "name": "E Draw Mixed",
             "winner": "Tony Jones",
-            "winnerPrize": "£15 & £50 Eye Vchr",
+            "winnerPrize": "£15 & £50 Vchr",
             "runnerUp": "Josh Davies",
-            "runnerUpPrize": "£25 Eye Vchr"
+            "runnerUpPrize": "£25 Vchr"
           },
           {
             "name": "E Plate Mixed",
             "winner": "Gareth Jones",
-            "winnerPrize": "£25 Eye Vchr",
+            "winnerPrize": "£25 Vchr",
             "runnerUp": "Serkan Aksin",
             "runnerUpPrize": "Handshake"
           }

@@ -19,19 +19,19 @@
 							<table class='dataTable'>
 								<thead>
 									<tr>
-										<th style="text-align: left;" colspan="{{tournament.draw.length - 1}}">{{ tournament.year }} - Entrants: <strong class="warningMessage">{{ tournament.entrants }}</strong> <b ng-show='tournament.press_release'>- <a class="sortAnchor" target="_blank" href='./public/tournament_draw/{{ tournament.press_release }}'>Press Release</a></b></th>
+										<th style="text-align: left;" colspan="4">{{ tournament.year }} - Entrants: <strong class="warningMessage">{{ tournament.entrants }}</strong> <b ng-show='tournament.press_release'>- <a class="sortAnchor" target="_blank" href='./public/tournament_draw/{{ tournament.press_release }}'>Press Release</a></b></th>
 										<th></th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td ng-repeat="draw in tournament.draw"><a class="tableCellAnchor" target="_blank" href='./public/tournament_draw/{{ draw.pdf }}'>{{ draw.name }}</a></td>										
+										<td colspan="5"><a ng-repeat="draw in tournament.draw" class="tableCellAnchor" target="_blank" href='./public/tournament_draw/{{ draw.pdf }}'>{{ draw.name }}&nbsp;&nbsp;&nbsp;&nbsp;</a></td>										
 									</tr>
 								</tbody>
-							</table>
+<!--							</table>
 						</div>
 						<div class="dataTable">
-							<table>
+							<table>-->
 								<thead>
 									<tr>
 										<th>Event</th>
