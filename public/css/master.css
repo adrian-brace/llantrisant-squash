@@ -327,10 +327,7 @@ span {
 }
 
 .contactUsTable {
-	float: left;
-	padding: 2px;
-	width: 246px;
-	white-space: nowrap;
+	padding: 8px;
 }
 
 .textParagraph {

@@ -8,55 +8,67 @@
       </table>
    </div>
    <div class="pageContent">
-        <div class='inline'>
-            <table class='contactUsTable' ng-show="club.CONTACTS.FACEBOOK.length > 0">
-                <td class='icon'>
-                    <div><a class="menuAnchor" href="{{club.CONTACTS.FACEBOOK}}"><div class="facebook"><span class='noDisplay'>Facebook</span></div></a></div>				
-                </td>
+        <table class="menuColumns">
+            <tr>
                 <td>
-                    <div><a class="menuAnchor" href="{{club.CONTACTS.FACEBOOK}}">Facebook</a></div>					
+                    <table class='contactUsTable' ng-show="club.CONTACTS.FACEBOOK.length > 0">
+                        <td class='icon'>
+                            <div><a class="loneAnchor" href="{{club.CONTACTS.FACEBOOK}}"><div class="facebook"><span class='noDisplay'>Facebook</span></div></a></div>				
+                        </td>
+                        <td>
+                            <div><a class="loneAnchor" href="{{club.CONTACTS.FACEBOOK}}">Facebook</a></div>					
+                        </td>
+                    </table>
                 </td>
-            </table>
-        </div>
-        <div class='inline'>
-            <table class='contactUsTable' ng-show="club.CONTACTS.TWITTER.length > 0">
-                <td class='icon'>
-                    <div><a class="menuAnchor" href="{{club.CONTACTS.TWITTER}}"><div class="twitter"><span class='noDisplay'>Twitter</span></div></a></div>				
-                </td>
+            </tr>
+            <tr>
                 <td>
-                    <div><a class="menuAnchor" href="{{club.CONTACTS.TWITTER}}">Twitter</a></div>					
+                    <table class='contactUsTable' ng-show="club.CONTACTS.TWITTER.length > 0">
+                        <td class='icon'>
+                            <div><a class="loneAnchor" href="{{club.CONTACTS.TWITTER}}"><div class="twitter"><span class='noDisplay'>Twitter</span></div></a></div>				
+                        </td>
+                        <td>
+                            <div><a class="loneAnchor" href="{{club.CONTACTS.TWITTER}}">Twitter</a></div>					
+                        </td>
+                    </table>
                 </td>
-            </table>
-        </div>
-        <div class='inline'>
-            <table class='contactUsTable' ng-show="club.CONTACTS.INSTAGRAM.length > 0">
-                <td class='icon'>
-                    <div><a class="menuAnchor" href="{{club.CONTACTS.INSTAGRAM}}"><div class="instagram"><span class='noDisplay'>Instagram</span></div></a></div>				
-                </td>
+            </tr>
+            <tr>
                 <td>
-                    <div><a class="menuAnchor" href="{{club.CONTACTS.INSTAGRAM}}">Instagram</a></div>					
+                    <table class='contactUsTable' ng-show="club.CONTACTS.INSTAGRAM.length > 0">
+                        <td class='icon'>
+                            <div><a class="loneAnchor" href="{{club.CONTACTS.INSTAGRAM}}"><div class="instagram"><span class='noDisplay'>Instagram</span></div></a></div>				
+                        </td>
+                        <td>
+                            <div><a class="loneAnchor" href="{{club.CONTACTS.INSTAGRAM}}">Instagram</a></div>					
+                        </td>
+                    </table>
                 </td>
-            </table>
-        </div>
-        <div class='inline'>
-            <table class='contactUsTable' ng-show="club.CONTACTS.EMAIL.length > 0">
-                <td class='icon'>
-                    <div><a class="menuAnchor" href="mailto:{{club.CONTACTS.EMAIL}}"><div class="email"><span class='noDisplay'>Email</span></div></a></div>				
-                </td>
+            </tr>
+            <tr>
                 <td>
-                    <div><a class="menuAnchor" href="mailto:{{club.CONTACTS.EMAIL}}">Email (Squash)</a></div>					
+                    <table class='contactUsTable' ng-show="club.CONTACTS.EMAIL.length > 0">
+                        <td class='icon'>
+                            <div><a class="loneAnchor" href="mailto:{{club.CONTACTS.EMAIL}}"><div class="email"><span class='noDisplay'>Email</span></div></a></div>				
+                        </td>
+                        <td>
+                            <div><a class="loneAnchor" href="mailto:{{club.CONTACTS.EMAIL}}">Email (Squash)</a></div>					
+                        </td>
+                    </table>
                 </td>
-            </table>
-        </div>
-        <div class='inline'>
-            <table class='contactUsTable' ng-show="club.CONTACTS.TELEPHONE.length > 0">
-                <td class='icon'>
-                    <div><a class="menuAnchor"><div class="phone"><span class='noDisplay'>Racketball</span></div></a></div>				
-                </td>
+            </tr>
+            <tr>
                 <td>
-                    <div><b>{{ club.CONTACTS.TELEPHONE }} (Racketball)</b></div>					
+                    <table class='contactUsTable' ng-show="club.CONTACTS.TELEPHONE.length > 0">
+                        <td class='icon'>
+                            <div><a class="loneAnchor"><div class="phone"><span class='noDisplay'>Racketball</span></div></a></div>				
+                        </td>
+                        <td>
+                            <div><b>{{ club.CONTACTS.TELEPHONE }} (Racketball)</b></div>					
+                        </td>
+                    </table>
                 </td>
-            </table>
+            </tr>
         </div>
     </div>
 </div>
