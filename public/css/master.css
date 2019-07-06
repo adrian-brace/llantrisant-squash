@@ -146,6 +146,11 @@ table {
 	margin: auto;
 }
 
+.centredCell {
+	text-align: center;
+	padding: 5px 5px 10px 5px;
+}
+
 .ladderTable {
 	margin: auto;
 	text-align: center;
@@ -300,8 +305,13 @@ span {
 }
 
 .menu {
-	width: 500px;
-    margin: 0 auto;
+	text-align:center;
+}
+
+.menuColumns {
+	margin: 0 auto;
+	clear: both;
+	display: inline-block;
 }
 
 .menuTable {
@@ -309,6 +319,10 @@ span {
 	padding: 5px 5px 5px 10px;
 	width: 246px;
 	white-space: nowrap;
+}
+
+.menuTable td {
+	padding: 3px 3px 3px 3px;
 }
 
 .contactUsTable {

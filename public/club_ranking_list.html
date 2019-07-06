@@ -9,26 +9,28 @@
    </div>
    <br/>
    <div class="pageContent">
-		<p class="textParagraph">
-			<strong class="warningMessage">PLEASE NOTE:</strong> The Club Ranking is not yet able to display the Racketball rankings.
-		</p>
-	   <table ng-show="showRankingUpdateDue">
-		   <tr>
-			   <td>
+	   <table class="centredTable">
+			<tr>
+				<td>
+					<p class="textParagraph">
+						<strong class="warningMessage">PLEASE NOTE:</strong> The Club Ranking is not yet able to display the Racketball rankings.
+					</p>		
+				</td>
+			</tr>
+			<tr ng-show="showRankingUpdateDue">
+				<td class="centredCell">
 					<div ng-include src='ranking_update_due'></div>		
-			   </td>
-		   </tr>
-		</table>
-		<table ng-show="showProvisionalRankings">
-		   <tr>
-			   <td>
-				<div ng-include src='challenge_rules'></div>		
-			   </td>
-		   </tr>
-		   <tr>
-			   <td>
-				<strong><a class='loneAnchor' href='./#/club_ranking_list_provisional'>Go To Provisional Summer Rankings</a></strong>
-			   </td>			   
+				</td>
+			</tr>
+			<tr ng-show="showProvisionalRankings">
+				<td class="centredCell">
+					<div ng-include src='challenge_rules'></div>		
+				</td>
+			</tr>
+			<tr ng-show="showProvisionalRankings">
+				<td class="centredCell">
+					<strong><a class='loneAnchor' href='./#/club_ranking_list_provisional'>Go To Provisional Summer Rankings</a></strong>
+				</td>			   
 			</tr>
 		</table>
 		<div class='dataTable'>

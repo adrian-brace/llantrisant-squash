@@ -156,7 +156,7 @@ function showRankingUpdateDue() {
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
-	return (month == 11 && day > SPRING_START_DAY) || (month === 1 && day < 4);
+	return (month == 11 && day > SPRING_START_DAY) || (month === 1 && day < 4) || (month === 6)
 }
 
 function getMasterConfiguration(http, xmlToJson, getClubNameOnly){
