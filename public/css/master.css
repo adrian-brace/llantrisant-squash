@@ -149,6 +149,7 @@ table {
 .centredCell {
 	text-align: center;
 	padding: 5px 5px 10px 5px;
+	white-space: normal;
 }
 
 .ladderTable {
