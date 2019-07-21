@@ -53,6 +53,7 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 							teamUrl: teamUrl,
 							divisionName: team.DIVISIONNAME,
 							teamName: team.NAME,
+							homeNight: team.HOMENIGHT,
 							teamNumber: teamIndex,
 							players: players
 						});

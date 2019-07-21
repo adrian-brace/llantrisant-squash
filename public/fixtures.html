@@ -8,43 +8,21 @@
 	<br/>
 	<div class="dataTable" ng-show="fixtures[0] != null">
 		<table class="dataTable">
-			<thead>			
+			<thead>
 				<tr>
-					<th colspan="{{getOptionsFor('team', true).length }}">
-						Team Filter
-					</th>
-					<th colspan="2">
-						Location Filter
-					</th>
-				</tr>
-				<tr>
+					<th>FILTER:</th>
 					<th ng-repeat="opt in getOptionsFor('team', true)">
-						{{opt.slice(-1)}}
+						{{opt.slice(-1)}} <input type="checkbox" ng-model="filter['team'][opt]" />
 					</th>
 					<th ng-repeat="opt in getOptionsFor('isHome', true)">
-						<span ng-show="opt">Home</span>
-						<span ng-show="!opt">Away</span>				
+						<span ng-show="opt">Home <input type="checkbox" ng-model="filter['isHome'][opt]" /></span>
+						<span ng-show="!opt">Away <input type="checkbox" ng-model="filter['isHome'][opt]" /></span>				
+					</th>
+					<th>
+						<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear</button>		
 					</th>
 				</tr>
 			</thead>
-			<tbody>
-				<tr>
-					<td ng-repeat="opt in getOptionsFor('team', true)" style='text-align:center;'>
-						<input type="checkbox" ng-model="filter['team'][opt]" />
-					</td>
-					<td style='text-align:center;' ng-repeat="opt in getOptionsFor('isHome', true)">
-						<input type="checkbox" ng-model="filter['isHome'][opt]" />
-					</td>
-				</tr>
-				<tr>
-					<td colspan="{{getOptionsFor('team', true).length}}">
-						<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
-					</td>
-					<td colspan="2">
-						<div class='clashClass'><small>Red = Fixture clash</small></div>
-					</td>
-				</tr>
-			</tbody>
 		</table>
 	</div>
 	<p class="warningMessage" ng-show="filtered=(fixtures | filter:filterByTeam).length == 0">

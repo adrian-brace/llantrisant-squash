@@ -15,10 +15,8 @@
 					</p>				
 				</td>
 			</tr>
-		</table>
-		<table ng-show="showRankingUpdateDue">
-			<tr>
-				<td>
+			<tr ng-show="showRankingUpdateDue">
+				<td class="centredCell">
 					<div ng-include src='ranking_update_due'></div>		
 				</td>
 			</tr>
@@ -62,82 +60,65 @@
 				</table>
 			</div>
 			<table class="centredTable">
-				<td>
-					<div class="dataTable">
-						<table class="dataTable">
-							<thead>			
-								<tr>
-									<th colspan="{{getOptionsFor('team').length}}">
-										Team Filter
-									</th>
-									<th>
-										Player Filter
-									</th>
-								</tr>
-								<tr>
-									<th ng-repeat="opt in getOptionsFor('team')">
-										{{opt.slice(-1)}}
-									</th>
-									<th>
-										Hide Near Tied
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td ng-repeat="opt in getOptionsFor('team')" style='text-align:center;'>
-										<input type="checkbox" ng-model="filter['team'][opt]" />
-									</td>
-									<td style='text-align:center;'>
-										<input type="checkbox" ng-model="filter['isEligible'][true]" />
-									</td>
-								</tr>
-								<tr>
-									<td colspan="{{getOptionsFor('team').length}}">
-										<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
-									</td>
-									<td>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</td>
-				<td style="vertical-align: top;">
-					<div class="dataTable">
-						<table class="dataTable">
-							<thead>
-								<tr>
-									<th>
-									</th>
-									<th colspan="{{uniqueTeams(players).length - 3}}">
-										<span>Pull-ups Summary</span>
-									</th>
-									<th>
-									</th>
-								</tr>
-								<tr>
-									<th ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
-										<span>&nbsp;{{ team }}&nbsp;</span>								
-									</th>
-									<th>
-										Total
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td style='text-align:center;' ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
-										<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">&nbsp;{{ getTotalPullUps(team) }}&nbsp;</span>
-									</td>
-									<td style='text-align:center;'>
-										<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">{{ getTotalPullUps() }}</span>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</td>
+				<tr>
+					<td style="vertical-align: top;">
+						<div class="dataTable">
+							<table class="dataTable">
+								<thead>
+									<tr>
+										<th>
+										</th>
+										<th colspan="{{uniqueTeams(players).length - 3}}">
+											<span>Pull-ups Summary</span>
+										</th>
+										<th>
+										</th>
+									</tr>
+									<tr>
+										<th ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
+											<span>&nbsp;{{ team }}&nbsp;</span>								
+										</th>
+										<th>
+											Total
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style='text-align:center;' ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
+											<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">&nbsp;{{ getTotalPullUps(team) }}&nbsp;</span>
+										</td>
+										<td style='text-align:center;'>
+											<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">{{ getTotalPullUps() }}</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="dataTable">
+							<table class="dataTable">
+								<thead>
+									<tr>
+										<th>FILTER:</th>
+										<th ng-repeat="opt in getOptionsFor('team', true)">
+											{{opt.slice(-1)}} <input type="checkbox" ng-model="filter['team'][opt]" />
+										</th>
+										<th style='text-align:center;'>
+											Hide Near Tied: <input type="checkbox" ng-model="filter['isEligible'][true]" />
+										</th>
+										<th>
+											<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear</button>		
+										</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</td>
+				</tr>			
 			</form>
 		</table>
 		<div class="dataTable">

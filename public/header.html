@@ -3,7 +3,8 @@
 	<a href='./#/' title="Home"><img src="../../public/images/home.png" /></a>
 	<a href="./fixtures" title="Fixtures"><img src="../../public/images/fixtures.png" /></a>
 	<a href="./results" title="Results"><img src="../../public/images/results.png" /></a>
-	<a href="./#/club_ranking_list" title="Club Ranking list"><img src="../../public/images/team.png" /></a>
+	<a ng-hide="showProvisionalRankings" href="./#/club_ranking_list" title="Club Ranking list"><img src="../../public/images/team.png" /></a>
+	<a ng-show="showProvisionalRankings" href="./#/club_ranking_list_provisional" title="Provisional Club Ranking list"><img src="../../public/images/team.png" /></a>
 	<a href="./team_standings" title="Team Standings"><img src="../../public/images/team_standings.png" /></a>
 	<a href="./appearances" title="Appearances"><img src="../../public/images/appearances.png" /></a>
 </div>

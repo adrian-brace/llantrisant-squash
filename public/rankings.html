@@ -66,75 +66,40 @@
 			<td>
 				<div class="dataTable">
 					<table class="dataTable">
-						<thead>			
-							<tr>
-								<th>
-								</th>
-								<th colspan="{{getOptionsFor('team').length - 2}}">
-									Team Filter
-								</th>
-								<th>
-								</th>
-							</tr>
-							<tr>
-								<th ng-repeat="opt in getOptionsFor('team')">
-									{{opt.slice(-1)}}
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td ng-repeat="opt in getOptionsFor('team')" style='text-align:center;'>
-									<input type="checkbox" ng-model="filter['team'][opt]" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-								</td>
-								<td colspan="{{getOptionsFor('team').length - 1}}">
-									<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</td>
-			<td style="vertical-align: top;">
-				<div class="dataTable">
-					<table class="dataTable">
 						<thead>
 							<tr>
-								<th>
-									Show?
+								<th>FILTER:</th>
+								<th ng-repeat="opt in getOptionsFor('team', true)">
+									{{opt.slice(-1)}} <input type="checkbox" ng-model="filter['team'][opt]" />
+								</th>
+								<th ng-repeat="opt in getOptionsFor('isHome', true)">
+									<span ng-show="opt">Home <input type="checkbox" ng-model="filter['isHome'][opt]" /></span>
+									<span ng-show="!opt">Away <input type="checkbox" ng-model="filter['isHome'][opt]" /></span>				
 								</th>
 								<th>
+									<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear</button>		
 								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
+								<th>
+									Show:
+								</th>
+								<th>
 									Matches
-								</td>
-								<td>
+								</th>
+								<th>
 									<input type="checkbox" ng-model="showMatches" />
-								</td>
-							</tr>
-							<tr>
-								<td>
+								</th>
+								<th>
 									Games
-								</td>
-								<td>
+								</th>
+								<th>
 									<input type="checkbox" ng-model="showGames" />
-								</td>
-							</tr>
-							<tr>
-								<td>
+								</th>
+								<th>
 									Points
-								</td>
-								<td>
+								</th>
+								<th>
 									<input type="checkbox" ng-model="showPoints" />
-								</td>
+								</th>
 							</tr>
 						</tbody>
 					</table>

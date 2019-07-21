@@ -136,6 +136,7 @@ homeApp.controller('HomeController', ['$scope', '$http','$location','$anchorScro
 	$scope.tournament_over = TOURNAMENT_OVER_HTML_FILE;
 	$scope.tournament_results_available = TOURNAMENT_RESULTS_AVAILABLE_HTML_FILE;
 	$scope.tournament_footer = TOURNAMENT_FOOTER_HTML_FILE;
+	$scope.showProvisionalRankings = showProvisionalRankings();	
 
 	var getClub = club.getClub();
 	var getConfiguration = configuration.getConfiguration();

@@ -8,43 +8,21 @@
 	<br/>
 	<div class="dataTable" ng-show="results[0] != null">
 		<table class="dataTable">
-			<thead>			
+			<thead>
 				<tr>
-					<th colspan="{{getOptionsFor('team', false).length }}">
-						Team Filter
+					<th>FILTER:</th>
+					<th ng-repeat="opt in getOptionsFor('team', true)">
+						{{opt.slice(-1)}} <input type="checkbox" ng-model="filter['team'][opt]" />
 					</th>
-					<th colspan="2">
-						Location Filter
+					<th ng-repeat="opt in getOptionsFor('isHome', true)">
+						<span ng-show="opt">Home <input type="checkbox" ng-model="filter['isHome'][opt]" /></span>
+						<span ng-show="!opt">Away <input type="checkbox" ng-model="filter['isHome'][opt]" /></span>				
 					</th>
-				</tr>
-				<tr>
-					<th ng-repeat="opt in getOptionsFor('team', false)">
-						{{opt.slice(-1)}}
-					</th>
-					<th ng-repeat="opt in getOptionsFor('isHome', false)">
-						<span ng-show="opt">Home</span>
-						<span ng-show="!opt">Away</span>				
+					<th>
+						<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear</button>		
 					</th>
 				</tr>
 			</thead>
-			<tbody>
-				<tr>
-					<td ng-repeat="opt in getOptionsFor('team', false)" style='text-align:center;'>
-						<input type="checkbox" ng-model="filter['team'][opt]" />
-					</td>
-					<td style='text-align:center;' ng-repeat="opt in getOptionsFor('isHome', false)">
-						<input type="checkbox" ng-model="filter['isHome'][opt]" />
-					</td>
-				</tr>
-				<tr>
-					<td colspan="{{getOptionsFor('team', false).length}}">
-						<button id="clear-filter" ng-click="clearFilter()" onclick="clearAll();" type="button">Clear Filter</button>
-					</td>
-					<td colspan="2">
-						<a class='tableCellAnchor' href="./archived_team_results">Old Horizon Results</a>
-					</td>
-				</tr>
-			</tbody>
 		</table>
 	</div>
 	<p class="warningMessage" ng-show="filtered=(results | filter:filterByTeam).length == 0">
