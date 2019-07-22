@@ -21,14 +21,14 @@
             {
                 "position": 1,
                 "team": "Rhiwbina Rams",
-                "played": 7,
-                "won": 6,
+                "played": 8,
+                "won": 7,
                 "lost": 1,
                 "drawn": 0,
-                "for": 82,
-                "against": 21,
+                "for": 95,
+                "against": 23,
                 "penaltyPoints": 0,
-                "totalPoints": 82
+                "totalPoints": 95
             },
             {
                 "position": 2,
@@ -57,14 +57,14 @@
             {
                 "position": 4,
                 "team": "Old Penarthians 1",
-                "played": 6,
+                "played": 7,
                 "won": 1,
-                "lost": 5,
+                "lost": 6,
                 "drawn": 0,
-                "for": 25,
-                "against": 63,
+                "for": 27,
+                "against": 76,
                 "penaltyPoints": 0,
-                "totalPoints": 25
+                "totalPoints": 27
             },
             {
                 "position": 5,
@@ -89,26 +89,26 @@
             {
                 "position": 1,
                 "team": "Old Penarthians 2",
-                "played": 5,
-                "won": 4,
+                "played": 6,
+                "won": 5,
                 "lost": 1,
                 "drawn": 0,
-                "for": 53,
-                "against": 18,
+                "for": 65,
+                "against": 21,
                 "penaltyPoints": 0,
-                "totalPoints": 53
+                "totalPoints": 65
             },
             {
                 "position": 2,
                 "team": "Llanishen Rich Boys",
-                "played": 4,
+                "played": 5,
                 "won": 4,
-                "lost": 0,
+                "lost": 1,
                 "drawn": 0,
-                "for": 44,
-                "against": 12,
+                "for": 47,
+                "against": 24,
                 "penaltyPoints": 0,
-                "totalPoints": 44
+                "totalPoints": 47
             },
             {
                 "position": 3,
@@ -145,26 +145,26 @@
             {
                 "position": 1,
                 "team": "Old Penarthians 2",
-                "played": 5,
-                "won": 4,
+                "played": 6,
+                "won": 5,
                 "lost": 1,
                 "drawn": 0,
-                "for": 53,
-                "against": 18,
+                "for": 65,
+                "against": 21,
                 "penaltyPoints": 0,
-                "totalPoints": 53
+                "totalPoints": 65
             },
             {
                 "position": 2,
                 "team": "Llanishen Rich Boys",
-                "played": 4,
+                "played": 5,
                 "won": 4,
-                "lost": 0,
+                "lost": 1,
                 "drawn": 0,
-                "for": 44,
-                "against": 12,
+                "for": 47,
+                "against": 24,
                 "penaltyPoints": 0,
-                "totalPoints": 44
+                "totalPoints": 47
             },
             {
                 "position": 3,
@@ -201,14 +201,14 @@
             {
                 "position": 1,
                 "team": "Rhiwbina Rams",
-                "played": 7,
-                "won": 6,
+                "played": 8,
+                "won": 7,
                 "lost": 1,
                 "drawn": 0,
-                "for": 82,
-                "against": 21,
+                "for": 95,
+                "against": 23,
                 "penaltyPoints": 0,
-                "totalPoints": 82
+                "totalPoints": 95
             },
             {
                 "position": 2,
@@ -237,14 +237,14 @@
             {
                 "position": 4,
                 "team": "Old Penarthians 1",
-                "played": 6,
+                "played": 7,
                 "won": 1,
-                "lost": 5,
+                "lost": 6,
                 "drawn": 0,
-                "for": 25,
-                "against": 63,
+                "for": 27,
+                "against": 76,
                 "penaltyPoints": 0,
-                "totalPoints": 25
+                "totalPoints": 27
             },
             {
                 "position": 5,
@@ -269,26 +269,26 @@
             {
                 "position": 1,
                 "team": "Old Penarthians 2",
-                "played": 5,
-                "won": 4,
+                "played": 6,
+                "won": 5,
                 "lost": 1,
                 "drawn": 0,
-                "for": 53,
-                "against": 18,
+                "for": 65,
+                "against": 21,
                 "penaltyPoints": 0,
-                "totalPoints": 53
+                "totalPoints": 65
             },
             {
                 "position": 2,
                 "team": "Llanishen Rich Boys",
-                "played": 4,
+                "played": 5,
                 "won": 4,
-                "lost": 0,
+                "lost": 1,
                 "drawn": 0,
-                "for": 44,
-                "against": 12,
+                "for": 47,
+                "against": 24,
                 "penaltyPoints": 0,
-                "totalPoints": 44
+                "totalPoints": 47
             },
             {
                 "position": 3,

@@ -57,10 +57,16 @@
 			</tr>			
 			<tr>
 				<td class='icon'>
-					<div><a href="#/club_ranking_list"><div class="team"><span class='noDisplay'>Team</span></div></a></div>
+					<div>
+						<a ng-hide="showProvisionalRankings" href="./#/club_ranking_list" title="Club Ranking list"><div class="team"><span class='noDisplay'>Team</span></div></a>
+						<a ng-show="showProvisionalRankings" href="./#/club_ranking_list_provisional" title="Provisional Club Ranking list"><div class="team"><span class='noDisplay'>Team</span></div></a>
+					</div>
 				</td>
 				<td>
-					<div><a class="menuAnchor" href="#/club_ranking_list">Teams</a></div>
+					<div>
+						<a ng-hide="showProvisionalRankings" class="menuAnchor" href="#/club_ranking_list">Teams</a>
+						<a ng-show="showProvisionalRankings" class="menuAnchor" href="#/club_ranking_list_provisional">Teams</a>
+					</div>
 				</td>		
 			</tr>
 			<tr>
