@@ -3,15 +3,209 @@
         "team": "Llantrisant A",
         "divisionName": "One East",
         "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
-        "standings": [],
-        "position": 0
+        "standings": [
+            {
+                "position": 1,
+                "team": "Newport B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 2,
+                "team": "The Vale",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 3,
+                "team": "Llantrisant A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 4,
+                "team": "Cardiff B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 5,
+                "team": "Cardiff Metropolitan A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 6,
+                "team": "Llanishen A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 7,
+                "team": "Rhiwbina D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 8,
+                "team": "Hirwaun A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            }
+        ],
+        "position": 3
     },
     {
         "team": "Llantrisant B",
         "divisionName": "Three East",
         "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
-        "standings": [],
-        "position": 0
+        "standings": [
+            {
+                "position": 1,
+                "team": "Cardiff University A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 2,
+                "team": "Llantrisant B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 3,
+                "team": "Caldicot A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 4,
+                "team": "Llanishen B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 5,
+                "team": "Rhiwbina E",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 6,
+                "team": "David Lloyd Cardiff D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 7,
+                "team": "Bridgend C",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 8,
+                "team": "Penybont",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            }
+        ],
+        "position": 2
     },
     {
         "team": "Llantrisant C",
@@ -20,66 +214,102 @@
         "standings": [
             {
                 "position": 1,
-                "team": "Rhiwbina Rams",
-                "played": 8,
-                "won": 7,
-                "lost": 1,
+                "team": "Caerphilly",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 95,
-                "against": 23,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 95
+                "totalPoints": 0
             },
             {
                 "position": 2,
-                "team": "Llantrisant 1",
-                "played": 7,
-                "won": 5,
-                "lost": 2,
+                "team": "Llantrisant C",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 64,
-                "against": 36,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 64
+                "totalPoints": 0
             },
             {
                 "position": 3,
-                "team": "Cowbridge",
-                "played": 7,
-                "won": 4,
-                "lost": 3,
+                "team": "Porthcawl B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 58,
-                "against": 53,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 58
+                "totalPoints": 0
             },
             {
                 "position": 4,
-                "team": "Old Penarthians 1",
-                "played": 7,
-                "won": 1,
-                "lost": 6,
+                "team": "Rhondda",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 27,
-                "against": 76,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 27
+                "totalPoints": 0
             },
             {
                 "position": 5,
-                "team": "Cardiff",
-                "played": 7,
-                "won": 1,
-                "lost": 6,
+                "team": "Maesteg A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 22,
-                "against": 78,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 22
+                "totalPoints": 0
+            },
+            {
+                "position": 6,
+                "team": "Hirwaun B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 7,
+                "team": "Bridgend D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 8,
+                "team": "Hirwaun C",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
             }
         ],
-        "position": 0
+        "position": 2
     },
     {
         "team": "Llantrisant D",
@@ -88,54 +318,90 @@
         "standings": [
             {
                 "position": 1,
-                "team": "Old Penarthians 2",
-                "played": 6,
-                "won": 5,
-                "lost": 1,
+                "team": "Merthyr B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 65,
-                "against": 21,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 65
+                "totalPoints": 0
             },
             {
                 "position": 2,
-                "team": "Llanishen Rich Boys",
-                "played": 5,
-                "won": 4,
-                "lost": 1,
+                "team": "Llantrisant D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 47,
-                "against": 24,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 47
+                "totalPoints": 0
             },
             {
                 "position": 3,
-                "team": "Rhiwbina Rebels",
-                "played": 6,
-                "won": 2,
-                "lost": 4,
+                "team": "Llantrisant E",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 30,
-                "against": 59,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 30
+                "totalPoints": 0
             },
             {
                 "position": 4,
-                "team": "Llantrisant 2",
-                "played": 5,
+                "team": "Porthcawl C",
+                "played": 0,
                 "won": 0,
-                "lost": 5,
+                "lost": 0,
                 "drawn": 0,
-                "for": 18,
-                "against": 56,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 18
+                "totalPoints": 0
+            },
+            {
+                "position": 5,
+                "team": "Maesteg B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 6,
+                "team": "Merthyr C",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 7,
+                "team": "Hirwaun D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
             }
         ],
-        "position": 0
+        "position": 2
     },
     {
         "team": "Llantrisant E",
@@ -144,54 +410,90 @@
         "standings": [
             {
                 "position": 1,
-                "team": "Old Penarthians 2",
-                "played": 6,
-                "won": 5,
-                "lost": 1,
+                "team": "Merthyr B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 65,
-                "against": 21,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 65
+                "totalPoints": 0
             },
             {
                 "position": 2,
-                "team": "Llanishen Rich Boys",
-                "played": 5,
-                "won": 4,
-                "lost": 1,
+                "team": "Llantrisant D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 47,
-                "against": 24,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 47
+                "totalPoints": 0
             },
             {
                 "position": 3,
-                "team": "Rhiwbina Rebels",
-                "played": 6,
-                "won": 2,
-                "lost": 4,
+                "team": "Llantrisant E",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
                 "drawn": 0,
-                "for": 30,
-                "against": 59,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 30
+                "totalPoints": 0
             },
             {
                 "position": 4,
-                "team": "Llantrisant 2",
-                "played": 5,
+                "team": "Porthcawl C",
+                "played": 0,
                 "won": 0,
-                "lost": 5,
+                "lost": 0,
                 "drawn": 0,
-                "for": 18,
-                "against": 56,
+                "for": 0,
+                "against": 0,
                 "penaltyPoints": 0,
-                "totalPoints": 18
+                "totalPoints": 0
+            },
+            {
+                "position": 5,
+                "team": "Maesteg B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 6,
+                "team": "Merthyr C",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 7,
+                "team": "Hirwaun D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
             }
         ],
-        "position": 0
+        "position": 3
     },
     {
         "team": "Llantrisant 1",
@@ -213,50 +515,50 @@
             {
                 "position": 2,
                 "team": "Llantrisant 1",
-                "played": 7,
-                "won": 5,
+                "played": 9,
+                "won": 7,
                 "lost": 2,
                 "drawn": 0,
-                "for": 64,
-                "against": 36,
+                "for": 90,
+                "against": 39,
                 "penaltyPoints": 0,
-                "totalPoints": 64
+                "totalPoints": 90
             },
             {
                 "position": 3,
                 "team": "Cowbridge",
-                "played": 7,
+                "played": 8,
                 "won": 4,
-                "lost": 3,
+                "lost": 4,
                 "drawn": 0,
-                "for": 58,
-                "against": 53,
+                "for": 60,
+                "against": 66,
                 "penaltyPoints": 0,
-                "totalPoints": 58
+                "totalPoints": 60
             },
             {
                 "position": 4,
                 "team": "Old Penarthians 1",
-                "played": 7,
-                "won": 1,
+                "played": 8,
+                "won": 2,
                 "lost": 6,
                 "drawn": 0,
-                "for": 27,
-                "against": 76,
+                "for": 37,
+                "against": 79,
                 "penaltyPoints": 0,
-                "totalPoints": 27
+                "totalPoints": 37
             },
             {
                 "position": 5,
                 "team": "Cardiff",
-                "played": 7,
+                "played": 9,
                 "won": 1,
-                "lost": 6,
+                "lost": 8,
                 "drawn": 0,
-                "for": 22,
-                "against": 78,
+                "for": 26,
+                "against": 101,
                 "penaltyPoints": 0,
-                "totalPoints": 22
+                "totalPoints": 26
             }
         ],
         "position": 2

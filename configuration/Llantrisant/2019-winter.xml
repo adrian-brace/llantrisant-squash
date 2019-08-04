@@ -3,10 +3,10 @@
 		<Teams>
 			<Team>
 				<Name>A</Name>
-				<TeamID></TeamID>
-				<DivisionID></DivisionID>
+				<TeamID>10</TeamID>
+				<DivisionID>3</DivisionID>
 				<DivisionName>One East</DivisionName>
-				<CompetitionID></CompetitionID>
+				<CompetitionID>408</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Dan Christopher"/>				
@@ -18,10 +18,10 @@
 			</Team>
 			<Team>
 				<Name>B</Name>
-				<TeamID></TeamID>
-				<DivisionID></DivisionID>
+				<TeamID>19</TeamID>
+				<DivisionID>6</DivisionID>
 				<DivisionName>Three East</DivisionName>
-				<CompetitionID></CompetitionID>
+				<CompetitionID>408</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<Player Name="Dan Povey"/>
@@ -33,10 +33,10 @@
 			</Team>
 			<Team>
 				<Name>C</Name>
-				<TeamID></TeamID>
-				<DivisionID></DivisionID>
+				<TeamID>55</TeamID>
+				<DivisionID>1</DivisionID>
 				<DivisionName>Mid Glamorgan One</DivisionName>
-				<CompetitionID></CompetitionID>
+				<CompetitionID>410</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Martyn Christopher" IsCaptain="true"/>
@@ -48,10 +48,10 @@
 			</Team>
 			<Team>
 				<Name>D</Name>
-				<TeamID></TeamID>
-				<DivisionID></DivisionID>
+				<TeamID>79</TeamID>
+				<DivisionID>2</DivisionID>
 				<DivisionName>Mid Glamorgan Two</DivisionName>
-				<CompetitionID></CompetitionID>
+				<CompetitionID>410</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<Player Name="Chris Jones" RefereeNumber="101510"/>
@@ -65,10 +65,10 @@
 			</Team>
 			<Team>
 				<Name>E</Name>
-				<TeamID></TeamID>
-				<DivisionID></DivisionID>
+				<TeamID>89</TeamID>
+				<DivisionID>2</DivisionID>
 				<DivisionName>Mid Glamorgan Two</DivisionName>
-				<CompetitionID></CompetitionID>
+				<CompetitionID>410</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>
 					<Player Name="Wynne Owen"/>
@@ -157,5 +157,5 @@
 				</Players>
 			</Team>
 		</Teams>
-	</Rackeball>
+	</Racketball>
 </xml>

@@ -528,7 +528,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 	var divisionStandingsURL = readValueFromXMLConfiguration(masterConfigurationXML, 'DivisionStandingsURL');
 	var leagueHomePage = readValueFromXMLConfiguration(masterConfigurationXML, 'LeagueHomePage');
 	var expiryPeriod = getExpiryPeriod(SCRAPE_FUNCTION_FIXTURES_AND_RESULTS);
-
+	
 	switch(sourcePage) {
 
 		case 'fixtures':
@@ -600,8 +600,9 @@ function processAllFixturesAndResults(req, sourcePage, res){
 		var competitionID = teams[teamIndex].getElementsByTagName("CompetitionID")[0].textContent;
 		var teamFixturesURL =  leagueHomePage + vsprintf(teamURL, [divisionID, teamID, competitionID]);
 		var teamStandingsURL = leagueHomePage + vsprintf(divisionStandingsURL, [divisionID]);
-
+		
 		filename = currentYear + '-' + currentSeason + '-' + teamName + FILE_EXTENSION_FOR_WEB_PAGES;
+
 		if (sourcePage === 'team_standings') {
 			
 			filepath = teamStandingsDirectory + filename;
@@ -1083,7 +1084,7 @@ function getSeason(season){
 
 		if (month < 7 ||
 			(month === 11 && day > SPRING_START_DAY) ||
-			(month === 7 && day < 11)) {
+			(month === 7 && day < 2)) {
 			return SEASON_SPRING;
 		} else{
 			return SEASON_WINTER;
@@ -1296,7 +1297,9 @@ function getHTML(url, directory, filename, callback, competitionId){
 	  followRedirect: true,
 	  maxRedirects: 10,
 	  headers: {
-			'Cookie': 'Owner=LeagueMaster; Competition=' + competitionId
+			'Host': 'walessquash.leaguemaster.co.uk',
+			'Upgrade-Insecure-Requests': '1',
+			'Cookie': 'Owner=LeagueMaster; Competition=' + competitionId + ';'
 		}
 	}, function(error, response, html) {
 		if (!error && response.statusCode == 200) {
@@ -1314,11 +1317,13 @@ function getHTMLSync(url, directory, filename, callback, competitionId){
 	// console.log('Fetching HTML for: ' + url);
 	
 	var html = syncRequest("GET", url, {
-	  'timeout': 10000,
+	  'timeout': 30000,
 	  'followRedirects': true,
 	  'maxRedirects': 10,
 	  'headers': {
-			'Cookie': 'Owner=LeagueMaster; Competition=' + competitionId
+			'Host': 'walessquash.leaguemaster.co.uk',
+			'Upgrade-Insecure-Requests': '1',
+			'Cookie': 'Owner=LeagueMaster; Competition=' + competitionId + ';'
 		}
 	});
 
