@@ -1,6 +1,7 @@
 /* Constants */
 var OLDEST_YEAR = 2016;
 var SPRING_START_DAY = 22;
+var SPRING_END_DAY = 2;
 var SPRING_START_MONTH = '-01-15';
 var WINTER_START_MONTH = '-08-15';
 var SEASON_SPRING = 'spring';
@@ -107,7 +108,7 @@ function getSeason(){
 
 	if (month < 7 ||
 		(month === 11 && day > SPRING_START_DAY) ||
-		(month === 7 && day < 11)) {
+		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
 		return SEASON_WINTER.capitalize();
@@ -122,7 +123,7 @@ function getSeasonForRankings(){
 
 	if (month < 7 ||
 		(month === 11 && day > SPRING_START_DAY) ||
-		(month === 7 && day < 11)) {
+		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
 		return SEASON_WINTER.capitalize();
