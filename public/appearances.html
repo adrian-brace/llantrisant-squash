@@ -7,9 +7,9 @@
 	</div>
 	<br/>
 	<div class="pageContent">
-			<table class="centredTable">
-				<tr>
-					<td class="centredCell">
+		<table class="centredTable">
+			<tr>
+				<td class="centredCell">
 					<p class="textParagraph">
 						<strong class="warningMessage">PLEASE NOTE:</strong> The Appearances calculator is not yet able to distinguish between Squash matches and Racketball matches.
 					</p>				
@@ -59,44 +59,41 @@
 					</tbody>
 				</table>
 			</div>
+			<div class="dataTable">
+				<table class="dataTable">
+					<thead>
+						<tr>
+							<th>
+							</th>
+							<th colspan="{{uniqueTeams(players).length - 3}}">
+								<span>Pull-ups Summary</span>
+							</th>
+							<th>
+							</th>
+						</tr>
+						<tr>
+							<th ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
+								<span>&nbsp;{{ team }}&nbsp;</span>								
+							</th>
+							<th>
+								Total
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style='text-align:center;' ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
+								<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">&nbsp;{{ getTotalPullUps(team) }}&nbsp;</span>
+							</td>
+							<td style='text-align:center;'>
+								<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">{{ getTotalPullUps() }}</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
 			<table class="centredTable">
-				<tr>
-					<td style="vertical-align: top;">
-						<div class="dataTable">
-							<table class="dataTable">
-								<thead>
-									<tr>
-										<th>
-										</th>
-										<th colspan="{{uniqueTeams(players).length - 3}}">
-											<span>Pull-ups Summary</span>
-										</th>
-										<th>
-										</th>
-									</tr>
-									<tr>
-										<th ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
-											<span>&nbsp;{{ team }}&nbsp;</span>								
-										</th>
-										<th>
-											Total
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td style='text-align:center;' ng-repeat="team in uniqueTeams(players) | filter: teamsThatCanPullUp">
-											<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">&nbsp;{{ getTotalPullUps(team) }}&nbsp;</span>
-										</td>
-										<td style='text-align:center;'>
-											<span ng-class="{'negativeLight': getTotalPullUps(team) > 0}">{{ getTotalPullUps() }}</span>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</td>
-				</tr>
 				<tr>
 					<td>
 						<div class="dataTable">
