@@ -2,7 +2,8 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 
 	var getClub = club.getClub();
 	var getConfiguration = configuration.getConfiguration();
-	var teams = [];
+	var squashTeams = [];
+	var racketballTeams = [];
 
 	$scope.ranking_update_due = RANKING_UPDATE_DUE_HTML_FILE;
 	$scope.challenge_rules = CHALLENGE_RULES_HTML_FILE;
@@ -16,6 +17,7 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 		getConfiguration.then(function(configuration){
 			$scope.configuration = configuration;
 			$scope.season = getSeasonAndYearForProvisionalRankings();
+			$scope.year = getYear();
 			$scope.showProvisionalRankings = showProvisionalRankings();			
 
 			// Get the club's current season's team configuration
@@ -49,7 +51,7 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 						});
 					}
 
-					teams.push({
+					squashTeams.push({
 							teamUrl: teamUrl,
 							divisionName: team.DIVISIONNAME,
 							teamName: team.NAME,
@@ -59,7 +61,44 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 						});
 				}
 
-				$scope.teams = teams;
+				$scope.squashTeams = squashTeams;
+				playerClubRank = 0;
+
+				// Build the players
+				for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM.length; teamIndex++){
+
+					var team = $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM[teamIndex];
+					var teamUrl = buildTeamUrl($scope.configuration.CONSTANTS.LEAGUEHOMEPAGE, $scope.configuration.CONSTANTS.TEAMURL, team.DIVISIONID, team.TEAMID, team.COMPETITIONID);
+					var players = [];
+					var playerTeamRank = 0;
+					
+					for(var playerIndex = 0; playerIndex < team.PLAYERS.PLAYER.length; playerIndex++){
+
+						var player = team.PLAYERS.PLAYER[playerIndex];
+
+						playerTeamRank++;
+						playerClubRank++;
+
+						players.push({
+							name: player.name,
+							teamRanking: playerTeamRank,
+							clubRanking: playerClubRank,
+							isCaptain: player.iscaptain,
+							refereeNumber: player.refereenumber
+						});
+					}
+
+					racketballTeams.push({
+							teamUrl: teamUrl,
+							divisionName: team.DIVISIONNAME,
+							teamName: team.NAME,
+							homeNight: team.HOMENIGHT,
+							teamNumber: teamIndex,
+							players: players
+						});
+				}
+
+				$scope.racketballTeams = racketballTeams;
 			});
 		});
 	});
