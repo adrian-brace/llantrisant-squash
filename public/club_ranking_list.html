@@ -27,72 +27,76 @@
 			</tr>
 		</table>
 		<div class='dataTable'>
-			<table>	
-				<thead>
-					<tr>
-						<th></th>
-						<th colspan="2" style="text-align: center">
-							<span class="negativeLight">Squash {{season}}</span>
-						</th>
-					</tr>
-					<tr>
-						<th>Team</th>
-						<th>No.</th>
-						<th>Player (Ref Number)</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr ng-repeat-start='team in squashTeams' ng-hide='true'></tr>
-					<tr ng-repeat='player in team.players track by $index'>
-						<td class="rightBordered" ng-show='$index == 0' rowspan='{{team.players.length}}' align='center'>
-							<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.teamName }}</a>
-							<br />
-							<br />
-							<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.divisionName }}</a>
-							<br />
-							<br />
-							{{team.homeNight}} (H)
-						</td>
-						<td align='center'><b>{{ player.clubRanking }}</b> - {{ player.teamRanking }}</td>
-						<td>{{ player.name }} <span ng-show='player.isCaptain'><b>(C)</b></span> <span ng-show='player.refereeNumber'>({{player.refereeNumber}})</span>
-						</td>
-					</tr>
-					<tr ng-repeat-end ng-hide='true'></tr>
-				</tbody>			
-			</table>
-			<table>	
-				<thead>
-					<tr>
-						<th></th>
-						<th colspan="2" style="text-align: center">
-							<span class="negativeLight">Racketball Summer {{year}}</span>
-						</th>
-					</tr>
-					<tr>
-						<th>Team</th>
-						<th>No.</th>
-						<th>Player (Ref Number)</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr ng-repeat-start='team in racketballTeams' ng-hide='true'></tr>
-					<tr ng-repeat='player in team.players track by $index'>
-						<td class="rightBordered" ng-show='$index == 0' rowspan='{{team.players.length}}' align='center'>
-							<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.teamName }}</a>
-							<br />
-							<br />
-							<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.divisionName }}</a>
-							<br />
-							<br />
-							{{team.homeNight}} (H)
-						</td>
-						<td align='center'><b>{{ player.clubRanking }}</b> - {{ player.teamRanking }}</td>
-						<td>{{ player.name }} <span ng-show='player.isCaptain'><b>(C)</b></span> <span ng-show='player.refereeNumber'>({{player.refereeNumber}})</span>
-						</td>
-					</tr>
-					<tr ng-repeat-end ng-hide='true'></tr>
-				</tbody>			
-			</table>
+			<div class="inlineBlock">
+				<table class="inlineBlock">	
+					<thead>
+						<tr>
+							<th><span class="negativeLight">Squash</span></th>
+							<th colspan="2" style="text-align: center">
+								<span class="negativeLight">{{season}}</span>
+							</th>
+						</tr>
+						<tr>
+							<th>Team</th>
+							<th>No.</th>
+							<th>Player (Ref Number)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat-start='team in squashTeams' ng-hide='true'></tr>
+						<tr ng-repeat='player in team.players track by $index'>
+							<td class="rightBordered" ng-show='$index == 0' rowspan='{{team.players.length}}' align='center'>
+								<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.teamName }}</a>
+								<br />
+								<br />
+								<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.divisionName }}</a>
+								<br />
+								<br />
+								{{team.homeNight}} (H)
+							</td>
+							<td align='center'><b>{{ player.clubRanking }}</b> - {{ player.teamRanking }}</td>
+							<td>{{ player.name }} <span ng-show='player.isCaptain'><b>(C)</b></span> <span ng-show='player.refereeNumber'>({{player.refereeNumber}})</span>
+							</td>
+						</tr>
+						<tr ng-repeat-end ng-hide='true'></tr>
+					</tbody>			
+				</table>
+				<table class="inlineBlock">	
+					<thead>
+						<tr>
+							<th>
+								<span class="negativeLight">Racketball</span>
+							</th>
+							<th colspan="2" style="text-align: center">
+								<span class="negativeLight">Summer {{year}}</span>
+							</th>
+						</tr>
+						<tr>
+							<th>Team</th>
+							<th>No.</th>
+							<th>Player (Ref Number)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat-start='team in racketballTeams' ng-hide='true'></tr>
+						<tr ng-repeat='player in team.players track by $index'>
+							<td class="rightBordered" ng-show='$index == 0' rowspan='{{team.players.length}}' align='center'>
+								<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.teamName }}</a>
+								<br />
+								<br />
+								<a class='tableCellAnchor' href='{{ team.teamUrl }}'>{{ team.divisionName }}</a>
+								<br />
+								<br />
+								{{team.homeNight}} (H)
+							</td>
+							<td align='center'><b>{{ player.clubRanking }}</b> - {{ player.teamRanking }}</td>
+							<td>{{ player.name }} <span ng-show='player.isCaptain'><b>(C)</b></span> <span ng-show='player.refereeNumber'>({{player.refereeNumber}})</span>
+							</td>
+						</tr>
+						<tr ng-repeat-end ng-hide='true'></tr>
+					</tbody>			
+				</table>
+			</div>
 		</div>
 	</div>
 </div>

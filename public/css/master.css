@@ -232,13 +232,13 @@ table {
 
 /*END OF DATA TABLES */
 
-.socialMediaDiv {
+.inlineBlock {
 	margin: 10px;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.socialMediaDiv table {
+.inlineBlock table {
 	margin: auto;
 }
 
