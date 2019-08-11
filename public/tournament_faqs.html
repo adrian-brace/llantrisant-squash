@@ -11,77 +11,79 @@
 	<div class="pageContent">
 		<div class="newLine" ng-show="{{tournamentStage === 'RESULTS'}}" ng-include src='tournament_results_available'></div>
 		<div class="newLine" ng-show="{{tournamentStage === 'OVER'}}" ng-include src='tournament_over'></div>
-		<div class="newLine">
+		<!--<div class="newLine">-->
 			<table class="centredTable">
 				<tbody>
 					<tr>
 						<td>
-							<p class="textParagraph">
-								<strong>When is the tournament?</strong>&nbsp;&nbsp;&nbsp;<br/>- {{tournamentDate}} {{tournamentYear}}
-								<br/><br/>
-								<strong>Where is the tournament?</strong>&nbsp;&nbsp;&nbsp;<br/>- Llantrisant Leisure Centre, 2nd floor on our 3 glass-backed courts.
-								<br/><br/>
-								<strong>How do I enter?</strong>&nbsp;&nbsp;&nbsp;<br/>
-								<span ng-show="{{tournamentStage === 'UPCOMING'}}">- Text Jason on 07815 947792 between <strong>{{tournamentEntryOpeningDate}}</strong> and <strong>{{tournamentEntryClosingDate}} {{tournamentYear}}</strong>.</span>
-								<span ng-show="{{tournamentStage === 'OVER' || tournamentStage === 'RESULTS'}}">- Entry for {{tournamentYear}} is not yet open. Watch this space.</span>
-								<br/><br/>
-								<strong>How much is it to enter?</strong>&nbsp;&nbsp;&nbsp;<br/>- £15 for {{tournamentYear}}
-								<br/><br/>
-								<strong>What times are matches?</strong>&nbsp;&nbsp;&nbsp;<br/>Approx.
-								<ul>
-									<li class="textParagraphList">Fri 17:00-21:00</li>
-									<li class="textParagraphList">Sat 09:00-17:30 - (NOTE: <strong>The 'A' Grade will begin on Saturday!</strong>)</li>
-									<li class="textParagraphList">Sun 09:00-17:00</li>
-								</ul>
-							</p>
-							<p class="textParagraph">
-								<strong>What do I get for my entry fee?</strong>&nbsp;&nbsp;&nbsp;<br/>- You are guaranteed 2 matches and a dri-fit tournament T-Shirt. 1st round losers are entered into a plate. We will also be holding a great raffle with excellent prizes and vouchers to be won.
-								<br/><br/>
-								<strong>Where can I Park?</strong>&nbsp;&nbsp;&nbsp;<br/>- The leisure centre has ample parking in a two level car park, and a large 3rd overflow area accessible from beyond the upper level.
-								<br/><br/>
-								<strong>Where can I stay overnight?</strong>&nbsp;&nbsp;&nbsp;<br/>- We would be happy to try and advise you where you might be able to find reasonably priced B&B accommodation locally. Please get in touch. Local chains or hotels include The Premier Inn, Three Saints, The Vale Resort and Laneley Hall.
-								<br/><br/>
-								<strong>Where do I register?</strong>&nbsp;&nbsp;&nbsp;
-								<br/>- FRI: The Bar area on the 2nd floor on the same level as the courts. (Lift floor 3).
-								<br/>- SAT AM: Court 4.
-								<br/>- SAT PM: The Bar area again.
-								<br/><br/>
-								<strong>When do I pay?</strong>&nbsp;&nbsp;&nbsp;<br/>- During registration on arrival before your first match.
-								<br/><br/>
-								<strong>Can I pay by card?</strong>&nbsp;&nbsp;&nbsp;<br/>- No sorry, CASH ONLY. There is a cash point in the Co-Op a short walk from the leisure centre.
-								<br/><br/>
-								<strong>Will ranking points be awarded?</strong>&nbsp;&nbsp;&nbsp;<br/>- Yes. PSA registered player's results will be submitted directly to the PSA. All tournament grades will feature on: <a class='loneAnchor' target="_blank" href="http://walessquash.countyleagues.co.uk/">County Leagues Wales</a> under the "Tournaments" link (bottom right) and results will be processed by <a class='loneAnchor' target="_blank" href="https://www.squashlevels.com">Squash Levels</a> to adjust indvidual levels accordingly.
-								<br/><br/>
-								<strong>Will there be refreshments?</strong>&nbsp;&nbsp;&nbsp;<br/>- Water will be provided and squash/tea/coffee and some snacks will be available to purchase from our TOURNAMENT BAR too.
-								<br/><br/>
-								<strong>Will there be alcohol?</strong>&nbsp;&nbsp;&nbsp;<br/>- Yes. We have a license to sell alcohol during the tournament. Drinks will be approx. £1.50 a bottle/can of Carling, Strongbow and Bud.
-								<br/><br/>
-								<strong>Who marks the games?</strong>&nbsp;&nbsp;&nbsp;<br/>- A blanket Tournament rule will apply that all winners must stay on to ref the next match on their court. Please make careful note of the scores.
-								<br/><br/>
-								<strong>Where can I leave my valuables?</strong>&nbsp;&nbsp;&nbsp;<br/>- We cannot take responsibility for valuables that go missing so please use the Leisure Centre lockers in the changing rooms.
-								<br/><br/>
-								<strong>Can I charge my phone or device?</strong>&nbsp;&nbsp;&nbsp;<br/>- We will have some plugs available in the bar area to charge devices but we cannot take any responsibility for valuables that go missing.
-								<br/><br/>
-								<strong>When is the A Grade final?</strong>&nbsp;&nbsp;&nbsp;<br/>- Sunday at 4pm if running to schedule.
-								<br/><br/>
-								<strong>When will the raffle be drawn?</strong>&nbsp;&nbsp;&nbsp;<br/>- Prior to the A Grade Final.
-								<br/><br/>
-								<strong>What other services are on offer?</strong>&nbsp;&nbsp;&nbsp;<br/>
-								<ul>
-									<li class="textParagraphList">We will be running a licensed bar with refreshements, snacks and alcohol.</li>
-									<li class="textParagraphList">A sports massage service will be available by <a class="loneAnchor" href="https://twitter.com/BSmith_Therapy">Beca Smith</a> of <a class="loneAnchor" href="https://m.facebook.com/Beca-Smith-Sports-Massage-1311312975602915/">Defiance Sports Therapy</a> from Saturday morning onwards.</li>
-									<li class="textParagraphList"><a class="loneAnchor" href="https://twitter.com/aw_squash_coach">Andy Whitall</a> will be offering a racket restringing service.</li>
-									<li class="textParagraphList">We will be holding a raffle with lots of prizes up for grabs.</li>
-									<li class="textParagraphList">We will be running a squash skills game to win a voucher.</li>
-									<li class="textParagraphList">We will be selling grips.</li>
-									<li class="textParagraphList">The Tournament Bar area is a comfortable, spacious and air-conditioned room for releaxing, cooling down and catching up with others on the squash circuit.</li>
-								</ul>	
-							</p>													
+							<div class="textParagraph">
+								<p class="textParagraph">
+									<strong>When is the tournament?</strong>&nbsp;&nbsp;&nbsp;<br/>- {{tournamentDate}} {{tournamentYear}}
+									<br/><br/>
+									<strong>Where is the tournament?</strong>&nbsp;&nbsp;&nbsp;<br/>- Llantrisant Leisure Centre, 2nd floor on our 3 glass-backed courts.
+									<br/><br/>
+									<strong>How do I enter?</strong>&nbsp;&nbsp;&nbsp;<br/>
+									<span ng-show="{{tournamentStage === 'UPCOMING'}}">- Text Jason on 07815 947792 between <strong>{{tournamentEntryOpeningDate}}</strong> and <strong>{{tournamentEntryClosingDate}} {{tournamentYear}}</strong>.</span>
+									<span ng-show="{{tournamentStage === 'OVER' || tournamentStage === 'RESULTS'}}">- Entry for {{tournamentYear}} is not yet open. Watch this space.</span>
+									<br/><br/>
+									<strong>How much is it to enter?</strong>&nbsp;&nbsp;&nbsp;<br/>- £15 for {{tournamentYear}}
+									<br/><br/>
+									<strong>What times are matches?</strong>&nbsp;&nbsp;&nbsp;<br/>Approx.
+									<ul>
+										<li class="textParagraphList">Fri 17:00-21:00</li>
+										<li class="textParagraphList">Sat 09:00-17:30 - (NOTE: <strong>The 'A' Grade will begin on Saturday!</strong>)</li>
+										<li class="textParagraphList">Sun 09:00-17:00</li>
+									</ul>
+								</p>
+								<p class="textParagraph">
+									<strong>What do I get for my entry fee?</strong>&nbsp;&nbsp;&nbsp;<br/>- You are guaranteed 2 matches and a dri-fit tournament T-Shirt. 1st round losers are entered into a plate. We will also be holding a great raffle with excellent prizes and vouchers to be won.
+									<br/><br/>
+									<strong>Where can I Park?</strong>&nbsp;&nbsp;&nbsp;<br/>- The leisure centre has ample parking in a two level car park, and a large 3rd overflow area accessible from beyond the upper level.
+									<br/><br/>
+									<strong>Where can I stay overnight?</strong>&nbsp;&nbsp;&nbsp;<br/>- We would be happy to try and advise you where you might be able to find reasonably priced B&B accommodation locally. Please get in touch. Local chains or hotels include The Premier Inn, Three Saints, The Vale Resort and Laneley Hall.
+									<br/><br/>
+									<strong>Where do I register?</strong>&nbsp;&nbsp;&nbsp;
+									<br/>- FRI: The Bar area on the 2nd floor on the same level as the courts. (Lift floor 3).
+									<br/>- SAT AM: Court 4.
+									<br/>- SAT PM: The Bar area again.
+									<br/><br/>
+									<strong>When do I pay?</strong>&nbsp;&nbsp;&nbsp;<br/>- During registration on arrival before your first match.
+									<br/><br/>
+									<strong>Can I pay by card?</strong>&nbsp;&nbsp;&nbsp;<br/>- No sorry, CASH ONLY. There is a cash point in the Co-Op a short walk from the leisure centre.
+									<br/><br/>
+									<strong>Will ranking points be awarded?</strong>&nbsp;&nbsp;&nbsp;<br/>- Yes. PSA registered player's results will be submitted directly to the PSA. All tournament grades will feature on: <a class='loneAnchor' target="_blank" href="http://walessquash.countyleagues.co.uk/">County Leagues Wales</a> under the "Tournaments" link (bottom right) and results will be processed by <a class='loneAnchor' target="_blank" href="https://www.squashlevels.com">Squash Levels</a> to adjust indvidual levels accordingly.
+									<br/><br/>
+									<strong>Will there be refreshments?</strong>&nbsp;&nbsp;&nbsp;<br/>- Water will be provided and squash/tea/coffee and some snacks will be available to purchase from our TOURNAMENT BAR too.
+									<br/><br/>
+									<strong>Will there be alcohol?</strong>&nbsp;&nbsp;&nbsp;<br/>- Yes. We have a license to sell alcohol during the tournament. Drinks will be approx. £1.50 a bottle/can of Carling, Strongbow and Bud.
+									<br/><br/>
+									<strong>Who marks the games?</strong>&nbsp;&nbsp;&nbsp;<br/>- A blanket Tournament rule will apply that all winners must stay on to ref the next match on their court. Please make careful note of the scores.
+									<br/><br/>
+									<strong>Where can I leave my valuables?</strong>&nbsp;&nbsp;&nbsp;<br/>- We cannot take responsibility for valuables that go missing so please use the Leisure Centre lockers in the changing rooms.
+									<br/><br/>
+									<strong>Can I charge my phone or device?</strong>&nbsp;&nbsp;&nbsp;<br/>- We will have some plugs available in the bar area to charge devices but we cannot take any responsibility for valuables that go missing.
+									<br/><br/>
+									<strong>When is the A Grade final?</strong>&nbsp;&nbsp;&nbsp;<br/>- Sunday at 4pm if running to schedule.
+									<br/><br/>
+									<strong>When will the raffle be drawn?</strong>&nbsp;&nbsp;&nbsp;<br/>- Prior to the A Grade Final.
+									<br/><br/>
+									<strong>What other services are on offer?</strong>&nbsp;&nbsp;&nbsp;<br/>
+									<ul>
+										<li class="textParagraphList">We will be running a licensed bar with refreshements, snacks and alcohol.</li>
+										<li class="textParagraphList">A sports massage service will be available by <a class="loneAnchor" href="https://twitter.com/BSmith_Therapy">Beca Smith</a> of <a class="loneAnchor" href="https://m.facebook.com/Beca-Smith-Sports-Massage-1311312975602915/">Defiance Sports Therapy</a> from Saturday morning onwards.</li>
+										<li class="textParagraphList"><a class="loneAnchor" href="https://twitter.com/aw_squash_coach">Andy Whitall</a> will be offering a racket restringing service.</li>
+										<li class="textParagraphList">We will be holding a raffle with lots of prizes up for grabs.</li>
+										<li class="textParagraphList">We will be running a squash skills game to win a voucher.</li>
+										<li class="textParagraphList">We will be selling grips.</li>
+										<li class="textParagraphList">The Tournament Bar area is a comfortable, spacious and air-conditioned room for releaxing, cooling down and catching up with others on the squash circuit.</li>
+									</ul>	
+								</p>
+							</div>
 						</td>
 					</tr>
 				</tbody>
 			</table>
-		</div>
+		<!--</div>-->
 		<div ng-include src='tournament_footer'></div>
 	</div>
 </div>

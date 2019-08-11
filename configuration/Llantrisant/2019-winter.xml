@@ -12,7 +12,7 @@
 					<Player Name="Dan Christopher"/>				
 					<Player Name="Matthew Williams"/>
 					<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
-					<Player Name="Jason Jones"/>
+					<Player Name="Jason Jones" WelshRankingID="68793"/>
 					<Player Name="Ryan Phillips"/>
 				</Players>
 			</Team>
