@@ -94,11 +94,11 @@ app.post('/save_ladder', function(req, res) {
 });
 
 app.get('/', function(req, res) {
-	res.sendfile('./public/index.html');
+	res.sendFile(__dirname + '/public/index.html');
 })
 
 app.get('/index', function(req, res) {	
-	res.sendfile('./public/index.html');
+	res.sendFile(__dirname + '/public/index.html');
 })
 
 app.get('/archived_team_results', function(req, res) {	
@@ -437,7 +437,7 @@ app.get('/welsh_rankings', function(req, res) {
 
 /* serves all the static files */
 app.get(/^(.+)$/, function(req, res){ 
-	res.sendfile(__dirname + req.params[0]); 
+	res.sendFile(__dirname + req.params[0]); 
 });
 
 app.listen(port, ipAddress);
