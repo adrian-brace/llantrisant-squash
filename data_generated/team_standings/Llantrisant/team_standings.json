@@ -503,62 +503,62 @@
             {
                 "position": 1,
                 "team": "Rhiwbina Rams",
-                "played": 8,
-                "won": 7,
+                "played": 10,
+                "won": 9,
                 "lost": 1,
                 "drawn": 0,
-                "for": 95,
-                "against": 23,
+                "for": 119,
+                "against": 27,
                 "penaltyPoints": 0,
-                "totalPoints": 95
+                "totalPoints": 119
             },
             {
                 "position": 2,
                 "team": "Llantrisant 1",
-                "played": 9,
-                "won": 7,
+                "played": 10,
+                "won": 8,
                 "lost": 2,
                 "drawn": 0,
-                "for": 90,
-                "against": 39,
+                "for": 102,
+                "against": 44,
                 "penaltyPoints": 0,
-                "totalPoints": 90
+                "totalPoints": 102
             },
             {
                 "position": 3,
                 "team": "Cowbridge",
-                "played": 8,
-                "won": 4,
+                "played": 9,
+                "won": 5,
                 "lost": 4,
                 "drawn": 0,
-                "for": 60,
-                "against": 66,
+                "for": 73,
+                "against": 68,
                 "penaltyPoints": 0,
-                "totalPoints": 60
+                "totalPoints": 73
             },
             {
                 "position": 4,
                 "team": "Old Penarthians 1",
-                "played": 8,
+                "played": 10,
                 "won": 2,
-                "lost": 6,
+                "lost": 8,
                 "drawn": 0,
-                "for": 37,
-                "against": 79,
+                "for": 42,
+                "against": 104,
                 "penaltyPoints": 0,
-                "totalPoints": 37
+                "totalPoints": 42
             },
             {
                 "position": 5,
                 "team": "Cardiff",
-                "played": 9,
+                "played": 11,
                 "won": 1,
-                "lost": 8,
+                "lost": 10,
                 "drawn": 0,
-                "for": 26,
-                "against": 101,
+                "for": 32,
+                "against": 125,
                 "penaltyPoints": 0,
-                "totalPoints": 26
+                "totalPoints": 32
             }
         ],
         "position": 2
@@ -571,48 +571,48 @@
             {
                 "position": 1,
                 "team": "Old Penarthians 2",
-                "played": 6,
-                "won": 5,
+                "played": 7,
+                "won": 6,
                 "lost": 1,
                 "drawn": 0,
-                "for": 65,
-                "against": 21,
+                "for": 78,
+                "against": 23,
                 "penaltyPoints": 0,
-                "totalPoints": 65
+                "totalPoints": 78
             },
             {
                 "position": 2,
                 "team": "Llanishen Rich Boys",
-                "played": 5,
-                "won": 4,
+                "played": 7,
+                "won": 6,
                 "lost": 1,
                 "drawn": 0,
-                "for": 47,
+                "for": 73,
                 "against": 24,
                 "penaltyPoints": 0,
-                "totalPoints": 47
+                "totalPoints": 73
             },
             {
                 "position": 3,
                 "team": "Rhiwbina Rebels",
-                "played": 6,
+                "played": 8,
                 "won": 2,
-                "lost": 4,
+                "lost": 6,
                 "drawn": 0,
-                "for": 30,
-                "against": 59,
+                "for": 32,
+                "against": 85,
                 "penaltyPoints": 0,
-                "totalPoints": 30
+                "totalPoints": 32
             },
             {
                 "position": 4,
                 "team": "Llantrisant 2",
-                "played": 5,
+                "played": 6,
                 "won": 0,
-                "lost": 5,
+                "lost": 6,
                 "drawn": 0,
                 "for": 18,
-                "against": 56,
+                "against": 69,
                 "penaltyPoints": 0,
                 "totalPoints": 18
             }
