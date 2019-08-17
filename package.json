@@ -11,7 +11,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-coffee": "latest",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
