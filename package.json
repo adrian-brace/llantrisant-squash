@@ -15,7 +15,6 @@
     "gulp-coffee": "latest",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
-    "gulp-nodemon": "latest",
     "gulp-sass": "latest",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "latest",
@@ -28,7 +27,7 @@
     "xmldom": "latest"
   },
   "devDependencies": {
-    "gulp-nodemon": "^2.2.1"
+    "gulp-nodemon": "^2.4.2"
   },
   "scripts": {
     "start": "node server.js"
