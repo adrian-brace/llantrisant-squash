@@ -47,7 +47,9 @@ homeApp.controller('RankingsForTeamController', ['$scope', '$http', 'club', 'con
 							teamRanking: playerTeamRank,
 							clubRanking: playerClubRank,
 							isCaptain: player.iscaptain,
-							refereeNumber: player.refereenumber
+							refereeNumber: player.refereenumber,
+							actualTeam: player.actualteam,
+							isSpaceSaver: player.isspacesaver
 						});
 					}
 
@@ -84,7 +86,9 @@ homeApp.controller('RankingsForTeamController', ['$scope', '$http', 'club', 'con
 							teamRanking: playerTeamRank,
 							clubRanking: playerClubRank,
 							isCaptain: player.iscaptain,
-							refereeNumber: player.refereenumber
+							refereeNumber: player.refereenumber,
+							actualTeam: player.actualteam,
+							isSpaceSaver: player.isspacesaver
 						});
 					}
 

@@ -81,6 +81,12 @@ body {
 	padding-left: 10px;
 }
 
+.spaceSaver {
+	font-style: italic;
+	font-weight: lighter;
+	opacity: 0.5;
+}
+
 h4{
 	color: #b3ccff;
 	text-align: left;
