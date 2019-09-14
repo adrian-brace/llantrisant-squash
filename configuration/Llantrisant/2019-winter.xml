@@ -12,8 +12,8 @@
 					<Player Name="Dan Christopher"/>				
 					<Player Name="Matthew Williams"/>
 					<Player Name="Jason Jones" WelshRankingID="68793"/>
-					<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>					
-					<Player Name="Dan Webb"/>
+					<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
+					<Player Name="Dan Povey"/>					
 				</Players>
 			</Team>
 			<Team>
@@ -24,11 +24,11 @@
 				<CompetitionID>408</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>				
-					<Player Name="Dan Povey"/>
-					<Player Name="Ryan Phillips"/>
+					<Player Name="Ryan Phillips" ActualTeam="A"/>
 					<Player Name="Tom Penberthy"/>
 					<Player Name="Ben Howcroft"/>
-					<Player Name="Iwan James" IsSpaceSaver="true"/>			
+					<Player Name="Iwan James" IsSpaceSaver="true"/>
+					<Player Name="Jeff Greenslade" RefereeNumber="100467"/>									
 				</Players>
 			</Team>
 			<Team>
@@ -39,11 +39,11 @@
 				<CompetitionID>410</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
-					<Player Name="Jeff Greenslade" ActualTeam="B" RefereeNumber="100467"/>	
 					<Player Name="Rob Mitchell" ActualTeam="B"/>	
+					<Player Name="Joshua Sion Davies" ActualTeam="B" RefereeNumber="101022"/>
 					<Player Name="Martyn Christopher" ActualTeam="B" IsCaptain="true"/>				
-					<Player Name="Chris Emanuel" ActualTeam="C" IsSpaceSaver="true"/>			
-					<Player Name="Dave Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101573" WelshRankingID="68967"/>
+					<Player Name="Dan Webb"/>
+					<Player Name="Chris Emanuel" IsSpaceSaver="true"/>
 				</Players>
 			</Team>
 			<Team>
@@ -54,10 +54,10 @@
 				<CompetitionID>410</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
+					<Player Name="Dave Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101573" WelshRankingID="68967"/>
 					<Player Name="Chris Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101510"/>
 					<Player Name="Matthew Thomas" ActualTeam="C" IsSpaceSaver="true" WelshRankingID="86287"/>
 					<!--<Player Name="Lee Francis" RefereeNumber="101514"/>-->
-					<Player Name="Joshua Sion Davies" ActualTeam="C" RefereeNumber="101022"/>
 					<Player Name="Lloyd Newland" ActualTeam="C"/>
 					<Player Name="Rich Timms" ActualTeam="C" IsCaptain="true" RefereeNumber="101511"/>
 				</Players>
@@ -85,7 +85,7 @@
 					<Player Name="Steven Melhuish"/>
 					<Player Name="Mark Turner"/>
 					<Player Name="Adrian Fisk"/>
-					<Player Name="Jack Penberthy"/>
+					<Player Name="Jack Penberthy" IsSpaceSaver="true"/>
 					<Player Name="Amanda Barter" IsCaptain="true"/>
 					<Player Name="Karen Workman"/>
 					<Player Name="Angharad Llewyllyn"/>
