@@ -77,7 +77,7 @@
 					<Player Name="Chay Davies-Smith" ActualTeam="D" IsCaptain="true" RefereeNumber="100385"/>
 					<Player Name="Shivam Singhal" ActualTeam="D"/>					
 					<Player Name="Steve Evans" ActualTeam="D"/>
-					<Player Name="Josh Llewelyn" ActualTeam="D"/>
+					<Player Name="Josh Llewellyn" ActualTeam="D"/>
 					<Player Name="Sam Norris" ActualTeam="D"/>
 					<!--<Player Name="Ashley Maybury"/>--> 
 					<!--<Player Name="Callum Webb"/>-->
@@ -88,9 +88,9 @@
 					<Player Name="Jack Penberthy" IsSpaceSaver="true"/>
 					<Player Name="Amanda Barter" IsCaptain="true"/>
 					<Player Name="Karen Workman"/>
-					<Player Name="Angharad Llewyllyn"/>
+					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
 					<Player Name="Erica Howcroft"/>
-					<Player Name="Cian Grattidge"/>
+					<Player Name="Cian Grattidge" WelshRankingID="138443"/>
 					<Player Name="Dylan Vite"/>
 					<Player Name="James Pickett"/>
 					<Player Name="Jayesh Parmar"/>
@@ -101,7 +101,7 @@
 					<!--<Player Name="Keith McCarthy"/>-->
 					<Player Name="Wynford Davies"/>
 					<Player Name="Jon Bennett"/>
-					<Player Name="Cameron Docherty"/>
+					<Player Name="Cameron Docherty" WelshRankingID="145285"/>
 					<Player Name="Marcus Docherty"/>
 					<Player Name="Harry Docherty"/>
 					<Player Name="Rares Ciarezu"/>
