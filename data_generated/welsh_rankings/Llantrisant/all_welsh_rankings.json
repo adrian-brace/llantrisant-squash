@@ -11520,117 +11520,437 @@
         "welshRankingID": 69747
     },
     {
-        "position": 1152,
+        "position": "1001",
+        "playerName": "Chris Osborne",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70102&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "5",
+        "level": "608",
+        "welshRankingID": 70102
+    },
+    {
+        "position": "1002",
+        "playerName": "Shaun Martin",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71856&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Spring 2019",
+        "events": "1",
+        "level": "605",
+        "welshRankingID": 71856
+    },
+    {
+        "position": "1003",
+        "playerName": "Tom White",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=92111&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "4",
+        "level": "604",
+        "welshRankingID": 92111
+    },
+    {
+        "position": "1004",
+        "playerName": "Rob Wheeler",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71775&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "5",
+        "level": "597",
+        "welshRankingID": 71775
+    },
+    {
+        "position": 1156,
+        "playerName": "Peter Arnold",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=150569&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Pembroke Winter 2018",
+        "events": "1",
+        "level": "597",
+        "welshRankingID": 150569
+    },
+    {
+        "position": 1157,
+        "playerName": "Mike Baggott",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69708&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "2",
+        "level": "595",
+        "welshRankingID": 69708
+    },
+    {
+        "position": 1158,
+        "playerName": "Llinos Evans",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=10712&show=last12m",
+        "county": "WAL",
+        "lastEvent": "North East Wales Spring 2019",
+        "events": "2",
+        "level": "594",
+        "welshRankingID": 10712
+    },
+    {
+        "position": "1005",
+        "playerName": "Marty Ellicot",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=106347&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "1",
+        "level": "591",
+        "welshRankingID": 106347
+    },
+    {
+        "position": 1160,
+        "playerName": "Matt Price",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70742&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Ross Scaccia Open 2019",
+        "events": "1",
+        "level": "591",
+        "welshRankingID": 70742
+    },
+    {
+        "position": "1006",
+        "playerName": "Dean Jackson-Johns",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71693&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "5",
+        "level": "590",
+        "welshRankingID": 71693
+    },
+    {
+        "position": "1007",
+        "playerName": "Kevin Seville",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71631&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "2",
+        "level": "588",
+        "welshRankingID": 71631
+    },
+    {
+        "position": 1163,
+        "playerName": "Paul Ogden",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68720&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "5",
+        "level": "588",
+        "welshRankingID": 68720
+    },
+    {
+        "position": "1009",
+        "playerName": "Owen Bater",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148145&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "584",
+        "welshRankingID": 148145
+    },
+    {
+        "position": "1010",
+        "playerName": "Kevin James",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160355&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "3",
+        "level": "582",
+        "welshRankingID": 160355
+    },
+    {
+        "position": "1011",
+        "playerName": "Amanda Barter",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69603&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "3",
+        "level": "580",
+        "welshRankingID": 69603
+    },
+    {
+        "position": 1167,
+        "playerName": "Cai Larsen",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69496&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Spring 2019",
+        "events": "1",
+        "level": "574",
+        "welshRankingID": 69496
+    },
+    {
+        "position": 1168,
+        "playerName": "Les Godfrey",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160509&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "1",
+        "level": "573",
+        "welshRankingID": 160509
+    },
+    {
+        "position": 1169,
+        "playerName": "Andrew Pugh",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172817&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Spring 2019",
+        "events": "1",
+        "level": "570",
+        "welshRankingID": 172817
+    },
+    {
+        "position": "1012",
+        "playerName": "Ken Green",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175311&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "2",
+        "level": "569",
+        "welshRankingID": 175311
+    },
+    {
+        "position": "1013",
+        "playerName": "Paul Moggeridge",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69747&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "567",
+        "welshRankingID": 69747
+    },
+    {
+        "position": "1014",
+        "playerName": "Daniel Higgs",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=180475&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "7",
+        "level": "565",
+        "welshRankingID": 180475
+    },
+    {
+        "position": "1015",
+        "playerName": "Terry John",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69064&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "563",
+        "welshRankingID": 69064
+    },
+    {
+        "position": "1016",
+        "playerName": "Jac Cottrell",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161215&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Rhiwbina Open 2019",
+        "events": "8",
+        "level": "562",
+        "welshRankingID": 161215
+    },
+    {
+        "position": "1017",
+        "playerName": "Ashley Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148305&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "3",
+        "level": "561",
+        "welshRankingID": 148305
+    },
+    {
+        "position": 1176,
+        "playerName": "David Grant",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=177680&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Allam British Karakal Masters Op...",
+        "events": "1",
+        "level": "561",
+        "welshRankingID": 177680
+    },
+    {
+        "position": "1019",
+        "playerName": "Lee Thomas",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=111573&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "560",
+        "welshRankingID": 111573
+    },
+    {
+        "position": 1178,
+        "playerName": "John Conabear",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70359&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2018",
+        "events": "1",
+        "level": "560",
+        "welshRankingID": 70359
+    },
+    {
+        "position": "1020",
+        "playerName": "Harry Barnard",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=50683&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Home Internationals 2019",
+        "events": "4",
+        "level": "559",
+        "welshRankingID": 50683
+    },
+    {
+        "position": "1021",
+        "playerName": "Carwyn Phillips",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151937&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "556",
+        "welshRankingID": 151937
+    },
+    {
+        "position": 1181,
+        "playerName": "Paul Morris",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70073&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "3",
+        "level": "556",
+        "welshRankingID": 70073
+    },
+    {
+        "position": 1182,
         "playerName": "Jim Tunley",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75359&show=last12m",
         "county": "WAL",
         "lastEvent": "North Wales Masters Open 2019",
         "events": "1",
-        "level": "554",
+        "level": "555",
         "welshRankingID": 75359
     },
     {
-        "position": 1153,
-        "playerName": "Mike Baggott",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69708&show=last12m",
-        "county": "WAL",
-        "lastEvent": "South Glamorgan Winter 2018",
-        "events": "1",
-        "level": "552",
-        "welshRankingID": 69708
-    },
-    {
-        "position": "1001",
-        "playerName": "Dean Jackson-Johns",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71693&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Abergavenny Handicap Summer",
-        "events": "4",
-        "level": "545",
-        "welshRankingID": 71693
-    },
-    {
-        "position": 1155,
-        "playerName": "Kevin Hau",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=168071&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Ross Scaccia Open 2019",
-        "events": "2",
-        "level": "545",
-        "welshRankingID": 168071
-    },
-    {
-        "position": "1003",
-        "playerName": "Geraint Williams",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69492&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "542",
-        "welshRankingID": 69492
-    },
-    {
-        "position": 1157,
+        "position": "1023",
         "playerName": "Phil McCarthy",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=12813&show=last12m",
         "county": "WAL",
-        "lastEvent": "North East Wales Spring 2019",
-        "events": "3",
-        "level": "542",
+        "lastEvent": "North East Wales Winter 2019",
+        "events": "4",
+        "level": "554",
         "welshRankingID": 12813
     },
     {
-        "position": 1158,
+        "position": 1184,
+        "playerName": "Dev Alkins",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175021&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Spring 2019",
+        "events": "1",
+        "level": "554",
+        "welshRankingID": 175021
+    },
+    {
+        "position": "1025",
+        "playerName": "Paul Jewell",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=128097&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "4",
+        "level": "551",
+        "welshRankingID": 128097
+    },
+    {
+        "position": "1026",
+        "playerName": "Nick Price",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=88749&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "4",
+        "level": "548",
+        "welshRankingID": 88749
+    },
+    {
+        "position": "1027",
+        "playerName": "Andrew Clemence",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71632&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "3",
+        "level": "545",
+        "welshRankingID": 71632
+    },
+    {
+        "position": "1028",
+        "playerName": "Deian Williams",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70339&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "2",
+        "level": "544",
+        "welshRankingID": 70339
+    },
+    {
+        "position": "1029",
+        "playerName": "Paul Dolphin",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69074&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "543",
+        "welshRankingID": 69074
+    },
+    {
+        "position": 1190,
         "playerName": "Gerald Pierce",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149851&show=last12m",
         "county": "WAL",
         "lastEvent": "Mid Glamorgan Winter 2018",
         "events": "1",
-        "level": "542",
+        "level": "543",
         "welshRankingID": 149851
     },
     {
-        "position": "1005",
-        "playerName": "Nick Price",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=88749&show=last12m",
+        "position": "1030",
+        "playerName": "Mike Williamson",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69563&show=last12m",
         "county": "WAL",
-        "lastEvent": "Ross Scaccia Open 2019",
-        "events": "3",
-        "level": "535",
-        "welshRankingID": 88749
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "2",
+        "level": "540",
+        "welshRankingID": 69563
     },
     {
-        "position": "1006",
-        "playerName": "Owen Bater",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148145&show=last12m",
+        "position": 1192,
+        "playerName": "Geraint Williams",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69492&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "3",
-        "level": "534",
-        "welshRankingID": 148145
+        "lastEvent": "Eryri Spring 2019",
+        "events": "2",
+        "level": "540",
+        "welshRankingID": 69492
     },
     {
-        "position": 1161,
+        "position": "1032",
+        "playerName": "Sean Petty",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=182153&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "1",
+        "level": "537",
+        "welshRankingID": 182153
+    },
+    {
+        "position": "1033",
         "playerName": "Nikki Scarr",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=105911&show=last12m",
         "county": "WAL",
         "lastEvent": "Gwent Spring 2019",
-        "events": "2",
-        "level": "534",
+        "events": "1",
+        "level": "535",
         "welshRankingID": 105911
     },
     {
-        "position": "1008",
-        "playerName": "Rob Wheeler",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71775&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Karakal Welsh National Closed Ch...",
-        "events": "4",
-        "level": "531",
-        "welshRankingID": 71775
-    },
-    {
-        "position": 1163,
+        "position": "1034",
         "playerName": "Derek Wiseman",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70098&show=last12m",
         "county": "WAL",
@@ -11640,17 +11960,37 @@
         "welshRankingID": 70098
     },
     {
-        "position": "1010",
-        "playerName": "Ashley Davies",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148305&show=last12m",
+        "position": "1035",
+        "playerName": "Bernadette Lewis",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69230&show=last12m",
         "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring 2019",
-        "events": "2",
-        "level": "527",
-        "welshRankingID": 148305
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "529",
+        "welshRankingID": 69230
     },
     {
-        "position": 1165,
+        "position": "1036",
+        "playerName": "Chris Hamilton",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70672&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "1",
+        "level": "526",
+        "welshRankingID": 70672
+    },
+    {
+        "position": 1198,
+        "playerName": "Ray Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69067&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "526",
+        "welshRankingID": 69067
+    },
+    {
+        "position": 1199,
         "playerName": "Craig James",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148139&show=last12m",
         "county": "WAL",
@@ -11660,17 +12000,17 @@
         "welshRankingID": 148139
     },
     {
-        "position": "1011",
+        "position": "1038",
         "playerName": "Ben Godfrey",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=180198&show=last12m",
         "county": "WAL",
         "lastEvent": "Oxshott Leagues",
         "events": "3",
-        "level": "522",
+        "level": "523",
         "welshRankingID": 180198
     },
     {
-        "position": 1167,
+        "position": 1201,
         "playerName": "Adrian Morris",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=105807&show=last12m",
         "county": "WAL",
@@ -11680,7 +12020,7 @@
         "welshRankingID": 105807
     },
     {
-        "position": 1168,
+        "position": 1202,
         "playerName": "Neil Evans",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172533&show=last12m",
         "county": "WAL",
@@ -11690,27 +12030,77 @@
         "welshRankingID": 172533
     },
     {
-        "position": "1012",
-        "playerName": "Lee Thomas",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=111573&show=last12m",
+        "position": "1039",
+        "playerName": "Rhys Pritchard",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71876&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "2",
-        "level": "519",
-        "welshRankingID": 111573
+        "lastEvent": "Abergavenny Boxes",
+        "events": "1",
+        "level": "516",
+        "welshRankingID": 71876
     },
     {
-        "position": "1013",
-        "playerName": "Andrew Clemence",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71632&show=last12m",
+        "position": "1040",
+        "playerName": "Howell Morgan",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68804&show=last12m",
         "county": "WAL",
-        "lastEvent": "Pembrokeshire Spring 2019",
-        "events": "2",
-        "level": "514",
-        "welshRankingID": 71632
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "515",
+        "welshRankingID": 68804
     },
     {
-        "position": "1014",
+        "position": "1041",
+        "playerName": "Joel Young",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151935&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "513",
+        "welshRankingID": 151935
+    },
+    {
+        "position": "1042",
+        "playerName": "Rhodri Clark",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=158909&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "511",
+        "welshRankingID": 158909
+    },
+    {
+        "position": 1207,
+        "playerName": "Aled Lloyd Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175363&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "19",
+        "level": "511",
+        "welshRankingID": 175363
+    },
+    {
+        "position": 1208,
+        "playerName": "Mark Spratt",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71886&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2018",
+        "events": "1",
+        "level": "510",
+        "welshRankingID": 71886
+    },
+    {
+        "position": 1209,
+        "playerName": "Roberto Vaca",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=91617&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Narberth Ladders",
+        "events": "1",
+        "level": "509",
+        "welshRankingID": 91617
+    },
+    {
+        "position": 1210,
         "playerName": "Rhydian Jones",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148589&show=last12m",
         "county": "WAL",
@@ -11720,27 +12110,37 @@
         "welshRankingID": 148589
     },
     {
-        "position": 1172,
-        "playerName": "Mark Spratt",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71886&show=last12m",
+        "position": 1211,
+        "playerName": "Gerald Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157201&show=last12m",
         "county": "WAL",
-        "lastEvent": "Gwent Winter 2018",
-        "events": "1",
-        "level": "509",
-        "welshRankingID": 71886
-    },
-    {
-        "position": "1015",
-        "playerName": "Roberto Vaca",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=91617&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "1",
+        "lastEvent": "Abergavenny Boxes",
+        "events": "3",
         "level": "508",
-        "welshRankingID": 91617
+        "welshRankingID": 157201
     },
     {
-        "position": "1016",
+        "position": 1212,
+        "playerName": "Nathan Connolly",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=190799&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "1",
+        "level": "505",
+        "welshRankingID": 190799
+    },
+    {
+        "position": 1213,
+        "playerName": "Ryan Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=156859&show=last12m",
+        "county": "WAL",
+        "lastEvent": "North East Wales Winter 2019",
+        "events": "3",
+        "level": "505",
+        "welshRankingID": 156859
+    },
+    {
+        "position": 1214,
         "playerName": "Alex Wilcox-Brooke",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=128177&show=last12m",
         "county": "WAL",
@@ -11750,77 +12150,287 @@
         "welshRankingID": 128177
     },
     {
-        "position": "1017",
-        "playerName": "Chris Dowling",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72040&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "502",
-        "welshRankingID": 72040
-    },
-    {
-        "position": 1176,
+        "position": 1215,
         "playerName": "Ron Hughes",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69277&show=last12m",
         "county": "WAL",
         "lastEvent": "North East Wales Winter 2018",
         "events": "1",
-        "level": "500",
+        "level": "504",
         "welshRankingID": 69277
     },
     {
-        "position": 1177,
+        "position": "1046",
+        "playerName": "Vicky Jones",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=186943&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "1",
+        "level": "501",
+        "welshRankingID": 186943
+    },
+    {
+        "position": 1217,
         "playerName": "Alan Marsh",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71617&show=last12m",
         "county": "WAL",
         "lastEvent": "Pembrokeshire Pembroke Winter 2018",
         "events": "1",
-        "level": "500",
+        "level": "501",
         "welshRankingID": 71617
     },
     {
-        "position": 1178,
-        "playerName": "Ken Green",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175311&show=last12m",
+        "position": "1047",
+        "playerName": "Chris Dowling",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72040&show=last12m",
         "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "1",
+        "lastEvent": "Eryri Spring 2019",
+        "events": "2",
         "level": "498",
-        "welshRankingID": 175311
+        "welshRankingID": 72040
     },
     {
-        "position": "1018",
+        "position": "1048",
         "playerName": "Paul Hinchey",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70542&show=last12m",
         "county": "WAL",
-        "lastEvent": "Ross Scaccia Open 2019",
-        "events": "2",
-        "level": "494",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "496",
         "welshRankingID": 70542
     },
     {
-        "position": 1180,
-        "playerName": "Dyfed Davies",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72169&show=last12m",
+        "position": "1049",
+        "playerName": "Kevin Hau",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=168071&show=last12m",
         "county": "WAL",
-        "lastEvent": "Pembrokeshire Pembroke Winter 2018",
-        "events": "1",
-        "level": "488",
-        "welshRankingID": 72169
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "494",
+        "welshRankingID": 168071
     },
     {
-        "position": "1019",
+        "position": "1050",
         "playerName": "Lewis Davies",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161227&show=last12m",
         "county": "WAL",
         "lastEvent": "North East Wales Spring 2019",
         "events": "4",
-        "level": "487",
+        "level": "489",
         "welshRankingID": 161227
     },
     {
-        "position": 1182,
+        "position": 1222,
+        "playerName": "Neil Evans",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172533&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "1",
+        "level": "520",
+        "welshRankingID": 172533
+    },
+    {
+        "position": "1051",
+        "playerName": "Rhys Pritchard",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71876&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Abergavenny Boxes",
+        "events": "1",
+        "level": "516",
+        "welshRankingID": 71876
+    },
+    {
+        "position": "1052",
+        "playerName": "Howell Morgan",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=68804&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "515",
+        "welshRankingID": 68804
+    },
+    {
+        "position": "1053",
+        "playerName": "Joel Young",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151935&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "513",
+        "welshRankingID": 151935
+    },
+    {
+        "position": "1054",
+        "playerName": "Rhodri Clark",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=158909&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "511",
+        "welshRankingID": 158909
+    },
+    {
+        "position": 1227,
+        "playerName": "Aled Lloyd Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175363&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "19",
+        "level": "511",
+        "welshRankingID": 175363
+    },
+    {
+        "position": 1228,
+        "playerName": "Mark Spratt",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71886&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2018",
+        "events": "1",
+        "level": "510",
+        "welshRankingID": 71886
+    },
+    {
+        "position": 1229,
+        "playerName": "Roberto Vaca",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=91617&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Narberth Ladders",
+        "events": "1",
+        "level": "509",
+        "welshRankingID": 91617
+    },
+    {
+        "position": 1230,
+        "playerName": "Rhydian Jones",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148589&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "2",
+        "level": "509",
+        "welshRankingID": 148589
+    },
+    {
+        "position": 1231,
+        "playerName": "Gerald Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157201&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Abergavenny Boxes",
+        "events": "3",
+        "level": "508",
+        "welshRankingID": 157201
+    },
+    {
+        "position": 1232,
+        "playerName": "Nathan Connolly",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=190799&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "1",
+        "level": "505",
+        "welshRankingID": 190799
+    },
+    {
+        "position": 1233,
+        "playerName": "Ryan Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=156859&show=last12m",
+        "county": "WAL",
+        "lastEvent": "North East Wales Winter 2019",
+        "events": "3",
+        "level": "505",
+        "welshRankingID": 156859
+    },
+    {
+        "position": 1234,
+        "playerName": "Alex Wilcox-Brooke",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=128177&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Spring 2019",
+        "events": "2",
+        "level": "505",
+        "welshRankingID": 128177
+    },
+    {
+        "position": 1235,
+        "playerName": "Ron Hughes",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69277&show=last12m",
+        "county": "WAL",
+        "lastEvent": "North East Wales Winter 2018",
+        "events": "1",
+        "level": "504",
+        "welshRankingID": 69277
+    },
+    {
+        "position": "1058",
+        "playerName": "Vicky Jones",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=186943&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "1",
+        "level": "501",
+        "welshRankingID": 186943
+    },
+    {
+        "position": 1237,
+        "playerName": "Alan Marsh",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71617&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Pembroke Winter 2018",
+        "events": "1",
+        "level": "501",
+        "welshRankingID": 71617
+    },
+    {
+        "position": "1059",
+        "playerName": "Chris Dowling",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72040&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Spring 2019",
+        "events": "2",
+        "level": "498",
+        "welshRankingID": 72040
+    },
+    {
+        "position": "1060",
+        "playerName": "Paul Hinchey",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70542&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "496",
+        "welshRankingID": 70542
+    },
+    {
+        "position": "1061",
+        "playerName": "Kevin Hau",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=168071&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "494",
+        "welshRankingID": 168071
+    },
+    {
+        "position": "1062",
+        "playerName": "Lewis Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161227&show=last12m",
+        "county": "WAL",
+        "lastEvent": "North East Wales Spring 2019",
+        "events": "4",
+        "level": "489",
+        "welshRankingID": 161227
+    },
+    {
+        "position": 1242,
+        "playerName": "Dyfed Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72169&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Pembroke Winter 2018",
+        "events": "1",
+        "level": "489",
+        "welshRankingID": 72169
+    },
+    {
+        "position": 1243,
         "playerName": "Angus Clemence",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=40214&show=last12m",
         "county": "WAL",
@@ -11830,57 +12440,97 @@
         "welshRankingID": 40214
     },
     {
-        "position": "1020",
-        "playerName": "Ben Woodhouse",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=96577&show=last12m",
-        "county": "WAL",
-        "lastEvent": "North Mid Wales Junior League 2018",
-        "events": "2",
-        "level": "485",
-        "welshRankingID": 96577
-    },
-    {
-        "position": "1021",
+        "position": "1063",
         "playerName": "Adam Lawrence",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=141787&show=last12m",
         "county": "WAL",
         "lastEvent": "North East Wales Spring 2019",
         "events": "2",
-        "level": "484",
+        "level": "486",
         "welshRankingID": 141787
     },
     {
-        "position": "1022",
+        "position": 1245,
+        "playerName": "Ben Woodhouse",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=96577&show=last12m",
+        "county": "WAL",
+        "lastEvent": "North Mid Wales Junior League 2018",
+        "events": "2",
+        "level": "486",
+        "welshRankingID": 96577
+    },
+    {
+        "position": "1065",
+        "playerName": "Geraint Fisher",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153907&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "2",
+        "level": "483",
+        "welshRankingID": 153907
+    },
+    {
+        "position": 1247,
+        "playerName": "David Martin",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=187017&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "1",
+        "level": "482",
+        "welshRankingID": 187017
+    },
+    {
+        "position": "1066",
         "playerName": "Bob Case",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160829&show=last12m",
         "county": "WAL",
         "lastEvent": "Eryri Spring 2019",
         "events": "1",
-        "level": "481",
+        "level": "480",
         "welshRankingID": 160829
     },
     {
-        "position": 1186,
-        "playerName": "Enzo Nigra",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=130256&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "2",
-        "level": "481",
-        "welshRankingID": 130256
-    },
-    {
-        "position": "1024",
+        "position": 1249,
         "playerName": "Kyle Donnelly",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176543&show=last12m",
         "county": "WAL",
         "lastEvent": "Ross Scaccia Open 2019",
         "events": "1",
-        "level": "478",
+        "level": "480",
         "welshRankingID": 176543
     },
     {
-        "position": "1025",
+        "position": 1250,
+        "playerName": "Joe Lewis",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161273&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "2",
+        "level": "477",
+        "welshRankingID": 161273
+    },
+    {
+        "position": 1251,
+        "playerName": "Enzo Nigra",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=130256&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "3",
+        "level": "477",
+        "welshRankingID": 130256
+    },
+    {
+        "position": 1252,
+        "playerName": "Danny Thomas",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=187489&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "1",
+        "level": "477",
+        "welshRankingID": 187489
+    },
+    {
+        "position": 1253,
         "playerName": "Josh Llewellyn",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157073&show=last12m",
         "county": "WAL",
@@ -11890,17 +12540,7 @@
         "welshRankingID": 157073
     },
     {
-        "position": 1189,
-        "playerName": "Jac Cottrell",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161215&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Karakal Welsh National Closed Ch...",
-        "events": "5",
-        "level": "477",
-        "welshRankingID": 161215
-    },
-    {
-        "position": 1190,
+        "position": 1254,
         "playerName": "Mat Britton",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=89891&show=last12m",
         "county": "WAL",
@@ -11910,47 +12550,27 @@
         "welshRankingID": 89891
     },
     {
-        "position": 1191,
+        "position": 1255,
         "playerName": "Stuart Jones",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71736&show=last12m",
         "county": "WAL",
         "lastEvent": "West Glamorgan Winter 2018",
         "events": "1",
-        "level": "474",
+        "level": "475",
         "welshRankingID": 71736
     },
     {
-        "position": 1192,
+        "position": 1256,
         "playerName": "Emma Jameson",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157279&show=last12m",
         "county": "WAL",
         "lastEvent": "Gwent Winter 2018",
-        "events": "5",
-        "level": "473",
+        "events": "4",
+        "level": "470",
         "welshRankingID": 157279
     },
     {
-        "position": "1028",
-        "playerName": "Mark Williams",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=91187&show=last12m",
-        "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "3",
-        "level": "469",
-        "welshRankingID": 91187
-    },
-    {
-        "position": "1029",
-        "playerName": "James Evans",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175023&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "1",
-        "level": "468",
-        "welshRankingID": 175023
-    },
-    {
-        "position": "1030",
+        "position": "1069",
         "playerName": "Roger Bleay",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=131784&show=last12m",
         "county": "WAL",
@@ -11960,7 +12580,7 @@
         "welshRankingID": 131784
     },
     {
-        "position": 1196,
+        "position": 1258,
         "playerName": "Sean Higgins",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152717&show=last12m",
         "county": "WAL",
@@ -11970,37 +12590,47 @@
         "welshRankingID": 152717
     },
     {
-        "position": "1031",
-        "playerName": "Andrew Griffiths",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=74717&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Pembrokeshire Spring 2019",
-        "events": "2",
-        "level": "461",
-        "welshRankingID": 74717
-    },
-    {
-        "position": "1032",
+        "position": "1070",
         "playerName": "Steve Wedgewood",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71562&show=last12m",
         "county": "WAL",
         "lastEvent": "Pembrokeshire Spring 2019",
         "events": "2",
-        "level": "459",
+        "level": "460",
         "welshRankingID": 71562
     },
     {
-        "position": "1033",
+        "position": 1260,
+        "playerName": "Andrew Griffiths",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=74717&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Spring 2019",
+        "events": "2",
+        "level": "460",
+        "welshRankingID": 74717
+    },
+    {
+        "position": "1072",
         "playerName": "Phoebe Marshman",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72939&show=last12m",
         "county": "WAL",
         "lastEvent": "Glos East Junior Open",
         "events": "6",
-        "level": "457",
+        "level": "459",
         "welshRankingID": 72939
     },
     {
-        "position": 1200,
+        "position": 1262,
+        "playerName": "Dilwyn Thomas",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=158043&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2018",
+        "events": "1",
+        "level": "458",
+        "welshRankingID": 158043
+    },
+    {
+        "position": 1263,
         "playerName": "Neil Morrissey",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172343&show=last12m",
         "county": "WAL",
@@ -12010,7 +12640,17 @@
         "welshRankingID": 172343
     },
     {
-        "position": "1035",
+        "position": "1073",
+        "playerName": "Richard Bennett",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=155753&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "4",
+        "level": "456",
+        "welshRankingID": 155753
+    },
+    {
+        "position": 1265,
         "playerName": "Leigh Rowlands",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72080&show=last12m",
         "county": "WAL",
@@ -12020,87 +12660,117 @@
         "welshRankingID": 72080
     },
     {
-        "position": 1202,
-        "playerName": "Dilwyn Thomas",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=158043&show=last12m",
+        "position": "1074",
+        "playerName": "Ioan Davis",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=92149&show=last12m",
         "county": "WAL",
-        "lastEvent": "Mid Glamorgan Winter 2018",
-        "events": "1",
-        "level": "455",
-        "welshRankingID": 158043
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "6",
+        "level": "447",
+        "welshRankingID": 92149
     },
     {
-        "position": "1036",
-        "playerName": "Richard Bennett",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=155753&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Cardiff Medics",
-        "events": "3",
-        "level": "452",
-        "welshRankingID": 155753
-    },
-    {
-        "position": "1037",
-        "playerName": "Daniel Higgs",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=180475&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Glos East Junior Open",
-        "events": "7",
-        "level": "451",
-        "welshRankingID": 180475
-    },
-    {
-        "position": 1205,
-        "playerName": "Kevin Seville",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71631&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Winter 2018",
-        "events": "1",
-        "level": "446",
-        "welshRankingID": 71631
-    },
-    {
-        "position": "1038",
+        "position": "1075",
         "playerName": "Elinor Jones",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=90671&show=last12m",
         "county": "WAL",
         "lastEvent": "South Wales Glamorgan Spring 2019",
         "events": "3",
-        "level": "444",
+        "level": "445",
         "welshRankingID": 90671
     },
     {
-        "position": "1039",
-        "playerName": "Jim Dunkley",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69780&show=last12m",
+        "position": "1076",
+        "playerName": "Iaiun Roberts",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149849&show=last12m",
         "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "2",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "3",
         "level": "442",
-        "welshRankingID": 69780
+        "welshRankingID": 149849
     },
     {
-        "position": 1208,
+        "position": 1269,
+        "playerName": "Mike Blyth",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149571&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "442",
+        "welshRankingID": 149571
+    },
+    {
+        "position": 1270,
         "playerName": "Terry Phillips",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70699&show=last12m",
         "county": "WAL",
         "lastEvent": "South Glamorgan Winter 2018",
         "events": "1",
-        "level": "441",
+        "level": "442",
         "welshRankingID": 70699
     },
     {
-        "position": "1040",
+        "position": "1078",
+        "playerName": "Paul Twigg",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149163&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Spring 2019",
+        "events": "1",
+        "level": "441",
+        "welshRankingID": 149163
+    },
+    {
+        "position": "1079",
         "playerName": "Russ Watts",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69718&show=last12m",
         "county": "WAL",
         "lastEvent": "South Wales Glamorgan Spring 2019",
         "events": "2",
-        "level": "438",
+        "level": "439",
         "welshRankingID": 69718
     },
     {
-        "position": 1210,
+        "position": "1080",
+        "playerName": "Martin Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75353&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "4",
+        "level": "437",
+        "welshRankingID": 75353
+    },
+    {
+        "position": "1081",
+        "playerName": "Jim Dunkley",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69780&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "3",
+        "level": "433",
+        "welshRankingID": 69780
+    },
+    {
+        "position": 1275,
+        "playerName": "Mark Williams",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=91187&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "4",
+        "level": "433",
+        "welshRankingID": 91187
+    },
+    {
+        "position": 1276,
+        "playerName": "Jason Rees",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71884&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "4",
+        "level": "433",
+        "welshRankingID": 71884
+    },
+    {
+        "position": 1277,
         "playerName": "Patrick Hellings",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70085&show=last12m",
         "county": "WAL",
@@ -12110,317 +12780,87 @@
         "welshRankingID": 70085
     },
     {
-        "position": "1041",
-        "playerName": "Martin Davies",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75353&show=last12m",
+        "position": "1084",
+        "playerName": "Iain Thomson",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69127&show=last12m",
         "county": "WAL",
-        "lastEvent": "Narberth Ladders",
+        "lastEvent": "West Glamorgan Winter 2019",
         "events": "3",
-        "level": "430",
-        "welshRankingID": 75353
+        "level": "429",
+        "welshRankingID": 69127
     },
     {
-        "position": "1042",
+        "position": 1279,
         "playerName": "Ian Chadwick",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172341&show=last12m",
         "county": "WAL",
         "lastEvent": "Eryri Spring 2019",
         "events": "1",
-        "level": "427",
+        "level": "429",
         "welshRankingID": 172341
     },
     {
-        "position": 1213,
+        "position": "1086",
         "playerName": "Adam Parkes",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=159199&show=last12m",
         "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "427",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "425",
         "welshRankingID": 159199
     },
     {
-        "position": 1214,
-        "playerName": "Karen Mahy",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=167755&show=last12m",
-        "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "1",
-        "level": "423",
-        "welshRankingID": 167755
-    },
-    {
-        "position": "1044",
+        "position": "1087",
         "playerName": "Mike Coulthard",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=89897&show=last12m",
         "county": "WAL",
         "lastEvent": "Gwent Spring 2019",
         "events": "3",
-        "level": "422",
+        "level": "424",
         "welshRankingID": 89897
     },
     {
-        "position": "1045",
-        "playerName": "Aled Lloyd Davies",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175363&show=last12m",
+        "position": "1088",
+        "playerName": "Andrew Watkins",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71991&show=last12m",
         "county": "WAL",
-        "lastEvent": "DPD Dutch Junior Open 2019",
-        "events": "17",
-        "level": "419",
-        "welshRankingID": 175363
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "4",
+        "level": "422",
+        "welshRankingID": 71991
     },
     {
-        "position": 1217,
+        "position": 1283,
         "playerName": "Ross Stephens",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=125651&show=last12m",
         "county": "WAL",
         "lastEvent": "Mid Glamorgan Spring 2019",
         "events": "2",
-        "level": "419",
+        "level": "420",
         "welshRankingID": 125651
     },
     {
-        "position": "1046",
-        "playerName": "Jason Rees",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71884&show=last12m",
+        "position": "1089",
+        "playerName": "Tessa Lewis",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152921&show=last12m",
         "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "3",
-        "level": "418",
-        "welshRankingID": 71884
+        "lastEvent": "Abergavenny Boxes",
+        "events": "4",
+        "level": "411",
+        "welshRankingID": 152921
     },
     {
-        "position": 1219,
-        "playerName": "Iaiun Roberts",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149849&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring 2019",
-        "events": "2",
-        "level": "418",
-        "welshRankingID": 149849
-    },
-    {
-        "position": 1220,
-        "playerName": "Andrew Watkins",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71991&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring 2019",
-        "events": "3",
-        "level": "418",
-        "welshRankingID": 71991
-    },
-    {
-        "position": 1221,
-        "playerName": "Miles Smith",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69774&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Winter 2018",
-        "events": "1",
-        "level": "414",
-        "welshRankingID": 69774
-    },
-    {
-        "position": 1222,
-        "playerName": "Dilwyn Thomas",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=158043&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Winter 2018",
-        "events": "1",
-        "level": "455",
-        "welshRankingID": 158043
-    },
-    {
-        "position": "1051",
-        "playerName": "Richard Bennett",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=155753&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Cardiff Medics",
-        "events": "3",
-        "level": "452",
-        "welshRankingID": 155753
-    },
-    {
-        "position": "1052",
-        "playerName": "Daniel Higgs",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=180475&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Glos East Junior Open",
-        "events": "7",
-        "level": "451",
-        "welshRankingID": 180475
-    },
-    {
-        "position": 1225,
-        "playerName": "Kevin Seville",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71631&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Winter 2018",
-        "events": "1",
-        "level": "446",
-        "welshRankingID": 71631
-    },
-    {
-        "position": "1053",
-        "playerName": "Elinor Jones",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=90671&show=last12m",
-        "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "3",
-        "level": "444",
-        "welshRankingID": 90671
-    },
-    {
-        "position": "1054",
-        "playerName": "Jim Dunkley",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69780&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "2",
-        "level": "442",
-        "welshRankingID": 69780
-    },
-    {
-        "position": 1228,
-        "playerName": "Terry Phillips",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70699&show=last12m",
-        "county": "WAL",
-        "lastEvent": "South Glamorgan Winter 2018",
-        "events": "1",
-        "level": "441",
-        "welshRankingID": 70699
-    },
-    {
-        "position": "1055",
-        "playerName": "Russ Watts",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69718&show=last12m",
+        "position": 1285,
+        "playerName": "Kris Rees",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152815&show=last12m",
         "county": "WAL",
         "lastEvent": "South Wales Glamorgan Spring 2019",
         "events": "2",
-        "level": "438",
-        "welshRankingID": 69718
+        "level": "411",
+        "welshRankingID": 152815
     },
     {
-        "position": 1230,
-        "playerName": "Patrick Hellings",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70085&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Pembrokeshire Spring 2019",
-        "events": "2",
-        "level": "433",
-        "welshRankingID": 70085
-    },
-    {
-        "position": "1056",
-        "playerName": "Martin Davies",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75353&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "3",
-        "level": "430",
-        "welshRankingID": 75353
-    },
-    {
-        "position": "1057",
-        "playerName": "Ian Chadwick",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172341&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "1",
-        "level": "427",
-        "welshRankingID": 172341
-    },
-    {
-        "position": 1233,
-        "playerName": "Adam Parkes",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=159199&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "427",
-        "welshRankingID": 159199
-    },
-    {
-        "position": 1234,
-        "playerName": "Karen Mahy",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=167755&show=last12m",
-        "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "1",
-        "level": "423",
-        "welshRankingID": 167755
-    },
-    {
-        "position": "1059",
-        "playerName": "Mike Coulthard",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=89897&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "3",
-        "level": "422",
-        "welshRankingID": 89897
-    },
-    {
-        "position": "1060",
-        "playerName": "Aled Lloyd Davies",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175363&show=last12m",
-        "county": "WAL",
-        "lastEvent": "DPD Dutch Junior Open 2019",
-        "events": "17",
-        "level": "419",
-        "welshRankingID": 175363
-    },
-    {
-        "position": 1237,
-        "playerName": "Ross Stephens",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=125651&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring 2019",
-        "events": "2",
-        "level": "419",
-        "welshRankingID": 125651
-    },
-    {
-        "position": "1061",
-        "playerName": "Jason Rees",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71884&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "3",
-        "level": "418",
-        "welshRankingID": 71884
-    },
-    {
-        "position": 1239,
-        "playerName": "Iaiun Roberts",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149849&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring 2019",
-        "events": "2",
-        "level": "418",
-        "welshRankingID": 149849
-    },
-    {
-        "position": 1240,
-        "playerName": "Andrew Watkins",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71991&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Mid Glamorgan Spring 2019",
-        "events": "3",
-        "level": "418",
-        "welshRankingID": 71991
-    },
-    {
-        "position": 1241,
-        "playerName": "Miles Smith",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69774&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Winter 2018",
-        "events": "1",
-        "level": "414",
-        "welshRankingID": 69774
-    },
-    {
-        "position": "1064",
+        "position": "1091",
         "playerName": "Jack Bell",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=170223&show=last12m",
         "county": "WAL",
@@ -12430,157 +12870,407 @@
         "welshRankingID": 170223
     },
     {
-        "position": 1243,
-        "playerName": "Kris Rees",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152815&show=last12m",
+        "position": "1092",
+        "playerName": "Kevin Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70398&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "2",
-        "level": "410",
-        "welshRankingID": 152815
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "4",
+        "level": "406",
+        "welshRankingID": 70398
     },
     {
-        "position": "1066",
-        "playerName": "Ben Pyecroft",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148655&show=last12m",
+        "position": "1093",
+        "playerName": "Jacob Smith",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72967&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "3",
-        "level": "402",
-        "welshRankingID": 148655
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "1",
+        "level": "403",
+        "welshRankingID": 72967
     },
     {
-        "position": 1245,
+        "position": 1289,
         "playerName": "Becky Johnson",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=35842&show=last12m",
         "county": "WAL",
         "lastEvent": "South Wales Glamorgan Spring 2019",
         "events": "2",
-        "level": "400",
+        "level": "401",
         "welshRankingID": 35842
     },
     {
-        "position": 1246,
-        "playerName": "Roger Williams",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71613&show=last12m",
+        "position": "1094",
+        "playerName": "Ben Pyecroft",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148655&show=last12m",
         "county": "WAL",
-        "lastEvent": "West Glamorgan Winter 2018",
-        "events": "1",
-        "level": "395",
-        "welshRankingID": 71613
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "3",
+        "level": "400",
+        "welshRankingID": 148655
     },
     {
-        "position": "1067",
-        "playerName": "Bryn Jones",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148485&show=last12m",
+        "position": 1291,
+        "playerName": "Karen Mahy",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=167755&show=last12m",
         "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
+        "lastEvent": "South Glamorgan Winter 2019",
         "events": "2",
         "level": "394",
-        "welshRankingID": 148485
+        "welshRankingID": 167755
     },
     {
-        "position": "1068",
-        "playerName": "Ryan Davies",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=156859&show=last12m",
-        "county": "WAL",
-        "lastEvent": "North East Wales Spring 2019",
-        "events": "2",
-        "level": "391",
-        "welshRankingID": 156859
-    },
-    {
-        "position": "1069",
-        "playerName": "Flo Carr-Smith",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151331&show=last12m",
+        "position": "1101",
+        "playerName": "Russ Watts",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69718&show=last12m",
         "county": "WAL",
         "lastEvent": "South Wales Glamorgan Spring 2019",
         "events": "2",
-        "level": "389",
-        "welshRankingID": 151331
+        "level": "439",
+        "welshRankingID": 69718
     },
     {
-        "position": "1070",
-        "playerName": "Mike Anderson",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69773&show=last12m",
+        "position": "1102",
+        "playerName": "Martin Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75353&show=last12m",
         "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "2",
-        "level": "387",
-        "welshRankingID": 69773
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "4",
+        "level": "437",
+        "welshRankingID": 75353
     },
     {
-        "position": "1071",
-        "playerName": "Roger Borlace",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70126&show=last12m",
+        "position": "1103",
+        "playerName": "Jim Dunkley",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69780&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "3",
+        "level": "433",
+        "welshRankingID": 69780
+    },
+    {
+        "position": 1295,
+        "playerName": "Mark Williams",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=91187&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "4",
+        "level": "433",
+        "welshRankingID": 91187
+    },
+    {
+        "position": 1296,
+        "playerName": "Jason Rees",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71884&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "4",
+        "level": "433",
+        "welshRankingID": 71884
+    },
+    {
+        "position": 1297,
+        "playerName": "Patrick Hellings",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70085&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Spring 2019",
+        "events": "2",
+        "level": "433",
+        "welshRankingID": 70085
+    },
+    {
+        "position": "1106",
+        "playerName": "Iain Thomson",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69127&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "429",
+        "welshRankingID": 69127
+    },
+    {
+        "position": 1299,
+        "playerName": "Ian Chadwick",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172341&show=last12m",
         "county": "WAL",
         "lastEvent": "Eryri Spring 2019",
-        "events": "3",
-        "level": "382",
-        "welshRankingID": 70126
+        "events": "1",
+        "level": "429",
+        "welshRankingID": 172341
     },
     {
-        "position": 1252,
+        "position": "1108",
+        "playerName": "Adam Parkes",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=159199&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "425",
+        "welshRankingID": 159199
+    },
+    {
+        "position": "1109",
+        "playerName": "Mike Coulthard",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=89897&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Spring 2019",
+        "events": "3",
+        "level": "424",
+        "welshRankingID": 89897
+    },
+    {
+        "position": "1110",
+        "playerName": "Andrew Watkins",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71991&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "4",
+        "level": "422",
+        "welshRankingID": 71991
+    },
+    {
+        "position": 1303,
+        "playerName": "Ross Stephens",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=125651&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Spring 2019",
+        "events": "2",
+        "level": "420",
+        "welshRankingID": 125651
+    },
+    {
+        "position": "1111",
+        "playerName": "Tessa Lewis",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152921&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Abergavenny Boxes",
+        "events": "4",
+        "level": "411",
+        "welshRankingID": 152921
+    },
+    {
+        "position": 1305,
+        "playerName": "Kris Rees",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152815&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "2",
+        "level": "411",
+        "welshRankingID": 152815
+    },
+    {
+        "position": "1113",
+        "playerName": "Jack Bell",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=170223&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "1",
+        "level": "410",
+        "welshRankingID": 170223
+    },
+    {
+        "position": "1114",
+        "playerName": "Kevin Davies",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70398&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "4",
+        "level": "406",
+        "welshRankingID": 70398
+    },
+    {
+        "position": "1115",
+        "playerName": "Jacob Smith",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72967&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "1",
+        "level": "403",
+        "welshRankingID": 72967
+    },
+    {
+        "position": 1309,
+        "playerName": "Becky Johnson",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=35842&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "2",
+        "level": "401",
+        "welshRankingID": 35842
+    },
+    {
+        "position": "1116",
+        "playerName": "Ben Pyecroft",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148655&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "3",
+        "level": "400",
+        "welshRankingID": 148655
+    },
+    {
+        "position": 1311,
+        "playerName": "Karen Mahy",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=167755&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "2",
+        "level": "394",
+        "welshRankingID": 167755
+    },
+    {
+        "position": "1117",
+        "playerName": "James Evans",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175023&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "2",
+        "level": "388",
+        "welshRankingID": 175023
+    },
+    {
+        "position": "1118",
+        "playerName": "Alun Evans",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=187445&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "1",
+        "level": "386",
+        "welshRankingID": 187445
+    },
+    {
+        "position": "1119",
+        "playerName": "Daniel Rees",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=182333&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "1",
+        "level": "385",
+        "welshRankingID": 182333
+    },
+    {
+        "position": "1120",
+        "playerName": "Bryn Jones",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148485&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "384",
+        "welshRankingID": 148485
+    },
+    {
+        "position": 1316,
+        "playerName": "Paul Hobson",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=187491&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "1",
+        "level": "384",
+        "welshRankingID": 187491
+    },
+    {
+        "position": 1317,
+        "playerName": "Glyn Griffiths",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75957&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "383",
+        "welshRankingID": 75957
+    },
+    {
+        "position": 1318,
         "playerName": "James Jones",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157213&show=last12m",
         "county": "WAL",
         "lastEvent": "Gwent Winter 2018",
         "events": "1",
-        "level": "381",
+        "level": "382",
         "welshRankingID": 157213
     },
     {
-        "position": 1253,
+        "position": "1122",
+        "playerName": "Roger Borlace",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70126&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Spring 2019",
+        "events": "2",
+        "level": "380",
+        "welshRankingID": 70126
+    },
+    {
+        "position": "1123",
         "playerName": "Peter Sturgess",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70856&show=last12m",
         "county": "WAL",
-        "lastEvent": "Abergavenny Handicap Summer",
-        "events": "4",
-        "level": "373",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "5",
+        "level": "376",
         "welshRankingID": 70856
     },
     {
-        "position": "1072",
+        "position": 1321,
+        "playerName": "Roger Williams",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71613&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "1",
+        "level": "376",
+        "welshRankingID": 71613
+    },
+    {
+        "position": "1125",
         "playerName": "Sion Wilcox",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=147611&show=last12m",
         "county": "WAL",
         "lastEvent": "Club match",
-        "events": "3",
+        "events": "2",
         "level": "371",
         "welshRankingID": 147611
     },
     {
-        "position": "1073",
-        "playerName": "Ioan Davis",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=92149&show=last12m",
+        "position": "1126",
+        "playerName": "Luke Studley",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148087&show=last12m",
         "county": "WAL",
-        "lastEvent": "Hirwaun Open 2019",
-        "events": "5",
-        "level": "370",
-        "welshRankingID": 92149
-    },
-    {
-        "position": 1256,
-        "playerName": "Glyn Griffiths",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75957&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
+        "lastEvent": "West Glamorgan Winter 2019",
         "events": "2",
-        "level": "368",
-        "welshRankingID": 75957
+        "level": "369",
+        "welshRankingID": 148087
     },
     {
-        "position": "1074",
-        "playerName": "Tessa Lewis",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152921&show=last12m",
+        "position": 1324,
+        "playerName": "Sofia Griffiths",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=92151&show=last12m",
         "county": "WAL",
-        "lastEvent": "Abergavenny Handicap Summer",
-        "events": "3",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "1",
         "level": "365",
-        "welshRankingID": 152921
+        "welshRankingID": 92151
     },
     {
-        "position": 1258,
+        "position": "1127",
+        "playerName": "Flo Carr-Smith",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151331&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "363",
+        "welshRankingID": 151331
+    },
+    {
+        "position": 1326,
+        "playerName": "Steve Julier",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148591&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "2",
+        "level": "362",
+        "welshRankingID": 148591
+    },
+    {
+        "position": 1327,
         "playerName": "Cai Wyn Jones",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176882&show=last12m",
         "county": "WAL",
@@ -12590,57 +13280,67 @@
         "welshRankingID": 176882
     },
     {
-        "position": "1075",
+        "position": "1128",
         "playerName": "Adam Adamou",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148597&show=last12m",
         "county": "WAL",
         "lastEvent": "South Wales Glamorgan Spring 2019",
         "events": "3",
-        "level": "360",
+        "level": "359",
         "welshRankingID": 148597
     },
     {
-        "position": "1076",
-        "playerName": "Angharad Smith",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157417&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Sunshine Not Affiliated TO Shrop...",
-        "events": "10",
-        "level": "359",
-        "welshRankingID": 157417
-    },
-    {
-        "position": 1261,
+        "position": "1129",
         "playerName": "Sean Downes",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75789&show=last12m",
         "county": "WAL",
         "lastEvent": "South Wales Glamorgan Spring 2019",
         "events": "3",
-        "level": "359",
+        "level": "358",
         "welshRankingID": 75789
     },
     {
-        "position": "1078",
+        "position": "1130",
         "playerName": "Ronan Williams",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71964&show=last12m",
         "county": "WAL",
         "lastEvent": "South Wales Spring 2019",
         "events": "1",
-        "level": "356",
+        "level": "355",
         "welshRankingID": 71964
     },
     {
-        "position": 1263,
+        "position": "1131",
         "playerName": "Jeff Bennett",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=142163&show=last12m",
         "county": "WAL",
-        "lastEvent": "Gwent Winter 2018",
-        "events": "1",
-        "level": "349",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "2",
+        "level": "350",
         "welshRankingID": 142163
     },
     {
-        "position": "1079",
+        "position": "1132",
+        "playerName": "Paul Ogborne",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151193&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "3",
+        "level": "345",
+        "welshRankingID": 151193
+    },
+    {
+        "position": "1133",
+        "playerName": "Gwilym David Parry",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160505&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Wrexham Brymbo Internal League",
+        "events": "2",
+        "level": "344",
+        "welshRankingID": 160505
+    },
+    {
+        "position": "1134",
         "playerName": "Emma Kupski",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151949&show=last12m",
         "county": "WAL",
@@ -12650,47 +13350,67 @@
         "welshRankingID": 151949
     },
     {
-        "position": "1080",
-        "playerName": "Gwilym David Parry",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160505&show=last12m",
+        "position": "1135",
+        "playerName": "Kieran Barclay",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175799&show=last12m",
         "county": "WAL",
-        "lastEvent": "Wrexham Brymbo Internal League",
+        "lastEvent": "Pembrokeshire Winter 2019",
         "events": "2",
-        "level": "342",
-        "welshRankingID": 160505
+        "level": "341",
+        "welshRankingID": 175799
     },
     {
-        "position": "1081",
-        "playerName": "Morgan Roberts",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71681&show=last12m",
+        "position": "1136",
+        "playerName": "Hannah Yeats",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151947&show=last12m",
         "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "1",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "4",
         "level": "340",
-        "welshRankingID": 71681
+        "welshRankingID": 151947
     },
     {
-        "position": "1082",
+        "position": 1337,
         "playerName": "Aaron Eaton",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=131907&show=last12m",
         "county": "WAL",
         "lastEvent": "North Mid Wales Junior League 2018",
         "events": "2",
-        "level": "339",
+        "level": "340",
         "welshRankingID": 131907
     },
     {
-        "position": "1083",
+        "position": "1138",
+        "playerName": "Morgan Roberts",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71681&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Spring 2019",
+        "events": "1",
+        "level": "337",
+        "welshRankingID": 71681
+    },
+    {
+        "position": "1139",
         "playerName": "Ian Moore",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75411&show=last12m",
         "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "3",
-        "level": "337",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "4",
+        "level": "334",
         "welshRankingID": 75411
     },
     {
-        "position": "1084",
+        "position": 1340,
+        "playerName": "Nick Edwards",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71842&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "3",
+        "level": "334",
+        "welshRankingID": 71842
+    },
+    {
+        "position": 1341,
         "playerName": "Nicholas Doyle",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152715&show=last12m",
         "county": "WAL",
@@ -12700,17 +13420,27 @@
         "welshRankingID": 152715
     },
     {
-        "position": 1270,
-        "playerName": "Steve Julier",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148591&show=last12m",
+        "position": "1141",
+        "playerName": "Angharad Smith",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157417&show=last12m",
         "county": "WAL",
-        "lastEvent": "Mid Glamorgan Winter 2018",
-        "events": "1",
-        "level": "322",
-        "welshRankingID": 148591
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "9",
+        "level": "328",
+        "welshRankingID": 157417
     },
     {
-        "position": 1271,
+        "position": "1142",
+        "playerName": "Richard Mann",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161005&show=last12m",
+        "county": "WAL",
+        "lastEvent": "North East Wales Winter 2019",
+        "events": "2",
+        "level": "327",
+        "welshRankingID": 161005
+    },
+    {
+        "position": 1344,
         "playerName": "Kierin Barclay",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151939&show=last12m",
         "county": "WAL",
@@ -12720,67 +13450,47 @@
         "welshRankingID": 151939
     },
     {
-        "position": "1085",
+        "position": "1143",
         "playerName": "Conor Lally",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160959&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "2",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
         "level": "319",
         "welshRankingID": 160959
     },
     {
-        "position": 1273,
-        "playerName": "Poppy Snowling",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=170665&show=last12m",
-        "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "1",
-        "level": "319",
-        "welshRankingID": 170665
-    },
-    {
-        "position": "1086",
-        "playerName": "Dylan Vite",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161203&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Hirwaun Open 2019",
-        "events": "9",
-        "level": "317",
-        "welshRankingID": 161203
-    },
-    {
-        "position": "1087",
-        "playerName": "Nick Edwards",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71842&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "2",
-        "level": "315",
-        "welshRankingID": 71842
-    },
-    {
-        "position": "1088",
+        "position": "1144",
         "playerName": "John Holiday",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=7598&show=last12m",
         "county": "WAL",
         "lastEvent": "North Wales Masters Open 2019",
         "events": "4",
-        "level": "314",
+        "level": "316",
         "welshRankingID": 7598
     },
     {
-        "position": 1277,
-        "playerName": "Dan Lewis",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176323&show=last12m",
+        "position": 1347,
+        "playerName": "Poppy Snowling",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=170665&show=last12m",
         "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "1",
-        "level": "312",
-        "welshRankingID": 176323
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "314",
+        "welshRankingID": 170665
     },
     {
-        "position": 1278,
+        "position": "1145",
+        "playerName": "Dylan Vite",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161203&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "11",
+        "level": "313",
+        "welshRankingID": 161203
+    },
+    {
+        "position": "1146",
         "playerName": "Luke Morgan",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=89887&show=last12m",
         "county": "WAL",
@@ -12790,27 +13500,27 @@
         "welshRankingID": 89887
     },
     {
-        "position": "1090",
-        "playerName": "Mark Lambert",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152719&show=last12m",
+        "position": "1147",
+        "playerName": "Lisa Cottenham",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=150573&show=last12m",
         "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "309",
-        "welshRankingID": 152719
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "306",
+        "welshRankingID": 150573
     },
     {
-        "position": "1091",
-        "playerName": "Richard Mann",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161005&show=last12m",
+        "position": 1351,
+        "playerName": "Dan Lewis",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176323&show=last12m",
         "county": "WAL",
-        "lastEvent": "North East Wales Spring 2019",
+        "lastEvent": "Swansea Junior Open 2019",
         "events": "1",
-        "level": "307",
-        "welshRankingID": 161005
+        "level": "306",
+        "welshRankingID": 176323
     },
     {
-        "position": 1281,
+        "position": 1352,
         "playerName": "Joshua Waring",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157973&show=last12m",
         "county": "WAL",
@@ -12820,47 +13530,27 @@
         "welshRankingID": 157973
     },
     {
-        "position": "1092",
-        "playerName": "Lisa Cottenham",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=150573&show=last12m",
+        "position": "1148",
+        "playerName": "Declan Cottrell",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161201&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "2",
-        "level": "305",
-        "welshRankingID": 150573
-    },
-    {
-        "position": "1093",
-        "playerName": "Lucy Maybury",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149641&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Llantrisant Open 2019",
+        "lastEvent": "Rhiwbina Open 2019",
         "events": "8",
-        "level": "301",
-        "welshRankingID": 149641
+        "level": "302",
+        "welshRankingID": 161201
     },
     {
-        "position": 1284,
+        "position": 1354,
         "playerName": "Simon Warwick",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=139127&show=last12m",
         "county": "WAL",
         "lastEvent": "West Glamorgan Spring 2019",
         "events": "1",
-        "level": "301",
+        "level": "302",
         "welshRankingID": 139127
     },
     {
-        "position": "1095",
-        "playerName": "Kieran Barclay",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175799&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "1",
-        "level": "298",
-        "welshRankingID": 175799
-    },
-    {
-        "position": 1286,
+        "position": 1355,
         "playerName": "Anni Martin",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161271&show=last12m",
         "county": "WAL",
@@ -12870,7 +13560,7 @@
         "welshRankingID": 161271
     },
     {
-        "position": "1096",
+        "position": 1356,
         "playerName": "Emelia Wyatt",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152813&show=last12m",
         "county": "WAL",
@@ -12880,107 +13570,97 @@
         "welshRankingID": 152813
     },
     {
-        "position": "1097",
-        "playerName": "Laura Roberts",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148483&show=last12m",
+        "position": "1149",
+        "playerName": "Mark Lambert",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152719&show=last12m",
         "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "282",
-        "welshRankingID": 148483
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "288",
+        "welshRankingID": 152719
     },
     {
-        "position": "1098",
-        "playerName": "Ian McCarthy",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=88817&show=last12m",
+        "position": "1150",
+        "playerName": "Lucy Maybury",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149641&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "2",
-        "level": "276",
-        "welshRankingID": 88817
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "10",
+        "level": "285",
+        "welshRankingID": 149641
     },
     {
-        "position": 1290,
-        "playerName": "James Greenhill",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175921&show=last12m",
+        "position": "1151",
+        "playerName": "Angharad Smith",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157417&show=last12m",
         "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "9",
+        "level": "328",
+        "welshRankingID": 157417
+    },
+    {
+        "position": "1152",
+        "playerName": "Richard Mann",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161005&show=last12m",
+        "county": "WAL",
+        "lastEvent": "North East Wales Winter 2019",
+        "events": "2",
+        "level": "327",
+        "welshRankingID": 161005
+    },
+    {
+        "position": 1361,
+        "playerName": "Kierin Barclay",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=151939&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Pembroke Winter 2018",
         "events": "1",
-        "level": "267",
-        "welshRankingID": 175921
+        "level": "321",
+        "welshRankingID": 151939
     },
     {
-        "position": "1099",
-        "playerName": "Graeme Flynn",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75355&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "4",
-        "level": "265",
-        "welshRankingID": 75355
-    },
-    {
-        "position": "1101",
+        "position": "1153",
         "playerName": "Conor Lally",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160959&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "2",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
         "level": "319",
         "welshRankingID": 160959
     },
     {
-        "position": 1293,
-        "playerName": "Poppy Snowling",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=170665&show=last12m",
-        "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "1",
-        "level": "319",
-        "welshRankingID": 170665
-    },
-    {
-        "position": "1102",
-        "playerName": "Dylan Vite",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161203&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Hirwaun Open 2019",
-        "events": "9",
-        "level": "317",
-        "welshRankingID": 161203
-    },
-    {
-        "position": "1103",
-        "playerName": "Nick Edwards",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=71842&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "2",
-        "level": "315",
-        "welshRankingID": 71842
-    },
-    {
-        "position": "1104",
+        "position": "1154",
         "playerName": "John Holiday",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=7598&show=last12m",
         "county": "WAL",
         "lastEvent": "North Wales Masters Open 2019",
         "events": "4",
-        "level": "314",
+        "level": "316",
         "welshRankingID": 7598
     },
     {
-        "position": 1297,
-        "playerName": "Dan Lewis",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176323&show=last12m",
+        "position": 1364,
+        "playerName": "Poppy Snowling",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=170665&show=last12m",
         "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "1",
-        "level": "312",
-        "welshRankingID": 176323
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "314",
+        "welshRankingID": 170665
     },
     {
-        "position": 1298,
+        "position": "1155",
+        "playerName": "Dylan Vite",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161203&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "11",
+        "level": "313",
+        "welshRankingID": 161203
+    },
+    {
+        "position": "1156",
         "playerName": "Luke Morgan",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=89887&show=last12m",
         "county": "WAL",
@@ -12990,27 +13670,27 @@
         "welshRankingID": 89887
     },
     {
-        "position": "1106",
-        "playerName": "Mark Lambert",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152719&show=last12m",
+        "position": "1157",
+        "playerName": "Lisa Cottenham",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=150573&show=last12m",
         "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "309",
-        "welshRankingID": 152719
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "306",
+        "welshRankingID": 150573
     },
     {
-        "position": "1107",
-        "playerName": "Richard Mann",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161005&show=last12m",
+        "position": 1368,
+        "playerName": "Dan Lewis",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176323&show=last12m",
         "county": "WAL",
-        "lastEvent": "North East Wales Spring 2019",
+        "lastEvent": "Swansea Junior Open 2019",
         "events": "1",
-        "level": "307",
-        "welshRankingID": 161005
+        "level": "306",
+        "welshRankingID": 176323
     },
     {
-        "position": 1301,
+        "position": 1369,
         "playerName": "Joshua Waring",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157973&show=last12m",
         "county": "WAL",
@@ -13020,47 +13700,27 @@
         "welshRankingID": 157973
     },
     {
-        "position": "1108",
-        "playerName": "Lisa Cottenham",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=150573&show=last12m",
+        "position": "1158",
+        "playerName": "Declan Cottrell",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161201&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "2",
-        "level": "305",
-        "welshRankingID": 150573
-    },
-    {
-        "position": "1109",
-        "playerName": "Lucy Maybury",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149641&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Llantrisant Open 2019",
+        "lastEvent": "Rhiwbina Open 2019",
         "events": "8",
-        "level": "301",
-        "welshRankingID": 149641
+        "level": "302",
+        "welshRankingID": 161201
     },
     {
-        "position": 1304,
+        "position": 1371,
         "playerName": "Simon Warwick",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=139127&show=last12m",
         "county": "WAL",
         "lastEvent": "West Glamorgan Spring 2019",
         "events": "1",
-        "level": "301",
+        "level": "302",
         "welshRankingID": 139127
     },
     {
-        "position": "1111",
-        "playerName": "Kieran Barclay",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175799&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "1",
-        "level": "298",
-        "welshRankingID": 175799
-    },
-    {
-        "position": 1306,
+        "position": 1372,
         "playerName": "Anni Martin",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161271&show=last12m",
         "county": "WAL",
@@ -13070,7 +13730,7 @@
         "welshRankingID": 161271
     },
     {
-        "position": "1112",
+        "position": 1373,
         "playerName": "Emelia Wyatt",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152813&show=last12m",
         "county": "WAL",
@@ -13080,27 +13740,77 @@
         "welshRankingID": 152813
     },
     {
-        "position": "1113",
+        "position": "1159",
+        "playerName": "Mark Lambert",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152719&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "288",
+        "welshRankingID": 152719
+    },
+    {
+        "position": "1160",
+        "playerName": "Lucy Maybury",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=149641&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "10",
+        "level": "285",
+        "welshRankingID": 149641
+    },
+    {
+        "position": 1376,
+        "playerName": "Jamie Tait",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=187493&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "1",
+        "level": "285",
+        "welshRankingID": 187493
+    },
+    {
+        "position": "1162",
         "playerName": "Laura Roberts",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=148483&show=last12m",
         "county": "WAL",
         "lastEvent": "Eryri Spring 2019",
         "events": "2",
-        "level": "282",
+        "level": "281",
         "welshRankingID": 148483
     },
     {
-        "position": "1114",
+        "position": "1163",
         "playerName": "Ian McCarthy",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=88817&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "2",
-        "level": "276",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "279",
         "welshRankingID": 88817
     },
     {
-        "position": 1310,
+        "position": "1164",
+        "playerName": "Kerwin Henley",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72109&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "275",
+        "welshRankingID": 72109
+    },
+    {
+        "position": 1380,
+        "playerName": "Sam Decker-Thomas",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=187367&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "1",
+        "level": "272",
+        "welshRankingID": 187367
+    },
+    {
+        "position": 1381,
         "playerName": "James Greenhill",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=175921&show=last12m",
         "county": "WAL",
@@ -13110,17 +13820,17 @@
         "welshRankingID": 175921
     },
     {
-        "position": "1115",
-        "playerName": "Graeme Flynn",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75355&show=last12m",
+        "position": "1165",
+        "playerName": "Brian Scott",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=134964&show=last12m",
         "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "4",
+        "lastEvent": "Gwent Spring 2019",
+        "events": "2",
         "level": "265",
-        "welshRankingID": 75355
+        "welshRankingID": 134964
     },
     {
-        "position": "1116",
+        "position": "1166",
         "playerName": "Lisa Thomas",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=134113&show=last12m",
         "county": "WAL",
@@ -13130,17 +13840,7 @@
         "welshRankingID": 134113
     },
     {
-        "position": 1313,
-        "playerName": "Brian Scott",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=134964&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Gwent Spring 2019",
-        "events": "2",
-        "level": "264",
-        "welshRankingID": 134964
-    },
-    {
-        "position": 1314,
+        "position": 1384,
         "playerName": "James Leighton",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=154721&show=last12m",
         "county": "WAL",
@@ -13150,27 +13850,27 @@
         "welshRankingID": 154721
     },
     {
-        "position": "1118",
-        "playerName": "Kerwin Henley",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72109&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "263",
-        "welshRankingID": 72109
-    },
-    {
-        "position": 1316,
+        "position": 1385,
         "playerName": "Dave Bushell",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70823&show=last12m",
         "county": "WAL",
         "lastEvent": "North East Wales Winter 2018",
         "events": "1",
-        "level": "262",
+        "level": "263",
         "welshRankingID": 70823
     },
     {
-        "position": 1317,
+        "position": "1167",
+        "playerName": "Jess Fox",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=137797&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "258",
+        "welshRankingID": 137797
+    },
+    {
+        "position": 1387,
         "playerName": "James Gambs",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=158111&show=last12m",
         "county": "WAL",
@@ -13180,37 +13880,57 @@
         "welshRankingID": 158111
     },
     {
-        "position": 1318,
+        "position": "1168",
+        "playerName": "Cian Gattridge",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=187013&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Mid Glamorgan Winter 2019",
+        "events": "1",
+        "level": "255",
+        "welshRankingID": 187013
+    },
+    {
+        "position": 1389,
+        "playerName": "Adam Karshe",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=190807&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "1",
+        "level": "254",
+        "welshRankingID": 190807
+    },
+    {
+        "position": 1390,
+        "playerName": "Scott Lawrence",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=83551&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Spring 2019",
+        "events": "1",
+        "level": "248",
+        "welshRankingID": 83551
+    },
+    {
+        "position": "1169",
+        "playerName": "Graeme Flynn",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=75355&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "5",
+        "level": "246",
+        "welshRankingID": 75355
+    },
+    {
+        "position": "1170",
         "playerName": "David Hughes",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=154583&show=last12m",
         "county": "WAL",
-        "lastEvent": "North East Wales Winter 2018",
-        "events": "1",
-        "level": "254",
+        "lastEvent": "North East Wales Winter 2019",
+        "events": "2",
+        "level": "240",
         "welshRankingID": 154583
     },
     {
-        "position": "1119",
-        "playerName": "Gerald Davies",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157201&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Abergavenny Handicap Summer",
-        "events": "3",
-        "level": "245",
-        "welshRankingID": 157201
-    },
-    {
-        "position": "1120",
-        "playerName": "Declan Cottrell",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161201&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "6",
-        "level": "241",
-        "welshRankingID": 161201
-    },
-    {
-        "position": 1321,
+        "position": 1393,
         "playerName": "Simon Taylor",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=142161&show=last12m",
         "county": "WAL",
@@ -13220,7 +13940,7 @@
         "welshRankingID": 142161
     },
     {
-        "position": "1121",
+        "position": "1171",
         "playerName": "Robbie Anandos",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=155751&show=last12m",
         "county": "WAL",
@@ -13230,47 +13950,57 @@
         "welshRankingID": 155751
     },
     {
-        "position": 1323,
-        "playerName": "Owain Griffiths",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176527&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "1",
-        "level": "230",
-        "welshRankingID": 176527
-    },
-    {
-        "position": 1324,
+        "position": "1172",
         "playerName": "Meirion Evans",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69378&show=last12m",
         "county": "WAL",
         "lastEvent": "North East Wales Spring 2019",
         "events": "2",
-        "level": "230",
+        "level": "231",
         "welshRankingID": 69378
     },
     {
-        "position": 1325,
-        "playerName": "Jess Fox",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=137797&show=last12m",
+        "position": 1396,
+        "playerName": "Owain Griffiths",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176527&show=last12m",
         "county": "WAL",
         "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "219",
-        "welshRankingID": 137797
+        "events": "1",
+        "level": "229",
+        "welshRankingID": 176527
     },
     {
-        "position": 1326,
+        "position": 1397,
+        "playerName": "Anthony Scaccia",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176541&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Ross Scaccia Open 2019",
+        "events": "1",
+        "level": "223",
+        "welshRankingID": 176541
+    },
+    {
+        "position": 1398,
+        "playerName": "Stefano Gallo",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176545&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Ross Scaccia Open 2019",
+        "events": "1",
+        "level": "212",
+        "welshRankingID": 176545
+    },
+    {
+        "position": 1399,
         "playerName": "Jack Williams",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=127361&show=last12m",
         "county": "WAL",
         "lastEvent": "Intercounty Junior 2018/19",
-        "events": "2",
+        "events": "1",
         "level": "207",
         "welshRankingID": 127361
     },
     {
-        "position": 1327,
+        "position": 1400,
         "playerName": "Thomas James Campden",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=174355&show=last12m",
         "county": "WAL",
@@ -13280,17 +14010,7 @@
         "welshRankingID": 174355
     },
     {
-        "position": "1123",
-        "playerName": "Damon A Torkamani",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176215&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "1",
-        "level": "198",
-        "welshRankingID": 176215
-    },
-    {
-        "position": 1329,
+        "position": 1401,
         "playerName": "Elise Richards",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152961&show=last12m",
         "county": "WAL",
@@ -13300,17 +14020,27 @@
         "welshRankingID": 152961
     },
     {
-        "position": "1124",
+        "position": "1173",
         "playerName": "Charlie Meredydd",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70245&show=last12m",
         "county": "WAL",
         "lastEvent": "Pembrokeshire Spring 2019",
         "events": "1",
-        "level": "196",
+        "level": "197",
         "welshRankingID": 70245
     },
     {
-        "position": 1331,
+        "position": "1174",
+        "playerName": "Damon A Torkamani",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176215&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Swansea Junior Open 2019",
+        "events": "1",
+        "level": "193",
+        "welshRankingID": 176215
+    },
+    {
+        "position": 1404,
         "playerName": "Owain Morgan",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=152957&show=last12m",
         "county": "WAL",
@@ -13320,7 +14050,7 @@
         "welshRankingID": 152957
     },
     {
-        "position": "1125",
+        "position": "1175",
         "playerName": "Angie Byrne",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=129197&show=last12m",
         "county": "WAL",
@@ -13330,57 +14060,17 @@
         "welshRankingID": 129197
     },
     {
-        "position": "1126",
-        "playerName": "Stefano Gallo",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176545&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Ross Scaccia Open 2019",
-        "events": "1",
-        "level": "186",
-        "welshRankingID": 176545
-    },
-    {
-        "position": 1334,
-        "playerName": "Archie Knight",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176217&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "1",
-        "level": "186",
-        "welshRankingID": 176217
-    },
-    {
-        "position": 1335,
-        "playerName": "Glinys Meredydd",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70733&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Pembrokeshire Spring 2019",
-        "events": "2",
-        "level": "186",
-        "welshRankingID": 70733
-    },
-    {
-        "position": 1336,
+        "position": 1406,
         "playerName": "Barbara Henshaw",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=59279&show=last12m",
         "county": "WAL",
         "lastEvent": "Cheshire Winter 2018/19",
         "events": "1",
-        "level": "186",
+        "level": "188",
         "welshRankingID": 59279
     },
     {
-        "position": "1129",
-        "playerName": "Nia Seren Thomas",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176575&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Bronze E National Centre 23",
-        "events": "13",
-        "level": "181",
-        "welshRankingID": 176575
-    },
-    {
-        "position": 1338,
+        "position": "1176",
         "playerName": "Tom Campden",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176205&show=last12m",
         "county": "WAL",
@@ -13390,17 +14080,17 @@
         "welshRankingID": 176205
     },
     {
-        "position": "1131",
-        "playerName": "Brenda Wills",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=134110&show=last12m",
+        "position": 1408,
+        "playerName": "Reuben James Davis",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=182021&show=last12m",
         "county": "WAL",
-        "lastEvent": "Karakal Welsh National Closed Ch...",
-        "events": "2",
+        "lastEvent": "Rhiwbina Open 2019",
+        "events": "10",
         "level": "177",
-        "welshRankingID": 134110
+        "welshRankingID": 182021
     },
     {
-        "position": 1340,
+        "position": 1409,
         "playerName": "Matt Peplow",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172531&show=last12m",
         "county": "WAL",
@@ -13410,7 +14100,27 @@
         "welshRankingID": 172531
     },
     {
-        "position": "1132",
+        "position": 1410,
+        "playerName": "Llyr Jones",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=141145&show=last12m",
+        "county": "WAL",
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "2",
+        "level": "176",
+        "welshRankingID": 141145
+    },
+    {
+        "position": 1411,
+        "playerName": "Archie Knight",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176217&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Swansea Junior Open 2019",
+        "events": "1",
+        "level": "176",
+        "welshRankingID": 176217
+    },
+    {
+        "position": 1412,
         "playerName": "Eleanor Soames",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160511&show=last12m",
         "county": "WAL",
@@ -13420,7 +14130,7 @@
         "welshRankingID": 160511
     },
     {
-        "position": "1133",
+        "position": "1179",
         "playerName": "Mari Llywelyn",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=170667&show=last12m",
         "county": "WAL",
@@ -13430,7 +14140,7 @@
         "welshRankingID": 170667
     },
     {
-        "position": 1343,
+        "position": 1414,
         "playerName": "George Trillo",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153823&show=last12m",
         "county": "WAL",
@@ -13440,57 +14150,47 @@
         "welshRankingID": 153823
     },
     {
-        "position": "1134",
+        "position": "1180",
+        "playerName": "Nia Thomas",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176575&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "14",
+        "level": "171",
+        "welshRankingID": 176575
+    },
+    {
+        "position": "1181",
         "playerName": "Jamie McKinnon",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=156917&show=last12m",
         "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "171",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "167",
         "welshRankingID": 156917
     },
     {
-        "position": 1345,
+        "position": "1182",
+        "playerName": "Glinys Meredydd",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70733&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "3",
+        "level": "160",
+        "welshRankingID": 70733
+    },
+    {
+        "position": 1418,
         "playerName": "Rhys Sommerville",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176207&show=last12m",
         "county": "WAL",
         "lastEvent": "Swansea Junior Open 2019",
         "events": "1",
-        "level": "171",
+        "level": "159",
         "welshRankingID": 176207
     },
     {
-        "position": "1136",
-        "playerName": "Esther Jackson",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160459&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Cardiff Medics",
-        "events": "2",
-        "level": "162",
-        "welshRankingID": 160459
-    },
-    {
-        "position": "1137",
-        "playerName": "Reuben James Davis",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176778&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Silver Event Lee On Solent 4",
-        "events": "9",
-        "level": "160",
-        "welshRankingID": 176778
-    },
-    {
-        "position": "1138",
-        "playerName": "Ieuan John",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176209&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "1",
-        "level": "158",
-        "welshRankingID": 176209
-    },
-    {
-        "position": 1349,
+        "position": "1183",
         "playerName": "Ben Petit",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=96571&show=last12m",
         "county": "WAL",
@@ -13500,17 +14200,17 @@
         "welshRankingID": 96571
     },
     {
-        "position": "1140",
+        "position": "1184",
         "playerName": "Martin Geyer",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=154723&show=last12m",
         "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "3",
+        "lastEvent": "Narberth Boxes",
+        "events": "4",
         "level": "157",
         "welshRankingID": 154723
     },
     {
-        "position": 1351,
+        "position": 1421,
         "playerName": "Mike Hamlyn",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=139811&show=last12m",
         "county": "WAL",
@@ -13520,7 +14220,37 @@
         "welshRankingID": 139811
     },
     {
-        "position": "1141",
+        "position": "1185",
+        "playerName": "Ieuan John",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176209&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Swansea Junior Open 2019",
+        "events": "1",
+        "level": "154",
+        "welshRankingID": 176209
+    },
+    {
+        "position": "1186",
+        "playerName": "Nicole Saini",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160455&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "150",
+        "welshRankingID": 160455
+    },
+    {
+        "position": 1424,
+        "playerName": "Lucy Doxsey",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=156203&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Rhiwbina Open 2019",
+        "events": "11",
+        "level": "150",
+        "welshRankingID": 156203
+    },
+    {
+        "position": 1425,
         "playerName": "Izzie Bryant",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153431&show=last12m",
         "county": "WAL",
@@ -13530,7 +14260,7 @@
         "welshRankingID": 153431
     },
     {
-        "position": "1142",
+        "position": "1189",
         "playerName": "Jack Hughes",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153705&show=last12m",
         "county": "WAL",
@@ -13540,87 +14270,67 @@
         "welshRankingID": 153705
     },
     {
-        "position": 1354,
-        "playerName": "Ryan Randall",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=147099&show=last12m",
+        "position": "1190",
+        "playerName": "Esther Jackson",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160459&show=last12m",
         "county": "WAL",
-        "lastEvent": "Hirwaun Open 2018",
-        "events": "1",
-        "level": "145",
-        "welshRankingID": 147099
-    },
-    {
-        "position": "1143",
-        "playerName": "Nicole Saini",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160455&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Cardiff Medics",
-        "events": "2",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
         "level": "144",
-        "welshRankingID": 160455
+        "welshRankingID": 160459
     },
     {
-        "position": "1144",
-        "playerName": "Dylan James",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153433&show=last12m",
+        "position": 1428,
+        "playerName": "Archie Davies-Clarke",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=73819&show=last12m",
         "county": "WAL",
-        "lastEvent": "Powys Junior Open 2018",
+        "lastEvent": "Rhiwbina Open 2019",
+        "events": "5",
+        "level": "144",
+        "welshRankingID": 73819
+    },
+    {
+        "position": 1429,
+        "playerName": "Matt Peplow",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=172531&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Spring 2019",
         "events": "1",
-        "level": "143",
-        "welshRankingID": 153433
+        "level": "177",
+        "welshRankingID": 172531
     },
     {
-        "position": "1145",
-        "playerName": "Kieran Seavers",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153695&show=last12m",
+        "position": 1430,
+        "playerName": "Llyr Jones",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=141145&show=last12m",
         "county": "WAL",
-        "lastEvent": "North Mid Wales Junior League 2018",
-        "events": "1",
-        "level": "138",
-        "welshRankingID": 153695
+        "lastEvent": "West Glamorgan Winter 2019",
+        "events": "2",
+        "level": "176",
+        "welshRankingID": 141145
     },
     {
-        "position": 1358,
-        "playerName": "Joe Morris",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=138947&show=last12m",
-        "county": "WAL",
-        "lastEvent": "North Mid Wales Junior League 2018",
-        "events": "4",
-        "level": "138",
-        "welshRankingID": 138947
-    },
-    {
-        "position": "1147",
-        "playerName": "Finn Gaca",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153437&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Powys Junior Open 2018",
-        "events": "1",
-        "level": "136",
-        "welshRankingID": 153437
-    },
-    {
-        "position": 1360,
-        "playerName": "Owain Partington-Meek",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=139267&show=last12m",
-        "county": "WAL",
-        "lastEvent": "North Mid Wales Junior League 2018",
-        "events": "1",
-        "level": "134",
-        "welshRankingID": 139267
-    },
-    {
-        "position": 1361,
-        "playerName": "Patrick Els",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=146593&show=last12m",
+        "position": 1431,
+        "playerName": "Archie Knight",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176217&show=last12m",
         "county": "WAL",
         "lastEvent": "Swansea Junior Open 2019",
         "events": "1",
-        "level": "119",
-        "welshRankingID": 146593
+        "level": "176",
+        "welshRankingID": 176217
     },
     {
-        "position": "1151",
+        "position": 1432,
+        "playerName": "Eleanor Soames",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160511&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Wales Glamorgan Spring 2019",
+        "events": "1",
+        "level": "176",
+        "welshRankingID": 160511
+    },
+    {
+        "position": "1203",
         "playerName": "Mari Llywelyn",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=170667&show=last12m",
         "county": "WAL",
@@ -13630,7 +14340,7 @@
         "welshRankingID": 170667
     },
     {
-        "position": 1363,
+        "position": 1434,
         "playerName": "George Trillo",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153823&show=last12m",
         "county": "WAL",
@@ -13640,57 +14350,47 @@
         "welshRankingID": 153823
     },
     {
-        "position": "1152",
+        "position": "1204",
+        "playerName": "Nia Thomas",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176575&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "14",
+        "level": "171",
+        "welshRankingID": 176575
+    },
+    {
+        "position": "1205",
         "playerName": "Jamie McKinnon",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=156917&show=last12m",
         "county": "WAL",
-        "lastEvent": "Eryri Spring 2019",
-        "events": "2",
-        "level": "171",
+        "lastEvent": "Eryri Winter 2019",
+        "events": "3",
+        "level": "167",
         "welshRankingID": 156917
     },
     {
-        "position": 1365,
+        "position": "1206",
+        "playerName": "Glinys Meredydd",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=70733&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "3",
+        "level": "160",
+        "welshRankingID": 70733
+    },
+    {
+        "position": 1438,
         "playerName": "Rhys Sommerville",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176207&show=last12m",
         "county": "WAL",
         "lastEvent": "Swansea Junior Open 2019",
         "events": "1",
-        "level": "171",
+        "level": "159",
         "welshRankingID": 176207
     },
     {
-        "position": "1154",
-        "playerName": "Esther Jackson",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160459&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Cardiff Medics",
-        "events": "2",
-        "level": "162",
-        "welshRankingID": 160459
-    },
-    {
-        "position": "1155",
-        "playerName": "Reuben James Davis",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176778&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Silver Event Lee On Solent 4",
-        "events": "9",
-        "level": "160",
-        "welshRankingID": 176778
-    },
-    {
-        "position": "1156",
-        "playerName": "Ieuan John",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176209&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "1",
-        "level": "158",
-        "welshRankingID": 176209
-    },
-    {
-        "position": 1369,
+        "position": "1207",
         "playerName": "Ben Petit",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=96571&show=last12m",
         "county": "WAL",
@@ -13700,17 +14400,17 @@
         "welshRankingID": 96571
     },
     {
-        "position": "1158",
+        "position": "1208",
         "playerName": "Martin Geyer",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=154723&show=last12m",
         "county": "WAL",
-        "lastEvent": "Narberth Ladders",
-        "events": "3",
+        "lastEvent": "Narberth Boxes",
+        "events": "4",
         "level": "157",
         "welshRankingID": 154723
     },
     {
-        "position": 1371,
+        "position": 1441,
         "playerName": "Mike Hamlyn",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=139811&show=last12m",
         "county": "WAL",
@@ -13720,7 +14420,37 @@
         "welshRankingID": 139811
     },
     {
-        "position": "1159",
+        "position": "1209",
+        "playerName": "Ieuan John",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176209&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Swansea Junior Open 2019",
+        "events": "1",
+        "level": "154",
+        "welshRankingID": 176209
+    },
+    {
+        "position": "1210",
+        "playerName": "Nicole Saini",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160455&show=last12m",
+        "county": "WAL",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
+        "level": "150",
+        "welshRankingID": 160455
+    },
+    {
+        "position": 1444,
+        "playerName": "Lucy Doxsey",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=156203&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Rhiwbina Open 2019",
+        "events": "11",
+        "level": "150",
+        "welshRankingID": 156203
+    },
+    {
+        "position": 1445,
         "playerName": "Izzie Bryant",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153431&show=last12m",
         "county": "WAL",
@@ -13730,7 +14460,7 @@
         "welshRankingID": 153431
     },
     {
-        "position": "1160",
+        "position": "1213",
         "playerName": "Jack Hughes",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153705&show=last12m",
         "county": "WAL",
@@ -13740,27 +14470,27 @@
         "welshRankingID": 153705
     },
     {
-        "position": 1374,
-        "playerName": "Ryan Randall",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=147099&show=last12m",
+        "position": "1214",
+        "playerName": "Esther Jackson",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160459&show=last12m",
         "county": "WAL",
-        "lastEvent": "Hirwaun Open 2018",
-        "events": "1",
-        "level": "145",
-        "welshRankingID": 147099
-    },
-    {
-        "position": "1161",
-        "playerName": "Nicole Saini",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160455&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Cardiff Medics",
-        "events": "2",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "3",
         "level": "144",
-        "welshRankingID": 160455
+        "welshRankingID": 160459
     },
     {
-        "position": "1162",
+        "position": 1448,
+        "playerName": "Archie Davies-Clarke",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=73819&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Rhiwbina Open 2019",
+        "events": "5",
+        "level": "144",
+        "welshRankingID": 73819
+    },
+    {
+        "position": 1449,
         "playerName": "Dylan James",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153433&show=last12m",
         "county": "WAL",
@@ -13770,7 +14500,17 @@
         "welshRankingID": 153433
     },
     {
-        "position": "1163",
+        "position": "1216",
+        "playerName": "Evan Hodge",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161205&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Gwent Winter 2019",
+        "events": "8",
+        "level": "140",
+        "welshRankingID": 161205
+    },
+    {
+        "position": "1217",
         "playerName": "Kieran Seavers",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153695&show=last12m",
         "county": "WAL",
@@ -13780,17 +14520,7 @@
         "welshRankingID": 153695
     },
     {
-        "position": 1378,
-        "playerName": "Joe Morris",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=138947&show=last12m",
-        "county": "WAL",
-        "lastEvent": "North Mid Wales Junior League 2018",
-        "events": "4",
-        "level": "138",
-        "welshRankingID": 138947
-    },
-    {
-        "position": "1165",
+        "position": 1452,
         "playerName": "Finn Gaca",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153437&show=last12m",
         "county": "WAL",
@@ -13800,37 +14530,37 @@
         "welshRankingID": 153437
     },
     {
-        "position": 1380,
-        "playerName": "Owain Partington-Meek",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=139267&show=last12m",
+        "position": 1453,
+        "playerName": "Steve Coleman",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=190803&show=last12m",
         "county": "WAL",
-        "lastEvent": "North Mid Wales Junior League 2018",
+        "lastEvent": "West Glamorgan Winter 2019",
         "events": "1",
-        "level": "134",
-        "welshRankingID": 139267
+        "level": "133",
+        "welshRankingID": 190803
     },
     {
-        "position": 1381,
-        "playerName": "Patrick Els",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=146593&show=last12m",
+        "position": "1218",
+        "playerName": "Joe Morris",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=138947&show=last12m",
         "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "1",
-        "level": "119",
-        "welshRankingID": 146593
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "5",
+        "level": "124",
+        "welshRankingID": 138947
     },
     {
-        "position": "1166",
+        "position": "1219",
         "playerName": "Zac Jarvis",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=147749&show=last12m",
         "county": "WAL",
         "lastEvent": "North Mid Wales Junior League 2018",
-        "events": "3",
+        "events": "2",
         "level": "112",
         "welshRankingID": 147749
     },
     {
-        "position": 1383,
+        "position": 1456,
         "playerName": "Lewis Sheppard",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160343&show=last12m",
         "county": "WAL",
@@ -13840,17 +14570,7 @@
         "welshRankingID": 160343
     },
     {
-        "position": "1167",
-        "playerName": "Archie Davies-Clarke",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=73819&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "3",
-        "level": "110",
-        "welshRankingID": 73819
-    },
-    {
-        "position": "1168",
+        "position": "1220",
         "playerName": "Rhys Llewellyn",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153421&show=last12m",
         "county": "WAL",
@@ -13860,17 +14580,27 @@
         "welshRankingID": 153421
     },
     {
-        "position": "1169",
+        "position": "1221",
+        "playerName": "Patrick Els",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=146593&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "2",
+        "level": "107",
+        "welshRankingID": 146593
+    },
+    {
+        "position": "1222",
         "playerName": "Ian Charlesworth",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=69693&show=last12m",
         "county": "WAL",
         "lastEvent": "North East Wales Spring 2019",
         "events": "3",
-        "level": "105",
+        "level": "106",
         "welshRankingID": 69693
     },
     {
-        "position": "1170",
+        "position": 1460,
         "playerName": "Poppy Green",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153689&show=last12m",
         "county": "WAL",
@@ -13880,7 +14610,7 @@
         "welshRankingID": 153689
     },
     {
-        "position": "1171",
+        "position": "1223",
         "playerName": "Owain Meek",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=177703&show=last12m",
         "county": "WAL",
@@ -13890,7 +14620,7 @@
         "welshRankingID": 177703
     },
     {
-        "position": 1389,
+        "position": 1462,
         "playerName": "Lani Petit",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153449&show=last12m",
         "county": "WAL",
@@ -13900,47 +14630,37 @@
         "welshRankingID": 153449
     },
     {
-        "position": "1172",
+        "position": "1224",
         "playerName": "Annabelle Hodson",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153415&show=last12m",
         "county": "WAL",
-        "lastEvent": "South Wales Glamorgan Spring 2019",
-        "events": "3",
+        "lastEvent": "South Glamorgan Winter 2019",
+        "events": "4",
         "level": "98",
         "welshRankingID": 153415
     },
     {
-        "position": "1173",
+        "position": "1225",
         "playerName": "Chloe Marshman",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=72979&show=last12m",
         "county": "WAL",
-        "lastEvent": "Glos East Junior Open",
+        "lastEvent": "Karakal Welsh Junior Open 2019",
         "events": "6",
         "level": "97",
         "welshRankingID": 72979
     },
     {
-        "position": "1174",
-        "playerName": "Lucy Doxsey",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=156203&show=last12m",
+        "position": "1226",
+        "playerName": "Osian Williams",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160345&show=last12m",
         "county": "WAL",
-        "lastEvent": "Hirwaun Open 2019",
-        "events": "10",
-        "level": "95",
-        "welshRankingID": 156203
+        "lastEvent": "Pembrokeshire Winter 2019",
+        "events": "4",
+        "level": "93",
+        "welshRankingID": 160345
     },
     {
-        "position": "1175",
-        "playerName": "Evan Hodge",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=161205&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "6",
-        "level": "90",
-        "welshRankingID": 161205
-    },
-    {
-        "position": 1394,
+        "position": "1227",
         "playerName": "William Roberts",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153701&show=last12m",
         "county": "WAL",
@@ -13950,7 +14670,7 @@
         "welshRankingID": 153701
     },
     {
-        "position": 1395,
+        "position": 1467,
         "playerName": "Max Short",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=135293&show=last12m",
         "county": "WAL",
@@ -13960,7 +14680,7 @@
         "welshRankingID": 135293
     },
     {
-        "position": 1396,
+        "position": 1468,
         "playerName": "Lysse Jarvis",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153447&show=last12m",
         "county": "WAL",
@@ -13970,17 +14690,7 @@
         "welshRankingID": 153447
     },
     {
-        "position": "1177",
-        "playerName": "Osian Williams",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160345&show=last12m",
-        "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "3",
-        "level": "80",
-        "welshRankingID": 160345
-    },
-    {
-        "position": 1398,
+        "position": 1469,
         "playerName": "Morgan Wilson",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153423&show=last12m",
         "county": "WAL",
@@ -13990,7 +14700,7 @@
         "welshRankingID": 153423
     },
     {
-        "position": 1399,
+        "position": 1470,
         "playerName": "Izzie Rees",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160359&show=last12m",
         "county": "WAL",
@@ -14000,7 +14710,7 @@
         "welshRankingID": 160359
     },
     {
-        "position": "1178",
+        "position": "1228",
         "playerName": "Timothy Chadwick",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176219&show=last12m",
         "county": "WAL",
@@ -14010,7 +14720,7 @@
         "welshRankingID": 176219
     },
     {
-        "position": 1401,
+        "position": 1472,
         "playerName": "Harrison Bridgewater",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153417&show=last12m",
         "county": "WAL",
@@ -14020,7 +14730,7 @@
         "welshRankingID": 153417
     },
     {
-        "position": 1402,
+        "position": 1473,
         "playerName": "Isobel Rees",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=157291&show=last12m",
         "county": "WAL",
@@ -14030,7 +14740,7 @@
         "welshRankingID": 157291
     },
     {
-        "position": "1179",
+        "position": "1229",
         "playerName": "Millie Campden",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153439&show=last12m",
         "county": "WAL",
@@ -14040,7 +14750,7 @@
         "welshRankingID": 153439
     },
     {
-        "position": "1180",
+        "position": "1230",
         "playerName": "Nia Lincoln",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153445&show=last12m",
         "county": "WAL",
@@ -14050,17 +14760,17 @@
         "welshRankingID": 153445
     },
     {
-        "position": "1181",
-        "playerName": "Will McGuiness",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160349&show=last12m",
+        "position": "1231",
+        "playerName": "William McGuinness",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=182025&show=last12m",
         "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "2",
-        "level": "40",
-        "welshRankingID": 160349
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "3",
+        "level": "41",
+        "welshRankingID": 182025
     },
     {
-        "position": 1406,
+        "position": "1232",
         "playerName": "Daniel A Torkamani",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176211&show=last12m",
         "county": "WAL",
@@ -14070,7 +14780,7 @@
         "welshRankingID": 176211
     },
     {
-        "position": 1407,
+        "position": 1478,
         "playerName": "Jake Carter",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153429&show=last12m",
         "county": "WAL",
@@ -14080,7 +14790,7 @@
         "welshRankingID": 153429
     },
     {
-        "position": 1408,
+        "position": 1479,
         "playerName": "Jorja Kelly",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153443&show=last12m",
         "county": "WAL",
@@ -14090,17 +14800,17 @@
         "welshRankingID": 153443
     },
     {
-        "position": "1183",
-        "playerName": "Madalena Sidoli",
-        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=160357&show=last12m",
+        "position": "1233",
+        "playerName": "Madelena Sidoli",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=182015&show=last12m",
         "county": "WAL",
-        "lastEvent": "Swansea Junior Open 2019",
-        "events": "3",
-        "level": "26",
-        "welshRankingID": 160357
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "4",
+        "level": "28",
+        "welshRankingID": 182015
     },
     {
-        "position": "1184",
+        "position": 1481,
         "playerName": "Logan McSheehy",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176223&show=last12m",
         "county": "WAL",
@@ -14110,7 +14820,47 @@
         "welshRankingID": 176223
     },
     {
-        "position": "1185",
+        "position": "1234",
+        "playerName": "Rebecca Quinn",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176213&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Swansea Junior Open 2019",
+        "events": "1",
+        "level": "14",
+        "welshRankingID": 176213
+    },
+    {
+        "position": 1483,
+        "playerName": "Jorja Kelly",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=153443&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Powys Junior Open 2018",
+        "events": "1",
+        "level": "31",
+        "welshRankingID": 153443
+    },
+    {
+        "position": "1251",
+        "playerName": "Madelena Sidoli",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=182015&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Karakal Welsh Junior Open 2019",
+        "events": "4",
+        "level": "28",
+        "welshRankingID": 182015
+    },
+    {
+        "position": 1485,
+        "playerName": "Logan McSheehy",
+        "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176223&show=last12m",
+        "county": "WAL",
+        "lastEvent": "Swansea Junior Open 2019",
+        "events": "1",
+        "level": "25",
+        "welshRankingID": 176223
+    },
+    {
+        "position": "1252",
         "playerName": "Rebecca Quinn",
         "playerHistoryUrl": "http://www.wales.squashlevels.com/player_detail.php?player=176213&show=last12m",
         "county": "WAL",
