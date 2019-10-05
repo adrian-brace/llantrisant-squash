@@ -28,7 +28,8 @@
 				<Instagram>https://instagram.com/llantrisantsquash</Instagram>
 			</Contacts>
 			<Sponsors>
-				<Sponsor name="Jordan Civils" url="http://www.jordancivilsltd.co.uk/" icon="sponsor_jordan_civils"/>
+				<Sponsor name="Stone Supplies" url="https://www.stonesuppliesltd.co.uk/" icon="sponsor_stone_supplies"/>
+				<!--<Sponsor name="Jordan Civils" url="http://www.jordancivilsltd.co.uk/" icon="sponsor_jordan_civils"/>-->
 				<Sponsor name="Merch Asylum" url="http://www.merchasylum.co.uk/" icon="sponsor_merch_asylum"/>
 				<!--<Sponsor name="Greenaway Autos" url="http://www.greenawayautos.co.uk/" icon="sponsor_greenaway_autos"/>-->
 				<Sponsor name="Oil 4 Wales" url="https://www.oil4wales.co.uk/" icon="sponsor_oil_for_wales"/>

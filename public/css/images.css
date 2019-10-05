@@ -280,6 +280,18 @@ span.down {
 	height: 40px;
 }
 
+.sponsor_stone_supplies {
+	background: url("../../public/images/sponsor_logo_stone_supplies_small.jpg");
+	width: 606px;
+	height: 98px;
+}
+
+.sponsor_stone_supplies_mini {
+	background: url("../../public/images/sponsor_logo_stone_supplies_mini.jpg");
+	width: 247px;
+	height: 40px;
+}
+
 .squashBall {
 	background: url("../../public/images/squash_ball.jpg");
 	width: 40px;
