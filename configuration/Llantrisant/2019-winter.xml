@@ -76,7 +76,7 @@
 					<!--<Player Name="Phillip Maybury"/>-->
 					<Player Name="Chay Davies-Smith" ActualTeam="D" IsCaptain="true" RefereeNumber="100385"/>
 					<Player Name="Shivam Singhal" ActualTeam="D"/>					
-					<Player Name="Steve Evans" ActualTeam="D"/>
+					<Player Name="Steve Evans" ActualTeam="D" WelshRankingID="13194"/>
 					<Player Name="Josh Llewellyn" ActualTeam="D"/>
 					<Player Name="Sam Norris" ActualTeam="D"/>
 					<!--<Player Name="Ashley Maybury"/>--> 
