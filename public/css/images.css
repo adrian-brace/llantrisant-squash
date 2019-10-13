@@ -292,6 +292,19 @@ span.down {
 	height: 40px;
 }
 
+.sporty_hq_banner_small {
+	margin: 0 auto;
+	background: url("../../public/images/sporty_hq_banner_small.png");
+	width: 289px;
+	height: 100px;
+}
+
+.sportyHQ {
+	background: url("../../public/images/sporty_hq_mini.png");
+	width: 40px;
+	height: 40px;
+}
+
 .squashBall {
 	background: url("../../public/images/squash_ball.jpg");
 	width: 40px;

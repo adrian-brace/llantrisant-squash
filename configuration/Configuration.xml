@@ -22,6 +22,9 @@
 		<DivisionStandingsURL>showdivision?divisionid=%s</DivisionStandingsURL>
 		<WelshRankingsURL>http://www.wales.squashlevels.com/players.php?&amp;all=&amp;confidence=1&amp;limit_confidence=0&amp;wales=&amp;start=%s</WelshRankingsURL>
 		<SubmitLeagueResultsURL>http://walessquash.countyleagues.co.uk/</SubmitLeagueResultsURL>
+		<SportyHQClub>https://www.sportyhq.com/club/view/Llantrisant-Squash-Racketball-Club</SportyHQClub>
+		<SportyHQSquashLadder>https://www.sportyhq.com/club/box/view/642</SportyHQSquashLadder>
+		<SportyHQRacketballLadder>https://www.sportyhq.com/club/box/view/649</SportyHQRacketballLadder>
 		<TournamentStage>OVER</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
 		<TournamentDate>21st-23rd June</TournamentDate>
 		<TournamentYear>2019</TournamentYear>

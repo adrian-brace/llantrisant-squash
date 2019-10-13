@@ -11,6 +11,20 @@
 		</table>
 	</div>
 	<div class="pageContent">
+		<table class="ladderTable">
+			<tr>
+				<td class="centredCell">
+					<p class="textParagraph"><strong class="warningMessage">PLEASE NOTE:</strong> Our <b>SQUASH LADDER</b> is in a transitional phase to an online system at: <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQSQUASHLADDER }}">SportyHQ:</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="{{ configuration.CONSTANTS.SPORTYHQSQUASHLADDER }}"><div class="sporty_hq_banner_small"><span class="noDisplay">Sporty HQ</span></div></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="pageContent">
 		<br/>
 		<strong>
 			<a class="loneAnchor" ng-show="!showRules" ng-click="showHideRules();">View Ladder Rules & Joining Instructions</a>
@@ -23,7 +37,10 @@
 				<h3>JOINING</h3>
 				<p class="textParagraph">
 					It is FREE to join the squash and racketball ladders. You do <b>not</b> need to be a club member to play on our ladders. Ladder cycles are approximately 6 weeks long depending on the time of year.
-					To join, simply write your name and telephone number on the board in the space provided on the relevant ladder sheet, at the back of the courts, down at the leisure centre, and you will be added to the bottom of the next cycle by Rowland (squash) or Ray (racketball), our voluntary ladder organizers.
+					<ul class='textParagraphList'>
+						<li class='textParagraphList'>To join the <b>Squash ladder</b> please email your <b>First Name, Surname, Email Address and Mobile number</b> to <a class="loneAnchor" href="mailto:{{club.CONTACTS.EMAIL}}">{{club.CONTACTS.EMAIL}}</a>. You will then be sent an activation link via email for <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQCLUB }}">SportyHQ</a> and you can login, find the <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQSQUASHLADDER }}">Llantrisant Squash Ladders</a> and click to formally <b>Opt In</b> to the next cycle.</li>
+						<li class='textParagraphList'>To join the <b>Racketball ladder</b> simply write your <b>name and telephone number</b> on the board in the space provided on the relevant ladder sheet, at the back of the courts, down at the leisure centre, and you will be added to the bottom of the next cycle by Ray, our voluntary ladder organizer.</li>
+					</ul>					
 				</p>
 				<h3>CONTACT NUMBERS</h3>
 				<p class="textParagraph">
@@ -40,25 +57,19 @@
 					<br/>
 					Best of 5 games. Players must agree scoring system. Generally you should play Point A Rally to 11 or 15. If no agreement then PAR to 15.
 					<br/>
+					<br/>
+					You are awarded points for playing your ladder games at 2 points per appearance.
+					<br/>
+					<br/>
 					The league points system is as follows:
 					<ul class='textParagraphList'>
-						<li class='textParagraphList'>If you win 3-0, your ladder points are 5-0</li>
-						<li class='textParagraphList'>If you win 3-1, your ladder points are 4-1</li>
-						<li class='textParagraphList'>If you win 3-2, your ladder points are 3-2</li>
-						<li class='textParagraphList'>If you lose 3-0, your ladder points are 0-5</li>
-						<li class='textParagraphList'>If you lose 3-1, your ladder points are 1-4</li>
-						<li class='textParagraphList'>If you lose 3-2, your ladder points are 2-3</li>
-						<li class='textParagraphList'>If you run out of time then both players are awarded 2½ points each, 2 ½-2 ½</li>
-					</ul>
-				</p>
-				<p class="textParagraph">
-					You are awarded points for playing your ladder games as follows:
-					<br/>
-					<ul class='textParagraphList'>
-						<li class='textParagraphList'>If you play all your ladder games, you get 8 points</li>
-						<li class='textParagraphList'>If you play three of your ladder games, you get 5 points</li>
-						<li class='textParagraphList'>If you play two your ladder games, you get 3 points</li>
-						<li class='textParagraphList'>If you play one of your ladder games, you get 1 point</li>
+						<li class='textParagraphList'>If you win 3-0, your ladder points are 7-2</li>
+						<li class='textParagraphList'>If you win 3-1, your ladder points are 6-3</li>
+						<li class='textParagraphList'>If you win 3-2, your ladder points are 5-4</li>
+						<li class='textParagraphList'>If you lose 3-0, your ladder points are 2-7</li>
+						<li class='textParagraphList'>If you lose 3-1, your ladder points are 3-6</li>
+						<li class='textParagraphList'>If you lose 3-2, your ladder points are 4-5</li>
+						<li class='textParagraphList'>If you run out of time then players are asked to replay the tie before the end of the ladder.</li>
 					</ul>
 				</p>
 				<p class="textParagraph">
@@ -68,6 +79,7 @@
 						<li class='textParagraphList'>If you finish second in your ladder you will be promoted up 1 division.</li>
 						<li class='textParagraphList'>If you finish second to last in your ladder you will be relegated down 1 division.</li>
 						<li class='textParagraphList'>If you finish last in your ladder you will be relegated down 2 divisions.</li>
+						<li class='textParagraphList'>3rd place in Division 1 will also be relegated 1 division.</li>
 					</ul>
 				</p>
 				<p class="textParagraph">

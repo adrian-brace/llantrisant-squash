@@ -3,11 +3,11 @@ homeApp.controller('LaddersController', ['$scope', '$http', '$location', 'club',
 	$scope.saveStatus = '';
 	$scope.unsavedData = false;
 	$scope.admin = $location.search()['admin'];
-	var today = new Date();
-	
+	var today = new Date();	
 	var getClub = club.getClub();
-	getClub.then(function(clubName){
-		
+
+	getClub.then(function(clubName){		
+
 		$http.get('./data_generated/ladders/'+ clubName + '/ladders.json')
 			.success(function(data) {
 				$scope.data = data;
