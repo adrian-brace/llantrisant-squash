@@ -38,9 +38,9 @@
 		<League Name="South Glamorgan Karakal Racketball League"/>
 	</Leagues>
 	<Links>
-		<SquashWales>
-			<Link Name="Squash Wales (New Site)" URL="http://www.walessquashandracketball.co.uk/"/>
-			<Link Name="Squash Wales (Old Site)" URL="http://www.squashwales.co.uk/"/>			
+		<SquashWales>		
+			<Link Name="Squash Wales (New Site)" URL="https://www.squash.wales"/>
+			<Link Name="Squash Wales (Old Site)" URL="http://www.walessquashandracketball.co.uk/"/>			
 		</SquashWales>
 		<Rankings>
 			<Link BulletClass='llantrisant' Name="Llantrisant" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=2305&county=all&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
