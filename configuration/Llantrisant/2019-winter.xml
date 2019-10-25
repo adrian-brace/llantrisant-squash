@@ -11,9 +11,10 @@
 				<Players>
 					<Player Name="Dan Christopher"/>				
 					<Player Name="Matthew Williams"/>
+					<Player Name="Stephen Warren" WelshRankingID="196227"/>
 					<Player Name="Jason Jones" WelshRankingID="68793"/>
 					<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
-					<Player Name="Dan Povey"/>					
+					<Player Name="Dan Povey"/>
 				</Players>
 			</Team>
 			<Team>
@@ -100,7 +101,6 @@
 					<!--<Player Name="Lucy Maybury"/>-->
 					<!--<Player Name="Keith McCarthy"/>-->
 					<Player Name="Wynford Davies"/>
-					<Player Name="Jon Bennett"/>
 					<Player Name="Cameron Docherty" WelshRankingID="145285"/>
 					<Player Name="Marcus Docherty"/>
 					<Player Name="Harry Docherty"/>
