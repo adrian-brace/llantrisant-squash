@@ -93,9 +93,9 @@
 					<Player Name="Adrian Fisk"/>
 					<Player Name="Jack Penberthy" IsSpaceSaver="true"/>
 					<Player Name="Amanda Barter" IsCaptain="true"/>
-					<Player Name="Karen Workman"/>
+					<Player Name="Karen Workman" RefereeNumber="100149"/>
 					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
-					<Player Name="Erica Howcroft"/>
+					<Player Name="Erica Howcroft" RefereeNumber="102166"/>
 					<Player Name="Cian Grattidge" WelshRankingID="138443"/>
 					<Player Name="Dylan Vite"/>
 					<Player Name="James Pickett"/>
@@ -130,7 +130,7 @@
 				<CompetitionID>393</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
-					<Player Name="Mike Workman"/>
+					<Player Name="Mike Workman" RefereeNumber="100150"/>
 					<Player Name="Chris Emanuel" IsCaptain="true"/>
 					<Player Name="Matthew Williams"/>
 					<Player Name="Vaughan Collins"/>
@@ -157,7 +157,7 @@
 				<HomeNight>Wed</HomeNight>
 				<Players>
 					<Player Name="Ray Skene" IsCaptain="true"/>				
-					<Player Name="Dave Mason"/>
+					<Player Name="Dave Mason" RefereeNumber="100135"/>
 					<Player Name="Simon Griffin"/>
 					<Player Name="Jonathan Young"/>
 					<Player Name="Chris Yates"/>
