@@ -4,6 +4,7 @@
 			<Team>
 				<Name>A</Name>
 				<TeamID>10</TeamID>
+				<League>South Wales</League>
 				<DivisionID>3</DivisionID>
 				<DivisionName>One East</DivisionName>
 				<CompetitionID>408</CompetitionID>
@@ -20,6 +21,7 @@
 			<Team>
 				<Name>B</Name>
 				<TeamID>19</TeamID>
+				<League>South Wales</League>
 				<DivisionID>6</DivisionID>
 				<DivisionName>Three East</DivisionName>
 				<CompetitionID>408</CompetitionID>
@@ -35,6 +37,7 @@
 			<Team>
 				<Name>C</Name>
 				<TeamID>55</TeamID>
+				<League>Mid Glam</League>
 				<DivisionID>1</DivisionID>
 				<DivisionName>Mid Glamorgan One</DivisionName>
 				<CompetitionID>410</CompetitionID>
@@ -50,6 +53,7 @@
 			<Team>
 				<Name>D</Name>
 				<TeamID>79</TeamID>
+				<League>Mid Glam</League>
 				<DivisionID>2</DivisionID>
 				<DivisionName>Mid Glamorgan Two</DivisionName>
 				<CompetitionID>410</CompetitionID>
@@ -66,6 +70,7 @@
 			<Team>
 				<Name>E</Name>
 				<TeamID>89</TeamID>
+				<League>Mid Glam</League>
 				<DivisionID>2</DivisionID>
 				<DivisionName>Mid Glamorgan Two</DivisionName>
 				<CompetitionID>410</CompetitionID>
@@ -119,6 +124,7 @@
 			<Team>
 				<Name>1</Name>
 				<TeamID>207</TeamID>
+				<League>South Glam</League>
 				<DivisionID>1</DivisionID>
 				<DivisionName>League 1</DivisionName>
 				<CompetitionID>393</CompetitionID>
@@ -144,6 +150,7 @@
 			<Team>
 				<Name>2</Name>
 				<TeamID>208</TeamID>
+				<League>South Glam</League>
 				<DivisionID>2</DivisionID>
 				<DivisionName>League 2</DivisionName>
 				<CompetitionID>393</CompetitionID>

@@ -594,6 +594,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 		
 		var directory, filename, filepath;
 		var teamName = getTeamName(teams[teamIndex].getElementsByTagName("Name")[0].textContent, club);
+		var league = teams[teamIndex].getElementsByTagName("League")[0].textContent;		
 		var divisionID = teams[teamIndex].getElementsByTagName("DivisionID")[0].textContent;
 		var divisionName = teams[teamIndex].getElementsByTagName("DivisionName")[0].textContent;
 		var teamID = teams[teamIndex].getElementsByTagName("TeamID")[0].textContent;
@@ -618,6 +619,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 			teamHTMLs.push({
 					html: filedata,
 					teamName: teamName,
+					league: league,
 					divisionName: divisionName,
 					teamFixturesURL: teamFixturesURL,
 					competitionID: competitionID,
@@ -742,6 +744,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				// and also get the previous tr (which contains the date of the fixture)
 				var $ = cheerio.load(teamHTMLs[teamHTMLIndex].html);
 				var teamName = teamHTMLs[teamHTMLIndex].teamName;
+				var league = teamHTMLs[teamHTMLIndex].league;
 				var competitionID = teamHTMLs[teamHTMLIndex].competitionID;
 
 				// Change the below to scrape new site instead...
@@ -765,6 +768,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 						var matchResultDetailsURL = leagueHomePage + vsprintf(matchDetailsURL, [fixtureId, divisionId, competitionID]);
 
 						var teamMatchResult = {
+							league: league,
 							teamName: teamName,
 							fixtureId: fixtureId,
 							divisionId: divisionId,
@@ -786,6 +790,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				var teamName = teamMatchResults[teamMatchIndex].teamName;
 				var competitionID = teamMatchResults[teamMatchIndex].competitionID;
 				var isHome = teamMatchResults[teamMatchIndex].isHome;
+				var isRacketball = teamMatchResults[teamMatchIndex].isRacketball;
 
 				var directory, filename, filepath;
 				directory = teamResultsDirectory + currentYear + '/' + currentSeason + '/';
@@ -802,7 +807,8 @@ function processAllFixturesAndResults(req, sourcePage, res){
 						html: filedata,
 						teamName: teamName,
 						teamMatchResultURL: teamMatchResultURL,
-						isHome: isHome 
+						isHome: isHome,
+						isRacketball: isRacketball
 					});
 				}
 			}
@@ -814,6 +820,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				
 				var teamPlayers = teams[teamIndex].getElementsByTagName('Player');
 				var teamLetter = teams[teamIndex].getElementsByTagName("Name")[0].textContent;	
+				var league = teams[teamIndex].getElementsByTagName("League")[0].textContent;
 				var divisionID = teams[teamIndex].getElementsByTagName("DivisionID")[0].textContent;
 				var divisionName = teams[teamIndex].getElementsByTagName("DivisionName")[0].textContent;
 				var teamID = teams[teamIndex].getElementsByTagName("TeamID")[0].textContent;
@@ -821,6 +828,14 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				var teamFixturesURL =  leagueHomePage + vsprintf(teamURL, [divisionID, teamID, competitionID]);
 				var isRacketball = teams[teamIndex].parentNode.parentNode.localName !== "Squash";
 
+				if (isRacketball && teamIndex > 0) {
+
+					// Reset player number when we hit racketball teams
+					if (teams[teamIndex - 1].parentNode.parentNode.localName === "Squash"){
+						playerNumber = 0;
+					}
+				}
+	
 				for (playerIndex = 0; playerIndex < teamPlayers.length; playerIndex++) {
 					
 					playerNumber += 1;
@@ -835,6 +850,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 						isRacketball: isRacketball,
 						isEligible: true,
 						//code: "UNKNOWN",
+						league: league,
 						division: divisionName,
 						divisionURL: leagueHomePage + vsprintf(divisionStandingsURL, [divisionID]),
 						//divisionSecondary: "UNKNOWN",
@@ -886,7 +902,8 @@ function processAllFixturesAndResults(req, sourcePage, res){
 							awayGames: parseInt($(this).children().eq(5).text()),
 							gameScores: $(this).children().eq(6).text(),
 							teamLetter: teamMatchResultHTMLs[teamMatchResultIndex].teamName.slice(-1),
-							isHome: teamMatchResultHTMLs[teamMatchResultIndex].isHome
+							isHome: teamMatchResultHTMLs[teamMatchResultIndex].isHome,
+							isRacketball: teamMatchResultHTMLs[teamMatchResultIndex].isRacketball
 						};
 
 						playerResults.push(playerResult);
@@ -903,7 +920,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 
 					var playerAppearance = playerAppearancesData[playerAppearancesIndex];				
 
-					if (playerResult.playerName == playerAppearance.name){
+					if (playerResult.playerName === playerAppearance.name && playerResult.isRacketball === playerAppearance.isRacketball) {
 
 						// Reset values to 0 if first match and is "UNKNOWN"
 						playerAppearance.matchesPlayed = reset(playerAppearance.matchesPlayed);
@@ -1237,19 +1254,22 @@ function calculatePoints(playersResultData, pointForAWin, pointForALoss, pointDi
 	
 	/* Add the starting points to all players, calculating their points difference, and their updated ranking points */
 	for (playerResultIndex = 0; playerResultIndex < playersResultData.length; playerResultIndex++) {
-		playersResultData[playerResultIndex].startingRankingPosition = parseFloat(playerResultIndex + 1);
-		playersResultData[playerResultIndex].startingRankingPoints = parseFloat(pointDividerPerRank * (playersResultData.length - playerResultIndex));
-		playersResultData[playerResultIndex].pointsDifference = parseFloat(playersResultData[playerResultIndex].pointsFor - playersResultData[playerResultIndex].pointsAgainst);
-		playersResultData[playerResultIndex].matchesDifference = parseFloat(playersResultData[playerResultIndex].matchesWon - playersResultData[playerResultIndex].matchesLost);
-		playersResultData[playerResultIndex].gamesDifference = parseFloat((playersResultData[playerResultIndex].gamesWon - playersResultData[playerResultIndex].gamesLost));
-		playersResultData[playerResultIndex].currentRankingPoints = parseFloat((playersResultData[playerResultIndex].startingRankingPoints + ((playersResultData[playerResultIndex].gamesWon + playersResultData[playerResultIndex].gamesLost) * pointsForAnAppearance) + (playersResultData[playerResultIndex].matchesWon * pointForAWin) + (playersResultData[playerResultIndex].matchesLost * pointForALoss) + playersResultData[playerResultIndex].gamesDifference + (playersResultData[playerResultIndex].totalUpAppearances * pointsForPlayingUp)));
-		playersResultData[playerResultIndex].winPercentage = parseFloat((playersResultData[playerResultIndex].matchesWon / (playersResultData[playerResultIndex].matchesPlayed) * 100).toFixed(2));		
-		playersResultData[playerResultIndex].averagePointsPerGame = parseFloat((playersResultData[playerResultIndex].pointsFor / (playersResultData[playerResultIndex].gamesWon + playersResultData[playerResultIndex].gamesLost)).toFixed(2));
-		playersResultData[playerResultIndex].averagePointsPerMatch = parseFloat((playersResultData[playerResultIndex].pointsFor / playersResultData[playerResultIndex].matchesPlayed).toFixed(2));
-		
-		playersResultData[playerResultIndex].winPercentage = playersResultData[playerResultIndex].winPercentage || 0;
-		playersResultData[playerResultIndex].averagePointsPerGame = playersResultData[playerResultIndex].averagePointsPerGame || 0;
-		playersResultData[playerResultIndex].averagePointsPerMatch = playersResultData[playerResultIndex].averagePointsPerMatch || 0;
+
+		if (!playersResultData[playerResultIndex].isRacketball) {
+			playersResultData[playerResultIndex].startingRankingPosition = parseFloat(playerResultIndex + 1);
+			playersResultData[playerResultIndex].startingRankingPoints = parseFloat(pointDividerPerRank * (playersResultData.length - playerResultIndex));
+			playersResultData[playerResultIndex].pointsDifference = parseFloat(playersResultData[playerResultIndex].pointsFor - playersResultData[playerResultIndex].pointsAgainst);
+			playersResultData[playerResultIndex].matchesDifference = parseFloat(playersResultData[playerResultIndex].matchesWon - playersResultData[playerResultIndex].matchesLost);
+			playersResultData[playerResultIndex].gamesDifference = parseFloat((playersResultData[playerResultIndex].gamesWon - playersResultData[playerResultIndex].gamesLost));
+			playersResultData[playerResultIndex].currentRankingPoints = parseFloat((playersResultData[playerResultIndex].startingRankingPoints + ((playersResultData[playerResultIndex].gamesWon + playersResultData[playerResultIndex].gamesLost) * pointsForAnAppearance) + (playersResultData[playerResultIndex].matchesWon * pointForAWin) + (playersResultData[playerResultIndex].matchesLost * pointForALoss) + playersResultData[playerResultIndex].gamesDifference + (playersResultData[playerResultIndex].totalUpAppearances * pointsForPlayingUp)));
+			playersResultData[playerResultIndex].winPercentage = parseFloat((playersResultData[playerResultIndex].matchesWon / (playersResultData[playerResultIndex].matchesPlayed) * 100).toFixed(2));		
+			playersResultData[playerResultIndex].averagePointsPerGame = parseFloat((playersResultData[playerResultIndex].pointsFor / (playersResultData[playerResultIndex].gamesWon + playersResultData[playerResultIndex].gamesLost)).toFixed(2));
+			playersResultData[playerResultIndex].averagePointsPerMatch = parseFloat((playersResultData[playerResultIndex].pointsFor / playersResultData[playerResultIndex].matchesPlayed).toFixed(2));
+			
+			playersResultData[playerResultIndex].winPercentage = playersResultData[playerResultIndex].winPercentage || 0;
+			playersResultData[playerResultIndex].averagePointsPerGame = playersResultData[playerResultIndex].averagePointsPerGame || 0;
+			playersResultData[playerResultIndex].averagePointsPerMatch = playersResultData[playerResultIndex].averagePointsPerMatch || 0;	
+		}
 	}
 	
 	// Sort player by current ranking points
@@ -1260,17 +1280,20 @@ function calculatePoints(playersResultData, pointForAWin, pointForALoss, pointDi
 		playersResultData[playerResultIndex].currentRankingPosition = playerResultIndex + 1;
 
 		// Set the ranking movement value
-		if (playersResultData[playerResultIndex].currentRankingPosition < playersResultData[playerResultIndex].startingRankingPosition) {
-			playersResultData[playerResultIndex].rankingMovement = "up";
-		} else if (playersResultData[playerResultIndex].currentRankingPosition > playersResultData[playerResultIndex].startingRankingPosition) {
-			playersResultData[playerResultIndex].rankingMovement = "down";
-		} else {
-			playersResultData[playerResultIndex].rankingMovement = "same";
+		if (!playersResultData[playerResultIndex].isRacketball) {
+
+			if (playersResultData[playerResultIndex].currentRankingPosition < playersResultData[playerResultIndex].startingRankingPosition) {
+				playersResultData[playerResultIndex].rankingMovement = "up";
+			} else if (playersResultData[playerResultIndex].currentRankingPosition > playersResultData[playerResultIndex].startingRankingPosition) {
+				playersResultData[playerResultIndex].rankingMovement = "down";
+			} else {
+				playersResultData[playerResultIndex].rankingMovement = "same";
+			}
+			
+			var movement = Math.abs(playersResultData[playerResultIndex].currentRankingPosition - playersResultData[playerResultIndex].startingRankingPosition);
+			
+			playersResultData[playerResultIndex].rankingMovementPositions = new Array(movement);
 		}
-		
-		var movement = Math.abs(playersResultData[playerResultIndex].currentRankingPosition - playersResultData[playerResultIndex].startingRankingPosition);
-		
-		playersResultData[playerResultIndex].rankingMovementPositions = new Array(movement);
 	}
 	
 	return playersResultData;

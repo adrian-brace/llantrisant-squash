@@ -57,7 +57,12 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
 		
 		$http.get('./data_generated/appearances/' + clubName + '/' + appearancesFileName)
 			.success(function(data) {
-				$scope.players = data;
+				$scope.players = data.filter(function(player){
+					return !player.isRacketball;
+				});
+				$scope.racketballPlayers = data.filter(function(player){
+					return player.isRacketball;;
+				});
 				console.log(data);
 
 				$scope.uniqueTeams = function(players) {
@@ -74,7 +79,22 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
 					
 					return uniqueTeamLetters;
 				}
-			
+
+				$scope.uniqueTeamsRacketball = function(racketballPlayers) {
+					
+					var uniqueTeamLetters = [];
+					
+					if(racketballPlayers){
+						for(playerIndex = 0; playerIndex < racketballPlayers.length; playerIndex++){    
+							if(uniqueTeamLetters.indexOf(racketballPlayers[playerIndex].team) === -1){
+								uniqueTeamLetters.push(racketballPlayers[playerIndex].team);        
+							}
+						}	
+					}
+					
+					return uniqueTeamLetters;
+				}
+
 				$scope.getOptionsFor = function (propName) {
 					return ($scope.players || []).map(function (f) {
 						return f[propName];
@@ -83,6 +103,14 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
 					});
 				};
 			
+				$scope.getOptionsForRacketball = function (propName) {
+					return ($scope.racketballPlayers || []).map(function (f) {
+						return f[propName];
+					}).filter(function (f, idx, arr) {
+						return arr.indexOf(f) === idx;
+					});
+				};
+
 				$scope.getTotalPullUps = function (team){
 					
 					var pullUpCount = 0;
@@ -105,7 +133,31 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
 					}
 					
 					return pullUpCount;
-				}				
+				}
+				
+				$scope.getTotalPullUpsRacketball = function (team){
+					
+					var pullUpCount = 0;
+					
+					for(playerIndex = 0; playerIndex < $scope.racketballPlayers.length; playerIndex++){
+						
+						var player = $scope.racketballPlayers[playerIndex];
+						
+						if(player.appearances){				
+							
+							for(appearanceIndex = 0; appearanceIndex < player.appearances.length; appearanceIndex++){ 
+							
+								var appearance = player.appearances[appearanceIndex];
+							
+								if((team === appearance.team || !team) && appearance.team < player.team){
+									pullUpCount += 1;
+								}
+							}	
+						}
+					}
+					
+					return pullUpCount;
+				}
 				
 			})
 			.error(function(data) {
@@ -124,6 +176,17 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
 		}
 	};
 	
+	$scope.directionRacketball = false;
+	$scope.orderColumnRacketball = "playerRank";
+	$scope.sortRacketball = function(column) {
+		if ($scope.orderColumnRacketball === column) {
+			$scope.directionRacketball = !$scope.directionRacketball;
+		} else {
+			$scope.orderColumnRacketball = column;
+			$scope.directionRacketball = true;
+		}
+	};
+
 	$scope.teamAppearances = function(allAppearances, team) {
 		var filteredAppearances = [];
 		if(typeof allAppearances !== 'undefined'){
@@ -137,7 +200,22 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
 		return filteredAppearances.length;
 	};
 	
+	$scope.teamAppearancesRacketball = function(allAppearances, team) {
+		var filteredAppearances = [];
+		if(typeof allAppearances !== 'undefined'){
+			for (var appearanceIndex = 0; appearanceIndex < allAppearances.length; appearanceIndex++) {
+				var teamAppearance = allAppearances[appearanceIndex];
+				if (teamAppearance.team === team) {
+					filteredAppearances.push(teamAppearance);
+				}
+			}
+		}
+		return filteredAppearances.length;
+	};
+
 	$scope.filter = {};
+
+	$scope.filterRacketball = {};
 	
     $scope.filterByTeam = function (player) {
         // Use this snippet for matching with AND
@@ -152,8 +230,25 @@ homeApp.controller('AppearancesController', ['$scope', '$http', '$window', '$loc
         return matchesAND;	
 	}
 	
+    $scope.filterByTeamRacketball = function (racketballPlayer) {
+        // Use this snippet for matching with AND
+        var matchesAND = true;
+        for (var prop in $scope.filterRacketball) {
+            if (noSubFilter($scope.filterRacketball[prop])) continue;
+            if (!$scope.filterRacketball[prop][racketballPlayer[prop]]) {
+                matchesAND = false;
+                break;
+            }
+        }
+        return matchesAND;	
+	}
+
 	$scope.clearFilter = function() {
 		$scope.filter = {};
+	}
+
+	$scope.clearFilterRacketball = function() {
+		$scope.filterRacketball = {};
 	}
 
 	$scope.refreshData = function() {
