@@ -69,7 +69,9 @@ homeApp.controller('RankingsController', ['$scope', '$http', '$window', '$locati
 		
 		$http.get('./data_generated/appearances/' + clubName + '/' + rankingsFileName)
 			.success(function(data) {
-				$scope.allRankings = data;
+				$scope.allRankings = data.filter(function(player){
+					return !player.isRacketball;
+				});
 				console.log(data);
 			})
 			.error(function(data) {
