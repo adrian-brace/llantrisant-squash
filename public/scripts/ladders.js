@@ -8,7 +8,8 @@ homeApp.controller('LaddersController', ['$scope', '$http', '$location', 'club',
 
 	getClub.then(function(clubName){		
 
-		$http.get('./data_generated/ladders/'+ clubName + '/ladders.json')
+		//$http.get('./data_generated/ladders/'+ clubName + '/ladders.json')
+		$http.get('./data_generated/ladders/'+ clubName + '/squash_ladder.json')
 			.success(function(data) {
 				$scope.data = data;
 				$scope.daysRemainingSquash = daysUntil($scope.data.Squash.EndDate);

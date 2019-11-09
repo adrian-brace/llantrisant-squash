@@ -37,7 +37,7 @@ var DIRECTORY_CONFIGURATION = "./configuration/";
 var DIRECTORY_DATA_GENERATED = "./data_generated/";
 var DIRECTORY_APPEARANCES = DIRECTORY_DATA_GENERATED + "appearances/";
 var DIRECTORY_FIXTURES = DIRECTORY_DATA_GENERATED + "fixtures/";
-var DIRECTORY_LADDERS = DIRECTORY_DATA_GENERATED + "ladders/";
+var DIRECTORY_LADDERS_GENERATED = DIRECTORY_DATA_GENERATED + "ladders/";
 var DIRECTORY_RANKINGS = DIRECTORY_DATA_GENERATED + "rankings/";
 var DIRECTORY_STANDINGS = DIRECTORY_DATA_GENERATED + "team_standings/";
 var DIRECTORY_WELSH_RANKINGS_DATA = DIRECTORY_DATA_GENERATED + "welsh_rankings/";
@@ -48,6 +48,7 @@ var DIRECTORY_WELSH_RANKINGS = DIRECTORY_DATA_SCRAPED + "welsh_rankings/";
 var DIRECTORY_TEAM_PLAYER_LISTS = DIRECTORY_DATA_SCRAPED + "team_player_lists/";
 var DIRECTORY_TEAM_RESULTS = DIRECTORY_DATA_SCRAPED + "team_results/";
 var DIRECTORY_TEAM_STANDINGS = DIRECTORY_DATA_SCRAPED + "team_standings/";
+var DIRECTORY_LADDERS = DIRECTORY_DATA_SCRAPED + "ladders/";
 var DIRECTORY_PLAYERS = DIRECTORY_DATA_SCRAPED + "players/";
 var DIRECTORY_TEAMS = DIRECTORY_DATA_SCRAPED + "teams/";
 var DIRECTORY_COMPETITIONS = DIRECTORY_DATA_SCRAPED + "competitions/";
@@ -56,7 +57,8 @@ var DIRECTORY_COMPETITIONS = DIRECTORY_DATA_SCRAPED + "competitions/";
 var FIXTURES_FILENAME = 'fixtures.json'
 var CONFIGURATION_FILENAME_XML = "Configuration.xml";
 var LADDERS_FILENAME_XML = "ladders.xml";
-var LADDERS_FILENAME_JSON = "ladders.json";
+var SQUASH_LADDERS_FILENAME_JSON = "squash_ladder.json";
+var RACKETBALL_LADDERS_FILENAME_JSON = "racketball_ladder.json";
 var APPEARANCES_FILENAME = "appearances.json";
 var TEAM_STANDINGS_FILENAME = "team_standings.json";
 var ALL_WELSH_RANKINGS_FILENAME = "all_welsh_rankings.json";
@@ -69,12 +71,18 @@ var SCRAPE_FUNCTION_RANKINGS = "Rankings";
 var SCRAPE_FUNCTION_FIXTURES_AND_RESULTS = "Fixtures And Results";
 var SCRAPE_FUNCTION_APPEARANCE_MATCH_RESULTS = "Appearance Match Results";
 var SCRAPE_FUNCTION_TEAM_STANDINGS = "Team Standings";
+var SCRAPE_FUNCTION_LADDERS = "Ladders";
 var SCRAPE_FUNCTION_RANKINGS_TEAMS_LIST = "Rankings Team List";
 var SCRAPE_FUNCTION_TEAM_INITIALISATION = "Team Initialisation";
 
 String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
+
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
 
 app.post('/save_ladder', function(req, res) {
 
@@ -116,6 +124,7 @@ app.get('/results', function(req, res) {
 });
 
 app.get('/ladders', function(req, res) {
+	processAllFixturesAndResults(req, 'ladders', res);
 	res.redirect('/#/ladders');
 });
 
@@ -493,7 +502,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 	var teams, club;
 	var masterConfigurationXML;
 	var masterConfigurationFilepath = getMasterConfigurationFile();
-	var teamHTMLs = [];
+	var teamHTMLs = [];	
 	var teamFixturesAndResults = [];
 	var teamStandings = [];
 	var teamMatchResults = [];
@@ -521,6 +530,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 	var generatedDataFilePath = '';
 
 	var teamStandingsDirectory = DIRECTORY_TEAM_STANDINGS + club + '/';
+	var laddersDirectory = DIRECTORY_LADDERS + club + '/';
 	var teamResultsDirectory = DIRECTORY_TEAM_RESULTS + club + '/';
 	var teamPlayerListsDirectory = DIRECTORY_TEAM_PLAYER_LISTS + club + '/';
 	var teamURL = readValueFromXMLConfiguration(masterConfigurationXML, 'TeamURL');
@@ -544,6 +554,10 @@ function processAllFixturesAndResults(req, sourcePage, res){
 			generatedDataDirectory = DIRECTORY_STANDINGS + club + '/';
 			generatedDataFilePath = generatedDataDirectory + TEAM_STANDINGS_FILENAME;
 			break;
+		case 'ladders':
+			generatedDataDirectory = DIRECTORY_LADDERS_GENERATED + club + '/';
+			generatedDataFilePath = generatedDataDirectory + SQUASH_LADDERS_FILENAME_JSON;
+			break;
 		default:
 
 	}
@@ -553,7 +567,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 	if(fileExists(generatedDataFilePath)) {
 
 		var lastModified = getLastModified(generatedDataFilePath);
-		
+
 		// Only carry on if it has not been updated recently
 		if(hasExpired(lastModified, expiryPeriod)) {
 			// console.log("File: " + generatedDataFilePath + " is out of date. Last updated: " + lastModified);
@@ -574,61 +588,74 @@ function processAllFixturesAndResults(req, sourcePage, res){
 		return;
 	}	
 	
-	teams = currentSeasonConfigurationXML.getElementsByTagName('Team');
+	var laddersSquashFilepath = '';
 
-	if (teams.length == 0){
-		console.log("No Teams found in the Configuration file for season: " + currentSeason + ' ' + currentYear);
-		return;
-	}
+	if (sourcePage ==='ladders') {
 
-	// Has the team data been initialised?
-	if (teams[0].getElementsByTagName("TeamID")[0].textContent.length == 0){
-		if (!initialiseTeamData()) {
-			res.send("There was an issue trying to initialise team data.");
+		var squashLadderBoxesUrl = readValueFromXMLConfiguration(masterConfigurationXML, 'SportyHQSquashLadder');
+		var filename = 'SportyHQSquashLadder' + FILE_EXTENSION_FOR_WEB_PAGES;
+		var laddersSquashFilepath = laddersDirectory + filename;
+
+		checkExistsAndIsRecentlyModifiedForLadders(laddersSquashFilepath, squashLadderBoxesUrl, laddersDirectory, filename, writeFile, expiryPeriod, competitionID);
+
+	} else {
+
+		teams = currentSeasonConfigurationXML.getElementsByTagName('Team');
+
+		if (teams.length == 0){
+			console.log("No Teams found in the Configuration file for season: " + currentSeason + ' ' + currentYear);
 			return;
 		}
-	}
-
-	// Loop teams and create/update their fixture/result HTML if necessary
-	for (teamIndex = 0; teamIndex < teams.length; teamIndex++) {
-		
-		var directory, filename, filepath;
-		var teamName = getTeamName(teams[teamIndex].getElementsByTagName("Name")[0].textContent, club);
-		var league = teams[teamIndex].getElementsByTagName("League")[0].textContent;		
-		var divisionID = teams[teamIndex].getElementsByTagName("DivisionID")[0].textContent;
-		var divisionName = teams[teamIndex].getElementsByTagName("DivisionName")[0].textContent;
-		var teamID = teams[teamIndex].getElementsByTagName("TeamID")[0].textContent;
-		var competitionID = teams[teamIndex].getElementsByTagName("CompetitionID")[0].textContent;
-		var teamFixturesURL =  leagueHomePage + vsprintf(teamURL, [divisionID, teamID, competitionID]);
-		var teamStandingsURL = leagueHomePage + vsprintf(divisionStandingsURL, [divisionID]);
-		
-		filename = currentYear + '-' + currentSeason + '-' + teamName + FILE_EXTENSION_FOR_WEB_PAGES;
-
-		if (sourcePage === 'team_standings') {
-			
-			filepath = teamStandingsDirectory + filename;
-			checkExistsAndIsRecentlyModified(filepath, teamStandingsURL, teamStandingsDirectory, filename, writeFile, expiryPeriod, competitionID, true);
-
-		} else {
-			filepath = teamPlayerListsDirectory + filename;
-			checkExistsAndIsRecentlyModified(filepath, teamFixturesURL, teamPlayerListsDirectory, filename, writeFile, expiryPeriod, competitionID, true);
-		}
-		
-		if (fileExists(filepath)){
-			var filedata = fs.readFileSync(filepath, 'utf8').toString();		
-			teamHTMLs.push({
-					html: filedata,
-					teamName: teamName,
-					league: league,
-					divisionName: divisionName,
-					teamFixturesURL: teamFixturesURL,
-					competitionID: competitionID,
-					teamStandingsURL: teamStandingsURL,
-					isRacketball: teams[teamIndex].parentNode.parentNode.localName !== "Squash"
-				});
-		}
-	}
 	
+		// Has the team data been initialised?
+		if (teams[0].getElementsByTagName("TeamID")[0].textContent.length == 0){
+			if (!initialiseTeamData()) {
+				res.send("There was an issue trying to initialise team data.");
+				return;
+			}
+		}
+	
+		// Loop teams and create/update their fixture/result HTML if necessary
+		for (teamIndex = 0; teamIndex < teams.length; teamIndex++) {
+			
+			var directory, filename, filepath;
+			var teamName = getTeamName(teams[teamIndex].getElementsByTagName("Name")[0].textContent, club);
+			var league = teams[teamIndex].getElementsByTagName("League")[0].textContent;		
+			var divisionID = teams[teamIndex].getElementsByTagName("DivisionID")[0].textContent;
+			var divisionName = teams[teamIndex].getElementsByTagName("DivisionName")[0].textContent;
+			var teamID = teams[teamIndex].getElementsByTagName("TeamID")[0].textContent;
+			var competitionID = teams[teamIndex].getElementsByTagName("CompetitionID")[0].textContent;
+			var teamFixturesURL =  leagueHomePage + vsprintf(teamURL, [divisionID, teamID, competitionID]);
+			var teamStandingsURL = leagueHomePage + vsprintf(divisionStandingsURL, [divisionID]);
+			
+			filename = currentYear + '-' + currentSeason + '-' + teamName + FILE_EXTENSION_FOR_WEB_PAGES;
+	
+			if (sourcePage === 'team_standings') {
+				
+				filepath = teamStandingsDirectory + filename;
+				checkExistsAndIsRecentlyModified(filepath, teamStandingsURL, teamStandingsDirectory, filename, writeFile, expiryPeriod, competitionID, true);
+	
+			} else {
+				filepath = teamPlayerListsDirectory + filename;
+				checkExistsAndIsRecentlyModified(filepath, teamFixturesURL, teamPlayerListsDirectory, filename, writeFile, expiryPeriod, competitionID, true);
+			}
+			
+			if (fileExists(filepath)){
+				var filedata = fs.readFileSync(filepath, 'utf8').toString();		
+				teamHTMLs.push({
+						html: filedata,
+						teamName: teamName,
+						league: league,
+						divisionName: divisionName,
+						teamFixturesURL: teamFixturesURL,
+						competitionID: competitionID,
+						teamStandingsURL: teamStandingsURL,
+						isRacketball: teams[teamIndex].parentNode.parentNode.localName !== "Squash"
+					});
+			}
+		}		
+	}
+
 	switch(sourcePage) {
 
 		// PROCESS FIXTURES/RESULTS
@@ -1057,6 +1084,89 @@ function processAllFixturesAndResults(req, sourcePage, res){
 			writeFile(generatedDataDirectory, TEAM_STANDINGS_FILENAME, JSON.stringify(teamStandings, null, 4));
 			break;
 
+		case 'ladders':
+			
+			// Get a table where align is center
+			var laddersSquashHTML = fs.readFileSync(laddersSquashFilepath, 'utf8').toString();
+			var $ = cheerio.load(laddersSquashHTML);
+
+			var cycleText = $('div').filter(function() {
+				return ($(this).attr('class') === 'card-header d-flex justify-content-between align-items-center bg-light');
+			}).first().text();
+
+			var startDate = 'UNKNOWN';
+			var endDate = 'UNKNOWN';
+
+			if (cycleText.length > 0) {
+				var dates = cycleText.replaceAll('st', '').replaceAll('nd', '').replaceAll('rd', '').replaceAll('th', '').split(' to ');
+				if (dates.length = 2) {
+					startDate = dates[0];
+					endDate = dates[1];
+				}
+			};
+
+			if (isDate(startDate)){
+				startDate = new Date(startDate);
+			}
+
+			if (isDate(endDate)){
+				endDate = new Date(endDate);
+			}
+
+			var ladders = {
+				Squash: {
+					StartDate: startDate,
+					EndDate: endDate,
+					Ladders: {
+						Ladder: []
+					}
+				},
+				Racketball: {
+					StartDate: startDate,
+					EndDate: endDate,
+					Ladders: {
+						Ladder: []
+					}
+				}
+			};
+
+			var boxNumber = 0;
+			
+			$('table').filter(function() {
+				return ($(this).attr('class') === 'table table-bordered table-sm mb-0');
+			}).each(function(){
+
+				boxNumber += 1;
+
+				var ladderBox = {
+					Number: boxNumber,
+					Players: {
+						Name: []
+					}				
+				};
+
+				$(this).find($('tr')).each(function(){
+
+					if ($(this).find('td').eq(0).text().length > 0)
+					{
+						var boxRow = {
+							position: parseInt($(this).find('td').first().text()),
+							playerName: $(this).find('td').eq(1).text().split(">").pop().trim(),
+							totalPoints: parseInt($(this).find('td').last().text())
+						};
+
+						ladderBox.Players.Name.push(boxRow);
+					}
+				});
+
+				//Push it onto the master array
+				ladders.Squash.Ladders.Ladder.push(ladderBox);
+			});
+						
+			// Save the fixtures to file as JSON
+			writeFile(generatedDataDirectory, SQUASH_LADDERS_FILENAME_JSON, JSON.stringify(ladders, null, 4));
+			break;
+
 		// DO NOTHING
 		default:
 
@@ -1146,6 +1256,29 @@ function getXMLFromFile(filePath){
 	}
 }
 
+function checkExistsAndIsRecentlyModifiedForLadders(filepath, url, directory, filename, writeFile, expiryInMs, timeout){
+	
+	// Make sure the file exists on disk, create it if it's doesn't
+	if(!fileExists(filepath)) {
+		// console.log("File: " + filepath + " does not exist");
+		getHTMLForLadders(url, directory, filename, writeFile);
+	} else {
+
+		var lastModifiedDate = getLastModified(filepath);
+		
+		// Only re-retrieve the HTML if it has not been updated recently
+		if(hasExpired(lastModifiedDate, expiryInMs)) {
+			// console.log("File: " + filepath + " is out of date. Last updated: " + lastModifiedDate);
+			setTimeout(function() {
+				getHTMLForLadders(url, directory, filename, writeFile);	
+			}, timeout);
+			// getHTMLForRankings(url, directory, filename, writeFile);
+		} else {
+			// console.log("File: " + filepath + " was recently updated. Last updated: " + lastModifiedDate);
+		}	
+	}
+}
+
 function checkExistsAndIsRecentlyModifiedForRankings(filepath, url, directory, filename, writeFile, expiryInMs, timeout){
 	
 	// Make sure the file exists on disk, create it if it's doesn't
@@ -1167,6 +1300,27 @@ function checkExistsAndIsRecentlyModifiedForRankings(filepath, url, directory, f
 			// console.log("File: " + filepath + " was recently updated. Last updated: " + lastModifiedDate);
 		}	
 	}
+}
+
+function getHTMLForLadders(url, directory, filename, callback){
+		
+	// console.log('Fetching HTML for: ' + url);
+
+	request({
+	  uri: url,
+	  method: "GET",
+	  timeout: 10000,
+	  followRedirect: true,
+	  maxRedirects: 10
+	}, function(error, response, html) {
+		if (!error && response.statusCode == 200) {
+			//console.log('directory: ' + directory);
+			//console.log('filename: ' + filename);
+			callback(directory, filename, html);
+		} else {
+			console.log('An error occurred retrieving HTML from: ' + url);
+		}
+	});
 }
 
 function getHTMLForRankings(url, directory, filename, callback){
@@ -1524,6 +1678,7 @@ function getExpiryPeriod(scrapeFunction){
 			case SCRAPE_FUNCTION_RANKINGS:
 			case SCRAPE_FUNCTION_FIXTURES_AND_RESULTS:
 			case SCRAPE_FUNCTION_TEAM_STANDINGS:
+			case SCRAPE_FUNCTION_LADDERS:
 				expiryPeriod = TWO_HOURS;
 				break;
 			case SCRAPE_FUNCTION_APPEARANCE_MATCH_RESULTS:
@@ -1731,4 +1886,8 @@ function createImageList(){
 			console.log(items[i]);
 		}
 	});
+}
+
+function isDate(date) {
+    return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
 }
