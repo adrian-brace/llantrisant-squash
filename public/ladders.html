@@ -111,19 +111,19 @@
 								<span ng-show="daysRemainingSquash === -1" class='negative'><b>N/A - NEW LADDER DUE SOON</b></span>
 							</td>
 						</tr>
-						<tr style="text-align: center;">
+						<!--<tr style="text-align: center;">
 							<td><span class="negative">Racketball</span></td>
 							<td ng-show='!admin'>{{ data.Racketball.StartDate | date:'EEEE d MMMM' }} -</td>
-							<!--<td ng-show='admin'><input type="text" ng-model="data.Racketball.StartDate"/></td>-->
-							<td ng-show='!admin'><b>{{ data.Racketball.EndDate | date:'EEEE d MMMM' }}</b></td>
+							<td ng-show='admin'><input type="text" ng-model="data.Racketball.StartDate"/></td>-->
+							<!--<td ng-show='!admin'><b>{{ data.Racketball.EndDate | date:'EEEE d MMMM' }}</b></td>-->
 							<!--<td ng-show='admin'><input type="text" ng-model="data.Racketball.EndDate"/></td>-->
-							<td>
+							<!--<td>
 								<span ng-class="{'positive': (daysRemainingRacketball > 14),
 									'concern': (daysRemainingRacketball <= 14 && daysRemainingRacketball >= 7),
 									'negativeLight': (daysRemainingRacketball <= 7)}"><span ng-show="daysRemainingRacketball >= 0"><b>{{ daysRemainingRacketball }}</b></span></span>
 								<span ng-show="daysRemainingRacketball === -1" class='negative'><b>N/A - NEW LADDERS WILL BE POSTED SOON</b></span>
 							</td>
-						</tr>
+						</tr>-->
 					</tbody>
 				</table>
 			</div>
