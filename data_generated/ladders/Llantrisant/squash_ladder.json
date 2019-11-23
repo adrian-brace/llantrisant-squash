@@ -11,12 +11,12 @@
                             {
                                 "position": 1,
                                 "playerName": "Adrian Brace",
-                                "totalPoints": 0
+                                "totalPoints": 6
                             },
                             {
                                 "position": 2,
                                 "playerName": "Richard Timms",
-                                "totalPoints": 0
+                                "totalPoints": 3
                             },
                             {
                                 "position": 3,
@@ -42,27 +42,27 @@
                         "Name": [
                             {
                                 "position": 1,
+                                "playerName": "Mark Morgan",
+                                "totalPoints": 5
+                            },
+                            {
+                                "position": 2,
+                                "playerName": "Lloyd Newland",
+                                "totalPoints": 4
+                            },
+                            {
+                                "position": 3,
                                 "playerName": "Josh Davies",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 2,
-                                "playerName": "Mark Morgan",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 3,
+                                "position": 4,
                                 "playerName": "Mark Turner",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 4,
-                                "playerName": "Wynford Davies",
-                                "totalPoints": 0
-                            },
-                            {
                                 "position": 5,
-                                "playerName": "Lloyd Newland",
+                                "playerName": "Wynford Davies",
                                 "totalPoints": 0
                             }
                         ]
@@ -74,27 +74,27 @@
                         "Name": [
                             {
                                 "position": 1,
-                                "playerName": "Jonathan Young",
-                                "totalPoints": 0
+                                "playerName": "Steve Evans",
+                                "totalPoints": 10
                             },
                             {
                                 "position": 2,
-                                "playerName": "Steve Evans",
-                                "totalPoints": 0
+                                "playerName": "Jonathan Young",
+                                "totalPoints": 9
                             },
                             {
                                 "position": 3,
-                                "playerName": "Sam Norris",
-                                "totalPoints": 0
+                                "playerName": "Josh Llewellyn",
+                                "totalPoints": 6
                             },
                             {
                                 "position": 4,
                                 "playerName": "Jayesh Parmar",
-                                "totalPoints": 0
+                                "totalPoints": 2
                             },
                             {
                                 "position": 5,
-                                "playerName": "Josh Llewellyn",
+                                "playerName": "Sam Norris",
                                 "totalPoints": 0
                             }
                         ]
@@ -143,32 +143,32 @@
                         "Name": [
                             {
                                 "position": 1,
-                                "playerName": "Chris Finch",
-                                "totalPoints": 0
+                                "playerName": "Taylor Gauci",
+                                "totalPoints": 9
                             },
                             {
                                 "position": 2,
-                                "playerName": "Taylor Gauci",
-                                "totalPoints": 0
+                                "playerName": "Carl Whiteley",
+                                "totalPoints": 7
                             },
                             {
                                 "position": 3,
-                                "playerName": "Carl Whiteley",
-                                "totalPoints": 0
+                                "playerName": "Rhys Gooch",
+                                "totalPoints": 6
                             },
                             {
                                 "position": 4,
+                                "playerName": "Chris Finch",
+                                "totalPoints": 5
+                            },
+                            {
+                                "position": 5,
                                 "playerName": "Cian Grattidge",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 5,
-                                "playerName": "Cameron Docherty",
-                                "totalPoints": 0
-                            },
-                            {
                                 "position": 6,
-                                "playerName": "Rhys Gooch",
+                                "playerName": "Cameron Docherty",
                                 "totalPoints": 0
                             }
                         ]

@@ -1151,7 +1151,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 					{
 						var boxRow = {
 							position: parseInt($(this).find('td').first().text()),
-							playerName: $(this).find('td').eq(1).text().split(">").pop().trim(),
+							playerName: $(this).find('td').eq(1).find('a').text().split(">").pop().trim(),
 							totalPoints: parseInt($(this).find('td').last().text())
 						};
 
