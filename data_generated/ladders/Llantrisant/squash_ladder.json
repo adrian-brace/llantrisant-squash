@@ -1,7 +1,7 @@
 {
     "Squash": {
-        "StartDate": "2019-11-04T00:00:00.000Z",
-        "EndDate": "2019-12-16T00:00:00.000Z",
+        "StartDate": "2019-12-16T00:00:00.000Z",
+        "EndDate": "2020-02-03T00:00:00.000Z",
         "Ladders": {
             "Ladder": [
                 {
@@ -11,26 +11,26 @@
                             {
                                 "position": 1,
                                 "playerName": "Adrian Brace",
-                                "totalPoints": 6
+                                "totalPoints": 0
                             },
                             {
                                 "position": 2,
                                 "playerName": "Richard Timms",
-                                "totalPoints": 3
+                                "totalPoints": 0
                             },
                             {
                                 "position": 3,
-                                "playerName": "Adrian Fisk",
+                                "playerName": "Josh Llewellyn",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 4,
-                                "playerName": "Jon Bennet",
+                                "playerName": "Mark Morgan",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 5,
-                                "playerName": "Joe Powell",
+                                "playerName": "Lloyd Newland",
                                 "totalPoints": 0
                             }
                         ]
@@ -42,27 +42,27 @@
                         "Name": [
                             {
                                 "position": 1,
-                                "playerName": "Mark Morgan",
-                                "totalPoints": 5
-                            },
-                            {
-                                "position": 2,
-                                "playerName": "Lloyd Newland",
-                                "totalPoints": 4
-                            },
-                            {
-                                "position": 3,
                                 "playerName": "Josh Davies",
                                 "totalPoints": 0
                             },
                             {
+                                "position": 2,
+                                "playerName": "Adrian Fisk",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 3,
+                                "playerName": "Angharad Llewelyn",
+                                "totalPoints": 0
+                            },
+                            {
                                 "position": 4,
-                                "playerName": "Mark Turner",
+                                "playerName": "Jonathan Young",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 5,
-                                "playerName": "Wynford Davies",
+                                "playerName": "Jon Bennet",
                                 "totalPoints": 0
                             }
                         ]
@@ -75,26 +75,26 @@
                             {
                                 "position": 1,
                                 "playerName": "Steve Evans",
-                                "totalPoints": 10
+                                "totalPoints": 0
                             },
                             {
                                 "position": 2,
-                                "playerName": "Jonathan Young",
-                                "totalPoints": 9
+                                "playerName": "Carl Whiteley",
+                                "totalPoints": 0
                             },
                             {
                                 "position": 3,
-                                "playerName": "Josh Llewellyn",
-                                "totalPoints": 6
+                                "playerName": "Joe Powell",
+                                "totalPoints": 0
                             },
                             {
                                 "position": 4,
-                                "playerName": "Jayesh Parmar",
-                                "totalPoints": 2
+                                "playerName": "Mike Hurst",
+                                "totalPoints": 0
                             },
                             {
                                 "position": 5,
-                                "playerName": "Sam Norris",
+                                "playerName": "Dan Webb",
                                 "totalPoints": 0
                             }
                         ]
@@ -106,32 +106,32 @@
                         "Name": [
                             {
                                 "position": 1,
-                                "playerName": "Ben Howcroft",
+                                "playerName": "Sam Norris",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 2,
-                                "playerName": "Angharad Llewelyn",
+                                "playerName": "Mark Turner",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 3,
-                                "playerName": "Chris Jones",
+                                "playerName": "Jeffrey Greenslade",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 4,
-                                "playerName": "Mike Hurst",
+                                "playerName": "Wynford Davies",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 5,
-                                "playerName": "Shivam Singhal",
+                                "playerName": "Taylor Gauci",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 6,
-                                "playerName": "Dylan Vite",
+                                "playerName": "Martyn Christopher",
                                 "totalPoints": 0
                             }
                         ]
@@ -143,32 +143,32 @@
                         "Name": [
                             {
                                 "position": 1,
-                                "playerName": "Taylor Gauci",
-                                "totalPoints": 9
+                                "playerName": "Ben West",
+                                "totalPoints": 0
                             },
                             {
                                 "position": 2,
-                                "playerName": "Carl Whiteley",
-                                "totalPoints": 7
+                                "playerName": "Jayesh Parmar",
+                                "totalPoints": 0
                             },
                             {
                                 "position": 3,
                                 "playerName": "Rhys Gooch",
-                                "totalPoints": 6
+                                "totalPoints": 0
                             },
                             {
                                 "position": 4,
                                 "playerName": "Chris Finch",
-                                "totalPoints": 5
+                                "totalPoints": 0
                             },
                             {
                                 "position": 5,
-                                "playerName": "Cian Grattidge",
+                                "playerName": "Ryan Vaughan",
                                 "totalPoints": 0
                             },
                             {
                                 "position": 6,
-                                "playerName": "Cameron Docherty",
+                                "playerName": "Dylan Vite",
                                 "totalPoints": 0
                             }
                         ]
@@ -178,8 +178,8 @@
         }
     },
     "Racketball": {
-        "StartDate": "2019-11-04T00:00:00.000Z",
-        "EndDate": "2019-12-16T00:00:00.000Z",
+        "StartDate": "2019-12-16T00:00:00.000Z",
+        "EndDate": "2020-02-03T00:00:00.000Z",
         "Ladders": {
             "Ladder": []
         }
