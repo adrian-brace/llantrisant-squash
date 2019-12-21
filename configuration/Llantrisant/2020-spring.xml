@@ -10,9 +10,9 @@
 				<CompetitionID>408</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
+					<Player Name="Dan Christopher"/>				
 					<Player Name="Matthew Williams"/>
 					<Player Name="Stephen Warren" WelshRankingID="196227"/>
-					<Player Name="Dan Christopher"/>				
 					<Player Name="Jason Jones" WelshRankingID="68793"/>
 					<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
 				</Players>
@@ -92,9 +92,9 @@
 					<Player Name="Mark Turner"/>
 					<Player Name="Adrian Fisk"/>
 					<Player Name="Jack Penberthy" IsSpaceSaver="true"/>
+					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
 					<Player Name="Amanda Barter" IsCaptain="true"/>
 					<Player Name="Karen Workman" RefereeNumber="100149"/>
-					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
 					<Player Name="Erica Howcroft" RefereeNumber="102166"/>
 					<Player Name="Cian Grattidge" WelshRankingID="138443"/>
 					<Player Name="Dylan Vite"/>
