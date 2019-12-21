@@ -67,39 +67,41 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 				playerClubRank = 0;
 
 				// Build the players
-				for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM.length; teamIndex++){
+				if ($scope.clubSeasonConfiguration.RACKETBALL) {
+					for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM.length; teamIndex++){
 
-					var team = $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM[teamIndex];
-					var teamUrl = buildTeamUrl($scope.configuration.CONSTANTS.LEAGUEHOMEPAGE, $scope.configuration.CONSTANTS.TEAMURL, team.DIVISIONID, team.TEAMID, team.COMPETITIONID);
-					var players = [];
-					var playerTeamRank = 0;
-					
-					for(var playerIndex = 0; playerIndex < team.PLAYERS.PLAYER.length; playerIndex++){
-
-						var player = team.PLAYERS.PLAYER[playerIndex];
-
-						playerTeamRank++;
-						playerClubRank++;
-
-						players.push({
-							name: player.name,
-							teamRanking: playerTeamRank,
-							clubRanking: playerClubRank,
-							isCaptain: player.iscaptain,
-							refereeNumber: player.refereenumber,
-							actualTeam: player.actualteam,
-							isSpaceSaver: player.isspacesaver
-						});
-					}
-
-					racketballTeams.push({
-							teamUrl: teamUrl,
-							divisionName: team.DIVISIONNAME,
-							teamName: team.NAME,
-							homeNight: team.HOMENIGHT,
-							teamNumber: teamIndex,
-							players: players
-						});
+						var team = $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM[teamIndex];
+						var teamUrl = buildTeamUrl($scope.configuration.CONSTANTS.LEAGUEHOMEPAGE, $scope.configuration.CONSTANTS.TEAMURL, team.DIVISIONID, team.TEAMID, team.COMPETITIONID);
+						var players = [];
+						var playerTeamRank = 0;
+						
+						for(var playerIndex = 0; playerIndex < team.PLAYERS.PLAYER.length; playerIndex++){
+	
+							var player = team.PLAYERS.PLAYER[playerIndex];
+	
+							playerTeamRank++;
+							playerClubRank++;
+	
+							players.push({
+								name: player.name,
+								teamRanking: playerTeamRank,
+								clubRanking: playerClubRank,
+								isCaptain: player.iscaptain,
+								refereeNumber: player.refereenumber,
+								actualTeam: player.actualteam,
+								isSpaceSaver: player.isspacesaver
+							});
+						}
+	
+						racketballTeams.push({
+								teamUrl: teamUrl,
+								divisionName: team.DIVISIONNAME,
+								teamName: team.NAME,
+								homeNight: team.HOMENIGHT,
+								teamNumber: teamIndex,
+								players: players
+							});
+					}						
 				}
 
 				$scope.racketballTeams = racketballTeams;

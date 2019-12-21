@@ -175,16 +175,18 @@ homeApp.controller('HomeController', ['$scope', '$http','$location','$anchorScro
 				}
 
 				// Build the teams for Racketball
-				for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM.length; teamIndex++){
+				if ($scope.clubSeasonConfiguration.RACKETBALL) {
+					for(var teamIndex = 0; teamIndex < $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM.length; teamIndex++){
 
-					var team = $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM[teamIndex];
-					var teamUrl = buildTeamUrl($scope.configuration.CONSTANTS.LEAGUEHOMEPAGE, $scope.configuration.CONSTANTS.TEAMURL, team.DIVISIONID, team.TEAMID, team.COMPETITIONID);
+						var team = $scope.clubSeasonConfiguration.RACKETBALL.TEAMS.TEAM[teamIndex];
+						var teamUrl = buildTeamUrl($scope.configuration.CONSTANTS.LEAGUEHOMEPAGE, $scope.configuration.CONSTANTS.TEAMURL, team.DIVISIONID, team.TEAMID, team.COMPETITIONID);
 
-					teams.push({
-							teamName: team.NAME,
-							divisionName: team.DIVISIONNAME,
-							teamUrl: teamUrl
-						});
+						teams.push({
+								teamName: team.NAME,
+								divisionName: team.DIVISIONNAME,
+								teamUrl: teamUrl
+							});
+					}
 				}
 
 				$scope.teams = teams;

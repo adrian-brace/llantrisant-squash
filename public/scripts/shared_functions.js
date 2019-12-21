@@ -1,6 +1,6 @@
 /* Constants */
 var OLDEST_YEAR = 2016;
-var SPRING_START_DAY = 22;
+var SPRING_START_DAY = 19;
 var SPRING_END_DAY = 2;
 var SPRING_START_MONTH = '-01-15';
 var WINTER_START_MONTH = '-08-15';
@@ -135,7 +135,19 @@ function getYearAndSeason(){
 }
 
 function getYearAndSeasonForProvisionalRankings(){
-	return getYear() + '-' + SEASON_WINTER.capitalize();
+	var season = getSeasonForProvisionalRanking();
+	return getYear() + '-' + season;
+}
+
+function getSeasonForProvisionalRanking() {
+	var today = new Date();
+	var month = today.getMonth();
+
+	if (month === 11 || month === 0) {
+		return SEASON_SPRING.capitalize()
+	} else {
+		return SEASON_WINTER.capitalize()
+	}
 }
 
 function getSeasonAndYearForRankings(){
@@ -143,14 +155,15 @@ function getSeasonAndYearForRankings(){
 }
 
 function getSeasonAndYearForProvisionalRankings(){
-	return SEASON_WINTER.capitalize() + ' ' + getYear();
+	var season = getSeasonForProvisionalRanking();
+	return season + ' ' + getYear();
 }
 
 function showProvisionalRankings() {
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
-	return month > 3 && (month < 7 || (month === 7 && day < 25));
+	return month > 3 && (month < 7 || (month === 7 && day < 25)) || showRankingUpdateDue();
 }
 
 function showRankingUpdateDue() {

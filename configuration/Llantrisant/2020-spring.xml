@@ -1,0 +1,170 @@
+<xml xmlns="http://www.w3.org/2000/10/XMLSchema">
+	<Squash>
+		<Teams>
+			<Team>
+				<Name>A</Name>
+				<TeamID>10</TeamID>
+				<League>South Wales</League>
+				<DivisionID>3</DivisionID>
+				<DivisionName>One East</DivisionName>
+				<CompetitionID>408</CompetitionID>
+				<HomeNight>Thurs</HomeNight>
+				<Players>
+					<Player Name="Matthew Williams"/>
+					<Player Name="Stephen Warren" WelshRankingID="196227"/>
+					<Player Name="Dan Christopher"/>				
+					<Player Name="Jason Jones" WelshRankingID="68793"/>
+					<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
+				</Players>
+			</Team>
+			<Team>
+				<Name>B</Name>
+				<TeamID>19</TeamID>
+				<League>South Wales</League>
+				<DivisionID>6</DivisionID>
+				<DivisionName>Three East</DivisionName>
+				<CompetitionID>408</CompetitionID>
+				<HomeNight>Tues</HomeNight>
+				<Players>				
+					<Player Name="Dan Povey"/>
+					<Player Name="Ryan Phillips"/>
+					<Player Name="Dan Webb"/>
+					<Player Name="Ben Howcroft"/>
+					<Player Name="Tom Penberthy" IsCaptain="true"/>
+					<!--<Player Name="Iwan James" IsSpaceSaver="true"/>-->
+				</Players>
+			</Team>
+			<Team>
+				<Name>C</Name>
+				<TeamID>55</TeamID>
+				<League>Mid Glam</League>
+				<DivisionID>1</DivisionID>
+				<DivisionName>Mid Glamorgan One</DivisionName>
+				<CompetitionID>410</CompetitionID>
+				<HomeNight>Thurs</HomeNight>
+				<Players>
+					<Player Name="Martyn Christopher" ActualTeam="B"/>
+					<Player Name="Rob Mitchell"/>	
+					<Player Name="Nick Wilkes"/>
+					<Player Name="Jeff Greenslade" RefereeNumber="100467"/>									
+					<Player Name="Rich Timms" ActualTeam="C" IsCaptain="true" RefereeNumber="101511"/>
+					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
+				</Players>
+			</Team>
+			<Team>
+				<Name>D</Name>
+				<TeamID>79</TeamID>
+				<League>Mid Glam</League>
+				<DivisionID>2</DivisionID>
+				<DivisionName>Mid Glamorgan Two</DivisionName>
+				<CompetitionID>410</CompetitionID>
+				<HomeNight>Tues</HomeNight>
+				<Players>
+					<!--<Player Name="Dave Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101573" WelshRankingID="68967"/>-->
+					<!--<Player Name="Chris Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101510"/>-->
+					<!--<Player Name="Matthew Thomas" ActualTeam="C" IsSpaceSaver="true" WelshRankingID="86287"/>-->
+					<!--<Player Name="Lee Francis" RefereeNumber="101514"/>-->
+					<Player Name="Joshua Sion Davies" ActualTeam="C" RefereeNumber="101022"/>									
+					<Player Name="Mark Morgan" ActualTeam="C" RefereeNumber="100292"/>
+					<Player Name="Lloyd Newland" ActualTeam="C"/>
+					<Player Name="Chay Davies-Smith" IsCaptain="true" RefereeNumber="100385"/>
+					<Player Name="Shivam Singhal"/>					
+				</Players>
+			</Team>
+			<Team>
+				<Name>E</Name>
+				<TeamID>89</TeamID>
+				<League>Mid Glam</League>
+				<DivisionID>2</DivisionID>
+				<DivisionName>Mid Glamorgan Two</DivisionName>
+				<CompetitionID>410</CompetitionID>
+				<HomeNight>Wed</HomeNight>
+				<Players>
+					<!--<Player Name="Nigel Bevan" RefereeNumber="101509"/>-->				
+					<!--<Player Name="Phillip Maybury"/>-->
+					<Player Name="Wynne Owen" ActualTeam="D"/>
+					<Player Name="Steve Evans" ActualTeam="D" WelshRankingID="13194"/>
+					<Player Name="Josh Llewellyn" ActualTeam="D"/>
+					<Player Name="Sam Norris" ActualTeam="D"/>
+					<!--<Player Name="Ashley Maybury"/>--> 
+					<!--<Player Name="Callum Webb"/>-->
+					<Player Name="Steven Melhuish"/>
+					<Player Name="Mark Turner"/>
+					<Player Name="Adrian Fisk"/>
+					<Player Name="Jack Penberthy" IsSpaceSaver="true"/>
+					<Player Name="Amanda Barter" IsCaptain="true"/>
+					<Player Name="Karen Workman" RefereeNumber="100149"/>
+					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
+					<Player Name="Erica Howcroft" RefereeNumber="102166"/>
+					<Player Name="Cian Grattidge" WelshRankingID="138443"/>
+					<Player Name="Dylan Vite"/>
+					<Player Name="James Pickett"/>
+					<Player Name="Jayesh Parmar"/>
+					<Player Name="Jonathan Young"/>
+					<Player Name="Rowland Shalton"/>
+					<Player Name="Joe Powell"/>
+					<!--<Player Name="Lucy Maybury"/>-->
+					<!--<Player Name="Keith McCarthy"/>-->
+					<Player Name="Wynford Davies"/>
+					<Player Name="Cameron Docherty" WelshRankingID="145285"/>
+					<Player Name="Marcus Docherty"/>
+					<Player Name="Harry Docherty"/>
+					<Player Name="Rares Ciarezu"/>
+				</Players>
+			</Team>
+			<!-- SPARES -->
+			<!--
+				
+				<Player Name="Dean Bromham" RefereeNumber="100142"/>
+			-->
+		</Teams>
+	</Squash>
+	<!--<Racketball>
+		<Teams>
+			<Team>
+				<Name>1</Name>
+				<TeamID>207</TeamID>
+				<League>South Glam</League>
+				<DivisionID>1</DivisionID>
+				<DivisionName>League 1</DivisionName>
+				<CompetitionID>393</CompetitionID>
+				<HomeNight>Thurs</HomeNight>
+				<Players>
+					<Player Name="Mike Workman" RefereeNumber="100150"/>
+					<Player Name="Chris Emanuel" IsCaptain="true"/>
+					<Player Name="Matthew Williams"/>
+					<Player Name="Vaughan Collins"/>
+					<Player Name="Steven Thomas"/>
+					<Player Name="Chris Jones"/>
+					<Player Name="Tim Curtis"/>
+					<Player Name="Tony Paige"/>
+					<Player Name="Tony Jones"/>
+					<Player Name="Nick Wilkes"/>
+					<Player Name="Martyn Christopher"/>
+					<Player Name="Wynne Owen"/>
+					<Player Name="Brian Starks"/>
+					<Player Name="Amanda Barter"/>
+					<Player Name="Bob Williams"/>
+				</Players>
+			</Team>
+			<Team>
+				<Name>2</Name>
+				<TeamID>208</TeamID>
+				<League>South Glam</League>
+				<DivisionID>2</DivisionID>
+				<DivisionName>League 2</DivisionName>
+				<CompetitionID>393</CompetitionID>
+				<HomeNight>Wed</HomeNight>
+				<Players>
+					<Player Name="Ray Skene" IsCaptain="true"/>				
+					<Player Name="Dave Mason" RefereeNumber="100135"/>
+					<Player Name="Simon Griffin"/>
+					<Player Name="Jonathan Young"/>
+					<Player Name="Chris Yates"/>
+					<Player Name="Neil Watkins"/>
+					<Player Name="Anthony Carroll"/>
+				</Players>
+			</Team>
+		</Teams>
+	</Racketball>-->
+</xml>
