@@ -16,7 +16,8 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 		// Call the getConfiguration service (Reads in the Master Config XML file and converts to JSON)
 		getConfiguration.then(function(configuration){
 			$scope.configuration = configuration;
-			$scope.season = getSeasonAndYearForProvisionalRankings();
+			$scope.season = getSeasonForProvisionalRanking();
+			$scope.seasonAndYear = getSeasonAndYearForProvisionalRankings();
 			$scope.year = getYear();
 			$scope.showProvisionalRankings = showProvisionalRankings();			
 

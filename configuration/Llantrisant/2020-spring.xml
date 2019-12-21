@@ -43,11 +43,11 @@
 				<CompetitionID>410</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
-					<Player Name="Martyn Christopher" ActualTeam="B"/>
-					<Player Name="Rob Mitchell"/>	
-					<Player Name="Nick Wilkes"/>
+					<Player Name="Joshua Sion Davies" ActualTeam="B" RefereeNumber="101022"/>									
 					<Player Name="Jeff Greenslade" RefereeNumber="100467"/>									
-					<Player Name="Rich Timms" ActualTeam="C" IsCaptain="true" RefereeNumber="101511"/>
+					<Player Name="Rob Mitchell"/>	
+					<Player Name="Martyn Christopher"/>
+					<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
 					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
 				</Players>
 			</Team>
@@ -64,7 +64,7 @@
 					<!--<Player Name="Chris Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101510"/>-->
 					<!--<Player Name="Matthew Thomas" ActualTeam="C" IsSpaceSaver="true" WelshRankingID="86287"/>-->
 					<!--<Player Name="Lee Francis" RefereeNumber="101514"/>-->
-					<Player Name="Joshua Sion Davies" ActualTeam="C" RefereeNumber="101022"/>									
+					<Player Name="Nick Wilkes" ActualTeam="C"/>
 					<Player Name="Mark Morgan" ActualTeam="C" RefereeNumber="100292"/>
 					<Player Name="Lloyd Newland" ActualTeam="C"/>
 					<Player Name="Chay Davies-Smith" IsCaptain="true" RefereeNumber="100385"/>
