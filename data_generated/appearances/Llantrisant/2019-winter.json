@@ -2,7 +2,7 @@
     {
         "name": "Matthew Williams",
         "team": "A",
-        "playerRank": 2,
+        "playerRank": 1,
         "appearances": [
             {
                 "team": "A",
@@ -38,6 +38,48 @@
                 "gamesAgainst": 0,
                 "pointsFor": 45,
                 "pointsAgainst": 28
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 23
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 28
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 9
+            },
+            {
+                "team": "A",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 22,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 35
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 23
             }
         ],
         "totalUpAppearances": 0,
@@ -47,61 +89,25 @@
         "division": "One East",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=408",
-        "matchesPlayed": 5,
-        "matchesWon": 4,
-        "matchesLost": 1,
-        "matchesDifference": 3,
-        "gamesWon": 12,
-        "gamesLost": 4,
-        "gamesDifference": 8,
-        "pointsFor": 211,
-        "pointsAgainst": 169,
-        "pointsDifference": 42,
-        "averagePointsPerGame": 13.19,
-        "averagePointsPerMatch": 42.2,
-        "startingRankingPoints": 2800,
-        "currentRankingPoints": 2864,
-        "winPercentage": 80,
-        "startingRankingPosition": 2,
-        "currentRankingPosition": 1,
-        "rankingMovement": "up",
-        "rankingMovementPositions": [
-            null
-        ]
-    },
-    {
-        "name": "Dan Christopher",
-        "team": "A",
-        "playerRank": 1,
-        "appearances": [],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "South Wales",
-        "division": "One East",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=408",
-        "matchesPlayed": 0,
-        "matchesWon": 0,
-        "matchesLost": 0,
-        "matchesDifference": 0,
-        "gamesWon": 0,
-        "gamesLost": 0,
-        "gamesDifference": 0,
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsDifference": 0,
-        "averagePointsPerGame": 0,
-        "averagePointsPerMatch": 0,
+        "matchesPlayed": 11,
+        "matchesWon": 9,
+        "matchesLost": 2,
+        "matchesDifference": 7,
+        "gamesWon": 27,
+        "gamesLost": 7,
+        "gamesDifference": 20,
+        "pointsFor": 460,
+        "pointsAgainst": 332,
+        "pointsDifference": 128,
+        "averagePointsPerGame": 13.53,
+        "averagePointsPerMatch": 41.82,
         "startingRankingPoints": 2840,
-        "currentRankingPoints": 2840,
-        "winPercentage": 0,
+        "currentRankingPoints": 2984,
+        "winPercentage": 81.82,
         "startingRankingPosition": 1,
-        "currentRankingPosition": 2,
-        "rankingMovement": "down",
-        "rankingMovementPositions": [
-            null
-        ]
+        "currentRankingPosition": 1,
+        "rankingMovement": "same",
+        "rankingMovementPositions": []
     },
     {
         "name": "Jason Jones",
@@ -149,48 +155,62 @@
                 "gamesAgainst": 2,
                 "pointsFor": 69,
                 "pointsAgainst": 60
-            }
-        ],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "South Wales",
-        "division": "One East",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=408",
-        "matchesPlayed": 6,
-        "matchesWon": 5,
-        "matchesLost": 1,
-        "matchesDifference": 4,
-        "gamesWon": 15,
-        "gamesLost": 8,
-        "gamesDifference": 7,
-        "pointsFor": 292,
-        "pointsAgainst": 227,
-        "pointsDifference": 65,
-        "averagePointsPerGame": 12.7,
-        "averagePointsPerMatch": 48.67,
-        "startingRankingPoints": 2720,
-        "currentRankingPoints": 2800,
-        "winPercentage": 83.33,
-        "startingRankingPosition": 4,
-        "currentRankingPosition": 3,
-        "rankingMovement": "up",
-        "rankingMovementPositions": [
-            null
-        ]
-    },
-    {
-        "name": "Stephen Warren",
-        "team": "A",
-        "playerRank": 3,
-        "appearances": [
+            },
+            {
+                "team": "A",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 65,
+                "pointsAgainst": 56
+            },
             {
                 "team": "A",
                 "gamesFor": 3,
                 "gamesAgainst": 0,
                 "pointsFor": 45,
-                "pointsAgainst": 15
+                "pointsAgainst": 30
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 23
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 9
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 19
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 24
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 60,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 22
             }
         ],
         "totalUpAppearances": 0,
@@ -200,25 +220,26 @@
         "division": "One East",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=408",
-        "matchesPlayed": 1,
-        "matchesWon": 1,
-        "matchesLost": 0,
-        "matchesDifference": 1,
-        "gamesWon": 3,
-        "gamesLost": 0,
-        "gamesDifference": 3,
-        "pointsFor": 45,
-        "pointsAgainst": 15,
-        "pointsDifference": 30,
-        "averagePointsPerGame": 15,
-        "averagePointsPerMatch": 45,
-        "startingRankingPoints": 2760,
-        "currentRankingPoints": 2776,
-        "winPercentage": 100,
-        "startingRankingPosition": 3,
-        "currentRankingPosition": 4,
-        "rankingMovement": "down",
+        "matchesPlayed": 14,
+        "matchesWon": 12,
+        "matchesLost": 2,
+        "matchesDifference": 10,
+        "gamesWon": 38,
+        "gamesLost": 12,
+        "gamesDifference": 26,
+        "pointsFor": 687,
+        "pointsAgainst": 457,
+        "pointsDifference": 230,
+        "averagePointsPerGame": 13.74,
+        "averagePointsPerMatch": 49.07,
+        "startingRankingPoints": 2720,
+        "currentRankingPoints": 2916,
+        "winPercentage": 85.71,
+        "startingRankingPosition": 4,
+        "currentRankingPosition": 2,
+        "rankingMovement": "up",
         "rankingMovementPositions": [
+            null,
             null
         ]
     },
@@ -268,6 +289,55 @@
                 "gamesAgainst": 0,
                 "pointsFor": 45,
                 "pointsAgainst": 28
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 58,
+                "pointsAgainst": 39
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 33
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 29
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 73,
+                "pointsAgainst": 61
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 26
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 71,
+                "pointsAgainst": 66
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 63,
+                "pointsAgainst": 52
             }
         ],
         "totalUpAppearances": 0,
@@ -277,25 +347,170 @@
         "division": "One East",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=408",
-        "matchesPlayed": 6,
-        "matchesWon": 5,
+        "matchesPlayed": 13,
+        "matchesWon": 12,
         "matchesLost": 1,
-        "matchesDifference": 4,
-        "gamesWon": 15,
-        "gamesLost": 3,
-        "gamesDifference": 12,
-        "pointsFor": 257,
-        "pointsAgainst": 189,
-        "pointsDifference": 68,
-        "averagePointsPerGame": 14.28,
-        "averagePointsPerMatch": 42.83,
+        "matchesDifference": 11,
+        "gamesWon": 36,
+        "gamesLost": 9,
+        "gamesDifference": 27,
+        "pointsFor": 657,
+        "pointsAgainst": 495,
+        "pointsDifference": 162,
+        "averagePointsPerGame": 14.6,
+        "averagePointsPerMatch": 50.54,
         "startingRankingPoints": 2680,
-        "currentRankingPoints": 2760,
-        "winPercentage": 83.33,
+        "currentRankingPoints": 2872,
+        "winPercentage": 92.31,
         "startingRankingPosition": 5,
+        "currentRankingPosition": 3,
+        "rankingMovement": "up",
+        "rankingMovementPositions": [
+            null,
+            null
+        ]
+    },
+    {
+        "name": "Dan Christopher",
+        "team": "A",
+        "playerRank": 3,
+        "appearances": [
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 24
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 19
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 22
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 26
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 38
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 29
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 23
+            }
+        ],
+        "totalUpAppearances": 0,
+        "isRacketball": false,
+        "isEligible": true,
+        "league": "South Wales",
+        "division": "One East",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=408",
+        "matchesPlayed": 7,
+        "matchesWon": 7,
+        "matchesLost": 0,
+        "matchesDifference": 7,
+        "gamesWon": 21,
+        "gamesLost": 0,
+        "gamesDifference": 21,
+        "pointsFor": 317,
+        "pointsAgainst": 181,
+        "pointsDifference": 136,
+        "averagePointsPerGame": 15.1,
+        "averagePointsPerMatch": 45.29,
+        "startingRankingPoints": 2760,
+        "currentRankingPoints": 2872,
+        "winPercentage": 100,
+        "startingRankingPosition": 3,
+        "currentRankingPosition": 4,
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null
+        ]
+    },
+    {
+        "name": "Stephen Warren",
+        "team": "A",
+        "playerRank": 2,
+        "appearances": [
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 15
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 32
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 28
+            }
+        ],
+        "totalUpAppearances": 0,
+        "isRacketball": false,
+        "isEligible": true,
+        "league": "South Wales",
+        "division": "One East",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=408",
+        "matchesPlayed": 3,
+        "matchesWon": 3,
+        "matchesLost": 0,
+        "matchesDifference": 3,
+        "gamesWon": 9,
+        "gamesLost": 0,
+        "gamesDifference": 9,
+        "pointsFor": 135,
+        "pointsAgainst": 75,
+        "pointsDifference": 60,
+        "averagePointsPerGame": 15,
+        "averagePointsPerMatch": 45,
+        "startingRankingPoints": 2800,
+        "currentRankingPoints": 2848,
+        "winPercentage": 100,
+        "startingRankingPosition": 2,
         "currentRankingPosition": 5,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null,
+            null,
+            null
+        ]
     },
     {
         "name": "Dan Povey",
@@ -329,6 +544,55 @@
                 "gamesAgainst": 0,
                 "pointsFor": 45,
                 "pointsAgainst": 12
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 24
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 66,
+                "pointsAgainst": 66
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 30
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 58,
+                "pointsAgainst": 31
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 29
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 20
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 19
             }
         ],
         "totalUpAppearances": 0,
@@ -338,25 +602,179 @@
         "division": "One East",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=3&teamid=10&competitionid=408",
-        "matchesPlayed": 4,
-        "matchesWon": 4,
+        "matchesPlayed": 11,
+        "matchesWon": 11,
         "matchesLost": 0,
-        "matchesDifference": 4,
-        "gamesWon": 12,
-        "gamesLost": 1,
-        "gamesDifference": 11,
-        "pointsFor": 195,
-        "pointsAgainst": 92,
-        "pointsDifference": 103,
-        "averagePointsPerGame": 15,
-        "averagePointsPerMatch": 48.75,
+        "matchesDifference": 11,
+        "gamesWon": 33,
+        "gamesLost": 4,
+        "gamesDifference": 29,
+        "pointsFor": 544,
+        "pointsAgainst": 311,
+        "pointsDifference": 233,
+        "averagePointsPerGame": 14.7,
+        "averagePointsPerMatch": 49.45,
         "startingRankingPoints": 2640,
-        "currentRankingPoints": 2704,
+        "currentRankingPoints": 2816,
         "winPercentage": 100,
         "startingRankingPosition": 6,
         "currentRankingPosition": 6,
         "rankingMovement": "same",
         "rankingMovementPositions": []
+    },
+    {
+        "name": "Ben Howcroft",
+        "team": "B",
+        "playerRank": 8,
+        "appearances": [
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 22
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 54,
+                "pointsAgainst": 61
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 34
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 14
+            },
+            {
+                "team": "B",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 56,
+                "pointsAgainst": 68
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 22
+            },
+            {
+                "team": "B",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 58,
+                "pointsAgainst": 75
+            },
+            {
+                "team": "B",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 13,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 19
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 29
+            },
+            {
+                "team": "B",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 60,
+                "pointsAgainst": 68
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 41,
+                "pointsAgainst": 54
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 70,
+                "pointsAgainst": 60
+            },
+            {
+                "team": "B",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 59,
+                "pointsAgainst": 68
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 70,
+                "pointsAgainst": 63
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 31
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 35,
+                "pointsAgainst": 55
+            }
+        ],
+        "totalUpAppearances": 3,
+        "isRacketball": false,
+        "isEligible": true,
+        "league": "South Wales",
+        "division": "Three East",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
+        "matchesPlayed": 17,
+        "matchesWon": 10,
+        "matchesLost": 7,
+        "matchesDifference": 3,
+        "gamesWon": 40,
+        "gamesLost": 27,
+        "gamesDifference": 13,
+        "pointsFor": 833,
+        "pointsAgainst": 788,
+        "pointsDifference": 45,
+        "averagePointsPerGame": 12.43,
+        "averagePointsPerMatch": 49,
+        "startingRankingPoints": 2560,
+        "currentRankingPoints": 2743,
+        "winPercentage": 58.82,
+        "startingRankingPosition": 8,
+        "currentRankingPosition": 7,
+        "rankingMovement": "up",
+        "rankingMovementPositions": [
+            null
+        ]
     },
     {
         "name": "Ryan Phillips",
@@ -411,6 +829,48 @@
                 "gamesAgainst": 0,
                 "pointsFor": 45,
                 "pointsAgainst": 21
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 34,
+                "pointsAgainst": 59
+            },
+            {
+                "team": "B",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 26,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "B",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 31,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 51,
+                "pointsAgainst": 43
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 28,
+                "pointsAgainst": 58
+            },
+            {
+                "team": "B",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 31,
+                "pointsAgainst": 45
             }
         ],
         "totalUpAppearances": 5,
@@ -420,30 +880,32 @@
         "division": "Three East",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
-        "matchesPlayed": 7,
-        "matchesWon": 5,
-        "matchesLost": 2,
-        "matchesDifference": 3,
-        "gamesWon": 17,
-        "gamesLost": 7,
-        "gamesDifference": 10,
-        "pointsFor": 313,
-        "pointsAgainst": 240,
-        "pointsDifference": 73,
-        "averagePointsPerGame": 13.04,
-        "averagePointsPerMatch": 44.71,
+        "matchesPlayed": 13,
+        "matchesWon": 6,
+        "matchesLost": 7,
+        "matchesDifference": -1,
+        "gamesWon": 22,
+        "gamesLost": 23,
+        "gamesDifference": -1,
+        "pointsFor": 514,
+        "pointsAgainst": 535,
+        "pointsDifference": -21,
+        "averagePointsPerGame": 11.42,
+        "averagePointsPerMatch": 39.54,
         "startingRankingPoints": 2600,
-        "currentRankingPoints": 2689,
-        "winPercentage": 71.43,
+        "currentRankingPoints": 2709,
+        "winPercentage": 46.15,
         "startingRankingPosition": 7,
-        "currentRankingPosition": 7,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
+        "currentRankingPosition": 8,
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null
+        ]
     },
     {
         "name": "Tom Penberthy",
         "team": "B",
-        "playerRank": 8,
+        "playerRank": 9,
         "appearances": [
             {
                 "team": "B",
@@ -486,254 +948,81 @@
                 "gamesAgainst": 1,
                 "pointsFor": 59,
                 "pointsAgainst": 48
-            }
-        ],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "South Wales",
-        "division": "Three East",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
-        "matchesPlayed": 6,
-        "matchesWon": 4,
-        "matchesLost": 2,
-        "matchesDifference": 2,
-        "gamesWon": 14,
-        "gamesLost": 12,
-        "gamesDifference": 2,
-        "pointsFor": 336,
-        "pointsAgainst": 301,
-        "pointsDifference": 35,
-        "averagePointsPerGame": 12.92,
-        "averagePointsPerMatch": 56,
-        "startingRankingPoints": 2560,
-        "currentRankingPoints": 2628,
-        "winPercentage": 66.67,
-        "startingRankingPosition": 8,
-        "currentRankingPosition": 8,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Ben Howcroft",
-        "team": "B",
-        "playerRank": 9,
-        "appearances": [
-            {
-                "team": "A",
-                "gamesFor": 3,
-                "gamesAgainst": 0,
-                "pointsFor": 45,
-                "pointsAgainst": 22
             },
             {
-                "team": "A",
+                "team": "B",
                 "gamesFor": 3,
                 "gamesAgainst": 2,
-                "pointsFor": 54,
-                "pointsAgainst": 61
+                "pointsFor": 67,
+                "pointsAgainst": 67
             },
-            {
-                "team": "B",
-                "gamesFor": 3,
-                "gamesAgainst": 0,
-                "pointsFor": 45,
-                "pointsAgainst": 14
-            },
-            {
-                "team": "B",
-                "gamesFor": 2,
-                "gamesAgainst": 3,
-                "pointsFor": 56,
-                "pointsAgainst": 68
-            },
-            {
-                "team": "B",
-                "gamesFor": 3,
-                "gamesAgainst": 0,
-                "pointsFor": 45,
-                "pointsAgainst": 22
-            },
-            {
-                "team": "B",
-                "gamesFor": 2,
-                "gamesAgainst": 3,
-                "pointsFor": 58,
-                "pointsAgainst": 75
-            },
-            {
-                "team": "B",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 13,
-                "pointsAgainst": 45
-            },
-            {
-                "team": "B",
-                "gamesFor": 3,
-                "gamesAgainst": 0,
-                "pointsFor": 45,
-                "pointsAgainst": 19
-            }
-        ],
-        "totalUpAppearances": 2,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "South Wales",
-        "division": "Three East",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
-        "matchesPlayed": 8,
-        "matchesWon": 5,
-        "matchesLost": 3,
-        "matchesDifference": 2,
-        "gamesWon": 19,
-        "gamesLost": 11,
-        "gamesDifference": 8,
-        "pointsFor": 361,
-        "pointsAgainst": 326,
-        "pointsDifference": 35,
-        "averagePointsPerGame": 12.03,
-        "averagePointsPerMatch": 45.13,
-        "startingRankingPoints": 2520,
-        "currentRankingPoints": 2610,
-        "winPercentage": 62.5,
-        "startingRankingPosition": 9,
-        "currentRankingPosition": 9,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Iwan James",
-        "team": "B",
-        "playerRank": 10,
-        "appearances": [],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "South Wales",
-        "division": "Three East",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
-        "matchesPlayed": 0,
-        "matchesWon": 0,
-        "matchesLost": 0,
-        "matchesDifference": 0,
-        "gamesWon": 0,
-        "gamesLost": 0,
-        "gamesDifference": 0,
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsDifference": 0,
-        "averagePointsPerGame": 0,
-        "averagePointsPerMatch": 0,
-        "startingRankingPoints": 2480,
-        "currentRankingPoints": 2480,
-        "winPercentage": 0,
-        "startingRankingPosition": 10,
-        "currentRankingPosition": 10,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Jeff Greenslade",
-        "team": "B",
-        "playerRank": 11,
-        "appearances": [
             {
                 "team": "B",
                 "gamesFor": 3,
                 "gamesAgainst": 1,
-                "pointsFor": 61,
-                "pointsAgainst": 56
-            },
-            {
-                "team": "B",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 30,
-                "pointsAgainst": 45
-            }
-        ],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "South Wales",
-        "division": "Three East",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
-        "matchesPlayed": 2,
-        "matchesWon": 1,
-        "matchesLost": 1,
-        "matchesDifference": 0,
-        "gamesWon": 3,
-        "gamesLost": 4,
-        "gamesDifference": -1,
-        "pointsFor": 91,
-        "pointsAgainst": 101,
-        "pointsDifference": -10,
-        "averagePointsPerGame": 13,
-        "averagePointsPerMatch": 45.5,
-        "startingRankingPoints": 2440,
-        "currentRankingPoints": 2456,
-        "winPercentage": 50,
-        "startingRankingPosition": 11,
-        "currentRankingPosition": 11,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Rob Mitchell",
-        "team": "C",
-        "playerRank": 12,
-        "appearances": [
-            {
-                "team": "B",
-                "gamesFor": 3,
-                "gamesAgainst": 0,
-                "pointsFor": 47,
-                "pointsAgainst": 31
+                "pointsFor": 60,
+                "pointsAgainst": 53
             },
             {
                 "team": "B",
                 "gamesFor": 3,
                 "gamesAgainst": 1,
                 "pointsFor": 59,
-                "pointsAgainst": 47
+                "pointsAgainst": 43
             },
             {
                 "team": "B",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 22,
-                "pointsAgainst": 45
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 29
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 30
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 70,
+                "pointsAgainst": 65
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 34
             }
         ],
-        "totalUpAppearances": 3,
+        "totalUpAppearances": 0,
         "isRacketball": false,
         "isEligible": true,
-        "league": "Mid Glam",
-        "division": "Mid Glamorgan One",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=1",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=410",
-        "matchesPlayed": 3,
-        "matchesWon": 2,
-        "matchesLost": 1,
-        "matchesDifference": 1,
-        "gamesWon": 6,
-        "gamesLost": 4,
-        "gamesDifference": 2,
-        "pointsFor": 128,
-        "pointsAgainst": 123,
-        "pointsDifference": 5,
-        "averagePointsPerGame": 12.8,
-        "averagePointsPerMatch": 42.67,
-        "startingRankingPoints": 2400,
-        "currentRankingPoints": 2435,
-        "winPercentage": 66.67,
-        "startingRankingPosition": 12,
-        "currentRankingPosition": 12,
+        "league": "South Wales",
+        "division": "Three East",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
+        "matchesPlayed": 13,
+        "matchesWon": 11,
+        "matchesLost": 2,
+        "matchesDifference": 9,
+        "gamesWon": 35,
+        "gamesLost": 18,
+        "gamesDifference": 17,
+        "pointsFor": 727,
+        "pointsAgainst": 622,
+        "pointsDifference": 105,
+        "averagePointsPerGame": 13.72,
+        "averagePointsPerMatch": 55.92,
+        "startingRankingPoints": 2520,
+        "currentRankingPoints": 2700,
+        "winPercentage": 84.62,
+        "startingRankingPosition": 9,
+        "currentRankingPosition": 9,
         "rankingMovement": "same",
         "rankingMovementPositions": []
     },
@@ -771,6 +1060,34 @@
                 "pointsAgainst": 45
             },
             {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 54,
+                "pointsAgainst": 52
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 35,
+                "pointsAgainst": 58
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 57,
+                "pointsAgainst": 48
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 28
+            },
+            {
                 "team": "C",
                 "gamesFor": 1,
                 "gamesAgainst": 3,
@@ -790,34 +1107,80 @@
                 "gamesAgainst": 3,
                 "pointsFor": 26,
                 "pointsAgainst": 45
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 31
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 54,
+                "pointsAgainst": 42
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 69,
+                "pointsAgainst": 57
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 54,
+                "pointsAgainst": 49
+            },
+            {
+                "team": "E",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 62,
+                "pointsAgainst": 69
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 64,
+                "pointsAgainst": 62
             }
         ],
-        "totalUpAppearances": 4,
+        "totalUpAppearances": 8,
         "isRacketball": false,
         "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan One",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=1",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=410",
-        "matchesPlayed": 7,
-        "matchesWon": 2,
-        "matchesLost": 5,
-        "matchesDifference": -3,
-        "gamesWon": 9,
-        "gamesLost": 16,
-        "gamesDifference": -7,
-        "pointsFor": 285,
-        "pointsAgainst": 332,
-        "pointsDifference": -47,
-        "averagePointsPerGame": 11.4,
-        "averagePointsPerMatch": 40.71,
+        "matchesPlayed": 17,
+        "matchesWon": 10,
+        "matchesLost": 7,
+        "matchesDifference": 3,
+        "gamesWon": 36,
+        "gamesLost": 30,
+        "gamesDifference": 6,
+        "pointsFor": 824,
+        "pointsAgainst": 828,
+        "pointsDifference": -4,
+        "averagePointsPerGame": 12.48,
+        "averagePointsPerMatch": 48.47,
         "startingRankingPoints": 2360,
-        "currentRankingPoints": 2402,
-        "winPercentage": 28.57,
+        "currentRankingPoints": 2540,
+        "winPercentage": 58.82,
         "startingRankingPosition": 13,
-        "currentRankingPosition": 13,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
+        "currentRankingPosition": 10,
+        "rankingMovement": "up",
+        "rankingMovementPositions": [
+            null,
+            null,
+            null
+        ]
     },
     {
         "name": "Dan Webb",
@@ -830,6 +1193,20 @@
                 "gamesAgainst": 0,
                 "pointsFor": 45,
                 "pointsAgainst": 30
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 44
+            },
+            {
+                "team": "A",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0
             },
             {
                 "team": "B",
@@ -858,34 +1235,318 @@
                 "gamesAgainst": 2,
                 "pointsFor": 67,
                 "pointsAgainst": 61
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 53,
+                "pointsAgainst": 39
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 68,
+                "pointsAgainst": 69
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 15
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 55,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 25
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 21
+            },
+            {
+                "team": "C",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 56,
+                "pointsAgainst": 73
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 16
             }
         ],
-        "totalUpAppearances": 2,
+        "totalUpAppearances": 4,
         "isRacketball": false,
-        "isEligible": true,
+        "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan One",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=1",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=410",
-        "matchesPlayed": 5,
-        "matchesWon": 5,
-        "matchesLost": 0,
-        "matchesDifference": 5,
-        "gamesWon": 15,
-        "gamesLost": 5,
-        "gamesDifference": 10,
-        "pointsFor": 288,
-        "pointsAgainst": 228,
-        "pointsDifference": 60,
-        "averagePointsPerGame": 14.4,
-        "averagePointsPerMatch": 57.6,
+        "matchesPlayed": 15,
+        "matchesWon": 14,
+        "matchesLost": 1,
+        "matchesDifference": 13,
+        "gamesWon": 44,
+        "gamesLost": 12,
+        "gamesDifference": 32,
+        "pointsFor": 747,
+        "pointsAgainst": 575,
+        "pointsDifference": 172,
+        "averagePointsPerGame": 13.34,
+        "averagePointsPerMatch": 49.8,
         "startingRankingPoints": 2280,
-        "currentRankingPoints": 2362,
-        "winPercentage": 100,
+        "currentRankingPoints": 2512,
+        "winPercentage": 93.33,
         "startingRankingPosition": 15,
-        "currentRankingPosition": 14,
+        "currentRankingPosition": 11,
         "rankingMovement": "up",
         "rankingMovementPositions": [
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "Rob Mitchell",
+        "team": "C",
+        "playerRank": 12,
+        "appearances": [
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 31
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 59,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "B",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 22,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 54,
+                "pointsAgainst": 46
+            },
+            {
+                "team": "B",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 59,
+                "pointsAgainst": 71
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 74,
+                "pointsAgainst": 70
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 72,
+                "pointsAgainst": 63
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 54,
+                "pointsAgainst": 61
+            }
+        ],
+        "totalUpAppearances": 8,
+        "isRacketball": false,
+        "isEligible": false,
+        "league": "Mid Glam",
+        "division": "Mid Glamorgan One",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=1",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=410",
+        "matchesPlayed": 8,
+        "matchesWon": 5,
+        "matchesLost": 3,
+        "matchesDifference": 2,
+        "gamesWon": 18,
+        "gamesLost": 15,
+        "gamesDifference": 3,
+        "pointsFor": 441,
+        "pointsAgainst": 434,
+        "pointsDifference": 7,
+        "averagePointsPerGame": 13.36,
+        "averagePointsPerMatch": 55.13,
+        "startingRankingPoints": 2400,
+        "currentRankingPoints": 2494,
+        "winPercentage": 62.5,
+        "startingRankingPosition": 12,
+        "currentRankingPosition": 12,
+        "rankingMovement": "same",
+        "rankingMovementPositions": []
+    },
+    {
+        "name": "Iwan James",
+        "team": "B",
+        "playerRank": 10,
+        "appearances": [],
+        "totalUpAppearances": 0,
+        "isRacketball": false,
+        "isEligible": true,
+        "league": "South Wales",
+        "division": "Three East",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
+        "matchesPlayed": 0,
+        "matchesWon": 0,
+        "matchesLost": 0,
+        "matchesDifference": 0,
+        "gamesWon": 0,
+        "gamesLost": 0,
+        "gamesDifference": 0,
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsDifference": 0,
+        "averagePointsPerGame": 0,
+        "averagePointsPerMatch": 0,
+        "startingRankingPoints": 2480,
+        "currentRankingPoints": 2480,
+        "winPercentage": 0,
+        "startingRankingPosition": 10,
+        "currentRankingPosition": 13,
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "Jeff Greenslade",
+        "team": "B",
+        "playerRank": 11,
+        "appearances": [
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 61,
+                "pointsAgainst": 56
+            },
+            {
+                "team": "B",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 30,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 44,
+                "pointsAgainst": 57
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 53,
+                "pointsAgainst": 58
+            },
+            {
+                "team": "B",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 56,
+                "pointsAgainst": 69
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 41,
+                "pointsAgainst": 55
+            },
+            {
+                "team": "B",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 37,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "B",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 64,
+                "pointsAgainst": 63
+            },
+            {
+                "team": "B",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 52,
+                "pointsAgainst": 56
+            }
+        ],
+        "totalUpAppearances": 0,
+        "isRacketball": false,
+        "isEligible": true,
+        "league": "South Wales",
+        "division": "Three East",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=6&teamid=19&competitionid=408",
+        "matchesPlayed": 9,
+        "matchesWon": 1,
+        "matchesLost": 8,
+        "matchesDifference": -7,
+        "gamesWon": 11,
+        "gamesLost": 25,
+        "gamesDifference": -14,
+        "pointsFor": 438,
+        "pointsAgainst": 506,
+        "pointsDifference": -68,
+        "averagePointsPerGame": 12.17,
+        "averagePointsPerMatch": 48.67,
+        "startingRankingPoints": 2440,
+        "currentRankingPoints": 2472,
+        "winPercentage": 11.11,
+        "startingRankingPosition": 11,
+        "currentRankingPosition": 14,
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null,
+            null,
             null
         ]
     },
@@ -914,30 +1575,58 @@
                 "gamesAgainst": 3,
                 "pointsFor": 54,
                 "pointsAgainst": 61
+            },
+            {
+                "team": "B",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 32,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 21
+            },
+            {
+                "team": "B",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 33
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 56,
+                "pointsAgainst": 47
             }
         ],
-        "totalUpAppearances": 3,
+        "totalUpAppearances": 6,
         "isRacketball": false,
-        "isEligible": true,
+        "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan One",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=1",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=1&teamid=55&competitionid=410",
-        "matchesPlayed": 3,
-        "matchesWon": 0,
-        "matchesLost": 3,
-        "matchesDifference": -3,
-        "gamesWon": 1,
-        "gamesLost": 9,
-        "gamesDifference": -8,
-        "pointsFor": 117,
-        "pointsAgainst": 151,
-        "pointsDifference": -34,
-        "averagePointsPerGame": 11.7,
-        "averagePointsPerMatch": 39,
+        "matchesPlayed": 7,
+        "matchesWon": 3,
+        "matchesLost": 4,
+        "matchesDifference": -1,
+        "gamesWon": 10,
+        "gamesLost": 13,
+        "gamesDifference": -3,
+        "pointsFor": 297,
+        "pointsAgainst": 299,
+        "pointsDifference": -2,
+        "averagePointsPerGame": 12.91,
+        "averagePointsPerMatch": 42.43,
         "startingRankingPoints": 2320,
-        "currentRankingPoints": 2325,
-        "winPercentage": 0,
+        "currentRankingPoints": 2376,
+        "winPercentage": 42.86,
         "startingRankingPosition": 14,
         "currentRankingPosition": 15,
         "rankingMovement": "down",
@@ -974,70 +1663,6 @@
         "winPercentage": 0,
         "startingRankingPosition": 16,
         "currentRankingPosition": 16,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Dave Jones",
-        "team": "D",
-        "playerRank": 17,
-        "appearances": [],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "Mid Glam",
-        "division": "Mid Glamorgan Two",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=410",
-        "matchesPlayed": 0,
-        "matchesWon": 0,
-        "matchesLost": 0,
-        "matchesDifference": 0,
-        "gamesWon": 0,
-        "gamesLost": 0,
-        "gamesDifference": 0,
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsDifference": 0,
-        "averagePointsPerGame": 0,
-        "averagePointsPerMatch": 0,
-        "startingRankingPoints": 2200,
-        "currentRankingPoints": 2200,
-        "winPercentage": 0,
-        "startingRankingPosition": 17,
-        "currentRankingPosition": 17,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Chris Jones",
-        "team": "D",
-        "playerRank": 18,
-        "appearances": [],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "Mid Glam",
-        "division": "Mid Glamorgan Two",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=410",
-        "matchesPlayed": 0,
-        "matchesWon": 0,
-        "matchesLost": 0,
-        "matchesDifference": 0,
-        "gamesWon": 0,
-        "gamesLost": 0,
-        "gamesDifference": 0,
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsDifference": 0,
-        "averagePointsPerGame": 0,
-        "averagePointsPerMatch": 0,
-        "startingRankingPoints": 2160,
-        "currentRankingPoints": 2160,
-        "winPercentage": 0,
-        "startingRankingPosition": 18,
-        "currentRankingPosition": 18,
         "rankingMovement": "same",
         "rankingMovementPositions": []
     },
@@ -1094,42 +1719,86 @@
                 "gamesAgainst": 3,
                 "pointsFor": 60,
                 "pointsAgainst": 65
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 26
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 27
+            },
+            {
+                "team": "C",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 54,
+                "pointsAgainst": 60
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 70,
+                "pointsAgainst": 63
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 30
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 31,
+                "pointsAgainst": 45
             }
         ],
-        "totalUpAppearances": 7,
+        "totalUpAppearances": 13,
         "isRacketball": false,
         "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=410",
-        "matchesPlayed": 7,
-        "matchesWon": 5,
-        "matchesLost": 2,
-        "matchesDifference": 3,
-        "gamesWon": 19,
-        "gamesLost": 9,
-        "gamesDifference": 10,
-        "pointsFor": 372,
-        "pointsAgainst": 328,
-        "pointsDifference": 44,
-        "averagePointsPerGame": 13.29,
-        "averagePointsPerMatch": 53.14,
+        "matchesPlayed": 13,
+        "matchesWon": 9,
+        "matchesLost": 4,
+        "matchesDifference": 5,
+        "gamesWon": 32,
+        "gamesLost": 17,
+        "gamesDifference": 15,
+        "pointsFor": 662,
+        "pointsAgainst": 579,
+        "pointsDifference": 83,
+        "averagePointsPerGame": 13.51,
+        "averagePointsPerMatch": 50.92,
         "startingRankingPoints": 2040,
-        "currentRankingPoints": 2135,
-        "winPercentage": 71.43,
+        "currentRankingPoints": 2207,
+        "winPercentage": 69.23,
         "startingRankingPosition": 21,
-        "currentRankingPosition": 19,
+        "currentRankingPosition": 17,
         "rankingMovement": "up",
         "rankingMovementPositions": [
+            null,
+            null,
             null,
             null
         ]
     },
     {
-        "name": "Matthew Thomas",
+        "name": "Dave Jones",
         "team": "D",
-        "playerRank": 19,
+        "playerRank": 17,
         "appearances": [],
         "totalUpAppearances": 0,
         "isRacketball": false,
@@ -1150,74 +1819,45 @@
         "pointsDifference": 0,
         "averagePointsPerGame": 0,
         "averagePointsPerMatch": 0,
-        "startingRankingPoints": 2120,
-        "currentRankingPoints": 2120,
+        "startingRankingPoints": 2200,
+        "currentRankingPoints": 2200,
         "winPercentage": 0,
-        "startingRankingPosition": 19,
-        "currentRankingPosition": 20,
+        "startingRankingPosition": 17,
+        "currentRankingPosition": 18,
         "rankingMovement": "down",
         "rankingMovementPositions": [
             null
         ]
     },
     {
-        "name": "Lloyd Newland",
+        "name": "Chris Jones",
         "team": "D",
-        "playerRank": 20,
-        "appearances": [
-            {
-                "team": "C",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 18,
-                "pointsAgainst": 45
-            },
-            {
-                "team": "C",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 27,
-                "pointsAgainst": 45
-            },
-            {
-                "team": "C",
-                "gamesFor": 2,
-                "gamesAgainst": 3,
-                "pointsFor": 59,
-                "pointsAgainst": 69
-            },
-            {
-                "team": "C",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 28,
-                "pointsAgainst": 45
-            }
-        ],
-        "totalUpAppearances": 4,
+        "playerRank": 18,
+        "appearances": [],
+        "totalUpAppearances": 0,
         "isRacketball": false,
-        "isEligible": false,
+        "isEligible": true,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=410",
-        "matchesPlayed": 4,
+        "matchesPlayed": 0,
         "matchesWon": 0,
-        "matchesLost": 4,
-        "matchesDifference": -4,
-        "gamesWon": 2,
-        "gamesLost": 12,
-        "gamesDifference": -10,
-        "pointsFor": 132,
-        "pointsAgainst": 204,
-        "pointsDifference": -72,
-        "averagePointsPerGame": 9.43,
-        "averagePointsPerMatch": 33,
-        "startingRankingPoints": 2080,
-        "currentRankingPoints": 2088,
+        "matchesLost": 0,
+        "matchesDifference": 0,
+        "gamesWon": 0,
+        "gamesLost": 0,
+        "gamesDifference": 0,
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsDifference": 0,
+        "averagePointsPerGame": 0,
+        "averagePointsPerMatch": 0,
+        "startingRankingPoints": 2160,
+        "currentRankingPoints": 2160,
         "winPercentage": 0,
-        "startingRankingPosition": 20,
-        "currentRankingPosition": 21,
+        "startingRankingPosition": 18,
+        "currentRankingPosition": 19,
         "rankingMovement": "down",
         "rankingMovementPositions": [
             null
@@ -1262,34 +1902,240 @@
                 "gamesAgainst": 0,
                 "pointsFor": 47,
                 "pointsAgainst": 28
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 27
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 57,
+                "pointsAgainst": 33
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 24
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 69,
+                "pointsAgainst": 55
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 49,
+                "pointsAgainst": 32
+            },
+            {
+                "team": "C",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 63,
+                "pointsAgainst": 64
+            },
+            {
+                "team": "C",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 56,
+                "pointsAgainst": 56
             }
         ],
-        "totalUpAppearances": 5,
+        "totalUpAppearances": 12,
         "isRacketball": false,
         "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 5,
-        "matchesWon": 4,
-        "matchesLost": 1,
-        "matchesDifference": 3,
-        "gamesWon": 13,
-        "gamesLost": 5,
-        "gamesDifference": 8,
-        "pointsFor": 239,
-        "pointsAgainst": 198,
-        "pointsDifference": 41,
-        "averagePointsPerGame": 13.28,
-        "averagePointsPerMatch": 47.8,
+        "matchesPlayed": 12,
+        "matchesWon": 9,
+        "matchesLost": 3,
+        "matchesDifference": 6,
+        "gamesWon": 31,
+        "gamesLost": 14,
+        "gamesDifference": 17,
+        "pointsFor": 623,
+        "pointsAgainst": 489,
+        "pointsDifference": 134,
+        "averagePointsPerGame": 13.84,
+        "averagePointsPerMatch": 51.92,
         "startingRankingPoints": 1960,
-        "currentRankingPoints": 2031,
-        "winPercentage": 80,
+        "currentRankingPoints": 2124,
+        "winPercentage": 75,
         "startingRankingPosition": 23,
-        "currentRankingPosition": 22,
+        "currentRankingPosition": 20,
         "rankingMovement": "up",
         "rankingMovementPositions": [
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "name": "Matthew Thomas",
+        "team": "D",
+        "playerRank": 19,
+        "appearances": [],
+        "totalUpAppearances": 0,
+        "isRacketball": false,
+        "isEligible": true,
+        "league": "Mid Glam",
+        "division": "Mid Glamorgan Two",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=410",
+        "matchesPlayed": 0,
+        "matchesWon": 0,
+        "matchesLost": 0,
+        "matchesDifference": 0,
+        "gamesWon": 0,
+        "gamesLost": 0,
+        "gamesDifference": 0,
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsDifference": 0,
+        "averagePointsPerGame": 0,
+        "averagePointsPerMatch": 0,
+        "startingRankingPoints": 2120,
+        "currentRankingPoints": 2120,
+        "winPercentage": 0,
+        "startingRankingPosition": 19,
+        "currentRankingPosition": 21,
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null,
+            null
+        ]
+    },
+    {
+        "name": "Lloyd Newland",
+        "team": "D",
+        "playerRank": 20,
+        "appearances": [
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 18,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 27,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "C",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 59,
+                "pointsAgainst": 69
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 28,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "C",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 50,
+                "pointsAgainst": 60
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 34,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 20
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 30,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 29,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 19,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 19,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "D",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 23,
+                "pointsAgainst": 45
+            }
+        ],
+        "totalUpAppearances": 11,
+        "isRacketball": false,
+        "isEligible": false,
+        "league": "Mid Glam",
+        "division": "Mid Glamorgan Two",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=79&competitionid=410",
+        "matchesPlayed": 12,
+        "matchesWon": 1,
+        "matchesLost": 11,
+        "matchesDifference": -10,
+        "gamesWon": 6,
+        "gamesLost": 33,
+        "gamesDifference": -27,
+        "pointsFor": 381,
+        "pointsAgainst": 556,
+        "pointsDifference": -175,
+        "averagePointsPerGame": 9.77,
+        "averagePointsPerMatch": 31.75,
+        "startingRankingPoints": 2080,
+        "currentRankingPoints": 2113,
+        "winPercentage": 8.33,
+        "startingRankingPosition": 20,
+        "currentRankingPosition": 22,
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null,
             null
         ]
     },
@@ -1325,30 +2171,51 @@
                 "gamesAgainst": 3,
                 "pointsFor": 42,
                 "pointsAgainst": 49
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 28
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 65,
+                "pointsAgainst": 66
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 21,
+                "pointsAgainst": 45
             }
         ],
-        "totalUpAppearances": 4,
+        "totalUpAppearances": 7,
         "isRacketball": false,
         "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 4,
-        "matchesWon": 1,
-        "matchesLost": 3,
-        "matchesDifference": -2,
-        "gamesWon": 5,
-        "gamesLost": 9,
-        "gamesDifference": -4,
-        "pointsFor": 191,
-        "pointsAgainst": 202,
-        "pointsDifference": -11,
-        "averagePointsPerGame": 13.64,
-        "averagePointsPerMatch": 47.75,
+        "matchesPlayed": 7,
+        "matchesWon": 3,
+        "matchesLost": 4,
+        "matchesDifference": -1,
+        "gamesWon": 11,
+        "gamesLost": 14,
+        "gamesDifference": -3,
+        "pointsFor": 322,
+        "pointsAgainst": 341,
+        "pointsDifference": -19,
+        "averagePointsPerGame": 12.88,
+        "averagePointsPerMatch": 46,
         "startingRankingPoints": 2000,
-        "currentRankingPoints": 2024,
-        "winPercentage": 25,
+        "currentRankingPoints": 2059,
+        "winPercentage": 42.86,
         "startingRankingPosition": 22,
         "currentRankingPosition": 23,
         "rankingMovement": "down",
@@ -1367,6 +2234,20 @@
                 "gamesAgainst": 3,
                 "pointsFor": 54,
                 "pointsAgainst": 52
+            },
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 60,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 39,
+                "pointsAgainst": 47
             },
             {
                 "team": "D",
@@ -1395,30 +2276,79 @@
                 "gamesAgainst": 2,
                 "pointsFor": 70,
                 "pointsAgainst": 67
+            },
+            {
+                "team": "D",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 31,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 48,
+                "pointsAgainst": 54
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 39
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 48,
+                "pointsAgainst": 59
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 46,
+                "pointsAgainst": 54
+            },
+            {
+                "team": "D",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 31,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 32,
+                "pointsAgainst": 53
             }
         ],
-        "totalUpAppearances": 5,
+        "totalUpAppearances": 14,
         "isRacketball": false,
         "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 5,
-        "matchesWon": 4,
-        "matchesLost": 1,
-        "matchesDifference": 3,
-        "gamesWon": 13,
-        "gamesLost": 6,
-        "gamesDifference": 7,
-        "pointsFor": 270,
-        "pointsAgainst": 227,
-        "pointsDifference": 43,
-        "averagePointsPerGame": 14.21,
-        "averagePointsPerMatch": 54,
+        "matchesPlayed": 14,
+        "matchesWon": 6,
+        "matchesLost": 8,
+        "matchesDifference": -2,
+        "gamesWon": 23,
+        "gamesLost": 28,
+        "gamesDifference": -5,
+        "pointsFor": 652,
+        "pointsAgainst": 670,
+        "pointsDifference": -18,
+        "averagePointsPerGame": 12.78,
+        "averagePointsPerMatch": 46.57,
         "startingRankingPoints": 1920,
-        "currentRankingPoints": 1991,
-        "winPercentage": 80,
+        "currentRankingPoints": 2040,
+        "winPercentage": 42.86,
         "startingRankingPosition": 24,
         "currentRankingPosition": 24,
         "rankingMovement": "same",
@@ -1444,6 +2374,13 @@
                 "pointsAgainst": 45
             },
             {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 22,
+                "pointsAgainst": 45
+            },
+            {
                 "team": "D",
                 "gamesFor": 3,
                 "gamesAgainst": 0,
@@ -1456,34 +2393,300 @@
                 "gamesAgainst": 1,
                 "pointsFor": 55,
                 "pointsAgainst": 42
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 40,
+                "pointsAgainst": 59
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 55,
+                "pointsAgainst": 38
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 25
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 25
             }
         ],
-        "totalUpAppearances": 4,
+        "totalUpAppearances": 9,
         "isRacketball": false,
         "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 4,
-        "matchesWon": 2,
-        "matchesLost": 2,
-        "matchesDifference": 0,
-        "gamesWon": 6,
-        "gamesLost": 7,
-        "gamesDifference": -1,
-        "pointsFor": 158,
-        "pointsAgainst": 158,
-        "pointsDifference": 0,
-        "averagePointsPerGame": 12.15,
-        "averagePointsPerMatch": 39.5,
+        "matchesPlayed": 9,
+        "matchesWon": 5,
+        "matchesLost": 4,
+        "matchesDifference": 1,
+        "gamesWon": 16,
+        "gamesLost": 14,
+        "gamesDifference": 2,
+        "pointsFor": 365,
+        "pointsAgainst": 350,
+        "pointsDifference": 15,
+        "averagePointsPerGame": 12.17,
+        "averagePointsPerMatch": 40.56,
         "startingRankingPoints": 1880,
-        "currentRankingPoints": 1916,
-        "winPercentage": 50,
+        "currentRankingPoints": 1971,
+        "winPercentage": 55.56,
         "startingRankingPosition": 25,
         "currentRankingPosition": 25,
         "rankingMovement": "same",
         "rankingMovementPositions": []
+    },
+    {
+        "name": "Josh Llewellyn",
+        "team": "E",
+        "playerRank": 27,
+        "appearances": [
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 32
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 26,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 17
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 66,
+                "pointsAgainst": 67
+            },
+            {
+                "team": "D",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 69,
+                "pointsAgainst": 73
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 62,
+                "pointsAgainst": 56
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 23
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 17
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 59,
+                "pointsAgainst": 56
+            },
+            {
+                "team": "D",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 58,
+                "pointsAgainst": 71
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 44,
+                "pointsAgainst": 55
+            }
+        ],
+        "totalUpAppearances": 11,
+        "isRacketball": false,
+        "isEligible": false,
+        "league": "Mid Glam",
+        "division": "Mid Glamorgan Two",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
+        "matchesPlayed": 11,
+        "matchesWon": 7,
+        "matchesLost": 4,
+        "matchesDifference": 3,
+        "gamesWon": 26,
+        "gamesLost": 17,
+        "gamesDifference": 9,
+        "pointsFor": 564,
+        "pointsAgainst": 512,
+        "pointsDifference": 52,
+        "averagePointsPerGame": 13.12,
+        "averagePointsPerMatch": 51.27,
+        "startingRankingPoints": 1800,
+        "currentRankingPoints": 1933,
+        "winPercentage": 63.64,
+        "startingRankingPosition": 27,
+        "currentRankingPosition": 26,
+        "rankingMovement": "up",
+        "rankingMovementPositions": [
+            null
+        ]
+    },
+    {
+        "name": "Sam Norris",
+        "team": "E",
+        "playerRank": 28,
+        "appearances": [
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 28
+            },
+            {
+                "team": "C",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 26,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "D",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 61,
+                "pointsAgainst": 65
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 23
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 29
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 51,
+                "pointsAgainst": 63
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 60,
+                "pointsAgainst": 54
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 66,
+                "pointsAgainst": 56
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 26
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 57,
+                "pointsAgainst": 43
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 26
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 40,
+                "pointsAgainst": 56
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 42,
+                "pointsAgainst": 55
+            }
+        ],
+        "totalUpAppearances": 13,
+        "isRacketball": false,
+        "isEligible": false,
+        "league": "Mid Glam",
+        "division": "Mid Glamorgan Two",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
+        "matchesPlayed": 13,
+        "matchesWon": 8,
+        "matchesLost": 5,
+        "matchesDifference": 3,
+        "gamesWon": 29,
+        "gamesLost": 20,
+        "gamesDifference": 9,
+        "pointsFor": 628,
+        "pointsAgainst": 569,
+        "pointsDifference": 59,
+        "averagePointsPerGame": 12.82,
+        "averagePointsPerMatch": 48.31,
+        "startingRankingPoints": 1760,
+        "currentRankingPoints": 1911,
+        "winPercentage": 61.54,
+        "startingRankingPosition": 28,
+        "currentRankingPosition": 27,
+        "rankingMovement": "up",
+        "rankingMovementPositions": [
+            null
+        ]
     },
     {
         "name": "Steve Evans",
@@ -1524,119 +2727,171 @@
                 "gamesAgainst": 3,
                 "pointsFor": 40,
                 "pointsAgainst": 60
+            },
+            {
+                "team": "D",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 65,
+                "pointsAgainst": 71
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 35,
+                "pointsAgainst": 60
+            },
+            {
+                "team": "D",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 49,
+                "pointsAgainst": 59
             }
         ],
-        "totalUpAppearances": 5,
+        "totalUpAppearances": 8,
         "isRacketball": false,
         "isEligible": false,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 5,
+        "matchesPlayed": 8,
         "matchesWon": 0,
-        "matchesLost": 5,
-        "matchesDifference": -5,
-        "gamesWon": 5,
-        "gamesLost": 15,
-        "gamesDifference": -10,
-        "pointsFor": 226,
-        "pointsAgainst": 285,
-        "pointsDifference": -59,
-        "averagePointsPerGame": 11.3,
-        "averagePointsPerMatch": 45.2,
+        "matchesLost": 8,
+        "matchesDifference": -8,
+        "gamesWon": 9,
+        "gamesLost": 24,
+        "gamesDifference": -15,
+        "pointsFor": 375,
+        "pointsAgainst": 475,
+        "pointsDifference": -100,
+        "averagePointsPerGame": 11.36,
+        "averagePointsPerMatch": 46.88,
         "startingRankingPoints": 1840,
-        "currentRankingPoints": 1855,
+        "currentRankingPoints": 1866,
         "winPercentage": 0,
         "startingRankingPosition": 26,
-        "currentRankingPosition": 26,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
+        "currentRankingPosition": 28,
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null,
+            null
+        ]
     },
     {
-        "name": "Josh Llewellyn",
+        "name": "Wynne Owen",
         "team": "E",
-        "playerRank": 27,
+        "playerRank": 29,
         "appearances": [
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 67,
+                "pointsAgainst": 61
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 37
+            },
             {
                 "team": "D",
                 "gamesFor": 3,
                 "gamesAgainst": 0,
                 "pointsFor": 45,
-                "pointsAgainst": 17
+                "pointsAgainst": 27
             },
             {
-                "team": "D",
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 15,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "E",
                 "gamesFor": 3,
-                "gamesAgainst": 2,
-                "pointsFor": 66,
-                "pointsAgainst": 67
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 24
+            },
+            {
+                "team": "E",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 63,
+                "pointsAgainst": 65
             }
         ],
-        "totalUpAppearances": 2,
+        "totalUpAppearances": 3,
         "isRacketball": false,
         "isEligible": true,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 2,
-        "matchesWon": 2,
-        "matchesLost": 0,
+        "matchesPlayed": 6,
+        "matchesWon": 4,
+        "matchesLost": 2,
         "matchesDifference": 2,
-        "gamesWon": 6,
-        "gamesLost": 2,
-        "gamesDifference": 4,
-        "pointsFor": 111,
-        "pointsAgainst": 84,
-        "pointsDifference": 27,
-        "averagePointsPerGame": 13.88,
-        "averagePointsPerMatch": 55.5,
-        "startingRankingPoints": 1800,
-        "currentRankingPoints": 1834,
-        "winPercentage": 100,
-        "startingRankingPosition": 27,
-        "currentRankingPosition": 27,
+        "gamesWon": 14,
+        "gamesLost": 8,
+        "gamesDifference": 6,
+        "pointsFor": 282,
+        "pointsAgainst": 259,
+        "pointsDifference": 23,
+        "averagePointsPerGame": 12.82,
+        "averagePointsPerMatch": 47,
+        "startingRankingPoints": 1720,
+        "currentRankingPoints": 1791,
+        "winPercentage": 66.67,
+        "startingRankingPosition": 29,
+        "currentRankingPosition": 29,
         "rankingMovement": "same",
         "rankingMovementPositions": []
     },
     {
-        "name": "Sam Norris",
+        "name": "Steven Melhuish",
         "team": "E",
-        "playerRank": 28,
+        "playerRank": 30,
         "appearances": [
             {
-                "team": "D",
+                "team": "E",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 50,
+                "pointsAgainst": 55
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 26
+            },
+            {
+                "team": "E",
                 "gamesFor": 2,
                 "gamesAgainst": 3,
-                "pointsFor": 61,
+                "pointsFor": 57,
                 "pointsAgainst": 65
             },
             {
-                "team": "D",
+                "team": "E",
                 "gamesFor": 3,
                 "gamesAgainst": 0,
                 "pointsFor": 45,
-                "pointsAgainst": 23
-            },
-            {
-                "team": "D",
-                "gamesFor": 3,
-                "gamesAgainst": 0,
-                "pointsFor": 45,
-                "pointsAgainst": 29
-            },
-            {
-                "team": "D",
-                "gamesFor": 1,
-                "gamesAgainst": 3,
-                "pointsFor": 51,
-                "pointsAgainst": 63
+                "pointsAgainst": 30
             }
         ],
-        "totalUpAppearances": 4,
+        "totalUpAppearances": 0,
         "isRacketball": false,
-        "isEligible": false,
+        "isEligible": true,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
@@ -1648,78 +2903,14 @@
         "gamesWon": 9,
         "gamesLost": 6,
         "gamesDifference": 3,
-        "pointsFor": 202,
-        "pointsAgainst": 180,
-        "pointsDifference": 22,
-        "averagePointsPerGame": 13.47,
-        "averagePointsPerMatch": 50.5,
-        "startingRankingPoints": 1760,
-        "currentRankingPoints": 1802,
-        "winPercentage": 50,
-        "startingRankingPosition": 28,
-        "currentRankingPosition": 28,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Wynne Owen",
-        "team": "E",
-        "playerRank": 29,
-        "appearances": [],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "Mid Glam",
-        "division": "Mid Glamorgan Two",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 0,
-        "matchesWon": 0,
-        "matchesLost": 0,
-        "matchesDifference": 0,
-        "gamesWon": 0,
-        "gamesLost": 0,
-        "gamesDifference": 0,
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsDifference": 0,
-        "averagePointsPerGame": 0,
-        "averagePointsPerMatch": 0,
-        "startingRankingPoints": 1720,
-        "currentRankingPoints": 1720,
-        "winPercentage": 0,
-        "startingRankingPosition": 29,
-        "currentRankingPosition": 29,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Steven Melhuish",
-        "team": "E",
-        "playerRank": 30,
-        "appearances": [],
-        "totalUpAppearances": 0,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "Mid Glam",
-        "division": "Mid Glamorgan Two",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 0,
-        "matchesWon": 0,
-        "matchesLost": 0,
-        "matchesDifference": 0,
-        "gamesWon": 0,
-        "gamesLost": 0,
-        "gamesDifference": 0,
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsDifference": 0,
-        "averagePointsPerGame": 0,
-        "averagePointsPerMatch": 0,
+        "pointsFor": 197,
+        "pointsAgainst": 176,
+        "pointsDifference": 21,
+        "averagePointsPerGame": 13.13,
+        "averagePointsPerMatch": 49.25,
         "startingRankingPoints": 1680,
-        "currentRankingPoints": 1680,
-        "winPercentage": 0,
+        "currentRankingPoints": 1718,
+        "winPercentage": 50,
         "startingRankingPosition": 30,
         "currentRankingPosition": 30,
         "rankingMovement": "same",
@@ -1764,6 +2955,34 @@
                 "gamesAgainst": 3,
                 "pointsFor": 29,
                 "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 58,
+                "pointsAgainst": 46
+            },
+            {
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 39,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "E",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 50,
+                "pointsAgainst": 56
+            },
+            {
+                "team": "E",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 53,
+                "pointsAgainst": 61
             }
         ],
         "totalUpAppearances": 1,
@@ -1773,21 +2992,21 @@
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 5,
-        "matchesWon": 1,
-        "matchesLost": 4,
-        "matchesDifference": -3,
-        "gamesWon": 5,
-        "gamesLost": 14,
-        "gamesDifference": -9,
-        "pointsFor": 191,
-        "pointsAgainst": 278,
-        "pointsDifference": -87,
-        "averagePointsPerGame": 10.05,
-        "averagePointsPerMatch": 38.2,
+        "matchesPlayed": 9,
+        "matchesWon": 2,
+        "matchesLost": 7,
+        "matchesDifference": -5,
+        "gamesWon": 10,
+        "gamesLost": 24,
+        "gamesDifference": -14,
+        "pointsFor": 391,
+        "pointsAgainst": 488,
+        "pointsDifference": -97,
+        "averagePointsPerGame": 11.5,
+        "averagePointsPerMatch": 43.44,
         "startingRankingPoints": 1640,
-        "currentRankingPoints": 1661,
-        "winPercentage": 20,
+        "currentRankingPoints": 1681,
+        "winPercentage": 22.22,
         "startingRankingPosition": 31,
         "currentRankingPosition": 31,
         "rankingMovement": "same",
@@ -1804,6 +3023,20 @@
                 "gamesAgainst": 3,
                 "pointsFor": 40,
                 "pointsAgainst": 47
+            },
+            {
+                "team": "D",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 47,
+                "pointsAgainst": 71
+            },
+            {
+                "team": "D",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 61,
+                "pointsAgainst": 51
             },
             {
                 "team": "E",
@@ -1839,34 +3072,160 @@
                 "gamesAgainst": 0,
                 "pointsFor": 45,
                 "pointsAgainst": 23
+            },
+            {
+                "team": "E",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 38,
+                "pointsAgainst": 55
+            },
+            {
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 23,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 61,
+                "pointsAgainst": 42
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 24
             }
         ],
-        "totalUpAppearances": 1,
+        "totalUpAppearances": 3,
         "isRacketball": false,
         "isEligible": true,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 6,
-        "matchesWon": 1,
-        "matchesLost": 5,
+        "matchesPlayed": 12,
+        "matchesWon": 4,
+        "matchesLost": 8,
         "matchesDifference": -4,
-        "gamesWon": 5,
-        "gamesLost": 15,
-        "gamesDifference": -10,
-        "pointsFor": 246,
-        "pointsAgainst": 278,
-        "pointsDifference": -32,
-        "averagePointsPerGame": 12.3,
-        "averagePointsPerMatch": 41,
+        "gamesWon": 17,
+        "gamesLost": 26,
+        "gamesDifference": -9,
+        "pointsFor": 521,
+        "pointsAgainst": 566,
+        "pointsDifference": -45,
+        "averagePointsPerGame": 12.12,
+        "averagePointsPerMatch": 43.42,
         "startingRankingPoints": 1600,
-        "currentRankingPoints": 1621,
-        "winPercentage": 16.67,
+        "currentRankingPoints": 1677,
+        "winPercentage": 33.33,
         "startingRankingPosition": 32,
         "currentRankingPosition": 32,
         "rankingMovement": "same",
         "rankingMovementPositions": []
+    },
+    {
+        "name": "Amanda Barter",
+        "team": "E",
+        "playerRank": 34,
+        "appearances": [
+            {
+                "team": "C",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 30
+            },
+            {
+                "team": "D",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 30,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 26,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 30,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 28,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 25,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 56,
+                "pointsAgainst": 62
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 59,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "E",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 66,
+                "pointsAgainst": 63
+            }
+        ],
+        "totalUpAppearances": 2,
+        "isRacketball": false,
+        "isEligible": true,
+        "league": "Mid Glam",
+        "division": "Mid Glamorgan Two",
+        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
+        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
+        "matchesPlayed": 9,
+        "matchesWon": 2,
+        "matchesLost": 7,
+        "matchesDifference": -5,
+        "gamesWon": 10,
+        "gamesLost": 22,
+        "gamesDifference": -12,
+        "pointsFor": 367,
+        "pointsAgainst": 427,
+        "pointsDifference": -60,
+        "averagePointsPerGame": 11.47,
+        "averagePointsPerMatch": 40.78,
+        "startingRankingPoints": 1520,
+        "currentRankingPoints": 1562,
+        "winPercentage": 22.22,
+        "startingRankingPosition": 34,
+        "currentRankingPosition": 33,
+        "rankingMovement": "up",
+        "rankingMovementPositions": [
+            null
+        ]
     },
     {
         "name": "Jack Penberthy",
@@ -1896,70 +3255,11 @@
         "currentRankingPoints": 1560,
         "winPercentage": 0,
         "startingRankingPosition": 33,
-        "currentRankingPosition": 33,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
-    },
-    {
-        "name": "Amanda Barter",
-        "team": "E",
-        "playerRank": 34,
-        "appearances": [
-            {
-                "team": "C",
-                "gamesFor": 3,
-                "gamesAgainst": 0,
-                "pointsFor": 47,
-                "pointsAgainst": 30
-            },
-            {
-                "team": "E",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 26,
-                "pointsAgainst": 45
-            },
-            {
-                "team": "E",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 30,
-                "pointsAgainst": 45
-            },
-            {
-                "team": "E",
-                "gamesFor": 0,
-                "gamesAgainst": 3,
-                "pointsFor": 28,
-                "pointsAgainst": 45
-            }
-        ],
-        "totalUpAppearances": 1,
-        "isRacketball": false,
-        "isEligible": true,
-        "league": "Mid Glam",
-        "division": "Mid Glamorgan Two",
-        "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
-        "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 4,
-        "matchesWon": 1,
-        "matchesLost": 3,
-        "matchesDifference": -2,
-        "gamesWon": 3,
-        "gamesLost": 9,
-        "gamesDifference": -6,
-        "pointsFor": 131,
-        "pointsAgainst": 165,
-        "pointsDifference": -34,
-        "averagePointsPerGame": 10.92,
-        "averagePointsPerMatch": 32.75,
-        "startingRankingPoints": 1520,
-        "currentRankingPoints": 1537,
-        "winPercentage": 25,
-        "startingRankingPosition": 34,
         "currentRankingPosition": 34,
-        "rankingMovement": "same",
-        "rankingMovementPositions": []
+        "rankingMovement": "down",
+        "rankingMovementPositions": [
+            null
+        ]
     },
     {
         "name": "Angharad Llewellyn",
@@ -2000,6 +3300,20 @@
                 "gamesAgainst": 0,
                 "pointsFor": 45,
                 "pointsAgainst": 15
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 1,
+                "pointsFor": 52,
+                "pointsAgainst": 22
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 47,
+                "pointsAgainst": 37
             }
         ],
         "totalUpAppearances": 1,
@@ -2009,21 +3323,21 @@
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 5,
-        "matchesWon": 4,
+        "matchesPlayed": 7,
+        "matchesWon": 6,
         "matchesLost": 1,
-        "matchesDifference": 3,
-        "gamesWon": 13,
-        "gamesLost": 8,
-        "gamesDifference": 5,
-        "pointsFor": 278,
-        "pointsAgainst": 236,
-        "pointsDifference": 42,
-        "averagePointsPerGame": 13.24,
-        "averagePointsPerMatch": 55.6,
+        "matchesDifference": 5,
+        "gamesWon": 19,
+        "gamesLost": 9,
+        "gamesDifference": 10,
+        "pointsFor": 377,
+        "pointsAgainst": 295,
+        "pointsDifference": 82,
+        "averagePointsPerGame": 13.46,
+        "averagePointsPerMatch": 53.86,
         "startingRankingPoints": 1440,
-        "currentRankingPoints": 1507,
-        "winPercentage": 80,
+        "currentRankingPoints": 1539,
+        "winPercentage": 85.71,
         "startingRankingPosition": 36,
         "currentRankingPosition": 35,
         "rankingMovement": "up",
@@ -2037,6 +3351,13 @@
         "playerRank": 35,
         "appearances": [
             {
+                "team": "D",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 65,
+                "pointsAgainst": 71
+            },
+            {
                 "team": "E",
                 "gamesFor": 1,
                 "gamesAgainst": 3,
@@ -2049,30 +3370,51 @@
                 "gamesAgainst": 2,
                 "pointsFor": 69,
                 "pointsAgainst": 61
+            },
+            {
+                "team": "E",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 56,
+                "pointsAgainst": 66
+            },
+            {
+                "team": "E",
+                "gamesFor": 1,
+                "gamesAgainst": 3,
+                "pointsFor": 48,
+                "pointsAgainst": 61
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 0,
+                "pointsFor": 45,
+                "pointsAgainst": 17
             }
         ],
-        "totalUpAppearances": 0,
+        "totalUpAppearances": 1,
         "isRacketball": false,
         "isEligible": true,
         "league": "Mid Glam",
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 2,
-        "matchesWon": 1,
-        "matchesLost": 1,
-        "matchesDifference": 0,
-        "gamesWon": 4,
-        "gamesLost": 5,
-        "gamesDifference": -1,
-        "pointsFor": 119,
-        "pointsAgainst": 121,
-        "pointsDifference": -2,
-        "averagePointsPerGame": 13.22,
-        "averagePointsPerMatch": 59.5,
+        "matchesPlayed": 6,
+        "matchesWon": 2,
+        "matchesLost": 4,
+        "matchesDifference": -2,
+        "gamesWon": 12,
+        "gamesLost": 14,
+        "gamesDifference": -2,
+        "pointsFor": 333,
+        "pointsAgainst": 336,
+        "pointsDifference": -3,
+        "averagePointsPerGame": 12.81,
+        "averagePointsPerMatch": 55.5,
         "startingRankingPoints": 1480,
-        "currentRankingPoints": 1498,
-        "winPercentage": 50,
+        "currentRankingPoints": 1525,
+        "winPercentage": 33.33,
         "startingRankingPosition": 35,
         "currentRankingPosition": 36,
         "rankingMovement": "down",
@@ -2112,6 +3454,27 @@
                 "gamesAgainst": 3,
                 "pointsFor": 26,
                 "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 36,
+                "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 0,
+                "gamesAgainst": 3,
+                "pointsFor": 37,
+                "pointsAgainst": 47
+            },
+            {
+                "team": "E",
+                "gamesFor": 3,
+                "gamesAgainst": 2,
+                "pointsFor": 65,
+                "pointsAgainst": 52
             }
         ],
         "totalUpAppearances": 1,
@@ -2121,21 +3484,21 @@
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 4,
-        "matchesWon": 3,
-        "matchesLost": 1,
-        "matchesDifference": 2,
-        "gamesWon": 9,
-        "gamesLost": 8,
-        "gamesDifference": 1,
-        "pointsFor": 215,
-        "pointsAgainst": 208,
-        "pointsDifference": 7,
-        "averagePointsPerGame": 12.65,
-        "averagePointsPerMatch": 53.75,
+        "matchesPlayed": 7,
+        "matchesWon": 4,
+        "matchesLost": 3,
+        "matchesDifference": 1,
+        "gamesWon": 12,
+        "gamesLost": 16,
+        "gamesDifference": -4,
+        "pointsFor": 353,
+        "pointsAgainst": 352,
+        "pointsDifference": 1,
+        "averagePointsPerGame": 12.61,
+        "averagePointsPerMatch": 50.43,
         "startingRankingPoints": 1400,
-        "currentRankingPoints": 1449,
-        "winPercentage": 75,
+        "currentRankingPoints": 1465,
+        "winPercentage": 57.14,
         "startingRankingPosition": 37,
         "currentRankingPosition": 37,
         "rankingMovement": "same",
@@ -2191,6 +3554,13 @@
                 "gamesAgainst": 3,
                 "pointsFor": 27,
                 "pointsAgainst": 45
+            },
+            {
+                "team": "E",
+                "gamesFor": 2,
+                "gamesAgainst": 3,
+                "pointsFor": 50,
+                "pointsAgainst": 63
             }
         ],
         "totalUpAppearances": 0,
@@ -2200,21 +3570,21 @@
         "division": "Mid Glamorgan Two",
         "divisionURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "teamURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showteamfixtures?divisionid=2&teamid=89&competitionid=410",
-        "matchesPlayed": 2,
+        "matchesPlayed": 3,
         "matchesWon": 1,
-        "matchesLost": 1,
-        "matchesDifference": 0,
-        "gamesWon": 3,
-        "gamesLost": 4,
-        "gamesDifference": -1,
-        "pointsFor": 87,
-        "pointsAgainst": 89,
-        "pointsDifference": -2,
-        "averagePointsPerGame": 12.43,
-        "averagePointsPerMatch": 43.5,
+        "matchesLost": 2,
+        "matchesDifference": -1,
+        "gamesWon": 5,
+        "gamesLost": 7,
+        "gamesDifference": -2,
+        "pointsFor": 137,
+        "pointsAgainst": 152,
+        "pointsDifference": -15,
+        "averagePointsPerGame": 11.42,
+        "averagePointsPerMatch": 45.67,
         "startingRankingPoints": 1320,
-        "currentRankingPoints": 1336,
-        "winPercentage": 50,
+        "currentRankingPoints": 1340,
+        "winPercentage": 33.33,
         "startingRankingPosition": 39,
         "currentRankingPosition": 39,
         "rankingMovement": "same",

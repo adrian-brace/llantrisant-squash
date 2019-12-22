@@ -12,10 +12,10 @@
 			<thead>
 				<tr>
 					<th>FILTER:</th>
-					<th ng-repeat="opt in getOptionsFor('team', true)">
+					<th ng-repeat="opt in getOptionsFor('team', false)">
 						{{opt.slice(-1)}} <input type="checkbox" ng-model="filter['team'][opt]" />
 					</th>
-					<th ng-repeat="opt in getOptionsFor('isHome', true)">
+					<th ng-repeat="opt in getOptionsFor('isHome', false)">
 						<span ng-show="opt">Home <input type="checkbox" ng-model="filter['isHome'][opt]" /></span>
 						<span ng-show="!opt">Away <input type="checkbox" ng-model="filter['isHome'][opt]" /></span>				
 					</th>
