@@ -1,4 +1,4 @@
-homeApp.controller('LaddersController', ['$scope', '$http', '$location', 'club', function($scope, $http, $location, club) {
+homeApp.controller('LaddersController', ['$scope', '$http', '$window', '$location', 'club', function($scope, $http, $window, $location, club) {
     
 	$scope.saveStatus = '';
 	$scope.unsavedData = false;
@@ -118,6 +118,10 @@ homeApp.controller('LaddersController', ['$scope', '$http', '$location', 'club',
 
 		$scope.unSavedData = true;
 	};
+
+	$scope.refreshData = function() {
+		$window.location.href = '/reset?sourcePage=ladder';
+	}
 
 	$scope.trimLadder = function (isSquash){
 

@@ -212,6 +212,13 @@ app.get('/reset', function(req, res) {
 	// Used as a reset mechanism for auto generated .json files
 	switch(sourcePage)
 	{
+		case 'ladder':
+			if (allowReset){
+				unlink(DIRECTORY_LADDERS_GENERATED + club + '/squash_ladder.json');
+			}
+			res.redirect('/ladders');
+			break;
+
 		case 'rankings':
 			if (allowReset){
 				unlink(DIRECTORY_APPEARANCES + club + '/' + currentSeasonResultsFilename);
