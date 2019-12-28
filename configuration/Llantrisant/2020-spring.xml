@@ -5,9 +5,9 @@
 				<Name>A</Name>
 				<TeamID>10</TeamID>
 				<League>South Wales</League>
-				<DivisionID>3</DivisionID>
-				<DivisionName>One East</DivisionName>
-				<CompetitionID>408</CompetitionID>
+				<DivisionID>2</DivisionID>
+				<DivisionName>Premier 2</DivisionName>
+				<CompetitionID>448</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Dan Christopher"/>				
@@ -23,7 +23,7 @@
 				<League>South Wales</League>
 				<DivisionID>6</DivisionID>
 				<DivisionName>Three East</DivisionName>
-				<CompetitionID>408</CompetitionID>
+				<CompetitionID>448</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>				
 					<Player Name="Dan Povey"/>
@@ -40,7 +40,7 @@
 				<League>Mid Glam</League>
 				<DivisionID>1</DivisionID>
 				<DivisionName>Mid Glamorgan One</DivisionName>
-				<CompetitionID>410</CompetitionID>
+				<CompetitionID>450</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Joshua Sion Davies" ActualTeam="B" RefereeNumber="101022"/>									
@@ -57,7 +57,7 @@
 				<League>Mid Glam</League>
 				<DivisionID>2</DivisionID>
 				<DivisionName>Mid Glamorgan Two</DivisionName>
-				<CompetitionID>410</CompetitionID>
+				<CompetitionID>450</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<!--<Player Name="Dave Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101573" WelshRankingID="68967"/>-->
@@ -77,7 +77,7 @@
 				<League>Mid Glam</League>
 				<DivisionID>2</DivisionID>
 				<DivisionName>Mid Glamorgan Two</DivisionName>
-				<CompetitionID>410</CompetitionID>
+				<CompetitionID>450</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>
 					<!--<Player Name="Nigel Bevan" RefereeNumber="101509"/>-->				
