@@ -31,7 +31,7 @@
 		</table>
 		<div class='dataTable'>
 			<div class="inlineBlock">				
-				<p class="textParagraph"><strong>Last Updated:</strong> 25th October 2019</p>
+				<p class="textParagraph"><strong>Last Updated:</strong> {{lastUpdated}}</p>
 				<table class="inlineBlock">	
 					<thead>
 						<tr>
@@ -67,7 +67,7 @@
 						<tr ng-repeat-end ng-hide='true'></tr>
 					</tbody>			
 				</table>
-				<table class="inlineBlock">	
+				<table class="inlineBlock" ng-show='racketballTeams.length > 0'>	
 					<thead>
 						<tr>
 							<th>

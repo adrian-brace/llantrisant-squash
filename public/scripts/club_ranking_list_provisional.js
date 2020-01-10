@@ -25,7 +25,8 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 			var getClubSeasonConfiguration = clubConfiguration.getProvisionalClubSeasonConfiguration(clubName);
 			getClubSeasonConfiguration.then(function(clubSeasonConfiguration){
 				$scope.clubSeasonConfiguration = clubSeasonConfiguration;
-
+				$scope.lastUpdated = $scope.clubSeasonConfiguration.LASTUPDATED;
+				
 				var playerClubRank = 0;
 
 				// Build the players

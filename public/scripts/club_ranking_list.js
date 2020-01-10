@@ -24,6 +24,7 @@ homeApp.controller('RankingsForTeamController', ['$scope', '$http', 'club', 'con
 			var getClubSeasonConfiguration = clubConfiguration.getClubSeasonConfiguration(clubName);
 			getClubSeasonConfiguration.then(function(clubSeasonConfiguration){
 				$scope.clubSeasonConfiguration = clubSeasonConfiguration;
+				$scope.lastUpdated = $scope.clubSeasonConfiguration.LASTUPDATED;
 
 				var playerClubRank = 0;
 
