@@ -163,14 +163,14 @@ function showProvisionalRankings() {
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
-	return month > 3 && (month < 7 || (month === 7 && day < 25)) || showRankingUpdateDue();
+	return !(month > 0 && (month < 7 || (month === 5 && day < 25))) || showRankingUpdateDue();
 }
 
 function showRankingUpdateDue() {
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
-	return (month == 11 && day > SPRING_START_DAY) || (month === 1 && day < 4) || (month === 6)
+	return (month == 11 && day > SPRING_START_DAY) || (month === 0 && day < 4) || (month === 7 && day >= 25)
 }
 
 function getMasterConfiguration(http, xmlToJson, getClubNameOnly){
