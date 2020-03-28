@@ -257,6 +257,8 @@ app.get('/reset', function(req, res) {
 
 app.get('/welsh_rankings', function(req, res) {
 	
+	res.redirect('/#/under_construction');
+/*
 	var masterConfigurationXML;
 	var currentSeasonConfigurationXML;
 	var allWelshRankings = [];
@@ -423,7 +425,7 @@ app.get('/welsh_rankings', function(req, res) {
 			}
 
 			/* Player not found but create a record for them */
-			if (!playerFound) {
+/*			if (!playerFound) {
 
 				var welshRanking = {
 					playerRank: playersClubRank,
@@ -449,6 +451,7 @@ app.get('/welsh_rankings', function(req, res) {
 	}
 		
 	res.redirect('/#/welsh_rankings');
+	*/
 });
 
 /* serves all the static files */
