@@ -3,7 +3,7 @@ homeApp.controller('WelshRankingsController', ['$scope', '$http', '$window', 'cl
 	var getClub = club.getClub();
 	getClub.then(function(clubName){
 		
-		$http.get('./data_generated/welsh_rankings/' + clubName + '/welsh_rankings.json')
+		$http.get('./data_generated/welsh_rankings/' + clubName + '/all_welsh_rankings.json')
 			.success(function(data) {
 				$scope.players = data;
 				console.log(data);
@@ -14,7 +14,7 @@ homeApp.controller('WelshRankingsController', ['$scope', '$http', '$window', 'cl
 	});
 	
 	$scope.direction = false;
-	$scope.orderColumn = "playerRank";
+	$scope.orderColumn = "position";
 	$scope.sort = function(column) {
 		if ($scope.orderColumn === column) {
 			$scope.direction = !$scope.direction;

@@ -56,6 +56,7 @@ var DIRECTORY_COMPETITIONS = DIRECTORY_DATA_SCRAPED + "competitions/";
 /* Filenames */
 var FIXTURES_FILENAME = 'fixtures.json'
 var CONFIGURATION_FILENAME_XML = "Configuration.xml";
+var CONFIGURATION_FILENAME_CLUBS_XML = "Clubs.xml";
 var LADDERS_FILENAME_XML = "ladders.xml";
 var SQUASH_LADDERS_FILENAME_JSON = "squash_ladder.json";
 var RACKETBALL_LADDERS_FILENAME_JSON = "racketball_ladder.json";
@@ -257,9 +258,9 @@ app.get('/reset', function(req, res) {
 
 app.get('/welsh_rankings', function(req, res) {
 	
-	res.redirect('/#/under_construction');
-/*
 	var masterConfigurationXML;
+	var clubsConfigurationXML;
+
 	var currentSeasonConfigurationXML;
 	var allWelshRankings = [];
 	var welshRankings = [];
@@ -284,7 +285,11 @@ app.get('/welsh_rankings', function(req, res) {
 	var masterConfigurationFilepath = getMasterConfigurationFile();
 	masterConfigurationXML = getXMLFromFile(masterConfigurationFilepath);
 	var welshRankingsURL = readValueFromXMLConfiguration(masterConfigurationXML, 'WelshRankingsURL');
-	
+	var squashLevelsURL = readValueFromXMLConfiguration(masterConfigurationXML, 'SquashLevelsURL');	
+
+	var clubsConfigurationFilepath = getClubsConfigurationFile();
+	clubsConfigurationXML = getXMLFromFile(clubsConfigurationFilepath);
+	var squashLevelsClubNumberLlantrisant = readValueFromXMLConfiguration(clubsConfigurationXML, 'SquashLevelsClubNumber');
 	var expiryPeriod = getExpiryPeriod(SCRAPE_FUNCTION_WELSH_RANKINGS);
 	
 	// Get the Current Season XML
@@ -320,51 +325,58 @@ app.get('/welsh_rankings', function(req, res) {
 	var pageIndex = 0;
 
 	// Download all the welsh rankings 50 at a time	per page as per the non logged in limit
-	for (pageOf50 = 0; pageOf50 < 2600; pageOf50 += 50)
+	for (pageOf25 = 0; pageOf25 < 50; pageOf25 += 25)
 	{
 		pageIndex++;
-		var welshRankingPageOf50URL = vsprintf(welshRankingsURL, pageOf50.toString());
-		var filename = pageOf50 + FILE_EXTENSION_FOR_WEB_PAGES;	
+		var llantrisantPageOf25URL = squashLevelsURL + vsprintf(welshRankingsURL, [squashLevelsClubNumberLlantrisant, pageOf25.toString()]);
+		var filename = pageOf25 + FILE_EXTENSION_FOR_WEB_PAGES;	
 		var filepath = welshRankingsDirectory + filename;
 
-		checkExistsAndIsRecentlyModifiedForRankings(filepath, welshRankingPageOf50URL, welshRankingsDirectory, filename, writeFile, expiryPeriod, pageIndex*1000);
+		checkExistsAndIsRecentlyModifiedForRankings(filepath, llantrisantPageOf25URL, welshRankingsDirectory, filename, writeFile, expiryPeriod, pageIndex*1000);
 	}
 
-	// Loop all 25 or so pages and build full 1300 rankings into JSON
-	for (pageOf50 = 0; pageOf50 < 2600; pageOf50 += 50)
+	// Loop all 2 or so pages and build full 50 rankings into JSON
+	for (pageOf25 = 0; pageOf25 < 50; pageOf25 += 25)
 	{
-		var filename = pageOf50 + FILE_EXTENSION_FOR_WEB_PAGES;	
+		var filename = pageOf25 + FILE_EXTENSION_FOR_WEB_PAGES;	
 		var filepath = welshRankingsDirectory + filename;
 
 		if(fileExists(filepath)) {
 			var welshRankingPlayerHTML = fs.readFileSync(filepath, 'utf8').toString();		
 			var $ = cheerio.load(welshRankingPlayerHTML);
 			
-			// <table class="ranking">
-			var rows = $('table').filter(function() {
-				return ($(this).attr('class') === 'ranking');
-			}).find($('tr')).filter(function() {
-				return isInt($(this).children().eq(7).text().replace("&nbsp;", "").replace(",", "").trim());
+			// <div class="rankings_output_div">
+			var rows = $('div').filter(function() {
+				return ($(this).attr('class') === 'rankings_output_div');
+			}).find($('div')).filter(function() {
+				return ($(this).attr('class') === 'ranking_row_summary_line bottom_inset_shadow');
 			}).each(function(){
 
-				var welshRankingIDMatch = $(this).children().eq(1).children().first().attr('href').trim().match('player=(\\d+)&show');
-				var welshRank = {
-					position: $(this).children().eq(0).text().replace("&nbsp;", "").trim(),
-					playerName: $(this).children().eq(1).text().trim(),
-					playerHistoryUrl: 'http://www.wales.squashlevels.com/' + $(this).children().eq(1).children().first().attr('href').trim(),
-					county: $(this).children().eq(2).text().trim(),
-					lastEvent: $(this).children().eq(4).text().trim(),
-					events: $(this).children().eq(5).text().trim(),
-					level: $(this).children().eq(7).text().replace("&nbsp;", "").replace(",", "").trim(),
-					welshRankingID: parseInt(welshRankingIDMatch[1])
+				var clubRank = {
+					position: null,
+					playerName: null,
+					playerHistoryUrl: null,
+					level: null,
+					welshRankingID: null
 				};
 
-				if (welshRank.position.length == 0)
-				{
-					welshRank.position = allWelshRankings.length;
-				}
+				$(this).find($('div')).each(function(){
+					if($(this).attr('class').trim().match('ranking_position')){
+						clubRank.position = parseInt($(this).text());
+					}
+					if($(this).attr('class').trim().match('ranking_name')){
+						clubRank.playerName = $(this).text();
+						clubRank.playerHistoryUrl = squashLevelsURL + $(this).children().eq(0).attr('href').trim();
+					}
+					if($(this).attr('class').trim().match('ranking_id')){
+						clubRank.welshRankingID = parseInt($(this).text());
+					}
+					if($(this).attr('class').trim().match('ranking_level')){
+						clubRank.level = parseInt($(this).text().replace(',',''));
+					}
+				});
 
-				allWelshRankings.push(welshRank);
+				allWelshRankings.push(clubRank);
 			});
 		}
 	}
@@ -374,6 +386,7 @@ app.get('/welsh_rankings', function(req, res) {
 		writeFile(welshRankingsDataDirectory, ALL_WELSH_RANKINGS_FILENAME, JSON.stringify(allWelshRankings, null, 4));
 	}
 	
+/*
 	var playersClubRank = 0;
 
 	// Loop teams and get players and lookup players in JSON
@@ -444,14 +457,13 @@ app.get('/welsh_rankings', function(req, res) {
 
 		}
 	}
-
 	// Save the JSON data to file
 	if(welshRankings.length > 0){
 		writeFile(welshRankingsDataDirectory, WELSH_RANKINGS_FILENAME, JSON.stringify(welshRankings, null, 4));
 	}
+*/
 		
 	res.redirect('/#/welsh_rankings');
-	*/
 });
 
 /* serves all the static files */
@@ -1339,13 +1351,14 @@ function getHTMLForRankings(url, directory, filename, callback){
 
 	request({
 	  uri: url,
+	  jar: true,
 	  method: "GET",
 	  timeout: 10000,
 	  followRedirect: true,
 	  maxRedirects: 10,
-	  headers: {
+	  /*headers: {
 			'Cookie': 'BaDSquashInfoType=both; BaDSquashDamping=0; BaDSquashCharts=1; BaDSquashID=bb2ou4umt3uqvlbohq1cdgl5u0; BaDSquashVisitor=1; BaDSquashLeagueType=none; BaDSquashLimitConf=1; BaDSquashDefaultPlayerType=all; BaDSquashDefaultPlayercat=all; BaDSquashDefaultClub=all; BaDSquashDefaultCounty=all;'
-		}
+		}*/
 	}, function(error, response, html) {
 		if (!error && response.statusCode == 200) {
 			// console.log('directory: ' + directory);
@@ -1704,6 +1717,10 @@ function getExpiryPeriod(scrapeFunction){
 
 function getMasterConfigurationFile(){
 	return DIRECTORY_CONFIGURATION + CONFIGURATION_FILENAME_XML;
+}
+
+function getClubsConfigurationFile(){
+	return DIRECTORY_CONFIGURATION + CONFIGURATION_FILENAME_CLUBS_XML;
 }
 
 // Call this to initialise the team data for a new season (if it's been recognised as missing)

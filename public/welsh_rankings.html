@@ -8,7 +8,7 @@
 	</div>
 	<div class="pageContent">
 		<div class="textParagraph">
-				<strong class="warningMessage">NOTE:</strong> Rankings are based on those shown on Squash Levels where players with a "Confidence" of less than 20% ARE included, with "Min Events": 1 and "Last 12 Months".
+				<strong class="warningMessage">NOTE:</strong> Rankings are based on those shown on Squash Levels.
 		</div>
 		<table class="centredTable">
 			<tr>
@@ -23,7 +23,7 @@
 				</td>
 			</tr>
 		</table>
-		<div class="dataTable">
+		<!-- <div class="dataTable">
 			<table class="dataTable">
 				<thead>			
 					<tr>
@@ -58,63 +58,69 @@
 					</tr>
 				</tbody>
 			</table>
-		</div>				
+		</div>				 -->
 		<div class="dataTable">
+			<button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Reset Data</button>
+			<br/>
+			<br/>
 			<table class="dataTable">
 				<thead>
 					<tr align="center">
 						<th align="center">
-							<a class='sortAnchor' href="" ng-click="sort('playerRank')">Club Ranking</a>
-							<span ng-show="orderColumn == 'playerRank' && direction" class="down"></span>
-							<span ng-show="orderColumn == 'playerRank' && !direction" class="up"></span>
+							<a class='sortAnchor' href="" ng-click="sort('position')">Club Ranking</a>
+							<span ng-show="orderColumn == 'position' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'position' && !direction" class="up"></span>
 						</th>
 						<th align="center">
-							<a class='sortAnchor' href="" ng-click="sort('name')">Name</a>
-							<span ng-show="orderColumn == 'name' && direction" class="down"></span>
-							<span ng-show="orderColumn == 'name' && !direction" class="up"></span>
+							<a class='sortAnchor' href="" ng-click="sort('playerName')">Name</a>
+							<span ng-show="orderColumn == 'playerName' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'playerName' && !direction" class="up"></span>
 						</th>
-						<th align="center">
+						<!-- <th align="center">
 							<a class='sortAnchor' href="" ng-click="sort('welshRank')">Welsh Ranking</a>
 							<span ng-show="orderColumn == 'welshRank' && direction" class="down"></span>
 							<span ng-show="orderColumn == 'welshRank' && !direction" class="up"></span>
+						</th> -->
+						<th align="center">
+							<a class='sortAnchor' href="" ng-click="sort('welshRankingID')">Welsh ID </a>
+							<span ng-show="orderColumn == 'welshRankingID' && direction" class="down"></span>
+							<span ng-show="orderColumn == 'welshRankingID' && !direction" class="up"></span>							
 						</th>
 						<th align="center">
 							<a class='sortAnchor' href="" ng-click="sort('level')">Level</a>
 							<span ng-show="orderColumn == 'level' && direction" class="down"></span>
 							<span ng-show="orderColumn == 'level' && !direction" class="up"></span>
 						</th>
-						<th align="center">
+						<!-- <th align="center">
 							<a class='sortAnchor' href="" ng-click="sort('events')">Events</a>
 							<span ng-show="orderColumn == 'events' && direction" class="down"></span>
 							<span ng-show="orderColumn == 'events' && !direction" class="up"></span>
 						</th>
-						<th align="center">
-							Last Event <button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Reset Data</button>
-						</th>
+						-->
 					</tr>
 				</thead>
 				<tbody>									
 					<!-- LOOP OVER THE appearances IN $scope.appearances -->
 					<tr ng-repeat="player in filtered=(players | filter:filterByTeam) | orderBy:[orderColumn]:direction">
 						<td align="center">
-							{{player.playerRank}}
+							{{player.position}}
 						</td>
 						<td align="left">
-							<a class='tableCellAnchor' ng-show="player.welshRank != NaN" target="_blank" href="{{player.playerHistoryUrl}}">{{player.name}}</a>
-							<div ng-show="player.welshRank == NaN"> {{player.name}}</div>
+							<a class='tableCellAnchor' target="_blank" href="{{player.playerHistoryUrl}}">{{player.playerName}}</a>
 						</td>
-						<td align="center">
+						<!-- <td align="center">
 							{{player.welshRank}}
+						</td> -->
+						<td>
+							{{player.welshRankingID}}
 						</td>
 						<td align="center">
 							{{player.level}}
 						</td>
-						<td align="center">
+						<!-- <td align="center">
 							{{player.events}}
 						</td>
-						<td>
-							{{player.lastEvent}}
-						</td>
+						-->
 					</tr>
 				</tbody>
 			</table>
