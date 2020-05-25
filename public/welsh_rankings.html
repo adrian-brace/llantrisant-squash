@@ -7,7 +7,7 @@
 		</table>
 	</div>
 	<div class="pageContent">
-		<div class="textParagraph">
+		<div class="textParagraphNonJustified">
 				<strong class="warningMessage">NOTE:</strong> Rankings are based on those shown on Squash Levels.
 		</div>
 		<table class="centredTable">
@@ -67,7 +67,7 @@
 				<thead>
 					<tr align="center">
 						<th align="center">
-							<a class='sortAnchor' href="" ng-click="sort('position')">Club Ranking</a>
+							<a class='sortAnchor' href="" ng-click="sort('position')">Rank</a>
 							<span ng-show="orderColumn == 'position' && direction" class="down"></span>
 							<span ng-show="orderColumn == 'position' && !direction" class="up"></span>
 						</th>
@@ -80,12 +80,12 @@
 							<a class='sortAnchor' href="" ng-click="sort('welshRank')">Welsh Ranking</a>
 							<span ng-show="orderColumn == 'welshRank' && direction" class="down"></span>
 							<span ng-show="orderColumn == 'welshRank' && !direction" class="up"></span>
-						</th> -->
+						</th>
 						<th align="center">
 							<a class='sortAnchor' href="" ng-click="sort('welshRankingID')">Welsh ID </a>
 							<span ng-show="orderColumn == 'welshRankingID' && direction" class="down"></span>
 							<span ng-show="orderColumn == 'welshRankingID' && !direction" class="up"></span>							
-						</th>
+						</th> -->
 						<th align="center">
 							<a class='sortAnchor' href="" ng-click="sort('level')">Level</a>
 							<span ng-show="orderColumn == 'level' && direction" class="down"></span>
@@ -110,10 +110,10 @@
 						</td>
 						<!-- <td align="center">
 							{{player.welshRank}}
-						</td> -->
+						</td>
 						<td>
 							{{player.welshRankingID}}
-						</td>
+						</td> -->
 						<td align="center">
 							{{player.level}}
 						</td>
