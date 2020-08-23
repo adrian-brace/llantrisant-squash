@@ -115,6 +115,7 @@ h4{
 
 .titleTable{
 	margin: 0 auto;
+	padding-top: 20px;
 }
 
 .titleTable td {
@@ -360,11 +361,13 @@ span {
 	word-break: break-word;
 	white-space: normal;
 	max-width: 570px;
+	padding-right: 5px;
 }
 
 .noBulletList {
 	list-style: none;
-    padding-left: 15px;
+	padding-left: 15px;
+	padding-right: 5px;
 }
 
 .movement {
