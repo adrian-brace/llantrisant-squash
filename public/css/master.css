@@ -338,25 +338,28 @@ span {
 
 .textParagraph {
 	padding: 10px;
-	width: 90%;
     word-wrap: break-word;
 	text-align: justify;
     white-space: normal;
 	color: #85a3e0;
+	max-width: 600px;
 }
 
 .textParagraphNonJustified {
 	display: inline-block;
 	padding: 10px;
-	width: 90%;
     word-wrap: break-word;
     white-space: normal;
 	color: #85a3e0;
+	max-width: 600px;
 }
 
 .textParagraphList {
 	color: #85a3e0;
-	text-align: left;
+	text-align: justify;
+	word-break: break-word;
+	white-space: normal;
+	max-width: 570px;
 }
 
 .noBulletList {

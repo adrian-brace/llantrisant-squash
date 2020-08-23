@@ -25,209 +25,215 @@
 		</table>
 	</div>
 	<div class="pageContent">
-		<br/>
-		<strong>
-			<a class="loneAnchor" ng-show="!showRules" ng-click="showHideRules();">View Ladder Rules & Joining Instructions</a>
-			<a class="loneAnchor" ng-show="showRules" ng-click="showHideRules();">Hide Ladder Rules & Joining Instructions</a>
-		</strong>
-		<br/>
-		<br/>
-		<form name="form">
-			<div ng-show="showRules">
-				<h3>JOINING</h3>
-				<p class="textParagraph">
-					It is FREE to join the squash and racketball ladders. You do <b>not</b> need to be a club member to play on our ladders. Ladder cycles are approximately 6 weeks long depending on the time of year.
-					<ul class='textParagraphList'>
-						<li class='textParagraphList'>To join the <b>Squash ladder</b> please send your <b>Full name, Email Address</b> and <b>Mobile number</b> to Ade on <b>Whatsapp (07949077329)</b> or email <a class="loneAnchor" href="mailto:{{club.CONTACTS.EMAIL}}">{{club.CONTACTS.EMAIL}}</a>. You will then be sent an activation link via email for <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQCLUB }}">SportyHQ</a> and you can login, find the <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQSQUASHLADDER }}">Llantrisant Squash Ladders</a> and click to formally <b>Opt In</b> to the next cycle. Further full instructions for using SportyHQ can be found in <a class="loneAnchor" href="./SportyHQ_Instructions.pdf">PDF FORMAT HERE</a>.</li>
-						<br/>
-						<!--<li class='textParagraphList'>To join the <b>Racketball ladder</b> simply send your your <b>name and telephone number</b> to <b>Ray Skene (07866734240)</b>, and you will be added to the bottom of the next cycle by Ray, our voluntary ladder organizer.</li>-->
-					</ul>					
-				</p>
-				<h3>CONTACT NUMBERS</h3>
-				<p class="textParagraph">
-					<span ng-class="'negative'">NOTE:</span>: We do not publish the telephone numbers of ladder players online. A contact list is published on the notice board next to the ladders at the back of the courts. For changes or corrections, please send an email, text or whatsapp to <a class="loneAnchor" href="apbmole@gmail.com">Adrian Brace</a>.
-				</p>
-				<!--<h3>RACKETBALL</h3>
-				<p class="textParagraph">
-					<span ng-class="'negative'">NOTE:</span> The RACKETBALL ladder is currently being run as a single division with an Open Challenge for everyone, until further notice.
-				</p>-->
-				<h3>SQUASH</h3>
-				<p class="textParagraph">
-					<b>RULES</b>: In your ladder there are normally 5 players (including yourself). The goal is to play as many players as you can in your ladder within the dates Start and End Date.
+		<table class="ladderTable">
+			<tr>
+				<td class="centredCell">
+					<br/>
+					<strong>
+						<a class="loneAnchor" ng-show="!showRules" ng-click="showHideRules();">View Ladder Rules & Joining Instructions</a>
+						<a class="loneAnchor" ng-show="showRules" ng-click="showHideRules();">Hide Ladder Rules & Joining Instructions</a>
+					</strong>
 					<br/>
 					<br/>
-					Best of 5 games. Players must agree scoring system. Generally you should play Point A Rally to 11 or 15. If no agreement then PAR to 15.
-					<br/>
-					<br/>
-					You are awarded points for playing your ladder games at 2 points per appearance.
-					<br/>
-					<br/>
-					The league points system is as follows:
-					<ul class='textParagraphList'>
-						<li class='textParagraphList'>If you win 3-0, your ladder points are 7-2</li>
-						<li class='textParagraphList'>If you win 3-1, your ladder points are 6-3</li>
-						<li class='textParagraphList'>If you win 3-2, your ladder points are 5-4</li>
-						<li class='textParagraphList'>If you lose 3-0, your ladder points are 2-7</li>
-						<li class='textParagraphList'>If you lose 3-1, your ladder points are 3-6</li>
-						<li class='textParagraphList'>If you lose 3-2, your ladder points are 4-5</li>
-						<li class='textParagraphList'>If you run out of time then players are asked to replay the tie before the end of the ladder.</li>
-					</ul>
-				</p>
-				<p class="textParagraph">
-					Promotion/Relegation
-					<ul class='textParagraphList'>
-						<li class='textParagraphList'>If you win your ladder you will be promoted up 2 divisions.</li>
-						<li class='textParagraphList'>If you finish second in your ladder you will be promoted up 1 division.</li>
-						<li class='textParagraphList'>If you finish second to last in your ladder you will be relegated down 1 division.</li>
-						<li class='textParagraphList'>If you finish last in your ladder you will be relegated down 2 divisions.</li>
-						<li class='textParagraphList'>3rd place in Division 1 will also be relegated 1 division.</li>
-					</ul>
-				</p>
-				<p class="textParagraph">
-					<b>NOTE:</b> Failure to play any fixtures over a successive period of ladder cycles can result in you being removed from the ladder entirely.
-				</p>			
-			</div>
-			<div class="dataTable">
-				<table class="dataTable">
-					<thead>
-						<tr>
-							<th>Sport</th>
-							<th>Start</th>
-							<th>End</th>
-							<th>Days Left</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr style="text-align: center;">
-							<td><span class="negative">Squash</span></td>
-							<td ng-show='!admin'>{{ data.Squash.StartDate | date:'EEEE d MMMM' }} -</td>
-							<!--<td ng-show='admin'><input type="text" ng-model="data.Squash.StartDate"/></td>-->
-							<td ng-show='!admin'><b>{{ data.Squash.EndDate | date:'EEEE d MMMM' }}</b></td>
-							<!--<td ng-show='admin'><input type="text" ng-model="data.Squash.EndDate"/></td>-->
-							<td>
-								<span ng-class="{'positive': (daysRemainingSquash > 14),
-									'concern': (daysRemainingSquash <= 14 && daysRemainingSquash >= 7),
-									'negativeLight': (daysRemainingSquash <= 7)}"><span ng-show="daysRemainingSquash >= 0"><b>{{ daysRemainingSquash }}</b></span></span>
-								<span ng-show="daysRemainingSquash === -1" class='negative'><b>N/A - NEW LADDER DUE SOON</b></span>
-							</td>
-						</tr>
-						<!--<tr style="text-align: center;">
-							<td><span class="negative">Racketball</span></td>
-							<td ng-show='!admin'>{{ data.Racketball.StartDate | date:'EEEE d MMMM' }} -</td>
-							<td ng-show='admin'><input type="text" ng-model="data.Racketball.StartDate"/></td>-->
-							<!--<td ng-show='!admin'><b>{{ data.Racketball.EndDate | date:'EEEE d MMMM' }}</b></td>-->
-							<!--<td ng-show='admin'><input type="text" ng-model="data.Racketball.EndDate"/></td>-->
-							<!--<td>
-								<span ng-class="{'positive': (daysRemainingRacketball > 14),
-									'concern': (daysRemainingRacketball <= 14 && daysRemainingRacketball >= 7),
-									'negativeLight': (daysRemainingRacketball <= 7)}"><span ng-show="daysRemainingRacketball >= 0"><b>{{ daysRemainingRacketball }}</b></span></span>
-								<span ng-show="daysRemainingRacketball === -1" class='negative'><b>N/A - NEW LADDERS WILL BE POSTED SOON</b></span>
-							</td>
-						</tr>-->
-					</tbody>
-				</table>
-			</div>
-			<button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Refresh Points</button>
-			<br/>
-			<!--<div ng-show='admin'>
-				<button ng-click="save();">Save</button>
-				<span ng-class="'negative'" ng-show="unSavedData">WARNING: Ladder data has not been saved!!!</span>
-				<span ng-class="'positive'" ng-show='saveStatus'>{{ saveStatus }}</span>
-			</div>-->
-			<div>
-				<table class="ladderTable">
-					<td ng-show='daysRemainingSquash >= 0' align="center">
-						<div class="squash">
-							<span class="noDisplay">Squash</span>
-						</div>
-						<h2>Squash</h2>
-						<div class="dataTable">
-							<!--<span ng-show='admin'>
-								<button ng-click="extendLadder(true);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeSquash"/>
+					<form name="form">
+						<div ng-show="showRules">
+							<h3>JOINING</h3>
+							<p class="textParagraph">
+								It is FREE to join the squash and racketball ladders. You do <b>not</b> need to be a club member to play on our ladders. Ladder cycles are approximately 6 weeks long depending on the time of year.
+								<ul class='textParagraphList'>
+									<li class='textParagraphList'>To join the <b>Squash ladder</b> please send your <b>Full name, Email Address</b> and <b>Mobile number</b> to Ade on <b>Whatsapp (07949077329)</b> or email <a class="loneAnchor" href="mailto:{{club.CONTACTS.EMAIL}}">{{club.CONTACTS.EMAIL}}</a>. You will then be sent an activation link via email for <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQCLUB }}">SportyHQ</a> and you can login, find the <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQSQUASHLADDER }}">Llantrisant Squash Ladders</a> and click to formally <b>Opt In</b> to the next cycle. Further full instructions for using SportyHQ can be found in <a class="loneAnchor" href="./SportyHQ_Instructions.pdf">PDF FORMAT HERE</a>.</li>
+									<br/>
+									<!--<li class='textParagraphList'>To join the <b>Racketball ladder</b> simply send your your <b>name and telephone number</b> to <b>Ray Skene (07866734240)</b>, and you will be added to the bottom of the next cycle by Ray, our voluntary ladder organizer.</li>-->
+								</ul>					
+							</p>
+							<h3>CONTACT NUMBERS</h3>
+							<p class="textParagraph">
+								<span ng-class="'negative'">NOTE:</span>: We do not publish the telephone numbers of ladder players online. A contact list is published on the notice board next to the ladders at the back of the courts. For changes or corrections, please send an email, text or whatsapp to <a class="loneAnchor" href="apbmole@gmail.com">Adrian Brace</a>.
+							</p>
+							<!--<h3>RACKETBALL</h3>
+							<p class="textParagraph">
+								<span ng-class="'negative'">NOTE:</span> The RACKETBALL ladder is currently being run as a single division with an Open Challenge for everyone, until further notice.
+							</p>-->
+							<h3>SQUASH</h3>
+							<p class="textParagraph">
+								<b>RULES</b>: In your ladder there are normally 5 players (including yourself). The goal is to play as many players as you can in your ladder within the dates Start and End Date.
 								<br/>
-								<button ng-click="trimLadder(true);">Remove Bottom group</button>
-							</span>-->
-							<table style="width: 150px; padding-top: 5px;" class="dataTable" ng-repeat="ladder in data.Squash.Ladders.Ladder">
+								<br/>
+								Best of 5 games. Players must agree scoring system. Generally you should play Point A Rally to 11 or 15. If no agreement then PAR to 15.
+								<br/>
+								<br/>
+								You are awarded points for playing your ladder games at 2 points per appearance.
+								<br/>
+								<br/>
+								The league points system is as follows:
+								<ul class='textParagraphList'>
+									<li class='textParagraphList'>If you win 3-0, your ladder points are 7-2</li>
+									<li class='textParagraphList'>If you win 3-1, your ladder points are 6-3</li>
+									<li class='textParagraphList'>If you win 3-2, your ladder points are 5-4</li>
+									<li class='textParagraphList'>If you lose 3-0, your ladder points are 2-7</li>
+									<li class='textParagraphList'>If you lose 3-1, your ladder points are 3-6</li>
+									<li class='textParagraphList'>If you lose 3-2, your ladder points are 4-5</li>
+									<li class='textParagraphList'>If you run out of time then players are asked to replay the tie before the end of the ladder.</li>
+								</ul>
+							</p>
+							<p class="textParagraph">
+								Promotion/Relegation
+								<ul class='textParagraphList'>
+									<li class='textParagraphList'>If you win your ladder you will be promoted up 2 divisions.</li>
+									<li class='textParagraphList'>If you finish second in your ladder you will be promoted up 1 division.</li>
+									<li class='textParagraphList'>If you finish second to last in your ladder you will be relegated down 1 division.</li>
+									<li class='textParagraphList'>If you finish last in your ladder you will be relegated down 2 divisions.</li>
+									<li class='textParagraphList'>3rd place in Division 1 will also be relegated 1 division.</li>
+								</ul>
+							</p>
+							<p class="textParagraph">
+								<b>NOTE:</b> Failure to play any fixtures over a successive period of ladder cycles can result in you being removed from the ladder entirely.
+							</p>			
+						</div>
+						<div class="dataTable">
+							<table class="dataTable">
 								<thead>
 									<tr>
-										<th>Box {{ ladder.Number }}</th>
-										<th></th>
-										<th></th>
+										<th>Sport</th>
+										<th>Start</th>
+										<th>End</th>
+										<th>Days Left</th>
 									</tr>
-									<tr>
-										<th>Position</th>
-										<th>Name</th>
-										<th>Current Points</th>
-									</tr>										
 								</thead>
 								<tbody>
-									<tr ng-repeat="name in ladder.Players.Name track by $index">
-										
-										<!--<td ng-show='!admin'>{{ name }}</td>-->
-										<td align="center" ng-show='!admin'>{{ name.position }}</td>
-										<td ng-show='!admin'>{{ name.playerName }}</td>
-										<td align="center" ng-show='!admin'>{{ name.totalPoints }}</td>
-										<!--<td ng-show='admin'><input ng-model="ladder.Players.Name[$index]"/></td>
-										<td ng-show='admin'>
-											MOVE:
-											<button ng-show="ladder.Number < (data.Squash.Ladders.Ladder.length - 1)" ng-click="move('squash', 10, name);">+10</button>
-											<button ng-show="ladder.Number < (data.Squash.Ladders.Ladder.length)" ng-click="move('squash', 5, name);">+5</button>
-											<button ng-click="move('squash', 1, name);">+1</button>
-											<button ng-click="move('squash', -1, name);">-1</button>
-											<button ng-show="ladder.Number > 1" ng-click="move('squash', -5, name);">-5</button>
-											<button ng-show="ladder.Number > 2" ng-click="move('squash', -10, name);">-10</button>
-										</td>-->
-										
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</td>
-					<!--
-					<td ng-show='daysRemainingRacketball >= 0' align="center" style="vertical-align: top; padding-left: 20px;">
-						<div class="racketball">
-							<span class="noDisplay">Racketball</span>
-						</div>
-						<h2>Racketball</h2>
-						<div class="dataTable">
-							<span ng-show='admin'>
-								<button ng-click="extendLadder(false);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeRacketball"/>
-								<br/>
-								<button ng-click="trimLadder(false);">Remove Bottom group</button>
-							</span>
-							<table style="width: 150px; padding-top: 5px;" class="dataTable" ng-repeat="ladder in data.Racketball.Ladders.Ladder">
-								<thead>
-									<tr>
-										<th></th>
-										<th>
-											{{ ladder.Number }}
-										</th>
-										<th></th>
-									</tr>										
-								</thead>
-								<tbody>
-									<tr ng-repeat="name in ladder.Players.Name track by $index">
-										<td></td>
-										<td ng-show='!admin'>{{ name }}</td>
-										<td ng-show='admin'><input ng-model="ladder.Players.Name[$index]"/></td>
-										<td ng-show='admin'>
-											MOVE:
-											<button ng-show="ladder.Number < (data.Racketball.Ladders.Ladder.length - 1)" ng-click="move(10, name);">+10</button>
-											<button ng-show="ladder.Number < (data.Racketball.Ladders.Ladder.length)" ng-click="move('racketball', 5, name);">+5</button>
-											<button ng-click="move('racketball', 1, name);">+1</button>
-											<button ng-click="move('racketball', -1, name);">-1</button>
-											<button ng-show="ladder.Number > 1" ng-click="move('racketball', -5, name);">-5</button>
-											<button ng-show="ladder.Number > 2" ng-click="move('racketball', -10, name);">-10</button>
+									<tr style="text-align: center;">
+										<td><span class="negative">Squash</span></td>
+										<td ng-show='!admin'>{{ data.Squash.StartDate | date:'EEEE d MMMM' }} -</td>
+										<!--<td ng-show='admin'><input type="text" ng-model="data.Squash.StartDate"/></td>-->
+										<td ng-show='!admin'><b>{{ data.Squash.EndDate | date:'EEEE d MMMM' }}</b></td>
+										<!--<td ng-show='admin'><input type="text" ng-model="data.Squash.EndDate"/></td>-->
+										<td>
+											<span ng-class="{'positive': (daysRemainingSquash > 14),
+												'concern': (daysRemainingSquash <= 14 && daysRemainingSquash >= 7),
+												'negativeLight': (daysRemainingSquash <= 7)}"><span ng-show="daysRemainingSquash >= 0"><b>{{ daysRemainingSquash }}</b></span></span>
+											<span ng-show="daysRemainingSquash === -1" class='negative'><b>N/A - NEW LADDER DUE SOON</b></span>
 										</td>
-										<td></td>
 									</tr>
+									<!--<tr style="text-align: center;">
+										<td><span class="negative">Racketball</span></td>
+										<td ng-show='!admin'>{{ data.Racketball.StartDate | date:'EEEE d MMMM' }} -</td>
+										<td ng-show='admin'><input type="text" ng-model="data.Racketball.StartDate"/></td>-->
+										<!--<td ng-show='!admin'><b>{{ data.Racketball.EndDate | date:'EEEE d MMMM' }}</b></td>-->
+										<!--<td ng-show='admin'><input type="text" ng-model="data.Racketball.EndDate"/></td>-->
+										<!--<td>
+											<span ng-class="{'positive': (daysRemainingRacketball > 14),
+												'concern': (daysRemainingRacketball <= 14 && daysRemainingRacketball >= 7),
+												'negativeLight': (daysRemainingRacketball <= 7)}"><span ng-show="daysRemainingRacketball >= 0"><b>{{ daysRemainingRacketball }}</b></span></span>
+											<span ng-show="daysRemainingRacketball === -1" class='negative'><b>N/A - NEW LADDERS WILL BE POSTED SOON</b></span>
+										</td>
+									</tr>-->
 								</tbody>
 							</table>
 						</div>
-					</td>
-					-->
-				</table>
-			</div>
-		</form>
-	</div>
+						<button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Refresh Points</button>
+						<br/>
+						<!--<div ng-show='admin'>
+							<button ng-click="save();">Save</button>
+							<span ng-class="'negative'" ng-show="unSavedData">WARNING: Ladder data has not been saved!!!</span>
+							<span ng-class="'positive'" ng-show='saveStatus'>{{ saveStatus }}</span>
+						</div>-->
+						<div>
+							<table class="ladderTable">
+								<td ng-show='daysRemainingSquash >= 0' align="center">
+									<div class="squash">
+										<span class="noDisplay">Squash</span>
+									</div>
+									<h2>Squash</h2>
+									<div class="dataTable">
+										<!--<span ng-show='admin'>
+											<button ng-click="extendLadder(true);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeSquash"/>
+											<br/>
+											<button ng-click="trimLadder(true);">Remove Bottom group</button>
+										</span>-->
+										<table style="width: 150px; padding-top: 5px;" class="dataTable" ng-repeat="ladder in data.Squash.Ladders.Ladder">
+											<thead>
+												<tr>
+													<th>Box {{ ladder.Number }}</th>
+													<th></th>
+													<th></th>
+												</tr>
+												<tr>
+													<th>Position</th>
+													<th>Name</th>
+													<th>Current Points</th>
+												</tr>										
+											</thead>
+											<tbody>
+												<tr ng-repeat="name in ladder.Players.Name track by $index">
+													
+													<!--<td ng-show='!admin'>{{ name }}</td>-->
+													<td align="center" ng-show='!admin'>{{ name.position }}</td>
+													<td ng-show='!admin'>{{ name.playerName }}</td>
+													<td align="center" ng-show='!admin'>{{ name.totalPoints }}</td>
+													<!--<td ng-show='admin'><input ng-model="ladder.Players.Name[$index]"/></td>
+													<td ng-show='admin'>
+														MOVE:
+														<button ng-show="ladder.Number < (data.Squash.Ladders.Ladder.length - 1)" ng-click="move('squash', 10, name);">+10</button>
+														<button ng-show="ladder.Number < (data.Squash.Ladders.Ladder.length)" ng-click="move('squash', 5, name);">+5</button>
+														<button ng-click="move('squash', 1, name);">+1</button>
+														<button ng-click="move('squash', -1, name);">-1</button>
+														<button ng-show="ladder.Number > 1" ng-click="move('squash', -5, name);">-5</button>
+														<button ng-show="ladder.Number > 2" ng-click="move('squash', -10, name);">-10</button>
+													</td>-->
+													
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+								<!--
+								<td ng-show='daysRemainingRacketball >= 0' align="center" style="vertical-align: top; padding-left: 20px;">
+									<div class="racketball">
+										<span class="noDisplay">Racketball</span>
+									</div>
+									<h2>Racketball</h2>
+									<div class="dataTable">
+										<span ng-show='admin'>
+											<button ng-click="extendLadder(false);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeRacketball"/>
+											<br/>
+											<button ng-click="trimLadder(false);">Remove Bottom group</button>
+										</span>
+										<table style="width: 150px; padding-top: 5px;" class="dataTable" ng-repeat="ladder in data.Racketball.Ladders.Ladder">
+											<thead>
+												<tr>
+													<th></th>
+													<th>
+														{{ ladder.Number }}
+													</th>
+													<th></th>
+												</tr>										
+											</thead>
+											<tbody>
+												<tr ng-repeat="name in ladder.Players.Name track by $index">
+													<td></td>
+													<td ng-show='!admin'>{{ name }}</td>
+													<td ng-show='admin'><input ng-model="ladder.Players.Name[$index]"/></td>
+													<td ng-show='admin'>
+														MOVE:
+														<button ng-show="ladder.Number < (data.Racketball.Ladders.Ladder.length - 1)" ng-click="move(10, name);">+10</button>
+														<button ng-show="ladder.Number < (data.Racketball.Ladders.Ladder.length)" ng-click="move('racketball', 5, name);">+5</button>
+														<button ng-click="move('racketball', 1, name);">+1</button>
+														<button ng-click="move('racketball', -1, name);">-1</button>
+														<button ng-show="ladder.Number > 1" ng-click="move('racketball', -5, name);">-5</button>
+														<button ng-show="ladder.Number > 2" ng-click="move('racketball', -10, name);">-10</button>
+													</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+								-->
+							</table>
+						</div>
+					</form>
+				</td>
+			</tr>
+		</table>
+	<div>
 </div>
