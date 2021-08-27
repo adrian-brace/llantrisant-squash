@@ -49,7 +49,7 @@
 				<DivisionID>1</DivisionID>
 				<DivisionName>Mid Glamorgan One</DivisionName>
 				<CompetitionID>450</CompetitionID>
-				<HomeNight>Thurs</HomeNight>
+				<HomeNight>Wed</HomeNight>
 				<Players>
 					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
 					<Player Name="Chay Davies-Smith" IsCaptain="true" RefereeNumber="100385"/>
@@ -66,15 +66,23 @@
 				<DivisionID>2</DivisionID>
 				<DivisionName>Mid Glamorgan Two</DivisionName>
 				<CompetitionID>450</CompetitionID>
-				<HomeNight>Tues</HomeNight>
+				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<!--<Player Name="Dave Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101573" WelshRankingID="68967"/>-->
 					<!--<Player Name="Chris Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101510"/>-->
 					<!--<Player Name="Matthew Thomas" ActualTeam="C" IsSpaceSaver="true" WelshRankingID="86287"/>-->
 					<!--<Player Name="Lee Francis" RefereeNumber="101514"/>-->								
+					<Player Name="Steven Melhuish"/>
+					<Player Name="Steve Evans" ActualTeam="D" WelshRankingID="13194"/>
+					<Player Name="Adrian Fisk"/>
+					<Player Name="Amanda Barter" IsCaptain="true"/>
+					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
+					<Player Name="Wynne Owen"/>
+					<Player Name="Martyn Christopher"/>
+					<Player Name="Dylan Vite"/>
 				</Players>
 			</Team>
-			<Team>
+<!--			<Team>
 				<Name>E</Name>
 				<TeamID>89</TeamID>
 				<League>Mid Glam</League>
@@ -83,19 +91,11 @@
 				<CompetitionID>450</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>
-					<!--<Player Name="Nigel Bevan" RefereeNumber="101509"/>-->				
-					<!--<Player Name="Phillip Maybury"/>-->
-					<Player Name="Steven Melhuish"/>
-					<Player Name="Steve Evans" ActualTeam="D" WelshRankingID="13194"/>
-					<!--<Player Name="Ashley Maybury"/>--> 
-					<!--<Player Name="Callum Webb"/>-->
-					<Player Name="Adrian Fisk"/>
-					<Player Name="Amanda Barter" IsCaptain="true"/>
-					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
-					<Player Name="Wynne Owen"/>
-					<Player Name="Martyn Christopher"/>
-					<Player Name="Dylan Vite"/>
-					<!--<Player Name="Mark Turner"/>
+					<Player Name="Nigel Bevan" RefereeNumber="101509"/>				
+					<Player Name="Phillip Maybury"/>
+					<Player Name="Ashley Maybury"/> 
+					<Player Name="Callum Webb"/>
+					<Player Name="Mark Turner"/>
 					<Player Name="Jack Penberthy" IsSpaceSaver="true"/>
 					<Player Name="Karen Workman" RefereeNumber="100149"/>
 					<Player Name="Erica Howcroft" RefereeNumber="102166"/>
@@ -111,9 +111,9 @@
 					<Player Name="Wynford Davies"/>
 					<Player Name="Cameron Docherty" WelshRankingID="145285"/>
 					<Player Name="Marcus Docherty"/>
-					<Player Name="Harry Docherty"/>-->
+					<Player Name="Harry Docherty"/>
 				</Players>
-			</Team>
+			</Team>-->
 			<!-- SPARES -->
 			<!--
 				
