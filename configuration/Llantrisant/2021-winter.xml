@@ -37,7 +37,7 @@
 					<Player Name="Chris Emanuel"/>
 					<Player Name="Jeff Greenslade" RefereeNumber="100467"/>									
 					<Player Name="Rob Mitchell"/>	
-					<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
+					<Player Name="Rich Timms" RefereeNumber="101511"/>
 					<Player Name="Nick Wilkes"/>
 					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
 				</Players>
@@ -73,7 +73,7 @@
 					<!--<Player Name="Matthew Thomas" ActualTeam="C" IsSpaceSaver="true" WelshRankingID="86287"/>-->
 					<!--<Player Name="Lee Francis" RefereeNumber="101514"/>-->								
 					<Player Name="Steven Melhuish"/>
-					<Player Name="Steve Evans" ActualTeam="D" WelshRankingID="13194"/>
+					<Player Name="Steve Evans" WelshRankingID="13194"/>
 					<Player Name="Adrian Fisk"/>
 					<Player Name="Amanda Barter" IsCaptain="true"/>
 					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
