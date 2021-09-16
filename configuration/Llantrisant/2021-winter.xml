@@ -39,7 +39,7 @@
 					<Player Name="Rob Mitchell"/>	
 					<Player Name="Nick Wilkes"/>
 					<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
-					<Player Name="Matthew Thomas" IsSpaceSaver="true" WelshRankingID="86287"/>
+					<Player Name="Matthew Thomas" WelshRankingID="86287"/>
 				</Players>
 			</Team>
 			<Team>
