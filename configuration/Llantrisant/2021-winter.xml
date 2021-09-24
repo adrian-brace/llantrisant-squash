@@ -26,7 +26,7 @@
 				<Name>B</Name>
 				<TeamID>19</TeamID>
 				<League>South Central</League>
-				<DivisionID>6</DivisionID>
+				<DivisionID>2</DivisionID>
 				<DivisionName>South Central Two</DivisionName>
 				<CompetitionID>474</CompetitionID>
 				<HomeNight>Tues</HomeNight>
@@ -46,7 +46,7 @@
 				<Name>C</Name>
 				<TeamID>55</TeamID>
 				<League>South Central</League>
-				<DivisionID>1</DivisionID>
+				<DivisionID>5</DivisionID>
 				<DivisionName>South Central Five</DivisionName>
 				<CompetitionID>474</CompetitionID>
 				<HomeNight>Wed</HomeNight>
@@ -65,7 +65,7 @@
 				<Name>D</Name>
 				<TeamID>79</TeamID>
 				<League>South Central</League>
-				<DivisionID>2</DivisionID>
+				<DivisionID>6</DivisionID>
 				<DivisionName>South Central Six</DivisionName>
 				<CompetitionID>474</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
