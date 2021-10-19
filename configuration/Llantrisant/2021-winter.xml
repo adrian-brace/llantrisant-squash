@@ -59,24 +59,10 @@
 					<Player Name="Jack Penberthy"/>
 					<Player Name="Josh Llewellyn"/>
 					<Player Name="Sam Norris"/>
-				</Players>
-			</Team>
-			<Team>
-				<Name>D</Name>
-				<TeamID>79</TeamID>
-				<League>South Central</League>
-				<DivisionID>6</DivisionID>
-				<DivisionName>South Central Six</DivisionName>
-				<CompetitionID>474</CompetitionID>
-				<HomeNight>Thurs</HomeNight>
-				<Players>
-					<!--<Player Name="Dave Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101573" WelshRankingID="68967"/>-->
-					<!--<Player Name="Chris Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101510"/>-->
-					<!--<Player Name="Lee Francis" RefereeNumber="101514"/>-->								
 					<Player Name="Steve Evans" WelshRankingID="13194"/>
 					<Player Name="Steven Melhuish"/>
 					<Player Name="Adrian Fisk"/>
-					<Player Name="Amanda Barter" IsCaptain="true"/>
+					<Player Name="Amanda Barter"/>
 					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
 					<Player Name="Wynne Owen"/>
 					<Player Name="Martyn Christopher"/>
@@ -85,6 +71,20 @@
 					<Player Name="James Pickett"/>
 				</Players>
 			</Team>
+			<!--<Team>
+				<Name>D</Name>
+				<TeamID>79</TeamID>
+				<League>South Central</League>
+				<DivisionID>6</DivisionID>
+				<DivisionName>South Central Six</DivisionName>
+				<CompetitionID>474</CompetitionID>
+				<HomeNight>Thurs</HomeNight>
+				<Players>
+					<Player Name="Dave Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101573" WelshRankingID="68967"/>
+					<Player Name="Chris Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101510"/>
+					<Player Name="Lee Francis" RefereeNumber="101514"/>
+				</Players>
+			</Team>-->
 <!--			<Team>
 				<Name>E</Name>
 				<TeamID>89</TeamID>

@@ -160,6 +160,9 @@ function getSeasonAndYearForProvisionalRankings(){
 }
 
 function showProvisionalRankings() {
+	return false;
+
+	// TODO Fix this depending on league start/end dates which are all to crap at the mo
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
