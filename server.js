@@ -328,6 +328,9 @@ app.get('/welsh_rankings', function(req, res) {
 	for (pageOf25 = 0; pageOf25 < 50; pageOf25 += 25)
 	{
 		pageIndex++;
+
+		// TODO: 6015 is the URL for the ladder players: E.g. https://www.squashlevels.com/players.php?&all=&club=6015&start=0
+		// 
 		var llantrisantPageOf25URL = squashLevelsURL + vsprintf(welshRankingsURL, [squashLevelsClubNumberLlantrisant, pageOf25.toString()]);
 		var filename = pageOf25 + FILE_EXTENSION_FOR_WEB_PAGES;	
 		var filepath = welshRankingsDirectory + filename;
