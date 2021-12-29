@@ -1219,7 +1219,9 @@ function getYear(year){
 
 		if(today.getMonth() === 2 && today.getDate() > SPRING_START_DAY) {
 			return today.getFullYear() + 1;
-		} else{
+		} else if (today.getMonth() === 1) {
+			return today.getFullYear() - 1;
+		} else {
 			return today.getFullYear();
 		}
 	}
