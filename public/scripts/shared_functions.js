@@ -1,6 +1,6 @@
 /* Constants */
 var OLDEST_YEAR = 2016;
-var SPRING_START_DAY = 19;
+var SPRING_START_DAY = 1;
 var SPRING_END_DAY = 2;
 var SPRING_START_MONTH = '-01-15';
 var WINTER_START_MONTH = '-08-15';
@@ -93,7 +93,7 @@ function getYear(){
 	
 	var today = new Date();
 
-	if(today.getMonth() === 11 && today.getDate() > SPRING_START_DAY) {
+	if(today.getMonth() === 2 && today.getDate() > SPRING_START_DAY) {
 		return today.getFullYear() + 1;
 	} else{
 		return today.getFullYear();
@@ -106,8 +106,8 @@ function getSeason(){
 	var month = today.getMonth();
 	var day = today.getDate();
 
-	if (month < 7 ||
-		(month === 11 && day > SPRING_START_DAY) ||
+	if ((month < 7 && month >= 3) ||
+		(month === 2 && day > SPRING_START_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -121,8 +121,8 @@ function getSeasonForRankings(){
 	var month = today.getMonth();
 	var day = today.getDate();
 
-	if (month < 7 ||
-		(month === 11 && day > SPRING_START_DAY) ||
+	if ((month < 7 && month >= 3) ||
+		(month === 2 && day > SPRING_START_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -173,7 +173,7 @@ function showRankingUpdateDue() {
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
-	return (month == 11 && day > SPRING_START_DAY) || (month === 0 && day < 4) || (month === 7 && day >= 25)
+	return (month == 2 && day > SPRING_START_DAY) || (month === 0 && day < 4) || (month === 7 && day >= 25)
 }
 
 function getMasterConfiguration(http, xmlToJson, getClubNameOnly){
