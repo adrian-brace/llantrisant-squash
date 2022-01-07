@@ -1,14 +1,143 @@
 {
     "Squash": {
-        "StartDate": "UNKNOWN",
-        "EndDate": "UNKNOWN",
+        "StartDate": "2021-12-06T00:00:00.000Z",
+        "EndDate": "2022-01-17T00:00:00.000Z",
         "Ladders": {
-            "Ladder": []
+            "Ladder": [
+                {
+                    "Number": 1,
+                    "Players": {
+                        "Name": [
+                            {
+                                "position": 1,
+                                "playerName": "Tom Penberthy",
+                                "totalPoints": 14
+                            },
+                            {
+                                "position": 2,
+                                "playerName": "Richard Timms",
+                                "totalPoints": 7
+                            },
+                            {
+                                "position": 3,
+                                "playerName": "Lloyd Newland",
+                                "totalPoints": 4
+                            },
+                            {
+                                "position": 4,
+                                "playerName": "Sam Norris",
+                                "totalPoints": 2
+                            },
+                            {
+                                "position": 5,
+                                "playerName": "Jo Norris",
+                                "totalPoints": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Number": 2,
+                    "Players": {
+                        "Name": [
+                            {
+                                "position": 1,
+                                "playerName": "Steve Evans",
+                                "totalPoints": 6
+                            },
+                            {
+                                "position": 2,
+                                "playerName": "Jonathan Young",
+                                "totalPoints": 3
+                            },
+                            {
+                                "position": 3,
+                                "playerName": "Rob Mitchell",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 4,
+                                "playerName": "Dylan Vite",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 5,
+                                "playerName": "Jack Penberthy",
+                                "totalPoints": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Number": 3,
+                    "Players": {
+                        "Name": [
+                            {
+                                "position": 1,
+                                "playerName": "Wynford Davies",
+                                "totalPoints": 12
+                            },
+                            {
+                                "position": 2,
+                                "playerName": "Madalena Sidoli",
+                                "totalPoints": 11
+                            },
+                            {
+                                "position": 3,
+                                "playerName": "Stephen Mithan",
+                                "totalPoints": 7
+                            },
+                            {
+                                "position": 4,
+                                "playerName": "Ryan Vaughan",
+                                "totalPoints": 6
+                            },
+                            {
+                                "position": 5,
+                                "playerName": "Joe Powell",
+                                "totalPoints": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Number": 4,
+                    "Players": {
+                        "Name": [
+                            {
+                                "position": 1,
+                                "playerName": "Mark Juhlke",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 2,
+                                "playerName": "Jayesh Parmar",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 3,
+                                "playerName": "Joseph Mithan",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 4,
+                                "playerName": "Mike Hurst",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 5,
+                                "playerName": "Cian Grattidge",
+                                "totalPoints": 0
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     },
     "Racketball": {
-        "StartDate": "UNKNOWN",
-        "EndDate": "UNKNOWN",
+        "StartDate": "2021-12-06T00:00:00.000Z",
+        "EndDate": "2022-01-17T00:00:00.000Z",
         "Ladders": {
             "Ladder": []
         }

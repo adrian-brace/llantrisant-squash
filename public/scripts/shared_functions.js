@@ -93,9 +93,9 @@ function getYear(){
 	
 	var today = new Date();
 
-	if(today.getMonth() === 2 && today.getDate() > SPRING_START_DAY) {
+	if(today.getMonth() === 1 && today.getDate() > SPRING_START_DAY) {
 		return today.getFullYear() + 1;
-	} else if (today.getMonth() === 1) {
+	} else if (today.getMonth() === 0) {
 		return today.getFullYear() - 1;
 	} else {
 		return today.getFullYear();
@@ -109,7 +109,7 @@ function getSeason(){
 	var day = today.getDate();
 
 	if ((month < 7 && month >= 3) ||
-		(month === 2 && day > SPRING_START_DAY) ||
+		(month === 1 && day > SPRING_START_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -124,7 +124,7 @@ function getSeasonForRankings(){
 	var day = today.getDate();
 
 	if ((month < 7 && month >= 3) ||
-		(month === 2 && day > SPRING_START_DAY) ||
+		(month === 1 && day > SPRING_START_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -162,9 +162,6 @@ function getSeasonAndYearForProvisionalRankings(){
 }
 
 function showProvisionalRankings() {
-	return false;
-
-	// TODO Fix this depending on league start/end dates which are all to crap at the mo
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
@@ -175,7 +172,7 @@ function showRankingUpdateDue() {
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
-	return (month == 2 && day > SPRING_START_DAY) || (month === 0 && day < 4) || (month === 7 && day >= 25)
+	return (month == 1 && day > SPRING_START_DAY) || (month === 0) || (month === 7 && day >= 25)
 }
 
 function getMasterConfiguration(http, xmlToJson, getClubNameOnly){
