@@ -18,7 +18,7 @@ homeApp.controller('ProvisionalRankingsController', ['$scope', '$http', 'club', 
 			$scope.configuration = configuration;
 			$scope.season = getSeasonForProvisionalRanking();
 			$scope.seasonAndYear = getSeasonAndYearForProvisionalRankings();
-			$scope.year = getYear();
+			$scope.year = new Date().getFullYear();//getYear();
 			$scope.showProvisionalRankings = showProvisionalRankings();			
 
 			// Get the club's current season's team configuration

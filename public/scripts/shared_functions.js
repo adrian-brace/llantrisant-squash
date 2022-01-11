@@ -138,7 +138,7 @@ function getYearAndSeason(){
 
 function getYearAndSeasonForProvisionalRankings(){
 	var season = getSeasonForProvisionalRanking();
-	return getYear() + '-' + season;
+	return new Date().getFullYear() + '-' + season;
 }
 
 function getSeasonForProvisionalRanking() {
