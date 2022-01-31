@@ -6,9 +6,9 @@
 				<Name>A</Name>
 				<TeamID>10</TeamID>
 				<League>Premier</League>
-				<DivisionID>2</DivisionID>
-				<DivisionName>Premier 2</DivisionName>
-				<CompetitionID>472</CompetitionID>
+				<DivisionID>1</DivisionID>
+				<DivisionName>Premier 1</DivisionName>
+				<CompetitionID>480</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Dan Christopher"/>				
@@ -28,7 +28,7 @@
 				<League>South Central</League>
 				<DivisionID>2</DivisionID>
 				<DivisionName>South Central Two</DivisionName>
-				<CompetitionID>474</CompetitionID>
+				<CompetitionID>482</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>				
 					<Player Name="Tom Penberthy" IsCaptain="true"/>
@@ -48,7 +48,7 @@
 				<League>South Central</League>
 				<DivisionID>4</DivisionID>
 				<DivisionName>South Central Four</DivisionName>
-				<CompetitionID>474</CompetitionID>
+				<CompetitionID>482</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
@@ -65,9 +65,9 @@
 				<Name>D</Name>
 				<TeamID>79</TeamID>
 				<League>South Central</League>
-				<DivisionID>6</DivisionID>
-				<DivisionName>South Central Six</DivisionName>
-				<CompetitionID>474</CompetitionID>
+				<DivisionID>5</DivisionID>
+				<DivisionName>South Central Five</DivisionName>
+				<CompetitionID>482</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Chay Davies-Smith" IsCaptain="true" RefereeNumber="100385"/>

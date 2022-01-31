@@ -24,7 +24,7 @@ var FILE_EXTENSION_FOR_XML = ".xml";
 var FILE_EXTENSION_FOR_JSON = ".json";
 
 var OLDEST_YEAR = 2016;
-var SPRING_START_DAY = 1;
+var SPRING_START_DAY = 31;
 var SEASON_SPRING = 'spring';
 var SEASON_WINTER = 'winter';
 
@@ -1217,8 +1217,8 @@ function getYear(year){
 	} else {
 		var today = new Date();
 
-		if(today.getMonth() === 1 && today.getDate() > SPRING_START_DAY) {
-			return today.getFullYear() + 1;
+		if(today.getMonth() === 0 && today.getDate() <= SPRING_START_DAY) {
+			return today.getFullYear();
 		} else if (today.getMonth() === 0) {
 			return today.getFullYear() - 1;
 		} else {
@@ -1236,8 +1236,8 @@ function getSeason(season){
 		var month = today.getMonth();
 		var day = today.getDate();
 
-		if ((month < 7 && month >= 3) ||
-			(month === 2 && day > SPRING_START_DAY) ||
+		if ((month < 7 && month >= 1) ||
+			(month === 0 && day >= SPRING_START_DAY) ||
 			(month === 7 && day < 2)) {
 			return SEASON_SPRING;
 		} else{
