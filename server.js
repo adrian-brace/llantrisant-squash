@@ -1158,7 +1158,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 			var boxNumber = 0;
 			
 			$('table').filter(function() {
-				return ($(this).attr('class') === 'table table-bordered table-sm mb-0');
+				return ($(this).attr('class') === 'table table-sm mb-0 table-bordered');
 			}).each(function(){
 
 				boxNumber += 1;
