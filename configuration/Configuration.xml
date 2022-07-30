@@ -33,7 +33,7 @@
 		<TournamentEntryClosingDate>7th June</TournamentEntryClosingDate>
 		<TournamentPrizePot>0</TournamentPrizePot>
 		<ChallengeSystemClosingDateWinter>14th January</ChallengeSystemClosingDateWinter>
-		<ChallengeSystemClosingDateSummer>4th September</ChallengeSystemClosingDateSummer>
+		<ChallengeSystemClosingDateSummer>25th August</ChallengeSystemClosingDateSummer>
 	</Constants>
 	<Leagues>
 		<League Name="South Wales"/>

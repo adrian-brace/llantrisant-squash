@@ -3,7 +3,7 @@ var OLDEST_YEAR = 2016;
 var SPRING_START_DAY = 31;
 var SPRING_END_DAY = 2;
 var SPRING_START_MONTH = '-01-31';
-var WINTER_START_MONTH = '-08-15';
+var WINTER_START_MONTH = '-08-25';
 var SEASON_SPRING = 'spring';
 var SEASON_WINTER = 'winter';
 var DIRECTORY_CONFIGURATION = './configuration/';
@@ -172,7 +172,7 @@ function showRankingUpdateDue() {
 	var today = new Date();
 	var month = today.getMonth();
 	var day = today.getDate();
-	return (month === 0 && day <= SPRING_START_DAY) || (month === 7 && day >= 25)
+	return (month === 0 && day <= SPRING_START_DAY) || ((month === 6 || month === 7) && day >= 25)
 }
 
 function getMasterConfiguration(http, xmlToJson, getClubNameOnly){
