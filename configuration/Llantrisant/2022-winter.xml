@@ -8,7 +8,7 @@
 				<League>Premier</League>
 				<DivisionID>2</DivisionID>
 				<DivisionName>Premier 2</DivisionName>
-				<CompetitionID>480</CompetitionID>
+				<CompetitionID>487</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Greg Tippings"/>
@@ -26,9 +26,9 @@
 				<Name>B</Name>
 				<TeamID>19</TeamID>
 				<League>South Central</League>
-				<DivisionID>1</DivisionID>
-				<DivisionName>South Central One</DivisionName>
-				<CompetitionID>482</CompetitionID>
+				<DivisionID>4</DivisionID>
+				<DivisionName>South Central 2</DivisionName>
+				<CompetitionID>488</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>				
 					<Player Name="Dan Povey"/>
@@ -44,9 +44,9 @@
 				<Name>C</Name>
 				<TeamID>55</TeamID>
 				<League>South Central</League>
-				<DivisionID>4</DivisionID>
-				<DivisionName>South Central Four</DivisionName>
-				<CompetitionID>482</CompetitionID>
+				<DivisionID>6</DivisionID>
+				<DivisionName>South Central 4</DivisionName>
+				<CompetitionID>488</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<Player Name="Ryan Phillips"/>
@@ -63,9 +63,9 @@
 				<Name>D</Name>
 				<TeamID>79</TeamID>
 				<League>South Central</League>
-				<DivisionID>5</DivisionID>
-				<DivisionName>South Central Five</DivisionName>
-				<CompetitionID>482</CompetitionID>
+				<DivisionID>7</DivisionID>
+				<DivisionName>South Central 5</DivisionName>
+				<CompetitionID>488</CompetitionID>
 				<HomeNight>Mon</HomeNight>
 				<Players>
 					<!--<Player Name="Chay Davies-Smith" IsCaptain="true" RefereeNumber="100385"/>-->
