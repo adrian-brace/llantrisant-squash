@@ -13,11 +13,6 @@
    <br/>
    <div class="pageContent">
 		<table class="centredTable">
-			<tr ng-show="showRankingUpdateDue">
-				<td class="centredCell">
-					<div ng-include src='ranking_update_due'></div>		
-				</td>
-			</tr>
 			<tr>
 				<td class="centredCell">
 					<div ng-include src='challenge_rules'></div>		
@@ -29,17 +24,6 @@
 				</td>			   
 			</tr>
 		</table>
-		<!--<table class="centredTable">
-			<tr ng-show="showRankingUpdateDue">
-				<td class="centredCell">
-					<div>
-						Challenge Results must be submitted by :
-							<span ng-show="season === 'Spring'" class="negativeLight">{{configuration.CONSTANTS.CHALLENGESYSTEMCLOSINGDATEWINTER}} {{year}}</span>
-							<span  ng-show="season === 'Winter'" class="negativeLight">{{configuration.CONSTANTS.CHALLENGESYSTEMCLOSINGDATEWINTER}} {{year}}</span>
-					</div>
-				</td>
-			</tr>
-		</table>-->
 		<div class='dataTable'>
 			<div class="inlineBlock">
 				<p class="textParagraph"><strong>Last Updated:</strong> {{lastUpdated}}</p>

@@ -163,16 +163,13 @@ function getSeasonAndYearForProvisionalRankings(){
 
 function showProvisionalRankings() {
 	var today = new Date();
-	var month = today.getMonth();
-	var day = today.getDate();
-	return !(month > 0 && (month < 7 || (month === 5 && day < 25))) || showRankingUpdateDue();
-}
-
-function showRankingUpdateDue() {
-	var today = new Date();
-	var month = today.getMonth();
-	var day = today.getDate();
-	return (month === 0 && day <= SPRING_START_DAY) || ((month === 6 || month === 7) && day >= 25)
+	// NOTE: Date on month is 0 based
+	var springSeasonEndDate = new Date(2022, 4, 1, 0, 0, 0, 0);
+	var winterSeasonEndDate = new Date(2022, 11, 16, 0, 0, 0, 0);
+	var finalRankingWinterListInBy = new Date(2022, 8, 1, 0, 0, 0, 0);
+	var finalRankingSpringListInBy = new Date(2023, 0, 7, 0, 0, 0, 0);
+	return (today <= finalRankingWinterListInBy && today > springSeasonEndDate) ||
+	(today >= winterSeasonEndDate && today < finalRankingSpringListInBy); 
 }
 
 function getMasterConfiguration(http, xmlToJson, getClubNameOnly){
