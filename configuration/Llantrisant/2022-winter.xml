@@ -11,7 +11,7 @@
 				<CompetitionID>487</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
-					<Player Name="Greg Tippings"/>
+					<Player Name="Greg Tippins"/>
 					<Player Name="Dan Christopher"/>		
 					<Player Name="Jason Jones" WelshRankingID="68793"/>
 					<Player Name="Joe Eason" />
@@ -73,8 +73,9 @@
 					<!--<Player Name="Jack Penberthy"/>-->
 					<!-- <Player Name="Mark Juhlke"/> -->
 					<!-- <Player Name="Shivam Singhal"/> -->
-					<Player Name="Steve Thomas"/>
+					<Player Name="Steven Thomas"/>
 					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
+					<Player Name="Lloyd Newland"/>
 					<Player Name="Sam Norris" IsCaptain="true"/>
 					<Player Name="Josh Llewellyn"/>
 					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
