@@ -1,6 +1,6 @@
 /* Constants */
 var OLDEST_YEAR = 2016;
-var SPRING_START_DAY = 31;
+var SPRING_START_DAY = 6;
 var SPRING_END_DAY = 2;
 var SPRING_START_MONTH = '-01-31';
 var WINTER_START_MONTH = '-08-25';

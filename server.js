@@ -24,7 +24,7 @@ var FILE_EXTENSION_FOR_XML = ".xml";
 var FILE_EXTENSION_FOR_JSON = ".json";
 
 var OLDEST_YEAR = 2016;
-var SPRING_START_DAY = 31;
+var SPRING_START_DAY = 6;
 var SEASON_SPRING = 'spring';
 var SEASON_WINTER = 'winter';
 
