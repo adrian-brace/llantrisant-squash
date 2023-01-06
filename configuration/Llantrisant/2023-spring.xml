@@ -32,8 +32,8 @@
 				<CompetitionID>495</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>				
-					<Player Name="Tom Penberthy" />
-					<Player Name="Gary Fry" IsCaptain="true" RefereeNumber="100366"/>
+					<Player Name="Tom Penberthy" IsCaptain="true"/>
+					<Player Name="Gary Fry" RefereeNumber="100366"/>
 					<Player Name="Dan Povey"/>
 					<Player Name="Mike Watkins"/>
 					<Player Name="Kevin Taylor"/>
