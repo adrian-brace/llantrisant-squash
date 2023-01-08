@@ -27,10 +27,10 @@
 		<SportyHQSquashLadder>https://www.sportyhq.com/club/box/view/642</SportyHQSquashLadder>
 		<SportyHQRacketballLadder>https://www.sportyhq.com/club/box/view/649</SportyHQRacketballLadder>
 		<TournamentStage>OVER</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
-		<TournamentDate>21st-23rd June</TournamentDate>
-		<TournamentYear>2019</TournamentYear>
-		<TournamentEntryOpeningDate>27th April</TournamentEntryOpeningDate>
-		<TournamentEntryClosingDate>7th June</TournamentEntryClosingDate>
+		<TournamentDate>TBC</TournamentDate> <!-- e.g. 21st-23rd June -->
+		<TournamentYear>2023</TournamentYear>
+		<TournamentEntryOpeningDate>TBC</TournamentEntryOpeningDate>  <!-- e.g. 27th April -->
+		<TournamentEntryClosingDate>TBC</TournamentEntryClosingDate>   <!-- e.g. 7th June -->
 		<TournamentPrizePot>0</TournamentPrizePot>
 		<ChallengeSystemClosingDateWinter>14th January</ChallengeSystemClosingDateWinter>
 		<ChallengeSystemClosingDateSummer>25th August</ChallengeSystemClosingDateSummer>
