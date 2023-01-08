@@ -55,9 +55,10 @@
 					<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
 					<Player Name="Rob Mitchell"/>	
 					<Player Name="Nick Wilkes"/>
+					<Player Name="Steven Thomas"/>
 					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
 					<!--<Player Name="Luke McCarthy"/>-->	
-					<Player Name="Matthew Thomas" WelshRankingID="86287"/>
+					<!--<Player Name="Matthew Thomas" WelshRankingID="86287"/>-->
 				</Players>
 			</Team>
 			<Team>
@@ -72,7 +73,6 @@
 					<!--<Player Name="Jack Penberthy"/>-->
 					<!-- <Player Name="Mark Juhlke"/> -->
 					<!-- <Player Name="Shivam Singhal"/> -->
-					<Player Name="Steven Thomas"/>
 					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
 					<Player Name="Sam Norris" IsCaptain="true"/>
 					<Player Name="Lloyd Newland"/>
