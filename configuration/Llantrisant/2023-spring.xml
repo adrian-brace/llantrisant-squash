@@ -34,10 +34,11 @@
 				<Players>				
 					<Player Name="Tom Penberthy" IsCaptain="true"/>
 					<Player Name="Gary Fry" RefereeNumber="100366"/>
-					<Player Name="Dan Povey"/>
+					<!--<Player Name="Dan Povey"/>-->
 					<Player Name="Mike Watkins"/>
 					<Player Name="Kevin Taylor"/>
 					<!--<Player Name="Joshua Sion Davies" RefereeNumber="101022"/>-->
+					<Player Name="Jeff Greenslade" RefereeNumber="100467"/>									
 					<!--<Player Name="Iwan James" IsSpaceSaver="true"/>-->
 				</Players>
 			</Team>
@@ -52,12 +53,11 @@
 				<Players>
 					<Player Name="Ryan Phillips"/>
 					<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
-					<Player Name="Jeff Greenslade" RefereeNumber="100467"/>									
 					<Player Name="Rob Mitchell"/>	
 					<Player Name="Nick Wilkes"/>
 					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
 					<!--<Player Name="Luke McCarthy"/>-->	
-					<!--<Player Name="Matthew Thomas" WelshRankingID="86287"/>-->
+					<Player Name="Matthew Thomas" WelshRankingID="86287"/>
 				</Players>
 			</Team>
 			<Team>

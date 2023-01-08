@@ -1217,7 +1217,7 @@ function getYear(year){
 	} else {
 		var today = new Date();
 
-		if(today.getMonth() === 0 && today.getDate() <= SPRING_START_DAY) {
+		if(today.getMonth() === 0 && today.getDate() >= SPRING_START_DAY) {
 			return today.getFullYear();
 		} else if (today.getMonth() === 0) {
 			return today.getFullYear() - 1;
