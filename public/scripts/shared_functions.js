@@ -164,10 +164,10 @@ function getSeasonAndYearForProvisionalRankings(){
 function showProvisionalRankings() {
 	var today = new Date();
 	// NOTE: Date on month is 0 based
-	var springSeasonEndDate = new Date(2022, 4, 1, 0, 0, 0, 0);
-	var winterSeasonEndDate = new Date(2022, 11, 16, 0, 0, 0, 0);
-	var finalRankingWinterListInBy = new Date(2022, 8, 1, 0, 0, 0, 0);
-	var finalRankingSpringListInBy = new Date(2023, 0, 7, 0, 0, 0, 0);
+	var springSeasonEndDate = new Date(2023, 4, 5, 0, 0, 0, 0);
+	var winterSeasonEndDate = new Date(2023, 11, 16, 0, 0, 0, 0);
+	var finalRankingWinterListInBy = new Date(2023, 8, 1, 0, 0, 0, 0);
+	var finalRankingSpringListInBy = new Date(2024, 0, 7, 0, 0, 0, 0);
 	return (today <= finalRankingWinterListInBy && today > springSeasonEndDate) ||
 	(today >= winterSeasonEndDate && today < finalRankingSpringListInBy); 
 }
