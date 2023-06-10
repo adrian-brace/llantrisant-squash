@@ -78,8 +78,8 @@
 					<Player Name="Sam Norris" IsCaptain="true"/>
 					<Player Name="Josh Llewellyn"/>
 					<Player Name="Lloyd Newland"/>
+					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
 					<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>
-					<Player Name="Lee Parpworth"/>
 				</Players>
 			</Team>
 			<Team>
@@ -91,7 +91,7 @@
 				<CompetitionID>495</CompetitionID>
 				<HomeNight>TBC</HomeNight>
 				<Players>
-					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
+					<Player Name="Lee Parpworth"/>
 					<Player Name="Adrian Fisk"/>
 					<Player Name="Lynne Davies"/>
 					<Player Name="Madalena Sidoli"/>
