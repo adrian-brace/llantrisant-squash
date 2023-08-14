@@ -42,15 +42,12 @@
 	</Leagues>
 	<Links>
 		<SquashWales>		
-			<Link Name="Squash Wales (New Site)" URL="https://www.squash.wales"/>
+			<Link Name="Squash Wales (New Site)" URL="https://squashwales.com/"/>
 			<Link Name="Squash Wales (Old Site)" URL="http://www.walessquashandracketball.co.uk/"/>			
 		</SquashWales>
 		<Rankings>
-			<Link BulletClass='llantrisant' Name="Llantrisant" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=2305&county=all&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
-			<Link BulletClass='regional' Name="Mid Glam" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=78&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search="/>
-			<Link BulletClass='regional' Name="South Glam" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=68&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
-			<Link BulletClass='regional' Name="South Wales" URL="http://www.squashlevels.com/players.php?check=1&limit_confidence=1&club=all&county=105&country=all&show=last12m&events=1&matchtype=all&playercat=all&playertype=all&search=Search+name"/>
-			<Link BulletClass='welsh' Name="Welsh" URL="http://www.wales.squashlevels.com/players.php?all=&wales"/>
+			<Link BulletClass='llantrisant' Name="Llantrisant" URL="https://www.squashlevels.com/players?all&club=1297"/>
+			<Link BulletClass='welsh' Name="Welsh" URL="https://www.squashlevels.com/players.php?all&country=25"/>
 			<Link BulletClass='english' Name="English" URL="http://www.squashplayer.co.uk/rankings/englishrankings.htm"/>
 			<Link BulletClass='psa' Name="World PSA" URL="http://www.worldsquash.org/ws/?page_id=1706"/>
 		</Rankings>
