@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>9th June 2023</LastUpdated>
+	<LastUpdated>14th August 2023</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -12,9 +12,10 @@
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Dan Christopher"/>		
-					<Player Name="Greg Tippings"/>
-					<Player Name="Jason Jones" WelshRankingID="68793"/>
+					<!--<Player Name="Greg Tippings"/>-->
 					<Player Name="Joe Eason" />
+					<Player Name="Jason Jones" WelshRankingID="68793"/>
+					<Player Name="Jack lloyd Elvis"/>					
 					<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
 					<!--<Player Name="Matthew Williams"/>-->
 					<!--<Player Name="Stephen Warren" WelshRankingID="196227"/>-->
@@ -31,12 +32,12 @@
 				<CompetitionID>495</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>				
-					<Player Name="Jack lloyd Elvis"/>					
 					<Player Name="Tom Penberthy" IsCaptain="true"/>
 					<Player Name="Gary Fry" RefereeNumber="100366"/>
 					<!--<Player Name="Dan Povey"/>-->
 					<Player Name="Mike Watkins"/>
 					<Player Name="Kevin Taylor"/>
+					<Player Name="Paul Aubrey"/>
 					<!--<Player Name="Joshua Sion Davies" RefereeNumber="101022"/>-->
 					<!--<Player Name="Jeff Greenslade" RefereeNumber="100467"/>-->
 					<!--<Player Name="Iwan James" IsSpaceSaver="true"/>-->
@@ -52,8 +53,9 @@
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<!--<Player Name="Ryan Phillips"/>-->
+					<Player Name="Ben Howcroft" />
 					<Player Name="Richard Smith" />
-					<Player Name="Paul Aubrey" />
+
 					<Player Name="Rob Mitchell"/>	
 					<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
 					<Player Name="Nick Wilkes"/>
@@ -80,6 +82,7 @@
 					<Player Name="Lloyd Newland"/>
 					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
 					<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>
+										
 				</Players>
 			</Team>
 			<Team>
@@ -89,24 +92,24 @@
 				<DivisionID>7</DivisionID>
 				<DivisionName>South Central 7</DivisionName>
 				<CompetitionID>495</CompetitionID>
-				<HomeNight>TBC</HomeNight>
+				<HomeNight>Tues</HomeNight>
 				<Players>
+					<!--<Player Name="Adrian Fisk"/>-->
+					<!--<Player Name="Lynne Davies"/>-->
 					<Player Name="Lee Parpworth"/>
-					<Player Name="Adrian Fisk"/>
-					<Player Name="Lynne Davies"/>
-					<Player Name="Madalena Sidoli"/>
 					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
-					<Player Name="Huw Davies"/>
+					<Player Name="Madalena Sidoli"/>
 					<Player Name="Dan Griffiths"/>
+					<Player Name="Naomi Jones"/>
+					<Player Name="Huw Davies"/>
+					<Player Name="Carl Whiteley"/>
 					<Player Name="Francis Smith"/>					
 					<Player Name="Joe Powell"/>					
-					<Player Name="Naomi Jones"/>
-					<Player Name="Carl Whiteley"/>
-					<Player Name="Mark Ware"/>
 					<Player Name="Rhys Jenkins"/>
+					<Player Name="Phillip Williams"/>
 					<Player Name="Serkan Aksin"/>
 					<Player Name="Martyn Jenkins"/>
-					<Player Name="Phillip Williams"/>
+					<Player Name="Mark Ware"/>
 					<Player Name="Huw Jenkins"/>
 					<!--<Player Name="Steve Wrigley"/>-->
 					<!--<Player Name="Dylan Vite"/>-->
