@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>14th August 2023</LastUpdated>
+	<LastUpdated>28th August 2023</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -8,7 +8,7 @@
 				<League>Premier</League>
 				<DivisionID>1</DivisionID>
 				<DivisionName>Premier 1</DivisionName>
-				<CompetitionID>494</CompetitionID>
+				<CompetitionID>501</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<Player Name="Dan Christopher"/>		
@@ -29,7 +29,7 @@
 				<League>South Central</League>
 				<DivisionID>1</DivisionID>
 				<DivisionName>South Central 1</DivisionName>
-				<CompetitionID>495</CompetitionID>
+				<CompetitionID>502</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>				
 					<Player Name="Tom Penberthy" IsCaptain="true"/>
@@ -49,16 +49,15 @@
 				<League>South Central</League>
 				<DivisionID>3</DivisionID>
 				<DivisionName>South Central 3</DivisionName>
-				<CompetitionID>495</CompetitionID>
+				<CompetitionID>502</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<!--<Player Name="Ryan Phillips"/>-->
 					<Player Name="Ben Howcroft" />
-					<Player Name="Richard Smith" />
-
-					<Player Name="Rob Mitchell"/>	
 					<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
+					<Player Name="Rob Mitchell"/>	
 					<Player Name="Nick Wilkes"/>
+					<Player Name="Sam Norris"/>
 					<!--<Player Name="Steven Thomas"/>-->
 					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
 					<!--<Player Name="Luke McCarthy"/>-->	
@@ -71,17 +70,17 @@
 				<League>South Central</League>
 				<DivisionID>6</DivisionID>
 				<DivisionName>South Central 6</DivisionName>
-				<CompetitionID>495</CompetitionID>
+				<CompetitionID>502</CompetitionID>
 				<HomeNight>Mon</HomeNight>
 				<Players>
 					<!--<Player Name="Jack Penberthy"/>-->
 					<!-- <Player Name="Mark Juhlke"/> -->
 					<!-- <Player Name="Shivam Singhal"/> -->
-					<Player Name="Sam Norris" IsCaptain="true"/>
 					<Player Name="Josh Llewellyn"/>
 					<Player Name="Lloyd Newland"/>
 					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
-					<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>
+					<Player Name="Lee Parpworth"/>
+					<Player Name="Angharad Llewellyn" IsCaptain="true" WelshRankingID="69247"/>
 										
 				</Players>
 			</Team>
@@ -91,13 +90,12 @@
 				<League>South Central</League>
 				<DivisionID>7</DivisionID>
 				<DivisionName>South Central 7</DivisionName>
-				<CompetitionID>495</CompetitionID>
+				<CompetitionID>502</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<!--<Player Name="Adrian Fisk"/>-->
 					<!--<Player Name="Lynne Davies"/>-->
-					<Player Name="Lee Parpworth"/>
-					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>
+					<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>
 					<Player Name="Madalena Sidoli"/>
 					<Player Name="Dan Griffiths"/>
 					<Player Name="Naomi Jones"/>
