@@ -9,13 +9,13 @@
   "main": "server.js",
   "author": "Adrian Brace",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "express": "^4.17.1",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2",
     "gulp": "^4.0.2",
     "request": "latest",
     "sprintf-js": "latest",
     "sync-request": "^2.2.0",
-    "xml2js": "latest",
+    "xml2js": "^0.6.2",
     "xmldom": "latest"
   },
   "devDependencies": {
