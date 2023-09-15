@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>7th September 2023</LastUpdated>
+	<LastUpdated>15th September 2023</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -117,7 +117,7 @@
 					<!--<Player Name="Steven Melhuish"/>-->
 					<!-- <Player Name="Cian Grattidge" WelshRankingID="138443"/> -->
 					<!--<Player Name="Wynne Owen"/>-->
-					<!--<Player Name="Amanda Barter"/>-->
+					<Player Name="Amanda Barter"/>
 					<!--<Player Name="Martyn Christopher"/>-->
 					<!--<Player Name="James Pickett"/>-->
 					<!--<Player Name="Dave Jones" ActualTeam="C" IsSpaceSaver="true" RefereeNumber="101573" WelshRankingID="68967"/>-->
