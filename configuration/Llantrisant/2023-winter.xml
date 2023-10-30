@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>17th October 2023</LastUpdated>
+	<LastUpdated>30th October 2023</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -80,8 +80,7 @@
 					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
 					<Player Name="Steve Thomas"/>
 					<Player Name="Lee Parpworth"/>
-					<Player Name="Angharad Llewellyn" IsCaptain="true" WelshRankingID="69247"/>
-					<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>										
+					<Player Name="Angharad Llewellyn" IsCaptain="true" WelshRankingID="69247"/>										
 				</Players>
 			</Team>
 			<Team>
@@ -95,14 +94,16 @@
 				<Players>
 					<!--<Player Name="Adrian Fisk"/>-->
 					<!--<Player Name="Lynne Davies"/>-->
+					<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>
 					<Player Name="Madalena Sidoli"/>
 					<Player Name="Dan Griffiths"/>
 					<Player Name="Naomi Jones" IsCaptain="true"/>
 					<Player Name="Huw Davies"/>
 					<Player Name="Carl Whiteley"/>
 					<Player Name="Mike Watts"/>					
-					<Player Name="Francis Smith"/>					
+					<Player Name="Francis Smith"/>	
 					<Player Name="Ryan Vaughan"/>
+					<Player Name="Luke Bates"/>
 					<!--<Player Name="Joe Powell"/>-->					
 					<Player Name="Rhys Jenkins"/>
 					<!--<Player Name="Phillip Williams"/>-->
