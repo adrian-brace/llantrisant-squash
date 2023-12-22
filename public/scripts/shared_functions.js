@@ -93,9 +93,9 @@ function getYear(){
 	
 	var today = new Date();
 
-	if(today.getMonth() === 0 && today.getDate() >= SPRING_START_DAY) {
-		return today.getFullYear();
-	} else if (today.getMonth() === 0) {
+	if(today.getMonth() === 11 && today.getDate() >= SPRING_START_DAY) {
+		return today.getFullYear() + 1;
+	} else if (today.getMonth() === 11) {
 		return today.getFullYear() - 1;
 	} else {
 		return today.getFullYear();
@@ -109,7 +109,7 @@ function getSeason(){
 	var day = today.getDate();
 
 	if ((month < 7 && month >= 1) ||
-		(month === 0 && day >= SPRING_START_DAY) ||
+		(month === 11 && day >= SPRING_START_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -123,8 +123,8 @@ function getSeasonForRankings(){
 	var month = today.getMonth();
 	var day = today.getDate();
 
-	if ((month < 7 && month >= 2) ||
-		(month === 1 && day >= SPRING_START_DAY) ||
+	if ((month < 7 && month >= 1) ||
+		(month === 11 && day >= SPRING_START_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -164,10 +164,10 @@ function getSeasonAndYearForProvisionalRankings(){
 function showProvisionalRankings() {
 	var today = new Date();
 	// NOTE: Date on month is 0 based
-	var springSeasonEndDate = new Date(2023, 4, 5, 0, 0, 0, 0);
+	var springSeasonEndDate = new Date(2024, 4, 25, 0, 0, 0, 0);
 	var winterSeasonEndDate = new Date(2023, 11, 16, 0, 0, 0, 0);
 	var finalRankingWinterListInBy = new Date(2023, 8, 1, 0, 0, 0, 0);
-	var finalRankingSpringListInBy = new Date(2024, 0, 7, 0, 0, 0, 0);
+	var finalRankingSpringListInBy = new Date(2023, 11, 21, 0, 0, 0, 0);
 	return (today <= finalRankingWinterListInBy && today > springSeasonEndDate) ||
 	(today >= winterSeasonEndDate && today < finalRankingSpringListInBy); 
 }

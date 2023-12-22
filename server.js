@@ -1217,9 +1217,9 @@ function getYear(year){
 	} else {
 		var today = new Date();
 
-		if(today.getMonth() === 0 && today.getDate() >= SPRING_START_DAY) {
-			return today.getFullYear();
-		} else if (today.getMonth() === 0) {
+		if(today.getMonth() === 11 && today.getDate() >= SPRING_START_DAY) {
+			return today.getFullYear() + 1;
+		} else if (today.getMonth() === 11) {
 			return today.getFullYear() - 1;
 		} else {
 			return today.getFullYear();
@@ -1237,7 +1237,7 @@ function getSeason(season){
 		var day = today.getDate();
 
 		if ((month < 7 && month >= 1) ||
-			(month === 0 && day >= SPRING_START_DAY) ||
+			(month === 11 && day >= SPRING_START_DAY) ||
 			(month === 7 && day < 2)) {
 			return SEASON_SPRING;
 		} else{

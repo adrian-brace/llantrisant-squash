@@ -1,59 +1,23 @@
 [
     {
         "team": "Llantrisant A",
-        "divisionName": "Premier 1",
-        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=1",
+        "divisionName": "Premier 2",
+        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=2",
         "standings": [
             {
                 "position": 1,
-                "team": "Llanelli A",
+                "team": "Newport A",
                 "played": 0,
                 "won": 0,
                 "lost": 0,
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 2,
-                "team": "Rhiwbina A",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 3,
-                "team": "Cardiff A",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 4,
-                "team": "Abergavenny A",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 5,
                 "team": "Llantrisant A",
                 "played": 0,
                 "won": 0,
@@ -61,76 +25,8 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 6,
-                "team": "Swansea A",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 7,
-                "team": "David Lloyd Cardiff A",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 8,
-                "team": "Cowbridge A",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            }
-        ],
-        "position": 5
-    },
-    {
-        "team": "Llantrisant B",
-        "divisionName": "South Central 1",
-        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=1",
-        "standings": [
-            {
-                "position": 1,
-                "team": "St Mellons A",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 2,
-                "team": "The Vale",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 3,
@@ -141,8 +37,112 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 4,
+                "team": "Llanelli B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 5,
+                "team": "Cowbridge A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 6,
+                "team": "Llandeilo A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 7,
+                "team": "Llanishen A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 8,
+                "team": "David Lloyd Swansea A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            }
+        ],
+        "position": 2
+    },
+    {
+        "team": "Llantrisant B",
+        "divisionName": "South Central 1",
+        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
+        "standings": [
+            {
+                "position": 1,
+                "team": "St Mellons A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 2,
+                "team": "The Vale",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 3,
+                "team": "Cardiff University A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 4,
@@ -153,8 +153,8 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 5,
@@ -165,8 +165,8 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 6,
@@ -177,20 +177,20 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 7,
-                "team": "Maesteg A",
+                "team": "Old Penarthians A",
                 "played": 0,
                 "won": 0,
                 "lost": 0,
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 8,
@@ -210,22 +210,10 @@
     {
         "team": "Llantrisant C",
         "divisionName": "South Central 3",
-        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=3",
+        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=5",
         "standings": [
             {
                 "position": 1,
-                "team": "Bridgend B",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 2,
                 "team": "Rhiwbina D",
                 "played": 0,
                 "won": 0,
@@ -233,8 +221,20 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 2,
+                "team": "Merthyr B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 3,
@@ -245,36 +245,36 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 4,
-                "team": "Llanishen B",
+                "team": "Cardiff D",
                 "played": 0,
                 "won": 0,
                 "lost": 0,
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 5,
-                "team": "Cowbridge C",
+                "team": "Rhiwbina E",
                 "played": 0,
                 "won": 0,
                 "lost": 0,
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 6,
-                "team": "UHW A",
+                "team": "Cowbridge C",
                 "played": 0,
                 "won": 0,
                 "lost": 0,
@@ -286,6 +286,18 @@
             },
             {
                 "position": 7,
+                "team": "UHW A",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 8,
                 "team": "Hirwaun B",
                 "played": 0,
                 "won": 0,
@@ -302,95 +314,11 @@
     {
         "team": "Llantrisant D",
         "divisionName": "South Central 6",
-        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=6",
+        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=8",
         "standings": [
             {
                 "position": 1,
-                "team": "David Lloyd Cardiff C",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 2,
                 "team": "Cardiff F",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 3,
-                "team": "Rhiwbina G",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 4,
-                "team": "Llantrisant D",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 5,
-                "team": "Porthcawl B",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 6,
-                "team": "Maesteg B",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 7,
-                "team": "St Mellons C",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 8,
-                "team": "Merthyr D",
                 "played": 0,
                 "won": 0,
                 "lost": 0,
@@ -399,17 +327,9 @@
                 "against": 0,
                 "penaltyPoints": 0,
                 "totalPoints": 0
-            }
-        ],
-        "position": 4
-    },
-    {
-        "team": "Llantrisant E",
-        "divisionName": "South Central 7",
-        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=7",
-        "standings": [
+            },
             {
-                "position": 1,
+                "position": 2,
                 "team": "Llanishen E",
                 "played": 0,
                 "won": 0,
@@ -417,11 +337,35 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
-                "position": 2,
+                "position": 3,
+                "team": "Llantrisant D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 4,
+                "team": "Porthcawl B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 5,
                 "team": "Llantrisant E",
                 "played": 0,
                 "won": 0,
@@ -429,44 +373,8 @@
                 "drawn": 0,
                 "for": 0,
                 "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 3,
-                "team": "Cardiff Medics B",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 4,
-                "team": "Cardiff University C",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
-            },
-            {
-                "position": 5,
-                "team": "Rhiwbina H",
-                "played": 0,
-                "won": 0,
-                "lost": 0,
-                "drawn": 0,
-                "for": 0,
-                "against": 0,
-                "penaltyPoints": 5,
-                "totalPoints": 5
+                "penaltyPoints": 0,
+                "totalPoints": 0
             },
             {
                 "position": 6,
@@ -494,7 +402,7 @@
             },
             {
                 "position": 8,
-                "team": "Merthyr E",
+                "team": "Rhiwbina H",
                 "played": 0,
                 "won": 0,
                 "lost": 0,
@@ -505,6 +413,110 @@
                 "totalPoints": 0
             }
         ],
-        "position": 2
+        "position": 3
+    },
+    {
+        "team": "Llantrisant E",
+        "divisionName": "South Central 6",
+        "teamStandingsURL": "http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showdivision?divisionid=8",
+        "standings": [
+            {
+                "position": 1,
+                "team": "Cardiff F",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 2,
+                "team": "Llanishen E",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 3,
+                "team": "Llantrisant D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 4,
+                "team": "Porthcawl B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 5,
+                "team": "Llantrisant E",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 6,
+                "team": "Hirwaun D",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 7,
+                "team": "UHW B",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            },
+            {
+                "position": 8,
+                "team": "Rhiwbina H",
+                "played": 0,
+                "won": 0,
+                "lost": 0,
+                "drawn": 0,
+                "for": 0,
+                "against": 0,
+                "penaltyPoints": 0,
+                "totalPoints": 0
+            }
+        ],
+        "position": 5
     }
 ]
