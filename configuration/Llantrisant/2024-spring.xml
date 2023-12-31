@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>22nd December 2023</LastUpdated>
+	<LastUpdated>31st December 2023</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -74,18 +74,17 @@
 				<CompetitionID>509</CompetitionID>
 				<HomeNight>Mon</HomeNight>
 				<Players>
-					<!--<Player Name="Jack Penberthy"/>-->
-					<!-- <Player Name="Mark Juhlke"/> -->
-					<!-- <Player Name="Shivam Singhal"/> -->
-					<!-- <Player Name="Lloyd Newland"/> -->
 					<Player Name="Madalena Sidoli"/>
 					<Player Name="Dan Griffiths"/>
-					<!-- <Player Name="Lee Parpworth"/>-->
 					<Player Name="Angharad Llewellyn" IsCaptain="true" WelshRankingID="69247"/>										
 					<Player Name="Huw Davies"/>
 					<Player Name="Ryan Vaughan"/>
 					<Player Name="Francis Smith"/>	
-					<Player Name="Erica Howcroft"/>	
+					<!--<Player Name="Jack Penberthy"/>-->
+					<!-- <Player Name="Mark Juhlke"/> -->
+					<!-- <Player Name="Shivam Singhal"/> -->
+					<!-- <Player Name="Lloyd Newland"/> -->
+					<!-- <Player Name="Lee Parpworth"/>-->
 				</Players>
 			</Team>
 			<Team>
@@ -97,18 +96,19 @@
 				<CompetitionID>509</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
-					<!--<Player Name="Adrian Fisk"/>-->
-					<!--<Player Name="Lynne Davies"/>-->
 					<Player Name="Steve Thomas"/>
-					<!--<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>-->
 					<Player Name="Carl Whiteley"/>
 					<Player Name="Naomi Jones" IsCaptain="true"/>
 					<Player Name="Steve Evans" WelshRankingID="13194"/>
 					<Player Name="Mike Watts"/>					
+					<Player Name="Erica Howcroft"/>	
 					<Player Name="Luke Bates"/>
-					<!--<Player Name="Joe Powell"/>-->					
-					<Player Name="Ben Hughes"/>
 					<Player Name="Rhys Jenkins"/>
+					<!--<Player Name="Adrian Fisk"/>-->
+					<!--<Player Name="Lynne Davies"/>-->
+					<!--<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>-->
+					<!--<Player Name="Joe Powell"/>-->					
+					<!--<Player Name="Ben Hughes"/>-->
 					<!--<Player Name="Phillip Williams"/>-->
 					<!--<Player Name="Serkan Aksin"/>-->
 					<!--<Player Name="Martyn Jenkins"/>-->
