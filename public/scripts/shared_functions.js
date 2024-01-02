@@ -108,7 +108,7 @@ function getSeason(){
 	var month = today.getMonth();
 	var day = today.getDate();
 
-	if ((month < 7 && month >= 1) ||
+	if ((month < 7 && month >= 0) ||
 		(month === 11 && day >= SPRING_START_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
@@ -123,7 +123,7 @@ function getSeasonForRankings(){
 	var month = today.getMonth();
 	var day = today.getDate();
 
-	if ((month < 7 && month >= 1) ||
+	if ((month < 7 && month >= 0) ||
 		(month === 11 && day >= SPRING_START_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
