@@ -23,17 +23,18 @@
 		<SquashLevelsURL>https://www.squashlevels.com/</SquashLevelsURL>
 		<WelshRankingsURL>players.php?&amp;all=&amp;club=%s&amp;start=%s</WelshRankingsURL>
 		<SubmitLeagueResultsURL>http://walessquash.countyleagues.co.uk/</SubmitLeagueResultsURL>
-		<SportyHQClub>https://www.sportyhq.com/club/view/Llantrisant-Squash-Racketball-Club</SportyHQClub>
-		<SportyHQSquashLadder>https://www.sportyhq.com/club/box/view/642</SportyHQSquashLadder>
+		<SportyHQClub>https://www.squashlevels.com/players?all&amp;club=1297</SportyHQClub>
+		<SportyHQClubReg>https://www.squashlevels.com/join?community=200-1297</SportyHQClubReg>
+		<SportyHQSquashLadder>https://www.squashlevels.com/boxes?clubid=1297</SportyHQSquashLadder>
 		<SportyHQRacketballLadder>https://www.sportyhq.com/club/box/view/649</SportyHQRacketballLadder>
 		<TournamentStage>OVER</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
 		<TournamentDate>TBC</TournamentDate> <!-- e.g. 21st-23rd June -->
-		<TournamentYear>2023</TournamentYear>
+		<TournamentYear>2024</TournamentYear>
 		<TournamentEntryOpeningDate>TBC</TournamentEntryOpeningDate>  <!-- e.g. 27th April -->
 		<TournamentEntryClosingDate>TBC</TournamentEntryClosingDate>   <!-- e.g. 7th June -->
 		<TournamentPrizePot>0</TournamentPrizePot>
-		<ChallengeSystemClosingDateWinter>14th January</ChallengeSystemClosingDateWinter>
-		<ChallengeSystemClosingDateSummer>25th August</ChallengeSystemClosingDateSummer>
+		<ChallengeSystemClosingDateWinter>1st January</ChallengeSystemClosingDateWinter>
+		<ChallengeSystemClosingDateSummer>1st August</ChallengeSystemClosingDateSummer>
 	</Constants>
 	<Leagues>
 		<League Name="South Wales"/>

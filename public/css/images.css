@@ -292,11 +292,24 @@ span.down {
 	height: 40px;
 }
 
+.squash_levels_banner {
+	margin: 0 auto;
+	background: url("../../public/images/squash_levels_banner_mini.jpg");
+	width: 160px;
+	height: 42px;
+}
+
 .sporty_hq_banner_small {
 	margin: 0 auto;
 	background: url("../../public/images/sporty_hq_banner_small.png");
 	width: 289px;
 	height: 100px;
+}
+
+.squashLevels {
+	background: url("../../public/images/squash_levels_logo_mini.png");
+	width: 40px;
+	height: 40px;
 }
 
 .sportyHQ {
