@@ -1115,15 +1115,38 @@ function processAllFixturesAndResults(req, sourcePage, res){
 			var laddersSquashHTML = fs.readFileSync(laddersSquashFilepath, 'utf8').toString();
 			var $ = cheerio.load(laddersSquashHTML);
 
-			var cycleText = $('div').filter(function() {
-				return ($(this).attr('class') === 'card-header d-flex justify-content-between align-items-center bg-light');
-			}).first().text();
-
 			var startDate = 'UNKNOWN';
 			var endDate = 'UNKNOWN';
 
+			/* SPORTY HQ - Deprecated 28/2/2024 */
+			/*
+			var cycleText = $('div').filter(function() {
+				return ($(this).attr('class') === 'card-header d-flex justify-content-between align-items-center bg-light');
+			}).first().text();
+			
 			if (cycleText.length > 0) {
 				var dates = cycleText.replaceAll('st', '').replaceAll('nd', '').replaceAll('rd', '').replaceAll('th', '').split(' to ');
+				if (dates.length = 2) {
+					startDate = dates[0];
+					endDate = dates[1];
+				}
+			};
+
+			if (isDate(startDate)){
+				startDate = new Date(startDate);
+			}
+
+			if (isDate(endDate)){
+				endDate = new Date(endDate);
+			}
+			*/
+
+			var cycleText = $('div').filter(function() {
+				return ($(this).attr('class') === 'icon_title_cluster');
+			}).eq(1).find('h1').first().text();
+			
+			if (cycleText.length > 0) {
+				var dates = cycleText.replaceAll('Llantrisant boxes from', '').split(' to ');
 				if (dates.length = 2) {
 					startDate = dates[0];
 					endDate = dates[1];
@@ -1157,6 +1180,8 @@ function processAllFixturesAndResults(req, sourcePage, res){
 
 			var boxNumber = 0;
 			
+			/* SPORTY HQ */
+			/*
 			$('table').filter(function() {
 				return ($(this).attr('class') === 'table table-sm mb-0 table-bordered');
 			}).each(function(){
@@ -1187,7 +1212,43 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				//Push it onto the master array
 				ladders.Squash.Ladders.Ladder.push(ladderBox);
 			});
-						
+			*/
+
+			/* SQUASH LEVELS */
+			
+			$('table').filter(function() {
+				return ($(this).attr('class').startsWith('box '));
+			}).each(function(){
+
+				boxNumber += 1;
+
+				var ladderBox = {
+					Number: boxNumber,
+					Players: {
+						Name: []
+					}				
+				};
+
+				$(this).find($('tr')).filter(function() {
+					return ($(this).attr('class') === 'boxes_results_row');
+				}).each(function(){
+
+					if ($(this).find('th').eq(0).text().length > 0)
+					{
+						var boxRow = {
+							position: parseInt($(this).find('td').first().text()),
+							playerName: $(this).find('th').first().find('a').text(),
+							totalPoints: parseInt($(this).find('td').last().text())
+						};
+
+						ladderBox.Players.Name.push(boxRow);
+					}
+				});
+
+				//Push it onto the master array
+				ladders.Squash.Ladders.Ladder.push(ladderBox);
+			});			
+
 			// Save the fixtures to file as JSON
 			writeFile(generatedDataDirectory, SQUASH_LADDERS_FILENAME_JSON, JSON.stringify(ladders, null, 4));
 			break;
@@ -1338,7 +1399,10 @@ function getHTMLForLadders(url, directory, filename, callback){
 	  method: "GET",
 	  timeout: 10000,
 	  followRedirect: true,
-	  maxRedirects: 10
+	  maxRedirects: 10,
+	  headers: {
+			'Cookie': 'BaDSquashID=qkogjse147eu2dcd09sf4jcgkf; BaDSquashVisitor=1; _gcl_au=1.1.35526154.1709147522; _ga=GA1.1.1174805489.1709147523; _fbp=fb.1.1709147523922.613235368; BaDSquashInitialStyle=transform-origin%253A%25200%25200%25200%253Btransform%253A%2520scale(1)%253B; BaDSquashPageWidth=1349px; BaDSquashScreenSize=1349x607; _ga_L6NL29F84V=GS1.1.1709147523.1.1.1709147664.60.0.0; __stripe_mid=1ac6bdbf-ad6c-43ff-92b1-fb3c301b31b4d3e43f; __stripe_sid=1d8a5224-3d3b-4f50-94d4-fd7d2dbef0d7a334e1'
+		}
 	}, function(error, response, html) {
 		if (!error && response.statusCode == 200) {
 			//console.log('directory: ' + directory);

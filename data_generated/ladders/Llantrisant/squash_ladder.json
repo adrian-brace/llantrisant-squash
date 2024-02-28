@@ -1,7 +1,7 @@
 {
     "Squash": {
-        "StartDate": "2024-01-02T00:00:00.000Z",
-        "EndDate": "2024-02-25T00:00:00.000Z",
+        "StartDate": "2024-02-26T00:00:00.000Z",
+        "EndDate": "2024-04-13T23:00:00.000Z",
         "Ladders": {
             "Ladder": [
                 {
@@ -10,7 +10,7 @@
                         "Name": [
                             {
                                 "position": 1,
-                                "playerName": "Ben Howcroft",
+                                "playerName": "Adrian Brace",
                                 "totalPoints": 0
                             },
                             {
@@ -20,22 +20,22 @@
                             },
                             {
                                 "position": 3,
-                                "playerName": "Tom Penberthy",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 4,
-                                "playerName": "Adrian Brace",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 5,
                                 "playerName": "Gary Fry",
                                 "totalPoints": 0
                             },
                             {
+                                "position": 4,
+                                "playerName": "Tom Penberthy",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 5,
+                                "playerName": "Josh Llewellyn",
+                                "totalPoints": 0
+                            },
+                            {
                                 "position": 6,
-                                "playerName": "Richard Timms",
+                                "playerName": "Jo Norris",
                                 "totalPoints": 0
                             }
                         ]
@@ -46,38 +46,33 @@
                     "Players": {
                         "Name": [
                             {
-                                "position": 1,
-                                "playerName": "Alex Jenkins",
+                                "position": 7,
+                                "playerName": "Ben Howcroft",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 2,
+                                "position": 8,
+                                "playerName": "Richard Timms",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 9,
                                 "playerName": "Rob Mitchell",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 3,
+                                "position": 10,
                                 "playerName": "Sam Norris",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 4,
-                                "playerName": "Jo Norris",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 5,
+                                "position": 11,
                                 "playerName": "Ryan Vaughan",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 6,
-                                "playerName": "Josh Llewellyn",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 7,
-                                "playerName": "Lynne Davies",
+                                "position": 12,
+                                "playerName": "Carl Whiteley",
                                 "totalPoints": 0
                             }
                         ]
@@ -88,33 +83,33 @@
                     "Players": {
                         "Name": [
                             {
-                                "position": 1,
-                                "playerName": "Chay Davies-Smith",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 2,
-                                "playerName": "Steven Legge",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 3,
-                                "playerName": "Daniel Griffiths",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 4,
-                                "playerName": "Adrian Fisk",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 5,
+                                "position": 13,
                                 "playerName": "Mark Morgan",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 6,
-                                "playerName": "Carl Whiteley",
+                                "position": 14,
+                                "playerName": "Lynne Davies",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 15,
+                                "playerName": "Adrian Fisk",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 16,
+                                "playerName": "Daniel Griffiths",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 17,
+                                "playerName": "Francis Smith",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 18,
+                                "playerName": "Huw Davies",
                                 "totalPoints": 0
                             }
                         ]
@@ -125,33 +120,33 @@
                     "Players": {
                         "Name": [
                             {
-                                "position": 1,
-                                "playerName": "Francis Smith",
+                                "position": 19,
+                                "playerName": "Steven Legge",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 2,
-                                "playerName": "Joe Powell",
+                                "position": 20,
+                                "playerName": "Lloyd Newland",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 3,
-                                "playerName": "Huw Davies",
+                                "position": 21,
+                                "playerName": "Naomi Jones",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 4,
+                                "position": 22,
                                 "playerName": "Steve Evans",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 5,
-                                "playerName": "Mike Watts",
+                                "position": 23,
+                                "playerName": "Erica Howcroft",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 6,
-                                "playerName": "Naomi Jones",
+                                "position": 24,
+                                "playerName": "Marc Ware",
                                 "totalPoints": 0
                             }
                         ]
@@ -162,33 +157,33 @@
                     "Players": {
                         "Name": [
                             {
-                                "position": 1,
-                                "playerName": "Marc Ware",
+                                "position": 25,
+                                "playerName": "Mike Watts",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 2,
-                                "playerName": "Erica Howcroft",
+                                "position": 26,
+                                "playerName": "Joe Powell",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 3,
-                                "playerName": "Hayley Thomas",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 4,
+                                "position": 27,
                                 "playerName": "Jayesh Parmar",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 5,
-                                "playerName": "David Bartram",
+                                "position": 28,
+                                "playerName": "Adam Howcroft",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 6,
-                                "playerName": "Adam Howcroft",
+                                "position": 29,
+                                "playerName": "Rhys Jenkins",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 30,
+                                "playerName": "James Pickett",
                                 "totalPoints": 0
                             }
                         ]
@@ -199,33 +194,38 @@
                     "Players": {
                         "Name": [
                             {
-                                "position": 1,
-                                "playerName": "Richie Samuel",
+                                "position": 31,
+                                "playerName": "David Bartram",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 2,
-                                "playerName": "Rhys Jenkins",
+                                "position": 32,
+                                "playerName": "Hayley Thomas",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 3,
-                                "playerName": "Lance Woodman",
-                                "totalPoints": 0
-                            },
-                            {
-                                "position": 4,
+                                "position": 33,
                                 "playerName": "Grant Connors",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 5,
+                                "position": 34,
+                                "playerName": "Luke Bates",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 35,
+                                "playerName": "Rhys Gooch",
+                                "totalPoints": 0
+                            },
+                            {
+                                "position": 36,
                                 "playerName": "Dan Emberson",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 6,
-                                "playerName": "James Pickett",
+                                "position": 37,
+                                "playerName": "David Reed",
                                 "totalPoints": 0
                             }
                         ]
@@ -236,33 +236,43 @@
                     "Players": {
                         "Name": [
                             {
-                                "position": 1,
-                                "playerName": "Rhys Gooch",
+                                "position": 38,
+                                "playerName": "David Green",
+                                "totalPoints": 7
+                            },
+                            {
+                                "position": 39,
+                                "playerName": "Nathan Britton",
+                                "totalPoints": 2
+                            },
+                            {
+                                "position": 40,
+                                "playerName": "Richie Samuel",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 2,
-                                "playerName": "Luke Bates",
+                                "position": 41,
+                                "playerName": "Tony Price",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 3,
+                                "position": 42,
                                 "playerName": "Cam Wells",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 4,
-                                "playerName": "David Reed",
+                                "position": 43,
+                                "playerName": "Hannah Nicol",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 5,
-                                "playerName": "David Green",
+                                "position": 44,
+                                "playerName": "Chris Dickinson",
                                 "totalPoints": 0
                             },
                             {
-                                "position": 6,
-                                "playerName": "Tony Price",
+                                "position": 45,
+                                "playerName": "Huw Jenkins",
                                 "totalPoints": 0
                             }
                         ]
@@ -272,8 +282,8 @@
         }
     },
     "Racketball": {
-        "StartDate": "2024-01-02T00:00:00.000Z",
-        "EndDate": "2024-02-25T00:00:00.000Z",
+        "StartDate": "2024-02-26T00:00:00.000Z",
+        "EndDate": "2024-04-13T23:00:00.000Z",
         "Ladders": {
             "Ladder": []
         }
