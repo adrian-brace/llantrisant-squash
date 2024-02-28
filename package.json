@@ -22,7 +22,6 @@
     "gulp-nodemon": "^2.5.0"
   },
   "scripts": {
-    "prestart": "npm install",
     "start": "node server.js"
   },
   "repository": {
