@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>4th January 2024</LastUpdated>
+	<LastUpdated>29th June 2024</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -11,13 +11,12 @@
 				<CompetitionID>508</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
-					<!--<Player Name="Dan Christopher"/>-->		
-					<!--<Player Name="Greg Tippings"/>-->
+					<Player Name="Greg Tippings"/>
+					<Player Name="Dan Christopher"/>		
 					<Player Name="Joe Eason" />
 					<Player Name="Jason Jones" WelshRankingID="68793"/>
 					<Player Name="Jack Elvis"/>					
 					<Player Name="Adrian Brace" IsCaptain="true" RefereeNumber="101513"/>
-					<Player Name="Gary Fry" RefereeNumber="100366"/>
 					<!--<Player Name="Matthew Williams"/> -->
 					<!--<Player Name="Stephen Warren" WelshRankingID="196227"/>-->
 					<!--<Player Name="Dan Webb"/>-->
@@ -33,10 +32,11 @@
 				<HomeNight>Wed</HomeNight>
 				<Players>				
 					<Player Name="Tom Penberthy" IsCaptain="true"/>
-					<!--<Player Name="Dan Povey"/>-->
+					<Player Name="Gary Fry" RefereeNumber="100366"/>
 					<Player Name="Ben Howcroft"/>
 					<Player Name="Mike Watkins"/>
 					<Player Name="Kevin Taylor"/>
+					<Player Name="Dan Povey"/>
 					<Player Name="Paul Aubrey"/>
 					<!--<Player Name="Joshua Sion Davies" RefereeNumber="101022"/>-->
 					<!--<Player Name="Jeff Greenslade" RefereeNumber="100467"/>-->
@@ -54,14 +54,15 @@
 				<Players>
 					<!--<Player Name="Ryan Phillips"/>-->
 					<!--<Player Name="Ben Howcroft" />-->
+					<Player Name="Madalena Sidoli"/>
 					<Player Name="Rich Timms" IsCaptain="true" RefereeNumber="101511"/>
 					<Player Name="Sam Norris"/>
+					<Player Name="Josh Llewellyn"/>
 					<Player Name="Rob Mitchell"/>	
 					<Player Name="Nick Wilkes"/>
-					<Player Name="Josh Llewellyn"/>
 					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
 					<!--<Player Name="Luke McCarthy"/>-->	
-					<!-- <Player Name="Matthew Thomas" WelshRankingID="86287"/>-->
+					<Player Name="Matthew Thomas" WelshRankingID="86287"/>
 				</Players>
 			</Team>
 			<Team>
@@ -73,17 +74,13 @@
 				<CompetitionID>509</CompetitionID>
 				<HomeNight>Mon</HomeNight>
 				<Players>
-					<Player Name="Madalena Sidoli"/>
-					<Player Name="Mark Morgan" RefereeNumber="100292"/>					
-					<Player Name="Dan Griffiths"/>
-					<Player Name="Angharad Llewellyn" IsCaptain="true" WelshRankingID="69247"/>										
-					<Player Name="Huw Davies"/>
+					<Player Name="Lloyd Newland"/>
+					<Player Name="Lee Parpworth"/>
 					<Player Name="Ryan Vaughan"/>
-					<!--<Player Name="Jack Penberthy"/>-->
-					<!-- <Player Name="Mark Juhlke"/> -->
-					<!-- <Player Name="Shivam Singhal"/> -->
-					<!-- <Player Name="Lloyd Newland"/> -->
-					<!-- <Player Name="Lee Parpworth"/>-->
+					<Player Name="Francis Smith"/>	
+					<Player Name="Mark Juhlke"/>
+					<Player Name="Steve Thomas"/>
+					<Player Name="Carl Whiteley"/>
 				</Players>
 			</Team>
 			<Team>
@@ -95,15 +92,19 @@
 				<CompetitionID>509</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
-					<Player Name="Steve Thomas"/>
-					<Player Name="Francis Smith"/>	
-					<Player Name="Carl Whiteley"/>
+					<Player Name="Dan Griffiths"/>
+					<Player Name="Huw Davies"/>
+					<Player Name="Mark Morgan" RefereeNumber="100292"/>
+					<Player Name="Angharad Llewellyn" IsCaptain="true" WelshRankingID="69247"/>										
+					<Player Name="Luke Bates"/>
+					<Player Name="Mike Watts"/>					
 					<Player Name="Naomi Jones" IsCaptain="true"/>
 					<Player Name="Steve Evans" WelshRankingID="13194"/>
-					<Player Name="Mike Watts"/>					
-					<Player Name="Erica Howcroft"/>	
-					<Player Name="Luke Bates"/>
 					<Player Name="Rhys Jenkins"/>
+					<Player Name="Hayley Thomas"/>
+					<!--<Player Name="Jack Penberthy"/>-->
+					<!--<Player Name="Shivam Singhal"/> -->
+					<!--<Player Name="Erica Howcroft"/>-->	
 					<!--<Player Name="Adrian Fisk"/>-->
 					<!--<Player Name="Lynne Davies"/>-->
 					<!--<Player Name="Chay Davies-Smith" RefereeNumber="100385"/>-->
