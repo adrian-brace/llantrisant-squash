@@ -47,8 +47,8 @@
 				<Name>C</Name>
 				<TeamID>55</TeamID>
 				<League>South Central</League>
-				<DivisionID>5</DivisionID>
-				<DivisionName>South Central 3</DivisionName>
+				<DivisionID>6</DivisionID>
+				<DivisionName>South Central 4</DivisionName>
 				<CompetitionID>509</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
@@ -69,14 +69,14 @@
 				<Name>D</Name>
 				<TeamID>79</TeamID>
 				<League>South Central</League>
-				<DivisionID>8</DivisionID>
-				<DivisionName>South Central 6</DivisionName>
+				<DivisionID>7</DivisionID>
+				<DivisionName>South Central 5</DivisionName>
 				<CompetitionID>509</CompetitionID>
 				<HomeNight>Mon</HomeNight>
 				<Players>
 					<Player Name="Lloyd Newland"/>
 					<Player Name="Lee Parpworth"/>
-					<Player Name="Ryan Vaughan"/>
+					<Player Name="Ryan Vaughan" IsCaptain="true" />
 					<Player Name="Francis Smith"/>	
 					<Player Name="Mark Juhlke"/>
 					<Player Name="Steve Thomas"/>
@@ -87,15 +87,15 @@
 				<Name>E</Name>
 				<TeamID>89</TeamID>
 				<League>South Central</League>
-				<DivisionID>8</DivisionID>
-				<DivisionName>South Central 6</DivisionName>
+				<DivisionID>7</DivisionID>
+				<DivisionName>South Central 5</DivisionName>
 				<CompetitionID>509</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<Player Name="Dan Griffiths"/>
 					<Player Name="Huw Davies"/>
 					<Player Name="Mark Morgan" RefereeNumber="100292"/>
-					<Player Name="Angharad Llewellyn" IsCaptain="true" WelshRankingID="69247"/>										
+					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>										
 					<Player Name="Luke Bates"/>
 					<Player Name="Mike Watts"/>					
 					<Player Name="Naomi Jones" IsCaptain="true"/>
