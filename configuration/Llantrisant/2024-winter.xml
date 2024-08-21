@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>20th August 2024</LastUpdated>
+	<LastUpdated>21st August 2024</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -36,8 +36,9 @@
 					<Player Name="Ben Howcroft"/>
 					<Player Name="Mike Watkins"/>
 					<Player Name="Kevin Taylor"/>
-					<Player Name="Dan Povey"/>
-					<Player Name="Paul Aubrey"/>
+					<Player Name="Josh Davies"/>
+					<!--<Player Name="Dan Povey"/>-->
+					<!--<Player Name="Paul Aubrey"/>-->
 					<Player Name="Madalena Sidoli"/>
 					<!--<Player Name="Joshua Sion Davies" RefereeNumber="101022"/>-->
 					<!--<Player Name="Jeff Greenslade" RefereeNumber="100467"/>-->
