@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>24th August 2024</LastUpdated>
+	<LastUpdated>28th August 2024</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -80,7 +80,7 @@
 					<Player Name="Ryan Vaughan" IsCaptain="true" />
 					<!--<Player Name="Francis Smith"/>-->	
 					<Player Name="Mark Juhlke"/>
-					<Player Name="Steve Thomas"/>
+					<Player Name="Steven Thomas"/>
 					<Player Name="Carl Whiteley"/>
 				</Players>
 			</Team>
@@ -105,6 +105,7 @@
 					<Player Name="Rhys Gooch"/>
 					<Player Name="Rhys Jenkins"/>
 					<Player Name="Hayley Thomas"/>
+					<Player Name="Hannah Nicol"/>
 					<Player Name="Tom Tolley"/>
 					<!--<Player Name="Jack Penberthy"/>-->
 					<!--<Player Name="Shivam Singhal"/> -->
