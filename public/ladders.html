@@ -14,12 +14,19 @@
 		<table class="ladderTable">
 			<tr>
 				<td class="centredCell">
-					<p class="textParagraph">Our <b>SQUASH LADDER</b> has moved to an online system at: <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQSQUASHLADDER }}">Squash Levels</a>. Our <b>RACKETBALL LADDER</b> has been temporarily postponed due to a lack of ladder activity, but there are still regular racketball nights on Fridays and Sundays.</p>
+					<p class="textParagraph">Our <b>SQUASH LADDER</b> has moved to an online system at: <a class="loneAnchor" href="{{ configuration.CONSTANTS.SPORTYHQSQUASHLADDER }}">Squash Levels</a>.
+					</p>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<a href="{{ configuration.CONSTANTS.SPORTYHQSQUASHLADDER }}"><div class="squash_levels_banner"><span class="noDisplay">Squash Levels</span></div></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="centredCell">
+					<p class="textParagraph">Our <b>RACKETBALL LADDER</b> has been temporarily postponed due to a lack of ladder activity, but there are still regular racketball nights on Fridays and Sundays.
+					</p>
 				</td>
 			</tr>
 		</table>
@@ -152,6 +159,7 @@
 								</ul>
 							</p>
 						</div>
+						<!--
 						<div class="dataTable">
 							<table class="dataTable">
 								<thead>
@@ -166,16 +174,16 @@
 									<tr style="text-align: center;">
 										<td><span class="negative">Squash</span></td>
 										<td ng-show='!admin'>{{ data.Squash.StartDate | date:'EEEE d MMMM' }} -</td>
-										<!--<td ng-show='admin'><input type="text" ng-model="data.Squash.StartDate"/></td>-->
-										<td ng-show='!admin'><b>{{ data.Squash.EndDate | date:'EEEE d MMMM' }}</b></td>
-										<!--<td ng-show='admin'><input type="text" ng-model="data.Squash.EndDate"/></td>-->
-										<td>
+										--><!--<td ng-show='admin'><input type="text" ng-model="data.Squash.StartDate"/></td>-->
+										<!--<td ng-show='!admin'><b>{{ data.Squash.EndDate | date:'EEEE d MMMM' }}</b></td>
+									--><!--<td ng-show='admin'><input type="text" ng-model="data.Squash.EndDate"/></td>-->
+										<!--<td>
 											<span ng-class="{'positive': (daysRemainingSquash > 14),
 												'concern': (daysRemainingSquash <= 14 && daysRemainingSquash >= 7),
 												'negativeLight': (daysRemainingSquash <= 7)}"><span ng-show="daysRemainingSquash >= 0"><b>{{ daysRemainingSquash }}</b></span></span>
 											<span ng-show="daysRemainingSquash === -1" class='negative'><b>N/A - NEW LADDER DUE SOON</b></span>
 										</td>
-									</tr>
+									</tr>-->
 									<!--<tr style="text-align: center;">
 										<td><span class="negative">Racketball</span></td>
 										<td ng-show='!admin'>{{ data.Racketball.StartDate | date:'EEEE d MMMM' }} -</td>
@@ -192,14 +200,15 @@
 								</tbody>
 							</table>
 						</div>
-						<button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Refresh Points</button>
+						<!--<button id="reset-data" ng-click="refreshData()" onclick="refreshData();" type="button">Refresh Points</button>
 						<br/>
+						-->
 						<!--<div ng-show='admin'>
 							<button ng-click="save();">Save</button>
 							<span ng-class="'negative'" ng-show="unSavedData">WARNING: Ladder data has not been saved!!!</span>
 							<span ng-class="'positive'" ng-show='saveStatus'>{{ saveStatus }}</span>
 						</div>-->
-						<div>
+						<!--<div>
 							<table class="ladderTable">
 								<td ng-show='daysRemainingSquash >= 0' align="center">
 									<div class="squash">
@@ -207,12 +216,13 @@
 									</div>
 									<h2>Squash</h2>
 									<div class="dataTable">
+									-->
 										<!--<span ng-show='admin'>
 											<button ng-click="extendLadder(true);">Add New Group</button> Size:<input type="number" min="2" max="8" ng-model="groupSizeSquash"/>
 											<br/>
 											<button ng-click="trimLadder(true);">Remove Bottom group</button>
 										</span>-->
-										<table style="width: 150px; padding-top: 5px;" class="dataTable" ng-repeat="ladder in data.Squash.Ladders.Ladder">
+										<!--<table style="width: 150px; padding-top: 5px;" class="dataTable" ng-repeat="ladder in data.Squash.Ladders.Ladder">
 											<thead>
 												<tr>
 													<th>Box {{ ladder.Number }}</th>
@@ -227,12 +237,12 @@
 											</thead>
 											<tbody>
 												<tr ng-repeat="name in ladder.Players.Name track by $index">
-													
+												-->	
 													<!--<td ng-show='!admin'>{{ name }}</td>-->
-													<td align="center" ng-show='!admin'>{{ name.position }}</td>
+												<!--	<td align="center" ng-show='!admin'>{{ name.position }}</td>
 													<td ng-show='!admin'>{{ name.playerName }}</td>
 													<td align="center" ng-show='!admin'>{{ name.totalPoints }}</td>
-													<!--<td ng-show='admin'><input ng-model="ladder.Players.Name[$index]"/></td>
+												-->	<!--<td ng-show='admin'><input ng-model="ladder.Players.Name[$index]"/></td>
 													<td ng-show='admin'>
 														MOVE:
 														<button ng-show="ladder.Number < (data.Squash.Ladders.Ladder.length - 1)" ng-click="move('squash', 10, name);">+10</button>
@@ -242,13 +252,13 @@
 														<button ng-show="ladder.Number > 1" ng-click="move('squash', -5, name);">-5</button>
 														<button ng-show="ladder.Number > 2" ng-click="move('squash', -10, name);">-10</button>
 													</td>-->
-													
+													<!--
 												</tr>
 											</tbody>
 										</table>
 									</div>
 								</td>
-								<!--
+							--><!--
 								<td ng-show='daysRemainingRacketball >= 0' align="center" style="vertical-align: top; padding-left: 20px;">
 									<div class="racketball">
 										<span class="noDisplay">Racketball</span>

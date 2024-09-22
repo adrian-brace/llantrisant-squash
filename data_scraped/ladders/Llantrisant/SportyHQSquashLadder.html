@@ -1,557 +1,84 @@
-<!DOCTYPE html><html lang='en'><!-- copyright SquashLevels Ltd., 2015-2023 --><head><script type='text/javascript'>// Global JS definitions for access to back end server values for the page
-
-console.log("Loading JS defs");
-
-// IE detection for JS - all off now
-var isIE = false;
-
-// Page size information
-var wholePageScale = -1;
-var smallScreenWidth = 550;
-var smallScreen = false;
-
-// Format
-var isMaya = true;
-var siteMode = 'spa';
-
-// Location needed - so we only get it if we need it
-var needLocation = false;
-
-// Colours
-var hotPink = '#E34891';
-var teal = '#7DE3C2';
-var mutedPurple = '#685F76';
-
-// IDs
-  var userName = 'none';
-  var playerID = -1;
-  var personID = -1;
-  var configViews = false;
-
-// Features available
-var featuresAvailable = 'visitor';
-var hideLevel = true;
-
-// Current page
-var currentPage = 'boxes';
-var domainName = 'squashlevels.com';
-var pageUrl = window.location.href;
-
-// Admin level
-var admin = false; // Admin level
-var results_admin = false; // Results admin level
-var county_admin = false; // County admin level
-var squashskills_staff = false; // SquashSkills admin level
-
-// Reset the inactivity timer
-var idleTime = 0;
-var refreshTime = 0;
-var commsKey = '464413319421';
-
-// Deafult values for the player search bar
-var scope = ''; // ('club'/'county'/'all'/'')
-var includeClubs = false; // To include clubs in the search
-var auto_complete_link = true; // Go straight to player page (or just leave selected)
-var changedPlayer = false; // If the player has been updated through a suggestion click
-
-// Player to highlight. Default to URL parameter. Can be overwritten.
-var highlight = -1;
-
-// If we're in an iframe
-var frame = false;
-
-// For pages
-var check_players = false;
-var auto_focus_entry = false;
-var whatif = false;
-var publishableKey = false;
-
-// These record the mouse position. Need to make sure the mouse has moved in real terms to reset the timer
-var mouseX = -1;
-var mouseY = -1;
-
-</script>  <meta charset="utf-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-  <!-- GA4 Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6NL29F84V"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-L6NL29F84V');
-
-    gtag('event', 'user_metrics', {
-      'membership': 'Visitor',
-      'testgroup': 'groupB'
-    });
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Universal Analytics (going offline soon) 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86957964-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-86957964-1', {
-      'custom_map': {
-        'dimension1': 'membership',
-        'dimension2': 'test group'
-      }
-    });
-    gtag('event', 'user_metrics', {
-      'membership': 'Visitor',
-      'test group': 'groupB'
-    });
-  </script> -->
-
-<!-- Facebook Pixel Code -->
-<script>
-  ! function(f, b, e, v, n, t, s) {
-    if (f.fbq) return;
-    n = f.fbq = function() {
-      n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-    };
-    if (!f._fbq) f._fbq = n;
-    n.push = n;
-    n.loaded = !0;
-    n.version = '2.0';
-    n.queue = [];
-    t = b.createElement(e);
-    t.async = !0;
-    t.src = v;
-    s = b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t, s)
-  }(window, document, 'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '260461292012061');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=260461292012061&ev=PageView&noscript=1" /></noscript>
-<!-- End Facebook Pixel Code -->
-
-<!-- Global site tag (gtag.js) - Google Ads: 706051342 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-706051342"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'AW-706051342');
-</script>
-
-<!-- LiknedIn -->
-<script type="text/javascript">
-  _linkedin_partner_id = "5805945";
-  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-</script>
-<script type="text/javascript">
-  (function(l) {
-    if (!l) {
-      window.lintrk = function(a, b) {
-        window.lintrk.q.push([a, b])
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="icon" href="https://main.squashlevels.com/cdn/squash/site/favicon.ico"/><title>SquashLevels</title><link rel="preload" href="https://use.typekit.net/wvr4bdh.css" as="style"/><link rel="stylesheet" href="https://use.typekit.net/wvr4bdh.css"/><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/grotesque"/><link rel="stylesheet" href="https://squashlevels.com/css/crush_specific_spa.css"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js" crossorigin="anonymous"></script><script src="https://squashlevels.com/js/md5.js" onload="console.log('md5.js loaded'); console.groupEnd();"></script><script src="https://squashlevels.com/js/jquery.cookie.js" onload="console.log('jquery.cookie.js loaded')"></script><script src="https://squashlevels.com/js/emoji/dist/jquery.emojiarea.js" onload="console.log('jquery.emojiarea.js loaded')"></script><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"/><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script>// Plug-in to flash an object by the number of flashes and each flash takes the requested time.
+      $.fn.slow_flash = function (flashes, flash_time) {
+        for (x = 1; x <= flashes; x++)
+          this.animate(
+            {
+              opacity: 0,
+            },
+            flash_time / 2,
+          ).animate(
+            {
+              opacity: 1,
+            },
+            flash_time / 2,
+          );
+        return this;
       };
-      window.lintrk.q = []
-    }
-    var s = document.getElementsByTagName("script")[0];
-    var b = document.createElement("script");
-    b.type = "text/javascript";
-    b.async = true;
-    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-    s.parentNode.insertBefore(b, s);
-  })(window.lintrk);
-</script> 
-<noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5805945&fmt=gif" /> </noscript>
 
-<!-- Adroll Pixel Code
-<script type="text/javascript">
-    adroll_adv_id = "HZAD6RJL55A2VLKX6ZF472";
-    adroll_pix_id = "GWFWUJQ3ABBXDHFJTUCGBR";
+      // Plug-in for JQuery rotation
+      $.fn.animateRotate = function (startAngle, endAngle, duration, easing, complete) {
+        return this.each(function () {
+          var elem = $(this);
 
-    (function () {
-        var _onload = function(){
-            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
-            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
-            var scr = document.createElement("script");
-            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-            scr.setAttribute('async', 'true');
-            scr.type = "text/javascript";
-            scr.src = host + "/j/roundtrip.js";
-            ((document.getElementsByTagName('head') || [null])[0] ||
-                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-        };
-        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
-        else {window.attachEvent('onload', _onload)}
-    }());
-</script> -->
-
-<!-- Crazy Egg -->
-<!-- <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0093/1959.js" async="async"></script> --><meta name="norton-safeweb-site-verification" content="lsvpfs1l582izjyq44kknvl2nm7vsfhqdc8o0tingo8dk6xbju62eke1av5qf1xjr8syylddftu0faaznbb3tz6qha0c1y4ya1mr25halpb0d9gue6rwsc0s3tkxmjgq" /><meta name="keywords" content="Squash,Racketball,League,Leagues,Boxes,Avon,Bristol,Rating,Ranking,Level,SquashLevels,National,England Squash"><meta name="author" content="SquashLevels Ltd."><meta name="wot-verification" content="29428994d10d64231891"/><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="SquashLevels ratings and rankings"><meta property="og:description" content="Know your level, know your opponent's level. Never go on court unprepared again!"><meta property="og:image" content="https://squashlevels.com/maya/pictures/Your_level_stats.png"><meta name="google-site-verification" content="NKi4YGQGsZA9USG7kOAbsMe6CydQjvhFu82_x2fpYBU"/><meta name='facebook-domain-verification' content='ny2bd1peltdytqnxh776cyskg63z24' /><title>Boxes - SquashLevels</title><meta name="description" content="28 Feb 2024 - Squash results and player levels for all players of all ability from professional to county to club. If you play squash, you could/should be on here!"><link rel="stylesheet" href="https://use.typekit.net/wvr4bdh.css"><link rel="stylesheet" href="css/crush_specific_spa.css?1708268131" media="all" />
-<link rel='shortcut icon' href='maya/SL-favicon.ico'></head><body><div id='bottom_menu'><div id='bottom_menu_header'><a id='bottom_menu_header_left' class='div_row white_background full_height float_left' href='search.php'><div class='bottom_menu_header_labelled_icon'><div class='bottom_menu_header_icon'><div class='search_icon icon'><img src='maya/icons/icon-search-racket-purple.svg'></div></div><div class='bottom_menu_header_label'>Find</div></div></a><div id='bottom_menu_header_button' class='bottom_menu_header_labelled_icon div_row white_background'><div id='bottom_menu_header_button_open' class='flexbox'><div class='bottom_menu_header_labelled_icon'><div class='bottom_menu_header_icon'><div class='menu_icon'><div class='single_menu_icon_bar'></div><div class='single_menu_icon_bar'></div><div class='single_menu_icon_bar'></div></div></div><div class='bottom_menu_header_label'>Menu</div></div></div><div id='bottom_menu_header_button_close' class='flexbox hide'><div class='close_menu_icon icon'><img src='maya/icons/cancel_grey.png'></div></div></div><a id='bottom_menu_header_right' class='div_row white_background full_height float_right' href='players.php'><div class='bottom_menu_header_labelled_icon'><div class='bottom_menu_header_icon'><div class='list_icon icon'><img src='maya/icons/icon-rank-purple.svg'></div></div><div class='bottom_menu_header_label'>Rankings</div></div></a></div><div id='bottom_menu_body'><div id='bottom_menu_body_buttons' class='light_background'><button class='bottom_menu_body_button  ' type='submit' onclick="location.href='menu_login';">Log in</button><button class='bottom_menu_body_button cta_background cta_text' type='submit' onclick="location.href='register';">Create account</button><button class='bottom_menu_body_button  ' type='submit' onclick="location.href='skillstesting';">Testing</button><button class='bottom_menu_body_button  ' type='submit' onclick="location.href='players?all';">Rankings</button><button class='bottom_menu_body_button  ' type='submit' onclick="location.href='https://blog.squashlevels.com';">Blog</button></div></div><div id='bottom_menu_sitemap_header'><div class='div_row full_height float_left'>&nbsp;</div><div id='bottom_menu_sitemap_header_middle' class='div_row full_height'><img src='maya/icons/more-purple.png' class='full_height'></div><a href='https://support.squashlevels.com/hc/en-gb' class='div_row full_height float_right bottom_menu_sitemap_button'>Help</a></div><div id='bottom_menu_sitemap'><div id='full_sitemap_cancel_bar'><div class='div_row full_height float_left'>&nbsp;</div><div id='full_sitemap_cancel_bar_middle' class='div_row full_height'><img src='maya/icons/sitemap-cancel-purple.png' class='full_height'></div><div class='div_row full_height float_right'>&nbsp;</div></div><div id='full_sitemap'><div id='full_sitemap_content'><div class='sitemap_section'><h1>Members area</h1><p title='Log in to access your latest results' ><a href='menu_login'>Log in</a></p><p title='Create your free account' ><a href='register'>Create account</a></p><p title='View the membership options' ><a href='membership'>Membership options</a></p></div><div class='sitemap_section'><h1>My communities</h1><p title='View your PSA community' ><a href='dashboard?tab=community&community=205-1'>PSA</a></p></div><div class='sitemap_section'><h1>My rankings</h1><p title='Top men in the system (a level based world ranking)' ><a href='players?all&top'>World</a></p><p title='Top women in the system (a level based world ranking)' ><a href='players?all&playertype=2&top'>World women</a></p><p title='Most improved over the last 12 months' ><a href='most_improved?matchtype=all'>Most improved</a></p></div><div class='sitemap_section'><h1>Country rankings (ENG)</h1><p title='Upgrade to access this feature' ><a href='membership'>Gold feature</a></p></div><div class='sitemap_section'><h1>Boxes</h1><p title='Show all the boxes' ><a href='boxes'>All boxes</a></p><p title='Full help for using and running boxes' ><a href='boxes?help=1'>Boxes help</a></p></div><div class='sitemap_section'><h1>About</h1><p title='Try SquashLevels gold free for a month.' ><a href='register'>Try SquashLevels for free</a></p><p title='Please check our FAQ before contacting us.' ><a href='https://support.squashlevels.com/hc/en-gb'>Help center</a></p><p title='Find out more about the site' ><a href='how'>Find out more</a></p><p title='Please check the FAQ before contacting us.' ><a href='https://support.squashlevels.com/hc/en-us/requests/new?ticket_form_id=7630864953885'>Contact us</a></p><p title='Site Terms and conditions' ><a href='doc?doc=tsandcs.htm'>Terms and conditions</a></p><p title='Site privacy policy' ><a href='doc?doc=privacy_policy.htm'>Privacy policy</a></p><p title='Site cookie policy' ><a href='doc?doc=cookies.htm'>Cookie policy</a></p><p title='Check out our multi-sport vision' ><a href='https://leveltech.io'>LevelTech</a></p></div></div></div><div id='social_media'><div id='twitter_and_facebook' class='full_height'><a href='https://twitter.com/SquashLevels'><div><img src='maya/icons/icon-twitter-white.svg'></div></a><a href='https://facebook.com/squashlevels'><div><img src='maya/icons/icon-facebook-white.svg'></div></a><a href='https://instagram.com/squashlevels'><div><img src='maya/icons/icon-instagram-white.svg'></div></a></div></div></div></div><div id='maya'><div id='bottom_right_buttons' class='notifsmall'><button type='button' id='bottom_right_button' class='heavier_shadow' style='display:none;'></button><a href='https://support.squashlevels.com/hc/en-gb'><button type='button' class=''>Help</button></a></div><div id='whole_page' style='transform-origin: 0 0 0;transform: scale(1);width:1349px;'><div id='overlay'></div><div id='help_popup_div' class='fullscreen_popup_div white_background popup_top heavier_shadow'><div class='help_div_banner'><span class='slogan'>More Info</span></div><div class='icon_title_cluster'><div class='help_icon icon'><img src='maya/icons/icon-info-purple.svg'></div><h1 class='help_title'>Help title</h1></div><div class='help_content'>Help content</div><button class='help_div_close_button' type='button'>Close</button></div><div id='upgrade_popup_div' class='fullscreen_popup_div popup_top heavier_shadow'><div class='outer_copy_container dashboard_block_width light_background shadow rounded_corners no_overflow'><div class='inner_copy_container full_width'><div class='copy_div info_div_container unaligned flex_direction_row'><a class='info_div_img '><img class='og_image_location  ' src='maya/pictures/upgrade_to_follow_more_players.png'><div class='og_text_location info_div_og_text info_div_text_under top_and_bottom_inset_line hide'></div></a><div class='info_div_text  larger_text'><p class='info_title purple_text '>Upgrade to premium membership</p><div class='flex_break'></div><div class='separator'></div><div class='flex_break'></div><div class='gap info_text '>&nbsp;</div><span class='info_text autolink_urls larger_text  '><p>You have reached the maximum number of players that you can follow. Upgrade now to follow more.</p></span><div class='flex_break'></div><div class='gap info_text '>&nbsp;</div><div class='info_div_button'><button class='info_div_button cta_text cta_background' type='button' onclick="location.href='membership.php';">Upgrade options</button></div><div class='flex_break'></div><div class='gap info_text '>&nbsp;</div></div></div></div></div></div><div id='image_upload_popup_div' class='image_upload_popup_div popup_top hide'><div class='image_upload_popup_container'><div class='crop_image_cancel_div stop_propagation' onclick='cancelCropImage(this)'><div class='cancel_icon icon '><img src='maya/icons/icon-close-cross-purple.svg'></div></div><div class='crop_image_div'><div class='photo_to_crop_container heavier_shadow'><div class='unscaled_container'><img class='photo_to_crop' src=''></div></div><div class='button_cluster'><button class='crop_photo stop_propagation' onclick='cropImage(this)'>Crop and upload</button></div></div><div class='cropped_image_preview_container'><div class='cropped_preview_div  heavier_shadow'></div></div></div></div><div id='more_options_popup_div' class='popup_top'></div><div id='generic_popup_div' class='fullscreen_popup_div popup_top hide'></div><div id='header'><div id='header_centre'><div id='header_logo'><a href='home''><img src='maya/icons/logo-combimark-hot-pink-white.svg'></a></div><div id='header_menu'><a title='Log in to access your latest results' href='menu_login'   ><div class='header_menu_item no_padding  '><div class='header_menu_icon header_menu_large_image'><img class='header_menu_large_image' src='maya/icons/login-icon.png'></div></div></a><a title='Create your free account' href='register'   ><div class='header_menu_item header_menu_cta notifsmall cta_background'><div class='header_menu_icon '></div><div class='header_menu_text  cta_text'>Create account</div></div></a><a title='Go straight to the rankings' href='players?all'   ><div class='header_menu_item  notifsmall '><div class='header_menu_icon '><img class='' src='maya/icons/icon-rank-white.svg'></div><div class='header_menu_text notifsmall '>Rankings</div></div></a><a title='SquashSkills testing' href='skillstesting'   ><div class='header_menu_item  notifsmall '><div class='header_menu_icon '><img class='' src='maya/partner_logos/squashskills-enso-white.svg'></div><div class='header_menu_text notifsmall '>Testing</div></div></a><a title='Search the system' href='search'   ><div class='header_menu_item  notifsmall '><div class='header_menu_icon '><img class='' src='maya/icons/icon-search-racket-white.svg'></div><div class='header_menu_text notifsmall '>Find</div></div></a><a title='Visit our blog' href='https://blog.squashlevels.com' target='_blank'   ><div class='header_menu_item notifmedium notifsmall '><div class='header_menu_icon '><img class='' src='maya/icons/icon-doc-white.svg'></div><div class='header_menu_text notifsmall '>Blog</div></div></a><div id='pulldown_notification_count' class='hide'>0</div><div id='pulldown_notification_location_div' class='hide'></div></div><div id='ngb_logo'><a href='https://www.englandsquash.com/membership/players''><img src='maya/partner_logos/es_icon.png'></a></div></div></div><div id='header_placeholder'>&nbsp;</div><div id='maya_content_container'><div class='notification_div notification_information'><div class='notification_container'><div class='notification_icon'><div class='icon'><img src='maya/icons/icon-info-white.svg'></div></div><div class='notification_text'></div><div class='notification_close'><div class='players_icon icon'><img src='maya/icons/close-white.svg'></div></div></div></div><div class='notification_div notification_success'><div class='notification_container'><div class='notification_icon'><div class='icon'><img src='maya/icons/icon-success-purple.svg'></div></div><div class='notification_text'></div><div class='notification_close'></div></div></div><div class='notification_div notification_important'><div class='notification_container'><div class='notification_icon'><div class='icon'><img src='maya/icons/icon-important-purple.svg'></div></div><div class='notification_text'></div><div class='notification_close'></div></div></div><div class='notification_div notification_warning'><div class='notification_container'><div class='notification_icon'><div class='icon'><img src='maya/icons/icon-error-white.svg'></div></div><div class='notification_text'></div><div class='notification_close'></div></div></div><div id='notification_location_div'></div><div class='notification_data_div'><div class='notification_id'>cookies_acceptance</div><div class='notification_severity'>important</div><div class='notification_text'><div class='notification_cluster'><div>To give you the best experience, we use cookies to remember your settings and personalise your pages and social media. Please click <b>Accept</b> if you are happy for us to do this. To find out more about our use of cookies please see our <a href='doc.php?doc=cookies.htm'><b><u><nobr>cookie policy</nobr></u></b></a>.</div><button type='button' class='accept_cookies_button'>Accept</button></div></div></div><noscript><div class='red_banner background_bad full_width larger_text'><b>Please enable scripts in your browser to enable all the features on the website...</b></div></noscript><div id='maya_content'><div class='boxes_page narrow_margins'><div class='flex_break'></div><div class='gap info_text '>&nbsp;</div><div class='feature_not_available_div'><form action="boxes.php" method="GET"><input type="hidden" name="action" value="login_form"><input type="hidden" name="boxid" value="3858"><input type="submit" value="Log in"></form><div class='body_text '>Log in to view contact details and enter scores. You need to have access to these boxes.</div></div><table class='no_styling' style='page-break-before: always;'><tr><td><div class='page_heading'><div class='page_heading_title_and_logo'><div class='page_heading_left_title'><div class='section_header'><div class='icon_title_cluster'><h1>Llantrisant Boxes from <nobr>26-Feb-2024</nobr> to <nobr>14-Apr-2024</nobr></h1><div title='Click here for help and information' class='help_icon icon faint' id='help_icon_llantrisant_boxes_from_nobr_26_feb_2024_nobr_to_nobr_14_apr_2024_nobr_'><img src='maya/icons/icon-info-purple.svg'></div><div class='help_div' id='help_div_llantrisant_boxes_from_nobr_26_feb_2024_nobr_to_nobr_14_apr_2024_nobr_'><div class='help_title'>Llantrisant Boxes from <nobr>26-Feb-2024</nobr> to <nobr>14-Apr-2024</nobr></div><div class='help_content'>
-    <h1>Using the boxes</h1>
-    
-    <p>You need to be registered and logged in to have full use of the boxes otherwise you will not be able 
-    to see player contact details or enter your results. You don't need to be a premium member though - basic access is 
-    free and is sufficient to fully participate in the boxes.</p>
-
-    <p>If you are logged in you can update your contact details via the links in the diagonals of your box. 
-    If you haven't added any
-    contact details yet, there is an <b>Add contact details</b> link next to your name but you can also use the
-    <b>Update</b> link in the box diagonals at any time.</p>
-
-    <p>To add a result, click on the either of the + links in the appropriate location in your box and
-    a new page will open. Enter your results into this page and click on the <b>Enter match results</b> button to save them and 
-    return to the boxes page. You do need to be logged in for this or ask your club admin to do it for you.</p>
-
-    <p>Once your results have been entered they will be included in the level processing which will calculate a level for you
-    as long as you have played someone who already has a level of their own. If not, your level will be calculated once your 
-    opponent has one or you play someone else who has one.<p>
-    
-    <p>If you have a '*' by your name then you are in danger of being removed (dropped) from the boxes next time round
-    because you haven't played enough matches yet. The '*' will disappear once you have entered enough results.</p>
-
-    <p>&nbsp;</p><h1>How to set up boxes</h1>
-    <p>You need to be logged in as a club admin to manage your boxes. Just register/join as a player as normal
-    and then ask us to set you up as a club admin.</p>
-    
-    <p><b>Adding a set of boxes</b></p>
-    
-    <p>Please ask us to set the boxes up for you. We can do it quickly and also make sure that they are given a 
-    suitable name that makes them unique in the system. Once created, you will find a link to your boxes either in 
-    the pull-down or the footer depending on the system that will take you straight there.</p>
-
-    <p>As an admin, you can configure your boxes. Just click on 'configure' and you will have the following fields to 
-    control the behaviour of your boxes.
-    
-    <ul>
-    <li><b>Name:</b> We will give you a name for your boxes (based on what you ask us for) but you can change it to anything you like.
-    That name will then be carried forward to future boxes though it can be changed at any time.</li>
-    <li><b>Contact email:</b> How players can get in touch with you.</li>
-    <li><b>Show player contact details:</b> If ticked, the player contact details will be shown. Hidden if not.</li>
-    <li><b>Comment:</b> A line of text that appears at the top of the boxes page. Use it to communicate messages to your 
-    players.</li>
-    <li><b>Start date:</b> When the period for the boxes begin. Most time formats are supported.</li>
-    <li><b>End date:</b> When the period for the boxes end. Dates are inclusive so games can be played upto and including
-    this date.</li>
-    <li><b>Players per box:</b> The target number of players per box adjusted by +/- 1 to allow for varying numbers of players.
-    Needs to be in the range 4 to 7.</li>
-    <li><b>Last box min:</b> The minimum number of players in the last box. Use this to prevent the system
-    leaving you with a box with fewer players than you asked for (can be 'Players per box' minus one). If zero or there
-    aren't enough boxes to absorb all the players in the last box then this option has no effect.</li>
-    <li><b>Extra players go into...:</b> Choose between the top and bottom box to adjust for extra or too few players.</li>
-    <li><b>Players moved between boxes:</b> Defaults to 2 which means the top 2 go up and the bottom 2 go down in each box
-    at the end of the period with the caveat that players who have not played do not go up.</li>
-    <li><b>Top/bottom player moves 2 boxes:</b> Allows the very top and bottom players of each box to move 2
-    boxes in one period. Nice if you have a lot of boxes and very competitive for the top spot!
-    Select the number of the first (<b>from</b>) box if you don't want to include the top boxes in this. 
-    E.g. If you set this to 2, players can only move one box between box 1 and 2 and then 2
-    boxes between box 2 and 4.</li>
-    <li><b>Bonus if all matches played:</b> The number of extra points a player gets if they played all their games in the period.</li>
-    <li><b>Drop if...:</b> Two configurations to control the auto-dropping of players who haven't played. Note that dropped players
-    are only 'dropped' which means their details are still held (including their last position) and can be brought back
-    into the boxes if desired. A player who will be dropped next period if they don't play a game this period will have a '*' by their
-    name.</li>
-    </ul>
-    
-    <p>All of the above details are specific to the boxes you're creating for the initial box period but will be copied across
-    to the next period to use for the new boxes when the time comes. It is therefore possible to use a different configuration
-    from period to period for your boxes - useful if you want to change the length of the period or the name of the boxes for
-    instance.</p>
-    
-    <p>Once you have filled out the configuration of the box click on <b>Update</b> to make the changes it. This updates
-    the boxes internally but until you add players there will be nothing to see!</p>
-    
-    <p>From the page showing your boxes, you can select:</p>
-
-    <ul>
-    <li><b>Previous boxes:</b> Takes you to the previous period's boxes. May show 'First boxes' if these are the first.</li>
-    <li><b>Next boxes:</b> Takes you to the next period's boxes. May show 'Current boxes' if these are the current ones.</li>
-    <li><b>Lock boxes:</b> This prevents any accidental updating of box configuration or adding/removing players which has an
-    immediate affect on who is in which box. Since the definition of the boxes is independent of the player details and results
-    such changes can always be corrected.</li>
-    <li><b>Configure boxes:</b> Allows you to make changes to the configuration of the boxes after initial set up.</li>
-    <li><b>Add players:</b> Allows you to add players to the boxes (see below for details). Note that you can't add players
-    once matches have started to be recorded as it changes who is in each box.</li>
-    <li><b>Process boxes:</b> Used at the end of the period to generate the boxes for next period. You can only do this once
-    and only if it's the current period and only if there are results entered. Processing a box can't be undone from the web
-    (for now) so only do it when you're sure that you are at the end of the period although you can always adjust the
-    resultant boxes afterwards. Box processing at the end of the period could be automated at some point.</li>
-    <li><b>Delete boxes:</b> Used if you created a set of boxes (say for a new period) and decided that you don't
-    want them any more. The boxes will be deleted and you will be returned to the previous boxes. This does not delete any
-    players or player history. You can't delete a set of boxes once results have been entered.</li>
-    <li><b>Mail all:</b> Use this to open a new email addressed to all the players in the boxes who have entered their contact
-    details. Very useful for sending out <b>new boxes messages</b> to all the players each month. You do need a mail program
-    such as Outlook running on your computer for this to work.</li>
-    <li><b>Wall mode:</b> Use this to set your tablet or PC up so that you can hang it on the wall at your club for instant
-    results entry and easy viewing of the boxes. For PCs, best if the browser is running in 'kiosk' mode or, for 
-    a tablet, running from within a 'kiosk' app. The kiosk mode/app locks down the device so users can't use it as a general 
-    purpose browser. Wall mode helps by disabling external links from this site and preventing the generic box user from 
-    logging out. 
-    If there's no user interaction within the timeout period set in the box configuration, the boxes
-    page is returned to automatically. Works for the tablet/PC that you're using when you click on 
-    the button which you must do as an admin, log out and then log back in again as the generic boxes user. Since it's not 
-    possible to leave wall mode from the wall mode device, you can only 
-    disable it by zeroing out the timeout from another device as an admin. Note that if the timeout is set to zero, the
-    'Wall mode' button will not be shown. The default timeout is 60 seconds.</li>
-    </ul>
-    
-    <p><b>Adding individual boxes</b></p>
-    
-    <p>The system automatically works out how many boxes there should be based on how you set the boxes up (above)
-    and how many players are in them. So you don't add boxes, you just add players and the boxes will appear!
-    </p>
-
-    <p>Note that adding players to a box is very different once the boxes have started and there is at 
-    least one result recorded.
-    With no results, adding players just causes the players to be rearranged across the boxes but once results are entered, 
-    adding a player to a box causes that box to increase by one player. This allows you to add players even if 
-    your boxes are up and running.<p>
-    
-    <p><b>Adding players to a box</b></p>
-    
-    <p>Click on the 'Add players' button to add a player. This will offer you a form to select the player and determine how
-    they appear in the boxes:</p>
-
-    <ul>
-    <li><b>Go to add player page:</b> For a player to be selectable they must already be entered into the 
-    system so use this button to go straight to that page in the system. Once the player is entered and saved, you will return
-    to this form so you can then select that player and carry on.</li>
-    <li><b>Choose club player:</b> Use the pull-down to select the player in the club to add.</li>
-    <li><b>or search:</b> Use the search field to enter a player's name to search for him/her in the system beyond the club.</li>
-    <li><b>Position:</b> This defines where in the boxes the player will go. Defaults to the 
-    current bottom position but you can use the pull-down to choose anywhere in the boxes.</li>
-    <li><b>Dropped:</b> Enter yes or no to drop a player. A dropped player is one who is still part of the boxes but not 
-    actively playing. There is a list of dropped players at the bottom of the boxes page showing their last active position.
-    This allows a player to be removed for a period and then be returned for the next period in the same position they left
-    off.</li>
-    <li><b>Withdrawn:</b> Enter yes or no to withdraw a player. A withdrawn player is one who intended to play in the boxes
-    this period but has had to withdraw due to injury. Their name still appears in the box and they still have their results
-    from matches played but their name is crossed out to show they're not playing any more matches this period. They will
-    be carried forward in the same state to the next period boxes.</li>
-    </ul>
-
-    <p><b>Processing the boxes</b></p>
-
-    <p>At the end of the period you will want to process the current boxes and create new boxes for the next period. This is 
-    a two step process which must be done in this order:<p>
-
-    <ul>
-    <li><b>Unlock the boxes and click on 'Process boxes'</b>. This creates a new set of boxes based on the results from the ones
-    just finished. Player movement is determined by the configuration.</li>
-    <li><b>Add/remove any players for the new boxes</b>. This is the time to adjust players for the forthcoming period. You can add,
-    remove or move players around as you like. It's just really important this is done after the processing of the previous
-    boxes otherwise you mess up those boxes and players will be in the wrong places.</li>
-    </ul>
-
-    <p>You can always delete the newly processed boxes as long as no matches have been played.</p>
-    
-    <p><b>General maintenance</b></p>
-    
-    <p>There are various other buttons/links to use that will help maintain the boxes. Some of these can be done by
-    anyone logged in as a club player and others can only be done by the club admin. The player links are covered in the
-    help section below for players so see that but the admin links are listed here:</p>
-    
-    <ul>
-    <li><b>Update:</b> In the box diagnonals. Allows you to update how a player appears in the boxes. See section above
-    on adding players for details on what can be changed.</li>
-    <li><b>Drop:</b> In the box diagnonals. Allows you to temporarily drop a player from the boxes. 
-    See section above on on adding players for an explanation of what dropping a player means.</li>
-    <li><b>Remove:</b> Only available from the list of dropped players and allows you to remove a player from the boxes.
-    This only disconnects that player from this box. It leaves all their contact details, results, appearances in other
-    boxes all unaffected and they can still be added back in again if need be. The only thing lost is their last position
-    in this box. You will need to confirm that a player is to be removed.</li>
-    </ul>
-
-    <p><b>Player access</b></p>
-    
-    <p>There are two ways players can access the boxes to enter results and see contact details:</p>
-
-    <ul>
-    <li><b>Player members:</b> Can do everything they need in their own name. Easy.</li>
-    <li><b>Club generic members:</b> This is a special log-on provided on request if you are using wall mode for a tablet
-    on your wall. We used to provide this for players who don't have a log-on but we really want players to register and use
-    their own account now so this generic account is just for wall mode now.</li>
-    </ul>
-
-    <p>If a player is really determined to not register for whatever reason, then anyone in the boxes can enter their 
-    result for them.</p>
-
-    <p>&nbsp;</p>
-    <h1>Scoring systems</h1>
-
-    <p>There are quite a few different scoring systems in use and as clubs migrate from spreadsheets or older systems to
-    the on-line equivalent, they like to keep their existing scoring system if they can.</p>
-    
-    <p>It is possible for the boxes admin to choose which scoring system they want to use and the different systems are
-    listed here. It's not feasible to give them sensible names so numbers are used. Just pick the system you want to use
-    and enter the number in the boxes admin form.<p>
-    <table class="box"><tr><th>Scoring system</th><th>3-0</th><th>3-1</th><th>3-2</th><th>2-0</th><th>2-1</th><th>2-2</th><th>1-0</th><th>1-1</th><th>0-0</th><th>W-0</th></tr><tr><td>0</td><td>6-1</td><td>5-2</td><td>4-3</td><td>5-1</td><td>4-2</td><td>3-3</td><td>2-1</td><td>2-2</td><td>0-0</td><td>4-0</td></tr><tr><td>1</td><td>6-1</td><td>5-2</td><td>4-3</td><td>3-1</td><td>3-2</td><td>3-3</td><td>2-1</td><td>2-2</td><td>0-0</td><td>4-0</td></tr><tr><td>2</td><td>6-3</td><td>7-5</td><td>8-7</td><td>4-2</td><td>5-4</td><td>6-6</td><td>2-1</td><td>3-3</td><td>0-0</td><td>4-0</td></tr><tr><td>3</td><td>3-0</td><td>3-1</td><td>3-2</td><td>2-0</td><td>2-1</td><td>2-2</td><td>1-0</td><td>1-1</td><td>0-0</td><td>2-0</td></tr><tr><td>4</td><td>6-0</td><td>6-1</td><td>6-2</td><td>5-0</td><td>5-1</td><td>2-2</td><td>4-0</td><td>1-1</td><td>0-0</td><td>4-0</td></tr><tr><td>5</td><td>6-1</td><td>6-2</td><td>6-3</td><td>5-1</td><td>5-2</td><td>3-3</td><td>4-1</td><td>2-2</td><td>0-0</td><td>4-0</td></tr><tr><td>6</td><td>5-1</td><td>5-2</td><td>5-3</td><td>4-1</td><td>4-2</td><td>3-3</td><td>3-1</td><td>2-2</td><td>0-0</td><td>4-0</td></tr><tr><td>7 - used in these boxes</td><td>7-2</td><td>6-3</td><td>5-4</td><td>6-2</td><td>5-3</td><td>4-4</td><td>4-2</td><td>3-3</td><td>0-0</td><td>2-0</td></tr><tr><td>8</td><td>7-1</td><td>6-2</td><td>5-3</td><td>5-1</td><td>4-2</td><td>4-4</td><td>3-1</td><td>3-3</td><td>0-0</td><td>4-0</td></tr><tr><td>9</td><td>6-1</td><td>6-2</td><td>6-4</td><td>4-1</td><td>4-2</td><td>4-4</td><td>2-1</td><td>2-2</td><td>0-0</td><td>4-0</td></tr></table>
-    <p>Note that the code itself is populating the table above so whatever you see here is what you'll get in the boxes.<p>
-    
-    <p>&nbsp;</p></div></div></div></div><div class='display_text'>SquashLevels Boxes</div><div class='flex_break'></div><div class='separator'></div></div><div class='page_heading_right_logo'></div></div><div class='flex_break'></div><div class='gap info_text '>&nbsp;</div></div><p>Matches to be played on or before 14-Apr-2024. <span style='font-size: 100%;'><b>47</b></span> days remaining. Matches played: <span style='font-size: 100%;'><b>1</b></span>.</p><p>Contact <a target='_top' href="mailto:adrian.brace@btinternet.com?subject=Boxes query"><b>adrian.brace@btinternet.com</b></a> with any queries or if you want to join or leave the boxes next time.&nbsp;</p></td><td></td></tr></table><div class='box_button_row'><form action="boxes.php" method="GET"><input type="hidden" name="action" value="show_boxes"><input type="hidden" name="boxid" value="3726"><input title="View the boxes for the previous period." type="submit" value="Previous"></form><form action="boxes.php" method="GET"><input type="hidden" name="action" value="show_boxes"><input type="hidden" name="boxid" value="3858"><input title="View the current boxes (these are the current boxes!)." type="submit" value="Current"></form><form action="dashboard" method="GET"><input type="hidden" name="tab" value="community"><input type="hidden" name="community" value="200-1297"><input title="Visit your club community page." type="submit" value="Community"></form></div><div class='box_button_row'><h2 style='display:inline;'>Box 1</h2></div><table class='box small_box'><tr class='box_headers_row'><th class='name notifsmall'>Position</th><th class='name'>Name</th><th class='notifsmall'>Club</th><th class='name'>&nbsp;Level&nbsp;</th><td class='contacts_column notifsmall'><a href="/boxes.php?action=login_form&boxid=3858">Log in for<br>contact details</a></td><th class='name'><span class=''><nobr>AB</nobr></span></th><th class='name'><span class=''><nobr>JE</nobr></span></th><th class='name'><span class=''><nobr>GF</nobr></span></th><th class='name'><span class=''><nobr>TP</nobr></span></th><th class='name'><span class=''><nobr>JL</nobr></span></th><th class='name'><span class=''><nobr>JN</nobr></span></th><th class='name'>&nbsp;Points&nbsp;</th></tr><tr class='boxes_results_row'><td class='position notifsmall'>1</td><th class='name'><a href='/player_detail?player=196981'  target=''>Adrian Brace</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>3XXX</span></td><td class='contact notifsmall'></td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>2</td><th class='name'><a href='/player_detail?player=354908'  target=''>Jack Elvis</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>4XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>3</td><th class='name'><a href='/player_detail?player=68706'  target=''>Gary Fry</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>4XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>4</td><th class='name'><a href='/player_detail?player=278286'  target=''>Tom Penberthy</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>4XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>5</td><th class='name'><a href='/player_detail?player=198209'  target=''>Josh Llewellyn</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>6</td><th class='name'><a href='/player_detail?player=253647'  target=''>Jo Norris</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class='points'>0</td></tr></table><div class='box_button_row'><h2 style='display:inline;'>Box 2</h2></div><table class='box small_box'><tr class='box_headers_row'><th class='name notifsmall'>Position</th><th class='name'>Name</th><th class='notifsmall'>Club</th><th class='name'>&nbsp;Level&nbsp;</th><td class='contacts_column notifsmall'><a href="/boxes.php?action=login_form&boxid=3858">Log in for<br>contact details</a></td><th class='name'><span class=''><nobr>BH</nobr></span></th><th class='name'><span class=''><nobr>RT</nobr></span></th><th class='name'><span class=''><nobr>RM</nobr></span></th><th class='name'><span class=''><nobr>SN</nobr></span></th><th class='name'><span class=''><nobr>RV</nobr></span></th><th class='name'><span class=''><nobr>CW</nobr></span></th><th class='name'>&nbsp;Points&nbsp;</th></tr><tr class='boxes_results_row'><td class='position notifsmall'>7</td><th class='name'><a href='/player_detail?player=205519'  target=''>Ben Howcroft</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>3XXX</span></td><td class='contact notifsmall'></td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>8</td><th class='name'><a href='/player_detail?player=198207'  target=''>Richard Timms</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>9</td><th class='name'><a href='/player_detail?player=258208'  target=''>Rob Mitchell</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>10</td><th class='name'><a href='/player_detail?player=200001'  target=''>Sam Norris</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>11</td><th class='name'><a href='/player_detail?player=205541'  target=''>Ryan Vaughan</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>12</td><th class='name'><a href='/player_detail?player=198217'  target=''>Carl Whiteley</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>9XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class='points'>0</td></tr></table><div class='box_button_row'><h2 style='display:inline;'>Box 3</h2></div><table class='box small_box'><tr class='box_headers_row'><th class='name notifsmall'>Position</th><th class='name'>Name</th><th class='notifsmall'>Club</th><th class='name'>&nbsp;Level&nbsp;</th><td class='contacts_column notifsmall'><a href="/boxes.php?action=login_form&boxid=3858">Log in for<br>contact details</a></td><th class='name'><span class=''><nobr>MM</nobr></span></th><th class='name'><span class=''><nobr>LD</nobr></span></th><th class='name'><span class=''><nobr>AF</nobr></span></th><th class='name'><span class=''><nobr>DG</nobr></span></th><th class='name'><span class=''><nobr>FS</nobr></span></th><th class='name'><span class=''><nobr>HD</nobr></span></th><th class='name'>&nbsp;Points&nbsp;</th></tr><tr class='boxes_results_row'><td class='position notifsmall'>13</td><th class='name'><a href='/player_detail?player=196241'  target=''>Mark Morgan</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>9XX</span></td><td class='contact notifsmall'></td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>14</td><th class='name'><a href='/player_detail?player=236363'  target=''>Lynne Davies</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Rhondda</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>15</td><th class='name'><a href='/player_detail?player=148303'  target=''>Adrian Fisk</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>9XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>16</td><th class='name'><a href='/player_detail?player=354103'  target=''>Daniel Griffiths</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>17</td><th class='name'><a href='/player_detail?player=359583'  target=''>Francis Smith</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>8XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>18</td><th class='name'><a href='/player_detail?player=209099'  target=''>Huw Davies</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>9XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class='points'>0</td></tr></table><div class='box_button_row'><h2 style='display:inline;'>Box 4</h2></div><table class='box small_box'><tr class='box_headers_row'><th class='name notifsmall'>Position</th><th class='name'>Name</th><th class='notifsmall'>Club</th><th class='name'>&nbsp;Level&nbsp;</th><td class='contacts_column notifsmall'><a href="/boxes.php?action=login_form&boxid=3858">Log in for<br>contact details</a></td><th class='name'><span class=''><nobr>SL</nobr></span></th><th class='name'><span class=''><nobr>LN</nobr></span></th><th class='name'><span class=''><nobr>NJ</nobr></span></th><th class='name'><span class=''><nobr>SE</nobr></span></th><th class='name'><span class=''><nobr>EH</nobr></span></th><th class='name'><span class=''><nobr>MW</nobr></span></th><th class='name'>&nbsp;Points&nbsp;</th></tr><tr class='boxes_results_row'><td class='position notifsmall'>19</td><th class='name'><a href='/player_detail?player=304872'  target=''>Steven Legge</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>7XX</span></td><td class='contact notifsmall'></td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>20</td><th class='name'><a href='/player_detail?player=198213'  target=''>Lloyd Newland</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>1XXX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>21</td><th class='name'><a href='/player_detail?player=315951'  target=''>Naomi Jones</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>6XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>22</td><th class='name'><a href='/player_detail?player=13194'  target=''>Steve Evans</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>6XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>23</td><th class='name'><a href='/player_detail?player=278203'  target=''>Erica Howcroft</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>7XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>24</td><th class='name'><a href='/player_detail?player=279338'  target=''>Marc Ware</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>5XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class='points'>0</td></tr></table><div class='box_button_row'><h2 style='display:inline;'>Box 5</h2></div><table class='box small_box'><tr class='box_headers_row'><th class='name notifsmall'>Position</th><th class='name'>Name</th><th class='notifsmall'>Club</th><th class='name'>&nbsp;Level&nbsp;</th><td class='contacts_column notifsmall'><a href="/boxes.php?action=login_form&boxid=3858">Log in for<br>contact details</a></td><th class='name'><span class=''><nobr>MW</nobr></span></th><th class='name'><span class=''><nobr>JP</nobr></span></th><th class='name'><span class=''><nobr>JP</nobr></span></th><th class='name'><span class=''><nobr>AH</nobr></span></th><th class='name'><span class=''><nobr>RJ</nobr></span></th><th class='name'><span class=''><nobr>JP</nobr></span></th><th class='name'>&nbsp;Points&nbsp;</th></tr><tr class='boxes_results_row'><td class='position notifsmall'>25</td><th class='name'><a href='/player_detail?player=318635'  target=''>Mike Watts</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>7XX</span></td><td class='contact notifsmall'></td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>26</td><th class='name'><a href='/player_detail?player=196821'  target=''>Joe Powell</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>6XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>27</td><th class='name'><a href='/player_detail?player=198271'  target=''>Jayesh Parmar</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>4XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>28</td><th class='name'><a href='/player_detail?player=366500'  target=''>Adam Howcroft</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>3XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>29</td><th class='name'><a href='/player_detail?player=316635'  target=''>Rhys Jenkins</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>4XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>30</td><th class='name'><a href='/player_detail?player=416743'  target=''>James Pickett</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>8XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class='points'>0</td></tr></table><div class='box_button_row'><h2 style='display:inline;'>Box 6</h2></div><table class='box medium_box'><tr class='box_headers_row'><th class='name notifsmall'>Position</th><th class='name'>Name</th><th class='notifsmall'>Club</th><th class='name'>&nbsp;Level&nbsp;</th><td class='contacts_column notifsmall'><a href="/boxes.php?action=login_form&boxid=3858">Log in for<br>contact details</a></td><th class='name'><span class=''><nobr>DB</nobr></span></th><th class='name'><span class=''><nobr>HT</nobr></span></th><th class='name'><span class=''><nobr>GC</nobr></span></th><th class='name'><span class=''><nobr>LB</nobr></span></th><th class='name'><span class=''><nobr>RG</nobr></span></th><th class='name'><span class=''><nobr>DE</nobr></span></th><th class='name'><span class=''><nobr>DR</nobr></span></th><th class='name'>&nbsp;Points&nbsp;</th></tr><tr class='boxes_results_row'><td class='position notifsmall'>31</td><th class='name'><a href='/player_detail?player=315955'  target=''>David Bartram</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>3XX</span></td><td class='contact notifsmall'></td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>32</td><th class='name'><a href='/player_detail?player=350417'  target=''>Hayley Thomas</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>3XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>33</td><th class='name'><a href='/player_detail?player=316687'  target=''>Grant Connors</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>3XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>34</td><th class='name'><a href='/player_detail?player=305040'  target=''>Luke Bates</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>5XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>35</td><th class='name'><a href='/player_detail?player=198971'  target=''>Rhys Gooch</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>4XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>36</td><th class='name'><a href='/player_detail?player=352037'  target=''>Dan Emberson</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>3XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>37</td><th class='name'><a href='/player_detail?player=353110'  target=''>David Reed</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>2XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class='points'>0</td></tr></table><div class='box_button_row'><h2 style='display:inline;'>Box 7</h2></div><table class='box large_box'><tr class='box_headers_row'><th class='name notifsmall'>Position</th><th class='name'>Name</th><th class='notifsmall'>Club</th><th class='name'>&nbsp;Level&nbsp;</th><td class='contacts_column notifsmall'><a href="/boxes.php?action=login_form&boxid=3858">Log in for<br>contact details</a></td><th class='name'><span class=''><nobr>DG</nobr></span></th><th class='name'><span class=''><nobr>NB</nobr></span></th><th class='name'><span class=''><nobr>RS</nobr></span></th><th class='name'><span class=''><nobr>TP</nobr></span></th><th class='name'><span class=''><nobr>CW</nobr></span></th><th class='name'><span class=''><nobr>HN</nobr></span></th><th class='name'><span class=''><nobr>CD</nobr></span></th><th class='name'><span class=''><nobr>HJ</nobr></span></th><th class='name'>&nbsp;Points&nbsp;</th></tr><tr class='boxes_results_row'><td class='position notifsmall'>38</td><th class='name'><a href='/player_detail?player=415576'  target=''>David Green</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>2XX</span></td><td class='contact notifsmall'></td><th class='diagonal'></th><td class='match'><a title="David Green v Nathan Britton: 15-5,15-9,15-11" href="match_detail.php?match=7487327&matchtypeid=36347&homeplayer=415576&awayplayer=423029&boxid=3858">3</a></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>7</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>39</td><th class='name'><a href='/player_detail?player=423029'  target=''>Nathan Britton</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'></td><td class='level'><span title='Please register to view levels and rankings'>1XX</span></td><td class='contact notifsmall'></td><td class='match'><a title="Nathan Britton v David Green: 5-15,9-15,11-15" href="match_detail.php?match=7487327&matchtypeid=36347&homeplayer=423029&awayplayer=415576&boxid=3858">0</a></td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>2</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>40</td><th class='name'><a href='/player_detail?player=312797'  target=''>Richie Samuel</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>6XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>41</td><th class='name'><a href='/player_detail?player=356101'  target=''>Tony Price</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>2XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>42</td><th class='name'><a href='/player_detail?player=310040'  target=''>Cam Wells</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>3XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>43</td><th class='name'><a href='/player_detail?player=320028'  target=''>Hannah Nicol</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'>TBD</td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>44</td><th class='name'><a href='/player_detail?player=423024'  target=''>Chris Dickinson</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'></td><td class='level'>TBD</td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class="match">&nbsp;</td><td class='points'>0</td></tr><tr class='boxes_results_row'><td class='position notifsmall'>45</td><th class='name'><a href='/player_detail?player=317740'  target=''>Huw Jenkins</a></th><td class='notifsmall' style='font-size: 80%;padding: 5px;'>Llantrisant</td><td class='level'><span title='Please register to view levels and rankings'>4XX</span></td><td class='contact notifsmall'></td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><td class="match">&nbsp;</td><th class='diagonal'></th><td class='points'>0</td></tr></table><p>If you have a '*' by your name it means you have not played enough games and will be removed from the boxes
-            next time. After that you will appear in the list below. To remove the '*', just play a game!<p><div class='section_header'><div class='icon_title_cluster'><h1><span style='page-break-before: always;'>Not playing (removed from this list after 6 months)</span></h1><div title='Click here for help and information' class='help_icon icon faint' id='help_icon__span_style_page_break_before_always_not_playing_removed_from_this_list_after_6_months_span_'><img src='maya/icons/icon-info-purple.svg'></div><div class='help_div' id='help_div__span_style_page_break_before_always_not_playing_removed_from_this_list_after_6_months_span_'><div class='help_title'><span style='page-break-before: always;'>Not playing (removed from this list after 6 months)</span></div><div class='help_content'><p>These players have been auto-dropped for not playing enough games. The admin can return them to the boxes, otherwise they will be auto-removed from this list after 6 months.</p><p>Players can always be added to boxes - just ask the admin!</p></div></div></div></div><table class="ranking"><tr><th>Last<br>position</th><th>Player</th><th>Level</th></tr><tr><td>&nbsp;42</td><td><a href='/player_detail?player=24271'  target=''>Alex Jenkins</a>&nbsp;</td><td>2924</td><tr><td>&nbsp;42</td><td><a href='/player_detail?player=75253'  target=''>Chay Davies-Smith</a>&nbsp;</td><td>1166</td><tr><td>&nbsp;45</td><td><a href='/player_detail?player=350667'  target=''>Lance Woodman</a>&nbsp;</td><td>321</td></table><form action="boxes.php" method="GET"><input type="hidden" name="action" value="show_boxes"><input type="hidden" name="boxid" value="3858"><input type="hidden" name="print_view" value="1"><input type="submit" value="Print view"><p>Page breaks only work with Internet Explorer or FireFox. Use back page to return.</p><p>You will need to set the 'print background' option on to print the light grey backgrounds.</p></form></div></div></div><div id='desktop_sitemap'><div id='full_sitemap_logo_banner'><a title='Find out about SquashLevels' href='home'><img src='maya/icons/logo-combimark-hot-pink-white.svg'></a></div><div id='full_sitemap'><div id='full_sitemap_content'><div class='sitemap_section'><h1>Members area</h1><p title='Log in to access your latest results' ><a href='menu_login'>Log in</a></p><p title='Create your free account' ><a href='register'>Create account</a></p><p title='View the membership options' ><a href='membership'>Membership options</a></p></div><div class='sitemap_section'><h1>My communities</h1><p title='View your PSA community' ><a href='dashboard?tab=community&community=205-1'>PSA</a></p></div><div class='sitemap_section'><h1>My rankings</h1><p title='Top men in the system (a level based world ranking)' ><a href='players?all&top'>World</a></p><p title='Top women in the system (a level based world ranking)' ><a href='players?all&playertype=2&top'>World women</a></p><p title='Most improved over the last 12 months' ><a href='most_improved?matchtype=all'>Most improved</a></p></div><div class='sitemap_section'><h1>Country rankings (ENG)</h1><p title='Upgrade to access this feature' ><a href='membership'>Gold feature</a></p></div><div class='sitemap_section'><h1>Boxes</h1><p title='Show all the boxes' ><a href='boxes'>All boxes</a></p><p title='Full help for using and running boxes' ><a href='boxes?help=1'>Boxes help</a></p></div><div class='sitemap_section'><h1>About</h1><p title='Try SquashLevels gold free for a month.' ><a href='register'>Try SquashLevels for free</a></p><p title='Please check our FAQ before contacting us.' ><a href='https://support.squashlevels.com/hc/en-gb'>Help center</a></p><p title='Find out more about the site' ><a href='how'>Find out more</a></p><p title='Please check the FAQ before contacting us.' ><a href='https://support.squashlevels.com/hc/en-us/requests/new?ticket_form_id=7630864953885'>Contact us</a></p><p title='Site Terms and conditions' ><a href='doc?doc=tsandcs.htm'>Terms and conditions</a></p><p title='Site privacy policy' ><a href='doc?doc=privacy_policy.htm'>Privacy policy</a></p><p title='Site cookie policy' ><a href='doc?doc=cookies.htm'>Cookie policy</a></p><p title='Check out our multi-sport vision' ><a href='https://leveltech.io'>LevelTech</a></p></div></div></div></div><div id='desktop_social_media'><div id='twitter_and_facebook' class='full_height'><a href='https://twitter.com/SquashLevels'><div><img src='maya/icons/icon-twitter-white.svg'></div></a><a href='https://facebook.com/squashlevels'><div><img src='maya/icons/icon-facebook-white.svg'></div></a><a href='https://instagram.com/squashlevels'><div><img src='maya/icons/icon-instagram-white.svg'></div></a></div></div><div id='copyright_banner'><p>&copy; 2006-2024, SquashLevels Ltd. Page time: 0.47s. </p></div><div id='bottom_menu_header_placeholder'></div></div></div></body>  <!-- jQuery and plug-ins. Need to keep up-to-date from time to time. Check JS console for compatibility errors. -->
-
-  <!-- Main jQuery library. Allow for old versions of IE -->
-  <!-- Need to be able to switch between Google hosted and code.jquery.com as their sites go down sometimes -->
-  <!--[if lt IE 10]>
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <![endif]-->
-  <!--[if gte IE 10]><!-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js" crossorigin="anonymous"></script> -->
-  <!--<![endif]-->
-
-  <!-- JQuery UI for widgets like the datepicker -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> -->
-  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script> -->
-
-  <!-- Google charts -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-  <!-- Define extra JQuery functions -->
-  <script type="text/javascript">
-    // Plug-in to flash an object by the number of flashes and each flash takes the requested time.
-    $.fn.slow_flash = function(flashes, flash_time) {
-      for (x = 1; x <= flashes; x++)
-        this.animate({
-          opacity: 0
-        }, flash_time / 2).animate({
-          opacity: 1
-        }, flash_time / 2);
-      return this;
-    }
-
-    // Plug-in for JQuery rotation
-    $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
-      return this.each(function() {
-        var elem = $(this);
-
-        $({
-          deg: startAngle
-        }).animate({
-          deg: endAngle
-        }, {
-          duration: duration,
-          easing: easing,
-          step: function(now) {
-            elem.css({
-              '-moz-transform': 'rotate(' + now + 'deg)',
-              '-webkit-transform': 'rotate(' + now + 'deg)',
-              '-o-transform': 'rotate(' + now + 'deg)',
-              '-ms-transform': 'rotate(' + now + 'deg)',
-              'transform': 'rotate(' + now + 'deg)'
-            });
-          },
-          complete: complete || $.noop
+          $({
+            deg: startAngle,
+          }).animate(
+            {
+              deg: endAngle,
+            },
+            {
+              duration: duration,
+              easing: easing,
+              step: function (now) {
+                elem.css({
+                  '-moz-transform': 'rotate(' + now + 'deg)',
+                  '-webkit-transform': 'rotate(' + now + 'deg)',
+                  '-o-transform': 'rotate(' + now + 'deg)',
+                  '-ms-transform': 'rotate(' + now + 'deg)',
+                  transform: 'rotate(' + now + 'deg)',
+                });
+              },
+              complete: complete || $.noop,
+            },
+          );
         });
-      });
-    };
+      };
 
-    // If trim isn't supported (pre-IE9) then add the function here
-    if (!String.prototype.trim) {
-      (function() {
-        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-        String.prototype.trim = function() {
-          return this.replace(rtrim, '');
-        };
-      })();
-    }
-  </script>
+      // If trim isn't supported (pre-IE9) then add the function here
+      if (!String.prototype.trim) {
+        (function () {
+          var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+          String.prototype.trim = function () {
+            return this.replace(rtrim, '');
+          };
+        })();
+      }</script><script src="https://js.stripe.com/v3/"></script><script src="https://www.gstatic.com/charts/loader.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-cropper@1.0.1/dist/jquery-cropper.js"></script><script type="module" crossorigin src="/assets/index-C_UQt4bl.js"></script><link rel="stylesheet" crossorigin href="/assets/index-DW6PuR53.css"></head><body><div id="app"></div>
+<script async id="netlify-rum-container" src="/.netlify/scripts/rum" data-netlify-rum-site-id="9890ebb3-b0c8-4658-97e6-c9f52a0a0a7c" data-netlify-deploy-branch="main" data-netlify-deploy-context="production" data-netlify-cwv-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlX2lkIjoiOTg5MGViYjMtYjBjOC00NjU4LTk3ZTYtYzlmNTJhMGEwYTdjIiwiYWNjb3VudF9pZCI6IjY0ODMzNmUzYmFjZjlmMTVjMzgyYmU1MyIsImRlcGxveV9pZCI6IjY2ZWJmOWU4MjhhZjdiMDAwOWFkZGYwZSIsImlzc3VlciI6Im5mc2VydmVyIn0.FPzLW8PEkgkcWRZhLC-0qILsgFzg7-oH8BlevihQjWw"></script><!-- ------------------------------------------------------------- -->
+    <!-- Statically rendered meta data - Can be moved to Netlify -->
 
-  <script src="js/tinymce/tinymce.min.js"></script>
-  <script type="text/javascript">
-    // JS global defs
+    <!-- Install Microsoft Clarity Tracking Code -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'ln6bavcpsx');
+    </script>
 
-    // tinyMCE and responsivefilemanager - quite complex to set up as the plug-in files and PHP files all have to be in the
-    // right places. Need:
-    // root/filemanager/<full responsivefilemanager download>
-    // root/js/tinymce/plugins/responsivefilemanager/plugin.min.js
-    // root/thumbs (writeable)
-    // root/uploads/<site specific upload folder> (writeable)
-    // The plug-in has to be in both root/filemanager and the tinymce/plugins location. A bit mad.
-    // It's not good with the additional /beta in the root for the developement system so that has to be added if need be
-
-    // Allow for the use of the beta root (development system uses /beta/... for all files
-    var extraRoot = '';
-
-    // Initialise tinyMCE
-    tinymce.init({
-      selector: '#news_contents, .tinymce',
-      plugins: [
-        "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
-        "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
-        "save table contextmenu directionality emoticons template paste textcolor responsivefilemanager"
-      ],
-      toolbar1: "insertfile undo redo | styleselect fontselect fontsizeselect | bold italic forecolor backcolor | emoticons ",
-      toolbar2: "link image responsivefilemanager | print preview fullpage | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent ",
-      relative_urls: false,
-      remove_script_host: false,
-
-      external_filemanager_path: "filemanager/",
-      filemanager_title: "File Manager (from Responsive)",
-      external_plugins: {
-        "filemanager": extraRoot + "/filemanager/plugin.min.js"
-      }
-    });
-  </script>
-
-  <!-- Other plug-ins -->
-  <script src="js/md5.js"></script>
-  <script src="js/jquery.cookie.js"></script>
-  <!-- <script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script> -->
-  <script src="js/emoji/dist/jquery.emojiarea.js"></script>
-
-  <!-- Our JS files -->
-  <script src='js/maya.js?v=1701482503'></script>
-  <script src="js/functions.js?v=1698187690"></script>
-  <script src="js/menus.js?v=1697220764"></script>
-  <script src="js/youtube.js?v=1657537050"></script>
-  <script src="js/social.js?v=1697220763"></script>
-  <script src="js/messages.js?v=1658226373"></script>
-  <script src="js/dashboard.js?v=1701479565"></script>
-  <script src="js/notifications.js?v=1667351570"></script>
-  <script src="js/membership.js?v=1658226369"></script>
-  <script src="js/cms.js?v=1697927976"></script>
-  <script src="js/photo.js?v=1692135359"></script>
-  <script src="js/boxes.js?v=1624550305"></script>
-  <script src="js/community.js?v=1613150663"></script>
-  <script src="js/config.js?v=1658226359"></script>
-  <script src="js/cms.js?v=1697927976"></script>
-  <script src="js/messages.js?v=1658226373"></script>
-  <script src="js/matches.js?v=1667510153"></script>
-  <script src="js/edit_match.js?v=1678468177"></script>
-  <script src="js/squashskills.js?v=1687887313"></script>
-  <script src="js/timer.js?v=1692135363"></script>
-  <script src="js/register.js?v=1666095806"></script>
-  <script src="https://js.stripe.com/v3/"></script>
-  <script src="js/stripe.js?v=1692135362"></script>
-
-  <!-- Cropper for image cropping -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-cropper@1.0.1/dist/jquery-cropper.js"></script>
-  </html>
-<!-- <JS> -->
-
-<script>
-// These variables pass info from the PHP to the JS
-var scope = '';  // Scope for the auto-complete search (club/county/all)
-var auto_complete_link = false;  // We don't want to follow the auto-complete link from here
-var boxesUrl =  'https://www.squashlevels.com/boxes.php?clubid=1297';  // The URL for wall mode to return to after the inactivity timeout
-var wallmodeTimeout = 60;  // The inactivity timeout itself
-</script>
-
-<!-- </JS> -->
+    <!-- Install Norton Verificaiton -->
+    <meta name="norton-safeweb-site-verification" content="lsvpfs1l582izjyq44kknvl2nm7vsfhqdc8o0tingo8dk6xbju62eke1av5qf1xjr8syylddftu0faaznbb3tz6qha0c1y4ya1mr25halpb0d9gue6rwsc0s3tkxmjgq" />
+    <!-- Author -->
+    <meta name="author" content="SquashLevels Ltd." />
+    <!-- Firefox Validation -->
+    <meta name="wot-verification" content="29428994d10d64231891" />
+    <!-- Keywords -->
+    <meta name="keywords" content="Squash,Racketball,League,Leagues,Boxes,Avon,Bristol,Rating,Ranking,Level,SquashLevels,National,England Squash" />
+    <!-- Dynamic Google Site Verification meta tag -->
+    <meta name="google-site-verification" content="NKi4YGQGsZA9USG7kOAbsMe6CydQjvhFu82_x2fpYBU" /></body></html>
