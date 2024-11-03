@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>28th August 2024</LastUpdated>
+	<LastUpdated>3rd November 2024</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -105,6 +105,7 @@
 					<Player Name="Rhys Gooch"/>
 					<Player Name="Rhys Jenkins"/>
 					<Player Name="Hayley Thomas"/>
+					<Player Name="Huw Jenkins"/>
 					<Player Name="Hannah Nicol"/>
 					<Player Name="Tom Tolley"/>
 					<!--<Player Name="Jack Penberthy"/>-->
