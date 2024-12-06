@@ -25,6 +25,7 @@ var FILE_EXTENSION_FOR_JSON = ".json";
 
 var OLDEST_YEAR = 2016;
 var SPRING_START_DAY = 6;
+var WINTER_END_DAY = 20;
 var SEASON_SPRING = 'spring';
 var SEASON_WINTER = 'winter';
 
@@ -1278,10 +1279,8 @@ function getYear(year){
 	} else {
 		var today = new Date();
 
-		if(today.getMonth() === 11 && today.getDate() >= SPRING_START_DAY) {
+		if(today.getMonth() === 11 && today.getDate() >= WINTER_END_DAY) {
 			return today.getFullYear() + 1;
-		} else if (today.getMonth() === 11) {
-			return today.getFullYear() - 1;
 		} else {
 			return today.getFullYear();
 		}
@@ -1298,7 +1297,7 @@ function getSeason(season){
 		var day = today.getDate();
 
 		if ((month < 7 && month >= 0) ||
-			(month === 11 && day >= SPRING_START_DAY) ||
+			(month === 11 && day >= WINTER_END_DAY) ||
 			(month === 7 && day < 2)) {
 			return SEASON_SPRING;
 		} else{

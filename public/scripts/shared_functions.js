@@ -1,6 +1,7 @@
 /* Constants */
 var OLDEST_YEAR = 2016;
 var SPRING_START_DAY = 6;
+var WINTER_END_DAY = 20;
 var SPRING_END_DAY = 2;
 var SPRING_START_MONTH = '-01-08';
 var WINTER_START_MONTH = '-08-25';
@@ -93,10 +94,8 @@ function getYear(){
 	
 	var today = new Date();
 
-	if(today.getMonth() === 11 && today.getDate() >= SPRING_START_DAY) {
+	if(today.getMonth() === 11 && today.getDate() >= WINTER_END_DAY) {
 		return today.getFullYear() + 1;
-	} else if (today.getMonth() === 11) {
-		return today.getFullYear() - 1;
 	} else {
 		return today.getFullYear();
 	}
@@ -109,7 +108,7 @@ function getSeason(){
 	var day = today.getDate();
 
 	if ((month < 7 && month >= 0) ||
-		(month === 11 && day >= SPRING_START_DAY) ||
+		(month === 11 && day >= WINTER_END_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
@@ -124,7 +123,7 @@ function getSeasonForRankings(){
 	var day = today.getDate();
 
 	if ((month < 7 && month >= 0) ||
-		(month === 11 && day >= SPRING_START_DAY) ||
+		(month === 11 && day >= WINTER_END_DAY) ||
 		(month === 7 && day < SPRING_END_DAY)) {
 		return SEASON_SPRING.capitalize();
 	} else{
