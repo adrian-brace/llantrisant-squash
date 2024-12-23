@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="icon" href="https://main.squashlevels.com/cdn/squash/site/favicon.ico"/><title>SquashLevels</title><link rel="preload" href="https://use.typekit.net/wvr4bdh.css" as="style"/><link rel="stylesheet" href="https://use.typekit.net/wvr4bdh.css"/><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/grotesque"/><link rel="stylesheet" href="https://squashlevels.com/css/crush_specific_spa.css"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js" crossorigin="anonymous"></script><script src="https://squashlevels.com/js/md5.js" onload="console.log('md5.js loaded'); console.groupEnd();"></script><script src="https://squashlevels.com/js/jquery.cookie.js" onload="console.log('jquery.cookie.js loaded')"></script><script src="https://squashlevels.com/js/emoji/dist/jquery.emojiarea.js" onload="console.log('jquery.emojiarea.js loaded')"></script><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"/><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script>// Plug-in to flash an object by the number of flashes and each flash takes the requested time.
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="icon" href="https://main.squashlevels.com/cdn/squash/site/favicon.ico"/><title>SquashLevels</title><link rel="preload" href="https://use.typekit.net/wvr4bdh.css" as="style"/><link rel="stylesheet" href="https://use.typekit.net/wvr4bdh.css"/><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/grotesque"/><link rel="stylesheet" href="https://squashlevels.com/css/crush_specific_spa.css"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"/><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script>// Plug-in to flash an object by the number of flashes and each flash takes the requested time.
       $.fn.slow_flash = function (flashes, flash_time) {
         for (x = 1; x <= flashes; x++)
           this.animate(
@@ -52,8 +52,24 @@
             return this.replace(rtrim, '');
           };
         })();
-      }</script><script src="https://js.stripe.com/v3/"></script><script src="https://www.gstatic.com/charts/loader.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-cropper@1.0.1/dist/jquery-cropper.js"></script><script type="module" crossorigin src="/assets/index-C_UQt4bl.js"></script><link rel="stylesheet" crossorigin href="/assets/index-DW6PuR53.css"></head><body><div id="app"></div>
-<script async id="netlify-rum-container" src="/.netlify/scripts/rum" data-netlify-rum-site-id="9890ebb3-b0c8-4658-97e6-c9f52a0a0a7c" data-netlify-deploy-branch="main" data-netlify-deploy-context="production" data-netlify-cwv-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlX2lkIjoiOTg5MGViYjMtYjBjOC00NjU4LTk3ZTYtYzlmNTJhMGEwYTdjIiwiYWNjb3VudF9pZCI6IjY0ODMzNmUzYmFjZjlmMTVjMzgyYmU1MyIsImRlcGxveV9pZCI6IjY2ZWJmOWU4MjhhZjdiMDAwOWFkZGYwZSIsImlzc3VlciI6Im5mc2VydmVyIn0.FPzLW8PEkgkcWRZhLC-0qILsgFzg7-oH8BlevihQjWw"></script><!-- ------------------------------------------------------------- -->
+      }</script><script src="https://js.stripe.com/v3/"></script><script src="https://www.gstatic.com/charts/loader.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-cropper@1.0.1/dist/jquery-cropper.js"></script><script type="module" crossorigin src="/assets/index-Ciz8N9h0.js"></script><link rel="stylesheet" crossorigin href="/assets/index-D7Csu8xF.css"><script>
+  // Check if the old "token" exists and if it has been cleared before
+  if (!localStorage.getItem('oldTokenCleared')) {
+    if (localStorage.getItem('token')) {
+      console.log('Old token found, clearing it now...');
+      localStorage.removeItem('token');
+      console.log('Old token has been cleared.');
+    } else {
+      console.log('No old token found.');
+    }
+    // Set a flag to indicate the token has been cleared
+    localStorage.setItem('oldTokenCleared', 'true');
+    console.log('Flag set to prevent future clearing.');
+  } else {
+    console.log('Token has already been cleared previously.');
+  }
+</script></head><body><div id="app"></div>
+<script async id="netlify-rum-container" src="/.netlify/scripts/rum" data-netlify-rum-site-id="9890ebb3-b0c8-4658-97e6-c9f52a0a0a7c" data-netlify-deploy-branch="main" data-netlify-deploy-context="production" data-netlify-cwv-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlX2lkIjoiOTg5MGViYjMtYjBjOC00NjU4LTk3ZTYtYzlmNTJhMGEwYTdjIiwiYWNjb3VudF9pZCI6IjY0ODMzNmUzYmFjZjlmMTVjMzgyYmU1MyIsImRlcGxveV9pZCI6IjY3NjQxNDdlMDAxNjgxMDAwOGQzYjhiZSIsImlzc3VlciI6Im5mc2VydmVyIn0.-pvRd-3LtrFA5oXDGx1Ooxol44vqcSIwU9cV4QS3jfA"></script><!-- ------------------------------------------------------------- -->
     <!-- Statically rendered meta data - Can be moved to Netlify -->
 
     <!-- Install Microsoft Clarity Tracking Code -->
@@ -81,4 +97,15 @@
     <!-- Keywords -->
     <meta name="keywords" content="Squash,Racketball,League,Leagues,Boxes,Avon,Bristol,Rating,Ranking,Level,SquashLevels,National,England Squash" />
     <!-- Dynamic Google Site Verification meta tag -->
-    <meta name="google-site-verification" content="NKi4YGQGsZA9USG7kOAbsMe6CydQjvhFu82_x2fpYBU" /></body></html>
+    <meta name="google-site-verification" content="NKi4YGQGsZA9USG7kOAbsMe6CydQjvhFu82_x2fpYBU" /><script>
+  // Check if the user has already been logged out
+  if (!localStorage.getItem('forcedLogout')) {
+    console.log('Forcing user to log out...');
+    window.location.href = '/menu_login?action=logout';
+    // Set a flag to indicate the user has been logged out
+    localStorage.setItem('forcedLogout', 'true');
+    console.log('User has been redirected to log out.');
+  } else {
+    console.log('User was already forced to log out.');
+  }
+</script></body></html>
