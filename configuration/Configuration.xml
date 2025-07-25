@@ -34,7 +34,7 @@
 		<TournamentEntryClosingDate>TBC</TournamentEntryClosingDate>   <!-- e.g. 7th June -->
 		<TournamentPrizePot>0</TournamentPrizePot>
 		<ChallengeSystemClosingDateWinter>1st January</ChallengeSystemClosingDateWinter>
-		<ChallengeSystemClosingDateSummer>1st August</ChallengeSystemClosingDateSummer>
+		<ChallengeSystemClosingDateSummer>31st August</ChallengeSystemClosingDateSummer>
 	</Constants>
 	<Leagues>
 		<League Name="South Wales"/>
