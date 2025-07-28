@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>25th July 2025</LastUpdated>
+	<LastUpdated>28th July 2025</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -57,7 +57,7 @@
 				<Players>
 					<!--<Player Name="Ryan Phillips"/>-->
 					<!--<Player Name="Ben Howcroft" />-->
-					<Player Name="Ashley Maybury"/>
+					<!--<Player Name="Ashley Maybury"/>-->
 					<Player Name="Madalena Sidoli"/>
 					<Player Name="Sam Norris"/>
 					<Player Name="Rich Timms" IsCaptain="true"/><!-- RefereeNumber="101511" -->
