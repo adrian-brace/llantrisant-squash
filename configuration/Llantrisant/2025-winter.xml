@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>28th July 2025</LastUpdated>
+	<LastUpdated>25th August 2025</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -8,7 +8,7 @@
 				<League>Premier</League>
 				<DivisionID>1</DivisionID>
 				<DivisionName>Premier 1</DivisionName>
-				<CompetitionID>522</CompetitionID>
+				<CompetitionID>529</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<!--<Player Name="Greg Tippings"/>-->
@@ -28,12 +28,12 @@
 				<League>South Central</League>
 				<DivisionID>3</DivisionID>
 				<DivisionName>South Central 1</DivisionName>
-				<CompetitionID>523</CompetitionID>
+				<CompetitionID>530</CompetitionID>
 				<HomeNight>Wed</HomeNight>
 				<Players>				
 					<Player Name="Tom Penberthy"/>
-					<Player Name="Adrian Brace" IsCaptain="true" /><!-- RefereeNumber="101513" -->
 					<Player Name="Gary Fry" /><!-- RefereeNumber="100366" -->
+					<Player Name="Adrian Brace" IsCaptain="true" /><!-- RefereeNumber="101513" -->
 					<Player Name="Mike Watkins"/>
 					<!--<Player Name="Ben Howcroft"/>-->
 					<!--<Player Name="Andy Whitall"/>-->
@@ -52,7 +52,7 @@
 				<League>South Central</League>
 				<DivisionID>5</DivisionID>
 				<DivisionName>South Central 3</DivisionName>
-				<CompetitionID>523</CompetitionID>
+				<CompetitionID>530</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<!--<Player Name="Ryan Phillips"/>-->
@@ -75,7 +75,7 @@
 				<League>South Central</League>
 				<DivisionID>7</DivisionID>
 				<DivisionName>South Central 5</DivisionName>
-				<CompetitionID>523</CompetitionID>
+				<CompetitionID>530</CompetitionID>
 				<HomeNight>Mon</HomeNight>
 				<Players>
 					<Player Name="Huw Davies" IsCaptain="true"/>
@@ -94,7 +94,7 @@
 				<League>South Central</League>
 				<DivisionID>8</DivisionID>
 				<DivisionName>South Central 6</DivisionName>
-				<CompetitionID>523</CompetitionID>
+				<CompetitionID>530</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<Player Name="Carl Whiteley" IsCaptain="true"/>
