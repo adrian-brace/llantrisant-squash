@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>25th August 2025</LastUpdated>
+	<LastUpdated>31st August 2025</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -62,7 +62,6 @@
 					<Player Name="Sam Norris"/>
 					<Player Name="Rich Timms" IsCaptain="true"/><!-- RefereeNumber="101511" -->
 					<Player Name="Josh Llewellyn"/>
-					<!--<Player Name="Nick Wilkes"/>-->
 					<Player Name="Rob Mitchell"/>	
 					<Player Name="Matthew Thomas" WelshRankingID="86287"/>
 					<!--<Player Name="Chris Emanuel" IsSpaceSaver="true"/>-->
@@ -78,10 +77,11 @@
 				<CompetitionID>530</CompetitionID>
 				<HomeNight>Mon</HomeNight>
 				<Players>
+					<Player Name="Nick Wilkes"/>
 					<Player Name="Huw Davies" IsCaptain="true"/>
 					<Player Name="Mark Juhlke"/>
-					<Player Name="Ryan Vaughan" />
 					<Player Name="Jo Norris"/>
+					<Player Name="Ryan Vaughan" />
 					<Player Name="Dan Griffiths"/>
 					<!--<Player Name="Lloyd Newland"/>-->
 					<!--<Player Name="Lee Parpworth"/>-->
@@ -103,15 +103,15 @@
 					<Player Name="Mike Watts"/>					
 					<!--<Player Name="Steven Thomas"/>-->
 					<Player Name="Rhys Gooch"/>
-					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>										
 					<Player Name="Rhys Jenkins"/>
+					<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>										
 					<Player Name="Matthew Edmunds"/>
 					<Player Name="Steve Evans" WelshRankingID="13194"/>
 					<Player Name="Naomi Jones"/>
 					<Player Name="Huw Jenkins" IsCaptain="true"/>
 					<Player Name="Hayley Thomas"/>
 					<!--<Player Name="Tom Tolley"/>-->
-					<Player Name="Hannah Nicol"/>
+					<!--<Player Name="Hannah Nicol"/>-->
 					<!--<Player Name="Jack Penberthy"/>-->
 					<!--<Player Name="Shivam Singhal"/> -->
 					<!--<Player Name="Erica Howcroft"/>-->	
