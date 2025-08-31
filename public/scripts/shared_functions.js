@@ -165,7 +165,7 @@ function showProvisionalRankings() {
 	// NOTE: Date on month is 0 based
 	var springSeasonEndDate = new Date(2025, 4, 25, 0, 0, 0, 0);
 	var winterSeasonEndDate = new Date(2025, 11, 16, 0, 0, 0, 0);
-	var finalRankingWinterListInBy = new Date(2025, 8, 31, 0, 0, 0, 0);
+	var finalRankingWinterListInBy = new Date(2025, 7, 30, 0, 0, 0, 0);
 	var finalRankingSpringListInBy = new Date(2025, 11, 21, 0, 0, 0, 0);
 	return (today <= finalRankingWinterListInBy && today > springSeasonEndDate) ||
 	(today >= winterSeasonEndDate && today < finalRankingSpringListInBy); 
