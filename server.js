@@ -25,7 +25,7 @@ var FILE_EXTENSION_FOR_JSON = ".json";
 
 var OLDEST_YEAR = 2016;
 var SPRING_START_DAY = 6;
-var WINTER_END_DAY = 20;
+var WINTER_END_DAY = 19;
 var SEASON_SPRING = 'spring';
 var SEASON_WINTER = 'winter';
 
@@ -715,18 +715,22 @@ function processAllFixturesAndResults(req, sourcePage, res){
 					{
 						var matchDateFormatted = formatDate(matchDate);
 						var matchTime = matchDateAndTime[4];
-						var opponent = $(this).children().eq(3).text();
+						//var opponent = $(this).children().eq(3).text();
 						var pointsResult = $(this).children().eq(5).text().replace("Won ", "").replace("Lost ", "").trim();
 						var result = $(this).children().eq(6).text().trim();
 						var homeTeam, awayTeam;
 
+						homeTeam = $(this).children().eq(2).text();
+						awayTeam = $(this).children().eq(3).text();
+
+						/*
 						if ($(this).children().eq(2).text().toUpperCase() === 'HOME'){
 							homeTeam = teamName;
 							awayTeam = opponent;
 						} else{
 							homeTeam = opponent;
 							awayTeam = teamName;
-						}
+						}*/
 
 						var fixtureOrResult = {
 							team: teamName,

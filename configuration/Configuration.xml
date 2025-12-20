@@ -29,11 +29,11 @@
 		<SportyHQRacketballLadder>https://www.sportyhq.com/club/box/view/649</SportyHQRacketballLadder>
 		<TournamentStage>OVER</TournamentStage> <!-- UPCOMING, DRAWN, UNDERWAY, RESULTS, OVER -->
 		<TournamentDate>TBC</TournamentDate> <!-- e.g. 21st-23rd June -->
-		<TournamentYear>2024</TournamentYear>
+		<TournamentYear>2026</TournamentYear>
 		<TournamentEntryOpeningDate>TBC</TournamentEntryOpeningDate>  <!-- e.g. 27th April -->
 		<TournamentEntryClosingDate>TBC</TournamentEntryClosingDate>   <!-- e.g. 7th June -->
 		<TournamentPrizePot>0</TournamentPrizePot>
-		<ChallengeSystemClosingDateWinter>1st January</ChallengeSystemClosingDateWinter>
+		<ChallengeSystemClosingDateWinter>9th December</ChallengeSystemClosingDateWinter>
 		<ChallengeSystemClosingDateSummer>31st August</ChallengeSystemClosingDateSummer>
 	</Constants>
 	<Leagues>
