@@ -768,9 +768,14 @@ function processAllFixturesAndResults(req, sourcePage, res){
 				// Determine and set isWin
 				if (teamFixturesAndResults[fixtureOrResultIndex].result.length > 0){
 					
-					var teamRubbers = teamFixturesAndResults[fixtureOrResultIndex].result.substr(0, 1);
-					var oppositionTeamRubbers = teamFixturesAndResults[fixtureOrResultIndex].result.substr(2, 1);
-					teamFixturesAndResults[fixtureOrResultIndex].isWin = parseInt(teamRubbers) > parseInt(oppositionTeamRubbers);
+					var homeTeamRubbers = teamFixturesAndResults[fixtureOrResultIndex].result.substr(0, 1);
+					var awayTeamRubbers = teamFixturesAndResults[fixtureOrResultIndex].result.substr(2, 1);
+					
+					if (teamFixturesAndResults[fixtureOrResultIndex].isHome){
+						teamFixturesAndResults[fixtureOrResultIndex].isWin =  parseInt(homeTeamRubbers) > parseInt(awayTeamRubbers);
+					} else {
+						teamFixturesAndResults[fixtureOrResultIndex].isWin =  parseInt(awayTeamRubbers) > parseInt(homeTeamRubbers);
+					}				
 				}
 			}
 			
@@ -814,7 +819,7 @@ function processAllFixturesAndResults(req, sourcePage, res){
 					if ($(this).children().eq(6).text().trim().length > 0) {
 
 						var resultURL = $(this).children().eq(7).children().first().attr('href');
-						var isHome = $(this).children().eq(2).text().toUpperCase() === 'HOME'
+						var isHome = $(this).children().eq(2).text().toUpperCase() === teamName.toUpperCase();
 
 						// E.g. http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/showmatch?fixtureid=536&divid=1
 						var fixtureAndDivisionId =  resultURL.match('fixtureid=(\\d+)&divid=(\\d+)');
