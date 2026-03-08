@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>20th December 2025</LastUpdated>
+	<LastUpdated>8th March 2026</LastUpdated>
 	<Squash>
 		<Teams>
 			<Team>
@@ -32,12 +32,12 @@
 				<HomeNight>Wed</HomeNight>
 				<Players>				
 					<Player Name="Tom Penberthy"/>
-					<Player Name="Gary Fry" /><!-- RefereeNumber="100366" -->
 					<Player Name="Adrian Brace" IsCaptain="true" /><!-- RefereeNumber="101513" -->
 					<Player Name="Mike Watkins"/>
+					<Player Name="Gary Fry" /><!-- RefereeNumber="100366" -->
+					<Player Name="Kevin Taylor"/>
 					<!--<Player Name="Ben Howcroft"/>-->
 					<!--<Player Name="Andy Whitall"/>-->
-					<Player Name="Kevin Taylor"/>
 					<!--<Player Name="Josh Davies"/>-->
 					<!--<Player Name="Dan Povey"/>-->
 					<!--<Player Name="Paul Aubrey"/>-->
@@ -97,13 +97,13 @@
 				<CompetitionID>537</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
+					<Player Name="Rhys Gooch"/>
 					<Player Name="Carl Whiteley" IsCaptain="true"/>
+					<Player Name="Rhys Jenkins"/>
 					<Player Name="Mark Morgan"/><!-- RefereeNumber="100292" -->
 					<!--<Player Name="Luke Bates"/>-->
 					<Player Name="Mike Watts"/>					
 					<!--<Player Name="Steven Thomas"/>-->
-					<Player Name="Rhys Gooch"/>
-					<Player Name="Rhys Jenkins"/>
 					<Player Name="Steve Evans" WelshRankingID="13194"/>
 					<!--<Player Name="Angharad Llewellyn" WelshRankingID="69247"/>-->										
 					<Player Name="Matthew Edmunds"/>
