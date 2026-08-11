@@ -78,9 +78,9 @@
 				<Players>
 					<Player Name="Jo Norris"/>
 					<Player Name="Huw Davies" IsCaptain="true"/>
-					<Player Name="Ryan Vaughan" />
 					<Player Name="Carl Whiteley"/>
 					<Player Name="Mark Juhlke"/>
+					<Player Name="Ryan Vaughan" />
 					<Player Name="Josh Llewellyn"/>
 					<Player Name="Rob Mitchell"/>	
 					<!--<Player Name="Lloyd Newland"/>-->
