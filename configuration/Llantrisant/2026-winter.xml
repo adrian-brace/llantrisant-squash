@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/2000/10/XMLSchema">
-	<LastUpdated>10th August 2026</LastUpdated>
+	<LastUpdated>24th August 2026</LastUpdated>
 	<Squash>
 		<Teams>
 			<!--<Team>
@@ -22,11 +22,11 @@
 			</Team>-->
 			<Team>
 				<Name>A</Name>
-				<TeamID>19</TeamID>
+				<TeamID>10</TeamID>
 				<League>South East</League>
-				<DivisionID>3</DivisionID>
+				<DivisionID>1</DivisionID>
 				<DivisionName>South East 1</DivisionName>
-				<CompetitionID>537</CompetitionID>
+				<CompetitionID>551</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>				
 					<Player Name="Tom Penberthy"/>
@@ -47,11 +47,11 @@
 			</Team>
 			<Team>
 				<Name>B</Name>
-				<TeamID>55</TeamID>
+				<TeamID>19</TeamID>
 				<League>South East</League>
-				<DivisionID>5</DivisionID>
+				<DivisionID>3</DivisionID>
 				<DivisionName>South East 3</DivisionName>
-				<CompetitionID>537</CompetitionID>
+				<CompetitionID>551</CompetitionID>
 				<HomeNight>Tues</HomeNight>
 				<Players>
 					<!--<Player Name="Ryan Phillips"/>-->
@@ -69,11 +69,11 @@
 			</Team>
 			<Team>
 				<Name>C</Name>
-				<TeamID>79</TeamID>
+				<TeamID>55</TeamID>
 				<League>South East</League>
-				<DivisionID>6</DivisionID>
+				<DivisionID>4</DivisionID>
 				<DivisionName>South East 4</DivisionName>
-				<CompetitionID>537</CompetitionID>
+				<CompetitionID>551</CompetitionID>
 				<HomeNight>Mon</HomeNight>
 				<Players>
 					<Player Name="Jo Norris"/>
@@ -90,11 +90,11 @@
 			</Team>
 			<Team>
 				<Name>D</Name>
-				<TeamID>89</TeamID>
+				<TeamID>79</TeamID>
 				<League>South East</League>
-				<DivisionID>7</DivisionID>
+				<DivisionID>5</DivisionID>
 				<DivisionName>South East 5</DivisionName>
-				<CompetitionID>537</CompetitionID>
+				<CompetitionID>551</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
 				<Players>
 					<!--<Player Name="Rhys Jenkins"/>-->
