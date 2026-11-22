@@ -2,7 +2,7 @@
 	<Constants>
 		<Club>Llantrisant</Club>
 		<DivisionURL>?view=league&amp;league=%s</DivisionURL>
-		<LeagueHomePage>http://walessquash.countyleagues.co.uk/cgi-county/icounty.exe/</LeagueHomePage>
+		<LeagueHomePage>https://walessquash.leaguemaster.co.uk/cgi-county/icounty.exe/</LeagueHomePage>
 		<CompetitionsDirectory>competitions</CompetitionsDirectory>
 		<FixturesDirectory>fixtures</FixturesDirectory>
 		<TeamPlayerListsDirectory>team_player_lists</TeamPlayerListsDirectory>
@@ -22,7 +22,7 @@
 		<DivisionStandingsURL>showdivision?divisionid=%s</DivisionStandingsURL>
 		<SquashLevelsURL>https://www.squashlevels.com/</SquashLevelsURL>
 		<WelshRankingsURL>players.php?&amp;all=&amp;club=%s&amp;start=%s</WelshRankingsURL>
-		<SubmitLeagueResultsURL>http://walessquash.countyleagues.co.uk/</SubmitLeagueResultsURL>
+		<SubmitLeagueResultsURL>https://walessquash.leaguemaster.co.uk/</SubmitLeagueResultsURL>
 		<SportyHQClub>https://www.squashlevels.com/players?all&amp;club=1297</SportyHQClub>
 		<SportyHQClubReg>https://www.squashlevels.com/join?community=200-1297</SportyHQClubReg>
 		<SportyHQSquashLadder>https://www.squashlevels.com/boxes?clubid=1297</SportyHQSquashLadder>

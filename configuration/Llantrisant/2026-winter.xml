@@ -24,7 +24,7 @@
 				<Name>A</Name>
 				<TeamID>10</TeamID>
 				<League>South East</League>
-				<DivisionID>1</DivisionID>
+				<DivisionID>8</DivisionID>
 				<DivisionName>South East 1</DivisionName>
 				<CompetitionID>551</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
@@ -49,7 +49,7 @@
 				<Name>B</Name>
 				<TeamID>19</TeamID>
 				<League>South East</League>
-				<DivisionID>3</DivisionID>
+				<DivisionID>10</DivisionID>
 				<DivisionName>South East 3</DivisionName>
 				<CompetitionID>551</CompetitionID>
 				<HomeNight>Tues</HomeNight>
@@ -71,7 +71,7 @@
 				<Name>C</Name>
 				<TeamID>55</TeamID>
 				<League>South East</League>
-				<DivisionID>4</DivisionID>
+				<DivisionID>11</DivisionID>
 				<DivisionName>South East 4</DivisionName>
 				<CompetitionID>551</CompetitionID>
 				<HomeNight>Mon</HomeNight>
@@ -92,7 +92,7 @@
 				<Name>D</Name>
 				<TeamID>79</TeamID>
 				<League>South East</League>
-				<DivisionID>5</DivisionID>
+				<DivisionID>12</DivisionID>
 				<DivisionName>South East 5</DivisionName>
 				<CompetitionID>551</CompetitionID>
 				<HomeNight>Thurs</HomeNight>
